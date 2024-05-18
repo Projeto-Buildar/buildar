@@ -1,7 +1,7 @@
 export default function PrimeiraTela() {
   return(
-    <div id="terceiraTela">
+    <main id="terceiraTela">
       <p>Terceira Tela: informação das skins</p>
-    </div>
+    </main>
   );
 }

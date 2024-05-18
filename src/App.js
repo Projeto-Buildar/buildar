@@ -5,8 +5,12 @@ import TerceiraTela from './sections/TerceiraTela/TerceiraTela';
 import QuartaTela from './sections/QuartaTela/QuartaTela';
 import QuintaTela from './sections/QuintaTela/QuintaTela';
 import SextaTela from './sections/SextaTela/SextaTela';
-import SetimaTela from './sections/SetimaTela/SetimaTela';
 import OitavaTela from './sections/OitavaTela/OitavaTela';
+import React from 'react';
+import CAPoiador from './sections/SetimaTela/SetimaTela';
+
+
+
 
 export default function App() {
   return (
@@ -17,7 +21,7 @@ export default function App() {
       <QuartaTela/>
       <QuintaTela/>
       <SextaTela/>
-      <SetimaTela/>
+      <CAPoiador />
       <OitavaTela/>
     </div>
   );

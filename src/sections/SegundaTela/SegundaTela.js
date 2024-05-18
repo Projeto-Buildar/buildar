@@ -1,7 +1,7 @@
 export default function PrimeiraTela() {
   return(
-    <div id="segundaTela">
+    <main id="segundaTela">
       <p>Segunda Tela: informação da gamificação</p>
-    </div>
+    </main>
   );
 }

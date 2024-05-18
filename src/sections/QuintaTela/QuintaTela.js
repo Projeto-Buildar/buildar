@@ -1,7 +1,7 @@
 export default function PrimeiraTela() {
   return(
-    <div id="quintaTela">
+    <main id="quintaTela">
       <p>Quinta Tela: informação da assinatura</p>
-    </div>
+    </main>
   );
 }

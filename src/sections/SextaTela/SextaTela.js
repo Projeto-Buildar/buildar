@@ -1,7 +1,7 @@
 export default function PrimeiraTela() {
   return(
-    <div id="sextaTela">
+    <main id="sextaTela">
       <p>Sexta Tela: informação da aba de networking</p>
-    </div>
+    </main>
   );
 }

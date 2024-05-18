@@ -1,7 +1,7 @@
 export default function PrimeiraTela() {
   return(
-      <div id="primeiraTela">
+      <main id="primeiraTela">
         <p>Primeira Tela: apresentação</p>
-      </div>
+      </main>
   );
 }
