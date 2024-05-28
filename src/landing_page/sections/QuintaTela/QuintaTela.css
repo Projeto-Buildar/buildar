@@ -1,0 +1,12 @@
+#quintaTela {
+    background: none;
+}
+
+#quintaTela .backgroundLeft {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF url('./images/show_bg.png') top 0 left 0/20% no-repeat;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}

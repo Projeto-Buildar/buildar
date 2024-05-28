@@ -1,0 +1,8 @@
+#setimaTela {
+    z-index: -2;
+    & img {
+        height: 30rem;
+    }
+}
+
+

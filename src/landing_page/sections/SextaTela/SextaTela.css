@@ -1,0 +1,45 @@
+#sextaTela {
+    flex-flow: column;
+    background: none;
+}
+
+#sextaTela article {
+    width: fit-content;
+    text-align: center;
+}
+
+#sextaTela aside {
+    display: flex;
+    gap: 2rem;
+}
+
+#sextaTela section {
+    background: #FFFFFF;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+#sextaTela .backgroundLeft, #sextaTela .backgroundRight, #sextaTela .backgroundMid {
+    height: 126%;
+    width: 50%;
+    background: url('./images/monet_left.png') bottom 0 left 0/35% no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+#sextaTela .backgroundLeft {
+    left: 0;
+}
+
+#sextaTela .backgroundMid {
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5 url('./images/monet_bg.png') bottom/cover repeat-x;
+    z-index: -2;
+}
+
+#sextaTela .backgroundRight {
+    height: 120;
+    background: url('./images/monet_right.png') top 0 right 0/35% no-repeat;
+    right: 0;
+}
