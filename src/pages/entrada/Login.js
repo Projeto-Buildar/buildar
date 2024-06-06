@@ -1,10 +1,10 @@
-import '../sections/Login.css';
+import './Login.css';
 import forma3 from './images/Vector-3.png';
 import forma from './images/Vector.png';
 import logo from './images/logo_on.png';
 import forma2 from './images/forma2.png'
 import forma1 from './images/forma1.png';
-import formasLogin from './images/formas-login.png';
+// import formasLogin from './images/formas-login.png';
 
 export default function Login() {
     return (

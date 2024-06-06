@@ -1,3 +1,11 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    gap: 2rem;
+}
+
 header {
     margin-left: 10%;
     display: flex;
@@ -58,7 +66,7 @@ article {
 .caixa-esquerda h1 {
     padding: 200px 110px;
     background-color: #AC54FF;
-    background-image: url('../images/formas-login.png');
+    background-image: url('./images/formas-login.png');
     background-position: center;
     color: #f3f3f3;
     font-size: 32px;
