@@ -1,0 +1,25 @@
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    gap: 2rem;
+}
+
+.destaqRoxo {
+    color: rebeccapurple;
+}
+
+.destaqAzul {
+    font-weight: 600;
+    color: lightblue;
+}
+
+.destaqBranco {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+article {
+    width: 30%;
+}

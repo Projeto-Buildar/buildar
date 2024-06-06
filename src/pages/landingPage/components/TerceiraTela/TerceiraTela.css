@@ -1,0 +1,34 @@
+#terceiraTela {
+    background: url('../../images/skin_bg.png') right 0 bottom 0/16% no-repeat;
+}
+
+.rollContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    & img {
+        width: 3rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+#terceiraTela section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: #95bfef;
+    padding: 2rem;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.skinContainer {
+    height: 25rem;
+    width: 30rem;
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}

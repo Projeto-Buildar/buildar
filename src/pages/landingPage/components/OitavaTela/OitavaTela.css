@@ -1,0 +1,58 @@
+#oitavaTela {
+    flex-flow: column;
+    background: url('../../images/depoiments_bg.png') bottom 0 left 0/auto 30% repeat-x;
+}
+
+#oitavaTela section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 2rem;
+}
+
+.arrow {
+    width: 5rem;
+    height: 6rem;
+    background: url('../../images/next_image.png') center/contain no-repeat;
+}
+
+.depoiments {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6rem;
+
+}
+
+.depoiment {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    min-width: 240px;
+    background: #FFFFFF url('../../images/depoiments_image_bg.png') top 4% right 8%/auto 8% no-repeat;
+    padding: 2rem;
+    border-radius: 1rem;
+    & img {
+        width: 94%;
+        height: 14rem;
+        margin-bottom: -1rem;
+    }
+    & h3 {
+        align-self: flex-start;
+        background: #8E65E5;
+        border-radius: 0 0 1rem 0;
+        padding: 0.25rem 1rem;
+        margin: 0;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+    
+    h3:nth-child(2) {
+        border-radius: 1rem 0 1rem 0;
+    }
+    & p {
+        width: 100%;
+    }
+}
+

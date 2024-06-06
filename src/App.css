@@ -1,24 +1,17 @@
 .App {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: column;
   color: #000000;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 2rem;
+h1 {
+  font-size: 3rem;
 }
 
-main:nth-child(even) {
-  background: #F4F4F4;
-}
-
-main:nth-child(odd) {
-  background: #FFFFFF;
+h2 {
+  font-size: 2rem;
 }
 
 .destaqRoxo {
@@ -33,16 +26,4 @@ main:nth-child(odd) {
 .destaqBranco {
   font-weight: 600;
   color: #FFFFFF;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-article {
-  width: 30%;
 }
