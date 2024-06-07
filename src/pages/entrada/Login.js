@@ -1,4 +1,4 @@
-import './Login.css';
+// import './Login.css';
 import forma3 from './images/Vector-3.png';
 import forma from './images/Vector.png';
 import logo from './images/logo_on.png';
