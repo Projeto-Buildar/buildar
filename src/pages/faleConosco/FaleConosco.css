@@ -1,0 +1,103 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo_img {
+    margin-bottom: 44%;
+    position: fixed;
+    padding-right: 1300px;
+    margin-top: 3%;
+    max-width: 600%;
+    height: auto;
+    max-height: 800px;
+}
+
+.circulo-esquerdo {
+    padding-right: 1400px;
+    position: fixed;
+    margin-top: 20%;
+}
+
+.circulo-direito {
+    padding-left: 1400px;
+    position: fixed;
+    margin-bottom: 30%;
+  
+
+}
+
+
+
+
+
+.App-header {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #9D38FD;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input[type="tel"] {
+    margin-left: 10px;
+    height: 50px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9D38FD;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #7d2bcf;
+}
+
