@@ -1,0 +1,93 @@
+header{
+    background-color: white;
+}
+img{
+    display: flex;
+    justify-content: left;
+
+}
+#titulo{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    align-content: center;
+   
+}
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(137, 133, 133, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #cc78d8;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:purple;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group label a {
+    color: #00ccbb;
+    text-decoration: none;
+}
+
+.form-group label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #db84cd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #61346c;
+}
+
+
+
+
+
+
+
+
+
