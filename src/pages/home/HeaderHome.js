@@ -1,10 +1,12 @@
 import './headerHome.css'
 import logo from './images/logo_on.png';
 import BtnsNav from './BtnsNav';
+import { Outlet, Link } from "react-router-dom";
 
 const textoBtn = [
   {
-    texto: "Home"
+    texto: "Home",
+    linkado: "/home"
   },
   {
     texto: "Conexões"
@@ -24,14 +26,17 @@ export default function HeaderHome() {
   return (
     <header>
       <nav>
+      <Link to="/">
         <a href='./index.html'><img src={logo} className='logo' /></a>
-        {textoBtn.map(object => {
-          return <BtnsNav texto={object.texto}></BtnsNav>
-        })}
+      </Link>
+      {textoBtn.map((object, index) => (          
+          <BtnsNav texto={object.texto} link={object.linkado}></BtnsNav>        
+        ))}
       </nav>
       <div className='btnDinamico'>
 
       </div>
+      <Outlet/>
     </header>
   );
 }
