@@ -1,0 +1,27 @@
+#landingPage {
+    & article {
+        width: 30%;
+    }
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    gap: 4rem;
+}
+
+.destaqRoxo {
+    color: rebeccapurple;
+}
+
+.destaqAzul {
+    font-weight: 600;
+    color: lightblue;
+}
+
+.destaqBranco {
+    font-weight: 600;
+    color: #FFFFFF;
+}

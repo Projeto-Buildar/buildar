@@ -1,0 +1,61 @@
+#primeiraTela {
+    background: url('../../images/primeiraTela_bg.png') right/contain no-repeat;
+    justify-content: space-between;
+    padding-inline: 10vw;
+    & article {
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+        gap: 2rem;
+    }
+    & img {
+        height: 30rem;
+    }
+}
+
+.textBar {
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, #000000 90%, #FFFFFF 90%, #FFFFFF 92%, #000000 92%, #000000 94%, #FFFFFF 94%, #FFFFFF 96%, #000000 9%);
+}
+
+#primeiraTela section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+}
+
+.buttonCadastro {
+    background: #58D2FF;
+    outline: 2px solid #000000;
+    font-size: 2rem;
+    font-weight: 800;
+    /* outline-offset: 4px; */
+}
+
+.buttonLogin {
+    outline: 2px solid #000000;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#primeiraTela .backgroundLeft {
+    background: url('../../images/primeiraTela_bg2.png') bottom 4% left 2%/auto 20% no-repeat;
+}
+
+/* Hover */
+
+#primeiraTela section div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
