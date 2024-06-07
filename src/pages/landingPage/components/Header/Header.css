@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     background: #F0EDF2;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
@@ -22,6 +22,7 @@ nav {
 }
 
 .button {
+    display: none;
     padding: 1rem 2.5rem;
     background: lightskyblue;
     border-radius: 1rem;
@@ -39,10 +40,11 @@ select {
     align-items: center;
     background: #FFFFFF;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    outline: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
     gap: 1rem;
     & img {
         height: 2rem;
+        margin-left: 0.5rem;
     }
 }

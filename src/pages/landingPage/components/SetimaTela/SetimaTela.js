@@ -1,5 +1,5 @@
 import './SetimaTela.css';
-import logo from '../../images/conection_image.png';
+import logo from '../../images/setimaTela_img.png';
 
 export default function SetimaTela() {
   return(

@@ -1,6 +1,6 @@
 #oitavaTela {
     flex-flow: column;
-    background: url('../../images/depoiments_bg.png') bottom 0 left 0/auto 30% repeat-x;
+    background: url('../../images/oitavaTela_bg.png') bottom 0 left 0/auto 30% repeat-x;
 }
 
 #oitavaTela section {
@@ -12,9 +12,9 @@
 }
 
 .arrow {
-    width: 5rem;
-    height: 6rem;
-    background: url('../../images/next_image.png') center/contain no-repeat;
+    width: 64px;
+    height: 80px;
+    background: url('../../images/oitavaTela_next.png') center/contain no-repeat;
 }
 
 .depoiments {
@@ -30,7 +30,7 @@
     align-items: center;
     flex-flow: column;
     min-width: 240px;
-    background: #FFFFFF url('../../images/depoiments_image_bg.png') top 4% right 8%/auto 8% no-repeat;
+    background: #FFFFFF url('../../images/oitavaTela_img.png') top 4% right 8%/auto 8% no-repeat;
     padding: 2rem;
     border-radius: 1rem;
     & img {
@@ -40,7 +40,7 @@
     }
     & h3 {
         align-self: flex-start;
-        background: #8E65E5;
+        background: #9B33FD;
         border-radius: 0 0 1rem 0;
         padding: 0.25rem 1rem;
         margin: 0;

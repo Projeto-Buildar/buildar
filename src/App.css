@@ -1,9 +1,5 @@
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  color: #000000;
+  padding-top: 12vh;
 }
 
 h1 {

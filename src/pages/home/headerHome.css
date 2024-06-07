@@ -1,0 +1,34 @@
+/* Futuro código
+a:active{
+    background-color: blueviolet;
+} */
+
+nav > .btnsNav:nth-of-type(2) {
+    background-color: var(--color-primaria);
+    color: #FFFFFF;
+    padding-bottom: 1%;
+    transform: translateY(6px);
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+nav > .btnsNav:nth-of-type(2)::after {
+    content: " ";
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+    padding-inline: 170%;
+    height: 30px;
+    position: absolute; /* Permite posicionar o ::after em relação ao pai */
+    top: 90%; /* Posiciona o ::after logo abaixo do pai */
+    right: 0; /* Alinha à direita do pai */
+    z-index: -1;
+    transform: translateX(10%);
+    border-radius: 0 0 40px 40px;
+}
+
+
+
+
+

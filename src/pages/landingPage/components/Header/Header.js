@@ -1,7 +1,6 @@
 import './Header.css';
 import logo from '../../images/logo_on.png';
 import language from '../../images/language.png';
-import select from '../../images/select.png';
 
 export default function Header() {
   return(
@@ -23,3 +22,5 @@ export default function Header() {
         </header>
   );
 }
+
+// {position: window.scrollY >= 300 ? 'fixed' : 'absolute'}

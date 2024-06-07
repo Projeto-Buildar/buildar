@@ -1,6 +1,0 @@
-#segundaTela {
-    background: #F5F5F5 url('./images/pratice_bg.png') left 0 top 5%/auto 25% no-repeat;
-    & img {
-        height: 30rem;
-    }
-}

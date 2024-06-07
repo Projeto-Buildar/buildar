@@ -1,7 +1,13 @@
-export default function Home (){
+import Header from './HeaderHome.js';
+
+export default function Home() {
     return (
-        <main>
-            <h1>Aqui começa tudo pós login/cadastro</h1>
-        </main>
+        <div>
+            <Header />
+            <main>
+            </main>
+        </div>
+
+
     )
 }

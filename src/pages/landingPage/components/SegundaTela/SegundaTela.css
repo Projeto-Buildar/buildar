@@ -1,5 +1,5 @@
 #segundaTela {
-    background: url('../../images/pratice_bg.png') left 0 top 5%/auto 25% no-repeat;
+    background: url('../../images/segundaTela_bg.png') left 0 top 5%/auto 25% no-repeat;
     & img {
         height: 30rem;
     }

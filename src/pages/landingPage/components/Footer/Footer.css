@@ -1,4 +1,4 @@
-footer {
+#landingPage footer {
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -26,12 +26,12 @@ footer {
     gap: 6rem;
 }
 
-footer section {
+#landingPage footer section {
     gap: 1rem;
     align-items: center;
 }
 
-footer li {
+#landingPage footer li {
     margin-block: 1rem;
 }
     

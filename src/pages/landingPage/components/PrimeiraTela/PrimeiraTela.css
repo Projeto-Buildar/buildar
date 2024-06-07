@@ -1,3 +1,33 @@
 #primeiraTela {
-    background: blueviolet;
+    background: palegoldenrod url('../../images/primeiraTela_bg.png') right/contain no-repeat;
+    & article {
+        width: 35%;
+    }
+}
+
+.textBar {
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+
+#primeiraTela section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    & div {
+        width: 16rem;
+        padding: 0.5rem;
+    }
+}
+
+.buttonCadastro {
+    background: #58D2FF;
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+}
+
+.buttonLogin {
+    outline: 2px solid #000000;
 }

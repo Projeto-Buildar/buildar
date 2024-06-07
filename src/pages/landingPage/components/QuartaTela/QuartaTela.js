@@ -1,5 +1,5 @@
 import './QuartaTela.css';
-import logo from '../../images/image_filler_square.png';
+import logo from '../../images/quartaTela_img.png';
 
 export default function QuartaTela() {
   return(
