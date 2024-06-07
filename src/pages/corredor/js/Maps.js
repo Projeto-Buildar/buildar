@@ -32,7 +32,7 @@ const Maps = {
                     "right": 3
                 },
                 distanciaX: 4,
-                animationFrameLimit: 10
+                animationFrameLimit: 17.5
             })
         }
     }, 

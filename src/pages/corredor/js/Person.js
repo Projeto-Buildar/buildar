@@ -7,10 +7,9 @@ export default class Person extends GameObject {
 
         this.isPlayerControlled = config.isPlayerControlled || false;
 
-        this.speed = 1;
+        this.speed = 0.7;
         this.total = 0;
         
-
         this.directionUpdate = {
             "down": ["y", 1],
             "up": ["y", -1],
