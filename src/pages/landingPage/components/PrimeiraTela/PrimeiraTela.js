@@ -10,10 +10,12 @@ export default function PrimeiraTela() {
         <h1>TENHA UM GUIA PARA MOLDAR SUAS SOFT SKILLS</h1>
         <div className='textBar'></div>
         <section>
-        <Link to="/login">
+        <Link to="/cadastro">
           <div className='buttonCadastro'><span></span>DÊ O PLAY!</div>
         </Link>
+        <Link to='/login'>
           <div className='buttonLogin'>Já tenho uma conta</div>
+        </Link>
         </section>
       </article>
       <figure>

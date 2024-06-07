@@ -1,64 +1,60 @@
-#login header {
+#Cadastro header{
     margin-left: 10%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #fff; /* Ajuste conforme necessário */
+    background-color: #fff; 
     width: 100%;
     height: 30px;
 }
 
-.forma1{
-    position: absolute;
-    left: 0;
-    top: 10;
+#Cadastro article h3{
+    color: #000;
 }
 
-.forma2{
+.CormaCadastro1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.formaCadastro2{
     position: absolute;
     right: 0;
     top: 0;
-    display: flex;
-    align-items: flex-end;
 }
 
-#login header .logo {
+#Cadastro header .logo {
     margin-top:3%;
     max-width: 100%;
     height: 130%;
-    max-height: 100px; /* Ajuste conforme necessário */
+    max-height: 100px; 
 }
 
-#login header .forma2{
+#Cadastro header .formaCadastro2{
     display: flex;
     align-items: flex-end;
 }
 
-.container-login{
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos existentes */
-#login article {
+#Cadastro article {
     display: flex;
     align-items: center;
     position: relative;
-    width: 600px; /* Ajuste conforme necessário */
-    height: 300px; /* Ajuste conforme necessário */
+    width: 600px; 
+    height: 300px; 
     margin: 50px auto;
 }
 
-#login img {
+#Cadastro img {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.caixa-esquerda h1 {
-    padding: 200px 110px;
-    background-color: #AC54FF;
-    background-image: url('../images/formas-login.png');
+.caixa-esquerda-cadastro h1 {
+    padding: 290px 140px;
+    background-color: #29F39B;
+    background-image: url('./images/Group-formas.png');
     background-position: center;
     color: #f3f3f3;
     font-size: 32px;
@@ -69,31 +65,39 @@
     height: 100%;
 }
 
-.caixa-direita h1 {
+.caixa-direita-cadastro h1 {
     font-size: 32px;
     margin-bottom: 30px;
 }
 
-.caixa-direita h3 {
+.caixa-direita-cadastro h3 {
     float: left;
 }
 
-.caixa-direita p {
+.caixa-direita-cadastro p {
     display: flex;
     flex-direction: column;
 }
 
-.caixa-direita button {
+.caixa-direita-cadastro button {
     border: none;
     color: #1C0240;
     font-size: 13px;
 }
 
-.caixa-direita button:hover {
-    color: #701DCD;
+.caixa-direita-cadastro button:hover {
+    color: #059c5b;
+}
+#submit{
+    color: #000;
+    background-color: #29F39B;
 }
 
-.caixa-direita {
+#submit:hover{
+    color: #000;
+    background-color: #00ff91;
+}
+.caixa-direita-cadastro {
     padding: 70px;
     display: flex;
     align-items: center;
@@ -102,14 +106,29 @@
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
     position: relative;
-    width: 40%; /* Ajuste conforme necessário */
-    height: 100%;
+    width: 60%; /* Ajuste conforme necessário */
+    height: 500px;
     background-color: #f3f3f3;
     margin-left: -4%; /* Ajuste conforme necessário */
     z-index: 1;
 }
+.checkbox-group   #aceitar_politicas{
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+}
+.checkbox-group{
+    display: flex;
+    flex-direction: row;
+}
 
-.caixa-direita input,
+ .checkbox-group  a{
+    color: #000;
+    text-decoration: none;
+}
+
+.caixa-direita-cadastro input,
 input[type="email"],
 input[type="password"] {
     margin: 12px;
@@ -120,29 +139,4 @@ input[type="password"] {
     border-radius: 8px;
     text-align: center; /* Centralizar o texto do placeholder horizontalmente */
     line-height: 40px; /* Ajustar a altura da linha para centralizar verticalmente */
-}
-
-#submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 150px;
-    color: #f5f5f5;
-    background-color: #AC54FF;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px; /* Ajuste conforme necessário */
-}
-
-#submit:hover {
-    background-color: #701DCD;
-}
-
-/* Estilização do formulário para centralizar o conteúdo */
-#login form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

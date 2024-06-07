@@ -12,10 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  color: black;
 }

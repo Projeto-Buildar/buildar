@@ -1,4 +1,5 @@
-// import './Login.css';
+import './Login.css';
+import { Outlet, Link } from "react-router-dom";
 import forma3 from './images/Vector-3.png';
 import forma from './images/Vector.png';
 import logo from './images/logo_on.png';
@@ -28,12 +29,14 @@ export default function Login() {
                             <input type="email" name="email" id="email" placeholder="e-mail / telefone" required />
                             <h3>Senha</h3>
                             <input type="password" name="password" id="password" placeholder="Informe sua senha" required />
-                            <input type="submit" id="submit" value='Enviar' />
+                            <Link to='/home'><input type="submit" id="submit" value='Enviar' /></Link>
                         </form>
                         
-                        <p>Não tem uma conta? <button><strong>Cadastre-se</strong></button></p>
+                        <p>Não tem uma conta? <Link to='/cadastro'><button><strong>Cadastre-se</strong></button></Link></p>
                     </div>
                 </article>
+
+                <Outlet/>
         </main>
     );
 }
