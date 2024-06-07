@@ -1,23 +1,23 @@
 import './TerceiraTela.css';
-import logo from '../../images/image_filler_square.png';
+import skin from '../../images/terceiraTela_img.png';
 
 export default function TerceiraTela() {
   return(
     <div className='frame' id="terceiraTela">
       <section>
-        <div className='skinContainer'>
-          <img src={logo} className='skin'/>
-        </div>
-        <div className='rollContainer'>
-          <img src={logo}/>
-          <img src={logo}/>
-          <img src={logo}/>
-          <img src={logo}/>
+        <figure className='skinContainer'>
+          <img src={skin}/>
+        </figure>
+        <div className='scrollContainer'>
+          <div className='scroller'></div>
+          <div className='scroller'></div>
+          <div className='scroller'></div>
+          <div className='scroller'></div>
         </div>
       </section>
       <article>
-        <h2>Trabalhe onde você <span className='destaqRoxo'>quiser</span></h2>
-        <p>Que tal um treinar em um ambiente <span className='destaqAzul'>inovador</span>? A Buildar oferece opções para cada usuário ir onde quiser</p>
+        <h2>Seja você do seu melhor jeito</h2>
+        <p>Que tal um avatar que encaixe com sua personalidade? A Buildar oferece opções para as <span className='destaqAzul'>características únicas</span> de cada usuário.</p>
       </article>
     </div>
   );

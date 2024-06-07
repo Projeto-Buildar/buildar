@@ -11,16 +11,14 @@ export default function Footer() {
       <div className='footerTop'>
         <section className='linkList'>
           <ul>
-            <a><li>Saiba Mais</li></a>
             <a><li>Sobre</li></a>
             <a><li>Conexões</li></a>
-            <a><li>Apoie</li></a>
+            <a><li>Apoie a Buildar</li></a>
           </ul>
           <ul>
             <a><li>Dúvidas Frequentes</li></a>
             <a><li>Fale Conosco</li></a>
-            <a><li>Ajuda</li></a>
-            <a><li>Atendimento</li></a>
+            <a><li>Suporte</li></a>
           </ul>
         </section>
         <section>

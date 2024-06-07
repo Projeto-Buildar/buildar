@@ -22,5 +22,3 @@ export default function Header() {
         </header>
   );
 }
-
-// {position: window.scrollY >= 300 ? 'fixed' : 'absolute'}

@@ -1,34 +1,42 @@
 #terceiraTela {
-    background: url('../../images/terceiraTela_bg.png') right 0 bottom 0/16% no-repeat;
-}
-
-.rollContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    & img {
-        width: 3rem;
-        height: 1rem;
-        border-radius: 0.5rem;
-    }
+    background: url('../../images/terceiraTela_bg.png') right 0 bottom 0/auto 55% no-repeat;
 }
 
 #terceiraTela section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: #95bfef;
+    justify-content: center;
+    background: #FF486D;
     padding: 2rem;
     border-radius: 2rem;
-    gap: 1rem;
 }
 
 .skinContainer {
+    display: flex;
+    align-items: center;
     height: 25rem;
-    width: 30rem;
+    width: 20rem;
     & img {
-        height: 100%;
         width: 100%;
     }
+}
+
+.scrollContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    gap: 1rem;
+    & .scroller:nth-child(2) {
+        width: 3rem;
+        background: #FFFFFF;
+    }
+}
+
+.scroller {
+    width: 2rem;
+    height: 0.75rem;
+    background: #9533FD;
+    border-radius: 0.5rem;
 }

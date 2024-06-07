@@ -15,11 +15,11 @@
 }
 
 #quartaTela .backgroundLeft {
-    background: url('../../images/quartaTela_bg.png') bottom 0 left 2.5%/25% no-repeat;
+    background: url('../../images/quartaTela_bg.png') bottom 0 left 2.5%/auto 30% no-repeat;
     left: 0;
 }
 
 #quartaTela .backgroundRight {
-    background: url('../../images/quartaTela_bg2.png') top 0 right 2.5%/25% no-repeat;
+    background: url('../../images/quartaTela_bg2.png') top 0 right 2.5%/auto 30% no-repeat;
     right: 0;
 }

@@ -3,7 +3,7 @@
     align-items: center;
     flex-flow: column;
     width: 100%;
-    padding-block: 5vh;
+    padding-block: 10vh;
     color: #FFFFFF;
     background: #9B33FD;
 }
@@ -26,9 +26,8 @@
     gap: 6rem;
 }
 
-#landingPage footer section {
-    gap: 1rem;
-    align-items: center;
+.footerTop .linkList {
+    gap: 12rem;
 }
 
 #landingPage footer li {
