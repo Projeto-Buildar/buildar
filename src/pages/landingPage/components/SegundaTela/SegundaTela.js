@@ -3,7 +3,7 @@ import './SegundaTela.css';
 
 export default function SegundaTela() {
   return (
-    <div className='frame' id="segundaTela">
+    <div className='frames' id="segundaTela">
       <article>
         <h2>Que tal treinar soft skills virtualmente?</h2>
         <p>Com simulações de ambientes profissionais, você consegue crescer! Dê um up em suas soft skills de maneira <span className='destaqAzul'>fácil</span> e <span className='destaqAzul'>divertida</span>.</p>

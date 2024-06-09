@@ -3,7 +3,7 @@ import skin from '../../images/terceiraTela_img.png';
 
 export default function TerceiraTela() {
   return(
-    <div className='frame' id="terceiraTela">
+    <div className='frames' id="terceiraTela">
       <section>
         <figure className='skinContainer'>
           <img src={skin}/>

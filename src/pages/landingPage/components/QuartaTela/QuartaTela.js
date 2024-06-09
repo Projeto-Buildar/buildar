@@ -3,7 +3,7 @@ import image from '../../images/quartaTela_img.png';
 
 export default function QuartaTela() {
   return(
-    <div className='frame' id="quartaTela">
+    <div className='frames' id="quartaTela">
       <div className='backgroundLeft'></div>
       <article>
         <h2>Uma plataforma acessível a todo mundo</h2>

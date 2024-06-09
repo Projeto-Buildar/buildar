@@ -9,7 +9,7 @@ import calendar from '../../images/calendar.png';
 
 export default function SextaTela() {
   return(
-    <div id="sextaTela" className='frame'>
+    <div id="sextaTela" className='frames'>
       <div className='backgroundLeft'></div>
       <div className='backgroundMid'></div>
       <article>

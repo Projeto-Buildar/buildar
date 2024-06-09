@@ -9,17 +9,20 @@ const textoBtn = [
     linkado: "/home"
   },
   {
-    texto: "Conexões"
+    texto: "Conexões",
+    // linkado: "/conexoes"
   },
   {
-    texto: "Loja"
+    texto: "Loja",
+    // linkado: "/loja"
   },
   {
     texto: "Perfil",
     // linkado: "/perfil"
   },
   {
-    texto: "Mais"
+    texto: "Mais",
+    // linkado: "/mais"
   }
 ]
 

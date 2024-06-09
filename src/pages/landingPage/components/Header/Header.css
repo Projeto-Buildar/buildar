@@ -6,7 +6,7 @@ header {
     background: #F0EDF2;
     position: fixed;
     top: 0;
-    /* z-index: 2; */
+    z-index: 2;
     & .logo {
         height: 4rem;
     }

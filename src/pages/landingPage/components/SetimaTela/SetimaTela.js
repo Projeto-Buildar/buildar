@@ -3,7 +3,7 @@ import logo from '../../images/setimaTela_img.png';
 
 export default function SetimaTela() {
   return(
-    <div className='frame' id="setimaTela">
+    <div className='frames' id="setimaTela">
       <figure>
         <img src={logo}/>
       </figure>

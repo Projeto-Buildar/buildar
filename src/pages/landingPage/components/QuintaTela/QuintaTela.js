@@ -2,7 +2,7 @@ import './QuintaTela.css';
 
 export default function QuintaTela() {
     return (
-        <div className='frame' id='quintaTela'>
+        <div className='frames' id='quintaTela'>
             <div className='backgroundLeft'></div>
             <section>
                 <div></div>

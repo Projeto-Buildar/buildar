@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 export default function PrimeiraTela() {
   return (
-    <div className='frame' id="primeiraTela">
+    <div className='frames' id="primeiraTela">
       <div className='backgroundLeft'></div>
       <article>
         <h1>TENHA UM GUIA PARA MOLDAR SUAS SOFT SKILLS</h1>
