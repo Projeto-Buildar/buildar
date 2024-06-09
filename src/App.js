@@ -5,6 +5,7 @@ import Login from './pages/entrada/Login';
 import Home from './pages/home/Home';
 import Cadastro from './pages/entrada/Cadastro';
 import Corredor from './pages/corredor/Corredor';
+// import Perfil from './pages/perfil/Perfil';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="cadastro" element={<Cadastro />} />
           <Route path="home" element={<Home />} />
           <Route path="corredor" element={<Corredor/>}></Route>
+          {/* <Route path='perfil' element={<Perfil></Perfil>}></Route> */}
         </Routes>
       </BrowserRouter>
     </div>

@@ -15,7 +15,8 @@ const textoBtn = [
     texto: "Loja"
   },
   {
-    texto: "Perfil"
+    texto: "Perfil",
+    // linkado: "/perfil"
   },
   {
     texto: "Mais"
@@ -29,13 +30,10 @@ export default function HeaderHome() {
       <Link to="/">
         <a href='./index.html'><img src={logo} className='logo' /></a>
       </Link>
-      {textoBtn.map((object, index) => (          
+      {textoBtn.map((object) => (          
           <BtnsNav texto={object.texto} link={object.linkado}></BtnsNav>        
         ))}
       </nav>
-      <div className='btnDinamico'>
-
-      </div>
       <Outlet/>
     </header>
   );

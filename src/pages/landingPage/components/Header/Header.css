@@ -4,13 +4,23 @@ header {
     width: 100vw;
     height: 12vh;
     background: #F0EDF2;
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0;
-    z-index: 2;
+    /* z-index: 2; */
     & .logo {
         height: 4rem;
     }
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 12vh;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    z-index: -1;
 }
 
 nav {

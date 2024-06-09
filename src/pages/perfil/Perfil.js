@@ -7,11 +7,12 @@ import trofeu from "./images/Trofeu.png"
 import Medalha from "./images/Medalha.png"
 import quadrado from "./images/Quadrado.png"
 import grafico1 from "./images/grafico 3.png"
-
+import Header from "../home/HeaderHome"
 
 export default function Perfil (){
     return (
         <main>
+            <Header></Header>
             <div className="Container_geral">
             
                 <section className="lado_esquerdo">
