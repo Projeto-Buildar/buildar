@@ -1,0 +1,169 @@
+/* Estilos dos títulos */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container #headerPagamento {
+  display: flex;
+  justify-content:flex-start;
+  width: 100vw;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+    
+}
+
+/* Estilos do logo */
+.logoVivi {
+  align-self: flex-start; /* Alinha o logo à esquerda */
+  padding-left: 153px; /* Espaço da borda esquerda */
+  margin: 6px 0px;
+  width: 210px;
+  height: auto;
+}
+
+/* Estilos do formulário de pagamento */
+.formPagamento {
+  width: 100%;
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 20px auto; /* Centraliza o formulário */
+  padding: 20px;
+}
+
+/* Estilos dos ícones de pagamento */
+.card-icon {
+  margin-right: 10px;
+  width: 70px;
+}
+
+.payment-icon {
+  margin-left: -8px;
+  width: 70px;
+
+}
+
+.payment-icon-pix {
+  width: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+/* Estilos do formulário de pagamento */
+.payment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+  grid-gap: 15px; /* Espaçamento entre os campos */
+}
+
+input {
+  grid-column: span 2; /* Ocupa as duas colunas */
+  padding: 8px;
+  border-radius: 10px;
+  border-color: azure;
+  color: gray;
+}
+
+/* Estilos do botão de envio */
+.submit-button {
+  grid-column: span 2; /* Ocupa as duas colunas */
+  padding: 12px 0px;
+  border-radius: 10px;
+  background-color: #701DCD;
+  border: none;
+  color: white;
+  margin: 0px 120px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #5d18ac;
+}
+
+.payment-form .half-width {
+  grid-column: span 1; /* Ocupa uma coluna */
+}
+
+/* Estilos do container de entrada de data */
+.date-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input {
+  flex-grow: 1; /* Faz o input ocupar todo o espaço disponível */
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px; /* Posiciona o ícone dentro do campo de entrada */
+  height: 24px; /* Altura do ícone */
+  width: 24px; /* Largura do ícone */
+  cursor: pointer;
+
+}
+
+/*LUGAR DE POR O INPUT*/
+
+/* Estilos do container de métodos de pagamento */
+.payment-method-container {
+  display: flex;
+  flex-direction: row; /* Alinha os itens lado a lado */
+  justify-content: start; /* Alinha os itens ao início do container */
+}
+
+.payment-option {
+  border: 2px solid rgb(186, 184, 184); /* Adiciona uma borda cinza */
+  padding: 2px 12px;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px;
+  margin-right: 10px; /* Espaço entre os métodos de pagamento */
+}
+
+.payment-button {
+  width: 10px; /* Largura do círculo */
+  height: 10px; /* Altura do círculo, igual à largura para ser um círculo perfeito */
+  border-radius: 100%; /* Faz o botão ser um círculo */
+  border: 2px solid #701DCD;
+  background-color: transparent;
+  margin: 15px 2px;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+}
+
+.payment-option.selected .payment-button {
+  background-color: #701DCD;
+}
+
+/* Oculta o ícone de calendário padrão em navegadores Webkit */
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+  .date-input-container::after {
+    content: url('./images/calendario.png');
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  } 
+  */
+ 
