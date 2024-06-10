@@ -19,14 +19,15 @@
     border: none;
   }
   
-  .button {
+  .buttonPesquisar {
+    margin-left: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: #FFB412;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-top: 10px;
   }
   
