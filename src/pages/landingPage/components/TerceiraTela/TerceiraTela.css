@@ -12,9 +12,13 @@
     border-radius: 2rem;
 }
 
+.carrosel{
+    height: 100%;
+}
+
 .skinContainer {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     height: 25rem;
     width: 20rem;
     & img {
@@ -23,9 +27,12 @@
 }
 
 .scrollContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    display: table-cell;
+    vertical-align: middle;
+
+    /* justify-content: center;
+    align-items: center; */
     padding-block: 1rem;
     gap: 1rem;
     & .scroller:nth-child(2) {
@@ -39,4 +46,10 @@
     height: 0.75rem;
     background: #9533FD;
     border-radius: 0.5rem;
+}
+
+.liCarrosel{
+    flex: 1 1 auto;
+    position: relative;
+    width: 2243px;
 }

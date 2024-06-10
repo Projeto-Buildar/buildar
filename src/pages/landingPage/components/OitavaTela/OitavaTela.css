@@ -4,20 +4,20 @@
 }
 
 
-/* #oitavaTela section {
-    display: flex;
+#oitavaTela section {
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 72%;
-    gap: 2rem;
-}  */
+    align-items: center; */
+    /* margin: 0 auto; */
+    width: 87%;
+    /* gap: 2rem; */
+} 
 
 
 .arrow {
     width: 64px;
     height: 80px;
-    background: url('../../images/oitavaTela_next.png') center/contain no-repeat;
+    background: url('../../images/oitavaTela_next.png') center/contain no-repeat; 
     position: absolute;
     right: 0;
     z-index: 2;
@@ -35,10 +35,10 @@
 } 
 
 
-/* 
+
 .liCarrosel{
     padding-inline: 1% !important;
-}  */
+} 
 
 
 .depoiments {
@@ -57,6 +57,13 @@
     background: #FFFFFF url('../../images/oitavaTela_img2.png') top 4% right 8%/auto 8% no-repeat;
     padding: 2rem;
     border-radius: 1rem;
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    pointer-events: none;
     & img {
         width: 94%;
         height: 14rem;
@@ -80,6 +87,7 @@
         width: 100%;
         margin-top: 1rem;
     }
+    
 }
 
 .depoiment:nth-child(even) {
