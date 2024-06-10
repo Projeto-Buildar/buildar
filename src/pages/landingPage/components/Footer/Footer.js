@@ -34,7 +34,7 @@ export default function Footer() {
           <a href="#"><p>Termos de Uso</p></a>
         </section>
         <section className="social">
-          <a href="https://www.instagram.com/buildar_oficial/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="Instagram" />
           </a>
           <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener noreferrer">
