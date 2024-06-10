@@ -7,6 +7,8 @@ import Cadastro from './pages/entrada/Cadastro';
 import Corredor from './pages/corredor/Corredor';
 import SobreNos from './pages/sobre/SobreNos';
 
+import Pagamento from './pages/pagamento/Pagamento';
+
 export default function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="home" element={<Home />} />
           <Route path="corredor" element={<Corredor />} />
           <Route path="sobre" element={<SobreNos />} />
+          <Route path="pagamento" element={<Pagamento />} />
+
         </Routes>
       </BrowserRouter>
     </div>

@@ -7,6 +7,9 @@ import skinScenary from '../../images/skin_scenary.png';
 import energy from '../../images/energy.png';
 import calendar from '../../images/calendar.png';
 
+import { Link } from 'react-router-dom';
+
+
 export default function SextaTela() {
   return(
     <div id="sextaTela" className='frames'>
@@ -38,7 +41,10 @@ export default function SextaTela() {
           </div>
           <div className='breakBar'></div>
           <p>Apenas R$12,90</p>
-          <div className='offerButton'>Conferir</div>
+          <div className='offerButton'>
+            <Link to="/pagamento">Conferir</Link>
+          </div>
+          {/* <div className='offerButton'>Conferir</div> */}
         </div>
         <div className='offers'>
           <div className='titleCard'>
@@ -61,7 +67,11 @@ export default function SextaTela() {
           </div>
           <div className='breakBar'></div>
           <p>Apenas R$16,90</p>
-          <div className='offerButton'>Conferir</div>
+          {/* LINKARRR */}
+          <div className='offerButton'>
+            <Link to="/pagamento">Conferir</Link>
+          </div>
+
         </div>
         <div className='offers'>
           <div className='titleCard'>
@@ -80,7 +90,9 @@ export default function SextaTela() {
           </div>
           <div className='breakBar'></div>
           <p>Apenas R$14,90</p>
-          <div className='offerButton'>Conferir</div>
+          <div className='offerButton'>
+            <Link to="/pagamento">Conferir</Link>
+          </div>
         </div>
       </section>
       <div className='backgroundRight'></div>
