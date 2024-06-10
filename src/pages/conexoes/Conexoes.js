@@ -3,7 +3,7 @@ import forma from "../conexoes/images/forma branca.png";
 import "../conexoes/Conexoes.css";
 import Forma2 from "../conexoes/images/amarelo lilas azul.png";
 import imgFormulario from "../conexoes/images/imagem formulario.png";
-import EventSearch from "../conexoes/Pesquisa"
+import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
 
 export default function Conexoes() {
