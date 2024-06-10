@@ -14,13 +14,13 @@ export default function Elevadores() {
                 arrows
                 autoPlaySpeed={3000}
                 centerMode={false}
-                className="marcos"
+                className="divCarrosel"
                 containerClass="container-with-dots"
                 dotListClass=""
                 draggable={false}
                 focusOnSelect={false}
                 infinite={false}
-                itemClass="teste"
+                itemClass="itemsCarrosel"
                 keyBoardControl={false}
                 minimumTouchDrag={80}
                 pauseOnHover
@@ -57,7 +57,7 @@ export default function Elevadores() {
                 rtl={false}
                 shouldResetAutoplay
                 showDots={false}
-                sliderClass="rogerio"
+                sliderClass=""
                 slidesToSlide={1}
                 swipeable
 
