@@ -1,16 +1,18 @@
 import Header from './HeaderHome.js';
 import fundo from './images/image_fundo.png';
 import { Outlet, Link } from "react-router-dom";
+import Elevadores from "./Elevadores.js"
 
 export default function Home() {
     return (
-        <div>
+        <div className='home'>
             <Header />
 
             <main>
-            <Link to="/corredor">
+            <Elevadores></Elevadores>
+            {/* <Link to="/corredor">
                 <img src={fundo} width='100%' height='100%'/>
-            </Link>
+            </Link> */}
             </main>
         </div>
 

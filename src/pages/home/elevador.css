@@ -1,0 +1,22 @@
+.elevador > p{
+    font-size: 24px;
+    text-align: center;  
+    padding-top: 30%;
+}
+
+.elevador {
+    background: url('./images/Elevador.svg') no-repeat;
+    background-size: 100%;
+    width: 350px;
+    height: 450px;
+}
+
+.elevador:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+.home main{
+    height: 88vh;
+    margin-top: 10%;
+}
