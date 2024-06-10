@@ -10,17 +10,17 @@ export default function Elevadores() {
             <Carousel
                 customRightArrow={<CustomArrow props={"arrow"}></CustomArrow>}
                 customLeftArrow={<CustomArrow props={"arrow left"}></CustomArrow>}
-                additionalTransfrom={100}
+                additionalTransfrom={0}
                 arrows
                 autoPlaySpeed={3000}
                 centerMode={false}
-                className=""
+                className="marcos"
                 containerClass="container-with-dots"
                 dotListClass=""
                 draggable={false}
                 focusOnSelect={false}
                 infinite={false}
-                itemClass=""
+                itemClass="teste"
                 keyBoardControl={false}
                 minimumTouchDrag={80}
                 pauseOnHover
@@ -57,7 +57,7 @@ export default function Elevadores() {
                 rtl={false}
                 shouldResetAutoplay
                 showDots={false}
-                sliderClass=""
+                sliderClass="rogerio"
                 slidesToSlide={1}
                 swipeable
 
