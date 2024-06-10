@@ -37,7 +37,9 @@
 
 
 .liCarrosel{
-    padding-inline: 1% !important;
+    margin-inline: 1% !important; 
+    /*caso esteja apenas 1 item por vez no carrosel, 
+    aumente o valor do margin/padding para ter mais espaçamento lateral*/
 } 
 
 
@@ -136,21 +138,22 @@
     right: 10px;
 }
 
+/* 
 .slide-wrapper {
     overflow: hidden;
     width: 100%;
-    max-width: 600px; /* ajuste conforme necessário */
-}
+    max-width: 600px; ajuste conforme necessário
+} */
 
-.slide-list {
+/* .slide-list {
     display: flex;
-    transition: transform 0.5s ease;
-}
+     transition: transform 0.5s ease; 
+} */
 
 .depoiment {
     min-width: 50%;
     box-sizing: border-box;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     border: 2px solid;
 }

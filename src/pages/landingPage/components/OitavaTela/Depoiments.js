@@ -31,7 +31,15 @@ const userInfo = [
         age: '23',
         text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
         color: '#FFB412'
-    }
+    },
+    {
+      image: user3,
+      name: 'Nome Nomenta da N',
+      age: '23',
+      text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
+      color: '#FFB412'
+  },
+  
 ];
 
 export default function Depoiments() {
@@ -90,6 +98,7 @@ export default function Depoiments() {
           sliderClass="ulCarrosel"
           slidesToSlide={1}
           swipeable
+          
         >
           {userInfo.map((depoiments) => {
             return <Depoiment image={depoiments.image} name={depoiments.name} age={depoiments.age} text={depoiments.text} color={depoiments.color} />
