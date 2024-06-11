@@ -46,7 +46,7 @@ function EventSearch() {
   };
 
   return (
-    <div className="container">
+    <div className="containerPesquisar">
       <h3>EVENTOS EXTERNOS - Pesquisa de Eventos</h3>
       <div className="search-container">
         <input
