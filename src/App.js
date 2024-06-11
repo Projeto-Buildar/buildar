@@ -6,9 +6,10 @@ import Home from './pages/home/Home';
 import Cadastro from './pages/entrada/Cadastro';
 import Corredor from './pages/corredor/Corredor';
 import SobreNos from './pages/sobre/SobreNos';
+import Conexoes from './pages/conexoes/Conexoes';
 
 import Pagamento from './pages/pagamento/Pagamento';
-// import Conexoes from './pages/conexoes/Conexoes'
+import Perfil from './pages/perfil/Perfil';
 
 export default function App() {
   return (
@@ -22,7 +23,8 @@ export default function App() {
           <Route path="corredor" element={<Corredor />} />
           <Route path="sobre" element={<SobreNos />} />
           <Route path="pagamento" element={<Pagamento />} />
-          {/* <Route path='conexoes' element={<Conexoes/>}></Route> */}
+          <Route path="conexoes" element={<Conexoes />} />
+          <Route path="perfil" element={<Perfil />} />
         </Routes>
       </BrowserRouter>
     </div>

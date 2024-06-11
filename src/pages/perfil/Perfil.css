@@ -1,4 +1,4 @@
-main{
+#Perfil {
     display: flex;
 }
 a{
@@ -184,6 +184,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 .div_texto_conquista{
     display: flex;
