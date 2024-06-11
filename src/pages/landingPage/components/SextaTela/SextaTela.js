@@ -22,7 +22,7 @@ export default function SextaTela() {
         <h2>{t("CAP")}</h2>
         <p>{t("Paths1")}<span className='destaqBranco'>{t("Paths2")}</span>{t("Paths3")}</p>
       </article>
-      <section>
+      <section  id="Planos">
         <div className='offers'>
           <div className='titleCard'>
             <h3>{t("Intern")}</h3>

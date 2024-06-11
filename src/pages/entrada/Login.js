@@ -28,7 +28,7 @@ export default function Login() {
                 <div className='caixa-esquerda'>
                     <h1>{t('welcomeBack')}</h1>
                 </div>
-                <div className='caixa-direita'>
+                <div className='caixa-direita' id='CaixaLogin'>
                     <h1>Login</h1>
                     <form action="">
                         <h3>Email</h3>
@@ -38,7 +38,7 @@ export default function Login() {
                         <Link to='/home'><input type="submit" id="submit" value={t('submit')} /></Link>
                     </form>
 
-                    <p>{t('dontHaveAccount')} <Link to='/register'><button><strong>{t('SignUp')} </strong></button></Link></p>
+                    <p>{t('dontHaveAccount')} <Link to='/cadastro'><button><strong>{t('SignUp')} </strong></button></Link></p>
                 </div>
             </article>
 

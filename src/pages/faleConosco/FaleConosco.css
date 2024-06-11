@@ -44,12 +44,12 @@
     border-radius: 10px;
 }
 
-h1 {
+#ConteudoFaleConosco h1 {
     color: #9D38FD;
     margin-bottom: 10px;
 }
 
-h2 {
+#ConteudoFaleConosco h2 {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #333;

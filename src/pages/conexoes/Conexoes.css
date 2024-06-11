@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+#Conexoes h3 {
+    font-size: 2rem;
+}
+
 .containerAmarelo{
     display: flex;
     flex-direction: row;

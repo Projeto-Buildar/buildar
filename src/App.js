@@ -25,6 +25,7 @@ export default function App() {
           <Route path="pagamento" element={<Pagamento />} />
           <Route path="conexoes" element={<Conexoes />} />
           <Route path="perfil" element={<Perfil />} />
+
         </Routes>
       </BrowserRouter>
     </div>

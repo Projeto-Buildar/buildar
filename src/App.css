@@ -3,21 +3,21 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+p {
+font-size: 1.5rem
 }
 
 .destaqRoxo {
-  color: rebeccapurple;
+  color: #9B33FD;
 }
 
-.destaqAzul {
-  font-weight: 600;
-  color: lightblue;
-}
 
 .destaqBranco {
   font-weight: 600;
