@@ -9,89 +9,92 @@ import calendar from '../../images/calendar.png';
 
 import { Link } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
 
 export default function SextaTela() {
+  const {t, i18n } = useTranslation();
   return(
     <div id="sextaTela" className='frames'>
       <div className='backgroundLeft'></div>
       <div className='backgroundMid'></div>
       <article>
-        <h2>Que tal se tornar um CAPoiardor?</h2>
-        <p>Caso queira uma experiência <span className='destaqBranco'>ainda mais imersiva</span>, aqui estão alguns caminhos.</p>
+        <h2>{t("CAP")}</h2>
+        <p>{t("Paths1")}<span className='destaqBranco'>{t("Paths2")}</span>{t("Paths3")}</p>
       </article>
       <section>
         <div className='offers'>
           <div className='titleCard'>
-            <h3>Estagiário</h3>
-            <h4>Plano mensal</h4>
+            <h3>{t("Intern")}</h3>
+            <h4>{t("Plan")}</h4>
           </div>
           <div>
             <span>
               <img src={event}/>
-              <p>Eventos exclusivos</p>
+              <p>{t("Excl")}</p>
             </span>
             <span>
               <img src={addBlock}/>
-              <p>Nada de anúncios</p>
+              <p>{t("Ads")}</p>
             </span>
             <span>
               <img src={skinAvatar}/>
-              <p>Uma skin só sua</p>
+              <p>{t("Skin")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>Apenas R$12,90</p>
+          <p>{t("Price1")}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">Conferir</Link>
+            <Link to="/pagamento">{t("Check")}</Link>
           </div>
           {/* <div className='offerButton'>Conferir</div> */}
         </div>
         <div className='offers'>
           <div className='titleCard'>
-            <h3>Gerente</h3>
-            <h4>Plano mensal</h4>
+            <h3>{t("Manager")}</h3>
+            <h4>{t("Plan")}</h4>
           </div>
           <div>
             <span>
               <img src={previous}/>
-              <p>Todos os anteriores</p>
+              <p>{t("Prev")}</p>
             </span>
             <span>
               <img src={skinScenary}/>
-              <p>Um cenário especial</p>
+              <p>{t("Scene")}</p>
             </span>
             <span>
               <img src={energy}/>
-              <p>Energia adicional</p>
+              <p>{t("Energy")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>Apenas R$16,90</p>
+          <p>{t("Price2")}</p>
           {/* LINKARRR */}
           <div className='offerButton'>
-            <Link to="/pagamento">Conferir</Link>
+            <Link to="/pagamento">{t("Check")}</Link>
           </div>
 
         </div>
         <div className='offers'>
           <div className='titleCard'>
             <h3>CEO</h3>
-            <h4>Plano anual</h4>
+            <h4>{t("Year")}</h4>
           </div>
           <div>
             <span>
               <img src={previous}/>
-              <p>Todos os anteriores</p>
+              <p>{t("Prev")}</p>
             </span>
             <span>
               <img src={calendar}/>
-              <p>1º mês gratuito</p>
+              <p>{t("FreeMonth")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>Apenas R$14,90</p>
+          <p>{t("Price3")}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">Conferir</Link>
+            <Link to="/pagamento">{t("Check")}</Link>
           </div>
         </div>
       </section>

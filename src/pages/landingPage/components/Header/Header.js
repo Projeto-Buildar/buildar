@@ -11,11 +11,11 @@ export default function Header() {
   const {t, i18n } = useTranslation();
 
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'Português');
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 1);
 
   useEffect(() => {
     // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda
-    i18n.changeLanguage(selectedLanguage === "Inglês" ? "en" : "pt");
+    i18n.changeLanguage(selectedLanguage);
     localStorage.setItem('language', selectedLanguage);
   }, [selectedLanguage]);
 
@@ -34,9 +34,9 @@ export default function Header() {
           <div className='languageButton'>
             <img src={language} />
             <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
-              <option value="Português">Português</option>
-              <option value="Inglês">Inglês</option>
-              <option value="Espanhol">Espanhol</option>
+              <option value="pt">Português</option>
+              <option value="en">Inglês</option>
+              <option value="es">Espanhol</option>
             </select>
           </div>
         </div>

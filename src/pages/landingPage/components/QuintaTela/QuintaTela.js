@@ -1,6 +1,10 @@
 import './QuintaTela.css';
 
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
+
 export default function QuintaTela() {
+    const {t, i18n } = useTranslation();
     return (
         <div className='frames' id='quintaTela'>
             <div className='backgroundLeft'></div>
@@ -10,9 +14,9 @@ export default function QuintaTela() {
                 <div></div>
             </section>
             <article>
-                <h2>Aqui não é só praticar</h2>
-                <p>Eventos inspiradores, gamificação imersiva, conquistas marcantes... A buildar é muito mais!</p>
-                <div>Veja mais</div>
+                <h2>{t("Pratice")}</h2>
+                <p>{t("Events")}</p>
+                <div>{t("More")}</div>
             </article>
         </div>
     )

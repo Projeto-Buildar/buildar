@@ -4,32 +4,38 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import CustomArrow from '../landingPage/components/OitavaTela/CustomArrow';
 
-const corredores = [
-    {
-        softSkill:"Gestão de Tempo"
-        // mapa: ""
-    },
-    {
-        softSkill: "Resiliência"
-    },
-    {
-        softSkill: "Negociação"
-    },
-    {
-        softSkill: "Criatividade"
-    },
-    {
-        softSkill: "Adaptabilidade"
-    },
-    {
-        softSkill: "Empatia"
-    },
-    {
-        softSkill: "Em breve"
-    }
-]
+import { useTranslation } from 'react-i18next';
+import "../../i18n"
 
 export default function Elevadores() {
+
+    const {t, i18n } = useTranslation();
+
+    const corredores = [
+        {
+            softSkill:t("gestão_de_tempo")
+            // mapa: ""
+        },
+        {
+            softSkill: t("resiliência")
+        },
+        {
+            softSkill: t("negociação")
+        },
+        {
+            softSkill: t("criatividade")
+        },
+        {
+            softSkill: t("adaptabilidade")
+        },
+        {
+            softSkill: t("empatia")
+        },
+        {
+            softSkill: t("em_breve")
+        }
+    ];
+
     return (
         <div>
             <Carousel

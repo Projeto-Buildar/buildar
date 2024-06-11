@@ -8,30 +8,34 @@ import tiktok from '../../images/social_tiktok.png';
 import linkedin from '../../images/social_linkedin.png';
 import github from '../../images/social_github.png';
 
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
+
 export default function Footer() {
+  const {t, i18n } = useTranslation();
   return (
     <footer>
       <div className="footerTop">
         <section className="linkList">
           <div className="footer-links">
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/conexoes">Conexões</Link>
-            <Link to="/apoie">Apoie a Buildar</Link>
-            <Link to="/duvidas-frequentes">Dúvidas Frequentes</Link>
-            <Link to="/fale-conosco">Fale Conosco</Link>
-            <Link to="/suporte">Suporte</Link>
+            <Link to="/sobre">{t("About")}</Link>
+            <Link to="/conexoes">{t("Connect")}</Link>
+            <Link to="/apoie">{t("Support")}</Link>
+            <Link to="/duvidas-frequentes">{t("FAQ")}</Link>
+            <Link to="/fale-conosco">{t("Contact")}</Link>
+            <Link to="/suporte">{t("Suporte")}</Link>
           </div>
         </section>
         <section>
           <a href="./index.html"><img src={logo} className="logo" alt="Logo" /></a>
-          <p>Buildar © 2024 | Todos os direitos reservados</p>
+          <p>{t("Rights")}</p>
         </section>
       </div>
       <div className="breakBar"></div>
       <div className="footerBottom">
         <section className="linkList">
-          <a href="#"><p>Política de Privacidade</p></a>
-          <a href="#"><p>Termos de Uso</p></a>
+          <a href="#"><p>{t("Privacy")}</p></a>
+          <a href="#"><p>{t("Terms")}</p></a>
         </section>
         <section className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">

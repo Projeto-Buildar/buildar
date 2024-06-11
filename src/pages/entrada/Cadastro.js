@@ -5,7 +5,11 @@ import GroupFormas from './images/Group-formas.png';
 import formaCadastro1 from './images/forma-cadastro1.png';
 import formaCadastro2 from './images/forma-cadastro2.png';
 
+import { useTranslation } from 'react-i18next';
+import "../../i18n"
+
 export default function Cadastro() {
+    const {t, i18n } = useTranslation();
     return (
         <main id="Cadastro">
             <div className='formas'>
@@ -18,30 +22,30 @@ export default function Cadastro() {
             
             <article>
                 <div className='caixa-esquerda-cadastro'>
-                    <h1>Vamos Buildar juntos o seu Futuro!</h1>
+                    <h1>{t("BuildFuture")}</h1>
                 </div>
                 <div className='caixa-direita-cadastro'>
-                    <h1>Cadastro</h1>
+                    <h1>{t("Registration")}</h1>
                     <form action="">
-                        <h3>Nome</h3>
-                        <input type="text" name="nome" placeholder="Nome" required/>
-                        <h3>Email/Telefone</h3>
-                        <input type="email" name="email" id="email" placeholder="e-mail / telefone" required />
-                        <h3>Senha</h3>
-                        <input type="password" name="password" id="password" placeholder="Informe sua senha" required />
-                        <h3>Confirme a senha</h3>
-                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirme sua senha" required />
+                        <h3>{t("Name")}</h3>
+                        <input type="text" name="nome" placeholder={t("Name")} required/>
+                        <h3>{t("EmailPhone")}</h3>
+                        <input type="email" name="email" id="email" placeholder={t("EmailPhone")} required />
+                        <h3>{t("Password")}</h3>
+                        <input type="password" name="password" id="password" placeholder={t("InformeSenha")} required />
+                        <h3>{t("ConfirmPassword")}</h3>
+                        <input type="password" name="confirm_password" id="confirm_password" placeholder={t("ConfirmPassword")} required />
                         <div className="checkbox-group">
                             <input type="checkbox" name="aceitar_politicas" id="aceitar_politicas" required />
                             <label htmlFor="aceitar_politicas">
-                                Eu aceito as <a href="/politicas-de-privacidade" target="_blank">políticas de privacidade</a>
+                            {t("PrivacyPolicy1")}<a href="/politicas-de-privacidade" target="_blank">{t("PrivacyPolicy2")}</a>
                             </label>
                         </div>
 
-                        <Link to='/home'><input type="submit" id="submit" name="submit" value="Cadastre-se" /></Link>
+                        <Link to='/home'><input type="submit" id="submit" name="submit" value={t("Cadastre-se")} /></Link>
                     </form>
                     
-                    <p>Tem uma conta? <Link to="/login"><button><strong>Conecte-se</strong></button></Link></p>
+                    <p>{t("HaveAccount")} <Link to="/login"><button><strong>{t("Conecte-se")} </strong></button></Link></p>
                 </div>
             </article>
 

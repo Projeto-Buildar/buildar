@@ -5,10 +5,14 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 
 import Carrosel from "./Carrosel"
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
 
 const test = [skin,skin,skin]
 
+
 export default function TerceiraTela() {
+  const {t, i18n } = useTranslation();
   return (
     <div className='frames' id="terceiraTela">
       <section>
@@ -34,8 +38,8 @@ export default function TerceiraTela() {
         </div> */}
       </section>
       <article>
-        <h2>Seja você do seu melhor jeito</h2>
-        <p>Que tal um avatar que encaixe com sua personalidade? A Buildar oferece opções para as <span className='destaqAzul'>características únicas</span> de cada usuário.</p>
+        <h2>{t("Best")}</h2>
+        <p>{t("Avatar1")}<span className='destaqAzul'>{t("Avatar2")}</span>{t("Avatar3")}</p>
       </article>
     </div>
   );
