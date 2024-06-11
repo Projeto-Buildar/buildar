@@ -4,6 +4,31 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import CustomArrow from '../landingPage/components/OitavaTela/CustomArrow';
 
+const corredores = [
+    {
+        softSkill:"Gestão de Tempo"
+        // mapa: ""
+    },
+    {
+        softSkill: "Resiliência"
+    },
+    {
+        softSkill: "Negociação"
+    },
+    {
+        softSkill: "Criatividade"
+    },
+    {
+        softSkill: "Adaptabilidade"
+    },
+    {
+        softSkill: "Empatia"
+    },
+    {
+        softSkill: "Em breve"
+    }
+]
+
 export default function Elevadores() {
     return (
         <div>
@@ -62,13 +87,9 @@ export default function Elevadores() {
                 swipeable
 
             >
-                <Elevador softSkill="Gestão de Tempo"></Elevador>
-                <Elevador softSkill="Resiliência"></Elevador>
-                <Elevador softSkill="Negociação"></Elevador>
-                <Elevador softSkill="Criatividade"></Elevador>
-                <Elevador softSkill="Adaptabilidade"></Elevador>
-                <Elevador softSkill="Empatia"></Elevador>
-                <Elevador softSkill="Outros"></Elevador>
+                {corredores.map(obj => {
+                    return <Elevador link="/corredor" softSkill={obj.softSkill} ></Elevador>
+                })}
             </Carousel>
         </div>
     );

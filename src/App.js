@@ -8,6 +8,7 @@ import Corredor from './pages/corredor/Corredor';
 import SobreNos from './pages/sobre/SobreNos';
 
 import Pagamento from './pages/pagamento/Pagamento';
+// import Conexoes from './pages/conexoes/Conexoes'
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
           <Route path="corredor" element={<Corredor />} />
           <Route path="sobre" element={<SobreNos />} />
           <Route path="pagamento" element={<Pagamento />} />
-
+          {/* <Route path='conexoes' element={<Conexoes/>}></Route> */}
         </Routes>
       </BrowserRouter>
     </div>

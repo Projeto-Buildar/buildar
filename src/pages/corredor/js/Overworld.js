@@ -18,7 +18,9 @@ export default class Overworld {
 
             Object.values(this.map.gameObjects).forEach(object => {
                 object.update({
-                    arrow: this.directionInput.direction
+                    arrow: this.directionInput.direction,
+                    cWidth: this.canvas.width,
+                    cHeight: this.canvas.height
                 });
                 object.sprite.draw(this.ctx);
             });
