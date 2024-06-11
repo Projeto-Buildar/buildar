@@ -1,6 +1,8 @@
 import logo from "./images/Logomarca_Oficial.png";
 import HeaderHome from "../home/HeaderHome";
 import './Voluntario.css';
+import { Link } from 'react-router-dom';
+
 
 export default function Voluntario() {
     return (
@@ -14,7 +16,7 @@ export default function Voluntario() {
                     </p>
                 </div>
             
-            <div class="containerVoluntario">
+            <div id='containerVoluntario'>
 
 
                 <form action="/submit" method="post" class="form">
@@ -43,7 +45,12 @@ export default function Voluntario() {
                         <label for="terms">Eu concordo com os <a href="/terms">termos de uso</a> e a <a href="/privacy">política de privacidade</a>.</label>
                     </div>
 
-                    <button type="submit">Enviar</button>
+                    {/* <button type="submit">Enviar</button> */}
+                    <div>
+                            <Link to="/conexoes">
+                            <button type="submit">Enviar</button>
+                            </Link>
+                        </div>
                 </form>
 
             </div>

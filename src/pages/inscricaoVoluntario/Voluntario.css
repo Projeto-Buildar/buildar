@@ -12,18 +12,30 @@
     }
     #titulo{
         margin-top: 50px;
-        width: 600px;
-        padding-left: 150px;
+        width: 650px;
+        /* padding-left: 150px;
         padding-right: 150px;
-        padding-top: 30px;
+        padding-top: 30px; */
+        padding: 10px 30px;
         align-content: center;
+        justify-content: center;
+        line-height: 1.6; /* Ajusta a altura da linha */
+    text-align: justify; /* Justifica o texto */
+    hyphens: auto; /* Permite quebra automática de palavras */
     
     }
-    .containerVoluntario {
-        background: #AC54FF;
+
+    #titulo h1 {
+        font-size: 30px;
+    }
+
+    #titulo p {
+        font-size: 18px;
+    }
+    #containerVoluntario {
+        background: #9B33FD;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(137, 133, 133, 0.1);
         width: 100%;
         max-width: 500px;
         margin: 20px;
@@ -32,7 +44,7 @@
         justify-content: center ;
     }
 
-    h1 {
+    #containerVoluntario h1 {
         text-align: center;
         color: #cc78d8;
     }
@@ -56,7 +68,7 @@
     .form-group label {
         display: block;
         margin-bottom: 5px;
-        color:purple;
+        color:white;
     }
 
     .form-group input[type="name"],
@@ -64,9 +76,10 @@
     .form-group textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        border-color:azure;
+        box-shadow: none;
     }
 
     .form-group input[type="checkbox"] {
@@ -74,7 +87,8 @@
     }
 
     .form-group label a {
-        color: #00ccbb;
+        color: #FFB412;
+        font-weight: 500;
         text-decoration: none;
     }
 
@@ -82,8 +96,8 @@
         text-decoration: underline;
     }
 
-    button {
-        background-color: #58D2FF;
+    #containerVoluntario button {
+        background-color: #9FF55D;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -95,8 +109,8 @@
         justify-content: center;
     }
 
-    button:hover {
-        background-color: #9000b4;
+    #containerVoluntario button:hover {
+        background-color: #82e337;
     }
 
 
