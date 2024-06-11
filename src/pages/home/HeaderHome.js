@@ -18,7 +18,7 @@ const textoBtn = [
   },
   {
     texto: "Perfil",
-    // linkado: "/perfil"
+    linkado: "/perfil"
   },
   {
     texto: "Mais",

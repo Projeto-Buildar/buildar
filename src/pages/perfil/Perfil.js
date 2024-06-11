@@ -10,7 +10,12 @@ import grafico1 from "./images/grafico 3.png"
 import Header from "../home/HeaderHome"
 import HeaderHome from "../home/HeaderHome"
 
+import { useTranslation } from 'react-i18next';
+import "../../i18n"
+
 export default function Perfil (){
+    const {t, i18n } = useTranslation();
+
     return (
         <main id = 'Perfil'>
             <HeaderHome/>
@@ -20,7 +25,7 @@ export default function Perfil (){
                     <div className="container_centro">
                         <span className="ImgPerfil"><a href="#"><img src={FotoPerfil} alt="Foto de perfil" className="Perfil" /></a></span>
                         <div className="Descricao">
-                            <h3 className="nome">Nome</h3>
+                            <h3 className="nome">Nome{t("header.title")}</h3>
                             <h4 className="Tempo">Tempo de conta</h4>
                         </div>
                         <div className="status">
