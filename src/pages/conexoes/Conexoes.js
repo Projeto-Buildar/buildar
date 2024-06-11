@@ -22,7 +22,7 @@ export default function Conexoes() {
                 <iframe
                     width="600"
                     height="300"
-                    src="https://www.youtube.com/watch?v=PzUZsoyMXuY"
+                    src="https://www.youtube.com/embed/PzUZsoyMXuY"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -33,7 +33,7 @@ export default function Conexoes() {
                 <iframe
                     width="300"
                     height="150"
-                    src="https://www.youtube.com/watch?v=PzUZsoyMXuY"
+                    src="https://www.youtube.com/embed/pU7bVeJ5M5c&t=6s"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -43,7 +43,7 @@ export default function Conexoes() {
                 <iframe
                     width="300"
                     height="150"
-                    src="https://www.youtube.com/watch?v=PzUZsoyMXuY"
+                    src="https://www.youtube.com/embed/pU7bVeJ5M5c&t=6s"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
