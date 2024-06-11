@@ -12,6 +12,7 @@ a{
     height: 100vh;
     display: flex;
 }
+
 .lado_esquerdo{
     display: flex;
     align-items: center;
@@ -22,15 +23,17 @@ a{
     display: flex;
     flex-direction: column;
 }
+
 .ContainerLadoEsquedo{
     padding-top: 25px;
 }
-.logo{
+
+/* .logo{
     width: 212px;
     height: 63.98px;
     margin-left: 20px;
     margin-bottom: 40px;
-}
+} */
 
 .Botoes{
     display: flex;

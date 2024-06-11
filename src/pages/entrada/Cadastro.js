@@ -13,7 +13,9 @@ export default function Cadastro() {
     return (
         <main id="Cadastro">
             <div className='formas'>
+                
                 <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' /> 
+
             </div>
             <header>
                 <img src={logo} alt="Logo" className="logo" />
