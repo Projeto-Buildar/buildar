@@ -1,12 +1,16 @@
 import './SegundaTela.css';
 // import gif from 'https://www.icegif.com/wp-content/uploads/mario-icegif-24.gif';
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
 
-export default function SegundaTela() {
+export default function SecondScreen() {
+
+  const {t, i18n } = useTranslation();
   return (
-    <div className='frames' id="segundaTela">
+    <div className='frames' id="secondScreen">
       <article>
-        <h2>Que tal treinar soft skills virtualmente?</h2>
-        <p>Com simulações de ambientes profissionais, você consegue crescer! Dê um up em suas soft skills de maneira <span className='destaqAzul'>fácil</span> e <span className='destaqAzul'>divertida</span>.</p>
+        <h2>{t('trainSoftSkills')}</h2>
+        <p>{t('simulationDescription')} <span className='highlightBlue'>{t('easy')}</span> {t('and')} <span className='highlightBlue'>{t('fun')}</span>.</p>
       </article>
       <section>
         <div className='monitor'>
