@@ -1,13 +1,17 @@
 import './QuartaTela.css';
 import image from '../../images/quartaTela_img.png';
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
 
 export default function QuartaTela() {
+
+  const {t, i18n } = useTranslation();
   return(
     <div className='frames' id="quartaTela">
       <div className='backgroundLeft'></div>
       <article>
-        <h2>Uma plataforma acessível a todo mundo</h2>
-        <p>Pagar pra aprender? Só se quiser! Aqui contamos com uma opção <span className='destaqAzul'>100% gratuita</span> pra quem estiver afim.</p>
+        <h2>{t('accessiblePlatform')}</h2>
+        <p>{t('learningOption')} <span className='destaqAzul'>{t('free')}</span> {t('ifInterested')}.</p>
       </article>
       <figure>
         <img src={image}/>

@@ -10,40 +10,48 @@ import user3 from '../../images/user3.png';
 
 import Carousel from "react-multi-carousel";
 
-const userInfo = [
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
+
+
+
+
+export default function Depoiments() {
+
+  const {t, i18n } = useTranslation();
+
+  const userInfo = [
     {
         image: user1,
-        name: 'carlos',
+        name: 'Carlos',
         age: '19',
-        text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
+        text: t('carlosExperience'),
         color: '#FFB412'
     },
     {
         image: user2,
-        name: 'Nome Nomeira',
+        name: 'Marina Ribeiro',
         age: '23',
-        text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
+        text: t('nameExperience'),
         color: '#58D2FF'
     },
     {
         image: user3,
-        name: 'Nome Nomenta da N',
+        name: 'Arthur',
         age: '23',
-        text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
+        text: t('nameNomentaExperience'),
         color: '#FFB412'
     },
     {
       image: user3,
-      name: 'Nome Nomenta da N',
+      name: 'Name Nomenta da N',
       age: '23',
-      text: 'Minha experiência na Buildar foi transformadora. Várias vez, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.',
+      text: t('nameNomentaExperience'),
       color: '#FFB412'
   },
   
 ];
 
-export default function Depoiments() {
-    
     return (
         <Carousel     
         customRightArrow={<CustomArrow props={"arrow"}></CustomArrow>}
