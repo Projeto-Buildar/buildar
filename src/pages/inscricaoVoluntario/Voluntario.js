@@ -1,16 +1,11 @@
 import logo from "./images/Logomarca_Oficial.png";
+import HeaderHome from "../home/HeaderHome";
 import './Voluntario.css';
 
 export default function Voluntario() {
     return (
-        <main>
-            <header>
-
-                <div id="imagem">
-                    <img src={logo} alt="Logo" className="logo" />
-                </div>
-
-            </header>
+        <main id='voluntario'>
+            <HeaderHome/>
 
                 <div id="titulo">
                     <h1>Seja um(a) Voluntário(a)</h1>
@@ -19,7 +14,7 @@ export default function Voluntario() {
                     </p>
                 </div>
             
-            <div class="container">
+            <div class="containerVoluntario">
 
 
                 <form action="/submit" method="post" class="form">
