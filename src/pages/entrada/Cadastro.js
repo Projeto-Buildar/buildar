@@ -9,19 +9,22 @@ import { useTranslation } from 'react-i18next';
 import "../../i18n"
 
 export default function Cadastro() {
-    const {t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     return (
         <main id="Cadastro">
             <div className='formas'>
-                
-                <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' /> 
+
+                <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' />
 
             </div>
             <header>
-                <img src={logo} alt="Logo" className="logo" />
-                <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2'/> 
+                <Link to="/">
+                    <img src={logo} alt="Logo" className="logo" />
+                </Link>
+
+                <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
             </header>
-            
+
             <article>
                 <div className='caixa-esquerda-cadastro'>
                     <h1>{t("BuildFuture")}</h1>
@@ -30,7 +33,7 @@ export default function Cadastro() {
                     <h1>{t("Registration")}</h1>
                     <form action="">
                         <h3>{t("Name")}</h3>
-                        <input type="text" name="nome" placeholder={t("Name")} required/>
+                        <input type="text" name="nome" placeholder={t("Name")} required />
                         <h3>{t("EmailPhone")}</h3>
                         <input type="email" name="email" id="email" placeholder={t("EmailPhone")} required />
                         <h3>{t("Password")}</h3>
@@ -40,18 +43,18 @@ export default function Cadastro() {
                         <div className="checkbox-group">
                             <input type="checkbox" name="aceitar_politicas" id="aceitar_politicas" required />
                             <label htmlFor="aceitar_politicas">
-                            {t("PrivacyPolicy1")}<a href="/politicas-de-privacidade" target="_blank">{t("PrivacyPolicy2")}</a>
+                                {t("PrivacyPolicy1")}<a href="/politicas-de-privacidade" target="_blank">{t("PrivacyPolicy2")}</a>
                             </label>
                         </div>
 
                         <Link to='/home'><input type="submit" id="submit" name="submit" value={t("Cadastre-se")} /></Link>
                     </form>
-                    
+
                     <p>{t("HaveAccount")} <Link to="/login"><button><strong>{t("Conecte-se")} </strong></button></Link></p>
                 </div>
             </article>
 
-            <Outlet/>
+            <Outlet />
         </main>
     );
 }
