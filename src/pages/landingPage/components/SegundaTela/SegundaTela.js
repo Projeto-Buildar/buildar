@@ -3,14 +3,14 @@ import './SegundaTela.css';
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 
-export default function SecondScreen() {
+export default function SegundaTela() {
 
   const {t, i18n } = useTranslation();
   return (
-    <div className='frames' id="secondScreen">
+    <div className='frames' id="segundaTela">
       <article>
         <h2>{t('trainSoftSkills')}</h2>
-        <p>{t('simulationDescription')} <span className='highlightBlue'>{t('easy')}</span> {t('and')} <span className='highlightBlue'>{t('fun')}</span>.</p>
+        <p>{t('simulationDescription')} <span className='destaqAzul'>{t('easy')}</span> {t('and')} <span className='highlightBlue'>{t('fun')}</span>.</p>
       </article>
       <section>
         <div className='monitor'>

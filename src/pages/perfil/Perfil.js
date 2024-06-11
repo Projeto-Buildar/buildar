@@ -25,29 +25,29 @@ export default function Perfil (){
                     <div className="container_centro">
                         <span className="ImgPerfil"><a href="#"><img src={FotoPerfil} alt="Foto de perfil" className="Perfil" /></a></span>
                         <div className="Descricao">
-                            <h3 className="nome">Nome{t("header.title")}</h3>
-                            <h4 className="Tempo">Tempo de conta</h4>
+                            <h3 className="nome">Nome</h3>
+                            <h4 className="Tempo">{t('accountTime')}</h4>
                         </div>
                         <div className="status">
                             <div className="status_esquerda_fogo">
                             <div className="Botao_status_fogo">
                             <span className="ImgFogo"><a href="#"><img src={fogo} alt="Fogo" className="fogo" /></a></span>
-                            <p className="Engajamento">Engajamento</p>
+                            <p className="Engajamento">{t('engagement')}</p>
                             </div>
                             <div className="Botao_status_raio">
                             <span className="ImgRaio"><a href="#"><img src={raio} alt="Raio" className="raio" /></a></span>
-                            <span className="Xp">Total de xp: 40435</span>
+                            <span className="Xp">{t('totalXp')} 40435</span>
                             </div>
                             </div>
                             <div className="Status_direita_trofeu">
                             <div className="Botao_status_trofeu">
                             <span className="ImgTrofeu"><a href="#"><img src={trofeu} alt="trofeu" className="trofeu" /></a></span>
-                            <span className="DescTrofeu">Ouro</span>
+                            <span className="DescTrofeu">{t('gold')}</span> 
                             </div>
                             <div className="Botao_status_medalha">
                             <span className="ImgMedalha"><a href="#"><img src={Medalha} alt="medalha" className="raio" /></a></span>
                             <span className="podio">0 </span>
-                            <span className="Total_xp"> de podios</span>
+                            <span className="Total_xp"> {t('ofPodiums')}</span>
                             </div>
                             </div>
 
@@ -57,14 +57,14 @@ export default function Perfil (){
 
                         <div className="Container_conquistas">
                             <div className="div_texto_conquista">
-                            <h3 className="texto_conquistas">Conquistas</h3>
+                            <h3 className="texto_conquistas">{t('achievements')}</h3>
                             </div>
 
                             <div className="Caixa_conquistas_primaria">
                                 
                                 <img src={quadrado} className="quadrado"></img>
                                 <div className="Caixa_primaria_dentro">
-                                <span className="texto_conquista">Sofisticado</span>
+                                <span className="texto_conquista">{t('sophisticated')}</span>
                                 <img src={grafico1} className="grafico1"></img>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ export default function Perfil (){
 
                             <img src={quadrado} className="quadrado"></img>
                                 <div className="Caixa_segundaria_dentro">
-                                <span className="texto_conquista">Empatia e Resiliência.</span>
+                                <span className="texto_conquista">{t('empathyAndResilience')}</span>
                                 <img src={grafico1} className="grafico1"></img>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function Perfil (){
 
                             <img src={quadrado} className="quadrado"></img>
                                 <div className="Caixa_teceiraria_dentro">
-                                <span className="texto_conquista">Gênio estratégico </span>
+                                <span className="texto_conquista">{t('strategicGenius')} </span>
                                 <img src={grafico1} className="grafico1"></img>
                                 </div>
                             </div>
