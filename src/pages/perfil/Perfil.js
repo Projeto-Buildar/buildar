@@ -8,35 +8,14 @@ import Medalha from "./images/Medalha.png"
 import quadrado from "./images/Quadrado.png"
 import grafico1 from "./images/grafico 3.png"
 import Header from "../home/HeaderHome"
+import HeaderHome from "../home/HeaderHome"
 
 export default function Perfil (){
     return (
-        <main>
-            <Header></Header>
+        <main id = 'Perfil'>
+            <HeaderHome/>
             <div className="Container_geral">
             
-                <section className="lado_esquerdo">
-                    <div className="ContainerLadoEsquedo">
-                    <span className="ImgLogo"><a href="#"><img src={Logo} alt="Logo" className="logo" /></a></span>
-                        <div className="Botoes">
-                        <a href="#"><div className="Botao">
-                            <h3>Praticar</h3>
-                            </div></a>
-                            <a href="#"><div className="Botao">
-                            <h3>Ligas</h3>
-                            </div></a>
-                            <a href="#"><div className="Botao">
-                            <h3>Lojas</h3>
-                            </div></a>
-                            <a href="#"><div className="Botao">
-                            <h3>Perfil</h3>
-                            </div></a>
-                            <a href="#"><div className="Botao">
-                            <h3>Ajuda</h3>
-                            </div></a>
-                        </div>
-                    </div>
-                </section>
                 <aside className="centro">
                     <div className="container_centro">
                         <span className="ImgPerfil"><a href="#"><img src={FotoPerfil} alt="Foto de perfil" className="Perfil" /></a></span>
