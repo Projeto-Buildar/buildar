@@ -4,22 +4,28 @@ export default class Person extends GameObject {
     constructor(config) {
         super(config);
         this.movingProgressRemaining = 0;
+
         this.isPlayerControlled = config.isPlayerControlled || false;
-        this.speed = 8; // Velocidade em unidades por segundo
+
+        this.speed = 0.7;
+        this.total = 0;
+
         this.directionUpdate = {
             "down": ["y", 1],
             "up": ["y", -1],
             "left": ["x", -1],
             "right": ["x", 1],
-        };
+        }
+
     }
 
     update(state) {
         this.updatePosition(state);
-
+        
         if (this.isPlayerControlled && this.movingProgressRemaining === 0 && state.arrow) {
             this.direction = state.arrow;
-            this.movingProgressRemaining = 16; // Define o progresso de movimento para 16 pixels
+            this.movingProgressRemaining = Math.round(16 / this.speed);
+            this.total = 0;
         }
 
         this.updateSprite(state);
@@ -28,32 +34,33 @@ export default class Person extends GameObject {
     updatePosition(state) {
         if (this.movingProgressRemaining > 0) {
             let [property, change] = this.directionUpdate[this.direction];
-            const moveAmount = change * this.speed * state.deltaTime * 16;
-
-            // Verifica se o movimento ultrapassa os limites do canvas
+            this.total = (this.total * 10 + this.speed * 10) / 10;
+            
+            // Verificar se o personagem está prestes a sair dos limites
             if (property === "x") {
-                const nextX = this[property] + moveAmount;
-                if (nextX < 0 || nextX > state.cWidth - 16) {
-                    // Ajusta a posição para garantir que o personagem pare no limite do canvas
-                    this[property] = Math.max(0, Math.min(state.cWidth - 16, nextX));
+                if ((change === -1 && this.sprite.gameObject.x <= 0) || 
+                    (change === 1 && this.sprite.gameObject.x + this.sprite.width - this.sprite.distanciaX >= state.cWidth + this.sprite.distanciaX)) {
                     this.movingProgressRemaining = 0;
                     return;
                 }
             } else if (property === "y") {
-                const nextY = this[property] + moveAmount;
-                if (nextY < 0 || nextY > state.cHeight - 16) {
-                    // Ajusta a posição para garantir que o personagem pare no limite do canvas
-                    this[property] = Math.max(0, Math.min(state.cHeight - 16, nextY));
+                if ((change === -1 && this.sprite.gameObject.y <= 0) || 
+                    (change === 1 && this.sprite.gameObject.y + this.sprite.height - this.sprite.distanciaY >= state.cHeight)) {
                     this.movingProgressRemaining = 0;
                     return;
                 }
             }
+            
+            if (this.movingProgressRemaining !== 1) {
+                this[property] += change * ((this.speed * 10) / 10);
+            } else{
+                const valor = ((this.speed * 10) / 10) + ((16 - this.total));
+                this[property] += change * valor; 
+            }
+            
+            this.movingProgressRemaining -= 1;
 
-            // Garante que o movimento restante seja preciso
-            const remainingMove = Math.abs(moveAmount) < Math.abs(this.movingProgressRemaining) ? Math.abs(moveAmount) : this.movingProgressRemaining;
 
-            this[property] += change * remainingMove;
-            this.movingProgressRemaining -= remainingMove;
         }
     }
 

@@ -5,4 +5,5 @@ export default function init(element) {
         element: element
     });
     overworld.init();
+    return overworld;
 }

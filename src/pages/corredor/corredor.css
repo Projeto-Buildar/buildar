@@ -10,16 +10,15 @@
 }
 
 .game-container {
-    position: relative;
-    background: #9ae2ff;
-    width: 352px;
-    height: 198px;
-    margin: 0 auto;
-    outline: 1px solid #fff;
-  
-    transform: scale(2) translateY(50%);
-  }
-  
-  .game-container canvas {
-    image-rendering: pixelated;
-  }
+  position: relative;
+  background: #9ae2ff;
+  width: 336px;
+  height: 192px;
+  margin: 0 auto;
+  outline: 1px solid #fff;
+  transform: scale(2) translateY(50%);
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+}
