@@ -7,7 +7,7 @@ import circulodireito from "./images/circulodireito.png";
 export default function FaleConosco() {
     return (
         
-        <div className="App">
+        <div className="App" id="ConteudoFaleConosco">
             <img src={logo} alt="Logo" className="logo_img" />
             <img src={circuloesquerdo} alt="Círculo Esquerdo" className="circulo-esquerdo" />
         

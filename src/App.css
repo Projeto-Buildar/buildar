@@ -10,14 +10,14 @@ h2 {
   font-size: 2rem;
 }
 
-.destaqRoxo {
-  color: rebeccapurple;
+p {
+font-size: 1.5rem
 }
 
-.destaqAzul {
-  font-weight: 600;
-  color: lightblue;
+.destaqRoxo {
+  color: #9B33FD;
 }
+
 
 .destaqBranco {
   font-weight: 600;

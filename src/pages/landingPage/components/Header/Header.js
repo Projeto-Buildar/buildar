@@ -11,7 +11,7 @@ export default function Header() {
   const {t, i18n } = useTranslation();
 
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 1);
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
 
   useEffect(() => {
     // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda

@@ -10,11 +10,13 @@ import Conexoes from './pages/conexoes/Conexoes';
 
 import Pagamento from './pages/pagamento/Pagamento';
 import Perfil from './pages/perfil/Perfil';
+import Voluntario from './pages/inscricaoVoluntario/Voluntario'
 
 export default function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+
+   <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Login />} />
@@ -25,8 +27,11 @@ export default function App() {
           <Route path="pagamento" element={<Pagamento />} />
           <Route path="conexoes" element={<Conexoes />} />
           <Route path="perfil" element={<Perfil />} />
+          <Route path="inscricaoVoluntario" element={<Voluntario />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
+
+      
     </div>
   );
 }

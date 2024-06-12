@@ -25,8 +25,8 @@ export default function HeaderHome() {
       linkado: "/perfil"
     },
     {
-      texto: t("Plus"),
-      // linkado: "/mais"
+      texto: t("voluntary"),
+       linkado: "/inscricaoVoluntario"
     }
   ]
 

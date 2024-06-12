@@ -22,14 +22,14 @@ export default function Cadastro() {
                     <img src={logo} alt="Logo" className="logo" />
                 </Link>
 
-                <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
             </header>
+            <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
 
             <article>
                 <div className='caixa-esquerda-cadastro'>
                     <h1>{t("BuildFuture")}</h1>
                 </div>
-                <div className='caixa-direita-cadastro'>
+                <div className='caixa-direita-cadastro' id='CaixaCadastro'>
                     <h1>{t("Registration")}</h1>
                     <form action="">
                         <h3>{t("Name")}</h3>
@@ -50,7 +50,14 @@ export default function Cadastro() {
                         <Link to='/home'><input type="submit" id="submit" name="submit" value={t("Cadastre-se")} /></Link>
                     </form>
 
-                    <p>{t("HaveAccount")} <Link to="/login"><button><strong>{t("Conecte-se")} </strong></button></Link></p>
+                   
+                    <div className='conecte-se-container'>
+                        <p>{t("HaveAccount")}</p>
+                        <Link to="/login">
+                            <button className='conecte-se'><strong>{t("Conecte-se")}</strong></button>
+                        </Link>
+                    </div>
+
                 </div>
             </article>
 

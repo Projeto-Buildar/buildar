@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/logo_on.png';
-import calendar from './images/calendario.png';
 import visa from './images/Visa.png';
 import mastercard from './images/Mastercard.png';
 import hipercard from './images/Hipercard.png';
@@ -43,7 +42,7 @@ export default function Pagamento() {
 
   // Renderização do componente
   return (
-    <main className="main-container">
+    <main className="main-container" id='Pagamento'>
       <div id='headerPagamento'>
         <Link to="/"><img src={logo} className='logoVivi' alt="Logo" /></Link>
       </div>
@@ -87,7 +86,6 @@ export default function Pagamento() {
           <input type="text" inputMode="numeric" maxLength="4" minLength="3" pattern="\d*" title="Digite o código CVV de 3 ou 4 dígitos do seu cartão" placeholder="CVV" className="half-width" />
           <div className="date-input-container">
             <input type="date" placeholder="DD/MM/AA" className="date-input" />
-            {/* <img src={calendar} alt="Ícone de Calendário" className="calendar-icon" /> */}
           </div>
           <input type="text" placeholder="Nome" className="half-width" />
           <input type="text" placeholder="Sobrenome" className="half-width" />
@@ -102,7 +100,6 @@ export default function Pagamento() {
           />
           <div className="date-input-container">
             <input type="date" placeholder="DD/MM/AA" className="date-input" />
-            {/* <img src={calendar} alt="Ícone de Calendário" className="calendar-icon" /> */}
           </div>
           <button type="submit" className="submit-button">Finalizar Compra</button>
         </form>
