@@ -1,92 +1,95 @@
-.App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.logo_img {
-    margin-bottom: 44%;
-    position: fixed;
-    padding-right: 1300px;
-    margin-top: 3%;
-    max-width: 600%;
-    height: auto;
-    max-height: 800px;
-}
-
-.circulo-esquerdo {
-    padding-right: 1400px;
-    position: fixed;
-    margin-top: 20%;
-}
-
-.circulo-direito {
-    padding-left: 1400px;
-    position: fixed;
-    margin-bottom: 30%;
-  
-
-}
-
-
-
-
-
-.App-header {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+:root {
+    --cor-primaria: #9D38FD;
+    --cor-secundaria: #7d2bcf;
+    --cor-texto: #333;
+    --cor-borda: rgb(207, 215, 215);
+    --sombra-leve: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --sombra-pesada: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 #ConteudoFaleConosco h1 {
-    color: #9D38FD;
-    margin-bottom: 10px;
+    color: var(--cor-primaria);
 }
 
 #ConteudoFaleConosco h2 {
     font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #333;
+    color: var(--cor-texto);
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#ConteudoFaleConosco .headerFaleConosco {
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+#ConteudoFaleConosco .headerFaleConosco .logoVivi {
+    padding-left: 153px; 
+    margin: 6px 0px;
+    width: 210px;
+    height: auto;
+  }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
+#ConteudoFaleConosco .circulo-esquerdo {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    }
+
+#ConteudoFaleConosco .circulo-direito {
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 30%;
+    }
+
+#ConteudoFaleConosco .contact-form .form-group input,
+#ConteudoFaleConosco .contact-form .form-group textarea {
+    width: 100%; 
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px; 
     margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-leve);
 }
 
-.form-group input[type="tel"] {
-    margin-left: 10px;
-    height: 50px;
+#ConteudoFaleConosco .contact-form .form-group {
+    display: flex;
+    flex-direction: row; /* Coloca os elementos lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre os elementos */
+    margin-bottom: 15px;
+    width: 40%; /* Ajuste a largura conforme necessário */
 }
 
-button[type="submit"] {
+
+
+#ConteudoFaleConosco .formulario{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ConteudoFaleConosco .ConteudoFaleConsocoTexto {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction:column;
+    margin-bottom: 3rem;
+}
+
+
+#ConteudoFaleConosco .contact-form textarea[name="message"] {
+    height: 150px; 
+    resize: none; 
+}
+
+/* Estilo para o botão de submit */
+#ConteudoFaleConosco .formulario .contact-form button[type="submit"] {
     padding: 10px 20px;
-    background-color: #9D38FD;
+    background-color: var(--cor-primaria);
     color: white;
     border: none;
     border-radius: 25px;
@@ -94,10 +97,33 @@ button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 15px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--sombra-pesada);
+    width: auto; /* Ajuste a largura conforme necessário */
 }
 
-button[type="submit"]:hover {
-    background-color: #7d2bcf;
+#ConteudoFaleConosco .formulario .contact-form button[type="submit"]:hover {
+    background-color: var(--cor-secundaria);
 }
+
+/* Estilos gerais do formulário */
+#ConteudoFaleConosco .formulario .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajuste a largura conforme necessário */
+}
+
+
+
+
+
+
+
+
+/* TENTEI PADRONIZAR OS DOIS */
+#ConteudoFaleConosco .contact-form .form-group input[type="email"] {
+    padding: 20px 25px;
+    margin-bottom: 15px;
+} 
+
 

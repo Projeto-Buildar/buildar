@@ -8,7 +8,7 @@
   margin-bottom: 10px;
 }
 
-.main-container {
+#Pagamento {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 /* Estilos do logo */
-.logoVivi {
+#headerPagamento .logoVivi {
   align-self: flex-start; 
   padding-left: 153px; 
   margin: 6px 0px;
@@ -35,7 +35,7 @@
 }
 
 /* Estilos do formulário de pagamento */
-.formPagamento {
+#formPagamento {
   width: 100%;
   max-width: 600px; 
   margin: 20px auto; 
@@ -43,23 +43,23 @@
 }
 
 /* Estilos dos ícones de pagamento */
-.card-icon {
-  margin-right: 10px;
+#formPagamento .payment-icons .card-icon {
   width: 70px;
 }
 
-.payment-icon {
-  margin-left: -8px;
-  width: 70px;
-
+#formPagamento .payment-icons {
+  display: flex;
+  justify-content:flex-start; 
+  align-items: center; 
+  gap: 10px; 
 }
 
-.payment-icon-pix {
+#formPagamento .payment-icon-pix {
   width: 30px;
   margin: 0px 5px 0px 5px;
 }
 
-.payment-form {
+#formPagamento .payment-form {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-gap: 15px; 
@@ -74,7 +74,7 @@ input {
 }
 
 /* Estilos do botão de envio */
-.submit-button {
+.payment-form .submit-button {
   grid-column: span 2; 
   padding: 12px 0px;
   border-radius: 10px;
@@ -87,11 +87,11 @@ input {
   font-weight: bold;
 }
 
-.submit-button:hover {
+.payment-form .submit-button:hover {
   background-color: #5d18ac;
 }
 
-.payment-form .half-width {
+#formPagamento .payment-form .half-width {
   grid-column: span 1; 
 }
 
@@ -102,7 +102,7 @@ input {
   align-items: center;
 }
 
-.date-input {
+.payment-form .date-input-container .date-input {
   flex-grow: 1; 
 }
 
@@ -141,4 +141,3 @@ input {
 }
 
 
- 

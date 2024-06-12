@@ -46,7 +46,7 @@ export default function Pagamento() {
       <div id='headerPagamento'>
         <Link to="/"><img src={logo} className='logoVivi' alt="Logo" /></Link>
       </div>
-      <div className='formPagamento'>
+      <div id='formPagamento'>
         <h1>Pagamento</h1>
         <h2>Escolha a forma de pagamento</h2>
         <div className="payment-icons">

@@ -1,15 +1,15 @@
 /* src/components/Footer.css */
-#landingPage footer {
+#landingPage #footer {
     display: flex;
     align-items: center;
     flex-flow: column;
     width: 100%;
     padding-block: 10vh;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #9B33FD;
   }
   
-  .footerTop, .footerBottom {
+  #footer .footerTop, .footerBottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
     gap: 1rem;
   }
   
-  .logo {
+  #footer .footerTop .logo {
     height: 6rem;
   }
   
@@ -27,20 +27,29 @@
     gap: 6rem;
   }
   
-  .footerTop .linkList {
+  #footer .footerTop .linkList {
     gap: 12rem;
   }
   
   #landingPage footer li {
     margin-block: 1rem;
+    
   }
   
-  .social img {
+  .footerBottom .social img {
     height: 3rem;
     margin-inline: 1rem;
     border-radius: 100rem;
   }
   
+  .footerBottom .social {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+  }
+
+
   .breakBar {
     width: 80%;
     height: 2px;
@@ -56,18 +65,42 @@
     flex-wrap: wrap;
   }
   
-  .footer-links {
+  #footer .footerTop .linkList .footer-links {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction:row;
+    gap: 20rem;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
+
+  .link-group {
+    display: flex; /* Ativa o Flexbox para cada grupo */
+    flex-direction: column; /* Organiza os links em coluna */
+  }
+  
   
   .footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
+    margin: 15px 0px;
   }
+
+  .footer-links a:hover {
+    color: #ffd700;
+  
+  }
+
+.footer-linkList p, .footer-rigth  {
+  font-size: 16px; 
+  color: #ffffff; 
+  margin: 10px 0; 
+  text-decoration: none; 
+}
+
+
+
+.footer-linkList p:hover {
+  color: #ffd700;
+}
   
