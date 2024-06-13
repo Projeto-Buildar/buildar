@@ -25,7 +25,7 @@ export default function FaleConosco() {
                     <div className="form-group">
                         <input type="text" name="nome" placeholder="Nome completo" required />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group info">
                         <input type="email" placeholder="Email" required />
                         <input type="tel" name="telefone" placeholder="Telefone" required />
                     </div>
