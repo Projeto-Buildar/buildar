@@ -1,82 +1,40 @@
-
-import forma from "../conexoes/images/forma branca.png";
-import "../conexoes/Conexoes.css";
-import Forma2 from "../conexoes/images/amarelo lilas azul.png";
-import imgFormulario from "../conexoes/images/imagem formulario.png";
-import EventSearch from "../conexoes/EventSearch"
-import HeaderHome from "../home/HeaderHome";
-import { Link } from 'react-router-dom';
-
-
-export default function Conexoes() {
-    return (
-
-        <main id='Conexoes'>
-
-            <div className="containerAmarelo">
-                <img src={forma} />  <h2>TRANSMISSÕES E EVENTOS</h2>
-            </div>
-            <HeaderHome />
-            <h3 id="historico">Histórico de transimissões com voluntários</h3>
-
-        <div className="Container-conexoes">
-            <div className="video-container">
-                <iframe
-                    width="600"
-                    height="300"
-                    src="https://www.youtube.com/embed/PzUZsoyMXuY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div className="Video-Esquerdo">
-                <iframe
-                    width="300"
-                    height="150"
-                    src="https://www.youtube.com/embed/pU7bVeJ5M5c&t=6s"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-
-                <iframe
-                    width="300"
-                    height="150"
-                    src="https://www.youtube.com/embed/pU7bVeJ5M5c&t=6s"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-            </div>
-            <div className="botao">
-                <button> VER HISTORICO COMPLETO </button>
-            </div>
-            <img src={Forma2} alt="forma2" className="forma2" />
-
-            <div className="Seja-voluntario">
-                <img src={imgFormulario} alt="imgFormulario" className="imgFormulario" />
-                <div className="textoVoluntario">
-                    <h3>Seja voluntário como palestrante da Buildar</h3>
-                    <p>O que acha de compartilhar suas experiências no mercado de trabalho?
-                        Acesse o formulário e venha buildar com a gente.</p>
-                        <div>
-                            <Link to="/inscricaoVoluntario">
-                                <button>Venha fazer parte</button>
-                            </Link>
-                        </div>
-                </div>
-            </div>
-            <div className="Eventos-externos">
-                <EventSearch />
-            </div>
-        </main>
-
-    )
+.btnsNav{   
+    align-self: flex-end;
+    position: relative;
+    display: inline-block; 
 }
+
+.btnContainer {
+    background-color: #d1cdd4;
+    width: 100px;
+    padding-inline: 20%;
+    padding-top: 20%;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btnContainer.active {
+    background-color: var(--color-primaria);
+    color: #FFFFFF;
+    padding-bottom: 7%;
+    transform: translateY(5px);
+}
+
+.after-element {
+    
+    position: absolute;
+    background-color: blueviolet;
+    width: calc(100% + 600px); /* 60px a mais que a largura da btnContainer */
+    height: 30px;
+    top: 100%;
+    right: 0;
+    transform: translateX(15%);
+    z-index: -2;
+    border-radius: 0 0 40px 40px;
+    cursor: default;
+}
+
+
+
 
