@@ -61,10 +61,14 @@ function EventSearch() {
       <div className="results">
         {results.map((result, index) => (
           <div key={index} className="result-item">
-            <h4>{result.nome}</h4>
-            {result.data && <p>Data: {result.data}</p>}
-            {result.horario && <p>Horário: {result.horario}</p>}
-            {result.local && <p>Local: {result.local}</p>}
+            <div className="result-header">
+              <h4>{result.nome}</h4>
+            </div>
+            <div className="result-details">
+              {result.data && <p>Data: {result.data}</p>}
+              {result.horario && <p>Horário: {result.horario}</p>}
+              {result.local && <p>Local: {result.local}</p>}
+            </div>
           </div>
         ))}
       </div>
