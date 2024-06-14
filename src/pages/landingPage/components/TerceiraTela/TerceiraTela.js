@@ -1,11 +1,11 @@
 import './TerceiraTela.css';
 
 import "react-multi-carousel/lib/styles.css";
-
+// import Carousel from "react-multi-carousel";
 import Carrosel from "./Carrosel"
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
-import Carousel from "react-multi-carousel";
+
 import skin from '../../images/terceiraTela_img.png';
 
 const test = [skin, skin, skin]
@@ -24,9 +24,8 @@ export default function TerceiraTela() {
             qntItensDesk={1}
             autoPlay={true}
             pauseOnHover={true}
-            draggable={false}
-          >
-            conteudo={test.map(obj => { return <div><img src={obj}></img></div> })}
+            draggable={false} 
+            conteudo={test.map(obj => { return <div><img src={obj}></img></div> })}>
           </Carrosel>
         </figure>
         {/* <div className='scrollContainer'>
