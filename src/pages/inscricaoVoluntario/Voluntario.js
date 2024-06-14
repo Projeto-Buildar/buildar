@@ -1,4 +1,3 @@
-import logo from "./images/Logomarca_Oficial.png";
 import HeaderHome from "../home/HeaderHome";
 import './Voluntario.css';
 import { Link } from 'react-router-dom';

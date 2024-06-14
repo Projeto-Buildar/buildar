@@ -104,6 +104,19 @@
     "achievements": "Achievements",
     "sophisticated": "Sophisticated",
     "empathyAndResilience": "Empathy and Resilience.",
-    "strategicGenius": "Strategic genius "
+    "strategicGenius": "Strategic genius ",
+      "eventos": {
+        "titulo": "{t('EXTERNAL EVENTS - Events Search')}",
+        "placeholder": "{t('Enter event name')}",
+        "botaoPesquisar": "{t('Search')}",
+        "semPesquisa": "{t('Please enter a search term.')}",
+        "nenhumEvento": "{t('No events found.')}"
+      },
+      "resultados": {
+        "data": "{t('Date:')}",
+        "horario": "{t('Time:')}",
+        "local": "{t('Location:')}"
+    }
+    
 
   }

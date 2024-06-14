@@ -1,9 +1,11 @@
 import './Cadastro.css';
 import { Outlet, Link } from "react-router-dom";
-import logo from './images/logo_on.png';
+import logo from './images/logo_on.webp';
 import GroupFormas from './images/Group-formas.png';
 import formaCadastro1 from './images/forma-cadastro1.png';
 import formaCadastro2 from './images/forma-cadastro2.png';
+import Header from '../landingPage/components/Header/Header';
+
 
 import { useTranslation } from 'react-i18next';
 import "../../i18n"
@@ -17,12 +19,7 @@ export default function Cadastro() {
                 <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' />
 
             </div>
-            <header>
-                <Link to="/">
-                    <img src={logo} alt="Logo" className="logo" />
-                </Link>
-
-            </header>
+                <Header mostrarSelectIdiomas={false}/>
             <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
 
             <article>

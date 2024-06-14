@@ -1,0 +1,152 @@
+.SobreNos {
+    background-color: #58D2FF;
+    padding: 40px 20px;
+}
+
+.SobreNos h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.SobreNos .content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SobreNos .text-section {
+    max-width: 60%;
+}
+
+.SobreNos .content h2 {
+    color: #000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.SobreNos .content p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.SobreNos .content strong {
+    color: #000;
+}
+
+.SobreNos .ver-mais {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9D38FD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.SobreNos .ver-mais:hover {
+    text-decoration: underline;
+}
+
+.SobreNos .mascot {
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .SobreNos .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .SobreNos .text-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .SobreNos .mascot {
+        margin-left: 0;
+    }
+}
+
+/* New section styles */
+
+.OurWork {
+    background-color: #C6EC3E;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurWork h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.OurWork .intro {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.OurWork .work-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OurWork .work-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.OurWork .work-item img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.OurWork .work-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.OurWork .work-item p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .OurWork .work-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OurWork .work-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .OurWork .work-item img {
+        margin-bottom: 20px;
+    }
+}

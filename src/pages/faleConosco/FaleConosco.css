@@ -17,7 +17,9 @@
 }
 
 #ConteudoFaleConosco .headerFaleConosco {
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
     height: 12vh;
     position: fixed;
     top: 0;
@@ -25,10 +27,8 @@
 }
 
 #ConteudoFaleConosco .headerFaleConosco .logoVivi {
-    padding-left: 153px; 
-    margin: 6px 0px;
     width: 210px;
-    height: auto;
+    margin-left: 10vw;
   }
 
 #ConteudoFaleConosco .circulo-esquerdo {
@@ -59,12 +59,10 @@
     flex-direction: row; 
     justify-content: center; 
     align-items: center; 
-    gap: 10px; 
+    /* gap: 10px;  */
     margin-bottom: 15px;
     width: 40%; 
 }
-
-
 
 #ConteudoFaleConosco .formulario{
     display: flex;
@@ -113,17 +111,12 @@
     width: 100%; 
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
 
-
-
-
-
-
-/* TENTEI PADRONIZAR OS DOIS */
-#ConteudoFaleConosco .contact-form .form-group input[type="email"] {
-    padding: 20px 25px;
-    margin-bottom: 15px;
-} 
 
 
