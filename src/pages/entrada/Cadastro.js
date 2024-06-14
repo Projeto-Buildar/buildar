@@ -1,9 +1,9 @@
 import './Cadastro.css';
 import { Outlet, Link } from "react-router-dom";
 import logo from './images/logo_on.webp';
-import GroupFormas from './images/Group-formas.png';
-import formaCadastro1 from './images/forma-cadastro1.png';
-import formaCadastro2 from './images/forma-cadastro2.png';
+import GroupFormas from './images/Group-formas.webp';
+import formaCadastro1 from './images/forma-cadastro1.webp';
+import formaCadastro2 from './images/forma-cadastro2.webp';
 import Header from '../landingPage/components/Header/Header';
 
 

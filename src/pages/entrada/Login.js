@@ -1,10 +1,10 @@
 import './Login.css';
 import { Outlet, Link } from "react-router-dom";
-import forma3 from './images/Vector-3.png';
-import forma from './images/Vector.png';
+import forma3 from './images/Vector-3.webp';
+import forma from './images/Vector.webp';
 import logo from './images/logo_on.webp';
-import forma2 from './images/forma2.png'
-import forma1 from './images/forma1.png';
+import forma2 from './images/forma2.webp'
+import forma1 from './images/forma1.webp';
 import Header from '../landingPage/components/Header/Header';
 
 // import formasLogin from './images/formas-login.png';

@@ -1,5 +1,5 @@
 import './QuartaTela.css';
-import image from '../../images/quartaTela_img.png';
+import image from '../../images/quartaTela_img.webp';
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 

@@ -1,6 +1,6 @@
 import './Header.css';
 import logo from '../../images/logo_on.webp';
-import language from '../../images/language.png';
+import language from '../../images/language.webp';
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 

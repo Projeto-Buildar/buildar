@@ -1,5 +1,5 @@
 import './PrimeiraTela.css';
-import image from '../../images/primeiraTela_img.png';
+import image from '../../images/primeiraTela_img.webp';
 import { Outlet, Link } from "react-router-dom";
 
 import { useTranslation } from 'react-i18next';

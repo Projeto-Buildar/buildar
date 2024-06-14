@@ -1,11 +1,11 @@
 import './SextaTela.css';
-import event from '../../images/ticket.png';
-import addBlock from '../../images/add_block.png';
-import skinAvatar from '../../images/skin_avatar.png';
-import previous from '../../images/arrow_back.png';
-import skinScenary from '../../images/skin_scenary.png';
-import energy from '../../images/energy.png';
-import calendar from '../../images/calendar.png';
+import event from '../../images/ticket.webp';
+import addBlock from '../../images/add_block.webp';
+import skinAvatar from '../../images/skin_avatar.webp';
+import previous from '../../images/arrow_back.webp';
+import skinScenary from '../../images/skin_scenary.webp';
+import energy from '../../images/energy.webp';
+import calendar from '../../images/calendar.webp';
 
 import { Link } from 'react-router-dom';
 

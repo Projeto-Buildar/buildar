@@ -100,7 +100,7 @@
 #sextaTela .backgroundLeft, #sextaTela .backgroundRight, #sextaTela .backgroundMid {
     height: 110%;
     width: 50%;
-    background: url('../../images/sextaTela_bg2.png') bottom 0 left 0/35% no-repeat;
+    background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/35% no-repeat;
     position: absolute;
     z-index: -1;
 }
@@ -112,13 +112,13 @@
 #sextaTela .backgroundMid {
     height: 88vh;
     width: 100%;
-    background: url('../../images/sextaTela_bg.png') bottom/cover repeat-x;
+    background: url('../../images/sextaTela_bg.webp') bottom/cover repeat-x;
     z-index: -2;
 }
 
 #sextaTela .backgroundRight {
     height: 110%;
-    background: url('../../images/sextaTela_bg3.png') top 0 right 0/35% no-repeat;
+    background: url('../../images/sextaTela_bg3.webp') top 0 right 0/35% no-repeat;
     right: 0;
 }
 

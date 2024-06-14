@@ -2,10 +2,10 @@ import React from 'react';
 import './SobreNos.css';
 import HeaderHome from "../home/HeaderHome";
 import Footer from '../landingPage/components/Footer/Footer';
-import mascot from './images/mascot.png';
-import targetIcon from './images/target.png'; // Adicione os ícones conforme necessário
-import careerIcon from './images/career.png';
-import skillsIcon from './images/skills.png';
+import mascot from './images/mascot.webp';
+import targetIcon from './images/target.webp'; // Adicione os ícones conforme necessário
+import careerIcon from './images/career.webp';
+import skillsIcon from './images/skills.webp';
 
 const SobreNos = () => {
   return (
