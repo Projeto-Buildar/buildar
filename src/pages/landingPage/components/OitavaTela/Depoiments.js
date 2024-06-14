@@ -7,6 +7,7 @@ import CustomArrow from './CustomArrow';
 import user1 from '../../images/user1.webp';
 import user2 from '../../images/user2.webp';
 import user3 from '../../images/user3.webp';
+import userNilvan from '../../images/Nilvan.webp'
 
 import Carousel from "react-multi-carousel";
 
@@ -29,10 +30,10 @@ export default function Depoiments() {
         color: '#FFB412'
     },
     {
-        image: user2,
-        name: 'Marina Ribeiro',
-        age: '23',
-        text: t('nameExperience'),
+        image: userNilvan,
+        name: 'Nilvan',
+        age: '21',
+        text: t('userNilvan'),
         color: '#58D2FF'
     },
     {
