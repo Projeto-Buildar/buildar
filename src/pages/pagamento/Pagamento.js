@@ -1,13 +1,13 @@
 // Importações
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './images/logo_on.png';
-import visa from './images/Visa.png';
-import mastercard from './images/Mastercard.png';
-import hipercard from './images/Hipercard.png';
-import elo from './images/Elo.png';
-import cartaoIcon from './images/cartão_icon.png';
-import pixIcon from './images/logo-pix.png';
+// import logo from './images/logo_on.webp';
+import visa from './images/Visa.webp';
+import mastercard from './images/Mastercard.webp';
+import hipercard from './images/Hipercard.webp';
+import elo from './images/Elo.webp';
+import cartaoIcon from './images/cartão_icon.webp';
+import pixIcon from './images/logo-pix.webp';
 import Header from '../landingPage/components/Header/Header';
 import './pagamento.css';
 

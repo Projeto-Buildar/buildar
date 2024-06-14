@@ -1,5 +1,5 @@
 #primeiraTela {
-    background: url('../../images/primeiraTela_bg.png') right/contain no-repeat;
+    background: url('../../images/primeiraTela_bg.webp') right/contain no-repeat;
     justify-content: space-between;
     padding-inline: 10vw;
     & article {
@@ -56,7 +56,7 @@
 }
 
 #primeiraTela .backgroundLeft {
-    background: url('../../images/primeiraTela_bg2.png') bottom 4% left 2%/auto 20% no-repeat;
+    background: url('../../images/primeiraTela_bg2.webp') bottom 4% left 2%/auto 20% no-repeat;
 }
 
 /* Hover */

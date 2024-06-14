@@ -1,5 +1,5 @@
 import './SetimaTela.css';
-import logo from '../../images/setimaTela_img.png';
+import logo from '../../images/setimaTela_img.webp';
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n";
 

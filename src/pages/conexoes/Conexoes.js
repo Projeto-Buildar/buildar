@@ -1,8 +1,8 @@
 
-import forma from "../conexoes/images/forma branca.png";
+import forma from "../conexoes/images/forma branca.webp";
 import "../conexoes/Conexoes.css";
-import Forma2 from "../conexoes/images/amarelo lilas azul.png";
-import imgFormulario from "../conexoes/images/imagem formulario.png";
+import Forma2 from "../conexoes/images/amarelo lilas azul.webp";
+import imgFormulario from "../conexoes/images/imagem formulario.webp";
 import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
 

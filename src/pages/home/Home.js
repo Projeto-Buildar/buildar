@@ -1,5 +1,5 @@
 import Header from './HeaderHome.js';
-import fundo from './images/image_fundo.png';
+// import fundo from './images/image_fundo.webp';
 import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
 

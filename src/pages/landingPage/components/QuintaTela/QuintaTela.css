@@ -1,7 +1,7 @@
 .backgroundLeft {
     height: 88Vh;
     width: 100%;
-    background: url('../../images/quintaTela_bg.png') top 0 left 0/auto 35% no-repeat;
+    background: url('../../images/quintaTela_bg.webp') top 0 left 0/auto 35% no-repeat;
     position: absolute;
     z-index: -1;
     left: 0;

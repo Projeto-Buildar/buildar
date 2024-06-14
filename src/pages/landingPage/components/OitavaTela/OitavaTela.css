@@ -1,6 +1,6 @@
 #oitavaTela {
     flex-flow: column;
-    background: url('../../images/oitavaTela_bg.png') bottom 0 left 0/auto 30% repeat-x;
+    background: url('../../images/oitavaTela_bg.webp') bottom 0 left 0/auto 30% repeat-x;
 }
 
 
@@ -17,7 +17,7 @@
 .arrow {
     width: 64px;
     height: 80px;
-    background: url('../../images/oitavaTela_next.png') center/contain no-repeat; 
+    background: url('../../images/oitavaTela_next.webp') center/contain no-repeat; 
     position: absolute;
     right: 0;
     z-index: 2;
@@ -56,7 +56,7 @@
     align-items: center;
     flex-flow: column;
     min-width: 288px;
-    background: #FFFFFF url('../../images/oitavaTela_img2.png') top 4% right 8%/auto 8% no-repeat;
+    background: #FFFFFF url('../../images/oitavaTela_img2.webp') top 4% right 8%/auto 8% no-repeat;
     padding: 2rem;
     border-radius: 1rem;
     -webkit-touch-callout: none; /* iPhone OS, Safari */
@@ -93,7 +93,7 @@
 }
 
 .depoiment:nth-child(even) {
-    background: #FFFFFF url('../../images/oitavaTela_img.png') top 4% right 8%/auto 8% no-repeat;
+    background: #FFFFFF url('../../images/oitavaTela_img.webp') top 4% right 8%/auto 8% no-repeat;
 }
 
 /* Hover */
