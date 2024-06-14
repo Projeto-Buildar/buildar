@@ -1,5 +1,5 @@
 import './Header.css';
-import logo from '../../images/logo_on.png';
+import logo from '../../images/logo_on.webp';
 import language from '../../images/language.png';
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 
-export default function Header() {
+export default function Header(props) {
   const {t, i18n } = useTranslation();
 
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
@@ -24,14 +24,14 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header id='headerLadingPage' className={`${props.classe ? props.classe : ""}`} >
       <nav>
         <Link to="/">
           <a href='./index.html'><img src={logo} className='logo' /></a>
         </Link>
         <div>
           <div className='button'>Dê O PLAY</div>
-          <div className='languageButton'>
+          <div className='languageButton' style={{ display: props.mostrarSelectIdiomas ? 'flex' : 'none' }}>
             <img src={language} />
             <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
               <option value="pt">Português</option>

@@ -1,18 +1,19 @@
 import React from "react";
 import "./FaleConosco.css";
-import logo from "./images/Logomarca Oficial.png";
+import logo from "./images/logo_on.webp";
 import circuloesquerdo from "./images/circuloesquerdo.png";
 import circulodireito from "./images/circulodireito.png"; 
 import { Link } from 'react-router-dom';
+import Header from '../landingPage/components/Header/Header';
+
 
 
 export default function FaleConosco() {
     return (
         
         <div id="ConteudoFaleConosco">
-            <div className="headerFaleConosco">
-            <Link to="/"><img src={logo} className='logoVivi' alt="Logo" /></Link>
-            </div>
+            {/* COLOCAR A CLASSE AQUI E ESTILIZAR NADA */}
+                <Header mostrarSelectIdiomas={false}/>
                 <img src={circuloesquerdo} alt="Círculo Esquerdo" className="circulo-esquerdo" />
                 <div className="formulario">
         

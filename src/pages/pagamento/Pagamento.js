@@ -8,6 +8,7 @@ import hipercard from './images/Hipercard.png';
 import elo from './images/Elo.png';
 import cartaoIcon from './images/cartão_icon.png';
 import pixIcon from './images/logo-pix.png';
+import Header from '../landingPage/components/Header/Header';
 import './pagamento.css';
 
 // Componente Pagamento
@@ -43,9 +44,7 @@ export default function Pagamento() {
   // Renderização do componente
   return (
     <main className="main-container" id='Pagamento'>
-      <div id='headerPagamento'>
-        <Link to="/"><img src={logo} className='logoVivi' alt="Logo" /></Link>
-      </div>
+      <Header mostrarSelectIdiomas={false}/>
       <div id='formPagamento'>
         <h1>Pagamento</h1>
         <h2>Escolha a forma de pagamento</h2>

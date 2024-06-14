@@ -2,9 +2,11 @@ import './Login.css';
 import { Outlet, Link } from "react-router-dom";
 import forma3 from './images/Vector-3.png';
 import forma from './images/Vector.png';
-import logo from './images/logo_on.png';
+import logo from './images/logo_on.webp';
 import forma2 from './images/forma2.png'
 import forma1 from './images/forma1.png';
+import Header from '../landingPage/components/Header/Header';
+
 // import formasLogin from './images/formas-login.png';
 import { useTranslation } from 'react-i18next';
 import "../../i18n"
@@ -17,13 +19,7 @@ export default function Login() {
             <div className='formas'>
                 <img src={forma1} alt="forma1" className='forma1' />
             </div>
-            <header>
-                <Link to="/">
-                    <img src={logo} alt="Logo" className="logo" />
-                </Link>
-                <img src={forma2} alt="forma2" className='forma2' />
-            </header>
-
+                <Header mostrarSelectIdiomas={false}/>
             <article>
                 <div className='caixa-esquerda'>
                     <h1>{t('welcomeBack')}</h1>

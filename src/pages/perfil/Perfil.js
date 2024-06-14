@@ -1,4 +1,3 @@
-import Logo from "./images/Logomarca_Oficial.png"
 import "./Perfil.css"
 import FotoPerfil from "./images/Foto Perfil.png"
 import fogo from "./images/Fogo.png"

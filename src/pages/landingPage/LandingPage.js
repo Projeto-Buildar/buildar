@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 export default function LandingPage (){
     return (
         <main id='landingPage'>
-            <Header/>
+            <Header mostrarSelectIdiomas={true}/>
             <PrimeiraTela/>
             <SegundaTela/>
             <TerceiraTela/>

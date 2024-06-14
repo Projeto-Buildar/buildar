@@ -1,12 +1,16 @@
-#Cadastro header{
-    /* margin-left: 10%; */
+/* #Cadastro header{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    /* background-color: #fff;  */
-    /* width: 100%; */
-    /* height: 12vh; */
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    
 }
+#Cadastro header .logo {
+    width: 210px;
+    margin-left: 10vw;
+} */
 
 #Cadastro article h3{
     color: #000;
@@ -25,14 +29,7 @@
     top: 0;
 }
 
-#Cadastro header .logo {
-    /* margin-top:3%; */
-    max-width: 60%;
-    height: auto;
-    max-height: 100px; 
-    width: 210px;
-    padding-left: 153px; 
-}
+
 
 #Cadastro header .formaCadastro2{
     display: flex;
@@ -42,8 +39,7 @@
 #Cadastro article {
     display: flex;
     align-items: center;
-    /* position: relative; */
-    /* padding: 20%; */
+   
     width: 700px; 
     height: 88vh; 
     margin: 0 auto;
