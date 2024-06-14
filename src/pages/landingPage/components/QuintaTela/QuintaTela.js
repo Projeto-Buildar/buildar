@@ -14,7 +14,7 @@ export default function QuintaTela() {
                 <div></div>
             </section>
             <article>
-                <h2>{t("Pratice")}</h2>
+                <h2>{t("Practice")}</h2>
                 <p>{t("Events")}</p>
                 <div>{t("More")}</div>
             </article>

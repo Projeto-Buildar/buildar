@@ -104,6 +104,37 @@
     "achievements": "Logros",
     "sophisticated": "Sofisticado",
     "empathyAndResilience": "Empatía y Resiliencia.",
-    "strategicGenius": "Genio estratégico"
+    "strategicGenius": "Genio estratégico",
+    
+    "userNilvan": "Con juegos divertidos y muy desafiantes, estoy absolutamente seguro de que captará la atención de los jóvenes y los preparará muy bien tanto para su futuro como para su entorno corporativo.",
+    "eventSearch": {
+      "header": "EVENTOS EXTERNOS - Búsqueda de Eventos",
+      "placeholder": "Ingrese el nombre del evento",
+      "button": "Buscar",
+      "noResult": "No se encontraron eventos.",
+      "searchPrompt": "Por favor, ingrese un término de búsqueda."
+    },
+    "events2": {
+      "effectiveComm": "Comunicación Efectiva en el Trabajo",
+      "timeMgmt": "Gestión del Tiempo y Productividad",
+      "teamWork": "Trabajo en Equipo: Estrategias y Prácticas",
+      "leadership": "Liderazgo y Comunicación",
+      "conflictRes": "Resolución de Conflictos en el Trabajo",
+      "nonViolentComm": "Comunicación No Violenta",
+      "timeMgmtLead": "Gestión del Tiempo para Líderes",
+      "collabTeamWork": "Colaboración y Trabajo en Equipo",
+      "presentationTech": "Técnicas de Presentación",
+      "constructiveFeed": "Retroalimentación Constructiva",
+      "activeListening": "Escucha Activa en el Trabajo",
+      "empathy": "Empatía y Relaciones Profesionales",
+      "selfMgmt": "Autogestión y Productividad",
+      "interpersonalComm": "Comunicación Interpersonal",
+      "conflictMgmt": "Gestión de Conflictos",
+      "emotionalInt": "Inteligencia Emocional en el Trabajo",
+      "assertiveComm": "Comunicación Asertiva",
+      "teamChallenges": "Trabajo en Equipo: Desafíos y Soluciones",
+      "productivityFocus": "Productividad y Enfoque",
+      "leadershipTeamMgmt": "Liderazgo y Gestión de Equipos"
+    }
   }
   

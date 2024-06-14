@@ -105,19 +105,34 @@
     "sophisticated": "Sofisticado",
     "empathyAndResilience": "Empatia e Resiliência.",
     "strategicGenius": "Gênio estratégico ",
-    
-
-
-  "eventos": {
-    "titulo": "{t('EVENTOS EXTERNOS - Pesquisa de Eventos')}",
-    "placeholder": "{t('Digite o nome do evento')}",
-    "botaoPesquisar": "{t('Pesquisar')}",
-    "semPesquisa": "{t('Por favor, digite um termo de pesquisa.')}",
-    "nenhumEvento": "{t('Nenhum evento encontrado.')}"
-  },
-  "resultados": {
-    "data": "{t('Data:')}",
-    "horario": "{t('Horário:')}",
-    "local": "{t('Local:')}"
-  } 
+    "userNilvan": "Com jogos divertidos e bastante desafiadores, tenho a total certeza que vai atrair muito a atenção dos jovens e os capacitar muito bem para tanto o seu futuro, quanto o seu ambiente coorporativo",
+      "eventSearch": {
+        "header": "EVENTOS EXTERNOS - Pesquisa de Eventos",
+        "placeholder": "Digite o nome do evento",
+        "button": "Pesquisar",
+        "noResult": "Nenhum evento encontrado.",
+        "searchPrompt": "Por favor, digite um termo de pesquisa."
+      },
+      "events2": {
+        "effectiveComm": "Comunicação Eficaz no Ambiente de Trabalho",
+        "timeMgmt": "Gestão de Tempo e Produtividade",
+        "teamWork": "Trabalho em Equipe: Estratégias e Práticas",
+        "leadership": "Liderança e Comunicação",
+        "conflictRes": "Resolução de Conflitos no Trabalho",
+        "nonViolentComm": "Comunicação Não Violenta",
+        "timeMgmtLead": "Gestão de Tempo para Líderes",
+        "collabTeamWork": "Colaboração e Trabalho em Equipe",
+        "presentationTech": "Técnicas de Apresentação",
+        "constructiveFeed": "Feedback Construtivo",
+        "activeListening": "Escuta Ativa no Trabalho",
+        "empathy": "Empatia e Relações Profissionais",
+        "selfMgmt": "Autogestão e Produtividade",
+        "interpersonalComm": "Comunicação Interpessoal",
+        "conflictMgmt": "Gestão de Conflitos",
+        "emotionalInt": "Inteligência Emocional no Trabalho",
+        "assertiveComm": "Comunicação Assertiva",
+        "teamChallenges": "Trabalho em Equipe: Desafios e Soluções",
+        "productivityFocus": "Produtividade e Foco",
+        "leadershipTeamMgmt": "Liderança e Gestão de Equipes"
+      }    
 }
