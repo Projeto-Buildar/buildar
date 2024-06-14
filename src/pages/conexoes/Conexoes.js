@@ -5,8 +5,6 @@ import Forma2 from "../conexoes/images/amarelo lilas azul.png";
 import imgFormulario from "../conexoes/images/imagem formulario.png";
 import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
-import { Link } from 'react-router-dom';
-
 
 export default function Conexoes() {
     return (
@@ -65,11 +63,7 @@ export default function Conexoes() {
                     <h3>Seja voluntário como palestrante da Buildar</h3>
                     <p>O que acha de compartilhar suas experiências no mercado de trabalho?
                         Acesse o formulário e venha buildar com a gente.</p>
-                        <div>
-                            <Link to="/inscricaoVoluntario">
-                                <button>Venha fazer parte</button>
-                            </Link>
-                        </div>
+                    <button>Venha fazer parte</button>
                 </div>
             </div>
             <div className="Eventos-externos">

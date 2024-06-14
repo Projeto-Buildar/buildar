@@ -104,5 +104,20 @@
     "achievements": "Conquistas",
     "sophisticated": "Sofisticado",
     "empathyAndResilience": "Empatia e Resiliência.",
-    "strategicGenius": "Gênio estratégico "  
+    "strategicGenius": "Gênio estratégico ",
+    
+
+
+  "eventos": {
+    "titulo": "{t('EVENTOS EXTERNOS - Pesquisa de Eventos')}",
+    "placeholder": "{t('Digite o nome do evento')}",
+    "botaoPesquisar": "{t('Pesquisar')}",
+    "semPesquisa": "{t('Por favor, digite um termo de pesquisa.')}",
+    "nenhumEvento": "{t('Nenhum evento encontrado.')}"
+  },
+  "resultados": {
+    "data": "{t('Data:')}",
+    "horario": "{t('Horário:')}",
+    "local": "{t('Local:')}"
+  } 
 }
