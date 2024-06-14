@@ -1,0 +1,334 @@
+.SobreNos {
+    background-color: #58D2FF;
+    padding: 40px 20px;
+}
+
+.SobreNos h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.SobreNos .content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SobreNos .text-section {
+    max-width: 60%;
+}
+
+.SobreNos .content h2 {
+    color: #000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.SobreNos .content p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.SobreNos .content strong {
+    color: #000;
+}
+
+.SobreNos .ver-mais {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9D38FD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.SobreNos .ver-mais:hover {
+    text-decoration: underline;
+}
+
+.SobreNos .mascot {
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .SobreNos .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .SobreNos .text-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .SobreNos .mascot {
+        margin-left: 0;
+    }
+}
+
+/* New section styles */
+
+.OurWork {
+    background-color: #C6EC3E;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurWork h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.OurWork .intro {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.OurWork .work-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OurWork .work-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.OurWork .work-item img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.OurWork .work-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.OurWork .work-item p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .OurWork .work-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OurWork .work-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .OurWork .work-item img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para a nova seção Goals */
+.Goals {
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Goals h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.Goals p {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.goal-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.goal-item {
+    background-color: #58D2FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.text-goals {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .goal-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goal-item {
+        width: 100%;
+    }
+}
+
+/* New section styles for OurCause */
+.OurCause {
+    background-color: #F9F9F9;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurCause h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.OurCause .intro {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.OurCause .cause-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.OurCause .cause-item {
+    background-color: #F0EDF2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.OurCause .cause-item img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .OurCause .cause-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OurCause .cause-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .OurCause .cause-item img {
+        margin-bottom: 20px;
+    }
+}
+
+/* New section styles for OurTeam */
+.OurTeam {
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurTeam h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    width: 247.2px;
+    height: 266.53px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.team-member img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 20px solid #9B33FD; 
+    border-radius: 16px;
+}
+
+
+
+
+.team-member p strong {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 20px);
+    }
+}
+
