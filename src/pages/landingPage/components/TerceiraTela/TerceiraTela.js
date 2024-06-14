@@ -1,31 +1,33 @@
 import './TerceiraTela.css';
 
-
 import "react-multi-carousel/lib/styles.css";
 
 import Carrosel from "./Carrosel"
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
+import Carousel from "react-multi-carousel";
+import skin from '../../images/terceiraTela_img.png';
 
-
+const test = [skin, skin, skin]
 
 export default function TerceiraTela() {
-  const {t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <div className='frames' id="terceiraTela">
       <section>
         <figure className='skinContainer'>
 
-            <Carrosel 
-            showDots={true} 
+          <Carrosel
+            showDots={true}
             arrows={false}
             infinite={true}
             qntItensDesk={1}
             autoPlay={true}
             pauseOnHover={true}
             draggable={false}
-            >
-            </Carrosel>
+          >
+            conteudo={test.map(obj => { return <div><img src={obj}></img></div> })}
+          </Carrosel>
         </figure>
         {/* <div className='scrollContainer'>
           <div className='scroller'></div>

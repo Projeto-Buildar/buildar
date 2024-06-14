@@ -1,15 +1,16 @@
 // src/components/Footer.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css';
-import logo from '../../images/logo_off.png';
-import instagram from '../../images/social_instagram.png';
-import tiktok from '../../images/social_tiktok.png';
-import linkedin from '../../images/social_linkedin.png';
-import github from '../../images/social_github.png';
-
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
+
+import logo from '../../images/logo_off.webp';
+import instagram from '../../images/social_instagram.webp';
+import tiktok from '../../images/social_tiktok.webp';
+import linkedin from '../../images/social_linkedin.webp';
+import github from '../../images/social_github.webp';
+
+import './Footer.css';
 
 export default function Footer() {
   const {t, i18n } = useTranslation();
