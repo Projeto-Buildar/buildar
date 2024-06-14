@@ -1,17 +1,3 @@
-/* #Cadastro header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 12vh;
-    position: fixed;
-    top: 0;
-    
-}
-#Cadastro header .logo {
-    width: 210px;
-    margin-left: 10vw;
-} */
-
 #Cadastro article h3{
     color: #000;
     font-size: 16px;
@@ -29,6 +15,13 @@
     top: 0;
 }
 
+.cadastroHeader {
+    background: none;
+}
+
+.cadastroHeader::after {
+    box-shadow: none;
+}
 
 
 #Cadastro header .formaCadastro2{
@@ -39,7 +32,6 @@
 #Cadastro article {
     display: flex;
     align-items: center;
-   
     width: 700px; 
     height: 88vh; 
     margin: 0 auto;

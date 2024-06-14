@@ -14,12 +14,8 @@ export default function Cadastro() {
     const { t, i18n } = useTranslation();
     return (
         <main id="Cadastro">
-            <div className='formas'>
-
                 <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' />
-
-            </div>
-                <Header mostrarSelectIdiomas={false}/>
+                <Header mostrarSelectIdiomas={false} classe='cadastroHeader'/>
             <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
 
             <article>

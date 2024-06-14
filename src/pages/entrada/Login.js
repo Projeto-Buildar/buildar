@@ -16,10 +16,8 @@ export default function Login() {
 
     return (
         <main id="login">
-            <div className='formas'>
                 <img src={forma1} alt="forma1" className='forma1' />
-            </div>
-                <Header mostrarSelectIdiomas={false}/>
+                <Header mostrarSelectIdiomas={false} classe='loginHeader'/>
             <article>
                 <div className='caixa-esquerda'>
                     <h1>{t('welcomeBack')}</h1>

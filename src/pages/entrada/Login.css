@@ -1,11 +1,10 @@
-
-.forma1{
+.forma1 {
     position: absolute;
     left: 0;
     top: 10;
 }
 
-.forma2{
+.forma2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -13,34 +12,24 @@
     align-items: flex-start;
 }
 
-/* #login header .logo {
-    
-    max-width: 60%;
-    height: auto;
-    max-height: 100px; 
-    width: 210px;
-    padding-left: 153px; 
-    }
-
-#login header .forma2{
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: auto;
-} */
-
-.container-login{
-    width: 100%;
-    height: 100%;
+.loginHeader {
+    background: none;
 }
+
+.loginHeader::after {
+    box-shadow: none;
+}
+
 
 /* Estilos existentes */
 #login article {
     display: flex;
     align-items: center;
     position: relative;
-    width: 600px; /* Ajuste conforme necessário */
-    height: 300px; /* Ajuste conforme necessário */
+    width: 600px;
+    /* Ajuste conforme necessário */
+    height: 300px;
+    /* Ajuste conforme necessário */
     margin: 50px 310px;
     padding: 7%;
 }
@@ -72,7 +61,8 @@
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
-    width: 60%; /* Ajuste conforme necessário */
+    width: 60%;
+    /* Ajuste conforme necessário */
     height: 100%;
 }
 
@@ -109,26 +99,31 @@
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
     position: relative;
-    width: 40%; /* Ajuste conforme necessário */
+    width: 40%;
+    /* Ajuste conforme necessário */
     height: 100%;
     background-color: #f3f3f3;
-    margin-left: -4%; /* Ajuste conforme necessário */
+    margin-left: -4%;
+    /* Ajuste conforme necessário */
     z-index: 1;
 }
 
 .caixa-direita {
-input,
-input[type="email"],
-input[type="password"] {
-    margin: 12px;
-    width: 250px;
-    height: 40px;
-    border: none;
-    box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
-    border-radius: 8px;
-    text-align: center; /* Centralizar o texto do placeholder horizontalmente */
-    line-height: 40px; /* Ajustar a altura da linha para centralizar verticalmente */
-}
+
+    input,
+    input[type="email"],
+    input[type="password"] {
+        margin: 12px;
+        width: 250px;
+        height: 40px;
+        border: none;
+        box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+        border-radius: 8px;
+        text-align: center;
+        /* Centralizar o texto do placeholder horizontalmente */
+        line-height: 40px;
+        /* Ajustar a altura da linha para centralizar verticalmente */
+    }
 }
 
 #submit {
@@ -142,7 +137,8 @@ input[type="password"] {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
 }
 
 #submit:hover {

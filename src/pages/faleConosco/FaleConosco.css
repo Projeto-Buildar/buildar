@@ -16,20 +16,13 @@
     color: var(--cor-texto);
 }
 
-#ConteudoFaleConosco .headerFaleConosco {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 12vh;
-    position: fixed;
-    top: 0;
-    z-index: 2;
+.faleConoscoHeader {
+    background: none;
 }
 
-#ConteudoFaleConosco .headerFaleConosco .logoVivi {
-    width: 210px;
-    margin-left: 10vw;
-  }
+.faleConoscoHeader::after {
+    box-shadow: none;
+}
 
 #ConteudoFaleConosco .circulo-esquerdo {
     bottom: 0;
