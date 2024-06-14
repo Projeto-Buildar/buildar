@@ -12,11 +12,13 @@ import Perfil from './pages/perfil/Perfil';
 import Voluntario from './pages/inscricaoVoluntario/Voluntario';
 import FaleConosco from './pages/faleConosco/FaleConosco';
 import Ranqueada from './pages/ranqueada/Ranqueada';
+import VLibras from './Vlibras';
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <VLibras />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Login />} />
@@ -32,6 +34,7 @@ export default function App() {
           <Route path="ranqueada" element={<Ranqueada />} />
         </Routes>
       </BrowserRouter>
+      <VLibras />
     </div>
   );
 }
