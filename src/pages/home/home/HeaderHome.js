@@ -27,12 +27,12 @@ export default function HeaderHome() {
       linkado: "/perfil"
     },
     {
-      texto: t("Voluntary"),
+      texto: t("voluntary"),
        linkado: "/inscricaoVoluntario"
     },
-   { 
-    texto: t("Ranked"),
-       linkado: "/ranqueada"
+    {
+      texto: t("Ranked"),
+      linkado: "/ranqueada"
     }
   ]
 
