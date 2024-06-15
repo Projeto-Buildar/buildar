@@ -46,7 +46,7 @@ export default function Ranqueada() {
                     </div>
                     <div className="footer-links">
                         <p>Sobre | Blog | Loja | Privacidade | Termos de uso</p>
-
+                    
                     <p>© Brunner | Todos os direitos reservados</p>
                     </div>
                 </div>
