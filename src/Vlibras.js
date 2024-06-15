@@ -5,7 +5,7 @@ const VLibras = () => {
 
   useEffect(() => {
     const scriptId = 'vlibras-script';
-    const version = '1.0.0'; // Versão fictícia para forçar o recarregamento
+    const version = new Date().getTime(); // Usando um timestamp para evitar cache
 
     const loadVLibras = () => {
       const script = document.createElement('script');
@@ -17,7 +17,7 @@ const VLibras = () => {
         console.log('VLibras script loaded');
         if (window.VLibras && typeof window.VLibras.Widget === 'function') {
           console.log('VLibras.Widget is available');
-          new window.VLibras.Widget('https://vlibras.gov.br/app');
+          new window.VLibras.Widget({playerContainer: 'body'});
           setVLibrasLoaded(true);
         } else {
           console.error('VLibras.Widget is not available after script load');
@@ -37,13 +37,8 @@ const VLibras = () => {
       loadVLibras();
     } else {
       console.log('VLibras script already exists');
-      if (window.VLibras && typeof window.VLibras.Widget === 'function') {
-        console.log('VLibras.Widget is available');
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-        setVLibrasLoaded(true);
-      } else {
-        console.error('VLibras.Widget is not available, even though script exists');
-      }
+      document.getElementById(scriptId).remove();
+      loadVLibras();
     }
   }, []);
 
