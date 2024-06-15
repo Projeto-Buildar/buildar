@@ -5,11 +5,11 @@
         flex-direction: column  ;
     }
 
-    img{
+    /* img{
         display: flex;
         justify-content: left;
 
-    }
+    } */
     #titulo{
         margin-top: 50px;
         width: 650px;
