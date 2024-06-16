@@ -150,3 +150,185 @@
         margin-bottom: 20px;
     }
 }
+
+/* Estilos para a nova seção Goals */
+.Goals {
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Goals h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.Goals p {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.goal-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.goal-item {
+    background-color: #58D2FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.text-goals {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .goal-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goal-item {
+        width: 100%;
+    }
+}
+
+/* New section styles for OurCause */
+.OurCause {
+    background-color: #F9F9F9;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurCause h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.OurCause .intro {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.OurCause .cause-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.OurCause .cause-item {
+    background-color: #F0EDF2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.OurCause .cause-item img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .OurCause .cause-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OurCause .cause-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .OurCause .cause-item img {
+        margin-bottom: 20px;
+    }
+}
+
+/* New section styles for OurTeam */
+.OurTeam {
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.OurTeam h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    width: 247.2px;
+    height: 266.53px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.team-member img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 20px solid #9B33FD; 
+    border-radius: 16px;
+}
+
+
+
+
+.team-member p strong {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 20px);
+    }
+}
+
