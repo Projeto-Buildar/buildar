@@ -1,8 +1,8 @@
 import utils from './Utils';
 import Person from './Person';
 
-import demoRoomLower from "../images/mapas/corredor.png";
-import demoRoomUpper from "../images/mapas/corredorCima.png";
+import demoRoomLower from "../images/mapas/mapaLower.png";
+// import demoRoomUpper from "../images/mapas/tetinho.png";
 
 import npc1 from "../images/personagens/pessoa/npc1.png";
 
@@ -11,13 +11,13 @@ import playerV2 from "../images/personagens/pessoa/img.png";
 const Maps = {
     DemoRoom: {
         lowerSrc: demoRoomLower,
-        upperSrc: demoRoomUpper,
+        // upperSrc: demoRoomUpper,
         gameObjects: {
-            hero2: new Person({
-                x: utils.withGrid(6),
-                y: utils.withGrid(4),
-                src: npc1,
-            }),
+            // npc: new Person({
+            //     x: utils.withGrid(10),
+            //     y: utils.withGrid(5),
+            //     src: npc1,
+            // }),
             hero: new Person({
                 isPlayerControlled: true,
                 x: utils.withGrid(5),
