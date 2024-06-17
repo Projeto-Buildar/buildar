@@ -1,0 +1,115 @@
+:root {
+    --cor-primaria: #9D38FD;
+    --cor-secundaria: #7d2bcf;
+    --cor-texto: #333;
+    --cor-borda: rgb(207, 215, 215);
+    --sombra-leve: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --sombra-pesada: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#ConteudoFaleConosco h1 {
+    color: var(--cor-primaria);
+}
+
+#ConteudoFaleConosco h2 {
+    font-size: 1.2em;
+    color: var(--cor-texto);
+}
+
+.faleConoscoHeader {
+    background: none;
+}
+
+.faleConoscoHeader::after {
+    box-shadow: none;
+}
+
+#ConteudoFaleConosco .circulo-esquerdo {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    }
+
+#ConteudoFaleConosco .circulo-direito {
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 30%;
+    }
+
+#ConteudoFaleConosco .contact-form .form-group input,
+#ConteudoFaleConosco .contact-form .form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    box-shadow: var(--sombra-leve);
+}
+
+#ConteudoFaleConosco .contact-form .form-group {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    /* gap: 10px;  */
+    margin-bottom: 15px;
+    width: 40%; 
+}
+
+#ConteudoFaleConosco .formulario{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ConteudoFaleConosco .ConteudoFaleConsocoTexto {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction:column;
+    margin-bottom: 3rem;
+}
+
+
+#ConteudoFaleConosco .contact-form textarea[name="message"] {
+    height: 150px; 
+    resize: none; 
+}
+
+/* Estilo para o botão de submit */
+#ConteudoFaleConosco .formulario .contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    box-shadow: var(--sombra-pesada);
+    width: auto; 
+}
+
+#ConteudoFaleConosco .formulario .contact-form button[type="submit"]:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilos gerais do formulário */
+#ConteudoFaleConosco .formulario .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+
+

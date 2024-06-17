@@ -1,0 +1,154 @@
+#oitavaTela {
+    flex-flow: column;
+    background: url('../../images/oitavaTela_bg.webp') bottom 0 left 0/auto 30% repeat-x;
+}
+
+
+#oitavaTela section {
+    width: 87%;
+} 
+
+
+.arrow {
+    width: 64px;
+    height: 80px;
+    background: url('../../images/oitavaTela_next.webp') center/contain no-repeat; 
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.arrow.left {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+
+
+.ulCarrosel{
+   z-index: 1 !important;
+} 
+
+
+
+.liCarrosel{
+    margin-inline: 1% !important; 
+} 
+
+
+.depoiments {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+
+}
+
+.depoiment {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    min-width: 288px;
+    background: #FFFFFF url('../../images/oitavaTela_img2.webp') top 4% right 8%/auto 8% no-repeat;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    pointer-events: none;
+    & img {
+        width: 94%;
+        height: 14rem;
+        margin-bottom: -1rem;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+    & h3 {
+        align-self: flex-start;
+        border-radius: 0 0 1rem 0;
+        padding: 0.25rem 1rem;
+        margin: 0;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+    
+    h3:nth-child(2) {
+        border-radius: 1rem 0 1rem 0;
+    }
+    & p {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+}
+
+.depoiment:nth-child(even) {
+    background: #FFFFFF url('../../images/oitavaTela_img.webp') top 4% right 8%/auto 8% no-repeat;
+}
+
+/* Hover */
+
+.arrow:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.arrow.arrow.left:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+
+.depoiments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.nav-button:hover {
+    background-color: #aaa;
+}
+
+.nav-button:first-of-type {
+    left: 10px;
+}
+
+.nav-button:last-of-type {
+    right: 10px;
+}
+
+.depoiment {
+    min-width: 50%;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    text-align: center;
+    border: 2px solid;
+}
+
+.depoiment img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.depoiment h2 {
+    margin: 10px 0;
+}
+
+.depoiment p {
+    color: #666;
+}

@@ -1,0 +1,132 @@
+#sextaTela {
+    flex-flow: column;
+    background: none;
+    gap: 2rem;
+}
+
+#sextaTela article {
+    width: fit-content;
+    text-align: center;
+}
+
+#sextaTela section {
+    display: flex;
+    gap: 2rem;
+}
+
+#Planos p {
+    font-size: 1.2rem;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    width: 18rem;
+    height: 25rem;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    & h3 {
+        background: #58D2FF;
+        padding-block: 1rem;
+        border-radius: 1rem 0 2rem 0;
+        font-size: 1.75rem;
+    }
+    & h4 {
+        background: #B9EBFD;
+        padding-block: 4px;
+        border-radius: 0 0 2rem 0;
+        width: 70%;
+        font-weight: 500;
+    }
+    & div:not(.titleCard, .offerButton) {
+        line-height: 2rem;
+    }
+    & span {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #565656;
+        img {
+            height: 1.25rem;
+        }
+    }
+    & p:not(span p) {
+        font-size: 1.25rem;
+    }
+    & .offerButton {
+        width: 84%;
+        background: #58D2FF;
+        padding-block: 0.5rem;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+}
+
+#sextaTela section div:nth-child(2) {
+    & h3, .offerButton {
+        background: #FF486D;
+    }
+    & h4 {
+        background: #FF91A7;
+    }
+}
+
+#sextaTela section div:nth-child(3) {
+    & h3, .offerButton {
+        background: #C6EC3E;
+    }
+    & h4 {
+        background: #EDFFAB;
+    }
+}
+
+.titleCard {
+    align-self: baseline;
+    width: 90%;
+}
+
+#sextaTela .breakBar {
+    width: 40%;
+    background: #000000;
+    margin: 0;
+}
+
+#sextaTela .backgroundLeft, #sextaTela .backgroundRight, #sextaTela .backgroundMid {
+    height: 110%;
+    width: 50%;
+    background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/35% no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+#sextaTela .backgroundLeft {
+    left: 0;
+}
+
+#sextaTela .backgroundMid {
+    height: 88vh;
+    width: 100%;
+    background: url('../../images/sextaTela_bg.webp') bottom/cover repeat-x;
+    z-index: -2;
+}
+
+#sextaTela .backgroundRight {
+    height: 110%;
+    background: url('../../images/sextaTela_bg3.webp') top 0 right 0/35% no-repeat;
+    right: 0;
+}
+
+/* Hover */
+
+.offerButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    outline: 2px solid #000000;
+    transition: 0.3s;
+}

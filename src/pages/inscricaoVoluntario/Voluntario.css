@@ -1,0 +1,123 @@
+    #voluntario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column  ;
+    }
+
+    /* img{
+        display: flex;
+        justify-content: left;
+
+    } */
+    #titulo{
+        margin-top: 50px;
+        width: 650px;
+        /* padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 30px; */
+        padding: 10px 30px;
+        align-content: center;
+        justify-content: center;
+        line-height: 1.6; /* Ajusta a altura da linha */
+    text-align: justify; /* Justifica o texto */
+    hyphens: auto; /* Permite quebra automática de palavras */
+    
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+    }
+
+    #titulo p {
+        font-size: 18px;
+    }
+    #containerVoluntario {
+        background: #9B33FD;
+        padding: 20px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    #containerVoluntario h1 {
+        text-align: center;
+        color: #cc78d8;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color:white;
+    }
+
+    .form-group input[type="name"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border-color:azure;
+        box-shadow: none;
+    }
+
+    .form-group input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .form-group label a {
+        color: #FFB412;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .form-group label a:hover {
+        text-decoration: underline;
+    }
+
+    #containerVoluntario button {
+        background-color: #9FF55D;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #containerVoluntario button:hover {
+        background-color: #82e337;
+    }
+
+
+
+
+
+
+
+
+

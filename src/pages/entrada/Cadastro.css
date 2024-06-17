@@ -1,0 +1,151 @@
+#Cadastro article h3{
+    color: #000;
+    font-size: 16px;
+}
+
+.formaCadastro1{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.formaCadastro2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cadastroHeader {
+    background: none;
+}
+
+.cadastroHeader::after {
+    box-shadow: none;
+}
+
+
+#Cadastro header .formaCadastro2{
+    display: flex;
+    align-items: flex-end;
+}
+
+#Cadastro article {
+    display: flex;
+    align-items: center;
+    width: 700px; 
+    height: 88vh; 
+    margin: 0 auto;
+}
+
+#Cadastro img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.caixa-esquerda-cadastro h1 {
+    padding: 200px 110px;
+    background-color: #29F39B;
+    background-image: url('./images/Group-formas.webp');
+    background-position: center;
+    color: #f3f3f3;
+    font-size: 26px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(85, 85, 85);
+    position: relative;
+    width: 70%; /* Ajuste conforme necessário */
+    height: 100%;
+}
+.caixa-direita-cadastro h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caixa-direita-cadastro h3 {
+    float: left;
+}
+
+.caixa-direita-cadastro p {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-direita-cadastro button {
+    border: none;
+    color: #1C0240;
+    font-size: 13px;
+}
+
+.caixa-direita-cadastro button:hover {
+    color: #059c5b;
+}
+#submit{
+    color: #000;
+    background-color: #29F39B;
+}
+
+#submit:hover{
+    color: #000;
+    background-color: #00ff91;
+}
+.caixa-direita-cadastro {
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+    border-radius: 10px;
+    /* position: relative; */
+    width: 45%; /* Ajuste conforme necessário */
+    height: 70%;
+    background-color: #f3f3f3;
+    margin-left: 5%; /* Ajuste conforme necessário */
+    z-index: 1;
+}
+.checkbox-group   #aceitar_politicas{
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+}
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+ .checkbox-group  a{
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+#CaixaCadastro p {
+    font-size: 1rem;
+    width: 250px;
+    height: 30px;
+}
+
+#CaixaCadastro strong {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.caixa-direita-cadastro {
+input,
+input[type="email"],
+input[type="password"] {
+    margin: 6px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+    border-radius: 8px;
+    text-align: center; 
+    line-height: 20px; 
+}
+}

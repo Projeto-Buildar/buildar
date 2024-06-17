@@ -1,0 +1,13 @@
+#landingPage {
+    & article {
+        width: 30%;
+    }
+}
+
+.frames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    gap: 4rem;
+}

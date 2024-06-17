@@ -1,0 +1,143 @@
+/* Estilos dos títulos */
+#Pagamento h1 {
+  font-size: 40px;
+}
+
+#Pagamento h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#Pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container #headerPagamento {
+  display: flex;
+  justify-content:flex-start;
+  width: 100vw;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+    
+}
+
+/* Estilos do logo */
+#headerPagamento .logoVivi {
+  align-self: flex-start; 
+  padding-left: 153px; 
+  margin: 6px 0px;
+  width: 210px;
+  height: auto;
+}
+
+/* Estilos do formulário de pagamento */
+#formPagamento {
+  width: 100%;
+  max-width: 600px; 
+  margin: 20px auto; 
+  padding: 20px;
+}
+
+/* Estilos dos ícones de pagamento */
+#formPagamento .payment-icons .card-icon {
+  width: 70px;
+}
+
+#formPagamento .payment-icons {
+  display: flex;
+  justify-content:flex-start; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+#formPagamento .payment-icon-pix {
+  width: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+#formPagamento .payment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 15px; 
+}
+
+input {
+  grid-column: span 2; 
+  padding: 8px;
+  border-radius: 10px;
+  border-color: azure;
+  color: gray;
+}
+
+/* Estilos do botão de envio */
+.payment-form .submit-button {
+  grid-column: span 2; 
+  padding: 12px 0px;
+  border-radius: 10px;
+  background-color: #701DCD;
+  border: none;
+  color: white;
+  margin: 0px 120px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.payment-form .submit-button:hover {
+  background-color: #5d18ac;
+}
+
+#formPagamento .payment-form .half-width {
+  grid-column: span 1; 
+}
+
+/* Estilos do container de entrada de data */
+.date-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.payment-form .date-input-container .date-input {
+  flex-grow: 1; 
+}
+
+/* Estilos do container de métodos de pagamento */
+.payment-method-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: start; 
+}
+
+.payment-option {
+  border: 2px solid rgb(186, 184, 184); 
+  padding: 2px 12px;
+  border-radius: 10px; 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px;
+  margin-right: 10px; 
+}
+
+.payment-button {
+  width: 10px; 
+  height: 10px; 
+  border-radius: 100%; 
+  border: 2px solid #701DCD;
+  background-color: transparent;
+  margin: 15px 2px;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+}
+
+.payment-option.selected .payment-button {
+  background-color: #701DCD;
+}
+
+
