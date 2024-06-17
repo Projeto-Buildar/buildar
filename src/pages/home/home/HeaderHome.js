@@ -20,7 +20,7 @@ export default function HeaderHome() {
     },
     {
       texto: t("Shop"),
-      //linkado: "/loja"
+      linkado: "/Loja"
     },
     {
       texto: t("Profile"),

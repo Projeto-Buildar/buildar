@@ -10,7 +10,7 @@ const VLibras = () => {
     const loadVLibras = () => {
       const script = document.createElement('script');
       script.id = scriptId;
-      script.src = `https://vlibras.gov.br/app/vlibras-plugin.js?v=${version}`;
+      script.src = "https://vlibras.gov.br/app/vlibras-plugin.js?v=${version}";
       script.async = true;
 
       script.onload = () => {
