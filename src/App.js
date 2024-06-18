@@ -12,15 +12,16 @@ import Perfil from './pages/perfil/Perfil';
 import Voluntario from './pages/inscricaoVoluntario/Voluntario';
 import FaleConosco from './pages/faleConosco/FaleConosco';
 import Ranqueada from './pages/ranqueada/Ranqueada';
-import VLibras from './Vlibras';
+// import VLibras from './Vlibras';
 import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
+import Conteudo from './pages/conteudo/Conteudo';
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <VLibras />
+        {/* <VLibras /> */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Login />} />
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="faleConosco" element={<FaleConosco />} />
           <Route path="ranqueada" element={<Ranqueada />} />
           <Route path="loja" element={<Loja />} />
+          <Route path="conteudo" element={<Conteudo />} />
         </Routes>
       </BrowserRouter>
     </div>

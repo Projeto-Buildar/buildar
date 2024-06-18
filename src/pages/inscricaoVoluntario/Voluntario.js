@@ -1,63 +1,40 @@
-import HeaderHome from "../home/HeaderHome";
+import React from 'react';
+import HeaderHome from '../home/HeaderHome';
 import './Voluntario.css';
 import { Link } from 'react-router-dom';
+import useTypewriter from './useTypewriter';
+import LoginVoluntario from './cadastroVoluntario';
+import Footer from '../landingPage/components/Footer/Footer';
+import bottom_back from './images/bottom_back.png';
 
+const Voluntario = () => {
+    useTypewriter('animated-title', "Seja um(a) Voluntário(a)", 100, 2000, 1000);
 
-export default function Voluntario() {
     return (
-        <main id='voluntario'>
-            <HeaderHome/>
-
+        <main id="voluntario">
+            <HeaderHome />
+            <div className='ContainerVoluntarioMain'>
                 <div id="titulo">
-                    <h1>Seja um(a) Voluntário(a)</h1>
-                    <p>Você tem experiência no mercado de trabalho e deseja fazer a diferença na vida dos jovens? Junte-se a nós como voluntário e compartilhe seus conhecimentos sobre carreiras e habilidades profissionais!<br/> Inspire a próxima geração com suas histórias e conselhos práticos. Sua contribuição pode ajudar a Buildar o futuro dos jovens!
-
+                    <h1 id="animated-title"></h1>
+                    <hr className="decorative-line" />
+                    <p>
+                        Quer impactar a vida dos jovens com suas habilidades? Seja voluntário e ajude a construir o futuro! Compartilhe seus conhecimentos, inspire com suas experiências e contribua para um amanhã melhor. Junte-se a nós nesta jornada transformadora!
                     </p>
                 </div>
-            
-            <div id='containerVoluntario'>
-
-
-                <form action="/submit" method="post" class="form">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required></input>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required></input>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Assunto que deseja abordar:</label>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Data de disponibilidade para palestrar:</label>
-                        <input type="date" id="disponibilidade" name="disponibilidade"></input>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="checkbox" id="terms" name="terms" required></input>
-                        <label for="terms">Eu concordo com os <a href="/terms">termos de uso</a> e a <a href="/privacy">política de privacidade</a>.</label>
-                    </div>
-
-                    {/* <button type="submit">Enviar</button> */}
-                    <div>
-                            <Link to="/conexoes">
-                            <button type="submit">Enviar</button>
-                            </Link>
-                        </div>
-                </form>
-
+                <div id="containerVoluntario">
+                    <LoginVoluntario />
+                </div>
             </div>
-
+            <img src= {bottom_back} alt='bottom_back' className='bottom_back'/>
         </main>
-    )
-
+    );
 }
 
+const FormGroup = ({ label, component = 'input', ...props }) => (
+    <div className="form-group">
+        <label htmlFor={props.id}>{label}</label>
+        {React.createElement(component, props)}
+    </div>
+);
 
-
+export default Voluntario;
