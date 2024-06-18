@@ -5,12 +5,8 @@
     justify-content: center;
 }
 
-#Conexoes h3 {
-    font-size: 1.5rem;
-}
-
 #Conexoes p{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .containerAmarelo{
@@ -25,6 +21,7 @@
 #historico{
     margin-top: 20px;
     margin-left: 40px;
+    border-bottom: 3px solid #000;
 }
 
 .containerAmarelo  h2{
@@ -78,11 +75,11 @@
     margin-top: 100px;
 }
 
-.Seja-voluntario .textoVoluntario{
+.textoVoluntario{
     margin: 20px;
     padding: 10px;
     width: 400px;
-    height: 220px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,9 +91,9 @@ margin-top: 600px;
 }
 
 .textoVoluntario button {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 300px;
-    height: auto;
+    height: 70px;
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -106,8 +103,14 @@ margin-top: 600px;
     color: aliceblue;
 }
 
+.textoVoluntario h3 {
+    margin-bottom: 10px;
+    border-bottom: 3px solid #000;
+}
+
 .textoVoluntario button:hover {
     background: #ffae00;
     
 }
+
 
