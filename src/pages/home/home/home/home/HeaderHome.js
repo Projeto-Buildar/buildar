@@ -20,15 +20,19 @@ export default function HeaderHome() {
     },
     {
       texto: t("Shop"),
-      linkado: "/loja"
+      //linkado: "/loja"
     },
     {
       texto: t("Profile"),
       linkado: "/perfil"
     },
     {
-      texto: t("Conteudo texte"),
-      linkado: "/conteudo"
+      texto: t("Voluntary"),
+       linkado: "/inscricaoVoluntario"
+    },
+   { 
+    texto: t("Ranked"),
+       linkado: "/ranqueada"
     }
   ]
 
