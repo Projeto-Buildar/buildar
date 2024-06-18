@@ -5,12 +5,8 @@
     justify-content: center;
 }
 
-#Conexoes h3 {
-    font-size: 2rem;
-}
-
 #Conexoes p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .containerAmarelo{
@@ -116,3 +112,5 @@ margin-top: 600px;
     background: #ffae00;
     
 }
+
+
