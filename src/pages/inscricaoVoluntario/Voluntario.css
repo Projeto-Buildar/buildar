@@ -1,0 +1,158 @@
+#voluntario {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ContainerVoluntarioMain {
+    display: flex;
+    flex-direction: row;
+}
+
+#titulo {
+    color: #9B33FD;
+    margin-top: 50px;
+    width: 800px;
+    padding: 10px 60px;
+    align-content: center;
+    justify-content: center;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+}
+
+#animated-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+#animated-title {
+    color: #000;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilização da linha decorativa */
+.decorative-line {
+    border: none;
+    border-top: 4px solid #000000;
+    margin: 10px 0;
+}
+
+.Vivitoriosa {
+    position: absolute;
+    left: 0;
+}
+
+.FormVoluntario {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group label a {
+    color: #12efff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form-group label a:hover {
+    text-decoration: underline;
+}
+
+#containerVoluntario button {
+    background-color: #12efff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+#containerVoluntario button:hover {
+    background-color: #00d0df;
+}
+
+.bottom_back{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Media Query to ensure images do not exceed the container width */
+@media screen and (max-width: 2049px) {
+    .Vivitoriosa {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 1473px) {
+    #titulo {
+        width: 500px;
+        height: 300px;
+
+    }
+    
+    #animated-title {
+        font-size: 1.5rem;
+    }
+    .bottom_back{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        height: auto;
+    }
+    #titulo p {
+        font-size: 1rem;
+    }
+}
+
+
+
+

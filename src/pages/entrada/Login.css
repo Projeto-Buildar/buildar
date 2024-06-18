@@ -1,0 +1,153 @@
+.forma1 {
+    position: absolute;
+    left: 0;
+    top: 10;
+}
+
+.forma2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.loginHeader {
+    background: none;
+}
+
+.loginHeader::after {
+    box-shadow: none;
+}
+
+
+/* Estilos existentes */
+#login article {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    /* Ajuste conforme necessário */
+    height: 300px;
+    /* Ajuste conforme necessário */
+    margin: 50px 310px;
+    padding: 7%;
+}
+
+#login img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#CaixaLogin p {
+    font-size: 1rem;
+    width: 250px;
+    height: 30px;
+}
+
+#CaixaLogin strong {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.caixa-esquerda h1 {
+    padding: 200px 110px;
+    background-color: #AC54FF;
+    background-image: url('./images/formas-login.webp');
+    background-position: center;
+    color: #f3f3f3;
+    font-size: 32px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(85, 85, 85);
+    position: relative;
+    width: 60%;
+    /* Ajuste conforme necessário */
+    height: 100%;
+}
+
+.caixa-direita h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.caixa-direita h3 {
+    float: left;
+}
+
+.caixa-direita p {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-direita button {
+    border: none;
+    color: #1C0240;
+    font-size: 13px;
+}
+
+.caixa-direita button:hover {
+    color: #701DCD;
+}
+
+.caixa-direita {
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+    border-radius: 10px;
+    position: relative;
+    width: 40%;
+    /* Ajuste conforme necessário */
+    height: 100%;
+    background-color: #f3f3f3;
+    margin-left: -4%;
+    /* Ajuste conforme necessário */
+    z-index: 1;
+}
+
+.caixa-direita {
+
+    input,
+    input[type="email"],
+    input[type="password"] {
+        margin: 12px;
+        width: 250px;
+        height: 40px;
+        border: none;
+        box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+        border-radius: 8px;
+        text-align: center;
+        /* Centralizar o texto do placeholder horizontalmente */
+        line-height: 40px;
+        /* Ajustar a altura da linha para centralizar verticalmente */
+    }
+}
+
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    color: #f5f5f5;
+    background-color: #AC54FF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
+}
+
+#submit:hover {
+    background-color: #701DCD;
+}
+
+/* Estilização do formulário para centralizar o conteúdo */
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
