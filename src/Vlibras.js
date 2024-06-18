@@ -60,5 +60,6 @@
 //     </div>
 //   );
 // };
+// Inutilizado
 
 // export default VLibras;
