@@ -4,53 +4,41 @@ import "react-multi-carousel/lib/styles.css";
 import Depoiment from './Depoiment';
 import CustomArrow from './CustomArrow';
 
-import user1 from '../../images/user1.webp';
-import user2 from '../../images/user2.webp';
-import user3 from '../../images/user3.webp';
 import userNilvan from '../../images/Nilvan.webp'
+import userBraz from '../../images/Braz.webp'
+import userDiogo from '../../images/Diogo.webp'
 
 import Carousel from "react-multi-carousel";
 
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 
-
-
-
 export default function Depoiments() {
 
-  const {t, i18n } = useTranslation();
+  const {t} = useTranslation();
 
   const userInfo = [
     {
-        image: user1,
-        name: 'Carlos',
+        image: userBraz,
+        name: 'Gabriel Braz',
         age: '19',
-        text: t('carlosExperience'),
+        text: t('userBraz'),
         color: '#FFB412'
     },
     {
         image: userNilvan,
-        name: 'Nilvan',
+        name: 'Nilvan Moura',
         age: '21',
         text: t('userNilvan'),
         color: '#58D2FF'
     },
     {
-        image: user3,
-        name: 'Arthur',
-        age: '23',
-        text: t('nameNomentaExperience'),
+        image: userDiogo,
+        name: 'Diogo Antony',
+        age: '19',
+        text: t('userDiogo'),
         color: '#FFB412'
-    },
-    {
-      image: user3,
-      name: 'Name Nomenta da N',
-      age: '23',
-      text: t('nameNomentaExperience'),
-      color: '#FFB412'
-  },
-  
+    }, 
 ];
 
     return (
@@ -95,7 +83,7 @@ export default function Depoiments() {
                 max: 1024,
                 min: 464
               },
-              items: 2,
+              items: 1,
               partialVisibilityGutter: 30
             }
           }}

@@ -1,6 +1,7 @@
 import OverworldMap from './OverworldMap';
 import DirectionInput from './DirectionInput';
 import Maps from './Maps';
+import KeyPressListener from './KeyPressListener';
 
 export default class Overworld {
     constructor(config) {
@@ -24,7 +25,9 @@ export default class Overworld {
 
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-            this.map.drawLowerImage(this.ctx);
+            const cameraPerson = this.map.gameObjects.hero;
+
+            this.map.drawLowerImage(this.ctx, cameraPerson);
 
             Object.values(this.map.gameObjects).forEach(object => {
                 object.update({
@@ -33,10 +36,10 @@ export default class Overworld {
                     cHeight: this.canvas.height,
                     deltaTime
                 });
-                object.sprite.draw(this.ctx);
+                object.sprite.draw(this.ctx, cameraPerson);
             });
 
-            this.map.drawUpperImage(this.ctx);
+            this.map.drawUpperImage(this.ctx, cameraPerson);
 
             this.rafId = requestAnimationFrame(step);
         }
@@ -52,8 +55,16 @@ export default class Overworld {
         }
     }
 
+    bindActionInput() {
+        new KeyPressListener("Enter", () => {
+            
+            this.map.checkForActionCutscene();
+        })
+    }
+
     init() {
         this.map = new OverworldMap(Maps.DemoRoom);
+        this.bindActionInput();
         this.directionInput = new DirectionInput();
         this.directionInput.init();
         this.startGameLoop();

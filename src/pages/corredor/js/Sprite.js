@@ -1,4 +1,5 @@
 import sombra from "../images/shadow.png"
+import utils from "./Utils";
 
 export default class Sprite {
     constructor(config) {
@@ -95,9 +96,9 @@ export default class Sprite {
         }
     }
 
-    draw(ctx) {
-        const x = this.gameObject.x;
-        const y = this.gameObject.y;
+    draw(ctx, cameraPerson) {
+        const x = this.gameObject.x + utils.withGrid(10,5) - cameraPerson.x;
+        const y = this.gameObject.y+ utils.withGrid(6) - cameraPerson.y;
 
         if (this.isShadowLoaded) {
             ctx.drawImage(this.shadow, x - 8, y - 18);
