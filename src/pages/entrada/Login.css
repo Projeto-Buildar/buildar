@@ -41,9 +41,11 @@
 }
 
 #CaixaLogin p {
+    display: flex;
+    align-items: baseline;
     font-size: 1rem;
-    width: 250px;
-    height: 30px;
+    width: 300px;
+    /* height: 30px; */
 }
 
 #CaixaLogin strong {
@@ -67,11 +69,12 @@
 }
 
 .caixa-direita h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .caixa-direita h3 {
+    font-size: 1.25rem;
     float: left;
 }
 
@@ -113,9 +116,9 @@
     input,
     input[type="email"],
     input[type="password"] {
-        margin: 12px;
+        margin: 6px 0px;
         width: 250px;
-        height: 40px;
+        height: 30px;
         border: none;
         box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
         border-radius: 8px;
@@ -137,7 +140,6 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 20px;
     /* Ajuste conforme necessário */
 }
 
@@ -149,5 +151,22 @@
 #login form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+#CaixaLogin p {
+    display: inline; /* Faz com que o parágrafo se comporte como um elemento em linha */
+    font-size: 1rem;
+    width: auto; /* Ajusta a largura para o conteúdo */
+}
+
+#CaixaLogin strong {
+    margin-left: 5px;
+    display: inline; /* Mantém o texto forte na mesma linha que o parágrafo */
+    color: #A443FF;
+    cursor: pointer;
+}
+
+#CaixaLogin form #submit  {
+    display: block; 
+    margin: 20px auto;
 }

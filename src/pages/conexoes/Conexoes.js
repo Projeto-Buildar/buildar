@@ -6,6 +6,8 @@ import imgFormulario from "../conexoes/images/imagem formulario.webp";
 import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
 import Footer from "../landingPage/components/Footer/Footer";
+import { Outlet, Link } from "react-router-dom";
+
 
 export default function Conexoes() {
     return (
@@ -15,7 +17,7 @@ export default function Conexoes() {
             <div className="containerAmarelo">
                 <img src={forma} />  <h2>TRANSMISSÕES E EVENTOS</h2>
             </div>
-            <HeaderHome />
+            <HeaderHome className='pesquisa'/>
             <h3 id="historico">Histórico de transimissões com voluntários</h3>
 
         <div className="Container-conexoes">
@@ -64,7 +66,9 @@ export default function Conexoes() {
                     <h3>Seja voluntário como palestrante da Buildar</h3>
                     <p>O que acha de compartilhar suas experiências no mercado de trabalho?
                         Acesse o formulário e venha buildar com a gente.</p>
-                    <button>Venha fazer parte</button>
+                        <Link to="/inscricaoVoluntario">
+                            <button>Venha fazer parte</button>
+                        </Link>
                 </div>
             </div>
             <div className="Eventos-externos">

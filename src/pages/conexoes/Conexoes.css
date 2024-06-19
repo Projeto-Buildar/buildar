@@ -6,7 +6,11 @@
 }
 
 #Conexoes p{
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+#Conexoes .pesquisa {
+    font-size: 1.25rem;
 }
 
 .containerAmarelo{
@@ -69,10 +73,10 @@
 }
 
 .Seja-voluntario{
-    height: 100;
+    height: 100vh;
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin: auto 100px;
 }
 
 .textoVoluntario{
@@ -83,6 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .forma2{
