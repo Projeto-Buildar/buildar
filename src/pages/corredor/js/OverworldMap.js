@@ -1,3 +1,6 @@
+import utils from "./Utils";
+// import { withRouter } from "react-router-dom";
+
 export default class OverworldMap {
     constructor(config) {
         this.gameObjects = config.gameObjects;
@@ -21,15 +24,30 @@ export default class OverworldMap {
         };
     }
 
-    drawLowerImage(ctx) {
+    drawLowerImage(ctx, cameraPerson) {
         if (this.isLowerImageLoaded) {
-            ctx.drawImage(this.lowerImage, 0, 0);
+            ctx.drawImage(
+                this.lowerImage,
+                utils.withGrid(10) - cameraPerson.x,
+                utils.withGrid(6) - cameraPerson.y);
         }
     }
 
-    drawUpperImage(ctx) {
+    drawUpperImage(ctx, cameraPerson) {
         if (this.isUpperImageLoaded) {
-            ctx.drawImage(this.upperImage, 0, 0);
+            ctx.drawImage(
+                this.upperImage,
+                utils.withGrid(10) - cameraPerson.x,
+                utils.withGrid(6) - cameraPerson.y);
         }
     }
+
+    checkForActionCutscene() {
+        const hero = this.gameObjects["hero"];
+        const nextCoords = utils.nextPosition(hero.x, hero.y, hero.direction);
+        const match = Object.values(this.gameObjects).find(object => {
+          return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`
+        });
+        console.log( match )
+      }
 }

@@ -25,10 +25,6 @@ export default function HeaderHome() {
     {
       texto: t("Profile"),
       linkado: "/perfil"
-    },
-    {
-      texto: t("voluntary"),
-       linkado: "/inscricaoVoluntario"
     }
   ]
 

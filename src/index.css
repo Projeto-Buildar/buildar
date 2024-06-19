@@ -17,7 +17,7 @@
 }
 
 body {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   font-size: 1.25rem
 }

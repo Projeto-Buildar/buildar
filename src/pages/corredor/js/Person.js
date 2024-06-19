@@ -31,23 +31,23 @@ export default class Person extends GameObject {
             const moveAmount = change * this.speed * state.deltaTime * 16;
 
             // Verifica se o movimento ultrapassa os limites do canvas
-            if (property === "x") {
-                const nextX = this[property] + moveAmount;
-                if (nextX < 0 || nextX > state.cWidth - 16) {
-                    // Ajusta a posição para garantir que o personagem pare no limite do canvas
-                    this[property] = Math.max(0, Math.min(state.cWidth - 16, nextX));
-                    this.movingProgressRemaining = 0;
-                    return;
-                }
-            } else if (property === "y") {
-                const nextY = this[property] + moveAmount;
-                if (nextY < 0 || nextY > state.cHeight - 16) {
-                    // Ajusta a posição para garantir que o personagem pare no limite do canvas
-                    this[property] = Math.max(0, Math.min(state.cHeight - 16, nextY));
-                    this.movingProgressRemaining = 0;
-                    return;
-                }
-            }
+            // if (property === "x") {
+            //     const nextX = this[property] + moveAmount;
+            //     if (nextX < 0 || nextX > state.cWidth - 16) {
+            //         // Ajusta a posição para garantir que o personagem pare no limite do canvas
+            //         this[property] = Math.max(0, Math.min(state.cWidth - 16, nextX));
+            //         this.movingProgressRemaining = 0;
+            //         return;
+            //     }
+            // } else if (property === "y") {
+            //     const nextY = this[property] + moveAmount;
+            //     if (nextY < 0 || nextY > state.cHeight - 16) {
+            //         // Ajusta a posição para garantir que o personagem pare no limite do canvas
+            //         this[property] = Math.max(0, Math.min(state.cHeight - 16, nextY));
+            //         this.movingProgressRemaining = 0;
+            //         return;
+            //     }
+            // }
 
             // Garante que o movimento restante seja preciso
             const remainingMove = Math.abs(moveAmount) < Math.abs(this.movingProgressRemaining) ? Math.abs(moveAmount) : this.movingProgressRemaining;
