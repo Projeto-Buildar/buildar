@@ -20,7 +20,7 @@ export default class Overworld {
 
         const step = (currentTime) => {
             if (this.lastTime === 0) this.lastTime = currentTime;
-            const deltaTime = (currentTime - this.lastTime) / 1000; // Convertendo para segundos
+            const deltaTime = (currentTime - this.lastTime) / 1000;
             this.lastTime = currentTime;
 
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -32,9 +32,11 @@ export default class Overworld {
             Object.values(this.map.gameObjects).forEach(object => {
                 object.update({
                     arrow: this.directionInput.direction,
-                    cWidth: this.canvas.width,
-                    cHeight: this.canvas.height,
-                    deltaTime
+                    // cWidth: this.canvas.width,
+                    // cHeight: this.canvas.height,
+                    map: this.map, // Passando o mapa atual
+                    deltaTime,
+                    
                 });
                 object.sprite.draw(this.ctx, cameraPerson);
             });
@@ -57,13 +59,13 @@ export default class Overworld {
 
     bindActionInput() {
         new KeyPressListener("Enter", () => {
-            
             this.map.checkForActionCutscene();
-        })
+        });
     }
 
     init() {
         this.map = new OverworldMap(Maps.DemoRoom);
+        this.map.mountObjects(); // Monte os objetos no mapa
         this.bindActionInput();
         this.directionInput = new DirectionInput();
         this.directionInput.init();

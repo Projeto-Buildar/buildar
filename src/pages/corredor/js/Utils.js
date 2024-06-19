@@ -5,6 +5,7 @@ const utils = {
     asGridCoord(x,y) {
       return `${x*16},${y*16}`
     },
+
     nextPosition(initialX, initialY, direction) {
       let x = initialX;
       let y = initialY;
@@ -18,8 +19,9 @@ const utils = {
       } else if (direction === "down") {
         y += size;
       }
-      return {x,y};
+      return { x , y };
     },
+    
     oppositeDirection(direction) {
       if (direction === "left") { return "right" }
       if (direction === "right") { return "left" }

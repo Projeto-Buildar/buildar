@@ -1,5 +1,4 @@
 import Sprite from './Sprite';
-
 import playerV1 from "../images/personagens/pessoa/hero.png";
 
 class GameObject {
@@ -18,11 +17,17 @@ class GameObject {
             height: config.height,
             animationFrameLimit: config.animationFrameLimit
         });
-
     }
-    update() {
 
+    mount(map) {
+        console.log("Montando");
+        this.isMounted = true;
+        if (map) {
+            map.addWall(this.x, this.y);
+        }
     }
+
+    update() {}
 }
 
 export default GameObject;

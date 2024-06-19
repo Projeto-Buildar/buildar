@@ -1,4 +1,5 @@
 import GameObject from './GameObject';
+import utils from './Utils';
 
 export default class Person extends GameObject {
     constructor(config) {
@@ -12,17 +13,34 @@ export default class Person extends GameObject {
             "left": ["x", -1],
             "right": ["x", 1],
         };
+        this.total = 0;
     }
 
     update(state) {
         this.updatePosition(state);
 
         if (this.isPlayerControlled && this.movingProgressRemaining === 0 && state.arrow) {
-            this.direction = state.arrow;
-            this.movingProgressRemaining = 16; // Define o progresso de movimento para 16 pixels
+            this.startBehavior(state, {
+                type: "walk",
+                direction: state.arrow
+            });
         }
 
         this.updateSprite(state);
+    }
+
+    startBehavior(state, behavior) {
+        this.direction = behavior.direction;
+        if (behavior.type === "walk") {
+            const xRound = Math.round(this.x);
+            const yRound  = Math.round(this.y);
+            // Verifica se o próximo espaço está ocupado
+            if (state.map.isSpaceTaken(xRound, yRound, this.direction)) {
+                return;
+            }
+            state.map.moveWall(xRound, yRound, this.direction);
+            this.movingProgressRemaining = 16; // Define o progresso de movimento para 16 pixels
+        }
     }
 
     updatePosition(state) {
@@ -30,30 +48,19 @@ export default class Person extends GameObject {
             let [property, change] = this.directionUpdate[this.direction];
             const moveAmount = change * this.speed * state.deltaTime * 16;
 
-            // Verifica se o movimento ultrapassa os limites do canvas
-            // if (property === "x") {
-            //     const nextX = this[property] + moveAmount;
-            //     if (nextX < 0 || nextX > state.cWidth - 16) {
-            //         // Ajusta a posição para garantir que o personagem pare no limite do canvas
-            //         this[property] = Math.max(0, Math.min(state.cWidth - 16, nextX));
-            //         this.movingProgressRemaining = 0;
-            //         return;
-            //     }
-            // } else if (property === "y") {
-            //     const nextY = this[property] + moveAmount;
-            //     if (nextY < 0 || nextY > state.cHeight - 16) {
-            //         // Ajusta a posição para garantir que o personagem pare no limite do canvas
-            //         this[property] = Math.max(0, Math.min(state.cHeight - 16, nextY));
-            //         this.movingProgressRemaining = 0;
-            //         return;
-            //     }
-            // }
-
             // Garante que o movimento restante seja preciso
             const remainingMove = Math.abs(moveAmount) < Math.abs(this.movingProgressRemaining) ? Math.abs(moveAmount) : this.movingProgressRemaining;
-
+            
             this[property] += change * remainingMove;
             this.movingProgressRemaining -= remainingMove;
+            
+            
+            if (this.movingProgressRemaining === 0) {     
+                this.intentPosition = null;
+                utils.emitEvent("PersonWalkingComplete", {
+                    whoId: this.id
+                });
+            }
         }
     }
 

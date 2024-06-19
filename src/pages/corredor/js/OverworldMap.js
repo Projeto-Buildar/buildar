@@ -1,9 +1,9 @@
 import utils from "./Utils";
-// import { withRouter } from "react-router-dom";
 
 export default class OverworldMap {
     constructor(config) {
         this.gameObjects = config.gameObjects;
+        this.walls = config.walls || {}; // Adiciona paredes ao mapa
 
         this.lowerImage = new Image();
         this.lowerImage.src = config.lowerSrc;
@@ -42,12 +42,38 @@ export default class OverworldMap {
         }
     }
 
+    isSpaceTaken(currentX, currentY, direction) {
+        console.log(currentX);
+        const { x, y } = utils.nextPosition(currentX, currentY, direction);
+        return this.walls[`${x},${y}`] || false;
+    }
+
+    addWall(x, y) {
+        this.walls[`${x},${y}`] = true;
+    }
+
+    removeWall(x, y) {
+        delete this.walls[`${x},${y}`];
+    }
+
+    moveWall(wasX, wasY, direction) {
+        this.removeWall(wasX, wasY);
+        const { x, y } = utils.nextPosition(wasX, wasY, direction);
+        this.addWall(x, y);
+    }
+
+    mountObjects() {
+        Object.values(this.gameObjects).forEach(o => {
+            o.mount(this);
+        });
+    }
+
     checkForActionCutscene() {
         const hero = this.gameObjects["hero"];
         const nextCoords = utils.nextPosition(hero.x, hero.y, hero.direction);
         const match = Object.values(this.gameObjects).find(object => {
-          return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`
+            return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`
         });
-        console.log( match )
-      }
+        console.log(match);
+    }
 }
