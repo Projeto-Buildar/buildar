@@ -1,7 +1,7 @@
 import utils from './Utils';
 import Person from './Person';
 
-import demoRoomLower from "../images/mapas/mapaLower.png";
+import demoRoomLower from "../images/mapas/mapaExtenso_Comjogo.png";
 // import demoRoomUpper from "../images/mapas/tetinho.png";
 
 import npc1 from "../images/personagens/pessoa/npc1.png";
