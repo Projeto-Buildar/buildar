@@ -18,13 +18,23 @@ var achievData = [
     {
         url: achievPic,
         color: '#D3CED7'
+    },
+    {
+        url: achievPic,
+        color: '#D3CED7'
+    },
+    {
+        url: achievPic,
+        color: '#D3CED7'
     }
 ];
 
 export default function Conquistas(){
     return (
-        <div className='achievScroll'>
-            <Conquista/>
-        </div>
+        <ul className='achievScroll'>
+            {achievData.map((item) => {
+                return <Conquista url={item.url} color={item.color}/> 
+            })}
+        </ul>
     )
 }
