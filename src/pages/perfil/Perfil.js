@@ -1,9 +1,9 @@
 import "./Perfil.css";
 import HeaderHome from "../home/HeaderHome";
 import profilePic from './images/image_filler_square.png';
-import trophy from './images/image_filler_square.png';
-import pen from './images/image_filler_square.png';
-import settingsGear from './images/image_filler_square.png';
+import trophy from './images/trophy.png';
+import pen from './images/pen.png';
+import settingsGear from './images/settings.png';
 import Conquistas from './components/Conquistas';
 import Skins from './components/Skins';
 
@@ -59,7 +59,11 @@ export default function Perfil() {
                     </div>
                 </div>
             </section>
-            <div className="topBox"></div>
+            <div className="showcaseTop">
+                <div className="leftBackground"></div>
+                <h2>Vitrine</h2>
+                <div className="rightBackground"></div>
+            </div>
             <section id="showcase">
                 <div className="userStats">
                     <h3>Estatísticas</h3>

@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className='home'>
             <Header />
-
+            <div className='descanso' style={{padding: '2rem', background: '#9B33FD', position: 'fixed', top: '205', cursor: 'pointer'}}>temporario</div>
             <main>
             <Elevadores></Elevadores>
             {/* <Link to="/corredor">

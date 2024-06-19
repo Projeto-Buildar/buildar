@@ -16,8 +16,10 @@ var skinData = [
 
 export default function Conquistas(){
     return (
-        <div className='skinScroll'>
-            <Skin/>
-        </div>
+        <ul className='skinScroll'>
+            {skinData.map((item) => {
+                return <Skin url={item.url}/> 
+            })}
+        </ul>
     )
 }
