@@ -59,7 +59,11 @@ export default function Perfil() {
                     </div>
                 </div>
             </section>
-            <div className="topBox"></div>
+            <div className="showcaseTop">
+                <div className="leftBackground"></div>
+                <h2>Vitrine</h2>
+                <div className="rightBackground"></div>
+            </div>
             <section id="showcase">
                 <div className="userStats">
                     <h3>Estatísticas</h3>
