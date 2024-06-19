@@ -4,6 +4,17 @@
   position: relative;
 }
 
+#barra-energia {
+  width: 12.5rem;
+
+}
+
+.barras {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 2rem;
+}
+
 .loja-title {
   text-align: left;
   margin-bottom: 20px;
@@ -15,25 +26,30 @@
 .loja-background {
   position: absolute;
   width: 100%;
-  height: 200px;
-  background: url('./images/fundo.png') no-repeat center;
-  background-size: cover;
+  height: 12.5rem;
+  background-color: #C6EC3E;
+  z-index: -1;
 }
 
 /* Seção de Avatares */
+.ulCarrosel {
+  width: 100rem;
+
+}
 
 .avatar-section {
   margin-top: 160px;
-  background-color: #FFB412;
+  background: url('./images/fundolaranja.png') no-repeat center;
 }
 
 .avatar-title {
   text-align: center;
   margin-bottom: 20px;
+  padding-bottom: 6rem;
 }
 
 .avatar-list {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 20px;
 }
@@ -43,18 +59,14 @@
   border: 2px solid #ccc;
   border-radius: 10px;
   text-align: center;
-  width: 304px;
-  height: 360px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 250px;
+  height: 300px;
   position: relative;
 }
 
 .avatar-item img {
-  max-width: 100%;
-  max-height: 75%;
+  max-width: 15rem;
+  max-height: 12rem;
   margin-bottom: 10px;
 }
 
@@ -78,14 +90,24 @@
 
 /* Seção de Energia */
 
+.energia-quantidade{
+  font-weight: bold;
+
+}
+
 .energia-section {
   margin-top: 40px;
   text-align: center;
-  background: url('./images/fundoazul.png') no-repeat center center;
-  height: 600px; /* Aumentei a altura para acomodar duas linhas */
+  background: url('./images/fundoazul.png') no-repeat center;
+  height: 25rem;
+  /* Aumentei a altura para acomodar duas linhas */
   width: auto;
-  display: flex; /* Adicionado para usar flexbox */
-  flex-direction: column; /* Colunas */
+  display: flex;
+  /* Adicionado para usar flexbox */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Colunas */
 }
 
 .energia-title {
@@ -96,8 +118,10 @@
 .energia-list {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 20px;
-  flex: 1; /* Ocupa todo o espaço disponível */
+  flex: 1;
+  /* Ocupa todo o espaço disponível */
 }
 
 .energia-item {
@@ -105,11 +129,13 @@
   border: 2px solid #ccc;
   border-radius: 10px;
   text-align: center;
-  width: 140px;
+  width: 190px;
   padding: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Adicionado para espaçamento entre as energias */
+  justify-content: center;
+  margin-bottom: 20px;
+  /* Adicionado para espaçamento entre as energias */
 }
 
 .energia-prices {
@@ -141,19 +167,26 @@
   margin-left: 5px;
 }
 
+.energia-group {
+  display: flex;
+  gap: 2rem;
+}
+.listras {
+  padding-top: 2rem;
+  padding-left: 80rem;
+}
+
 
 /* Seção de Desafios */
 
 .missoes-section {
-  margin-top: 40px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px;
+  height: 100%; /* Certifique-se de que o contêiner pai tem uma altura definida */
 }
 
 .missoes-title {
-  font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -162,7 +195,7 @@
   background-color: #FF486D;
   border-radius: 10px;
   padding: 20px;
-  width: 480px;
+  width: 400px;
   text-align: left;
 }
 
@@ -173,25 +206,30 @@
 
 .desafio-item p {
   margin: 10px 0;
-  width: 200px;
+  width: 100%;
 }
 
 .desafio-texto {
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 10px;
-  width: 352px;
-  height: 360px;
+  width: 22rem;
+  height: 20rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo dentro da div */
+  align-items: center; /* Centraliza horizontalmente o conteúdo dentro da div */
 }
 
 .desafio-preco {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .fundoroxo {
   padding-top: 30px;
 }
-

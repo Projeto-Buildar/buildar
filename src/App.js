@@ -15,7 +15,6 @@ import Ranqueada from './pages/ranqueada/Ranqueada';
 // import VLibras from './Vlibras';
 import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
-import Conteudo from './pages/conteudo/Conteudo';
 
 export default function App() {
   return (
@@ -36,7 +35,6 @@ export default function App() {
           <Route path="faleConosco" element={<FaleConosco />} />
           <Route path="ranqueada" element={<Ranqueada />} />
           <Route path="loja" element={<Loja />} />
-          <Route path="conteudo" element={<Conteudo />} />
         </Routes>
       </BrowserRouter>
     </div>
