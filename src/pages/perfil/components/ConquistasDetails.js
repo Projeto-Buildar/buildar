@@ -7,8 +7,8 @@ import achievImage2 from '../images/achievement_img2.png';
 const achievDetails = [
     {
         url: achievImage,
-        color: '#9B33FD',
-        title: 'Gestão do tempo',
+        color: '#58D2FF',
+        title: 'Gestão de Eras',
         description: 'Texto de descrição da conquista',
     },
     {
@@ -20,7 +20,19 @@ const achievDetails = [
     {
         url: achievImage2,
         color: '#C6EC3E',
-        title: 'Gestão do tempo',
+        title: 'Aprendendo a Buildar',
+        description: 'Texto de descrição da conquista',
+    },
+    {
+        url: achievImage2,
+        color: '#D3CED7',
+        title: 'Ainda Aprendendo',
+        description: 'Texto de descrição da conquista',
+    },
+    {
+        url: achievImage2,
+        color: '#D3CED7',
+        title: 'Ainda Aprendendo',
         description: 'Texto de descrição da conquista',
     }
 ]
