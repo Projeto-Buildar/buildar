@@ -21,6 +21,7 @@ import Conteudo6 from './pages/conteudo/Conteudo6';
 import Conteudo7 from './pages/conteudo/Conteudo7';
 import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
+import Pratica from './pages/conteudo/Pratica';
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="conteudo5" element={<Conteudo5 />} />
           <Route path="conteudo6" element={<Conteudo6 />} />
           <Route path="conteudo7" element={<Conteudo7 />} />
+          <Route path='pratica' element={<Pratica></Pratica>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

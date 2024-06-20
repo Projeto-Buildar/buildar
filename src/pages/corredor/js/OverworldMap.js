@@ -86,6 +86,8 @@ export default class OverworldMap {
 
         if(nextCoords.x / 16 === 21 && nextCoords.y /16 === 8){
             navegador('/conteudo')
+        } else if(nextCoords.x / 16 === 27 && nextCoords.y /16 === 8) {
+            navegador('/pratica')
         }
 
         const match = Object.values(this.gameObjects).find(object => {
