@@ -31,8 +31,9 @@ export default function Login() {
                         <input type="password" name="password" id="password" placeholder={t('enterYourPassword')} required />
                         <Link to='/home'><input type="submit" id="submit" value={t('submit')} /></Link>
                     </form>
-
-                    <p>{t('dontHaveAccount')} <Link to='/cadastro'><button><strong>{t('SignUp')} </strong></button></Link></p>
+                    <Link to="/cadastro">
+                        <p>{t('dontHaveAccount')}<strong>{t('SignUp')}</strong></p>
+                    </Link>
                 </div>
             </article>
 

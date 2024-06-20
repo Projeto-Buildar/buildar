@@ -53,7 +53,7 @@ const Loja = () => {
           responsive={{
             desktop: {
               breakpoint: {
-                max: 3000,
+                max: 4000,
                 min: 1024
               },
               items: 3,
@@ -81,7 +81,7 @@ const Loja = () => {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          sliderClass="ulCarrosel"
+          sliderClass="olCarrosel"
           slidesToSlide={1}
           swipeable
           

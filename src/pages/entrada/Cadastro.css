@@ -1,6 +1,6 @@
 #Cadastro article h3{
     color: #000;
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 
 .formaCadastro1{
@@ -58,7 +58,7 @@
     height: 100%;
 }
 .caixa-direita-cadastro h1 {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@
 .caixa-direita-cadastro button {
     border: none;
     color: #1C0240;
-    font-size: 13px;
+    font-size: 1rem;
 }
 
 .caixa-direita-cadastro button:hover {
@@ -109,37 +109,40 @@
     box-shadow: none;
     width: 20px;
     height: 20px;
+    margin: 6px 5px;
+
 }
 .checkbox-group{
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
  .checkbox-group  a{
     color: #000;
     text-decoration: none;
-    font-size: 12px;
 
 }
 
 #CaixaCadastro p {
-    font-size: 1rem;
-    width: 250px;
-    height: 30px;
+    font-size: 0.9rem;
+    width: 125px;
 }
 
 #CaixaCadastro strong {
+    display: inline; 
     color: blueviolet;
     cursor: pointer;
+    font-size: 0.9rem;
+
 }
 
 .caixa-direita-cadastro {
 input,
 input[type="email"],
 input[type="password"] {
-    margin: 6px;
+    margin: 6px 0px;
     width: 250px;
     height: 30px;
     border: none;
@@ -148,4 +151,17 @@ input[type="password"] {
     text-align: center; 
     line-height: 20px; 
 }
+}
+
+
+
+#CaixaCadastro form #submit  {
+    display: block; 
+    margin: auto;
+}
+
+.conecte-se-container {
+    display: flex; 
+    align-items: baseline; 
+    justify-content: center; 
 }
