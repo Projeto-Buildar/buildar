@@ -1,17 +1,31 @@
 import "./Perfil.css";
 import HeaderHome from "../home/HeaderHome";
+import Conquistas from './components/Conquistas';
+import Skins from './components/Skins';
+import ConquistasDetails from "./components/ConquistasDetails";
+
 import profilePic from './images/image_filler_square.png';
 import trophy from './images/trophy.png';
 import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
-import Conquistas from './components/Conquistas';
-import Skins from './components/Skins';
 
+import { useState } from "react";
+import Modal from "react-modal";
 import { useTranslation } from 'react-i18next';
 import "../../i18n"
+Modal.setAppElement('#root');
 
 export default function Perfil() {
     const {t, i18n } = useTranslation();
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
 
     return (
         <main id="perfil">
@@ -21,20 +35,20 @@ export default function Perfil() {
                 <div className="profileImage">
                     <div className="star"></div>
                     <img src={profilePic} className="profilePic"/>
-                    <div className="jobPlan">Gerente</div>
+                    <h3 className="jobPlan">Gerente</h3>
                 </div>
                 <div className="topCard">
                     <div className="userInfo">
                         <div>
-                            <h3>Nome de Usuário</h3>
+                            <h4>Nome de Usuário</h4>
                             <p>@nomedeusuario_</p>
                         </div>
                         <div>
-                            <h3>204</h3>
+                            <h4>204</h4>
                             <p>Seguindo</p>
                         </div>
                         <div>
-                            <h3>153</h3>
+                            <h4>153</h4>
                             <p>Seguidores</p>
                         </div>
                     </div>
@@ -44,7 +58,7 @@ export default function Perfil() {
                             <h3>Conquistas</h3>
                         </div>
                         <Conquistas/>
-                        <p>Ver todas</p>
+                        <p onClick={openModal}>Ver todas</p>
                     </div>
                     <div className="userButtons">
                         <p>Compartilhar perfil</p>
@@ -65,8 +79,8 @@ export default function Perfil() {
                 <div className="rightBackground"></div>
             </div>
             <section id="showcase">
-                <div className="userStats">
-                    <h3>Estatísticas</h3>
+                <article className="userStats">
+                    <h2>Estatísticas</h2>
                     <div>
                         <ul>
                             <li>Skins:</li>
@@ -81,9 +95,28 @@ export default function Perfil() {
                             <li>3</li>
                         </ul>
                     </div>
-                </div>
+                </article>
                 <Skins/>
             </section>
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel='exibição das conquistas'
+                overlayClassName='achievModal-overlay'
+                className='achievModal'
+            >
+                <div className="leftSideModal"></div>
+                <div className="rightSideModal"></div>
+                <section className="topModal">
+                    <div>
+                        <img src={trophy}/>
+                        <h1>Conquistas</h1>
+                    </div>
+                    <div className="closeButton" onClick={closeModal}></div>
+                </section>
+                <ConquistasDetails/>
+            </Modal>
         </main>
 
 // import FotoPerfil from "./images/Foto Perfil.png"

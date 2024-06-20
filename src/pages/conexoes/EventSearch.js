@@ -67,9 +67,9 @@ function EventSearch() {
               <h4>{result.nome}</h4>
             </div>
             <div className="result-details">
-              {result.data && <p>{t('Data:')} {result.data}</p>}
-              {result.horario && <p>{t('Horário:')} {result.horario}</p>}
-              {result.local && <p>{t('Local:')} {result.local}</p>}
+              {result.data && <p className='pesquisa'>{t('Data:')} {result.data}</p>}
+              {result.horario && <p className='pesquisa'>{t('Horário:')} {result.horario}</p>}
+              {result.local && <p className='pesquisa'>{t('Local:')} {result.local}</p>}
             </div>
           </div>
         ))}

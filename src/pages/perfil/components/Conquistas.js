@@ -1,30 +1,32 @@
 import '../Perfil.css';
 import Conquista from './Conquista';
-import achievPic from '../images/image_filler_square.png';
+import achievPic from '../images/achievement_img.png';
+import achievPic1 from '../images/achievement_img1.png';
+import achievPic2 from '../images/achievement_img2.png';
 
-var achievData = [
+const achievData = [
     {
         url: achievPic,
         color: '#58D2FF'
     },
     {
-        url: achievPic,
+        url: achievPic1,
         color: '#FF486D'
     },
     {
-        url: achievPic,
+        url: achievPic2,
         color: '#C6EC3E'
     },
     {
-        url: achievPic,
+        url: achievPic2,
         color: '#D3CED7'
     },
     {
-        url: achievPic,
+        url: achievPic2,
         color: '#D3CED7'
     },
     {
-        url: achievPic,
+        url: achievPic2,
         color: '#D3CED7'
     }
 ];

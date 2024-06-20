@@ -21,6 +21,7 @@
 }
 
 .star {
+    align-self: flex-start;
     background: #FF486D;
     width: 3rem;
     height: 3rem;
@@ -30,10 +31,18 @@
 
 .jobPlan {
     background: #FF486D;
+    width: 60%;
     padding: 1.5rem 3rem;
     border-radius: 1rem;
     text-align: center;
     margin-top: -0.55rem;
+}
+
+.profileImage {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 30%;
 }
 
 .profilePic, .topCard {
@@ -44,13 +53,14 @@
 }
 
 .profilePic {
-    height: 10rem;
+    width: 15vw;
     padding-bottom: 0;
 }
 
 .topCard {
-    width: 70%;
-    padding-left: 1rem;
+    width: 100%;
+    min-width: 60vw;
+    padding-inline: 2rem;
 }
 
 .userInfo, .achievementBar, .userButtons {
@@ -60,18 +70,33 @@
     text-align: center;
 }
 
+.userInfo {
+    & div {
+    width: 100%;
+    }
+    & h4 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    & p {
+        font-size: 1rem;
+    }
+    & div:first-child {
+        width: 180%;
+        text-align: left;
+    }
+}
+
 .achievementBar {
     align-items: center;
     background: #F0EDF2;
     padding: 1rem;
     border-radius: 1rem;
-    & div:first-child {
+    gap: 1rem;
+    & div {
         display: flex;
         align-items: center;
         gap: 1rem;
-    }
-    & div:nth-child(2) {
-        background: #F0EDF2;
     }
     & p {
         background: #FFFFFF;
@@ -85,18 +110,16 @@
 
 .achievScroll {
     display: flex;
-    width: 60%;
     gap: 1rem;
     overflow-x: scroll;
     & img {
-        height: 3rem;
         padding: 1.25rem;
         border-radius: 1rem;
     }
 }
 
 .userButtons {
-    gap: 2rem;
+    gap: 1rem;
     p, div {
         display: flex;
         align-items: center;
@@ -121,7 +144,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    width: 84vw;
+    width: 82vw;
     height: 5rem;
     margin-bottom: -1rem;
     & h2 {
@@ -136,7 +159,7 @@
 .leftBackground, .rightBackground {
     width: 50%;
     height: 100%;
-    background: url('./images/showcase_img.png') left 0 bottom 0/55% no-repeat;
+    background: url('./images/showcase_img.png') left 0 bottom 0/auto 55% no-repeat;
 }
 
 .rightBackground {
@@ -150,15 +173,18 @@
     width: 80vw;
     background: #58D2FF;
     padding: 3rem 1rem 1rem 1rem;
+    gap: 1rem;
 }
 
 .userStats {
     background: #FFFFFF;
-    padding: 1rem;
+    width: 60%;
+    padding: 2.5rem 1rem;
     & div {
         display: flex;
         justify-content: space-between;
         gap: 4rem;
+        font-size: 1.5rem;
     }
     & ul:nth-child(2){
         text-align: right;
@@ -168,12 +194,66 @@
 .skinScroll {
     display: flex;
     background: #FFFFFF;
+    width: 100%;
     padding: 1rem;
     gap: 4rem;
     overflow-x: scroll;
     & img {
         height: 15rem;
     }
+}
+
+.achievModal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.achievModal {
+    width: 80vw;
+    max-width: 1536px;
+    background: #9B33FD;
+    padding: 2rem;
+    border-radius: 0 1rem 0 0;
+    outline: none;
+    position: inherit;
+    z-index: 4;
+    & ul li {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 1rem;
+        & img {
+            height: 5rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.topModal, .topModal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h1 {
+        font-family: 'Poppins', sans-serif;
+    }
+    & img {
+        height: 3rem;
+    }
+}
+
+.closeButton {
+    width: 2rem;
+    height: 2rem;
+    background: url('./images/image_filler_square.png') center/contain no-repeat;
 }
 
 /* Hover */
@@ -185,6 +265,11 @@
     background: #9B33FD;
 }
 
+
+.closeButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
 /* #Perfil {
     display: flex;
 }

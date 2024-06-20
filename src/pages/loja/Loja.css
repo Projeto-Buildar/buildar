@@ -63,8 +63,6 @@
 }
 
 .avatar-list {
-  /* display: flex; */
-  justify-content: center;
   gap: 20px;
 }
 
@@ -113,15 +111,11 @@
   margin-top: 40px;
   text-align: center;
   background: url('./images/fundoazul.png') no-repeat center;
-  height: 25rem;
-  /* Aumentei a altura para acomodar duas linhas */
-  width: auto;
   display: flex;
-  /* Adicionado para usar flexbox */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Colunas */
+
 }
 
 .energia-title {
