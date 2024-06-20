@@ -8,7 +8,7 @@ import profilePic from './images/image_filler_square.png';
 import trophy from './images/trophy.png';
 import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
-// import closeButton from './images/closeButton.svg';
+import closeButton from './images/closeButton.png';
 
 import { useState } from "react";
 import Modal from "react-modal";
@@ -108,18 +108,18 @@ export default function Perfil() {
                 overlayClassName='achievModal-overlay'
                 className='achievModal'
             >
-                <div className=""></div>
+                <div className="leftModalSide"></div>
                 <section>
                     <div className="topModal">
                         <div>
                             <img src={trophy}/>
                             <h1>Conquistas</h1>
                         </div>
-                        {/* <img src={closeButton} className="closeButton" onClick={closeModal}/> */}
+                        <img src={closeButton} className="closeButton" onClick={closeModal}/>
                     </div>
                     <ConquistasDetails/>
                 </section>
-                <div className=""></div>
+                <div className="rightModalSide"></div>
             </Modal>
         </main>
 
