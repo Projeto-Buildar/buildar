@@ -1,0 +1,100 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Define o box-sizing e desabilita a seleção de texto em todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Garante que padding e border não afetem o tamanho total do elemento */
+  user-select: none; /* Desabilita a seleção de texto nos elementos */
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+  margin: 0; /* Remove as margens padrão */
+  display: flex; /* Usa flexbox para centralizar o conteúdo vertical e horizontalmente */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Define a altura mínima do corpo para ocupar toda a altura da viewport */
+  font-family: 'Poppins', sans-serif; /* Define a fonte padrão como Poppins */
+}
+
+/* Animação para mover o plano de fundo */
+@keyframes moveBackground {
+  from {
+    background-position: 0 0; /* Início da animação com a posição do plano de fundo em 0 0 */
+  }
+  to {
+    background-position: -200% 0; /* Fim da animação com a posição do plano de fundo fora da viewport */
+  }
+}
+
+/* Estilos para a classe .world que representa o mundo do jogo */
+.world {
+  background-image: url('img/fundo.png'); /* Define a imagem de fundo do mundo */
+  overflow: hidden; /* Esconde conteúdo que extrapola os limites do mundo */
+  position: relative; /* Define a posição relativa para os elementos filhos */
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: 100%; /* Ocupa toda a altura disponível */
+  background-repeat: repeat-x; /* Repete a imagem de fundo na horizontal */
+  animation: moveBackground 20s linear infinite; /* Aplica a animação ao plano de fundo */
+  background-size: 200% 100%; /* Define o tamanho do plano de fundo */
+  image-rendering: pixelated; /* Renderiza a imagem de forma pixelizada */
+}
+
+/* Estilos para a classe .score que representa a pontuação */
+.score {
+  position: absolute; /* Posiciona de forma absoluta em relação ao corpo do documento */
+  right: 1vmin; /* Distância do lado direito em relação à viewport */
+  top: 1vmin; /* Distância do topo em relação à viewport */
+  font-size: 3vmin; /* Tamanho da fonte em relação à viewport */
+}
+
+/* Estilos para a classe .start-screen que representa a tela inicial */
+.start-screen {
+  position: absolute; /* Posiciona de forma absoluta em relação ao corpo do documento */
+  font-size: 5vmin; /* Tamanho da fonte em relação à viewport */
+  top: 50%; /* Alinha no meio verticalmente */
+  left: 50%; /* Alinha no meio horizontalmente */
+  transform: translate(-50%, -50%); /* Move para o centro usando transform */
+  font-family: 'Courier New', Courier, monospace; /* Define a fonte para a tela inicial */
+}
+
+/* Estilos para a classe .hide que esconde elementos */
+.hide {
+  display: none; /* Esconde o elemento ao definir o display como none */
+}
+
+/* Estilos para a classe .ground que representa o chão do jogo */
+.ground {
+  --left: 0; /* Define uma variável customizada --left com valor inicial 0 */
+  position: absolute; /* Posiciona de forma absoluta em relação ao seu container */
+  width: 300%; /* Define a largura como 300% para criar uma extensão */
+  bottom: 0; /* Alinha na parte inferior do container */
+  left: calc(var(--left) * 1%); /* Calcula a posição baseada na variável --left */
+}
+
+/* Estilos para a classe .dino que representa o dinossauro */
+.dino {
+  --bottom: 0; /* Define uma variável customizada --bottom com valor inicial 0 */
+  position: absolute; /* Posiciona de forma absoluta em relação ao seu container */
+  left: 1%; /* Alinha à esquerda do container */
+  height: 30%; /* Define a altura em relação ao container */
+  bottom: calc(var(--bottom) * 1%); /* Calcula a posição baseada na variável --bottom */
+}
+
+/* Estilos para a classe .cactus que representa os cactos */
+.cactus {
+  position: absolute; /* Posiciona de forma absoluta em relação ao seu container */
+  left: calc(var(--left) * 1%); /* Calcula a posição baseada na variável --left */
+  height: 25%; /* Define a altura em relação ao container */
+  bottom: 0; /* Alinha na parte inferior do container */
+}
+
+/* Estilos para a classe .dino-img que representa a imagem do dinossauro */
+.dino-img {
+  width: 200px; /* Define a largura da imagem do dinossauro */
+  height: auto; /* Mantém a proporção da altura de acordo com a largura */
+}
+
+/* Estilos para a
