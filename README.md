@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://github.com/Projeto-Buildar/buildar/assets/146984390/28a4087a-17bd-4453-ad24-3ad5b9791813)" alt="Logomarca Oficial"/>
+</div>
+<h3 align="center">
+    <a href="https://buildar.vercel.app/">Acessar a demonstração</a>
+<h3 >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 😊 O que é a Buildar? 
+<p align="center">Uma plataforma inovadora que leva o desenvolvimento de soft skills para o próximo nível através da gamificação. Aqui, você não só aprende habilidades essenciais para o mercado de trabalho, mas também se diverte no processo, o que torna sua tragetória mais leve e divertida.
+</p>
+<p align="center"><i>Habilidades para moldar, futuro para conquistar</i> </p>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🧰 Recursos 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 💫 **Landing Page**: Comece sua jornada conosco e descubra como a Buildar pode transformar sua carreira.
+- 🔑 **Cadastro e Login**: Crie seu perfil único e acesse um mundo de possibilidades.
+- 🎮 **Gamificação**: Engaje-se com desafios e atividades que vão testar e melhorar suas habilidades interpessoais.
+- 💤 **Jogo de Descanso**: Tire um tempo para relaxar com jogos projetados para dar aquela recarregada.
+- 📡 **Eventos e Transmissões**: Conecte-se com eventos ao vivo e transmissões feitas por voluntários, ampliando sua rede e conhecimento.
+- 🌍 **Eventos Externos**: Fique por dentro de eventos externos relevantes e aproveite oportunidades de networking.
+- 🎨 **Personalização de Avatar**: Expresse sua individualidade modificando seu avatar no perfil.
+- 🐾 **Mascote Vivi**: Conheça a Vivi, nossa capivara que vai te guiar nessa aventura de aprendizado.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  > :point_up: A capivara foi escolhida para ser nossa mascote porque ela tem uma presença forte na cultura pop atual, especialmente entre a galera mais nova. Ela é um símbolo de boa convivência e cooperação, qualidades que são essenciais para o trabalho em equipe. As capivaras também são conhecidas por se adaptarem bem a diferentes ambientes, o que reflete as habilidades de adaptação que queremos incentivar nos jovens para o mercado de trabalho. Essas são as soft skills que a Buildar se dedica a desenvolver.
 
-### `npm test`
+## ⭐ Como Começar 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga estes passos e embarque nessa aventura com a gente:
+1. Visite nossa **Landing Page** e clique em "Cadastre-se".
+2. Preencha as informações necessárias para criar seu perfil.
+3. Confirme seu e-mail e faça login para acessar todos os recursos.
+4. Comece a explorar os jogos e atividades de gamificação.
+5. Participe de eventos e construa sua rede profissional.
 
-### `npm run build`
+## 🤝 Venha fazer parte 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Buildar é uma plataforma colaborativa. Se você tem interesse em ser um voluntário e contribuir com eventos e conteúdo, entre em contato conosco. Sua expertise pode ajudar muitos profissionais a crescerem!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Tecnologias utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-### `npm run eject`
+- [ReactJS](https://reactjs.org)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🗂 Como baixar o projeto?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+    # Clonar o repositório
+    $ git clone https://github.com/Projeto-Buildar/buildar.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    # Entrar no diretório
+    $ cd buildar
 
-## Learn More
+    # Instalar as dependências
+    $ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    # Iniciar o projeto
+    $ npm start
+```
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Suporte 
 
-### Code Splitting
+Precisa de uma mãozinha? Estamos aqui para ajudar! Entre em contato através do nosso e-mail de suporte: projetobuildar@gmail.com.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<div align="center">
+  <pre><i>“Comece agora e dê um salto na sua carreira com a Buildar! ₍ᐢ• (ܫ)•ᐢ₎💜”</i></pre>
+</div>
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
