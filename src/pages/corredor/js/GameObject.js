@@ -24,7 +24,7 @@ class GameObject {
 
     // Método para montar o objeto no mapa
     mount(map) {
-        console.log("Montando");
+        // console.log("Montando");
         this.isMounted = true; // Marca o objeto como montado
         if (map) {
             map.addWall(this.x, this.y); // Adiciona uma parede ao mapa nas coordenadas (x, y)

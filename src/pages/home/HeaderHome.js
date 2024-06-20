@@ -25,6 +25,10 @@ export default function HeaderHome() {
     {
       texto: t("Profile"),
       linkado: "/perfil"
+    },
+    {
+      texto: t("Conteudo texte"),
+      linkado: "/conteudo"
     }
   ]
 
@@ -32,10 +36,10 @@ export default function HeaderHome() {
     <header id='headerHome'>
       <nav>
       <Link to="/">
-        <a href='./index.html'><img src={logo} className='logo' /></a>
+        <img src={logo} className='logo' />
       </Link>
-      {textoBtn.map((object) => (          
-          <BtnsNav texto={object.texto} link={object.linkado}></BtnsNav>        
+      {textoBtn.map((object, index) => (          
+          <BtnsNav key={index} texto={object.texto} link={object.linkado}></BtnsNav>        
         ))}
       </nav>
       <Outlet/>
