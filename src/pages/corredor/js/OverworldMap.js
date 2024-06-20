@@ -75,17 +75,32 @@ export default class OverworldMap {
     // Monta objetos no mapa chamando o método mount() de cada objeto
     mountObjects() {
         Object.values(this.gameObjects).forEach(o => {
-            o.mount(this);
+            o.mount(this);   
         });
     }
 
     // Verifica se há uma cutscene de ação na posição à frente do herói
-    checkForActionCutscene() {
+    checkForActionCutscene(navegador) {
         const hero = this.gameObjects["hero"]; // Obtém o objeto do herói
-        const nextCoords = utils.nextPosition(hero.x, hero.y, hero.direction); // Calcula a próxima posição do herói
+        const nextCoords = utils.nextPosition(Math.round(hero.x), Math.round(hero.y), hero.direction); // Calcula a próxima posição do herói
+
+        if(nextCoords.x / 16 === 21 && nextCoords.y /16 === 8){
+            navegador('/conteudo')
+        }
+
         const match = Object.values(this.gameObjects).find(object => {
             return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`;
         });
-        console.log(match); // Exibe o objeto encontrado na próxima posição (se houver)
+        
+        if(match){
+            console.log(match.x / 16);
+            if(match.nome === "Rogerio"){
+                // console.log(match); // Exibe o objeto encontrado na próxima posição (se houver)
+                navegador('/');
+            } else if(match.nome === "Carlos"){
+                navegador('/home');
+            }
+        }
+        
     }
 }

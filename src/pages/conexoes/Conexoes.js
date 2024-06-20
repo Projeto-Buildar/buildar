@@ -18,7 +18,7 @@ export default function Conexoes() {
                 <img src={forma} />  <h2>TRANSMISSÕES E EVENTOS</h2>
             </div>
             <HeaderHome className='pesquisa'/>
-            <h3 id="historico">Histórico de transimissões com voluntários</h3>
+            <h3 id="historico">Histórico de transmissões com voluntários</h3>
 
         <div className="Container-conexoes">
             <div className="video-container">

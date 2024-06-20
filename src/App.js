@@ -12,7 +12,13 @@ import Perfil from './pages/perfil/Perfil';
 import Voluntario from './pages/inscricaoVoluntario/Voluntario';
 import FaleConosco from './pages/faleConosco/FaleConosco';
 import Ranqueada from './pages/ranqueada/Ranqueada';
-// import VLibras from './Vlibras';
+import Conteudo from './pages/conteudo/Conteudo';
+import Conteudo2 from './pages/conteudo/Conteudo2';
+import Conteudo3 from './pages/conteudo/Conteudo3';
+import Conteudo4 from './pages/conteudo/Conteudo4';
+import Conteudo5 from './pages/conteudo/Conteudo5';
+import Conteudo6 from './pages/conteudo/Conteudo6';
+import Conteudo7 from './pages/conteudo/Conteudo7';
 import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
 
@@ -20,7 +26,6 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <VLibras /> */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Login />} />
@@ -35,6 +40,13 @@ export default function App() {
           <Route path="faleConosco" element={<FaleConosco />} />
           <Route path="ranqueada" element={<Ranqueada />} />
           <Route path="loja" element={<Loja />} />
+          <Route path="conteudo" element={<Conteudo />} />
+          <Route path="conteudo2" element={<Conteudo2 />} />
+          <Route path="conteudo3" element={<Conteudo3 />} />
+          <Route path="conteudo4" element={<Conteudo4 />} />
+          <Route path="conteudo5" element={<Conteudo5 />} />
+          <Route path="conteudo6" element={<Conteudo6 />} />
+          <Route path="conteudo7" element={<Conteudo7 />} />
         </Routes>
       </BrowserRouter>
     </div>

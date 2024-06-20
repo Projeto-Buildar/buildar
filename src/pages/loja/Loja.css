@@ -9,6 +9,10 @@
 
 }
 
+/* .arrow.left.loja{
+  transform: translateX(-30%) rotate(180deg);
+} */
+
 .barras {
   display: flex;
   flex-direction: row-reverse;
@@ -31,11 +35,21 @@
   z-index: -1;
 }
 
+.containerLoja {
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* Seção de Avatares */
+.ulCarroselLoja {
+  /* width: 342px; */
+  /* width: 100%; */
+}
 
-
-
-
+.liCarroselLoja {
+  /* width: 300px !important; */
+  /* padding-inline: 2%; */
+}
 
 .avatar-section {
   margin-top: 160px;

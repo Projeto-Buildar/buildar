@@ -33,18 +33,18 @@ const Loja = () => {
           <div className="avatar-list">
           <Carousel
           customRightArrow={<CustomArrow props={"arrow"}></CustomArrow>}
-          customLeftArrow={<CustomArrow props={"arrow left"}></CustomArrow>}     
-          additionalTransfrom={0}
+          customLeftArrow={<CustomArrow props={"arrow left loja"}></CustomArrow>}     
+          additionalTransfrom={50}
           arrows
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
-          containerClass="container-with-dots"
+          containerClass="container-with-dots containerLoja"
           dotListClass=""
           draggable
           focusOnSelect={false}
           infinite
-          itemClass="liCarrosel"
+          itemClass="liCarroselLoja"
           keyBoardControl={false}
           minimumTouchDrag={80}
           pauseOnHover
@@ -57,7 +57,7 @@ const Loja = () => {
                 min: 1024
               },
               items: 3,
-              partialVisibilityGutter: 40
+              partialVisibilityGutter: 10
             },
             mobile: {
               breakpoint: {
@@ -81,7 +81,7 @@ const Loja = () => {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          sliderClass="olCarrosel"
+          sliderClass="ulCarroselLoja"
           slidesToSlide={1}
           swipeable
           

@@ -18,11 +18,18 @@ const Maps = {
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
             // Personagem não jogador (NPC) (comentado)
-            // npc: new Person({
-            //     x: utils.withGrid(10),
-            //     y: utils.withGrid(5),
-            //     src: npc1,
-            // }),
+            npc: new Person({
+                x: utils.withGrid(10),
+                y: utils.withGrid(9),
+                src: npc1,
+                nome: 'Rogerio'
+            }),
+            npc1: new Person({
+                x: utils.withGrid(17),
+                y: utils.withGrid(10),
+                src: npc1,
+                nome: 'Carlos'
+            }),
 
             // Personagem jogador (herói)
             hero: new Person({
@@ -81,7 +88,6 @@ const Maps = {
             [utils.asGridCoord(30, 8)]: true,
             [utils.asGridCoord(31, 8)]: true,
             [utils.asGridCoord(32, 8)]: true,
-            [utils.asGridCoord(33, 8)]: true,
             [utils.asGridCoord(34, 8)]: true,
             [utils.asGridCoord(35, 8)]: true,
             [utils.asGridCoord(36, 8)]: true,
@@ -130,6 +136,11 @@ const Maps = {
             [utils.asGridCoord(29, 15)]: true,
             [utils.asGridCoord(30, 15)]: true,
             [utils.asGridCoord(31, 15)]: true,
+            [utils.asGridCoord(32, 15)]: true,
+            [utils.asGridCoord(34, 15)]: true,
+            [utils.asGridCoord(35, 15)]: true,
+            [utils.asGridCoord(36, 15)]: true,
+            [utils.asGridCoord(37, 15)]: true,
             [utils.asGridCoord(3, 9)]: true,
             [utils.asGridCoord(3, 10)]: true,
             [utils.asGridCoord(3, 11)]: true,
