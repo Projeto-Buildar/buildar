@@ -7,10 +7,26 @@ export default function Home() {
     return (
         <div className='home'>
             <Header />
-            <div className='descanso' style={{padding: '2rem', background: '#9B33FD', position: 'fixed', top: '205', cursor: 'pointer'}}>temporario</div>
+            <div>
+                <a
+                    className='descanso'
+                    style={{
+                        padding: '2rem',
+                        background: '#9B33FD',
+                        position: 'fixed',
+                        top: '205px',
+                        cursor: 'pointer'
+                    }}
+                    href="https://gamebuildar-descanso.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    temporario
+                </a>
+            </div>
             <main>
-            <Elevadores></Elevadores>
-            {/* <Link to="/corredor">
+                <Elevadores></Elevadores>
+                {/* <Link to="/corredor">
                 <img src={fundo} width='100%' height='100%'/>
             </Link> */}
             </main>
