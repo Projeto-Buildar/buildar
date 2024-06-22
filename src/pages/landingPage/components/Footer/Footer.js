@@ -42,7 +42,7 @@ export default function Footer() {
       <div className="footerBottom">
         <section className="linkList">
           <a href="#"  className="footer-linkList"><p>{t("Privacy")}</p></a>
-          <a href="#"  className="footer-linkList"><p>{t("Terms")}</p></a>
+          <Link to="/termos">{t("Terms")}</Link>
         </section>
         <section className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">
