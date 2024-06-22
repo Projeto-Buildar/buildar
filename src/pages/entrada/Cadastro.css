@@ -1,6 +1,21 @@
+#Cadastro h1{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+
+}
+
+#Cadastro .caixa-esquerda-cadastro h1{
+    font-size: 1.5rem;
+}
+
+#Cadastro .termosPrivacidade {
+    width: 250px;
+}
+
 #Cadastro article h3{
     color: #000;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .formaCadastro1{
@@ -50,7 +65,7 @@
     background-image: url('./images/Group-formas.webp');
     background-position: center;
     color: #f3f3f3;
-    font-size: 26px;
+    font-size: 1.5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
@@ -80,15 +95,17 @@
 .caixa-direita-cadastro button:hover {
     color: #059c5b;
 }
-#submit{
+
+.caixa-direita-cadastro #submit{
     color: #000;
     background-color: #29F39B;
 }
 
-#submit:hover{
+.caixa-direita-cadastro #submit:hover{
     color: #000;
     background-color: #00ff91;
 }
+
 .caixa-direita-cadastro {
     padding: 70px;
     display: flex;
@@ -104,38 +121,43 @@
     margin-left: 5%; /* Ajuste conforme necessário */
     z-index: 1;
 }
-.checkbox-group   #aceitar_politicas{
+
+.caixa-direita-cadastro > * {
+    flex: 1 1 auto;
+}
+
+.checkbox-group #aceitar_politicas{
     border: none;
     box-shadow: none;
     width: 20px;
     height: 20px;
     margin: 6px 5px;
-
 }
-.checkbox-group{
+
+.caixa-direita-cadastro .checkbox-group{
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 0.8rem;
-}
-
- .checkbox-group  a{
-    color: #000;
-    text-decoration: none;
-
+    margin: 8px 0px;
 }
 
 #CaixaCadastro p {
     font-size: 0.9rem;
-    width: 125px;
+    
+    /* width: 135px; */
 }
 
-#CaixaCadastro strong {
+#CaixaCadastro .letraNegrito {
     display: inline; 
-    color: blueviolet;
+    color: #AC54FF;
     cursor: pointer;
     font-size: 0.9rem;
+    font-weight: 700;
+}
 
+#CaixaCadastro .letraNegrito:hover {
+    color: blueviolet;
 }
 
 .caixa-direita-cadastro {
@@ -153,15 +175,19 @@ input[type="password"] {
 }
 }
 
-
-
 #CaixaCadastro form #submit  {
     display: block; 
     margin: auto;
+    margin-top: 10px;
 }
 
 .conecte-se-container {
     display: flex; 
     align-items: baseline; 
-    justify-content: center; 
+    justify-content: space-between;
+    width: fit-content; 
+}
+
+.conecte-se-container p {
+    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
 }

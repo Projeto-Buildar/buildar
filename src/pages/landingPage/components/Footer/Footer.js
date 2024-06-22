@@ -33,16 +33,20 @@ export default function Footer() {
               </div>
           </div>
         </section>
-        <section >
+        {/* <section >
           <a href="./index.html"><img src={logo} className="logo" alt="Logo" /></a>
           <p className="footer-rigth">{t("Rights")}</p>
-        </section>
+        </section> */}
+        <Link to="/">
+          <img src={logo} className="logo" alt="Logo" />
+          <p className="footer-rigth">{t("Rights")}</p>
+        </Link>
       </div>
       <div className="breakBar"></div>
       <div className="footerBottom">
         <section className="linkList">
-          <a href="#"  className="footer-linkList"><p>{t("Privacy")}</p></a>
-          <Link to="/termos">{t("Terms")}</Link>
+          <Link to="/termos"  className="footer-linkList">{t("Privacy")}</Link>
+          <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </section>
         <section className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">

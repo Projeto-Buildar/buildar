@@ -56,6 +56,7 @@ export default function App() {
           <Route path="termos" element={<Termos />} />
           <Route path='descanso' element={<AreaDescanso/>}></Route>
         </Routes>
+        {/* .caixa-direita-cadastro */}
       </BrowserRouter>
     </div>
   );

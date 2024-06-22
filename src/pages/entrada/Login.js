@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link e Outlet
 import forma3 from './images/Vector-3.webp';
 import forma from './images/Vector.webp';
-import logo from './images/logo_on.webp';
 import forma2 from './images/forma2.webp';
 import forma1 from './images/forma1.webp';
 import Header from '../landingPage/components/Header/Header';
@@ -36,10 +35,10 @@ export default function Login() {
             <img src={forma1} alt="forma1" className='forma1' />
             <Header mostrarSelectIdiomas={false} classe='loginHeader'/>
             <article>
-                <div className='caixa-esquerda'>
+                <div className='caixa-esquerda-login'>
                     <h1>{t('welcomeBack')}</h1>
                 </div>
-                <div className='caixa-direita' id='CaixaLogin'>
+                <div className='caixa-direita-login' id='CaixaLogin'>
                     <h1>Login</h1>
                     <form onSubmit={handleSubmit}>
                         <h3>Email</h3>

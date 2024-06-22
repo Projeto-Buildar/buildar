@@ -1,8 +1,6 @@
 import './Cadastro.css';
 import { useState } from 'react';
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import logo from './images/logo_on.webp';
-import GroupFormas from './images/Group-formas.webp';
 import formaCadastro1 from './images/forma-cadastro1.webp';
 import formaCadastro2 from './images/forma-cadastro2.webp';
 import Header from '../landingPage/components/Header/Header';
@@ -104,9 +102,10 @@ export default function Cadastro() {
                                 onChange={handleChange}
                                 required
                             />
-                            <label htmlFor="aceitar_politicas">
-                                {t("PrivacyPolicy1")}<a href="/politicas-de-privacidade" target="_blank">{t("PrivacyPolicy2")}</a>
+                            <label htmlFor="aceitar_politicas" className='termosPrivacidade'>
+                                {t("PrivacyPolicy1")} <strong className='letraNegrito'> <Link to="/Termos">{t("PrivacyPolicy2")}</Link> </strong> {t("PrivacyPolicy3")} <strong className='letraNegrito'> <Link to="/Termos">{t("PrivacyPolicy4")}</Link> </strong>
                             </label>
+
                         </div>
                         {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" name="submit" value={t("Cadastre-se")} />
@@ -115,7 +114,7 @@ export default function Cadastro() {
                     <div className='conecte-se-container'>
                         <p>{t("HaveAccount")}</p>
                         <Link to="/login">
-                            <button className='conecte-se'><strong>{t("Conecte-se")}</strong></button>
+                            <button className='conecte-se'><strong className='letraNegrito'>{t("Conecte-se")}</strong></button>
                         </Link>
                     </div>
                 </div>
