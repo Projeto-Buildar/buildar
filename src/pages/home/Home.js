@@ -24,6 +24,7 @@ export default function Home() {
                     temporario
                 </a>
             </div>
+            <Link to='/descanso' style={{background: '#58D2FF', padding: '3rem', position: 'fixed', top: '50vh'}}>Item</Link>
             <main>
                 <Elevadores></Elevadores>
                 {/* <Link to="/corredor">

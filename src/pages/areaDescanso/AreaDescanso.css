@@ -1,0 +1,61 @@
+#areaDescanso {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    height: 100vh;
+}
+
+#areaDescanso section:nth-child(2) {
+    background: #FF486D;
+    width: 100%;
+    padding: 4rem 0 2rem 0;
+    & h1 {
+        margin-left: 10vw;
+    }
+}
+
+#areaDescanso section:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    /* width: 80vw; */
+    margin-block: 5vh;
+    gap: 2rem;
+}
+
+
+#areaDescanso article {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    & div {
+        width: 24vw;
+        margin-top: 1rem;
+    }
+    & img {
+        width: 24vw;
+        height: 20vh;
+        border: 2px solid #000000;
+    }
+}
+
+#trexGame {
+    background: #9B33FD;
+}
+
+.onDoing {
+    background: #D9D9D9;
+}
+
+/* Hover */
+
+#areaDescanso article:not(.onDoing):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    background: #FFFFFF;
+}

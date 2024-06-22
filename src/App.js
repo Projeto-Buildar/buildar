@@ -25,6 +25,7 @@ import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
 import Pratica from './pages/conteudo/Pratica';
 import Termos from './pages/termos/Termos';
+import AreaDescanso from './pages/areaDescanso/AreaDescanso';
 
 export default function App() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="conteudo7" element={<Conteudo7 />} />
           <Route path='pratica' element={<Pratica></Pratica>}></Route>
           <Route path="termos" element={<Termos />} />
+          <Route path='descanso' element={<AreaDescanso/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
