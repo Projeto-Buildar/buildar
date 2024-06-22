@@ -10,6 +10,9 @@ import Header from '../landingPage/components/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
 
+//NÃO APAGUE ISSO !!!
+// TO DE OLHO >:C
+
 export default function Login() {
     const { t } = useTranslation();
     const navigate = useNavigate();
