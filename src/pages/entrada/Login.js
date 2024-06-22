@@ -40,7 +40,7 @@ export default function Login() {
                 </div>
                 <div className='caixa-direita-login' id='CaixaLogin'>
                     <h1>Login</h1>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className='formLogin'>
                         <h3>Email</h3>
                         <input
                             type="email"

@@ -115,8 +115,7 @@
     z-index: 1;
 }
 
-#CaixaLogin {
-
+#login .formLogin input {
     input,
     input[type="email"],
     input[type="password"] {
