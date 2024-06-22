@@ -24,37 +24,37 @@ import Conteudo7 from './pages/conteudo/Conteudo7';
 import Loja from './pages/loja/Loja';
 import AssistiveScriptLoader from './Assistive';
 import Pratica from './pages/conteudo/Pratica';
+import Termos from './pages/termos/Termos';
 
 export default function App() {
   return (
     <div className="App">
-      <DndProvider backend={HTML5Backend}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="login" element={<Login />} />
-            <Route path="cadastro" element={<Cadastro />} />
-            <Route path="home" element={<Home />} />
-            <Route path="corredor" element={<Corredor />} />
-            <Route path="sobre" element={<SobreNos />} />
-            <Route path="pagamento" element={<Pagamento />} />
-            <Route path="conexoes" element={<Conexoes />} />
-            <Route path="perfil" element={<Perfil />} />
-            <Route path="inscricaoVoluntario" element={<Voluntario />} />
-            <Route path="faleConosco" element={<FaleConosco />} />
-            <Route path="ranqueada" element={<Ranqueada />} />
-            <Route path="loja" element={<Loja />} />
-            <Route path="conteudo" element={<Conteudo />} />
-            <Route path="conteudo2" element={<Conteudo2 />} />
-            <Route path="conteudo3" element={<Conteudo3 />} />
-            <Route path="conteudo4" element={<Conteudo4 />} />
-            <Route path="conteudo5" element={<Conteudo5 />} />
-            <Route path="conteudo6" element={<Conteudo6 />} />
-            <Route path="conteudo7" element={<Conteudo7 />} />
-            <Route path='pratica' element={<Pratica />} />
-          </Routes>
-        </BrowserRouter>
-      </DndProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cadastro" element={<Cadastro />} />
+          <Route path="home" element={<Home />} />
+          <Route path="corredor" element={<Corredor />} />
+          <Route path="sobre" element={<SobreNos />} />
+          <Route path="pagamento" element={<Pagamento />} />
+          <Route path="conexoes" element={<Conexoes />} />
+          <Route path="perfil" element={<Perfil />} />
+          <Route path="inscricaoVoluntario" element={<Voluntario />} />
+          <Route path="faleConosco" element={<FaleConosco />} />
+          <Route path="ranqueada" element={<Ranqueada />} />
+          <Route path="loja" element={<Loja />} />
+          <Route path="conteudo" element={<Conteudo />} />
+          <Route path="conteudo2" element={<Conteudo2 />} />
+          <Route path="conteudo3" element={<Conteudo3 />} />
+          <Route path="conteudo4" element={<Conteudo4 />} />
+          <Route path="conteudo5" element={<Conteudo5 />} />
+          <Route path="conteudo6" element={<Conteudo6 />} />
+          <Route path="conteudo7" element={<Conteudo7 />} />
+          <Route path='pratica' element={<Pratica></Pratica>}></Route>
+          <Route path="termos" element={<Termos />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
