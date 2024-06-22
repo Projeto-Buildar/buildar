@@ -65,7 +65,7 @@
   grid-gap: 15px; 
 }
 
-input {
+.payment-form input {
   grid-column: span 2; 
   padding: 8px;
   border-radius: 10px;
