@@ -64,9 +64,13 @@ export default function Login() {
                         {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" value={t('submit')} />
                     </form>
-                    <Link to="/cadastro">
-                        <p>{t('dontHaveAccount')}<strong>{t('SignUp')}</strong></p>
-                    </Link>
+                    <div className='cadastre-se-container'>
+                        <p>{t('dontHaveAccount')}</p>
+                        <Link to="/cadastro">
+                          {/* <strong>{t('SignUp')}</strong> */}
+                          <button className='conecte-se'><strong className='letraNegrito'>{t('SignUp')}</strong></button>
+                        </Link>
+                    </div>
                 </div>
             </article>
 

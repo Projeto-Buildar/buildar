@@ -95,7 +95,7 @@
 #CaixaLogin button {
     border: none;
     color: #1C0240;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 #CaixaLogin button:hover {
@@ -116,9 +116,9 @@
 }
 
 #login .formLogin input {
-    input,
+    /* input,
     input[type="email"],
-    input[type="password"] {
+    input[type="password"] { */
         margin: 6px 0px;
         width: 250px;
         border: none;
@@ -128,7 +128,7 @@
         /* Centralizar o texto do placeholder horizontalmente */
         line-height: 40px;
         /* Ajustar a altura da linha para centralizar verticalmente */
-    }
+    /* } */
 }
 
 #submit {
@@ -162,7 +162,6 @@
 }
 
 #CaixaLogin strong {
-    margin-left: 5px;
     display: inline; /* Mantém o texto forte na mesma linha que o parágrafo */
     color: #A443FF;
     cursor: pointer;
@@ -171,4 +170,15 @@
 #CaixaLogin form #submit  {
     display: block; 
     margin: 20px auto;
+}
+
+.cadastre-se-container {
+    display: flex; 
+    align-items: baseline; 
+    justify-content: space-between;
+    width: fit-content; 
+}
+
+.cadastre-se-container p {
+    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
 }
