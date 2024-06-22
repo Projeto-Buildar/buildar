@@ -15,19 +15,28 @@ import "../../i18n";
 export default function Login() {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [email, setEmail] = useState('');
+    const [nickname, setNickname] = useState(''); // Alterado de email para nickname
     const [password, setPassword] = useState('');
+    const [formData, setFormData] = useState({
+        nickname: '',
+        password: '',
+    });
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-
-        if (email === '' || password === '') {
-            setErrorMessage('Please fill in all fields.');
-        } else {
-            setErrorMessage('');
-            navigate('/home');
-        }
+                e.preventDefault();
+        
+                if (nickname  === '' || password === '') {
+                    setErrorMessage('Please fill in all fields.');
+                } 
+                else if (nickname.includes(' ')) {
+                    setErrorMessage('Nickname cannot contain spaces.');
+                }
+                else {
+                    setErrorMessage('');
+                    navigate('/home');
+                }
+            
     };
 
     return (
@@ -41,17 +50,16 @@ export default function Login() {
                 <div className='caixa-direita-login' id='CaixaLogin'>
                     <h1>Login</h1>
                     <form onSubmit={handleSubmit} className='formLogin'>
-                        <h3>Email</h3>
+                        <h3>{t("NickName")}</h3>
                         <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder={t('emailPhonePlaceholder')}
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            type="text"
+                            name="nickname"
+                            placeholder={t("NickName")}
+                            value={formData.nickname}
+                            onChange={handleSubmit}
                             required
                         />
-                        <h3>Password</h3>
+                        <h3>{t("Password")}</h3>
                         <input
                             type="password"
                             name="password"

@@ -11,7 +11,7 @@ export default function Cadastro() {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
-        nome: '',
+        nickname: '',
         email: '',
         password: '',
         confirm_password: '',
@@ -29,9 +29,9 @@ export default function Cadastro() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { nome, email, password, confirm_password, aceitar_politicas } = formData;
+        const { nickname, email, password, confirm_password, aceitar_politicas } = formData;
 
-        if (!nome || !email || !password || !confirm_password || !aceitar_politicas) {
+        if (!nickname || !email || !password || !confirm_password || !aceitar_politicas) {
             setErrorMessage('Please fill in all fields.');
         } else if (password !== confirm_password) {
             setErrorMessage('Passwords do not match.');
@@ -54,21 +54,21 @@ export default function Cadastro() {
                 <div className='caixa-direita-cadastro' id='CaixaCadastro'>
                     <h1>{t("Registration")}</h1>
                     <form onSubmit={handleSubmit}>
-                        <h3>{t("Name")}</h3>
+                        <h3>{t("NickName")}</h3>
                         <input
                             type="text"
-                            name="nome"
-                            placeholder={t("Name")}
-                            value={formData.nome}
+                            name="nickname"
+                            placeholder={t("NickName")}
+                            value={formData.nickname}
                             onChange={handleChange}
                             required
                         />
-                        <h3>{t("EmailPhone")}</h3>
+                        <h3>{t("Email")}</h3>
                         <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder={t("EmailPhone")}
+                            placeholder={t("email")}
                             value={formData.email}
                             onChange={handleChange}
                             required
