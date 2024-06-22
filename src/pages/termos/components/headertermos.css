@@ -1,0 +1,30 @@
+.btnsNav {
+    align-self: flex-end;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Ajuste de margem para espaçar os botões */
+}
+
+.btnContainer {
+    background-color: #d1cdd4;
+    width: 120px; /* Aumentando a largura para que o texto caiba melhor */
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Cor do texto padrão */
+}
+
+.btnContainer.active {
+    background-color: #701DCD; /* Cor ativa */
+    color: #FFFFFF;
+    padding-bottom: 7%;
+    transform: translateY(5px);
+}
+
+

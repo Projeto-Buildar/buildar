@@ -1,0 +1,43 @@
+.termos-container {
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.termos-header h1 {
+    margin: 0;
+}
+
+.termos-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.termos-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.termos-button.active {
+    background-color: #7500EA;
+    color: #fff;
+}
+
+.termos-content {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.termos-content h2 {
+    margin-top: 0;
+}
+
+.termos-content p {
+    margin: 10px 0;
+}
