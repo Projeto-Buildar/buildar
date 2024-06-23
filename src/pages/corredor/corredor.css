@@ -1,13 +1,12 @@
 .telaGame {
-    box-sizing:border-box;
-    background: rebeccapurple;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 88vh;
-    width: 100vw;
-    padding-top: -12vh;
-    
+  box-sizing: border-box;
+  background: rebeccapurple;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 88vh;
+  width: 100vw;
+  padding-top: -12vh;
 }
 
 .game-container {
@@ -20,6 +19,6 @@
   transform: scale(3) translateY(37%);
 }
 
-.game-container canvas {
+.game-canvas {
   image-rendering: pixelated;
 }

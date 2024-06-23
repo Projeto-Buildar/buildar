@@ -93,8 +93,8 @@ export default function Elevadores() {
                 swipeable
 
             >
-                {corredores.map(obj => {
-                    return <Elevador link="/corredor" softSkill={obj.softSkill} ></Elevador>
+                {corredores.map((obj, index) => {
+                    return <Elevador key={index} link="/corredor" softSkill={obj.softSkill} ></Elevador>
                 })}
             </Carousel>
         </div>

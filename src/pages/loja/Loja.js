@@ -34,7 +34,7 @@ const Loja = () => {
           <Carousel
           customRightArrow={<CustomArrow props={"arrow"}></CustomArrow>}
           customLeftArrow={<CustomArrow props={"arrow left loja"}></CustomArrow>}     
-          additionalTransfrom={50}
+          additionalTransfrom={100}
           arrows
           autoPlaySpeed={3000}
           centerMode={false}
@@ -57,7 +57,7 @@ const Loja = () => {
                 min: 1024
               },
               items: 3,
-              partialVisibilityGutter: 10
+              partialVisibilityGutter: 50
             },
             mobile: {
               breakpoint: {

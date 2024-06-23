@@ -1,8 +1,11 @@
 import Sprite from './Sprite'; // Importa a classe Sprite
 import playerV1 from "../images/personagens/pessoa/hero.png"; // Importa a imagem do jogador
+import OverworldEvent from './OverworldEvent';
 
 class GameObject {
     constructor(config) {
+        this.id = null;
+        this.isMounted = false;
         // Inicializa as propriedades do objeto com os valores do objeto config ou padrões
         this.x = config.x || 0; // Posição horizontal inicial ou 0 se não especificado
         this.y = config.y || 0; // Posição vertical inicial ou 0 se não especificado
@@ -20,21 +23,52 @@ class GameObject {
             height: config.height, // Altura da sprite
             animationFrameLimit: config.animationFrameLimit // Limite de frames para animação
         });
+        this.behaviorLoop = config.behaviorLoop || [];
+        this.behaviorLoopIndex = 0;
+
+        this.talking = config.talking || [];
     }
 
     // Método para montar o objeto no mapa
     mount(map) {
         // console.log("Montando");
         this.isMounted = true; // Marca o objeto como montado
-        if (map) {
-            map.addWall(this.x, this.y); // Adiciona uma parede ao mapa nas coordenadas (x, y)
-        }
+        map.addWall(this.x, this.y);
+
+        // If we have a behavior, start after a small delay
+        setTimeout(() => {
+            this.doBehaviorEvent(map);
+        }, 10);
     }
 
     // Método de atualização do objeto (pode ser implementado posteriormente)
     update() {
         // Este método pode ser usado para atualizar o estado do objeto
         // Exemplo: atualização da posição, verificação de colisões, etc.
+    }
+
+    async doBehaviorEvent(map, showMessage) {
+        // Don't perform behavior if a cutscene is playing or if there's no behavior
+        if (map.isCutscenePlaying || this.behaviorLoop.length === 0 || this.isStanding) {
+            return;
+        }
+
+        // Get the next event configuration
+        let eventConfig = this.behaviorLoop[this.behaviorLoopIndex];
+        eventConfig.who = this.id;
+
+        // Create the event
+        const eventHandler = new OverworldEvent({ map, event: eventConfig, showMessage});
+        await eventHandler.init();
+
+        // Move to the next event in the loop
+        this.behaviorLoopIndex += 1;
+        if (this.behaviorLoopIndex === this.behaviorLoop.length) {
+            this.behaviorLoopIndex = 0;
+        }
+
+        // Trigger the next behavior event
+        this.doBehaviorEvent(map);
     }
 }
 

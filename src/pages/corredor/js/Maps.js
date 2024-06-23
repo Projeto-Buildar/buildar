@@ -17,20 +17,49 @@ const Maps = {
 
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
-            // Personagem não jogador (NPC) (comentado)
-            npc: new Person({
+            // Personagem não jogador (NPC) (comentado)    
+            npcA: new Person({
+                x: utils.withGrid(21),
+                y: utils.withGrid(12),
+                src: npc1,
+                nome: 'Carlos',
+                behaviorLoop: [
+                    //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
+                    { type: "stand", direction: "left", time: 800 },
+                    { type: "stand", direction: "up", time: 800 },
+                    { type: "stand", direction: "right", time: 1200 },
+                    { type: "stand", direction: "up", time: 300 },
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "eiiiii man, some daqui", faceHero: "npcA" },
+                        ]
+                    }
+                ]
+            }),
+            npcB: new Person({
                 x: utils.withGrid(10),
-                y: utils.withGrid(9),
+                y: utils.withGrid(12),
                 src: npc1,
-                nome: 'Rogerio'
-            }),
-            npc1: new Person({
-                x: utils.withGrid(17),
-                y: utils.withGrid(10),
+                nome: 'adriana',
                 src: npc1,
-                nome: 'Carlos'
+                behaviorLoop: [
+                  { type: "walk", direction: "up"},
+                  { type: "walk", direction: "right"},
+                  { type: "walk", direction: "left"},
+                  { type: "walk", direction: "down"},
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "npcB" },
+                        ]
+                    }
+                ]
             }),
-
             // Personagem jogador (herói)
             hero: new Person({
                 isPlayerControlled: true, // Indica que o jogador controla este personagem

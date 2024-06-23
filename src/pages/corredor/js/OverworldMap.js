@@ -1,11 +1,12 @@
 import utils from "./Utils";
+import OverworldEvent from "./OverworldEvent";
 
 export default class OverworldMap {
     constructor(config) {
         // Inicializa os gameObjects e walls a partir do config fornecido
         this.gameObjects = config.gameObjects;
         this.walls = config.walls || {}; // Adiciona paredes ao mapa (default vazio se não houver configuração)
-
+        this.cutsceneSpaces = config.cutsceneSpaces || {};
         // Carrega e configura a imagem inferior (background do mapa)
         this.lowerImage = new Image();
         this.lowerImage.src = config.lowerSrc;
@@ -25,6 +26,8 @@ export default class OverworldMap {
         this.upperImage.onerror = () => {
             console.error(`Failed to load upper image at ${config.upperSrc}`);
         };
+
+        this.isCutscenePlaying = false;
     }
 
     // Método para desenhar a imagem inferior do mapa
@@ -55,6 +58,68 @@ export default class OverworldMap {
         return this.walls[`${x},${y}`] || false; // Retorna true se a posição está ocupada por uma parede
     }
 
+    // Monta objetos no mapa chamando o método mount() de cada objeto
+    mountObjects() {
+        Object.keys(this.gameObjects).forEach(key => {
+            let object = this.gameObjects[key];
+            object.id = key;
+            object.mount(this);
+            // o.mount(this);   
+        });
+    }
+
+    async startCutscene(events, showMessage) {
+        this.isCutscenePlaying = true;
+    
+        // Inicia um loop de eventos assíncronos e aguarda cada um deles
+        for (let i = 0; i < events.length; i++) {
+            const eventHandler = new OverworldEvent({
+                event: events[i],
+                map: this,
+                showMessage
+            });
+    
+            await eventHandler.init();
+        }
+    
+        this.isCutscenePlaying = false;
+        // console.log (this.isCutscenePlaying);
+    
+        Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this, showMessage))
+
+    }
+
+    // Verifica se há uma cutscene de ação na posição à frente do herói
+    checkForActionCutscene(navegador,showMessage) {
+        const hero = this.gameObjects["hero"]; // Obtém o objeto do herói
+        const nextCoords = utils.nextPosition(Math.round(hero.x), Math.round(hero.y), hero.direction); // Calcula a próxima posição do herói
+
+        if(nextCoords.x / 16 === 21 && nextCoords.y /16 === 8){
+            navegador('/conteudo')
+        } else if(nextCoords.x / 16 === 27 && nextCoords.y /16 === 8) {
+            navegador('/pratica')
+        }
+
+        const match = Object.values(this.gameObjects).find(object => {
+            return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`;
+        });
+        
+        if (!this.isCutscenePlaying && match && match.talking.length) {
+            this.startCutscene(match.talking[0].events,showMessage)
+        }
+        
+        // if(match){
+        //     console.log(match.x / 16);
+        //     if(match.nome === "adriana"){
+        //         // console.log(match); // Exibe o objeto encontrado na próxima posição (se houver)
+        //         navegador('/sobre');
+        //     } else if(match.nome === "Carlos"){
+        //         navegador('/sobre');
+        //     }
+        // }
+        
+    }
+
     // Adiciona uma parede na posição especificada
     addWall(x, y) {
         this.walls[`${x},${y}`] = true;
@@ -72,37 +137,4 @@ export default class OverworldMap {
         this.addWall(x, y);
     }
 
-    // Monta objetos no mapa chamando o método mount() de cada objeto
-    mountObjects() {
-        Object.values(this.gameObjects).forEach(o => {
-            o.mount(this);   
-        });
-    }
-
-    // Verifica se há uma cutscene de ação na posição à frente do herói
-    checkForActionCutscene(navegador) {
-        const hero = this.gameObjects["hero"]; // Obtém o objeto do herói
-        const nextCoords = utils.nextPosition(Math.round(hero.x), Math.round(hero.y), hero.direction); // Calcula a próxima posição do herói
-
-        if(nextCoords.x / 16 === 21 && nextCoords.y /16 === 8){
-            navegador('/conteudo')
-        } else if(nextCoords.x / 16 === 27 && nextCoords.y /16 === 8) {
-            navegador('/pratica')
-        }
-
-        const match = Object.values(this.gameObjects).find(object => {
-            return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`;
-        });
-        
-        if(match){
-            console.log(match.x / 16);
-            if(match.nome === "Rogerio"){
-                // console.log(match); // Exibe o objeto encontrado na próxima posição (se houver)
-                navegador('/');
-            } else if(match.nome === "Carlos"){
-                navegador('/home');
-            }
-        }
-        
-    }
 }

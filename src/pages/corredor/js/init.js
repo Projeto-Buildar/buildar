@@ -1,14 +1,14 @@
 import Overworld from './Overworld'; // Importa a classe Overworld
 
-// Função init que inicializa o jogo e retorna uma instância de Overworld
-export default function init(element, navigate) {
-    // Cria uma nova instância de Overworld com o elemento fornecido
+// Na sua função init
+export default function init(element, navigate, showMessage) {
     const overworld = new Overworld({
-        element: element, // Passa o elemento como configuração para o Overworld
-        navigate: navigate 
+        element: element,
+        navigate: navigate,
+        showMessage: showMessage
     });
 
-    overworld.init(); // Inicializa o Overworld
+    overworld.init();
 
-    return overworld; // Retorna a instância do Overworld criada
+    return overworld;
 }

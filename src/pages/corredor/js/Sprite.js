@@ -58,7 +58,7 @@ export default class Sprite {
         this.currentAnimationFrame = 0; // Frame atual da animação
 
         // Controle de progresso da animação
-        this.animationFrameLimit = config.animationFrameLimit || 10; // Limite de frames por segundo (default: 10)
+        this.animationFrameLimit = config.animationFrameLimit || 5; // Limite de frames por segundo (default: 10)
         this.animationFrameProgress = this.animationFrameLimit; // Progresso atual da animação
 
         // Referência ao objeto do jogo associado ao sprite
