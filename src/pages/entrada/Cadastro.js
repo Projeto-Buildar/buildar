@@ -21,20 +21,32 @@ export default function Cadastro() {
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: type === 'checkbox' ? checked : value
-        }));
+        // setFormData(prevState => ({
+        //     ...prevState,
+        //     [name]: type === 'checkbox' ? checked : value
+        // }));
+        if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
+            setErrorMessage('O nickname e o e-mail não podem conter espaços.');
+        } else {
+            setFormData(prevState => ({
+                ...prevState,
+                [name]: type === 'checkbox' ? checked : value
+            }));
+            setErrorMessage('');
+        
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const { nickname, email, password, confirm_password, aceitar_politicas } = formData;
-
+    
         if (!nickname || !email || !password || !confirm_password || !aceitar_politicas) {
-            setErrorMessage('Please fill in all fields.');
+            setErrorMessage('Por favor, preencha todos os campos.');
+        } else if (nickname.includes(' ') || email.includes(' ')) {
+            setErrorMessage('O nickname e o e-mail não podem conter espaços.');
         } else if (password !== confirm_password) {
-            setErrorMessage('Passwords do not match.');
+            setErrorMessage('As senhas não correspondem.');
         } else {
             setErrorMessage('');
             navigate('/home');
@@ -107,7 +119,7 @@ export default function Cadastro() {
                             </label>
 
                         </div>
-                        {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+                        {errorMessage && <p style={{color: 'red', margin: '10px'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" name="submit" value={t("Cadastre-se")} />
                     </form>
 

@@ -9,34 +9,34 @@ import Header from '../landingPage/components/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
 
-//NÃO APAGUE ISSO !!!
-// TO DE OLHO >:C
-
 export default function Login() {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [nickname, setNickname] = useState(''); // Alterado de email para nickname
-    const [password, setPassword] = useState('');
     const [formData, setFormData] = useState({
         nickname: '',
         password: '',
     });
     const [errorMessage, setErrorMessage] = useState('');
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'nickname' && value.includes(' ')) {
+            setErrorMessage('O apelido não pode conter espaços.');
+        } else {
+            setFormData(prevState => ({ ...prevState, [name]: value }));
+            setErrorMessage('');
+        }
+    };
+
     const handleSubmit = (e) => {
-                e.preventDefault();
-        
-                if (nickname  === '' || password === '') {
-                    setErrorMessage('Please fill in all fields.');
-                } 
-                else if (nickname.includes(' ')) {
-                    setErrorMessage('Nickname cannot contain spaces.');
-                }
-                else {
-                    setErrorMessage('');
-                    navigate('/home');
-                }
-            
+        e.preventDefault();
+
+        if (formData.nickname === '' || formData.password === '') {
+            setErrorMessage('Por favor, preencha todos os campos.');
+        } else {
+            setErrorMessage('');
+            navigate('/home');
+        }
     };
 
     return (
@@ -56,7 +56,7 @@ export default function Login() {
                             name="nickname"
                             placeholder={t("NickName")}
                             value={formData.nickname}
-                            onChange={handleSubmit}
+                            onChange={handleChange}
                             required
                         />
                         <h3>{t("Password")}</h3>
@@ -65,17 +65,16 @@ export default function Login() {
                             name="password"
                             id="password"
                             placeholder={t('enterYourPassword')}
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            value={formData.password}
+                            onChange={handleChange}
                             required
                         />
-                        {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+                        {errorMessage && <p style={{color: 'red', margin: '10px'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" value={t('submit')} />
                     </form>
                     <div className='cadastre-se-container'>
                         <p>{t('dontHaveAccount')}</p>
                         <Link to="/cadastro">
-                          {/* <strong>{t('SignUp')}</strong> */}
                           <button className='conecte-se'><strong className='letraNegrito'>{t('SignUp')}</strong></button>
                         </Link>
                     </div>
