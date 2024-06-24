@@ -1,3 +1,8 @@
-.titleTopFrame {
-    background: #58D2FF url('./images/titleBg.png') left 0 top 20%/auto 20% no-repeat !important;
+.home .titleTopFrame {
+    background: #58D2FF url('./images/titleBg.png') left 0 top 20%/auto 20% no-repeat;
+    width: 100%;
+    padding: 4rem 0 2rem 0;
+    & h1 {
+        margin-left: 10vw;
+    }
 }
