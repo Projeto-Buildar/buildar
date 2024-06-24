@@ -22,9 +22,7 @@ export default function Conteudo() {
       
       </div>
        <img src={Tela1} alt="tela1" className='tela1'/>
-      <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
-        </Link>
+        <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
 
       <div className="message-container">

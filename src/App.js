@@ -23,11 +23,14 @@ import Loja from './pages/loja/Loja';
 import Pratica from './pages/conteudo/Pratica';
 import Termos from './pages/termos/Termos';
 import AreaDescanso from './pages/areaDescanso/AreaDescanso';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <DndProvider backend={HTML5Backend}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Login />} />
@@ -52,7 +55,8 @@ export default function App() {
           <Route path='pratica' element={<Pratica></Pratica>}></Route>
           {/* <Route path='gameLegal' element={<Teste/>}></Route> */}
         </Routes>
-      </BrowserRouter>
-    </div>
+      </DndProvider>
+    </BrowserRouter>
+    </div >
   );
 }
