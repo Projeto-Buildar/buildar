@@ -275,8 +275,8 @@
 
 /* 
 .leftModalSide, .rightModalSide {
-    width: 40%;
-    height: 100%;
+    /* width: 40%;
+    height: 100%; */
     background: lawngreen;
     position: absolute;
 }

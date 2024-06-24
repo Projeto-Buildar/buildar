@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import VLibras from './Vlibras';
 
 // const loadVLibras = () => {
 //   const script = document.createElement('script');
@@ -18,8 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App />
-    {/* <VLibras /> */}
+    <App></App>
   </React.StrictMode>
 );
 // dADF

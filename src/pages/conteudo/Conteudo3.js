@@ -1,27 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import HeaderHome from '../home/HeaderHome';
+import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
+import Vivi from './imagem/vivi.png';
+import Tela3 from './imagem/Tela3.png';
+import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {
+  const history = useNavigate();
+  function irParaRotaAnterior() {
+    history(-3);
+  }
   return (
     <div>
-      <HeaderHome />
-      <div className="cabecalho">
-        <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
-        </Link>
-        <h2>Sala Gestão de Tempo 1</h2>
-      </div>
-      <img src={Capi} alt="Capi Professor" className="capi" />
+
+      <img src={Vivi} alt="Capi Professor" className="capi" />
       <div className="message-container">
         <div className="message-box">
           <p>Agora que você sabe a importancia dessa 
           habilidade, bora praticar!</p>
         </div>
       </div>
-      <div className="message-container_c2">
+      <div className="message-container">
         <div className="message-box2">
           <p>
           Se prepare para embarcar nessa jornada e descobrir 
@@ -32,6 +31,10 @@ export default function Conteudo() {
         </div>
         
       </div>
+      
+      <img src={Tela3} alt="tela3" className='tela3'/>
+
+      <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
       <Link to="/conteudo2">
            <button className="anterior">Voltar</button>
@@ -40,6 +43,26 @@ export default function Conteudo() {
       <Link to="/conteudo4">
           <button className="proximo">Proximo</button>
         </Link>
-    </div>
+        <div className='perfil_usuario'>
+            <img src={Perfil} alt="perfil" className='perfil' /> 
+        </div> 
+
+        <div className='escolha'>
+
+          <div className='botao1'>
+          <Link to="/conteudo4">
+          <button className='escolha1'>Eu nasci preparado</button>
+          </Link>
+          </div>
+
+          <div className='botao2'>
+          <Link to="/conteudo3">
+          <button className='escolha2'>Pode me explicar de novo?</button>
+          </Link>
+          </div>
+                    </div>
+          </div>
+                  
+            
   );
 }
