@@ -2,13 +2,14 @@ import Header from './HeaderHome.js';
 // import fundo from './images/image_fundo.webp';
 import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
+import Footer from '../landingPage/components/Footer/Footer.js';
 
 export default function Home() {
     return (
         <div className='home'>
             <Header />
-            <div>
-                {/* <a
+            {/* <div>
+                <a
                     className='descanso'
                     style={{
                         padding: '2rem',
@@ -22,8 +23,8 @@ export default function Home() {
                     rel="noopener noreferrer"
                 >
                     temporario
-                </a> */}
-            </div>
+                </a>
+            </div> */}
             <Link to='/descanso' style={{
                 width: '4rem',
                 background: '#58D2FF',
@@ -36,12 +37,13 @@ export default function Home() {
                 fontFamily: 'Passion One, sans-serif',
                 textAlign: 'center'
                 }}>SALA DE DESCANSO</Link>
-            <main>
+            <main style={{marginBottom: '5vh'}}>
                 <Elevadores></Elevadores>
                 {/* <Link to="/corredor">
                 <img src={fundo} width='100%' height='100%'/>
             </Link> */}
             </main>
+            <Footer/>
         </div>
 
 

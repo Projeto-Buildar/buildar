@@ -275,8 +275,8 @@
 
 /* 
 .leftModalSide, .rightModalSide {
-    /* width: 40%;
-    height: 100%; */
+    width: 40%;
+    height: 100%;
     background: lawngreen;
     position: absolute;
 }
@@ -284,7 +284,9 @@
 .rightModalSide {
     background: lightgreen;
     transform: rotateX(180deg);
-} */
+}
+
+*/
 
 /* Hover */
 

@@ -55,6 +55,7 @@ export default function App() {
           <Route path="conteudo7" element={<Conteudo7 />} />
           <Route path='pratica' element={<Pratica/>}></Route>
           <Route path='game_descanso' element={<GameDescanso/>}/>
+          <Route path='descanso' element={<AreaDescanso/>}></Route>
         </Routes>
       </DndProvider>
     </BrowserRouter>
