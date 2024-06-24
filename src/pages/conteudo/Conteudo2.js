@@ -1,27 +1,26 @@
 import { Link } from "react-router-dom";
-import HeaderHome from "../home/HeaderHome";
 import'./Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
+import Vivi from './imagem/vivi.png';
+import Perfil from './imagem/perfil.png'
+import Tela2 from './imagem/Tela2.png';
 
 
 export default function Conteudo () {
   return (
     <div>
-    <HeaderHome />
+
     
-    <div className="cabecalho">
+    
         
-    <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
-        </Link>
+       
           
-          <h2>Sala Gestão de Tempo 1</h2>
+        
     
-    </div>
+    
           
-            <img src= {Capi} alt="Capi Profesoor " className="capi"/>             
+            <img src= {Vivi} alt="Capi Profesoor " className="capi"/>             
             
-            <div className="message-container_c2">
+            <div className="message-container">
             
              <div className="message-box">
                                              
@@ -32,6 +31,12 @@ export default function Conteudo () {
                     </div>
                                                      
                   </div>
+
+               <img src={Tela2} alt="tela2" className='tela2'/>
+                  
+                  <Link to="/corredor">
+                 <button className="corredor">Voltar para o corredor</button>
+                 </Link>
                   
                   <Link to="/conteudo">
                  <button className="anterior">Voltar</button>
@@ -40,9 +45,13 @@ export default function Conteudo () {
                   <Link to="/conteudo3">
                  <button className="proximo">Proximo</button>
                  </Link>
+
+                 <div className='perfil_usuario'>
+                    <img src={Perfil} alt="perfil" className='perfil' /> 
+                  </div> 
                 
                                                         
-                                                         </div>
+        </div>
   )
 }
 

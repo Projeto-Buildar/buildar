@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderHome from '../home/HeaderHome';
 import './Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
+import Vivi from './imagem/vivi.png';
+import Tela5 from './imagem/Tela5.png';
+import Perfil from './imagem/perfil.png';
+import Prancheta from'./imagem/Prancheta.png';
 
 export default function Conteudo() {
   return (
@@ -13,12 +15,12 @@ export default function Conteudo() {
           <button className="corredor">Voltar para o corredor</button>
         </Link>
     
-      <img src={Capi} alt="Capi Professor" className="capi" />
-      <div className="message-container_c4">
+      <img src={Vivi} alt="Capi Professor" className="capi" />
+      <div className="message-container">
         <div className="message-box">
-        <p>Agora você sabe das suas tarefas, precisa fazer o planejamento do seu dia, 
-            levando em consideração todas as atividades que precisam ser feitas, o tempo que cada uma necessita,
-             o tempo que você tem e o que é prioridade.</p>
+        <p>Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia.
+           Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho é 
+           das 9h às 15h e seu horário de almoço é das 12h às 13h. Sua supervisora marcou uma reunião com a equipe das 14h às 15h.</p>
         </div>
       </div>
      
@@ -29,42 +31,15 @@ export default function Conteudo() {
       <Link to="/conteudo6">
           <button className="proximo">Proximo</button>
         </Link>
-    <div className='atividade'>
 
-<h2>Atividades do  Dia:</h2> 
 
-<div className='data'> 
-   <p>Data: 20/06/2024</p>
-</div>
+   <img src={Tela5} alt="tela5" className='tela5'/>
 
-   <div className='texto'>
- 
-   <p className='t'> <strong>1.Enviar e-mail para condidatos </strong> </p>
-    
-   <p className='t'> Confirmar recebimento de 40 currículos e 
-   agradecer pela candidatura por E-mail. </p>
-
-   <p className='t'>Tempo para fazer:</p>
-   
-   <p className='t'> <i>Cada e-mail leva em torno de 3 minutos. </i> </p>
-   
-   <p className='t'> <strong> 2.Organização de espaço para dinâmicas de entrevista em grupo: </strong> </p>
-
-   <p className='t'>reservar salas e preparar materiais necessários
-   para as dinâmicas</p>
-
-   <p className='t'>Tempo para fazer:</p>
-
-   <p className='t'> <i> Leva 2 horas para a organização de tudo </i> </p>
-
-   <p className='t'>Reunião de Equipe</p>
-
-   <p className='t'> <strong> PRIORIDADE - (14h-15h) </strong> </p>
+   <img src={Prancheta} alt="prancheta" className='prancheta'/>
    
   
 
-   </div>
-</div>
+ 
 
    
     </div>
