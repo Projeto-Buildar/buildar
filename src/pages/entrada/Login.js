@@ -9,21 +9,30 @@ import Header from '../landingPage/components/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
 
-//NÃO APAGUE ISSO !!!
-// TO DE OLHO >:C
-
 export default function Login() {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [formData, setFormData] = useState({
+        nickname: '',
+        password: '',
+    });
     const [errorMessage, setErrorMessage] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'nickname' && value.includes(' ')) {
+            setErrorMessage('O apelido não pode conter espaços.');
+        } else {
+            setFormData(prevState => ({ ...prevState, [name]: value }));
+            setErrorMessage('');
+        }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (email === '' || password === '') {
-            setErrorMessage('Please fill in all fields.');
+        if (formData.nickname === '' || formData.password === '') {
+            setErrorMessage('Por favor, preencha todos os campos.');
         } else {
             setErrorMessage('');
             navigate('/home');
@@ -41,33 +50,31 @@ export default function Login() {
                 <div className='caixa-direita-login' id='CaixaLogin'>
                     <h1>Login</h1>
                     <form onSubmit={handleSubmit} className='formLogin'>
-                        <h3>Email</h3>
+                        <h3>{t("NickName")}</h3>
                         <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder={t('emailPhonePlaceholder')}
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            type="text"
+                            name="nickname"
+                            placeholder={t("NickName")}
+                            value={formData.nickname}
+                            onChange={handleChange}
                             required
                         />
-                        <h3>Password</h3>
+                        <h3>{t("Password")}</h3>
                         <input
                             type="password"
                             name="password"
                             id="password"
                             placeholder={t('enterYourPassword')}
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            value={formData.password}
+                            onChange={handleChange}
                             required
                         />
-                        {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+                        {errorMessage && <p style={{color: 'red', margin: '10px'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" value={t('submit')} />
                     </form>
                     <div className='cadastre-se-container'>
                         <p>{t('dontHaveAccount')}</p>
                         <Link to="/cadastro">
-                          {/* <strong>{t('SignUp')}</strong> */}
                           <button className='conecte-se'><strong className='letraNegrito'>{t('SignUp')}</strong></button>
                         </Link>
                     </div>

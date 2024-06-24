@@ -1,8 +1,12 @@
+#CaixaCadastro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #Cadastro h1{
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-
 }
 
 #Cadastro .caixa-esquerda-cadastro h1{
@@ -96,16 +100,6 @@
     color: #059c5b;
 }
 
-.caixa-direita-cadastro #submit{
-    color: #000;
-    background-color: #29F39B;
-}
-
-.caixa-direita-cadastro #submit:hover{
-    color: #000;
-    background-color: #00ff91;
-}
-
 .caixa-direita-cadastro {
     padding: 70px;
     display: flex;
@@ -165,27 +159,41 @@ input,
 input[type="email"],
 input[type="password"] {
     margin: 6px 0px;
-    width: 250px;
-    height: 30px;
+    width: 280px;
     border: none;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 8px;
     text-align: center; 
-    line-height: 20px; 
+    line-height: 40px; 
 }
 }
 
 #CaixaCadastro form #submit  {
     display: block; 
     margin: auto;
-    margin-top: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 50px;
+    width: 150px;
+    color: #000;
+    background-color: #29F39B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Ajuste conforme necessário */
 }
 
+#CaixaCadastro form  #submit:hover {
+    background-color: #00ff91;
+}
 .conecte-se-container {
     display: flex; 
     align-items: baseline; 
     justify-content: space-between;
     width: fit-content; 
+    margin: 12px;
+
 }
 
 .conecte-se-container p {
