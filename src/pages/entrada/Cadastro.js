@@ -62,7 +62,7 @@ export default function Cadastro() {
             <Header mostrarSelectIdiomas={false} classe='cadastroHeader'/>
             <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
 
-            <article>
+            <article className='articleCadastro'>
                 <div className='caixa-esquerda-cadastro'>
                     <h1>{t("BuildFuture")}</h1>
                 </div>
