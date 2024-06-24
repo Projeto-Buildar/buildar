@@ -55,7 +55,7 @@ export default class ConfiguracaoMapaGame {
         if (this.isUpperImageLoaded) {
             ctx.drawImage(
                 this.upperImage,
-                utils.withGrid(10) - cameraPerson.x,
+                utils.withGrid(10.0009) - cameraPerson.x,
                 utils.withGrid(6) - cameraPerson.y
             );
         }

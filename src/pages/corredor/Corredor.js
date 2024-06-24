@@ -121,7 +121,7 @@ export default function Corredor() {
         <div className="telaGame">
 
             <Header />
-
+            
             {/* game-container é o container do game, e o ref={referenciaDoGameContainer} está mandando 
             para a variável "referenciaDoGameContainer" sua referência, dando acesso a suas informações */}
             <div className="game-container" ref={referenciaDoGameContainer}>
@@ -134,6 +134,7 @@ export default function Corredor() {
                 ))}
 
             </div>
+            <button style={{ button: '0'}} onClick={() => localStorage.clear()}> Clique aqui para limpar o LocalStorage</button>
         </div>
     );
 }

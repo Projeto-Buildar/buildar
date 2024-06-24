@@ -37,7 +37,7 @@ export default class Game {
     startGameLoop() {
         if (this.isRunning) return;
         this.isRunning = true;
-
+        const cameraPerson = this.map.gameObjects.player;
         const step = (currentTime) => {
             if (this.lastTime === 0) this.lastTime = currentTime;
             const deltaTime = (currentTime - this.lastTime) / 1000;
@@ -45,9 +45,13 @@ export default class Game {
             
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-            const cameraPerson = this.map.gameObjects.player;
-            this.map.drawUpperImage(this.ctx, cameraPerson);
+            
+            
+            
             this.map.drawLowerImage(this.ctx, cameraPerson);
+            this.map.drawUpperImage(this.ctx, cameraPerson);
+            // this.map.drawUpperImage(this.ctx, cameraPerson);
+            // this.map.drawUpperImage(this.ctx, cameraPerson);
 
             Object.values(this.map.gameObjects).sort((a, b) => {
                 return a.y - b.y;
@@ -87,17 +91,13 @@ export default class Game {
     startInitialCutscene() {
         return this.map.startCutscene([
             { who: "player", type: "walk", direction: "down" },
-            { who: "player", type: "walk", direction: "down" },
-            { who: "npcB", type: "walk", direction: "right" },
-            { who: "npcB", type: "stand", direction: "up", time: 800 },
+            { who: "npcB", type: "walk", direction: "up" },
             { type: "textMessage", text: "Olá, seja bem-vindo a Buildar corporation!" },
             { type: "textMessage", text: "Aqui você irá a suas habilidades comportamentais" },
             { type: "textMessage", text: "Na sua direita teram portas para você treinar as suas habilidades" },
             { type: "textMessage", text: "E na sua esquerda tem o nosso joguinho de descanso, fique a vontade para jogar" },
             { who: "npcB", type: "walk", direction: "down" },
-            { who: "npcB", type: "walk", direction: "left" },
-            { who: "npcB", type: "walk", direction: "left" },
-            { who: "player", type: "walk", direction: "down" },
+            { who: "npcB", type: "stand", direction: "up" },
         ]);
     }
 
