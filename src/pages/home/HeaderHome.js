@@ -27,7 +27,7 @@ export default function HeaderHome() {
       linkado: "/perfil"
     },
     {
-      texto: t("Conteudo texte"),
+      texto: t("Conteudo"),
       linkado: "/conteudo"
     }
   ]
