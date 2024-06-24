@@ -8,7 +8,7 @@ export default function Home() {
         <div className='home'>
             <Header />
             <div>
-                <a
+                {/* <a
                     className='descanso'
                     style={{
                         padding: '2rem',
@@ -22,9 +22,20 @@ export default function Home() {
                     rel="noopener noreferrer"
                 >
                     temporario
-                </a>
+                </a> */}
             </div>
-            <Link to='/descanso' style={{background: '#58D2FF', padding: '3rem', position: 'fixed', top: '50vh'}}>Item</Link>
+            <Link to='/descanso' style={{
+                width: '4rem',
+                background: '#58D2FF',
+                padding: '2rem',
+                position: 'fixed',
+                top: '15vh',
+                left: '2vw',
+                zIndex: '2',
+                borderRadius: '0 0 1rem 1rem',
+                fontFamily: 'Passion One, sans-serif',
+                textAlign: 'center'
+                }}>SALA DE DESCANSO</Link>
             <main>
                 <Elevadores></Elevadores>
                 {/* <Link to="/corredor">

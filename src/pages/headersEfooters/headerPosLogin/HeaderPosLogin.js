@@ -6,7 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "../../i18n"
 
-export default function HeaderHome() {
+export default function HeaderPosLogin() {
   const {t, i18n } = useTranslation();
   const textoBtn = [
     {

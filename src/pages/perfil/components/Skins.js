@@ -1,16 +1,18 @@
 import '../Perfil.css';
 import Skin from './Skin';
-import skinPic from '../images/image_filler_square.png';
+import skinPic from '../images/skin.png';
+import skinPic1 from '../images/skin2.png';
+import skinPic2 from '../images/skin3.png';
 
 var skinData = [
     {
         url: skinPic
     },
     {
-        url: skinPic
+        url: skinPic1
     },
     {
-        url: skinPic
+        url: skinPic2
     }
 ];
 

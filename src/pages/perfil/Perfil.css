@@ -22,11 +22,11 @@
 
 .star {
     align-self: flex-start;
-    background: #FF486D;
-    width: 3rem;
-    height: 3rem;
+    background: url('./images/star.png') center/contain no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
     position: absolute;
-    margin: -1rem 0 0 -1rem;
+    margin: -2rem 0 0 -1.5rem;
 }
 
 .jobPlan {
@@ -72,7 +72,7 @@
 
 .userInfo {
     & div {
-    width: 100%;
+        width: 100%;
     }
     & h4 {
         font-size: 2rem;
@@ -186,7 +186,7 @@
         gap: 4rem;
         font-size: 1.5rem;
     }
-    & ul:nth-child(2){
+    & ul:nth-child(2) {
         text-align: right;
     }
 }
@@ -196,10 +196,15 @@
     background: #FFFFFF;
     width: 100%;
     padding: 1rem;
-    gap: 4rem;
+    gap: 2rem;
     overflow-x: scroll;
     & img {
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
+        background: #F0EDF2;
+        padding: 2rem;
+        border-radius: 1rem;
+        object-fit: contain;
     }
 }
 
@@ -268,7 +273,7 @@
     margin-top: -3rem;
 }
 
-
+/* 
 .leftModalSide, .rightModalSide {
     width: 40%;
     height: 100%;
@@ -279,7 +284,7 @@
 .rightModalSide {
     background: lightgreen;
     transform: rotateX(180deg);
-}
+} */
 
 /* Hover */
 
@@ -296,6 +301,7 @@
     transform: scale(1.2);
     transition: 0.3s;
 }
+
 /* #Perfil {
     display: flex;
 }
