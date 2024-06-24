@@ -16,6 +16,7 @@ export default function Conteudo() {
       </div>
       
       </div>
+       
        <img src={Tela1} alt="tela1" className='tela1'/>
       <Link to="/corredor">
           <button className="corredor">Voltar para o corredor</button>

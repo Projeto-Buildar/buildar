@@ -55,23 +55,16 @@ export default function Conteudo() {
         <button className="proximo">Próximo</button>
       </Link>
 
-      <div className='atividade_c6'>
+      <div className='atividade'>
         
-        <h2>Planejamento</h2>
-
-        <div className='texto1'>
-          {Object.values(items).map(item => (
-            <DraggableItem key={item.id} id={item.id} text={item.text} startArea={item.area} />
-          ))}
-        </div>
-
+       
         <div className='drop1'>
           <DroppableArea id="1" onDrop={(itemId) => handleDrop(itemId, "1")} items={items} />
           <DroppableArea id="2" onDrop={(itemId) => handleDrop(itemId, "2")} items={items} />
           <DroppableArea id="3" onDrop={(itemId) => handleDrop(itemId, "3")} items={items} />
           <DroppableArea id="4" onDrop={(itemId) => handleDrop(itemId, "4")} items={items} />
           <DroppableArea id="5" onDrop={(itemId) => handleDrop(itemId, "5")} items={items} />
-          <DroppableArea id="6" onDrop={(itemId) => handleDrop(itemId, "6")} items={items} />
+          
         </div>
 
         <div className='drop2'>
@@ -80,7 +73,7 @@ export default function Conteudo() {
           <DroppableArea id="9" onDrop={(itemId) => handleDrop(itemId, "9")} items={items} />
           <DroppableArea id="10" onDrop={(itemId) => handleDrop(itemId, "10")} items={items} />
           <DroppableArea id="11" onDrop={(itemId) => handleDrop(itemId, "11")} items={items} />
-          <DroppableArea id="12" onDrop={(itemId) => handleDrop(itemId, "12")} items={items} />
+          
         </div>
       </div>
     </div>
