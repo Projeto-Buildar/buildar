@@ -50,7 +50,7 @@
 #trexGame {
     background: #FFFFFF;
     & span {
-        background: url('../../../../../AC_WPW/buildar_runGame.gif') left 0 top 0/cover no-repeat;
+        background: url('./images/buildar_runGame.gif') left 0 top 0/cover no-repeat;
     }
 }
 
