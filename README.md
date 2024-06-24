@@ -2,7 +2,7 @@
   <img src="https://github.com/Projeto-Buildar/buildar/assets/146984390/28a4087a-17bd-4453-ad24-3ad5b9791813)" alt="Logomarca Oficial"/>
 </div>
 <h3 align="center">
-    <a target=“_blank” href="https://buildar.vercel.app/">Acessar a demonstração</a>
+    <a target=“blank” href="https://buildar.vercel.app/">Acessar a demonstração</a>
 <h3 >
 
 # 😊 O que é a Buildar? 
