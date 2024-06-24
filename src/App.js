@@ -25,7 +25,7 @@ import Termos from './pages/termos/Termos';
 import AreaDescanso from './pages/areaDescanso/AreaDescanso';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import Teste from './teste';
+import GameDescanso from './GameDescanso';
 
 export default function App() {
   return (
@@ -53,8 +53,8 @@ export default function App() {
           <Route path="conteudo5" element={<Conteudo5 />} />
           <Route path="conteudo6" element={<Conteudo6 />} />
           <Route path="conteudo7" element={<Conteudo7 />} />
-          <Route path='pratica' element={<Pratica></Pratica>}></Route>
-          <Route path='gameLegal' element={<Teste/>}></Route>
+          <Route path='pratica' element={<Pratica/>}></Route>
+          <Route path='game_descanso' element={<GameDescanso/>}/>
         </Routes>
       </DndProvider>
     </BrowserRouter>

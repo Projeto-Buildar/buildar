@@ -130,7 +130,7 @@ const Mapas = {
                     {
                         events: [
                             { type: "textMessage", text: "está rodando o Famoso jogo Vivi Run"},
-                            { type: "redirecionarPagina", text: "/gameLegal"},
+                            { type: "redirecionarPagina", text: "/game_descanso"},
 
                         ]
                     }
