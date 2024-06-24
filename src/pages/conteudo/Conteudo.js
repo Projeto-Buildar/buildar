@@ -1,19 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import HeaderHome from '../home/HeaderHome';
 import './Conteudo.css';
 import Capi from './imagem/Capi_Professor.png';
 import Tela1 from './imagem/tela1.png';
 
 export default function Conteudo() {
+  const history = useNavigate();
+  function irParaRotaAnterior() {
+    history(-1);
+  }
   return (
     <div>
       <HeaderHome />
       
       <div className="cabecalho">
-        <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
-        </Link>
+        {/* por segurança, por enquanto, deixe todos os caminhos corredor como /corredor/GestaoDoTempo */}
+        {/* <Link to="/corredor/GestaoDoTempo">  */}
+          <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+        {/* </Link> */}
         <h2>Sala Gestão de Tempo 1</h2>
       </div>
       <img src={Tela1} alt="tela1" className="tela1" />

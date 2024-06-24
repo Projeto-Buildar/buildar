@@ -4,7 +4,6 @@ import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
 
 export default function Home() {
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     return (
         <div className='home'>
             <Header />

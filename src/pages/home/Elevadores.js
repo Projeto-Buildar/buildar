@@ -13,26 +13,32 @@ export default function Elevadores() {
 
     const corredores = [
         {
-            softSkill:t("gestão_de_tempo")
-            // mapa: ""
+            softSkill:t("gestão_de_tempo"),
+            mapa: "GestaoDeTempo"
         },
         {
-            softSkill: t("resiliência")
+            softSkill: t("resiliência"),
+            mapa: "Kitchen"
         },
         {
-            softSkill: t("negociação")
+            softSkill: t("negociação"),
+            mapa: "GestaoDeTempo"
         },
         {
-            softSkill: t("criatividade")
+            softSkill: t("criatividade"),
+            mapa: "GestaoDeTempo"
         },
         {
-            softSkill: t("adaptabilidade")
+            softSkill: t("adaptabilidade"),
+            mapa: "GestaoDeTempo"
         },
         {
-            softSkill: t("empatia")
+            softSkill: t("empatia"),
+            mapa: "GestaoDeTempo"
         },
         {
-            softSkill: t("em_breve")
+            softSkill: t("em_breve"),
+            mapa: "GestaoDeTempo"
         }
     ];
 
@@ -94,7 +100,7 @@ export default function Elevadores() {
 
             >
                 {corredores.map((obj, index) => {
-                    return <Elevador key={index} link="/corredor" softSkill={obj.softSkill} ></Elevador>
+                    return <Elevador key={index} link={`/corredor/${obj.mapa}`} softSkill={obj.softSkill} ></Elevador>
                 })}
             </Carousel>
         </div>

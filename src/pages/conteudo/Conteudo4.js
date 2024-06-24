@@ -9,7 +9,7 @@ export default function Conteudo() {
     <div>
       <HeaderHome />
       <div className="cabecalho">
-        <Link to="/corredor">
+        <Link to="/corredor/GestaoDoTempo">
           <button className="corredor">Voltar para o corredor</button>
         </Link>
         <h2>Sala Gestão de Tempo 1</h2>

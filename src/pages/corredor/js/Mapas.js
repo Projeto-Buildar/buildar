@@ -1,5 +1,6 @@
 import utils from './Utils'; // Importa o módulo Utils que contém funções utilitárias
 import Person from './Person'; // Importa a classe Person usada para criar personagens
+import GameObject from './GameObject';
 
 // Importa as imagens dos mapas e personagens
 import demoRoomLower from "../images/mapas/mapaLower.png";
@@ -9,9 +10,9 @@ import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/img.png";
 
 // Define um objeto Maps que contém diferentes mapas do jogo
-const Maps = {
+const Mapas = {
     // Mapa DemoRoom
-    DemoRoom: {
+    GestaoDeTempo: {
         lowerSrc: demoRoomLower, // Caminho para a imagem do mapa inferior
         upperSrc: demoRoomUpper, // Caminho para a imagem do mapa superior (comentado)
 
@@ -61,7 +62,7 @@ const Maps = {
                 ]
             }),
             // Personagem jogador (herói)
-            hero: new Person({
+            player: new Person({
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
                 x: utils.withGrid(11), // Posição X inicial do herói em grade
                 y: utils.withGrid(9), // Posição Y inicial do herói em grade
@@ -79,6 +80,64 @@ const Maps = {
             })
         },
 
+        // você consegue definir coordenadas no mapa e eventos ao qual o player consegue interagir
+        interacoes: {
+            porta1: new GameObject({
+                x: utils.withGrid(21),
+                y: utils.withGrid(8),
+                talking: [
+                    {
+                        events: [
+                            { type: "redirecionarPagina", text: "/conteudo"},
+                        ]
+                    }
+                ]
+            }),
+            porta2: new GameObject({
+                x: utils.withGrid(27),
+                y: utils.withGrid(8),
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "Está porta está fechada para toda a eternidade"},
+                            { type: "textMessage", text: "Está porta está trancada"},
+                            { type: "textMessage", text: "Se saia"},
+                        ]
+                    }
+                ]
+            }),
+            porta3: new GameObject({
+                x: utils.withGrid(33),
+                y: utils.withGrid(8),
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "Está porta leva para um lugar bem legal"},
+                            { type: "textMessage", text: "apenas coloque todas suas informações lá"},
+                            { type: "textMessage", text: "e você vai ganhar um premio :)"},
+                            { type: "redirecionarPagina", text: "/pagamento"},
+
+                        ]
+                    }
+                ]
+            }),
+            coiso: new GameObject({
+                x: utils.withGrid(5),
+                y: utils.withGrid(9),
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "joguin"},
+
+                        ]
+                    }
+                ]
+            }),
+                    
+        },
         // Paredes presentes no mapa DemoRoom
         walls: {
             //16,16: true
@@ -183,6 +242,72 @@ const Maps = {
             // [utils.asGridCoord(7, 4)]: true, porta    
         }
     },
+    Kitchen: {
+        lowerSrc: npc1,
+        // Objetos do jogo presentes no mapa DemoRoom
+        gameObjects: {
+            // Personagem não jogador (NPC) (comentado)    
+            npcA: new Person({
+                x: utils.withGrid(21),
+                y: utils.withGrid(12),
+                src: npc1,
+                nome: 'Carlos',
+                behaviorLoop: [
+                    //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
+                    { type: "stand", direction: "left", time: 800 },
+                    { type: "stand", direction: "up", time: 800 },
+                    { type: "stand", direction: "right", time: 1200 },
+                    { type: "stand", direction: "up", time: 300 },
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "eiiiii man, some daqui", faceHero: "npcA" },
+                        ]
+                    }
+                ]
+            }),
+            npcB: new Person({
+                x: utils.withGrid(10),
+                y: utils.withGrid(12),
+                src: npc1,
+                nome: 'adriana',
+                src: npc1,
+                behaviorLoop: [
+                  { type: "walk", direction: "up"},
+                  { type: "walk", direction: "right"},
+                  { type: "walk", direction: "left"},
+                  { type: "walk", direction: "down"},
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "npcB" },
+                        ]
+                    }
+                ]
+            }),
+            // Personagem jogador (herói)
+            player: new Person({
+                isPlayerControlled: true, // Indica que o jogador controla este personagem
+                x: utils.withGrid(11), // Posição X inicial do herói em grade
+                y: utils.withGrid(9), // Posição Y inicial do herói em grade
+                src: playerV2, // Caminho para a imagem do herói
+                numeroDeFrames: 8, // Número de frames da animação do herói
+                width: 24, // Largura do sprite do herói
+                colunaY: { // Mapeamento das colunas de sprites por direção
+                    "down": 0,
+                    "up": 1,
+                    "left": 2,
+                    "right": 3
+                },
+                distanciaX: 4, // Distância em pixels entre os sprites na animação
+                animationFrameLimit: 6 // Limite de frames da animação
+            })
+        },
+    }
 };
 
-export default Maps; // Exporta o objeto Maps como padrão
+export default Mapas; // Exporta o objeto Maps como padrão

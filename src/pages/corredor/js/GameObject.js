@@ -27,6 +27,7 @@ class GameObject {
         this.behaviorLoopIndex = 0;
 
         this.talking = config.talking || [];
+        this.nome = config.nome;
     }
 
     // Método para montar o objeto no mapa
@@ -47,7 +48,7 @@ class GameObject {
         // Exemplo: atualização da posição, verificação de colisões, etc.
     }
 
-    async doBehaviorEvent(map, showMessage) {
+    async doBehaviorEvent(map, recebeTextoMensagem) {
         // Don't perform behavior if a cutscene is playing or if there's no behavior
         if (map.isCutscenePlaying || this.behaviorLoop.length === 0 || this.isStanding) {
             return;
@@ -58,7 +59,7 @@ class GameObject {
         eventConfig.who = this.id;
 
         // Create the event
-        const eventHandler = new OverworldEvent({ map, event: eventConfig, showMessage});
+        const eventHandler = new OverworldEvent({ map, event: eventConfig, recebeTextoMensagem});
         await eventHandler.init();
 
         // Move to the next event in the loop

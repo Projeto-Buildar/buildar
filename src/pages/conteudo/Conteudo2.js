@@ -11,7 +11,7 @@ export default function Conteudo () {
     
     <div className="cabecalho">
         
-    <Link to="/corredor">
+    <Link to="/corredor/GestaoDoTempo">
           <button className="corredor">Voltar para o corredor</button>
         </Link>
           

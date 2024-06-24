@@ -1,34 +1,43 @@
 import utils from "./Utils";
 import OverworldEvent from "./OverworldEvent";
 
-export default class OverworldMap {
+export default class ConfiguracaoMapaGame {
     constructor(config) {
         // Inicializa os gameObjects e walls a partir do config fornecido
-        this.gameObjects = config.gameObjects;
-        this.walls = config.walls || {}; // Adiciona paredes ao mapa (default vazio se não houver configuração)
-        this.cutsceneSpaces = config.cutsceneSpaces || {};
+        if (config.mapas && config.mapas.gameObjects) {
+            this.gameObjects = config.mapas.gameObjects;
+        } else {
+            console.error('Mapa ou gameObjects não definidos:', config.mapas);
+        }
+        this.walls = config.mapas.walls || {}; // Adiciona paredes ao mapa (default vazio se não houver configuração)
+
+        this.interacoes = config.mapas.interacoes || {};
+        this.cutsceneSpaces = config.mapas.cutsceneSpaces || {};
         // Carrega e configura a imagem inferior (background do mapa)
         this.lowerImage = new Image();
-        this.lowerImage.src = config.lowerSrc;
+        this.lowerImage.src = config.mapas.lowerSrc;
         this.lowerImage.onload = () => {
             this.isLowerImageLoaded = true; // Define flag quando a imagem inferior é carregada
         };
         this.lowerImage.onerror = () => {
-            console.error(`Failed to load lower image at ${config.lowerSrc}`);
+            console.error(`Failed to load lower image at ${config.mapas.lowerSrc}`);
         };
 
         // Carrega e configura a imagem superior (detalhes do mapa)
         this.upperImage = new Image();
-        this.upperImage.src = config.upperSrc;
+        this.upperImage.src = config.mapas.upperSrc;
         this.upperImage.onload = () => {
             this.isUpperImageLoaded = true; // Define flag quando a imagem superior é carregada
         };
         this.upperImage.onerror = () => {
-            console.error(`Failed to load upper image at ${config.upperSrc}`);
+            console.error(`Failed to load upper image at ${config.mapas.upperSrc}`);
         };
 
         this.isCutscenePlaying = false;
+        this.recebeTextoMensagem = config.recebeTextoMensagem;
+        this.navegarParaPagina = config.navegarParaPagina;
     }
+
 
     // Método para desenhar a imagem inferior do mapa
     drawLowerImage(ctx, cameraPerson) {
@@ -68,7 +77,7 @@ export default class OverworldMap {
         });
     }
 
-    async startCutscene(events, showMessage) {
+    async startCutscene(events) {
         this.isCutscenePlaying = true;
     
         // Inicia um loop de eventos assíncronos e aguarda cada um deles
@@ -76,7 +85,8 @@ export default class OverworldMap {
             const eventHandler = new OverworldEvent({
                 event: events[i],
                 map: this,
-                showMessage
+                recebeTextoMensagem: this.recebeTextoMensagem,
+                navegarParaPagina: this.navegarParaPagina
             });
     
             await eventHandler.init();
@@ -85,39 +95,27 @@ export default class OverworldMap {
         this.isCutscenePlaying = false;
         // console.log (this.isCutscenePlaying);
     
-        Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this, showMessage))
+        Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this, this.recebeTextoMensagem))
 
     }
 
     // Verifica se há uma cutscene de ação na posição à frente do herói
-    checkForActionCutscene(navegador,showMessage) {
-        const hero = this.gameObjects["hero"]; // Obtém o objeto do herói
-        const nextCoords = utils.nextPosition(Math.round(hero.x), Math.round(hero.y), hero.direction); // Calcula a próxima posição do herói
+    checkForActionCutscene() {
+        const player = this.gameObjects["player"]; // Obtém o objeto do herói
+        const nextCoords = utils.nextPosition(Math.round(player.x), Math.round(player.y), player.direction); // Calcula a próxima posição do herói
+        
+        const todasInteracoes = {...this.gameObjects, ...this.interacoes};
 
-        if(nextCoords.x / 16 === 21 && nextCoords.y /16 === 8){
-            navegador('/conteudo')
-        } else if(nextCoords.x / 16 === 27 && nextCoords.y /16 === 8) {
-            navegador('/pratica')
-        }
-
-        const match = Object.values(this.gameObjects).find(object => {
-            return `${object.x},${object.y}` === `${nextCoords.x},${nextCoords.y}`;
+        const match = Object.values(todasInteracoes).find((interacao) => {
+            if(`${interacao.x},${interacao.y}` === `${nextCoords.x},${nextCoords.y}`){
+                return interacao;
+            }
+            return;
         });
         
         if (!this.isCutscenePlaying && match && match.talking.length) {
-            this.startCutscene(match.talking[0].events,showMessage)
-        }
-        
-        // if(match){
-        //     console.log(match.x / 16);
-        //     if(match.nome === "adriana"){
-        //         // console.log(match); // Exibe o objeto encontrado na próxima posição (se houver)
-        //         navegador('/sobre');
-        //     } else if(match.nome === "Carlos"){
-        //         navegador('/sobre');
-        //     }
-        // }
-        
+            this.startCutscene(match.talking[0].events)
+        }      
     }
 
     // Adiciona uma parede na posição especificada

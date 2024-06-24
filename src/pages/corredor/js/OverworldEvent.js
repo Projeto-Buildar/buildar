@@ -2,10 +2,11 @@ import utils from "./Utils";
 // import TextMessage from './TextMessage'
 
 class OverworldEvent {
-    constructor({ map, event, showMessage }) {
+    constructor({ map, event, recebeTextoMensagem, navegarParaPagina }) {
         this.map = map;
         this.event = event;
-        this.showMessage = showMessage;
+        this.recebeTextoMensagem = recebeTextoMensagem;
+        this.navegarParaPagina = navegarParaPagina
     }
   
     stand(resolve) {
@@ -51,11 +52,16 @@ class OverworldEvent {
     textMessage(resolve) {
         if (this.event.faceHero) {
             const obj = this.map.gameObjects[this.event.faceHero];
-            obj.direction = utils.oppositeDirection(this.map.gameObjects["hero"].direction);
+            obj.direction = utils.oppositeDirection(this.map.gameObjects["player"].direction);
         }
 
-        this.showMessage(this.event.text, resolve);
+        this.recebeTextoMensagem(this.event.text, resolve);
     }
+
+    redirecionarPagina(resolve) {
+      this.navegarParaPagina(this.event.text);
+      resolve();
+  }
   
     init() {
       return new Promise(resolve => {

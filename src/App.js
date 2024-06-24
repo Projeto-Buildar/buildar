@@ -32,7 +32,7 @@ export default function App() {
           <Route path="login" element={<Login />} />
           <Route path="cadastro" element={<Cadastro />} />
           <Route path="home" element={<Home />} />
-          <Route path="corredor" element={<Corredor />} />
+          <Route path="corredor/:mapaNome" element={<Corredor />} />
           <Route path="sobre" element={<SobreNos />} />
           <Route path="pagamento" element={<Pagamento />} />
           <Route path="conexoes" element={<Conexoes />} />
