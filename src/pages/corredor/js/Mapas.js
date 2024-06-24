@@ -124,8 +124,8 @@ const Mapas = {
                 ]
             }),
             fliperama: new GameObject({
-                x: utils.withGrid(5),
-                y: utils.withGrid(9),
+                x: utils.withGrid(2),
+                y: utils.withGrid(6),
                 talking: [
                     {
                         events: [

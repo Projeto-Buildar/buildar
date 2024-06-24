@@ -43,7 +43,7 @@ export default function Conteudo() {
         </div>
       </div>
 
-      <Link to="/corredor/GestaoDoTempo">
+      <Link to="/corredor/GestaoDeTempo">
         <button className="corredor">Voltar para o corredor</button>
       </Link>
 
