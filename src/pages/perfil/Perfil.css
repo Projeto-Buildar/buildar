@@ -63,14 +63,14 @@
     padding-inline: 2rem;
 }
 
-.userInfo, .achievementBar, .userButtons {
+.userProfileInfo, .achievementBar, .userButtons {
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: center;
 }
 
-.userInfo {
+.userProfileInfo {
     & div {
         width: 100%;
     }
@@ -82,6 +82,9 @@
         font-size: 1rem;
     }
     & div:first-child {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
         width: 180%;
         text-align: left;
     }
@@ -102,6 +105,7 @@
         background: #FFFFFF;
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
+        text-align: center;
     }
     & img {
         height: 3rem;
