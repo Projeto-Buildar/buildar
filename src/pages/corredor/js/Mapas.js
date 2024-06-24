@@ -35,7 +35,10 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "eiiiii man, some daqui", faceHero: "npcA" },
+                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "npcA" },
+                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "npcA" },
+                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
+                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
                         ]
                     }
                 ]
@@ -134,8 +137,8 @@ const Mapas = {
                 ]
             }),
             bebedouro: new GameObject({
-                x: utils.withGrid(5),
-                y: utils.withGrid(9),
+                x: utils.withGrid(33),
+                y: utils.withGrid(8),
                 talking: [
                     {
                         events: [
