@@ -1,3 +1,4 @@
+import './banner.css';
 import Header from './HeaderHome.js';
 // import fundo from './images/image_fundo.webp';
 import { Outlet, Link } from "react-router-dom";
@@ -7,7 +8,10 @@ import Footer from '../landingPage/components/Footer/Footer.js';
 export default function Home() {
     return (
         <div className='home'>
-            <Header />
+            <Header/>
+            <section className='titleTopFrame'>
+                <h1>PARA QUAL ANDAR HOJE?</h1>
+            </section>
             {/* <div>
                 <a
                     className='descanso'
@@ -27,13 +31,12 @@ export default function Home() {
             </div> */}
             <Link to='/descanso' style={{
                 width: '4rem',
-                background: '#58D2FF',
+                background: '#9B33FD',
                 padding: '2rem',
-                position: 'fixed',
-                top: '15vh',
-                left: '2vw',
+                position: 'absolute',
+                top: '40vh',
                 zIndex: '2',
-                borderRadius: '0 0 1rem 1rem',
+                borderRadius: ' 0 1rem 1rem 0',
                 fontFamily: 'Passion One, sans-serif',
                 textAlign: 'center'
                 }}>SALA DE DESCANSO</Link>

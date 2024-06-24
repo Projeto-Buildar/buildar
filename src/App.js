@@ -45,7 +45,7 @@ export default function App() {
           <Route path="inscricaoVoluntario" element={<Voluntario />} />
           <Route path="faleConosco" element={<FaleConosco />} />
           <Route path="ranqueada" element={<Ranqueada />} />
-          <Route path="loja" element={<Loja />} />
+          <Route path="loja" element={<Loja />}/>
           <Route path="conteudo" element={<Conteudo />} />
           <Route path="conteudo2" element={<Conteudo2 />} />
           <Route path="conteudo3" element={<Conteudo3 />} />
