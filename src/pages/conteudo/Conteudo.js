@@ -2,8 +2,9 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import HeaderHome from '../home/HeaderHome';
 import './Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
+import Vivi from './imagem/vivi.png';
 import Tela1 from './imagem/tela1.png';
+import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {
   const history = useNavigate();
@@ -12,35 +13,56 @@ export default function Conteudo() {
   }
   return (
     <div>
-      <HeaderHome />
+
+      <div  className='cabecalho' > 
       
-      <div className="cabecalho">
-        {/* por segurança, por enquanto, deixe todos os caminhos corredor como /corredor/GestaoDoTempo */}
-        {/* <Link to="/corredor/GestaoDoTempo">  */}
-          <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
-        {/* </Link> */}
-        <h2>Sala Gestão de Tempo 1</h2>
+      <div className='vivi'>
+      <img src={Vivi} alt="Capi Professor" className="capi" />
       </div>
-      <img src={Tela1} alt="tela1" className="tela1" />
-      <img src={Capi} alt="Capi Professor" className="capi" />
+      
+      </div>
+       <img src={Tela1} alt="tela1" className='tela1'/>
+      <Link to="/corredor">
+          <button className="corredor">Voltar para o corredor</button>
+        </Link>
+
+
       <div className="message-container">
-        <div className="message-box">
-          <p>Olá Jovem, seja bem-vindo(a)!</p>
-        </div>
-      </div>
-      <div className="message-container_c2">
         <div className="message-box2">
+              
           <p>
-            Nessa sala você aprenderá sobre a <b>gestão de tempo</b>, uma habilidade crucial para alcançar
+          
+          <h2 className='recepcao'> Olá Jovem, seja bem-vindo(a)!</h2>
+            
+            Nessa sala você aprenderá sobre a gestão de tempo, uma habilidade crucial para alcançar
             a eficiência e o sucesso em qualquer área de atuação.
           </p>
           
         </div>
         
       </div>
-         <Link to="/conteudo2">
-          <button className="proximo">Proximo</button>
-        </Link>
+        
+    
+      <div className='perfil_usuario'>
+        <img src={Perfil} alt="perfil" className='perfil' /> 
+     </div> 
+
+     <div className='escolha'>
+
+      <div className='botao1'>
+      <Link to="/conteudo2">
+      <button className='escolha1'>Estou ansioso para começar!</button>
+      </Link>
+      </div>
+
+    <div className='botao2'>
+      <Link to="/conteudo2">
+      <button className='escolha2'>Que começem os jogos</button>
+      </Link>
     </div>
-  );
+     </div>
+    </div>
+  
+    
+);
 }

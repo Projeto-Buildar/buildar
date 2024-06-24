@@ -1,3 +1,8 @@
+#login h1{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
 .forma1 {
     position: absolute;
     left: 0;
@@ -20,16 +25,12 @@
     box-shadow: none;
 }
 
-
-/* Estilos existentes */
 #login article {
     display: flex;
     align-items: center;
     position: relative;
     width: 600px;
-    /* Ajuste conforme necessário */
     height: 300px;
-    /* Ajuste conforme necessário */
     margin: 50px 310px;
     padding: 7%;
 }
@@ -49,51 +50,53 @@
 }
 
 #CaixaLogin strong {
-    color: blueviolet;
+    color: #AC54FF;
     cursor: pointer;
 }
 
-.caixa-esquerda h1 {
-    padding: 200px 110px;
+#CaixaLogin strong:hover {
+    color: blueviolet;
+}
+
+.caixa-esquerda-login h1 {
+    padding: 210px 110px;
     background-color: #AC54FF;
     background-image: url('./images/formas-login.webp');
     background-position: center;
     color: #f3f3f3;
-    font-size: 32px;
+    font-size: 2rem;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
     width: 60%;
-    /* Ajuste conforme necessário */
-    height: 100%;
 }
 
-.caixa-direita h1 {
+#CaixaLogin h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.caixa-direita h3 {
+#CaixaLogin h3 {
     font-size: 1.25rem;
-    float: left;
+    text-align: left;
 }
 
-.caixa-direita p {
+#CaixaLogin p {
     display: flex;
     flex-direction: column;
 }
 
-.caixa-direita button {
+#CaixaLogin button {
     border: none;
     color: #1C0240;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
-.caixa-direita button:hover {
+#CaixaLogin button:hover {
     color: #701DCD;
 }
 
-.caixa-direita {
+#CaixaLogin {
     padding: 70px;
     display: flex;
     align-items: center;
@@ -101,21 +104,15 @@
     flex-direction: column;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
-    position: relative;
-    width: 40%;
-    /* Ajuste conforme necessário */
-    height: 100%;
     background-color: #f3f3f3;
     margin-left: -4%;
-    /* Ajuste conforme necessário */
     z-index: 1;
 }
 
-.caixa-direita {
-
-    input,
+#login .formLogin input {
+    /* input,
     input[type="email"],
-    input[type="password"] {
+    input[type="password"] { */
         margin: 6px 0px;
         width: 250px;
         border: none;
@@ -124,26 +121,26 @@
         text-align: center;
         /* Centralizar o texto do placeholder horizontalmente */
         line-height: 40px;
-        /* Ajustar a altura da linha para centralizar verticalmente */
-    }
+    /* } */
 }
 
-#submit {
-    display: flex;
+#CaixaLogin .formLogin #submit {
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: block; 
+    /* margin: auto; */
     height: 50px;
     width: 150px;
-    color: #f5f5f5;
-    background-color: #AC54FF;
+    color: #000;
+    background-color: #29F39B;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    /* Ajuste conforme necessário */
 }
 
-#submit:hover {
-    background-color: #701DCD;
+#CaixaLogin .formLogin  #submit:hover {
+    background-color: #00ff91;
 }
 
 /* Estilização do formulário para centralizar o conteúdo */
@@ -153,14 +150,13 @@
 }
 
 #CaixaLogin p {
-    display: inline; /* Faz com que o parágrafo se comporte como um elemento em linha */
+    display: inline; 
     font-size: 1rem;
-    width: auto; /* Ajusta a largura para o conteúdo */
+    width: auto;
 }
 
 #CaixaLogin strong {
-    margin-left: 5px;
-    display: inline; /* Mantém o texto forte na mesma linha que o parágrafo */
+    display: inline; 
     color: #A443FF;
     cursor: pointer;
 }
@@ -168,4 +164,15 @@
 #CaixaLogin form #submit  {
     display: block; 
     margin: 20px auto;
+}
+
+.cadastre-se-container {
+    display: flex; 
+    align-items: baseline; 
+    justify-content: space-between;
+    width: fit-content; 
+}
+
+.cadastre-se-container p {
+    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
 }

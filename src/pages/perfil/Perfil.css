@@ -218,12 +218,13 @@
 
 .achievModal {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 80vw;
+    max-width: 1240px;
     outline: none;
     & section {
-        width:80vw;
-        max-width: 1240px;
+        width: 100%;
         background: #9B33FD;
         padding: 2rem;
         border-radius: 0 1rem 0 0;
@@ -257,7 +258,7 @@
     & h1 {
         font-family: 'Poppins', sans-serif;
     }
-    & img {
+    & img:not(.closeButton) {
         height: 3rem;
     }
 }
@@ -265,6 +266,19 @@
 .closeButton {
     width: 2rem;
     margin-top: -3rem;
+}
+
+
+.leftModalSide, .rightModalSide {
+    width: 40%;
+    height: 100%;
+    background: lawngreen;
+    position: absolute;
+}
+
+.rightModalSide {
+    background: lightgreen;
+    transform: rotateX(180deg);
 }
 
 /* Hover */

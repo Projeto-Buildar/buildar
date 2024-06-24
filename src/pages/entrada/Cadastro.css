@@ -1,6 +1,25 @@
+#CaixaCadastro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Cadastro h1{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+#Cadastro .caixa-esquerda-cadastro h1{
+    font-size: 1.5rem;
+}
+
+#Cadastro .termosPrivacidade {
+    width: 250px;
+}
+
 #Cadastro article h3{
     color: #000;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .formaCadastro1{
@@ -50,7 +69,7 @@
     background-image: url('./images/Group-formas.webp');
     background-position: center;
     color: #f3f3f3;
-    font-size: 26px;
+    font-size: 1.5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
@@ -80,15 +99,7 @@
 .caixa-direita-cadastro button:hover {
     color: #059c5b;
 }
-#submit{
-    color: #000;
-    background-color: #29F39B;
-}
 
-#submit:hover{
-    color: #000;
-    background-color: #00ff91;
-}
 .caixa-direita-cadastro {
     padding: 70px;
     display: flex;
@@ -104,38 +115,43 @@
     margin-left: 5%; /* Ajuste conforme necessário */
     z-index: 1;
 }
-.checkbox-group   #aceitar_politicas{
+
+.caixa-direita-cadastro > * {
+    flex: 1 1 auto;
+}
+
+.checkbox-group #aceitar_politicas{
     border: none;
     box-shadow: none;
     width: 20px;
     height: 20px;
     margin: 6px 5px;
-
 }
-.checkbox-group{
+
+.caixa-direita-cadastro .checkbox-group{
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 0.8rem;
-}
-
- .checkbox-group  a{
-    color: #000;
-    text-decoration: none;
-
+    margin: 8px 0px;
 }
 
 #CaixaCadastro p {
     font-size: 0.9rem;
-    width: 125px;
+    
+    /* width: 135px; */
 }
 
-#CaixaCadastro strong {
+#CaixaCadastro .letraNegrito {
     display: inline; 
-    color: blueviolet;
+    color: #AC54FF;
     cursor: pointer;
     font-size: 0.9rem;
+    font-weight: 700;
+}
 
+#CaixaCadastro .letraNegrito:hover {
+    color: blueviolet;
 }
 
 .caixa-direita-cadastro {
@@ -143,25 +159,43 @@ input,
 input[type="email"],
 input[type="password"] {
     margin: 6px 0px;
-    width: 250px;
-    height: 30px;
+    width: 280px;
     border: none;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 8px;
     text-align: center; 
-    line-height: 20px; 
+    line-height: 40px; 
 }
 }
-
-
 
 #CaixaCadastro form #submit  {
     display: block; 
     margin: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 50px;
+    width: 150px;
+    color: #000;
+    background-color: #29F39B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Ajuste conforme necessário */
 }
 
+#CaixaCadastro form  #submit:hover {
+    background-color: #00ff91;
+}
 .conecte-se-container {
     display: flex; 
     align-items: baseline; 
-    justify-content: center; 
+    justify-content: space-between;
+    width: fit-content; 
+    margin: 12px;
+
+}
+
+.conecte-se-container p {
+    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
 }

@@ -46,12 +46,12 @@ const Mapas = {
                 src: npc1,
                 nome: 'adriana',
                 src: npc1,
-                behaviorLoop: [
-                  { type: "walk", direction: "up"},
-                  { type: "walk", direction: "right"},
-                  { type: "walk", direction: "left"},
-                  { type: "walk", direction: "down"},
-                ],
+                // behaviorLoop: [
+                //   { type: "walk", direction: "up"},
+                //   { type: "walk", direction: "right"},
+                //   { type: "walk", direction: "left"},
+                //   { type: "walk", direction: "down"},
+                // ],
                 talking: [
                     {
                         events: [
@@ -123,15 +123,13 @@ const Mapas = {
                     }
                 ]
             }),
-            coiso: new GameObject({
+            fliperama: new GameObject({
                 x: utils.withGrid(5),
                 y: utils.withGrid(9),
                 talking: [
                     {
                         events: [
-                            //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "joguin"},
-
+                            { type: "textMessage", text: "está rodando o Famoso jogo Vivi Run"},
                         ]
                     }
                 ]

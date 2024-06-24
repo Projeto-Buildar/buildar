@@ -9,31 +9,31 @@ const achievDetails = [
         url: achievImage,
         color: '#58D2FF',
         title: 'Gestão de Eras',
-        description: 'Texto de descrição da conquista',
+        description: 'Concluiu o módulo de Rotina em Gestão de Tempo numa sequência inquebrável de 7 dias.',
     },
     {
         url: achievImage1,
         color: '#FF486D',
         title: 'A Hora da Verdade',
-        description: 'Texto de descrição da conquista',
+        description: 'Concluiu o modo Desafio: Sem Tempo Irmão sem passar do tempo durante um módulo inteiro.',
     },
     {
         url: achievImage2,
         color: '#C6EC3E',
         title: 'Aprendendo a Buildar',
-        description: 'Texto de descrição da conquista',
+        description: 'Concluiu todas as portas de um módulo pela primeira vez.',
     },
     {
         url: achievImage2,
         color: '#D3CED7',
         title: 'Ainda Aprendendo',
-        description: 'Texto de descrição da conquista',
+        description: 'Conquistas sendo desenvolvidas.',
     },
     {
         url: achievImage2,
         color: '#D3CED7',
         title: 'Ainda Aprendendo',
-        description: 'Texto de descrição da conquista',
+        description: 'Conquistas sendo desenvolvidas.',
     }
 ]
 

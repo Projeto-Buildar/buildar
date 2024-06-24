@@ -6,7 +6,7 @@ export default function Inicializar(props) {
         element: props.element,
         navegarParaPagina: props.navegarParaPagina,
         recebeTextoMensagem: props.recebeTextoMensagem,
-        mapas: props.mapa
+        mapas: props.mapas
     });
 
     // Faz a função init do game funcionar e carregar tudo que começa inicialmente

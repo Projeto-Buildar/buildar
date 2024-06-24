@@ -1,9 +1,9 @@
-.App {
+/*.App {
   padding-top: 12vh;
 }
-
+*/
 h1 {
-  font-size: 3rem;
+  font: 500 3rem 'Passion One', sans-serif;
 }
 
 h2 {
