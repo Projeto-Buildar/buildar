@@ -27,10 +27,10 @@ class KeyPressListener {
     }
 
     // // Método para desvincular os event listeners do documento
-    // unbind() {
-    //     document.removeEventListener("keydown", this.keydownFunction); // Remove o event listener de keydown
-    //     document.removeEventListener("keyup", this.keyupFunction); // Remove o event listener de keyup
-    // }
+    unbind() {
+        document.removeEventListener("keydown", this.keydownFunction); // Remove o event listener de keydown
+        document.removeEventListener("keyup", this.keyupFunction); // Remove o event listener de keyup
+    }
 }
 
 export default KeyPressListener; // Exporta a classe KeyPressListener como padrão

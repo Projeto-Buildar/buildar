@@ -1,18 +1,16 @@
 .telaGame {
-    box-sizing:border-box;
-    background: rebeccapurple;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 88vh;
-    width: 100vw;
-    padding-top: -12vh;
-    
+  box-sizing: border-box;
+  background: rebeccapurple;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 88vh;
+  width: 100vw;
 }
 
 .game-container {
   position: relative;
-  background: #9ae2ff;
+  background: #7d5909;
   width: 496px;
   height: 192px;
   margin: 0 auto;
@@ -20,6 +18,16 @@
   transform: scale(3) translateY(37%);
 }
 
-.game-container canvas {
+.game-canvas {
   image-rendering: pixelated;
+}
+
+.resetaStorage {
+  opacity: 0;
+}
+
+@media (width: 1366px) {
+  .game-container {
+    transform: scale(2.6) translateY(34%);
+  }
 }

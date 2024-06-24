@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 
-export default function Header(props) {
+export default function HeaderPreLogin(props) {
   const {t, i18n } = useTranslation();
 
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão

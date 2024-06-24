@@ -2,12 +2,13 @@ import Header from './HeaderHome.js';
 // import fundo from './images/image_fundo.webp';
 import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
+import Footer from '../landingPage/components/Footer/Footer.js';
 
 export default function Home() {
     return (
         <div className='home'>
             <Header />
-            <div>
+            {/* <div>
                 <a
                     className='descanso'
                     style={{
@@ -23,14 +24,26 @@ export default function Home() {
                 >
                     temporario
                 </a>
-            </div>
-            <Link to='/descanso' style={{background: '#58D2FF', padding: '3rem', position: 'fixed', top: '50vh'}}>Item</Link>
-            <main>
+            </div> */}
+            <Link to='/descanso' style={{
+                width: '4rem',
+                background: '#58D2FF',
+                padding: '2rem',
+                position: 'fixed',
+                top: '15vh',
+                left: '2vw',
+                zIndex: '2',
+                borderRadius: '0 0 1rem 1rem',
+                fontFamily: 'Passion One, sans-serif',
+                textAlign: 'center'
+                }}>SALA DE DESCANSO</Link>
+            <main style={{marginBottom: '5vh'}}>
                 <Elevadores></Elevadores>
                 {/* <Link to="/corredor">
                 <img src={fundo} width='100%' height='100%'/>
             </Link> */}
             </main>
+            <Footer/>
         </div>
 
 

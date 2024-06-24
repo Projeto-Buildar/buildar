@@ -37,9 +37,8 @@ const utils = {
           return "left";
       } else if (direction === "up") {
           return "down";
-      } else {
-          return "up";
       }
+    return "up";
   },
 
   // Espera a quantidade de milissegundos especificada

@@ -4,7 +4,7 @@ import Conquistas from './components/Conquistas';
 import Skins from './components/Skins';
 import ConquistasDetails from "./components/ConquistasDetails";
 
-import profilePic from './images/image_filler_square.png';
+import profilePic from './images/profile_pic.png';
 import trophy from './images/trophy.png';
 import pen from './images/pen.png';
 import settingsGear from './images/settings.png';

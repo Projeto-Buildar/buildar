@@ -1,7 +1,5 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
 import LandingPage from './pages/landingPage/LandingPage';
 import Login from './pages/entrada/Login';
 import Home from './pages/home/Home';
@@ -22,43 +20,45 @@ import Conteudo5 from './pages/conteudo/Conteudo5';
 import Conteudo6 from './pages/conteudo/Conteudo6';
 import Conteudo7 from './pages/conteudo/Conteudo7';
 import Loja from './pages/loja/Loja';
-import AssistiveScriptLoader from './Assistive';
 import Pratica from './pages/conteudo/Pratica';
 import Termos from './pages/termos/Termos';
 import AreaDescanso from './pages/areaDescanso/AreaDescanso';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import GameDescanso from './GameDescanso';
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <DndProvider backend={HTML5Backend}>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="login" element={<Login />} />
-            <Route path="cadastro" element={<Cadastro />} />
-            <Route path="home" element={<Home />} />
-            <Route path="corredor" element={<Corredor />} />
-            <Route path="sobre" element={<SobreNos />} />
-            <Route path="pagamento" element={<Pagamento />} />
-            <Route path="conexoes" element={<Conexoes />} />
-            <Route path="perfil" element={<Perfil />} />
-            <Route path="inscricaoVoluntario" element={<Voluntario />} />
-            <Route path="faleConosco" element={<FaleConosco />} />
-            <Route path="ranqueada" element={<Ranqueada />} />
-            <Route path="loja" element={<Loja />} />
-            <Route path="conteudo" element={<Conteudo />} />
-            <Route path="conteudo2" element={<Conteudo2 />} />
-            <Route path="conteudo3" element={<Conteudo3 />} />
-            <Route path="conteudo4" element={<Conteudo4 />} />
-            <Route path="conteudo5" element={<Conteudo5 />} />
-            <Route path="conteudo6" element={<Conteudo6 />} />
-            <Route path="conteudo7" element={<Conteudo7 />} />
-            <Route path='pratica' element={<Pratica />} />
-            <Route path="termos" element={<Termos />} />
-            <Route path='descanso' element={<AreaDescanso />} />
-          </Routes>
-        </DndProvider>
-      </BrowserRouter>
-    </div>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cadastro" element={<Cadastro />} />
+          <Route path="home" element={<Home />} />
+          <Route path="corredor/:mapaNome" element={<Corredor />} />
+          <Route path="sobre" element={<SobreNos />} />
+          <Route path="pagamento" element={<Pagamento />} />
+          <Route path="conexoes" element={<Conexoes />} />
+          <Route path="perfil" element={<Perfil />} />
+          <Route path="inscricaoVoluntario" element={<Voluntario />} />
+          <Route path="faleConosco" element={<FaleConosco />} />
+          <Route path="ranqueada" element={<Ranqueada />} />
+          <Route path="loja" element={<Loja />} />
+          <Route path="conteudo" element={<Conteudo />} />
+          <Route path="conteudo2" element={<Conteudo2 />} />
+          <Route path="conteudo3" element={<Conteudo3 />} />
+          <Route path="conteudo4" element={<Conteudo4 />} />
+          <Route path="conteudo5" element={<Conteudo5 />} />
+          <Route path="conteudo6" element={<Conteudo6 />} />
+          <Route path="conteudo7" element={<Conteudo7 />} />
+          <Route path='pratica' element={<Pratica/>}></Route>
+          <Route path='game_descanso' element={<GameDescanso/>}/>
+          <Route path='descanso' element={<AreaDescanso/>}></Route>
+        </Routes>
+      </DndProvider>
+    </BrowserRouter>
+    </div >
   );
 }
