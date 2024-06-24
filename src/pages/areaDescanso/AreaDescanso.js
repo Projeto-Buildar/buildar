@@ -14,7 +14,7 @@ export default function AreaDescanso() {
                     <article id='trexGame'>
                         <img src={gamePic}/>
                         <div>
-                            <h2>Run, Vivi! Run!</h2>
+                            <h3>Run, Vivi! Run!</h3>
                             <p>Corre Vivi! Nesse jogo você controla a destemida capivara rumo a um futuro de suceso.</p>
                         </div>
                     </article>
@@ -22,18 +22,19 @@ export default function AreaDescanso() {
                 <article className='onDoing'>
                     <img src={gamePic}/>
                     <div>
-                        <h2>Jogo em construção</h2>
+                        <h3>Jogo em construção</h3>
                         <p>Que pena! Esse jogo ainda está em desenvolvimento...</p>
                     </div>
                 </article>
                 <article className='onDoing'>
                     <img src={gamePic}/>
                     <div>
-                        <h2>Jogo em construção</h2>
+                        <h3>Jogo em construção</h3>
                         <p>Que pena! Esse jogo ainda está em desenvolvimento...</p>
                     </div>
                 </article>
             </section>
+            <h4 id='moreSign'>Mais jogos por vir</h4>
         </main>
     )
 }
