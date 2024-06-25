@@ -134,7 +134,7 @@ export default function Corredor() {
                 ))}
 
             </div>
-            <button style={{ button: '0'}} onClick={() => localStorage.clear()}> Clique aqui para limpar o LocalStorage</button>
+            <button className='resetaStorage' style={{ button: '0'}} onClick={() => localStorage.clear()}> Clique aqui para limpar o LocalStorage</button>
         </div>
     );
 }

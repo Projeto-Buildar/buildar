@@ -4,6 +4,7 @@ import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela3 from './imagem/Tela3.png';
 import Perfil from './imagem/perfil.png'
+import c3 from './imagem/MacBook Pro 16_ - 3.png'
 
 export default function Conteudo() {
   const history = useNavigate();
@@ -12,10 +13,7 @@ export default function Conteudo() {
   }
   return (
     <div>
-      
-      
-        
-       
+
       <img src={Vivi} alt="Capi Professor" className="capi" />
       <div className="message-container">
         <div className="message-box">

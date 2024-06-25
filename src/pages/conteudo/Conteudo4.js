@@ -4,6 +4,7 @@ import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.png';
 import Perfil from './imagem/perfil.png'
+import c4 from './imagem/MacBook Pro 16_ - 4.png'
 
 export default function Conteudo() {
   const history = useNavigate();
@@ -19,10 +20,12 @@ export default function Conteudo() {
       <img src={Vivi} alt="Capi Professor" className="capi" />
       <div className="message-container">
         <div className="message-box">
-          <p>Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia.
-             Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho 
-             é das 9h às 15h e seu horário de almoço é das 12h às 13h. Sua supervisora marcou uma reunião com a 
-             equipe das 14h às 15h.</p>
+          <p>
+            Agora que você sabe a importancia dessa 
+            habilidade, bora praticar!
+            Se prepare para embarcar nessa jornada e descobrir como organizar o seu tempo, 
+            cumprir suas tarefas e atividades de forma organizada, e atender a prazos estabelecidos. 
+            Está preparado?</p>
         </div>
       </div>
       

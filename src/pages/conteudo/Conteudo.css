@@ -16,7 +16,7 @@ p{
   /* display: flex; */
   flex-direction: column;
   align-items: center
-}
+} */
 
 .corredor{
   color: #fff;
@@ -149,7 +149,7 @@ p{
 
   .atividade,
   .atividade_c6 {
-    background-color: #FFB412;
+  
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -172,9 +172,17 @@ p{
   }
   
   .drop1 {
+    width: 200px;
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     right: 250px;
+  }
+
+  .drop2 {
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
   }
   
   .t2 {
@@ -201,13 +209,15 @@ p{
   .tela4,
   .tela5,
   .tela1 {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    left: 500px;
-    bottom: 10px;
-    height: 500px;
-    z-index: -1;
+    margin: 0;
+      height: 100vh;
+      width: 100%;
+      background-size: cover; /* Faz a imagem ocupar toda a tela */
+      z-index: -1;
+      position: absolute;
+      top: 0px;
+      left: 2px;
+     
   }
 
 .prancheta{

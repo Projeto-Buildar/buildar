@@ -3,17 +3,18 @@ import HeaderHome from "../home/HeaderHome";
 import Conquistas from './components/Conquistas';
 import Skins from './components/Skins';
 import ConquistasDetails from "./components/ConquistasDetails";
+import Footer from "../landingPage/components/Footer/Footer";
 
-import profilePic from './images/image_filler_square.png';
+import profilePic from './images/profile_pic.png';
 import trophy from './images/trophy.png';
 import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
 import closeButton from './images/closeButton.png';
 
 import { useState } from "react";
-import Modal from "react-modal";
 import { useTranslation } from 'react-i18next';
-import "../../i18n"
+import "../../i18n";
+import Modal from "react-modal";
 Modal.setAppElement('#root');
 
 export default function Perfil() {
@@ -39,7 +40,7 @@ export default function Perfil() {
                     <h3 className="jobPlan">Gerente</h3>
                 </div>
                 <div className="topCard">
-                    <div className="userInfo">
+                    <div className="userProfileInfo">
                         <div>
                             <h4>Nome de Usuário</h4>
                             <p>@nomedeusuario_</p>
@@ -99,6 +100,7 @@ export default function Perfil() {
                 </article>
                 <Skins/>
             </section>
+            <Footer/>
 
             <Modal
                 isOpen={modalIsOpen}
