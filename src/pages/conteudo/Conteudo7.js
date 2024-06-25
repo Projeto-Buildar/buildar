@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderHome from '../home/HeaderHome';
 import './Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
+import Vivi from './imagem/vivi.png';
 import Prancheta2 from './imagem/Prancheta2.png';
+import Tela6 from './imagem/Tela6.png';
 
 export default function Conteudo() {
   return (
@@ -15,8 +16,8 @@ export default function Conteudo() {
       </Link>
 
 
-      <img src={Capi} alt="Capi Professor" className="capi_c6" />
-      <div className="message-container_c6">
+      <img src={Vivi} alt="Capi Professor" className="capi" />
+      <div className="message-container">
         <div className="message-box">
           <p>Excelente trabalho!
             Você conseguiu planejar seu dia de forma eficiente. Lembre-se, a gestão do tempo é uma habilidade
@@ -35,6 +36,7 @@ export default function Conteudo() {
           <p className='t2'>Café da tarde</p>
         </div>
       </div>
+      <img src={Tela6} alt="tela de fundo" className="tela6" />
     </div>
   );
 }

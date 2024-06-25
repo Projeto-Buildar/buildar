@@ -21,13 +21,16 @@ export default function Cadastro() {
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
-        // setFormData(prevState => ({
-        //     ...prevState,
-        //     [name]: type === 'checkbox' ? checked : value
-        // }));
         if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
             setErrorMessage('O nickname e o e-mail não podem conter espaços.');
-        } else {
+            // if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
+            //     setErrorMessage(`${t("NickName")}`
+            //         );
+            // } 
+            
+            // ISSO É USADO PARA COLOCAR UMA VARIAVEL DENTRO DE UMA STRING
+        } 
+        else {
             setFormData(prevState => ({
                 ...prevState,
                 [name]: type === 'checkbox' ? checked : value

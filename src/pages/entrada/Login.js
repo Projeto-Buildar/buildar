@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link e Outlet
 import forma3 from './images/Vector-3.webp';
 import forma from './images/Vector.webp';
+import logo from './images/logo_on.webp';
 import forma2 from './images/forma2.webp';
 import forma1 from './images/forma1.webp';
 import Header from '../landingPage/components/Header/Header';
@@ -12,27 +13,15 @@ import "../../i18n";
 export default function Login() {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [formData, setFormData] = useState({
-        nickname: '',
-        password: '',
-    });
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        if (name === 'nickname' && value.includes(' ')) {
-            setErrorMessage('O apelido não pode conter espaços.');
-        } else {
-            setFormData(prevState => ({ ...prevState, [name]: value }));
-            setErrorMessage('');
-        }
-    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (formData.nickname === '' || formData.password === '') {
-            setErrorMessage('Por favor, preencha todos os campos.');
+        if (email === '' || password === '') {
+            setErrorMessage('Please fill in all fields.');
         } else {
             setErrorMessage('');
             navigate('/home');
@@ -44,40 +33,38 @@ export default function Login() {
             <img src={forma1} alt="forma1" className='forma1' />
             <Header mostrarSelectIdiomas={false} classe='loginHeader'/>
             <article>
-                <div className='caixa-esquerda-login'>
+                <div className='caixa-esquerda'>
                     <h1>{t('welcomeBack')}</h1>
                 </div>
-                <div className='caixa-direita-login' id='CaixaLogin'>
+                <div className='caixa-direita' id='CaixaLogin'>
                     <h1>Login</h1>
-                    <form onSubmit={handleSubmit} className='formLogin'>
-                        <h3>{t("NickName")}</h3>
+                    <form onSubmit={handleSubmit}>
+                        <h3>Email</h3>
                         <input
-                            type="text"
-                            name="nickname"
-                            placeholder={t("NickName")}
-                            value={formData.nickname}
-                            onChange={handleChange}
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder={t('emailPhonePlaceholder')}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <h3>{t("Password")}</h3>
+                        <h3>Password</h3>
                         <input
                             type="password"
                             name="password"
                             id="password"
                             placeholder={t('enterYourPassword')}
-                            value={formData.password}
-                            onChange={handleChange}
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-                        {errorMessage && <p style={{color: 'red', margin: '10px'}}>{errorMessage}</p>}
+                        {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
                         <input type="submit" id="submit" value={t('submit')} />
                     </form>
-                    <div className='cadastre-se-container'>
-                        <p>{t('dontHaveAccount')}</p>
-                        <Link to="/cadastro">
-                          <button className='conecte-se'><strong className='letraNegrito'>{t('SignUp')}</strong></button>
-                        </Link>
-                    </div>
+                    <Link to="/cadastro">
+                        <p>{t('dontHaveAccount')}<strong>{t('SignUp')}</strong></p>
+                    </Link>
                 </div>
             </article>
 
