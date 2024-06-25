@@ -60,10 +60,12 @@
     justify-content: flex-start;
 }
 
+
+
 .caixa-esquerda-cadastro h1 {
     padding: 200px 110px;
-    background-color: #29F39B;
-    background-image: url('./images/Group-formas.webp');
+    background-color: #9B33FD;
+    background-image: url('./images/image1.png');
     background-position: center;
     color: #f3f3f3;
     font-size: 26px;
@@ -95,17 +97,17 @@
 }
 
 .caixa-direita-cadastro button:hover {
-    color: #059c5b;
+    color: #FFB412;
 }
 
 #submit {
     color: #000;
-    background-color: #29F39B;
+    background-color: #FFB412;
 }
 
 #submit:hover {
     color: #000;
-    background-color: #00ff91;
+    background-color: #FFB412;
 }
 
 .caixa-direita-cadastro {
@@ -203,4 +205,11 @@
         width: 100px;
         height: 150px;
     }
+}
+
+
+#Cadastro input {
+    font-size: 18px;
+    padding: 0.25rem;
+    margin: 0.25rem;
 }
