@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.png';
 import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {
+  const history = useNavigate();
+  function irParaRotaAnterior() {
+    history(-4);
+  }
   return (
     <div>
       
@@ -22,9 +26,7 @@ export default function Conteudo() {
         </div>
       </div>
       
-      <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
-        </Link>
+      <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
       <Link to="/conteudo3">
            <button className="anterior">Voltar</button>

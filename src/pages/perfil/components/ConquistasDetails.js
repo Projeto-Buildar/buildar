@@ -40,8 +40,8 @@ const achievDetails = [
 export default function ConquistasDetails() {
     return (
         <ul>
-            {achievDetails.map((item) => {
-                return <ConquistaDetailed url={item.url} color={item.color} title={item.title} description={item.description}/>
+            {achievDetails.map((item, index) => {
+                return <ConquistaDetailed key={index} url={item.url} color={item.color} title={item.title} description={item.description}/>
             })}
         </ul>
     )

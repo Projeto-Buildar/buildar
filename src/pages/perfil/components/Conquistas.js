@@ -34,8 +34,9 @@ const achievData = [
 export default function Conquistas(){
     return (
         <ul className='achievScroll'>
-            {achievData.map((item) => {
-                return <Conquista url={item.url} color={item.color}/> 
+            {achievData.map((item, index) => {
+                return <Conquista url={item.url} color={item.color} key={index}/> 
+                
             })}
         </ul>
     )

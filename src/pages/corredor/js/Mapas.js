@@ -35,7 +35,10 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "eiiiii man, some daqui", faceHero: "npcA" },
+                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "npcA" },
+                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "npcA" },
+                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
+                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
                         ]
                     }
                 ]
@@ -80,53 +83,89 @@ const Mapas = {
         // você consegue definir coordenadas no mapa e eventos ao qual o player consegue interagir
         interacoes: {
             porta1: new GameObject({
-                x: utils.withGrid(21),
-                y: utils.withGrid(8),
+                x: utils.withGrid(18),
+                y: utils.withGrid(5),
                 talking: [
                     {
                         events: [
+                            { type: "textMessage", text: "Aqui é a primeira etapa da Gestão de tempo"},
+                            { type: "textMessage", text: "Carregando página..."},
+                            { type: "textMessage", text: "Carregando página..."},
                             { type: "redirecionarPagina", text: "/conteudo"},
                         ]
                     }
                 ]
             }),
             porta2: new GameObject({
-                x: utils.withGrid(27),
-                y: utils.withGrid(8),
+                x: utils.withGrid(24),
+                y: utils.withGrid(5),
                 talking: [
                     {
                         events: [
-                            //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Está porta está fechada para toda a eternidade"},
                             { type: "textMessage", text: "Está porta está trancada"},
-                            { type: "textMessage", text: "Se saia"},
+                            { type: "textMessage", text: "è melhor eu explorar mais o lugar por enquanto"},
+                            { who: "player", type: "walk", direction: "down" },
                         ]
                     }
                 ]
             }),
             porta3: new GameObject({
-                x: utils.withGrid(33),
-                y: utils.withGrid(8),
+                x: utils.withGrid(30),
+                y: utils.withGrid(5),
                 talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
                             { type: "textMessage", text: "Está porta leva para um lugar bem legal"},
-                            { type: "textMessage", text: "apenas coloque todas suas informações lá"},
-                            { type: "textMessage", text: "e você vai ganhar um premio :)"},
-                            { type: "redirecionarPagina", text: "/pagamento"},
-
+                            { type: "textMessage", text: "mas você ainda não tem acesso :("},
+                            
                         ]
                     }
                 ]
             }),
             fliperama: new GameObject({
-                x: utils.withGrid(5),
-                y: utils.withGrid(9),
+                x: utils.withGrid(2),
+                y: utils.withGrid(6),
                 talking: [
                     {
                         events: [
                             { type: "textMessage", text: "está rodando o Famoso jogo Vivi Run"},
+                            { type: "redirecionarPagina", text: "/gameLegal"},
+
+                        ]
+                    }
+                ]
+            }),
+            bebedouro: new GameObject({
+                x: utils.withGrid(33),
+                y: utils.withGrid(8),
+                talking: [
+                    {
+                        events: [
+                            { type: "textMessage", text: "Glub Glub"},
+                            { type: "textMessage", text: "Refrescante"},
+                        ]
+                    }
+                ]
+            }),
+            maquinaDeVendasEsquerda: new GameObject({
+                x: utils.withGrid(20),
+                y: utils.withGrid(6),
+                talking: [
+                    {
+                        events: [
+                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo quando eu compro"},
+                        ]
+                    }
+                ]
+            }),
+            maquinaDeVendasDireita: new GameObject({
+                x: utils.withGrid(21),
+                y: utils.withGrid(6),
+                talking: [
+                    {
+                        events: [
+                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo quando eu compro"},
                         ]
                     }
                 ]
