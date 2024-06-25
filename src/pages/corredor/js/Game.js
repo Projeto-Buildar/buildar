@@ -91,13 +91,13 @@ export default class Game {
     startInitialCutscene() {
         return this.map.startCutscene([
             { who: "player", type: "walk", direction: "down" },
-            { who: "npcB", type: "walk", direction: "up" },
+            { who: "Drii", type: "walk", direction: "up" },
             { type: "textMessage", text: "Olá, seja bem-vindo a Buildar corporation!" },
             { type: "textMessage", text: "Aqui você irá colocar em prática suas habilidades comportamentais" },
             { type: "textMessage", text: "Na sua direita teram portas para você treinar as suas habilidades" },
             { type: "textMessage", text: "E na sua esquerda tem o nosso joguinho de descanso, fique a vontade para jogar" },
-            { who: "npcB", type: "walk", direction: "down" },
-            { who: "npcB", type: "stand", direction: "up" },
+            { who: "Drii", type: "walk", direction: "down" },
+            { who: "Drii", type: "stand", direction: "up" },
         ]);
     }
 

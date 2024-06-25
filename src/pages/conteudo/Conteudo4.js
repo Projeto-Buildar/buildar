@@ -36,7 +36,7 @@ export default function Conteudo() {
       </Link>
 
       <Link to="/conteudo5">
-          <button className="proximo">Proximo</button>
+          <button className="proximo">Próximo</button>
         </Link>
        
         <img src={Tela4} alt="tela4" className='tela4'/>

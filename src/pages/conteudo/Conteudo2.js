@@ -36,7 +36,7 @@ export default function Conteudo () {
                  </Link>
                 
                   <Link to="/conteudo3">
-                 <button className="proximo">Proximo</button>
+                 <button className="proximo">Próximo</button>
                  </Link>
 
                  <div className='perfil_usuario'>

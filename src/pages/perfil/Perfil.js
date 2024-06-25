@@ -11,6 +11,8 @@ import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
 import closeButton from './images/closeButton.png';
 
+
+
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
@@ -91,7 +93,7 @@ export default function Perfil() {
                             <li>Conquistas:</li>
                         </ul>
                         <ul>
-                            <li>4</li>
+                            <li>3</li>
                             <li>5</li>
                             <li>10</li>
                             <li>3</li>

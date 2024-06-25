@@ -1,9 +1,11 @@
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import CustomDot from "./CustomDots";
 
 export default function Carrosel(props){
     return(
         <Carousel
+        customDot={<CustomDot></CustomDot>}
             arrows={props.arrows}
             autoPlaySpeed={3000}
             centerMode={false}

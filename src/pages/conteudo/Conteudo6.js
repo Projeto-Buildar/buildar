@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Conteudo.css';
-import Capi from './imagem/Capi_Professor.png';
-
+import Vivi from './imagem/vivi.png';
+import Tela6 from './imagem/Tela6.png'
 import DraggableItem from './DraggableItem';
 import DroppableArea from './DroppableArea';
-
+import Prancheta2 from './imagem/Prancheta2.png';
 export default function Conteudo() {
   const initialItems = {
     1: { id: 1, text: 'almoço', area: "1" },
@@ -32,8 +32,8 @@ export default function Conteudo() {
     <div>
       
 
-      <img src={Capi} alt="Capi Professor" className="capi_c6" />
-      <div className="message-container">
+      <img src={Vivi} alt="Capi Professor" className="capi" />
+      <div className="message-container2">
         <div className="message-box">
           <p>
             Como você organizará seu tempo para cumprir todas as tarefas?<br />
@@ -56,18 +56,28 @@ export default function Conteudo() {
       </Link>
 
       <div className='atividade'>
-        
-       
+      
+      <div className='area_pratica'> 
+      <img src={Prancheta2} alt="pracheta de atividade" className='prancheta2' />
+      </div>
+       <div className='alinhamento_drop1'>
         <div className='drop1'>
           <DroppableArea id="1" onDrop={(itemId) => handleDrop(itemId, "1")} items={items} />
           <DroppableArea id="2" onDrop={(itemId) => handleDrop(itemId, "2")} items={items} />
           <DroppableArea id="3" onDrop={(itemId) => handleDrop(itemId, "3")} items={items} />
+          </div>
+          </div>
+         
+          <div className='drop2'>
           <DroppableArea id="4" onDrop={(itemId) => handleDrop(itemId, "4")} items={items} />
           <DroppableArea id="5" onDrop={(itemId) => handleDrop(itemId, "5")} items={items} />
+          </div>
           
-        </div>
-
-        <div className='drop2'>
+   
+        
+       
+        <div className='alinhamento_drop3'>
+        <div className='drop3'>
           <DroppableArea id="7" onDrop={(itemId) => handleDrop(itemId, "7")} items={items} />
           <DroppableArea id="8" onDrop={(itemId) => handleDrop(itemId, "8")} items={items} />
           <DroppableArea id="9" onDrop={(itemId) => handleDrop(itemId, "9")} items={items} />
@@ -75,7 +85,15 @@ export default function Conteudo() {
           <DroppableArea id="11" onDrop={(itemId) => handleDrop(itemId, "11")} items={items} />
           
         </div>
+        </div>
       </div>
+      
+      <img src={Tela6} alt="Tela de fundo" className="tela6" />
+      
+      
+    
     </div>
+
+
   );
 }
