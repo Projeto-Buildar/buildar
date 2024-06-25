@@ -2,8 +2,8 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100px; /* Reduza o tamanho conforme necessário */
-    height: 100px; /* Reduza o tamanho conforme necessário */
+    width: 100px;
+    height: 100px;
 }
 
 .forma2 {
@@ -16,22 +16,21 @@
 
 .loginHeader {
     background: none;
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 
 .loginHeader::after {
     box-shadow: none;
 }
 
-/* Estilos existentes */
 #login article {
     display: flex;
     align-items: center;
     position: relative;
-    width: 600px; /* Ajuste conforme necessário */
-    height: 300px; /* Ajuste conforme necessário */
-    margin: 50px 310px;
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
     padding: 7%;
 }
 
@@ -45,7 +44,7 @@
     display: flex;
     align-items: baseline;
     font-size: 1rem;
-    width: 300px; /* height: 30px; */
+    width: 300px;
 }
 
 #CaixaLogin strong {
@@ -63,7 +62,7 @@
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
-    width: 60%; /* Ajuste conforme necessário */
+    width: 60%;
     height: 100%;
 }
 
@@ -101,10 +100,10 @@
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
     position: relative;
-    width: 40%; /* Ajuste conforme necessário */
+    width: 40%;
     height: 100%;
     background-color: #f3f3f3;
-    margin-left: -4%; /* Ajuste conforme necessário */
+    margin-left: -4%;
     z-index: 1;
 }
 
@@ -116,8 +115,8 @@
     border: none;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 8px;
-    text-align: center; /* Centralizar o texto do placeholder horizontalmente */
-    line-height: 40px; /* Ajustar a altura da linha para centralizar verticalmente */
+    text-align: center;
+    line-height: 40px;
 }
 
 #submit {
@@ -130,7 +129,7 @@
     background-color: #AC54FF;
     border: none;
     border-radius: 8px;
-    cursor: pointer; /* Ajuste conforme necessário */
+    cursor: pointer;
 }
 
 #submit:hover {
@@ -143,14 +142,14 @@
 }
 
 #CaixaLogin p {
-    display: inline; /* Faz com que o parágrafo se comporte como um elemento em linha */
+    display: inline;
     font-size: 1rem;
-    width: auto; /* Ajusta a largura para o conteúdo */
+    width: auto;
 }
 
 #CaixaLogin strong {
     margin-left: 5px;
-    display: inline; /* Mantém o texto forte na mesma linha que o parágrafo */
+    display: inline;
     color: #A443FF;
     cursor: pointer;
 }
@@ -160,49 +159,145 @@
     margin: 20px auto;
 }
 
-@media screen and (max-width: 450px) {
-    #login .caixa-esquerda {
+@media screen and (max-width: 1236px) {
+    .caixa-esquerda h1 {
+        padding: 240px 55px;
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .forma1 {
+        width: 25%;
+        height: auto;
+        bottom: 0;
+    }
+
+    .forma2 {
         display: none;
     }
-    #login .caixa-direita {
-        width: 70%; /* Ajuste para ocupar a maior parte da tela */
-        height: auto; /* Ajuste a altura para caber no conteúdo */
-        margin: 20px auto; /* Ajuste de margem para centralizar */
-        padding: 20px; /* Reduzir padding para se ajustar melhor às telas pequenas */
+
+    .loginHeader {
+        padding: 5px 10px;
+        font-size: 0.8rem;
     }
-    #login .forma1 {
-        width: 150px; /* Ajuste conforme necessário */
-        height: 250px; /* Ajuste conforme necessário */
-        bottom: 10px; /* Ajuste conforme necessário */
-    }
+
     #login article {
-        width: 100%; /* Ajuste a largura para ocupar toda a tela */
-        height: auto; /* Ajuste a altura para caber no conteúdo */
-        flex-direction: column; /* Mude a direção do flex para coluna */
-        padding: 10px; /* Adicione um padding para espaçamento */
-        margin: 20px 0; /* Ajuste de margem para espaçamento */
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 5%;
     }
-    #login img {
-        width: 100%; /* Ajustar a imagem para ocupar toda a largura disponível */
-        height: auto; /* Ajustar a altura automaticamente */
+
+    #login form {
+        width: 100%;
     }
-    .forma2 {
-        display: none; /* Esconder a forma2 em telas pequenas */
-    }
+
     .caixa-direita input,
     .caixa-direita input[type="email"],
     .caixa-direita input[type="password"] {
-        width: 100%; /* Ajustar a largura dos inputs para ocupar toda a tela */
+        width: 100%;
     }
+
     #submit {
-        width: 100%; /* Ajustar a largura do botão submit para ocupar toda a tela */
+        width: 100%;
     }
+
+    #login header {
+        width: auto;
+    }
+
+    #login header .logo {
+        width: 25%;
+        height: auto;
+    }
+    .caixa-direita{
+        max-width: 300px;
+        min-width: 20tmj0px;
+    }
+}
+
+
+@media screen and (max-width: 596px) {
+    #login .caixa-esquerda {
+        display: none;
+
+    }
+
+    #login .caixa-direita {
+        width: 70%;
+        /* Ajuste para ocupar a maior parte da tela */
+        height: auto;
+        /* Ajuste a altura para caber no conteúdo */
+        margin: 20px auto;
+        /* Ajuste de margem para centralizar */
+        padding: 20px;
+        /* Reduzir padding para se ajustar melhor às telas pequenas */
+        min-width: 70%;
+    }
+
+    #login .forma1 {
+        width: 150px;
+        /* Ajuste conforme necessário */
+        height: 250px;
+        /* Ajuste conforme necessário */
+        bottom: 10px;
+        /* Ajuste conforme necessário */
+    }
+
+    #login article {
+        width: 100%;
+        /* Ajuste a largura para ocupar toda a tela */
+        height: auto;
+        /* Ajuste a altura para caber no conteúdo */
+        flex-direction: column;
+        /* Mude a direção do flex para coluna */
+        padding: 10px;
+        /* Adicione um padding para espaçamento */
+        margin: 20px 0;
+        /* Ajuste de margem para espaçamento */
+    }
+
+    #login img {
+        width: 100%;
+        /* Ajustar a imagem para ocupar toda a largura disponível */
+        height: auto;
+        /* Ajustar a altura automaticamente */
+    }
+
+    .forma2 {
+        display: none;
+        /* Esconder a forma2 em telas pequenas */
+    }
+
+    .caixa-direita {
+        padding: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+        border-radius: 10px;
+        position: relative;
+        width: 40%;
+        /* Ajuste conforme necessário */
+        height: 100%;
+        background-color: #f3f3f3;
+        margin-left: -100%;
+        /* Ajuste conforme necessário */
+        z-index: 1;
+    }
+
+    #submit {
+        width: 100%;
+        /* Ajustar a largura do botão submit para ocupar toda a tela */
+    }
+
     #login header {
         width: 100%;
     }
 
-    #login header .logo{
-        width: 60%;
+    #login header .logo {
+        width: 35%;
 
     }
 }
