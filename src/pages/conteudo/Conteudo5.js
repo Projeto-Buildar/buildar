@@ -37,7 +37,7 @@ export default function Conteudo() {
       </Link>
 
       <Link to="/conteudo6">
-          <button className="proximo">Proximo</button>
+          <button className="proximo">Próximo</button>
         </Link>
 
 

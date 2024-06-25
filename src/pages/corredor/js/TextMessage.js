@@ -25,7 +25,7 @@ function TextMessage({ text, onComplete }) {
     return (
         <div className="TextMessage">
             <p className="TextMessage_p">{text}</p>
-            <button className="TextMessage_button" onClick={() => { setShow(false); onComplete(); }}>Proximo</button>
+            <button className="TextMessage_button" onClick={() => { setShow(false); onComplete(); }}>Próximo</button>
         </div>
     );
 }

@@ -43,10 +43,10 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "npcA" },
-                            { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "npcA" },
-                            { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
-                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
+                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
+                            { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "Debora" },
+                            { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
+                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" },
                             { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
                             { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "Debora" },
                             { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
@@ -120,8 +120,6 @@ const Mapas = {
                     {
                         events: [
                             { type: "textMessage", text: "Aqui é a primeira etapa da Gestão de tempo"},
-                            { type: "textMessage", text: "Carregando página..."},
-                            { type: "textMessage", text: "Carregando página..."},
                             { type: "redirecionarPagina", text: "/conteudo"},
                         ]
                     }
