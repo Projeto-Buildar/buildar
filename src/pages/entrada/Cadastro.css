@@ -1,3 +1,21 @@
+#CaixaCadastro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Cadastro h1{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+#Cadastro .caixa-esquerda-cadastro h1{
+    font-size: 1.5rem;
+}
+
+#Cadastro .termosPrivacidade {
+    width: 250px;
+}
 #Cadastro article h3 {
     color: #000;
     font-size: 1.25rem;

@@ -4,6 +4,7 @@ import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.png';
 import Perfil from './imagem/perfil.png'
+import c4 from './imagem/MacBook Pro 16_ - 4.png'
 
 export default function Conteudo() {
   const history = useNavigate();
