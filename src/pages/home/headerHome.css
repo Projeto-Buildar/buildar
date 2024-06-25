@@ -55,9 +55,8 @@
 }
 
 .after-element {
-    
     position: absolute;
-    background-color: blueviolet;
+    background-color: #9B33FD;
     width: calc(100% + 600px); /* 60px a mais que a largura da btnContainer */
     height: 30px;
     top: 100%;

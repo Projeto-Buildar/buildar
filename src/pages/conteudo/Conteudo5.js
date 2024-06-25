@@ -5,6 +5,7 @@ import Vivi from './imagem/vivi.png';
 import Tela5 from './imagem/Tela5.png';
 import Perfil from './imagem/perfil.png';
 import Prancheta from'./imagem/Prancheta.png';
+import c5 from './imagem/MacBook Pro 16_ - 5.png'
 
 export default function Conteudo() {
   const history = useNavigate();
