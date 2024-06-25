@@ -247,6 +247,7 @@
     }
     & ul li {
         display: flex;
+        justify-content: left;
         align-items: center;
         background: #FFFFFF;
         padding: 1rem;
