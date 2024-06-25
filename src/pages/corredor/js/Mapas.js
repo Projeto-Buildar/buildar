@@ -36,9 +36,9 @@ const Mapas = {
                         events: [
                             //Evento de quando você for falar com o npc
                             { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "npcA" },
-                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "npcA" },
-                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
-                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
+                            { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "npcA" },
+                            { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
+                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
                         ]
                     }
                 ]
@@ -103,7 +103,7 @@ const Mapas = {
                     {
                         events: [
                             { type: "textMessage", text: "Está porta está trancada"},
-                            { type: "textMessage", text: "è melhor eu explorar mais o lugar por enquanto"},
+                            { type: "textMessage", text: "É melhor eu explorar mais o lugar por enquanto"},
                             { who: "player", type: "walk", direction: "down" },
                         ]
                     }
@@ -116,8 +116,8 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Está porta leva para um lugar bem legal"},
-                            { type: "textMessage", text: "mas você ainda não tem acesso :("},
+                            { type: "textMessage", text: "Está porta leva para um lugar bem legal!"},
+                            { type: "textMessage", text: "Mas você ainda não tem acesso :("},
                             
                         ]
                     }
@@ -129,7 +129,7 @@ const Mapas = {
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "está rodando o Famoso jogo Vivi Run"},
+                            { type: "textMessage", text: "Está rodando o Famoso jogo Vivi Run"},
                             { type: "redirecionarPagina", text: "/gameLegal"},
 
                         ]
