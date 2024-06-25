@@ -9,6 +9,13 @@ import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/img.png";
 
+import Andrei from "../images/personagens/pessoa/Andrei.png";
+import Aurora from "../images/personagens/pessoa/Aurora.png";
+import Debora from "../images/personagens/pessoa/Debora.png";
+import Drii from "../images/personagens/pessoa/Drii.png";
+import Gabs from "../images/personagens/pessoa/gabs.png";
+import Jaja from "../images/personagens/pessoa/Jaja.png";
+
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
     // Mapa DemoRoom
@@ -19,11 +26,12 @@ const Mapas = {
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
             // Personagem não jogador (NPC) (comentado)    
-            npcA: new Person({
+            Debora: new Person({
                 x: utils.withGrid(21),
                 y: utils.withGrid(9),
-                src: npc1,
-                nome: 'Carlos',
+                src: Debora,
+                // Talvez passar o nome para os eventos e ter uma tag especificando o nome do npc ou player na fala
+                nome: 'Debora',
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
                     { type: "stand", direction: "left", time: 800 },
@@ -35,20 +43,19 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "npcA" },
-                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "npcA" },
-                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "npcA" },
-                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "npcA" },
+                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
+                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "Debora" },
+                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
+                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora"},
                         ]
                     }
                 ]
             }),
-            npcB: new Person({
+            Drii: new Person({
                 x: utils.withGrid(8),
                 y: utils.withGrid(9),
-                src: npc1,
-                nome: 'adriana',
-                src: npc1,
+                src: Drii,
+                nome: 'Adriana',
                 behaviorLoop: [
                   { type: "stand", direction: "up"},
                 ],
@@ -56,7 +63,27 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "npcB" },
+                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "Drii" },
+                        ]
+                    }
+                ]
+            }),
+            Gabs: new Person({
+                x: utils.withGrid(27),
+                y: utils.withGrid(6),
+                src: Gabs,
+                nome: 'Gabriel',
+                behaviorLoop: [
+                  { type: "stand", direction: "left", time: 2000},
+                  { type: "stand", direction: "down", time: 800},
+                  { type: "stand", direction: "right", time: 2000},
+                  { type: "stand", direction: "down", time: 800},
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "Eu estou desenvolvendo minha gestão de tempo tão rápido como um Katchauuuu!", faceHero: "Gabs" },
                         ]
                     }
                 ]
