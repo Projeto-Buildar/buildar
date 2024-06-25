@@ -6,9 +6,11 @@ import Carrosel from "./Carrosel"
 import { useTranslation } from 'react-i18next';
 import "../../../../i18n"
 
-import skin from '../../images/terceiraTela_img.png';
+import Avatar1 from '../../images/Rogerio_avatar.png';
+import Avatar2 from '../../images/Malu_avatar.png';
+import Avatar3 from '../../images/Tobias_avatar.png';
 
-const test = [skin, skin, skin]
+const test = [Avatar1, Avatar2, Avatar3]
 
 export default function TerceiraTela() {
   const { t, i18n } = useTranslation();
@@ -25,7 +27,7 @@ export default function TerceiraTela() {
             autoPlay={true}
             pauseOnHover={true}
             draggable={false} 
-            conteudo={test.map(obj => { return <div><img src={obj}></img></div> })}>
+            conteudo={test.map(obj => { return <div className='carroselAvatarL'><img src={obj}></img></div> })}>
           </Carrosel>
         </figure>
         {/* <div className='scrollContainer'>

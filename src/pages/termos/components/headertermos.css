@@ -1,11 +1,11 @@
-.btnsNav {
+#headerTermos .btnsNav {
     align-self: flex-end;
     position: relative;
     display: inline-block;
     margin: 0 10px; /* Ajuste de margem para espaçar os botões */
 }
 
-.btnContainer {
+#headerTermos .btnContainer {
     background-color: #d1cdd4;
     width: 120px; /* Aumentando a largura para que o texto caiba melhor */
     padding: 10px;
@@ -20,7 +20,7 @@
     color: #000; /* Cor do texto padrão */
 }
 
-.btnContainer.active {
+#headerTermos .btnContainer.active {
     background-color: #701DCD; /* Cor ativa */
     color: #FFFFFF;
     padding-bottom: 7%;

@@ -1,4 +1,5 @@
 import HeaderHome from '../home/HeaderHome';
+import Footer from '../landingPage/components/Footer/Footer';
 import './AreaDescanso.css';
 import gamePic from './images/image_filler_square.png';
 
@@ -6,13 +7,13 @@ export default function AreaDescanso() {
     return (
         <main id="areaDescanso">
             <HeaderHome/>
-            <section>
+            <section className='titleTopFrame'>
                 <h1>O QUE ACHA DE DESCANSAR UM POUCO?</h1>
             </section>
             <section>
-                <a href='https://gamebuildar-descanso.vercel.app/'>
+                <a href='https://game-descanso-buildar.vercel.app/'>
                     <article id='trexGame'>
-                        <img src={gamePic}/>
+                        <span></span>
                         <div>
                             <h3>Run, Vivi! Run!</h3>
                             <p>Corre Vivi! Nesse jogo você controla a destemida capivara rumo a um futuro de suceso.</p>
@@ -20,14 +21,14 @@ export default function AreaDescanso() {
                     </article>
                 </a>
                 <article className='onDoing'>
-                    <img src={gamePic}/>
+                    <span></span>
                     <div>
                         <h3>Jogo em construção</h3>
                         <p>Que pena! Esse jogo ainda está em desenvolvimento...</p>
                     </div>
                 </article>
                 <article className='onDoing'>
-                    <img src={gamePic}/>
+                    <span></span>
                     <div>
                         <h3>Jogo em construção</h3>
                         <p>Que pena! Esse jogo ainda está em desenvolvimento...</p>
@@ -35,6 +36,7 @@ export default function AreaDescanso() {
                 </article>
             </section>
             <h4 id='moreSign'>Mais jogos por vir</h4>
+            <Footer/>
         </main>
     )
 }

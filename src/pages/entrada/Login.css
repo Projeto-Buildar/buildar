@@ -1,12 +1,9 @@
-#login h1{
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-}
-
 .forma1 {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 10;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
 }
 
 .forma2 {
@@ -19,6 +16,8 @@
 
 .loginHeader {
     background: none;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 
 .loginHeader::after {
@@ -31,7 +30,7 @@
     position: relative;
     width: 600px;
     height: 300px;
-    margin: 50px 310px;
+    margin: 50px auto;
     padding: 7%;
 }
 
@@ -46,57 +45,53 @@
     align-items: baseline;
     font-size: 1rem;
     width: 300px;
-    /* height: 30px; */
 }
 
 #CaixaLogin strong {
-    color: #AC54FF;
+    color: blueviolet;
     cursor: pointer;
 }
 
-#CaixaLogin strong:hover {
-    color: blueviolet;
-}
-
-.caixa-esquerda-login h1 {
-    padding: 210px 110px;
+.caixa-esquerda h1 {
+    padding: 200px 110px;
     background-color: #AC54FF;
     background-image: url('./images/formas-login.webp');
     background-position: center;
     color: #f3f3f3;
-    font-size: 2rem;
+    font-size: 32px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
     width: 60%;
+    height: 100%;
 }
 
-#CaixaLogin h1 {
+.caixa-direita h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-#CaixaLogin h3 {
+.caixa-direita h3 {
     font-size: 1.25rem;
-    text-align: left;
+    float: left;
 }
 
-#CaixaLogin p {
+.caixa-direita p {
     display: flex;
     flex-direction: column;
 }
 
-#CaixaLogin button {
+.caixa-direita button {
     border: none;
     color: #1C0240;
-    font-size: 0.9rem;
+    font-size: 13px;
 }
 
-#CaixaLogin button:hover {
+.caixa-direita button:hover {
     color: #701DCD;
 }
 
-#CaixaLogin {
+.caixa-direita {
     padding: 70px;
     display: flex;
     align-items: center;
@@ -104,75 +99,205 @@
     flex-direction: column;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
+    position: relative;
+    width: 40%;
+    height: 100%;
     background-color: #f3f3f3;
     margin-left: -4%;
     z-index: 1;
 }
 
-#login .formLogin input {
-    /* input,
-    input[type="email"],
-    input[type="password"] { */
-        margin: 6px 0px;
-        width: 250px;
-        border: none;
-        box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
-        border-radius: 8px;
-        text-align: center;
-        /* Centralizar o texto do placeholder horizontalmente */
-        line-height: 40px;
-    /* } */
+.caixa-direita input,
+.caixa-direita input[type="email"],
+.caixa-direita input[type="password"] {
+    margin: 6px 0px;
+    width: 250px;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
 }
 
-#CaixaLogin .formLogin #submit {
-    /* display: flex;
+#submit {
+    display: flex;
     align-items: center;
-    justify-content: center; */
-    display: block; 
-    /* margin: auto; */
+    justify-content: center;
     height: 50px;
     width: 150px;
-    color: #000;
-    background-color: #29F39B;
+    color: #f5f5f5;
+    background-color: #AC54FF;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
-#CaixaLogin .formLogin  #submit:hover {
-    background-color: #00ff91;
+#submit:hover {
+    background-color: #701DCD;
 }
 
-/* Estilização do formulário para centralizar o conteúdo */
 #login form {
     display: flex;
     flex-direction: column;
 }
 
 #CaixaLogin p {
-    display: inline; 
+    display: inline;
     font-size: 1rem;
     width: auto;
 }
 
 #CaixaLogin strong {
-    display: inline; 
+    margin-left: 5px;
+    display: inline;
     color: #A443FF;
     cursor: pointer;
 }
 
-#CaixaLogin form #submit  {
-    display: block; 
+#CaixaLogin form #submit {
+    display: block;
     margin: 20px auto;
 }
 
-.cadastre-se-container {
-    display: flex; 
-    align-items: baseline; 
-    justify-content: space-between;
-    width: fit-content; 
+@media screen and (max-width: 1236px) {
+    .caixa-esquerda h1 {
+        padding: 240px 55px;
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .forma1 {
+        width: 25%;
+        height: auto;
+        bottom: 0;
+    }
+
+    .forma2 {
+        display: none;
+    }
+
+    .loginHeader {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    #login article {
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 5%;
+    }
+
+    #login form {
+        width: 100%;
+    }
+
+    .caixa-direita input,
+    .caixa-direita input[type="email"],
+    .caixa-direita input[type="password"] {
+        width: 100%;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    #login header {
+        width: auto;
+    }
+
+    #login header .logo {
+        width: 25%;
+        height: auto;
+    }
+    .caixa-direita{
+        max-width: 300px;
+        min-width: 20tmj0px;
+    }
 }
 
-.cadastre-se-container p {
-    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
+
+@media screen and (max-width: 596px) {
+    #login .caixa-esquerda {
+        display: none;
+
+    }
+
+    #login .caixa-direita {
+        width: 70%;
+        /* Ajuste para ocupar a maior parte da tela */
+        height: auto;
+        /* Ajuste a altura para caber no conteúdo */
+        margin: 20px auto;
+        /* Ajuste de margem para centralizar */
+        padding: 20px;
+        /* Reduzir padding para se ajustar melhor às telas pequenas */
+        min-width: 70%;
+    }
+
+    #login .forma1 {
+        width: 150px;
+        /* Ajuste conforme necessário */
+        height: 250px;
+        /* Ajuste conforme necessário */
+        bottom: 10px;
+        /* Ajuste conforme necessário */
+    }
+
+    #login article {
+        width: 100%;
+        /* Ajuste a largura para ocupar toda a tela */
+        height: auto;
+        /* Ajuste a altura para caber no conteúdo */
+        flex-direction: column;
+        /* Mude a direção do flex para coluna */
+        padding: 10px;
+        /* Adicione um padding para espaçamento */
+        margin: 20px 0;
+        /* Ajuste de margem para espaçamento */
+    }
+
+    #login img {
+        width: 100%;
+        /* Ajustar a imagem para ocupar toda a largura disponível */
+        height: auto;
+        /* Ajustar a altura automaticamente */
+    }
+
+    .forma2 {
+        display: none;
+        /* Esconder a forma2 em telas pequenas */
+    }
+
+    .caixa-direita {
+        padding: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
+        border-radius: 10px;
+        position: relative;
+        width: 40%;
+        /* Ajuste conforme necessário */
+        height: 100%;
+        background-color: #f3f3f3;
+        margin-left: -100%;
+        /* Ajuste conforme necessário */
+        z-index: 1;
+    }
+
+    #submit {
+        width: 100%;
+        /* Ajustar a largura do botão submit para ocupar toda a tela */
+    }
+
+    #login header {
+        width: 100%;
+    }
+
+    #login header .logo {
+        width: 35%;
+
+    }
 }

@@ -16,19 +16,18 @@
 #Cadastro .termosPrivacidade {
     width: 250px;
 }
-
-#Cadastro article h3{
+#Cadastro article h3 {
     color: #000;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
-.formaCadastro1{
+.formaCadastro1 {
     position: fixed;
     left: 0;
     bottom: 0;
 }
 
-.formaCadastro2{
+.formaCadastro2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -42,8 +41,7 @@
     box-shadow: none;
 }
 
-
-#Cadastro header .formaCadastro2{
+#Cadastro header .formaCadastro2 {
     display: flex;
     align-items: flex-end;
 }
@@ -51,8 +49,8 @@
 #Cadastro article {
     display: flex;
     align-items: center;
-    width: 700px; 
-    height: 88vh; 
+    width: 700px;
+    height: 88vh;
     margin: 0 auto;
 }
 
@@ -62,20 +60,20 @@
     justify-content: flex-start;
 }
 
-
 .caixa-esquerda-cadastro h1 {
     padding: 200px 110px;
     background-color: #29F39B;
     background-image: url('./images/Group-formas.webp');
     background-position: center;
     color: #f3f3f3;
-    font-size: 1.5rem;
+    font-size: 26px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgb(85, 85, 85);
     position: relative;
     width: 70%; /* Ajuste conforme necessário */
     height: 100%;
 }
+
 .caixa-direita-cadastro h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -100,6 +98,16 @@
     color: #059c5b;
 }
 
+#submit {
+    color: #000;
+    background-color: #29F39B;
+}
+
+#submit:hover {
+    color: #000;
+    background-color: #00ff91;
+}
+
 .caixa-direita-cadastro {
     padding: 70px;
     display: flex;
@@ -108,7 +116,6 @@
     flex-direction: column;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 10px;
-    /* position: relative; */
     width: 45%; /* Ajuste conforme necessário */
     height: 70%;
     background-color: #f3f3f3;
@@ -116,11 +123,7 @@
     z-index: 1;
 }
 
-.caixa-direita-cadastro > * {
-    flex: 1 1 auto;
-}
-
-.checkbox-group #aceitar_politicas{
+.checkbox-group #aceitar_politicas {
     border: none;
     box-shadow: none;
     width: 20px;
@@ -128,74 +131,76 @@
     margin: 6px 5px;
 }
 
-.caixa-direita-cadastro .checkbox-group{
+.checkbox-group {
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 0.8rem;
-    margin: 8px 0px;
+}
+
+.checkbox-group a {
+    color: #000;
+    text-decoration: none;
 }
 
 #CaixaCadastro p {
     font-size: 0.9rem;
-    
-    /* width: 135px; */
+    width: 125px;
 }
 
-#CaixaCadastro .letraNegrito {
-    display: inline; 
-    color: #AC54FF;
+#CaixaCadastro strong {
+    display: inline;
+    color: blueviolet;
     cursor: pointer;
     font-size: 0.9rem;
-    font-weight: 700;
 }
 
-#CaixaCadastro .letraNegrito:hover {
-    color: blueviolet;
-}
-
-.caixa-direita-cadastro {
-input,
-input[type="email"],
-input[type="password"] {
+.caixa-direita-cadastro input,
+.caixa-direita-cadastro input[type="email"],
+.caixa-direita-cadastro input[type="password"] {
     margin: 6px 0px;
-    width: 280px;
+    width: 250px;
+    height: 30px;
     border: none;
     box-shadow: 3px 3px 4px rgba(85, 85, 85, 0.466);
     border-radius: 8px;
-    text-align: center; 
-    line-height: 40px; 
-}
+    text-align: center;
+    line-height: 20px;
 }
 
-#CaixaCadastro form #submit  {
-    display: block; 
+#CaixaCadastro form #submit {
+    display: block;
     margin: auto;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    height: 50px;
-    width: 150px;
-    color: #000;
-    background-color: #29F39B;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    /* Ajuste conforme necessário */
 }
 
-#CaixaCadastro form  #submit:hover {
-    background-color: #00ff91;
-}
 .conecte-se-container {
-    display: flex; 
-    align-items: baseline; 
-    justify-content: space-between;
-    width: fit-content; 
-    margin: 12px;
-
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
 
-.conecte-se-container p {
-    padding-right: 5px; /* Adiciona um preenchimento à direita do parágrafo */
+@media screen and (max-width: 450px) {
+    #Cadastro .caixa-esquerda-cadastro {
+        display: none;
+    }
+    #Cadastro .caixa-direita-cadastro {
+        width: 70%; /* Ajuste para ocupar a maior parte da tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        margin: 20px auto; /* Ajuste de margem para centralizar */
+        padding: 20px; /* Reduzir padding para se ajustar melhor às telas pequenas */
+    }
+    #Cadastro .formaCadastro2 {
+        display: none;
+    }
+    #Cadastro article {
+        width: 100%; /* Ajuste a largura para ocupar toda a tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        flex-direction: column; /* Mude a direção do flex para coluna */
+        padding: 10px; /* Adicione um padding para espaçamento */
+    }
+
+    #Cadastro .formaCadastro2{
+        width: 100px;
+        height: 150px;
+    }
 }

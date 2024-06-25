@@ -4,9 +4,13 @@ import "react-multi-carousel/lib/styles.css";
 import Depoiment from './Depoiment';
 import CustomArrow from './CustomArrow';
 
-import userNilvan from '../../images/Nilvan.webp'
-import userBraz from '../../images/Braz.webp'
-import userDiogo from '../../images/Diogo.webp'
+import userNilvan from '../../images/Nilvan.webp';
+import userBraz from '../../images/Braz.webp';
+import userDiogo from '../../images/Diogo.webp';
+import userHelen from '../../images/Helen.webp';
+import userRyan from '../../images/Ryan.webp';
+import userLilian from '../../images/Lilian.webp';
+import userLais from '../../images/Lais.webp';
 
 import Carousel from "react-multi-carousel";
 
@@ -20,7 +24,7 @@ export default function Depoiments() {
   const userInfo = [
     {
         image: userBraz,
-        name: 'Gabriel Braz',
+        name: 'Gabriel Bras',
         age: '19',
         text: t('userBraz'),
         color: '#FFB412'
@@ -39,6 +43,34 @@ export default function Depoiments() {
         text: t('userDiogo'),
         color: '#FFB412'
     }, 
+    {
+      image: userHelen,
+      name: 'Helen da Silva',
+      age:  '21',
+      text: t('userHelen'),
+      color: '#58D2FF'
+    },
+    {
+      image: userRyan,
+      name: 'Ryan Picoli',
+      age:  '21',
+      text: t('userRyan'),
+      color: '#FFB412'
+    },
+    {
+      image: userLilian,
+      name: 'Lilian Carvalho',
+      age:  '19',
+      text: t('userLilian'),
+      color: '#58D2FF'
+    },
+    {
+      image: userLais,
+      name: 'Lais Carvalho',
+      age:  '19',
+      text: t('userLais'),
+      color: '#FFB412'
+    }
 ];
 
     return (
