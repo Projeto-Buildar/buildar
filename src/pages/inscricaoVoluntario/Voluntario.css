@@ -153,6 +153,23 @@
     }
 }
 
+@media screen and (max-width: 1241px){
+    .ContainerVoluntarioMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bottom_back{
+        display: none;
+    }
+    #titulo{
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 80%;
+        height: auto;
+    }
+}
 
 
 
