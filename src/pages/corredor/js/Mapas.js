@@ -26,7 +26,7 @@ const Mapas = {
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
             // Personagem não jogador (NPC) (comentado)    
-            Debora1: new Person({
+            Debora: new Person({
                 x: utils.withGrid(21),
                 y: utils.withGrid(9),
                 src: Debora,
@@ -46,7 +46,7 @@ const Mapas = {
                             { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
                             { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "Debora" },
                             { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
-                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" }
+                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" },
                         ]
                     }
                 ]
