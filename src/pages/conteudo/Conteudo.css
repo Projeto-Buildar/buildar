@@ -250,10 +250,10 @@ p{
   .droppable-area {
     background-color: #f9f9f9;
     border: 1px dashed #ccc;
-    padding: 16px;
     margin: 8px;
-    min-height: 50px;
-    
+    min-height: 30px;
+    border-radius: 1rem;
+    text-align: center;
   }
   
   .droppable-area.over {
@@ -291,6 +291,7 @@ p{
     width: 200px;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 13.2rem;
   }
   .alinhamento_drop3 {
     width: 200px;
@@ -300,3 +301,33 @@ p{
     padding-top: 40px;
   }
 
+  .droppable-area-1 {
+    background-color: green;
+  }
+  .droppable-area-2 {
+    background-color: red;
+  }
+  .droppable-area-3 {
+    background-color: green;
+  }
+  .droppable-area-4 {
+    background-color: #333;
+  }
+  .droppable-area-5 {
+    background-color: #333;
+  }
+  .droppable-area-7 {
+    background-color: #333;
+  }
+  .droppable-area-8 {
+    background-color: #333;
+  }
+  .droppable-area-9 {
+    background-color: #333;
+  }
+  .droppable-area-10 {
+    background-color: #333;
+  }
+  .droppable-area-11 {
+    background-color: #333;
+  }

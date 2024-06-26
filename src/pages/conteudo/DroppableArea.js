@@ -2,21 +2,21 @@ import React from 'react';
 import { useDrop } from 'react-dnd';
 import DraggableItem from './DraggableItem';
 
-const DroppableArea = ({ id, onDrop, items }) => {
+const DroppableArea = ({ id, onDrop, items, className }) => {
   const [{ isOver }, drop] = useDrop(() => ({
     accept: 'ITEM',
     drop: (item) => onDrop(item.id, id),
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     }),
-    canDrop: (item) => {
-      const itemAlreadyInArea = items[item.id]?.area === id;
-      return !itemAlreadyInArea;
+    canDrop: () => {
+      const itemsInArea = Object.values(items).filter(item => item.area === id);
+      return itemsInArea.length === 0;
     },
   }), [items, id]);
 
   return (
-    <div ref={drop} className={`droppable-area ${isOver ? 'over' : ''}`}>
+    <div ref={drop} className={`droppable-area ${className} ${isOver ? 'over' : ''}`}>
       {items &&
         Object.values(items).map(item => {
           if (item.area === id) {
