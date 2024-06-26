@@ -213,3 +213,42 @@
     padding: 0.25rem;
     margin: 0.25rem;
 }
+
+@media screen and (max-width: 664px) {
+    #Cadastro .caixa-esquerda-cadastro {
+        display: none;
+    }
+    #Cadastro .caixa-direita-cadastro {
+        width: 70%; /* Ajuste para ocupar a maior parte da tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        margin: 20px auto; /* Ajuste de margem para centralizar */
+        padding: 20px; /* Reduzir padding para se ajustar melhor às telas pequenas */
+    }
+    #Cadastro .formaCadastro2 {
+        display: none;
+    }
+    #Cadastro article {
+        width: 100%; /* Ajuste a largura para ocupar toda a tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        flex-direction: column; /* Mude a direção do flex para coluna */
+        padding: 10px; /* Adicione um padding para espaçamento */
+    }
+
+    #Cadastro .formaCadastro2{
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .caixa-esquerda-cadastro {
+        display: none;
+    }
+
+    #Cadastro form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
