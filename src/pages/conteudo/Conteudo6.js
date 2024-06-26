@@ -14,9 +14,31 @@ export default function Conteudo() {
     3: { id: 3, text: 'Enviar E-mail', area: "3" },
     4: { id: 4, text: 'Ligação', area: "4" },
     5: { id: 5, text: 'Café da tarde', area: "5" },
+    7: { id: 7, text: 'Tarefa 7', area: "7" },
+    8: { id: 8, text: 'Tarefa 8', area: "8" },
+    9: { id: 9, text: 'Tarefa 9', area: "9" },
+    10: { id: 10, text: 'Tarefa 10', area: "10" },
+    11: { id: 11, text: 'Tarefa 11', area: "11" },
   };
 
   const [items, setItems] = useState(initialItems);
+  const [userValues, setUserValues] = useState({
+    7: "",
+    8: "",
+    9: "",
+    10: "",
+    11: ""
+  });
+
+  const maxValues = {
+    7: 10,
+    8: 20,
+    9: 15,
+    10: 30,
+    11: 25
+  };
+
+  const [validationMessages, setValidationMessages] = useState({});
 
   const handleDrop = (itemId, areaId) => {
     const currentItem = items[itemId];
@@ -28,6 +50,40 @@ export default function Conteudo() {
       [itemId]: { ...prevItems[itemId], area: areaId },
     }));
     alert(`Item ${currentItem.text} foi solto na área ${areaId}`);
+  };
+
+  const handleChange = (taskId, value) => {
+    setUserValues(prevValues => ({
+      ...prevValues,
+      [taskId]: value,
+    }));
+  };
+
+  const validateTasks = () => {
+    let isValid = true;
+    let newValidationMessages = {};
+
+    Object.keys(userValues).forEach(taskId => {
+      if (["7", "8", "9", "10", "11"].includes(taskId)) {
+        const value = parseInt(userValues[taskId], 10);
+        if (isNaN(value) || value > maxValues[taskId]) {
+          isValid = false;
+          newValidationMessages[taskId] = `O valor para ${initialItems[taskId]?.text || 'tarefa'} não pode exceder ${maxValues[taskId]}.`;
+        }
+      }
+    });
+
+    setValidationMessages(newValidationMessages);
+    return isValid;
+  };
+
+  const handleSubmit = () => {
+    const isValid = validateTasks();
+    if (isValid) {
+      alert("Todas as tarefas estão válidas!");
+    } else {
+      alert("Algumas tarefas precisam ser corrigidas.");
+    }
   };
 
   return (
@@ -80,6 +136,25 @@ export default function Conteudo() {
           </div>
         </div>
       </div>
+
+      <div className="task-inputs">
+        {Object.keys(userValues).map(taskId => (
+          ["7", "8", "9", "10", "11"].includes(taskId) &&
+          <div key={taskId}>
+            <label>{initialItems[taskId]?.text || `Tarefa ${taskId}`}</label>
+            <input
+              type="number"
+              value={userValues[taskId] || ""}
+              onChange={(e) => handleChange(taskId, e.target.value)}
+            />
+            {validationMessages[taskId] && (
+              <p className="validation-message">{validationMessages[taskId]}</p>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <button onClick={handleSubmit}>Validar Tarefas</button>
       
       <img src={Tela6} alt="Tela de fundo" className="tela6" />
     </div>

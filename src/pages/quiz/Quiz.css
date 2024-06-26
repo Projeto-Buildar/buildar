@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.quiz {
+  margin: 20px;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-weight: bold;
+}
+
+.answer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.answer-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  gap: 20px; /* Espaço entre as opções */
+}
+
+.answer-options button {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%; /* Botões ocupam toda a largura da coluna */
+  border: none; /* Remove borda padrão */
+  color: white; /* Cor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  height: 10rem;
+
+}
+
+.answer-options button:hover {
+  opacity: 0.8; /* Efeito de hover */
+}
+
+.score-section {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  display: flex;
+  padding: 10px;
+  margin-top: 40px;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 9rem;
+  margin-right: 40px; /* Adiciona margem entre os botões */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.quiz1{
+background-color: #FFB412;
+}
+
+.quiz2{
+  background-color: #9B33FD;
+}
