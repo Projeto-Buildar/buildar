@@ -1,6 +1,14 @@
-.App {
+#TelaInicial-Quiz h2 {
   font-family: sans-serif;
   text-align: center;
+}
+
+.quizHeader{
+  background: none;
+}
+  
+#containerQuiz .quizHeader::after {
+  box-shadow:#9B33FD;
 }
 
 .quiz {
@@ -48,7 +56,7 @@
   text-align: center;
 }
 
-button {
+#containerQuiz button {
   display: flex;
   padding: 10px;
   margin-top: 40px;
@@ -61,7 +69,7 @@ button {
   margin-right: 40px; /* Adiciona margem entre os botões */
 }
 
-.container {
+.containerQuiz {
   display: flex;
   justify-content: center;
 }
@@ -72,3 +80,4 @@ background-color: #FFB412;
 .quiz2{
   background-color: #9B33FD;
 }
+

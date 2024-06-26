@@ -34,6 +34,14 @@
   height: auto;
 }
 
+#Pagamento .pagamentoHeader{
+  background: none;
+}
+
+#Pagamento .pagamentoHeader::after {
+  box-shadow: none;
+}
+
 /* Estilos do formulário de pagamento */
 #formPagamento {
   width: 100%;
