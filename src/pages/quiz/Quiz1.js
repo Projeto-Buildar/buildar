@@ -2,8 +2,6 @@ import React, { useState } from 'react'; // Importa React e o hook useState para
 import './Quiz.css'; // Importa o arquivo de estilos CSS
 import Header from '../landingPage/components/Header/Header';
 
-
-// Array de perguntas e respostas
 const questions = [
   {
     questionText: 'Qual é a definição de gestão de tempo?',
@@ -53,65 +51,56 @@ const questions = [
 ];
 
 function Quiz() {
-  // Define o estado para a pergunta atual
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  // Define o estado para a pontuação do usuário
   const [score, setScore] = useState(0);
-  // Define o estado para mostrar ou não a pontuação final
   const [showScore, setShowScore] = useState(false);
 
-  // Função que lida com a seleção de uma resposta
   const handleAnswerOptionClick = (isCorrect) => {
-    // Se a resposta estiver correta, incrementa a pontuação
     if (isCorrect) {
       setScore(score + 1);
     }
 
-    // Passa para a próxima pergunta
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      // Se não houver mais perguntas, mostra a pontuação final
       setShowScore(true);
     }
   };
 
   return (
     <main id='containerQuiz'>
-    <Header mostrarSelectIdiomas={false} className="quizHeader"/>
+      <Header mostrarSelectIdiomas={false} className="quizHeader" />
 
-    <div className="quiz">
-      {showScore ? (
-        // Se showScore for verdadeiro, mostra a pontuação final
-        <div className="score-section">
-          Parabéns! Você pontuou {score} de {questions.length}
-        </div>
-      ) : (
-        // Se showScore for falso, mostra a pergunta atual e as opções de resposta
-        <>
-          <div className="question-section">
-            <div className="question-count">
-              <span>Pergunta {currentQuestion + 1}</span>/{questions.length}
-            </div>
-            <div className="question-text">{questions[currentQuestion].questionText}</div>
+      <div className="quiz">
+        {showScore ? (
+          <div className="score-section">
+            Parabéns! Você pontuou {score} de {questions.length}
           </div>
-          <div className="answer-section">
-            <div className="answer-options">
-              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-                  style={{ backgroundColor: answerOption.color }} // Aplica a cor do array de opções
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
+        ) : (
+          <>
+            <div className="question-section">
+              <div className="question-count">
+                <span>Pergunta {currentQuestion + 1}</span>/{questions.length}
+              </div>
+              <div className="question-text">{questions[currentQuestion].questionText}</div>
             </div>
-          </div>
-        </>
-      )}
-    </div>
+            <div className="answer-section">
+              <div className="answer-options">
+                {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                    style={{ backgroundColor: answerOption.color }} // Aplica a cor do array de opções
+                  >
+                    {answerOption.answerText}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
+      </div>
     </main>
   );
 }
