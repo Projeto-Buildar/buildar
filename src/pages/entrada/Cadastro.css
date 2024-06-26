@@ -60,10 +60,12 @@
     justify-content: flex-start;
 }
 
+
+
 .caixa-esquerda-cadastro h1 {
     padding: 200px 110px;
-    background-color: #29F39B;
-    background-image: url('./images/Group-formas.webp');
+    background-color: #9B33FD;
+    background-image: url('./images/image1.png');
     background-position: center;
     color: #f3f3f3;
     font-size: 26px;
@@ -95,17 +97,17 @@
 }
 
 .caixa-direita-cadastro button:hover {
-    color: #059c5b;
+    color: #FFB412;
 }
 
 #submit {
     color: #000;
-    background-color: #29F39B;
+    background-color: #FFB412;
 }
 
 #submit:hover {
     color: #000;
-    background-color: #00ff91;
+    background-color: #FFB412;
 }
 
 .caixa-direita-cadastro {
@@ -202,5 +204,51 @@
     #Cadastro .formaCadastro2{
         width: 100px;
         height: 150px;
+    }
+}
+
+
+#Cadastro input {
+    font-size: 18px;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+
+@media screen and (max-width: 664px) {
+    #Cadastro .caixa-esquerda-cadastro {
+        display: none;
+    }
+    #Cadastro .caixa-direita-cadastro {
+        width: 70%; /* Ajuste para ocupar a maior parte da tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        margin: 20px auto; /* Ajuste de margem para centralizar */
+        padding: 20px; /* Reduzir padding para se ajustar melhor às telas pequenas */
+    }
+    #Cadastro .formaCadastro2 {
+        display: none;
+    }
+    #Cadastro article {
+        width: 100%; /* Ajuste a largura para ocupar toda a tela */
+        height: auto; /* Ajuste a altura para caber no conteúdo */
+        flex-direction: column; /* Mude a direção do flex para coluna */
+        padding: 10px; /* Adicione um padding para espaçamento */
+    }
+
+    #Cadastro .formaCadastro2{
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .caixa-esquerda-cadastro {
+        display: none;
+    }
+
+    #Cadastro form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }

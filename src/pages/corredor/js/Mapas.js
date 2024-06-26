@@ -47,10 +47,6 @@ const Mapas = {
                             { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "Debora" },
                             { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
                             { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" },
-                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
-                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "Debora" },
-                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
-                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora"},
                         ]
                     }
                 ]
@@ -92,6 +88,36 @@ const Mapas = {
                     }
                 ]
             }),
+            // Gabs: new Person({
+            //     x: utils.withGrid(27),
+            //     y: utils.withGrid(6),
+            //     src: Gabs,
+            // }),
+            // Andrei: new Person({
+            //     x: utils.withGrid(28),
+            //     y: utils.withGrid(6),
+            //     src: Andrei,
+            // }),
+            // Aurora: new Person({
+            //     x: utils.withGrid(29),
+            //     y: utils.withGrid(6),
+            //     src: Aurora,
+            // }),
+            // Jailson: new Person({
+            //     x: utils.withGrid(30),
+            //     y: utils.withGrid(6),
+            //     src: Jaja,
+            // }),
+            // Drii: new Person({
+            //     x: utils.withGrid(31),
+            //     y: utils.withGrid(6),
+            //     src: Drii,
+            // }),
+            // Debora: new Person({
+            //     x: utils.withGrid(32),
+            //     y: utils.withGrid(6),
+            //     src: Debora,
+            // }),
             // Personagem jogador (herói)
             player: new Person({
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
