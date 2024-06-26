@@ -34,10 +34,10 @@ const Mapas = {
                 nome: 'Debora',
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
-                    { type: "walk", direction: "left", time: 800 },
-                    { type: "walk", direction: "up", time: 800 },
-                    { type: "walk", direction: "right", time: 1200 },
-                    { type: "walk", direction: "up", time: 300 },
+                    { type: "stand", direction: "left", time: 800 },
+                    { type: "stand", direction: "up", time: 800 },
+                    { type: "stand", direction: "right", time: 1200 },
+                    { type: "stand", direction: "up", time: 300 },
                 ],
                 talking: [
                     {
