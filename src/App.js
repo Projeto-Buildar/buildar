@@ -28,6 +28,9 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import GameDescanso from './GameDescanso';
 import LojaCopy from './pages/loja copy/LojaCopy';
 import { ItemProvider } from './pages/conteudo/Itens';
+import InicioQuiz from './pages/quiz/InicioQuiz'
+import Quiz from './pages/quiz/Quiz1';
+import Quiz2 from './pages/quiz/Quiz2';
 
 
 export default function App() {
@@ -61,6 +64,9 @@ export default function App() {
           <Route path='game_descanso' element={<GameDescanso/>}/>
           <Route path='descanso' element={<AreaDescanso/>}></Route>
           <Route path="loja" element={<LojaCopy />}/>
+          <Route path="quiz" element={<InicioQuiz />}/>
+          <Route path="quiz1" element={<Quiz />}/>
+          <Route path="quiz2" element={<Quiz2 />}/>
           </Routes>
       </DndProvider>
     </BrowserRouter>

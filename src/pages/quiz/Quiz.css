@@ -1,0 +1,110 @@
+#containerQuiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
+}
+
+#TelaInicial-Quiz h2 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.quizHeader {
+  width: 100%; /* Garante que o header ocupe a largura total */
+}
+
+#containerQuiz .quizHeader::after {
+  box-shadow: #9B33FD;
+}
+
+.quiz {
+  width: 100%;
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-weight: bold;
+}
+
+.question-text {
+  margin: 10px 0;
+}
+
+.answer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.answer-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  gap: 20px; /* Espaço entre as opções */
+}
+
+.answer-options button {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%; /* Botões ocupam toda a largura da coluna */
+  border: none; /* Remove borda padrão */
+  color: white; /* Cor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  height: 100px; /* Altura fixa para os botões */
+  text-align: center;
+}
+
+.answer-options button:hover {
+  opacity: 0.8; /* Efeito de hover */
+}
+
+.score-section {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.containerQuiz {
+  display: flex;
+  justify-content: center;
+}
+
+#containerQuiz button {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 9rem;
+  margin-right: 40px; /* Adiciona margem entre os botões */
+  color: white;
+}
+
+.containerQuiz {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz1 {
+  background-color: #FFB412;
+}
+
+.quiz2 {
+  background-color: #9B33FD;
+}
