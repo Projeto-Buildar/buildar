@@ -26,7 +26,7 @@ const Mapas = {
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
             // Personagem não jogador (NPC) (comentado)    
-            Debora: new Person({
+            Debora1: new Person({
                 x: utils.withGrid(21),
                 y: utils.withGrid(9),
                 src: Debora,
@@ -34,10 +34,10 @@ const Mapas = {
                 nome: 'Debora',
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
-                    { type: "stand", direction: "left", time: 800 },
-                    { type: "stand", direction: "up", time: 800 },
-                    { type: "stand", direction: "right", time: 1200 },
-                    { type: "stand", direction: "up", time: 300 },
+                    { type: "walk", direction: "left", time: 800 },
+                    { type: "walk", direction: "up", time: 800 },
+                    { type: "walk", direction: "right", time: 1200 },
+                    { type: "walk", direction: "up", time: 300 },
                 ],
                 talking: [
                     {
@@ -46,11 +46,7 @@ const Mapas = {
                             { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
                             { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "Debora" },
                             { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
-                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" },
-                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
-                            { type: "textMessage", text: "faço muitas atividades todos os dias", faceHero: "Debora" },
-                            { type: "textMessage", text: "mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
-                            { type: "textMessage", text: "ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora"},
+                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" }
                         ]
                     }
                 ]
@@ -92,6 +88,36 @@ const Mapas = {
                     }
                 ]
             }),
+            // Gabs: new Person({
+            //     x: utils.withGrid(27),
+            //     y: utils.withGrid(6),
+            //     src: Gabs,
+            // }),
+            // Andrei: new Person({
+            //     x: utils.withGrid(28),
+            //     y: utils.withGrid(6),
+            //     src: Andrei,
+            // }),
+            // Aurora: new Person({
+            //     x: utils.withGrid(29),
+            //     y: utils.withGrid(6),
+            //     src: Aurora,
+            // }),
+            // Jailson: new Person({
+            //     x: utils.withGrid(30),
+            //     y: utils.withGrid(6),
+            //     src: Jaja,
+            // }),
+            // Drii: new Person({
+            //     x: utils.withGrid(31),
+            //     y: utils.withGrid(6),
+            //     src: Drii,
+            // }),
+            // Debora: new Person({
+            //     x: utils.withGrid(32),
+            //     y: utils.withGrid(6),
+            //     src: Debora,
+            // }),
             // Personagem jogador (herói)
             player: new Person({
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
