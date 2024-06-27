@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import'./Conteudo.css';
+// import'./Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
 import Tela2 from './imagem/Tela2.png';

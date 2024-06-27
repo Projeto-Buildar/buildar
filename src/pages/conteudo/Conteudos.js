@@ -4,6 +4,7 @@ import Contexto from './Contexto';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png';
 import { useState, useEffect } from 'react';
+import './Conteudos.css';
 
 const listaConteudos = [
     {
@@ -105,16 +106,16 @@ export default function Conteudos() {
     const BtnFunction = (increment) => {
         const newIndex = conteudoIndex + increment;
         if (newIndex >= 0 && newIndex < objetoConteudo.conteudo.length) {
-            // if(newIndex < objetoConteudo.conteudo.length - 1){
-            //     setConteudoIndex(newIndex);
-            // }else {
-            //     if(increment === -1){
-            //         setConteudoIndex(newIndex);
-            //     } else {
-            //         navigate(`/conteudos/${objetoConteudo.indice}/conteudo6`)
-            //     }
-            // }
-            setConteudoIndex(newIndex);      
+            if(newIndex < objetoConteudo.conteudo.length - 1){
+                setConteudoIndex(newIndex);
+            }else {
+                if(increment === -1){
+                   setConteudoIndex(newIndex);
+               } else {
+                   navigate(`/conteudos/${objetoConteudo.indice}/conteudo6`)
+               }
+            }
+            // setConteudoIndex(newIndex);      
         }
     }
 

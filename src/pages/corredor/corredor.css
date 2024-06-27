@@ -22,9 +22,9 @@
   image-rendering: pixelated;
 }
 
-.resetaStorage {
+/* .resetaStorage {
   opacity: 0;
-}
+} */
 
 @media (width: 1366px) {
   .game-container {

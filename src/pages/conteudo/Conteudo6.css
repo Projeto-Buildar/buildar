@@ -165,3 +165,16 @@
     margin-left: 200px;
     gap: 40px;
 }
+.buttonreset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 250px;
+}
+.resetaStorage{
+    width: 200px;
+    border-radius: 15px;
+    background-color: #9B33FD;
+    border: 3px solid #000;
+}

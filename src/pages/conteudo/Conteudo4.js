@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Conteudo.css';
+// import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.png';
 import Perfil from './imagem/perfil.png'

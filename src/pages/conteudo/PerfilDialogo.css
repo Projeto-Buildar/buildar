@@ -1,0 +1,60 @@
+.escolha {
+    background-color: #58D2FF;
+    height: 150px;
+    width: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 180px;
+    bottom: 16px;
+    border-radius: 0px 0px 60px 0px;
+    flex-direction: column;
+    border: #000 4px solid;
+    animation: expand 1s forwards;
+    overflow: hidden;
+    animation-delay: 5s; 
+    opacity: 0;
+}
+
+@keyframes expand {
+    from {
+        width: 0; 
+        opacity: 0;
+    }
+    to {
+        width: 500px; 
+        opacity: 1;
+    }
+}
+
+.botao1, .botao2 {
+    margin: 10px 0; 
+    opacity: 0; 
+    animation: expand1 1s forwards;
+    animation-delay: 1s; 
+}
+
+@keyframes expand1 {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+.escolha1, .escolha2 {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    border: #000 3px solid;
+    background-color: #fff; 
+    color: #000; 
+    transition: background-color 0.3s ease;
+    font-weight: bold ;
+}
+
+.escolha1:hover, .escolha2:hover {
+    background-color: #ddd; 
+}

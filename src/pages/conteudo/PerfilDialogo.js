@@ -1,3 +1,5 @@
+import './PerfilDialogo.css';
+
 export default function PerfilDialogo(props){
     return(
         <div>
