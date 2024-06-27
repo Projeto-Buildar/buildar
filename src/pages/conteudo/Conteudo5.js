@@ -1,10 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './Conteudo.css';
+// import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela5 from './imagem/Tela5.png';
+import Tela1 from './imagem/Tela1.jpg';
 import Perfil from './imagem/perfil.png';
 import Prancheta from'./imagem/Prancheta.png';
-import c5 from './imagem/MacBook Pro 16_ - 5.png'
 
 export default function Conteudo() {
   const history = useNavigate();
@@ -18,7 +17,7 @@ export default function Conteudo() {
       <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
     
       <img src={Vivi} alt="Capi Professor" className="capi" />
-      <div className="message-container2">
+      <div className="message-container">
         <div className="message-box">
         <p>Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia.
            Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho é 
@@ -26,7 +25,7 @@ export default function Conteudo() {
         </div>
       </div>
      
-      <img src={Tela5} alt="tela5" className='tela5'/>
+      <img src={Tela1} alt="tela5" className='tela5'/>
       <div className='exemplo'>
       <img src={Prancheta} alt="prancheta" className='prancheta'/>
        </div>
@@ -36,7 +35,7 @@ export default function Conteudo() {
       </Link>
 
       <Link to="/conteudo6">
-          <button className="proximo">Próximo</button>
+          <button className="proximo">Proximo</button>
         </Link>
 
 

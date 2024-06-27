@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './Conteudo1.css';
+// import './Conteudo1.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
 

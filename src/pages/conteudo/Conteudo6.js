@@ -66,9 +66,22 @@ export default function Conteudo() {
             </div>
 
           </div>
+        </div>
+
+        <div className='buttonreset'>
+    <button 
+        className='resetaStorage' 
+        style={{ button: '0' }} 
+        onClick={() => {
+            localStorage.clear();
+            window.location.reload(); 
+        }}
+    > 
+        Clique aqui para limpar a planilha
+    </button>
+</div>
 
           
-        </div>
       </div>
     </ItemProvider>
   );
