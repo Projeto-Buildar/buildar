@@ -25,11 +25,11 @@
 }
 
 .message-box{
-    background-color: #58D2FF;
+    background-color: #F5F5F5;
     display: flex;
     align-items: center;
     position: absolute;
-    border-radius: 0px 0px 60px 0px;
+    border-radius: 23px 23px 23px 23px;
     flex-direction: column;
     border: #000 4px solid;
     animation: expand2 1s forwards;
@@ -38,6 +38,8 @@
     height: 150px;
     top: 0px;
     padding: 10px;
+    margin-left: 20px;
+    margin-top: 12px;
 }
 
 @keyframes expand2 {
