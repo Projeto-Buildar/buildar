@@ -3,7 +3,6 @@ import'./Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
 import Tela2 from './imagem/Tela2.png';
-import c2 from './imagem/MacBook Pro 16_ - 2.png'
 
 
 export default function Conteudo () {
@@ -29,7 +28,7 @@ export default function Conteudo () {
 
                <img src={Tela2} alt="tela2" className='tela2'/>
                   
-               <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+               <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
                   
                   <Link to="/conteudo">
                  <button className="anterior">Voltar</button>

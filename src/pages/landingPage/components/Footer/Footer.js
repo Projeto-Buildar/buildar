@@ -49,16 +49,16 @@ export default function Footer() {
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </section>
         <section className="social">
-          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
             <img src={instagram} alt="Instagram" />
           </a>
-          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener">
             <img src={tiktok} alt="TikTok" />
           </a>
-          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener">
             <img src={linkedin} alt="LinkedIn" />
           </a>
-          <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener">
             <img src={github} alt="GitHub" />
           </a>
         </section>

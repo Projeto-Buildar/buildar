@@ -27,6 +27,8 @@ export default function Conteudo() {
 
         {/* <Link to="/corredor/GestaoDeTempo">
           <button className="corredor">Voltar para o corredor</button>
+        <Link to="/corredor/GestaoDeTempo">
+          <button className="voltarCorredor">Voltar para o corredor</button>
         </Link>
 
         <Link to="/conteudo5">

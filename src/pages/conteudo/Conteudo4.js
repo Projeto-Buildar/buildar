@@ -29,7 +29,7 @@ export default function Conteudo() {
         </div>
       </div>
       
-      <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+      <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
       <Link to="/conteudo3">
            <button className="anterior">Voltar</button>
