@@ -3,12 +3,13 @@
     margin: 0;
 }
 
-.container{
-    background-image: url("/src/pages/conteudo/imagem/Tela6.jpg");
+.container_conteudo6{
+    background-image: url("/src/pages/conteudo/imagem/Rectangle\ 1382.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    padding-top: -12vh;
+    margin-top: -12vh;
+    padding-top: 0;
 }
 
 .vivi{
@@ -35,7 +36,7 @@
     overflow: hidden; 
     left: 200px;
     height: 150px;
-    top: 90px;
+    top: 0px;
     padding: 10px;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .alinhamento_drop3{
-    background-image: url("/src/pages/conteudo/imagem/Prancheta2.png");
+    background-image: url("/src/pages/conteudo/imagem/Group\ 280.png");
     background-repeat: no-repeat;
     background-position: right;
     z-index: 1;
@@ -64,42 +65,42 @@
 }
 
 .droppable-area-1{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-2{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-3{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-4{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-5{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-6{
-    background-color: #333;
+    background-color: rgb(168, 164, 164);
     width: 200px;
     height: 60px;
     margin: 5px;

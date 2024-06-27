@@ -122,22 +122,22 @@ export default function Conteudos() {
     const indiceConteudo = objetoConteudo.conteudo[conteudoIndex];
 
     return (
-        <div className={indiceConteudo.bgImage}>
+        <div className={`${indiceConteudo.bgImage} Container`} >
             <Contexto
                 vivi={Vivi}
                 messageBox={indiceConteudo.messageClass}
                 recepcao={indiceConteudo.recepcao}
                 textoVivi={indiceConteudo.textoVivi}
                 retornaGame={() => navigate(-1)}
+
             />
 
             {indiceConteudo.temBotoesDireciona && (
-                <>
+                <div className='botoesDireciona'>
                     <button className="anterior" onClick={() => BtnFunction(-1)}>Voltar</button>
                     <button className="proximo" onClick={() => BtnFunction(1)}>Próximo</button>
-                </>
+                </div>
             )}
-
             {indiceConteudo.temPerfil &&
                 <PerfilDialogo
                     perfil={Perfil}

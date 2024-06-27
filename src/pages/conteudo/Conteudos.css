@@ -4,7 +4,7 @@
   }
   
 .Container{
-    background-image: url("/src/pages/conteudo/imagem/Tela1.jpg");
+    background-image: url("/src/pages/conteudo/imagem/Página\ da\ prática\ gestão\ do\ tempo.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -93,4 +93,18 @@
     to {
         opacity: 1; 
     }
+}
+
+.anterior, .proximo, .corredor {
+    border-radius: 22px;
+    width: 8rem;
+    height: 3rem;
+    background-color: #FF486D;
+    color: #ffffff;
+    
+}
+
+.botoesDireciona {
+    position: absolute;
+    bottom: 15px;
 }
