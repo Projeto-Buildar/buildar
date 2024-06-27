@@ -1,103 +1,107 @@
 /* src/components/Footer.css */
 #footerPreLogin {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    width: 100%;
-    padding-block: 10vh;
-    color: #ffffff;
-    background: #9B33FD;
-  }
-  
-  #footerPreLogin .footerTop, .footerBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    gap: 1rem;
-  }
-  
-  #footerPreLogin .footerTop .logo {
-    height: 6rem;
-  }
-  
-  .linkList {
-    display: flex;
-    align-items: center;
-    gap: 6rem;
-  }
-  
-  #footerPreLogin .footerTop .linkList {
-    gap: 12rem;
-  }
-  
- footer li {
-    margin-block: 1rem;
-    
-  }
-  
-  .footerBottom .social img {
-    height: 3rem;
-    margin-inline: 1rem;
-    border-radius: 100rem;
-  }
-  
-  .footerBottom .social {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  padding-block: 10vh;
+  color: #ffffff;
+  background: #9B33FD;
+}
 
-  }
+#footerPreLogin .footerTop, .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+  background: #58D2FF;
+}
 
-  .breakBar {
-    width: 80%;
-    height: 2px;
-    background: #FFFFFF;
-    border-radius: 100;
-    margin-block: 5vh;
-  }
-  
-  .footerTop, .footerBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  #footerPreLogin .footerTop .linkList .footer-links {
-    display: flex;
-    justify-content: space-around;
-    flex-direction:row;
-    gap: 20rem;
-    width: 100%;
-    margin-bottom: 50px;
-  }
+#footerPreLogin .footerTop .logo {
+  height: 6rem;
+}
 
-  .link-group {
-    display: flex; /* Ativa o Flexbox para cada grupo */
-    flex-direction: column; /* Organiza os links em coluna */
-  }
-  
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 15px 0px;
-  }
+.linkList {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
 
-  .footer-links a:hover {
-    color: #ffd700;
-  
-  }
+#footerPreLogin .footerTop .linkList {
+  gap: 12rem;
+}
 
-  .footer-linkList, .footer-rigth {
-  font-size: 16px; 
-  color: #ffffff; 
-  margin: 10px 0; 
-  text-decoration: none; 
+.footerBottom .social img {
+  height: 3rem;
+  margin-inline: 1rem;
+  border-radius: 100rem;
+}
+
+.footerBottom .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.breakBar {
+  width: 80%;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 100;
+  margin-block: 5vh;
+}
+
+.footerTop, .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footerPreLogin .footerTop .linkList .footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 20rem;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 15px 0px;
+}
+
+.footer-linkList, .footer-rigth {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px 0;
+  text-decoration: none;
 }
 
 .footer-linkList:hover {
   color: #ffd700;
 }
-  
+
+.languageButton {
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 40vh;
+  right: 0.4vw;
+  z-index: 6;
+
+  & select {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    padding: 0 0.5rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+}

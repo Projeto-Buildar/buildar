@@ -8,7 +8,8 @@ import QuintaTela from './components/QuintaTela/QuintaTela';
 import SextaTela from './components/SextaTela/SextaTela';
 import SetimaTela from './components/SetimaTela/SetimaTela';
 import OitavaTela from './components/OitavaTela/OitavaTela';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 
 export default function LandingPage (){
     return (

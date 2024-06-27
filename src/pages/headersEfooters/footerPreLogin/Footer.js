@@ -1,41 +1,55 @@
-// src/components/Footer.js
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import "../../../../i18n"
+import { useState, useEffect } from 'react';
+import "../../../i18n"
 
-import logo from '../../images/logo_off.webp';
-import instagram from '../../images/social_instagram.webp';
-import tiktok from '../../images/social_tiktok.webp';
-import linkedin from '../../images/social_linkedin.webp';
-import github from '../../images/social_github.webp';
+import logo from '../images/logo_off.webp';
+import instagram from '../images/social_instagram.webp';
+import tiktok from '../images/social_tiktok.webp';
+import linkedin from '../images/social_linkedin.webp';
+import github from '../images/social_github.webp';
 
 import './Footer.css';
 
-export default function FooterPreLogin(props) {
+export default function FooterPreLogin() {
   const { t, i18n } = useTranslation();
+
+  // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
+
+  useEffect(() => {
+    // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda
+    i18n.changeLanguage(selectedLanguage);
+    localStorage.setItem('language', selectedLanguage);
+  }, [selectedLanguage]);
+
+  const handleLanguageChange = (event) => {
+    setSelectedLanguage(event.target.value);
+  }
 
   return (
     <footer id='footerPreLogin'>
       <div className="footerTop">
         <section className="linkList">
           <nav>
-            <div className="link-group">
+            <div>
               <Link to="/sobre">{t("About")}</Link>
-              <Link to="/conexoes">{t("Connect")}</Link>
               <Link to="/apoie">{t("Support")}</Link>
-            </div>
-            <div className="link-group">
-              <Link to="/duvidas-frequentes">{t("FAQ")}</Link>
               <Link to="/faleConosco">{t("Contact")}</Link>
-              <Link to="/suporte">{t("Suporte")}</Link>
+            </div>
+            <div>
+              <Link to="/conexoes">{t("Connect")}</Link>
+              <Link to="/perfil">Perfil</Link>
+              <Link to="/loja">Loja</Link>
             </div>
           </nav>
         </section>
-        <Link to="/">
-          <img src={logo} className="logo" alt="Logo" />
-        </Link>
-        <p className="footer-rigth">{t("Rights")}</p>
+        <section>
+          <Link to="/">
+            <img src={logo} className="logo" alt="Logo" />
+          </Link>
+          <p className="footer-rigth">{t("Rights")}</p>
+        </section>
       </div>
       <div className="breakBar"></div>
       <div className="footerBottom">
@@ -57,6 +71,14 @@ export default function FooterPreLogin(props) {
             <img src={github} alt="GitHub" />
           </a>
         </section>
+      </div>
+
+      <div className='languageButton'>
+        <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
+          <option value="pt">🇧🇷</option>
+          <option value="en">🇺🇸</option>
+          <option value="es">🇧🇴</option>
+        </select>
       </div>
     </footer>
   );

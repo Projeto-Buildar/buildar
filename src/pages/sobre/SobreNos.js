@@ -1,4 +1,3 @@
-import React from 'react';
 import './SobreNos.css';
 import HeaderHome from "../home/HeaderHome";
 import Footer from '../landingPage/components/Footer/Footer';
