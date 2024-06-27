@@ -147,7 +147,7 @@ const Mapas = {
                     {
                         events: [
                             { type: "textMessage", text: "Aqui é a primeira etapa da Gestão de tempo"},
-                            { type: "redirecionarPagina", text: "/conteudo"},
+                            { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo1"},
                         ]
                     }
                 ]
