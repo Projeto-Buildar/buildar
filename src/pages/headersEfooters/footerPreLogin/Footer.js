@@ -13,7 +13,7 @@ import github from '../../images/social_github.webp';
 import './Footer.css';
 
 export default function FooterPreLogin(props) {
-  const {t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <footer id='footerPreLogin'>
@@ -33,28 +33,28 @@ export default function FooterPreLogin(props) {
           </nav>
         </section>
         <Link to="/">
-          <img src={logo} className="logo" alt="Logo"/>
+          <img src={logo} className="logo" alt="Logo" />
         </Link>
         <p className="footer-rigth">{t("Rights")}</p>
       </div>
       <div className="breakBar"></div>
       <div className="footerBottom">
         <section className="linkList">
-          <Link to="/termos"  className="footer-linkList">{t("Privacy")}</Link>
+          <Link to="/termos" className="footer-linkList">{t("Privacy")}</Link>
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </section>
         <section className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
-            <img src={instagram} alt="Instagram"/>
+            <img src={instagram} alt="Instagram" />
           </a>
           <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener">
-            <img src={tiktok} alt="TikTok"/>
+            <img src={tiktok} alt="TikTok" />
           </a>
           <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener">
-            <img src={linkedin} alt="LinkedIn"/>
+            <img src={linkedin} alt="LinkedIn" />
           </a>
           <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener">
-            <img src={github} alt="GitHub"/>
+            <img src={github} alt="GitHub" />
           </a>
         </section>
       </div>

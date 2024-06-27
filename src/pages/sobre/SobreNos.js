@@ -27,7 +27,7 @@ const SobreNos = () => {
         <h1>Sobre Nós</h1>
         <div className="content">
           <div className="text-section">
-            <h2>Tá mas... De onde surgiu a Buildar?</h2>
+            <h2>Mas afinal... De onde surgiu a Buildar?</h2>
             <p>Fundada por um grupo de adolescentes, estudantes de <strong>desenvolvimento web</strong>, a Buildar toma forma como um projeto de conclusão de curso. Forjada nos pilares de <strong>companheirismo</strong>, e <strong>determinação</strong>, a Buildar segue para moldar o <strong>futuro</strong> de outros jovens como seus fundadores.</p>
             <a href="#" className="ver-mais">ver mais</a>
           </div>

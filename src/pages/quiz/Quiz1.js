@@ -70,7 +70,7 @@ function Quiz() {
 
   return (
     <main id='containerQuiz'>
-      <Header mostrarSelectIdiomas={false} className="quizHeader" />
+      <Header className="quizHeader" />
 
       <div className="quiz">
         {showScore ? (

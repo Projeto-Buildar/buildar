@@ -31,14 +31,14 @@ export default function Header(props) {
         </Link>
         <div>
           <div className='button'>Dê O PLAY</div>
-          <div className='languageButton' style={{ display: props.mostrarSelectIdiomas ? 'flex' : 'none' }}>
+          {/* <div className='languageButton'>
             <img src={language} />
             <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
               <option value="pt">Português</option>
               <option value="en">Inglês</option>
               <option value="es">Espanhol</option>
             </select>
-          </div>
+          </div> */}
         </div>
       </nav>
     </header>
