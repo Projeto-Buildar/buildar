@@ -11,23 +11,23 @@ export default function HeaderPosLogin() {
   const textoBtn = [
     {
       texto: "Home",
-      linkado: "/home"
+      linkado: "/home#"
     },
     {
       texto: t("Connect"),
-      linkado: "/conexoes"
+      linkado: "/conexoes#"
     },
     {
       texto: t("Shop"),
-      linkado: "/loja"
+      linkado: "/loja#"
     },
     {
       texto: t("Profile"),
-      linkado: "/perfil"
+      linkado: "/perfil#"
     },
     {
       texto: t("Conteudo texte"),
-      linkado: "/conteudo"
+      linkado: "/conteudo#"
     }
   ]
 

@@ -53,12 +53,12 @@ const Mapas = {
                 ]
             }),
             Drii: new Person({
-                x: utils.withGrid(8),
-                y: utils.withGrid(9),
+                x: utils.withGrid(11),
+                y: utils.withGrid(6),
                 src: Drii,
                 nome: 'Adriana',
                 behaviorLoop: [
-                  { type: "stand", direction: "up"},
+                    { type: "stand", direction: "down", time: 800 },
                 ],
                 talking: [
                     {
@@ -94,21 +94,31 @@ const Mapas = {
             //     y: utils.withGrid(6),
             //     src: Gabs,
             // }),
-            // Andrei: new Person({
-            //     x: utils.withGrid(28),
-            //     y: utils.withGrid(6),
-            //     src: Andrei,
-            // }),
-            // Aurora: new Person({
-            //     x: utils.withGrid(29),
-            //     y: utils.withGrid(6),
-            //     src: Aurora,
-            // }),
-            // Jailson: new Person({
-            //     x: utils.withGrid(30),
-            //     y: utils.withGrid(6),
-            //     src: Jaja,
-            // }),
+            Andrei: new Person({
+                x: utils.withGrid(4),
+                y: utils.withGrid(6),
+                src: Andrei,
+                behaviorLoop: [
+                    { type: "stand", direction: "down", time: 800},
+                  ],
+            }),
+            Aurora: new Person({
+                x: utils.withGrid(22),
+                y: utils.withGrid(9),
+                src: Aurora,
+                behaviorLoop: [
+                    { type: "stand", direction: "left", time: 800},
+                    { type: "stand", direction: "down", time: 800},
+                ],
+            }),
+            Jailson: new Person({
+                x: utils.withGrid(33),
+                y: utils.withGrid(10),
+                src: Jaja,
+                behaviorLoop: [
+                    { type: "stand", direction: "left", time: 800},
+                ],
+            }),
             // Drii: new Person({
             //     x: utils.withGrid(31),
             //     y: utils.withGrid(6),
@@ -158,6 +168,7 @@ const Mapas = {
                 talking: [
                     {
                         events: [
+                            // { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo2"},
                             { type: "textMessage", text: "Está porta está trancada"},
                             { type: "textMessage", text: "É melhor eu explorar mais o lugar por enquanto"},
                             { who: "player", type: "walk", direction: "down" },

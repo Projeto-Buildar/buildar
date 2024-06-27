@@ -27,7 +27,7 @@ export default function HeaderPreLogin(props) {
     <header id='headerPreLogin' className={`${props.classe ? props.classe : ""}`} >
       <nav>
         <Link to="/">
-          <a href='./index.html'><img src={logo} className='logo' /></a>
+          <img src={logo} className='logo' />
         </Link>
         <div>
           <div className='button'>Dê O PLAY</div>

@@ -23,8 +23,6 @@ header::after {
     z-index: -1;
 }
 
-
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -55,6 +53,9 @@ select {
     border-radius: 1rem;
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
     gap: 1rem;
+    position: fixed;
+    top: 30vh;
+    right: 1vw;
     & img {
         height: 2rem;
         margin-left: 0.5rem;
