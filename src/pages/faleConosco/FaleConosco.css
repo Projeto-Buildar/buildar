@@ -7,6 +7,11 @@
     --sombra-pesada: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+#ConteudoFaleConosco {
+    position: relative;
+    z-index: 1;
+}
+
 #ConteudoFaleConosco h1 {
     color: var(--cor-primaria);
 }
@@ -24,18 +29,27 @@
     box-shadow: none;
 }
 
+#ConteudoFaleConosco .circulo-esquerdo,
+#ConteudoFaleConosco .circulo-direito {
+    position: fixed;
+    z-index: -1; /* Certifique-se de que as imagens estejam atrás do conteúdo */
+    opacity: 0.5; /* Opcional: adicionar transparência às imagens */
+}
+
 #ConteudoFaleConosco .circulo-esquerdo {
     bottom: 0;
     left: 0;
-    position: fixed;
-    }
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
 
 #ConteudoFaleConosco .circulo-direito {
     top: 0;
     right: 0;
-    position: fixed;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     margin-bottom: 30%;
-    }
+}
 
 #ConteudoFaleConosco .contact-form .form-group input,
 #ConteudoFaleConosco .contact-form .form-group textarea {
@@ -45,32 +59,33 @@
     border-radius: 5px; 
     margin-bottom: 10px;
     box-shadow: var(--sombra-leve);
+    font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 #ConteudoFaleConosco .contact-form .form-group {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; /* Alterar para coluna para telas menores */
     justify-content: center; 
     align-items: center; 
-    /* gap: 10px;  */
     margin-bottom: 15px;
-    width: 40%; 
+    width: 100%; 
 }
 
-#ConteudoFaleConosco .formulario{
+#ConteudoFaleConosco .formulario {
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Ajuste para 90% para dispositivos menores */
+    margin: 0 auto;
 }
 
 #ConteudoFaleConosco .ConteudoFaleConsocoTexto {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     margin-bottom: 3rem;
 }
-
 
 #ConteudoFaleConosco .contact-form textarea[name="message"] {
     height: 150px; 
@@ -106,10 +121,55 @@
 
 .info {
     display: flex;
+    flex-direction: column; /* Alterar para coluna para telas menores */
     justify-content: space-between;
     gap: 1rem;
+    width: 100%; /* Ajuste para 100% para dispositivos menores */
 }
 
+@media (min-width: 768px) {
+    #ConteudoFaleConosco .contact-form .form-group {
+        flex-direction: row; 
+        width: 80%; /* Ajuste para 80% para tablets e acima */
+    }
 
+    .info {
+        flex-direction: row; /* Alterar para linha para telas maiores */
+        width: 70%; /* Ajuste para 70% para tablets e acima */
+    }
 
+    #ConteudoFaleConosco .formulario {
+        width: 80%; /* Ajuste para 80% para tablets e acima */
+    }
 
+    #ConteudoFaleConosco .circulo-esquerdo {
+        width: 150px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    #ConteudoFaleConosco .circulo-direito {
+        width: 150px; /* Ajuste o tamanho conforme necessário */
+    }
+}
+
+@media (min-width: 1024px) {
+    #ConteudoFaleConosco .contact-form .form-group {
+        flex-direction: row; 
+        width: 60%; /* Ajuste para 60% para desktops */
+    }
+
+    .info {
+        width: 60%; /* Ajuste para 60% para desktops */
+    }
+
+    #ConteudoFaleConosco .formulario {
+        width: 70%; /* Ajuste para 70% para desktops */
+    }
+
+    #ConteudoFaleConosco .circulo-esquerdo {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    #ConteudoFaleConosco .circulo-direito {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+    }
+}

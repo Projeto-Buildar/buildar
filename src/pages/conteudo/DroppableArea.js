@@ -1,11 +1,15 @@
-import React from 'react';
+// DroppableArea.js
+import React, { useContext } from 'react';
 import { useDrop } from 'react-dnd';
 import DraggableItem from './DraggableItem';
+import { ItemContext } from './Itens'; // Importe o contexto ItemContext
 
-const DroppableArea = ({ id, onDrop, items }) => {
+const DroppableArea = ({ id, className }) => {
+  const { items, handleDrop } = useContext(ItemContext); // Obtém items e handleDrop do contexto
+
   const [{ isOver }, drop] = useDrop(() => ({
     accept: 'ITEM',
-    drop: (item) => onDrop(item.id, id),
+    drop: (item) => handleDrop(item.id, id), // Usa a função handleDrop do contexto
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     }),
@@ -16,7 +20,7 @@ const DroppableArea = ({ id, onDrop, items }) => {
   }), [items, id]);
 
   return (
-    <div ref={drop} className={`droppable-area ${isOver ? 'over' : ''}`}>
+    <div ref={drop} className={`droppable-area ${className} ${isOver ? 'over' : ''}`}>
       {items &&
         Object.values(items).map(item => {
           if (item.area === id) {

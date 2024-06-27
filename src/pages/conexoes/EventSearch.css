@@ -52,3 +52,10 @@
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 944px){
+  .search-container{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -175,6 +175,7 @@
     align-items: center;
 }
 
+
 @media screen and (max-width: 1573px) {
     #voluntarioCadastro .login-wrapper {
         min-height: 350px;
@@ -187,6 +188,7 @@
 
     #voluntarioCadastro .form-container {
         padding: 10px;
+        
     }
 
     #voluntarioCadastro .form-messages h2 {
@@ -227,5 +229,11 @@
 
     #voluntarioCadastro .image-wrapper .image-message .image-text h2 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    #voluntarioCadastro .image-wrapper {
+        display: none;
     }
 }

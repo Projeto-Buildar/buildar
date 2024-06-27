@@ -44,7 +44,7 @@ export default function Pagamento() {
   // Renderização do componente
   return (
     <main className="main-container" id='Pagamento'>
-      <Header mostrarSelectIdiomas={false}/>
+      <Header mostrarSelectIdiomas={false} className="pagamentoHeader" />
       <div id='formPagamento'>
         <h1>Pagamento</h1>
         <h2>Escolha a forma de pagamento</h2>

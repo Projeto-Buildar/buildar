@@ -29,6 +29,10 @@ export default function HeaderHome() {
     {
       texto: t("Conteudo"),
       linkado: "/conteudo"
+    },
+    {
+      texto: t("Quiz"),
+      linkado: "/quiz"
     }
   ]
 
