@@ -94,7 +94,7 @@ export default function Conteudos() {
                 messageBox={indiceConteudo.messageClass}
                 recepcao={indiceConteudo.recepcao}
                 textoVivi={indiceConteudo.textoVivi}
-                retornaGame={() => navigate(-indiceConteudo.id)}
+                retornaGame={() => navigate(-1)}
             />
 
             {indiceConteudo.temBotoesDireciona && (
