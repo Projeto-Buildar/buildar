@@ -11,7 +11,7 @@ export default function Conteudo() {
       
       
         <Link to="/corredor">
-          <button className="proximo">Voltar para o corredor</button>
+          <button className="voltarCorredor">Voltar para o corredor</button>
         </Link>
         
         
