@@ -60,6 +60,7 @@ export default function App() {
           <Route path="conteudo4" element={<Conteudo4 />} />
           <Route path="conteudo5" element={<Conteudo5 />} />
           <Route path="conteudo6" element={<Conteudo6 />} />
+          <Route path="conteudos/:miniGame/conteudo6" element={<Conteudo6 />} />
           <Route path="conteudo7" element={<Conteudo7 />} />
           <Route path='pratica' element={<Pratica/>}></Route>
           <Route path='game_descanso' element={<GameDescanso/>}/>

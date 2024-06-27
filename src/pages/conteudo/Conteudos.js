@@ -55,10 +55,34 @@ const listaConteudos = [
                 textoVivi: 'Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia. Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho é das 9h às 15h e seu horário de almoço é das 12h às 13h. Sua supervisora marcou uma reunião com a equipe das 14h às 15h.',
                 recepcao: false,
                 temPerfil: false,
-                temBotoesDireciona: false,
+                temBotoesDireciona: true,
                 bgImage: 'classebg5'
             },
-            
+        ]
+    },
+    {
+        indice: 'GestaoDeTempo2',
+        conteudo: [
+            {
+                id: 1,
+                messageClass: 'message-box2',
+                textoVivi: 'Teste conteudo 2',
+                recepcao: true,
+                temPerfil: true,
+                textoBotaoUm: 'Estou ansioso para começar!',
+                textoBotaoDois: 'Testaaaaaaando',
+                temBotoesDireciona: false,
+                bgImage: 'classebg1'
+            },
+            {
+                id: 2,
+                messageClass: 'message-box2',
+                textoVivi: 'Teste conteudo 2 pagina 2',
+                recepcao: false,
+                temPerfil: false,
+                temBotoesDireciona: true,
+                bgImage: 'classebg2'
+            },
         ]
     },
     // Outros conteúdos aqui
@@ -81,7 +105,16 @@ export default function Conteudos() {
     const BtnFunction = (increment) => {
         const newIndex = conteudoIndex + increment;
         if (newIndex >= 0 && newIndex < objetoConteudo.conteudo.length) {
-            setConteudoIndex(newIndex);
+            // if(newIndex < objetoConteudo.conteudo.length - 1){
+            //     setConteudoIndex(newIndex);
+            // }else {
+            //     if(increment === -1){
+            //         setConteudoIndex(newIndex);
+            //     } else {
+            //         navigate(`/conteudos/${objetoConteudo.indice}/conteudo6`)
+            //     }
+            // }
+            setConteudoIndex(newIndex);      
         }
     }
 

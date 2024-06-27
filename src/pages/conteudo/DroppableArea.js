@@ -1,4 +1,3 @@
-// DroppableArea.js
 import React, { useContext } from 'react';
 import { useDrop } from 'react-dnd';
 import DraggableItem from './DraggableItem';
@@ -13,9 +12,10 @@ const DroppableArea = ({ id, className }) => {
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     }),
-    canDrop: (item) => {
-      const itemAlreadyInArea = items[item.id]?.area === id;
-      return !itemAlreadyInArea;
+    canDrop: () => {
+      // Verifica se a área já contém um item
+      const areaContainsItem = Object.values(items).some(item => item.area === id);
+      return !areaContainsItem;
     },
   }), [items, id]);
 

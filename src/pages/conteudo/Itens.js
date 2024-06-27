@@ -10,6 +10,7 @@ const getInitialItems = () => {
     3: { id: 3, text: 'Enviar E-mail', area: "3" },
     4: { id: 4, text: 'Ligação', area: "4" },
     5: { id: 5, text: 'Café da tarde', area: "5" },
+    6: { id: 6, text: 'Conversa com o chefe', area: "6" },
   };
 };
 

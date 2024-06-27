@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-image: url(/src/pages/conteudo/imagem/Tela6.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: -12vh;
+}
+
+.vivi{
+    display: flex;
+    justify-content:flex-start;
+
+}
+
+.vivi_img{
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+.message-box{
+    background-color: #58D2FF;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 0px 0px 60px 0px;
+    flex-direction: column;
+    border: #000 4px solid;
+    animation: expand2 1s forwards;
+    overflow: hidden; 
+    left: 200px;
+    height: 150px;
+    top: 90px;
+    padding: 10px;
+}
+
+@keyframes expand2 {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 650px; 
+    }
+}
+
+.atividade{
+    display: flex;
+}
+
+.alinhamento_drop3{
+    background-image: url(/src/pages/conteudo/imagem/Prancheta2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+    width: 900px;
+    height: 500px;
+    background-size: contain;
+
+}
+
+.droppable-area-1{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-2{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-3{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-4{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-5{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-6{
+    background-color: #333;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+
+.droppable-area-7 {
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+
+.droppable-area-8{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+.droppable-area-9{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 23px;
+}
+
+.droppable-area-10{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 23px;
+}
+
+.droppable-area-11{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 80px;
+}
+.droppable-area-12{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+.alinhamento_drop{
+    display: flex;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+    gap: 40px;
+}
