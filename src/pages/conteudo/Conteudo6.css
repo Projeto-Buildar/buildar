@@ -53,7 +53,7 @@
 }
 
 .alinhamento_drop3{
-    background-image: url(/src/pages/conteudo/imagem/Prancheta2.png);
+    background-image: url("/src/pages/conteudo/imagem/Prancheta2.png");
     background-repeat: no-repeat;
     background-position: right;
     z-index: 1;
