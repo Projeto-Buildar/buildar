@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela6 from './imagem/Tela6.jpg';
+import Tela4 from './imagem/Tela4.jpg';
 import DroppableArea from './DroppableArea';
 import Prancheta2 from './imagem/Prancheta2.png';
 import { ItemProvider } from './Itens'; // Importa o ItemProvider do contexto
@@ -60,7 +60,7 @@ export default function Conteudo() {
           </div>
         </div>
         
-        <img src={Tela6} alt="Tela de fundo" className="tela6" />
+        <img src={Tela4} alt="Tela de fundo" className="tela1" />
       </div>
     </ItemProvider>
   );

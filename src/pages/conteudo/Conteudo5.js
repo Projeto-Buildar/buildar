@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela5 from './imagem/Tela5.jpg';
+import Tela1 from './imagem/Tela1.jpg';
 import Perfil from './imagem/perfil.png';
 import Prancheta from'./imagem/Prancheta.png';
 
@@ -26,7 +26,7 @@ export default function Conteudo() {
         </div>
       </div>
      
-      <img src={Tela5} alt="tela5" className='tela5'/>
+      <img src={Tela1} alt="tela5" className='tela5'/>
       <div className='exemplo'>
       <img src={Prancheta} alt="prancheta" className='prancheta'/>
        </div>

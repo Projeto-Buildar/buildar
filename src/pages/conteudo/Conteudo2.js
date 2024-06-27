@@ -3,7 +3,7 @@ import'./Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
 
-import Tela2 from './imagem/Tela2.jpg';
+import Tela1 from './imagem/Tela1.jpg';
 
 
 
@@ -28,7 +28,7 @@ export default function Conteudo () {
                                                      
                   </div>
 
-               <img src={Tela2} alt="tela2" className='tela2'/>
+               <img src={Tela1} alt="tela2" className='tela2'/>
                   
                <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
                   

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela4 from './imagem/Tela4.jpg';
+import Tela1 from './imagem/Tela1.jpg';
 import Perfil from './imagem/perfil.png'
 
 
@@ -39,7 +39,7 @@ export default function Conteudo() {
           <button className="proximo">Próximo</button>
         </Link>
        
-        <img src={Tela4} alt="tela4" className='tela4'/>
+        <img src={Tela1} alt="tela4" className='tela4'/>
 
         <div className='perfil_usuario'>
             <img src={Perfil} alt="perfil" className='perfil' /> 

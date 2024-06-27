@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela3 from './imagem/Tela3.jpg';
+import Tela1 from './imagem/Tela1.jpg';
 import Perfil from './imagem/perfil.png';
 
 
@@ -33,7 +33,7 @@ export default function Conteudo() {
         
       </div>
       
-      <img src={Tela3} alt="tela3" className='tela3'/>
+      <img src={Tela1} alt="tela3" className='tela3'/>
 
       <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
