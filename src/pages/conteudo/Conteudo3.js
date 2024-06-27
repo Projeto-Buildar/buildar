@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela3 from './imagem/Tela3.png';
-import Perfil from './imagem/perfil.png'
-import c3 from './imagem/MacBook Pro 16_ - 3.png'
+import Tela3 from './imagem/Tela3.jpg';
+import Perfil from './imagem/perfil.png';
+
 
 export default function Conteudo() {
   const history = useNavigate();
@@ -64,6 +64,5 @@ export default function Conteudo() {
                     </div>
           </div>
                   
-            
   );
 }

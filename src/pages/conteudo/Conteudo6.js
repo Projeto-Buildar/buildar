@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela6 from './imagem/Tela6.png';
+import Tela6 from './imagem/Tela6.jpg';
 import DroppableArea from './DroppableArea';
 import Prancheta2 from './imagem/Prancheta2.png';
 import { ItemProvider } from './Itens'; // Importa o ItemProvider do contexto

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ItemContext } from './Itens'; // Importe o contexto ItemContext
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela6 from './imagem/Tela6.png';
+import Tela6 from './imagem/Tela6.jpg';
 import DroppableArea from './DroppableArea';
 
 export default function Conteudo() {

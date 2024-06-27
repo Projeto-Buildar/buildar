@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import HeaderHome from '../home/HeaderHome';
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela1 from './imagem/tela1.png';
+import Tela1 from './imagem/Tela1.jpg';
 import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {

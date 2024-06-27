@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import'./Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
-import Tela2 from './imagem/Tela2.png';
+import Tela2 from './imagem/Tela2.jpg';
 import c2 from './imagem/MacBook Pro 16_ - 2.png'
 
 
