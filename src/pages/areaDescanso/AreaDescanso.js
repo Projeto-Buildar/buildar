@@ -1,5 +1,5 @@
 import HeaderHome from '../home/HeaderHome';
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './AreaDescanso.css';
 import gamePic from './images/image_filler_square.png';
 

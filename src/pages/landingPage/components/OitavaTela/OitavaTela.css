@@ -3,16 +3,14 @@
     background: url('../../images/oitavaTela_bg.webp') bottom 0 left 0/auto 30% repeat-x;
 }
 
-
 #oitavaTela section {
     width: 87%;
 } 
 
-
 .arrow {
     width: 64px;
     height: 80px;
-    background: url('../../images/oitavaTela_next.webp') center/contain no-repeat; 
+    background: url('../../images/oitavaTela_next.webp') center/contain no-repeat;
     position: absolute;
     right: 0;
     z-index: 2;
@@ -23,25 +21,19 @@
     transform: rotate(180deg);
 }
 
-
-
 .ulCarrosel{
    z-index: 1 !important;
-} 
-
-
+}
 
 .liCarrosel{
     margin-inline: 0.5% !important; 
 } 
-
 
 .depoiments {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 4rem;
-
 }
 
 .depoiment {
@@ -50,7 +42,7 @@
     flex-flow: column;
     min-width: 288px;
     background: #FFFFFF url('../../images/oitavaTela_img2.webp') top 4% right 8%/auto 8% no-repeat;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     -webkit-touch-callout: none; /* iPhone OS, Safari */
     -webkit-user-select: none; /* Chrome, Safari 3 */

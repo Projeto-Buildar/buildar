@@ -1,7 +1,7 @@
 import './LojaCopy.css';
 
 import HeaderHome from '../home/HeaderHome';
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 
 import energyImage from './images/energia.png';
 import moneyImage from './images/builDollars.png';

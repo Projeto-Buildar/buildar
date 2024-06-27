@@ -1,7 +1,6 @@
-import React from 'react';
 import './SobreNos.css';
 import HeaderHome from "../home/HeaderHome";
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 import mascot from './images/mascot.png';
 import targetIcon from './images/target.png';
 import careerIcon from './images/career.png';
