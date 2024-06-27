@@ -59,7 +59,7 @@ export default function Cadastro() {
     return (
         <main id="Cadastro">
             <img src={formaCadastro1} alt="formaCadastro1" className='formaCadastro1' />
-            <Header mostrarSelectIdiomas={false} classe='cadastroHeader'/>
+            <Header classe='cadastroHeader'/>
             <img src={formaCadastro2} alt="formaCadastro2" className='formaCadastro2' />
 
             <article>

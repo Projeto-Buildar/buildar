@@ -13,7 +13,7 @@ export default function FaleConosco() {
         
         <div id="ConteudoFaleConosco">
             {/* COLOCAR A CLASSE AQUI E ESTILIZAR NADA */}
-                <Header mostrarSelectIdiomas={false} classe='faleConoscoHeader'/>
+                <Header classe='faleConoscoHeader'/>
                 <img src={circuloesquerdo} alt="Círculo Esquerdo" className="circulo-esquerdo" />
                 <div className="formulario">
         

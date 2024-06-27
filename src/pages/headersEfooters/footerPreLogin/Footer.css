@@ -49,7 +49,6 @@
 
   }
 
-
   .breakBar {
     width: 80%;
     height: 2px;
@@ -97,7 +96,6 @@
   margin: 10px 0; 
   text-decoration: none; 
 }
-
 
 .footer-linkList:hover {
   color: #ffd700;
