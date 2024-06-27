@@ -28,6 +28,8 @@ export default function Conteudo() {
     }));
   };
 
+  console.log(handleDrop);
+
   return (
     <div>
       
@@ -72,13 +74,12 @@ export default function Conteudo() {
           <DroppableArea id="4" onDrop={(itemId) => handleDrop(itemId, "4")} items={items} />
           <DroppableArea id="5" onDrop={(itemId) => handleDrop(itemId, "5")} items={items} />
           </div>
-          
    
         
        
         <div className='alinhamento_drop3'>
         <div className='drop3'>
-          <DroppableArea id="7" onDrop={(itemId) => handleDrop(itemId, "7")} items={items} />
+          <DroppableArea id="7" onDrop={(itemId) => handleDrop(itemId, "7")} items={items}/>
           <DroppableArea id="8" onDrop={(itemId) => handleDrop(itemId, "8")} items={items} />
           <DroppableArea id="9" onDrop={(itemId) => handleDrop(itemId, "9")} items={items} />
           <DroppableArea id="10" onDrop={(itemId) => handleDrop(itemId, "10")} items={items} />
