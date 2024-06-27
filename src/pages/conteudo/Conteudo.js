@@ -13,31 +13,30 @@ export default function Conteudo() {
   }
   return (
     <div>
+            {/* <HeaderHome mostrarSelectIdiomas={false} classe='cadastroHeader'/> */}
 
-      <div className='cabecalho' >
+        <div className='cabecalho' >
 
-        <div className='vivi'>
+          <div className='vivi'>
           <img src={Vivi} alt="Capi Professor" className="capi" />
         </div>
-
+      
       </div>
-
-      <img src={Tela1} alt="tela1" className='tela1' />
-      <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+       
+       <img src={Tela1} alt="tela1" className='tela1'/>
+        <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
 
 
       <div className="message-container">
-        <div className="message-box2">
-
-          <p>
-            <h2 className='recepcao'> Olá Jovem, seja bem-vindo(a)!</h2>
-
-            Nessa sala você aprenderá sobre a gestão de tempo, uma habilidade crucial para alcançar
-            a eficiência e o sucesso em qualquer área de atuação.
-          </p>
-
-        </div>
-
+              
+          
+          
+          <h2 className='recepcao'> Olá Jovem, seja bem-vindo(a)!</h2>
+            
+          <p>Nessa sala você aprenderá sobre a gestão de tempo, uma habilidade crucial para alcançar
+            a eficiência e o sucesso em qualquer área de atuação.</p>
+          
+        
       </div>
 
 

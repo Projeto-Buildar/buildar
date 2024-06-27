@@ -28,7 +28,7 @@ export default function Conteudo () {
 
                <img src={Tela2} alt="tela2" className='tela2'/>
                   
-               <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+               <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
                   
                   <Link to="/conteudo">
                  <button className="anterior">Voltar</button>
