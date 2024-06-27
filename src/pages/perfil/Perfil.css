@@ -119,6 +119,9 @@
     & img {
         padding: 1.25rem;
         border-radius: 1rem;
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
     }
 }
 
@@ -254,6 +257,8 @@
         gap: 2rem;
         & img {
             height: 5rem;
+            width: 5rem;
+            object-fit: contain;
             padding: 1.5rem;
             border-radius: 1rem;
         }

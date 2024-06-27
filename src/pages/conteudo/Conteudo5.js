@@ -15,7 +15,7 @@ export default function Conteudo() {
     <div>
       
       
-      <button className="corredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
+      <button className="voltarCorredor" onClick={() => irParaRotaAnterior()}>Voltar para o corredor</button>
     
       <img src={Vivi} alt="Capi Professor" className="capi" />
       <div className="message-container">

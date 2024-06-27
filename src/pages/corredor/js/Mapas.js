@@ -15,6 +15,7 @@ import Debora from "../images/personagens/pessoa/Debora.png";
 import Drii from "../images/personagens/pessoa/Drii.png";
 import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
+import Malu from "../images/personagens/pessoa/personagem_Malu.png"
 
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
@@ -146,7 +147,7 @@ const Mapas = {
                     {
                         events: [
                             { type: "textMessage", text: "Aqui é a primeira etapa da Gestão de tempo"},
-                            { type: "redirecionarPagina", text: "/conteudo"},
+                            { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo1"},
                         ]
                     }
                 ]

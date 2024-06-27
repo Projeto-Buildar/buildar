@@ -23,7 +23,7 @@ export default function Conteudo() {
         </div>
 
         <Link to="/corredor/GestaoDeTempo">
-          <button className="corredor">Voltar para o corredor</button>
+          <button className="voltarCorredor">Voltar para o corredor</button>
         </Link>
 
         <Link to="/conteudo5">
