@@ -24,7 +24,7 @@ export default function Home() {
                     }}
                     href="https://gamebuildar-descanso.vercel.app/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                 >
                     temporario
                 </a>

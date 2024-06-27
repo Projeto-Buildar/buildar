@@ -12,13 +12,14 @@ import github from '../../images/social_github.webp';
 
 import './Footer.css';
 
-export default function FooterPreLogin() {
+export default function FooterPreLogin(props) {
   const {t, i18n } = useTranslation();
+
   return (
     <footer id='footerPreLogin'>
       <div className="footerTop">
         <section className="linkList">
-          <div className="footer-links">
+          <nav>
             <div className="link-group">
               <Link to="/sobre">{t("About")}</Link>
               <Link to="/conexoes">{t("Connect")}</Link>
@@ -28,13 +29,13 @@ export default function FooterPreLogin() {
               <Link to="/duvidas-frequentes">{t("FAQ")}</Link>
               <Link to="/faleConosco">{t("Contact")}</Link>
               <Link to="/suporte">{t("Suporte")}</Link>
-              </div>
-          </div>
+            </div>
+          </nav>
         </section>
         <Link to="/">
-          <img src={logo} className="logo" alt="Logo" />
-          <p className="footer-rigth">{t("Rights")}</p>
+          <img src={logo} className="logo" alt="Logo"/>
         </Link>
+        <p className="footer-rigth">{t("Rights")}</p>
       </div>
       <div className="breakBar"></div>
       <div className="footerBottom">
@@ -43,17 +44,17 @@ export default function FooterPreLogin() {
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </section>
         <section className="social">
-          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener noreferrer">
-            <img src={instagram} alt="Instagram" />
+          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
+            <img src={instagram} alt="Instagram"/>
           </a>
-          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener noreferrer">
-            <img src={tiktok} alt="TikTok" />
+          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener">
+            <img src={tiktok} alt="TikTok"/>
           </a>
-          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="LinkedIn" />
+          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener">
+            <img src={linkedin} alt="LinkedIn"/>
           </a>
-          <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="GitHub" />
+          <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener">
+            <img src={github} alt="GitHub"/>
           </a>
         </section>
       </div>

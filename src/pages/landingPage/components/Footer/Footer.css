@@ -7,99 +7,94 @@
     padding-block: 10vh;
     color: #ffffff;
     background: #9B33FD;
-  }
+}
   
-  #footer .footerTop, .footerBottom {
+#footer .footerTop, .footerBottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     gap: 1rem;
-  }
+}
   
-  #footer .footerTop .logo {
+#footer .footerTop .logo {
     height: 6rem;
-  }
+}
   
-  .linkList {
+.linkList {
     display: flex;
     align-items: center;
     gap: 6rem;
-  }
+}
   
-  #footer .footerTop .linkList {
+#footer .footerTop .linkList {
     gap: 12rem;
-  }
+}
   
- footer li {
-    margin-block: 1rem;
-    
-  }
+footer li {
+    margin-block: 1rem;   
+}
   
-  .footerBottom .social img {
+.footerBottom .social img {
     height: 3rem;
     margin-inline: 1rem;
     border-radius: 100rem;
-  }
+}
   
-  .footerBottom .social {
+.footerBottom .social {
     display: flex;
     justify-content:space-around;
     align-items: center;
+}
 
-  }
-
-
-  .breakBar {
+.breakBar {
     width: 80%;
     height: 2px;
     background: #FFFFFF;
     border-radius: 100;
     margin-block: 5vh;
-  }
+}
   
-  .footerTop, .footerBottom {
+.footerTop, .footerBottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
+}
   
-  #footer .footerTop .linkList .footer-links {
+#footer .footerTop .linkList .footer-links {
     display: flex;
     justify-content: space-around;
     flex-direction:row;
     gap: 20rem;
     width: 100%;
     margin-bottom: 50px;
-  }
+}
 
-  .link-group {
+.link-group {
     display: flex; /* Ativa o Flexbox para cada grupo */
     flex-direction: column; /* Organiza os links em coluna */
-  }
+}
   
-  
-  .footer-links a {
+.footer-links a {
     color: white;
     text-decoration: none;
     margin: 15px 0px;
-  }
-
-  .footer-links a:hover {
-    color: #ffd700;
-  
-  }
-
-  .footer-linkList, .footer-rigth {
-  font-size: 16px; 
-  color: #ffffff; 
-  margin: 10px 0; 
-  text-decoration: none; 
 }
 
+.footer-links a:hover {
+    color: #ffd700;
+  
+}
+
+.footer-linkList, .footer-rigth {
+    font-size: 16px; 
+    color: #ffffff; 
+    margin: 10px 0; 
+    text-decoration: none; 
+}
 
 .footer-linkList:hover {
-  color: #ffd700;
+    color: #ffd700;
 }
   
