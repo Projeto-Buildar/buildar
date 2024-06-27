@@ -7,7 +7,7 @@ const InicioQuiz = () => {
   return (
     <div className='conteudo'>
     <main id='containerQuiz'>
-      <Header mostrarSelectIdiomas={false} className="quizHeader" />
+      <Header className="quizHeader" />
       <div id='TelaInicial-Quiz'>
         <h2>Escolha o seu Quiz!</h2>
         <div className='containerQuiz'>
