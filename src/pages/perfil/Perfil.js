@@ -3,7 +3,7 @@ import HeaderHome from "../home/HeaderHome";
 import Conquistas from './components/Conquistas';
 import Skins from './components/Skins';
 import ConquistasDetails from "./components/ConquistasDetails";
-import Footer from "../landingPage/components/Footer/Footer";
+import Footer from "../headersEfooters/footerPreLogin/Footer";
 
 import profilePic from './images/profile_pic.png';
 import trophy from './images/trophy.png';

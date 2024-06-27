@@ -3,7 +3,7 @@ import Header from './HeaderHome.js';
 // import fundo from './images/image_fundo.webp';
 import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
-import Footer from '../landingPage/components/Footer/Footer.js';
+import Footer from '../headersEfooters/footerPreLogin/Footer.js';
 
 export default function Home() {
     return (

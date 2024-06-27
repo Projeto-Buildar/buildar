@@ -1,6 +1,6 @@
 import './Loja.css';
 import HeaderHome from '../home/HeaderHome';
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 import skin1 from './images/skin.png';
 import skin2 from './images/skin2.png';
 import skin3 from './images/skin3.png';

@@ -5,7 +5,7 @@ import Forma2 from "./images/amarelo lilas azul.webp"
 import imgFormulario from "../conexoes/images/imagem formulario.webp";
 import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
-import Footer from "../landingPage/components/Footer/Footer";
+import Footer from "../headersEfooters/footerPreLogin/Footer";
 import { Outlet, Link } from "react-router-dom";
 
 

@@ -23,7 +23,7 @@ header::after {
     z-index: -1;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;

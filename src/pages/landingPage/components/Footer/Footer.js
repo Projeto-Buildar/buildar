@@ -10,7 +10,7 @@ import tiktok from '../../images/social_tiktok.webp';
 import linkedin from '../../images/social_linkedin.webp';
 import github from '../../images/social_github.webp';
 
-import './Footer.css';
+// import './Footer.css';
 
 export default function Footer() {
   const {t, i18n } = useTranslation();

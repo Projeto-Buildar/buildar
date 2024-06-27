@@ -11,7 +11,7 @@ import github from '../images/social_github.webp';
 
 import './Footer.css';
 
-export default function FooterPreLogin() {
+export default function FooterPreLogin(props) {
   const { t, i18n } = useTranslation();
 
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
@@ -27,37 +27,36 @@ export default function FooterPreLogin() {
     setSelectedLanguage(event.target.value);
   }
 
+  const a = 2;
+
   return (
     <footer id='footerPreLogin'>
-      <div className="footerTop">
-        <section className="linkList">
-          <nav>
-            <div>
-              <Link to="/sobre">{t("About")}</Link>
-              <Link to="/apoie">{t("Support")}</Link>
-              <Link to="/faleConosco">{t("Contact")}</Link>
-            </div>
-            <div>
-              <Link to="/conexoes">{t("Connect")}</Link>
-              <Link to="/perfil">Perfil</Link>
-              <Link to="/loja">Loja</Link>
-            </div>
-          </nav>
-        </section>
-        <section>
-          <Link to="/">
-            <img src={logo} className="logo" alt="Logo" />
-          </Link>
-          <p className="footer-rigth">{t("Rights")}</p>
-        </section>
-      </div>
+      <div className='upFooter'></div>
+      <section className="footerTop">
+        <nav className="linkList">
+          <ul>
+            <Link to="/sobre">{t("About")}</Link>
+            <Link to="/apoie">{t("Support")}</Link>
+            <Link to="/faleConosco">{t("Contact")}</Link>
+          </ul>
+          <ul style={{visibility: a == 1? 'hidden' : 'visible'}}>
+            <Link to="/conexoes">{t("Connect")}</Link>
+            <Link to="/perfil">Perfil</Link>
+            <Link to="/loja">Loja</Link>
+          </ul>
+        </nav>
+        <figure>
+          <Link to={ a == 1 ? "/home" : "/#"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <p>{t("Rights")}</p>
+        </figure>
+      </section>
       <div className="breakBar"></div>
-      <div className="footerBottom">
-        <section className="linkList">
+      <section className="footerBottom">
+        <nav className="linkList">
           <Link to="/termos" className="footer-linkList">{t("Privacy")}</Link>
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
-        </section>
-        <section className="social">
+        </nav>
+        <nav className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
             <img src={instagram} alt="Instagram" />
           </a>
@@ -70,8 +69,8 @@ export default function FooterPreLogin() {
           <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener">
             <img src={github} alt="GitHub" />
           </a>
-        </section>
-      </div>
+        </nav>
+      </section>
 
       <div className='languageButton'>
         <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>

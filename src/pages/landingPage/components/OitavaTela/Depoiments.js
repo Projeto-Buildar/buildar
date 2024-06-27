@@ -11,6 +11,8 @@ import userHelen from '../../images/Helen.webp';
 import userRyan from '../../images/Ryan.webp';
 import userLilian from '../../images/Lilian.webp';
 import userLais from '../../images/Lais.webp';
+import userGabi from '../../images/Gabi.webp';
+import userMartinha from '../../images/Martinha.webp';
 
 import Carousel from "react-multi-carousel";
 
@@ -69,6 +71,20 @@ export default function Depoiments() {
       name: 'Lais Carvalho',
       age:  '19',
       text: t('userLais'),
+      color: '#FFB412'
+    },
+    {
+      image: userGabi,
+      name: 'Gabrielle Correa',
+      age:  '19',
+      text: t('userGabi'),
+      color: '#58D2FF'
+    },
+    {
+      image: userMartinha,
+      name: 'Marta Roberta P G Teles',
+      age:  '43',
+      text: t('userMartinha'),
       color: '#FFB412'
     }
 ];
