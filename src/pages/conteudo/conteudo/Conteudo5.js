@@ -10,7 +10,7 @@ export default function Conteudo() {
       
       
         <Link to="/corredor">
-          <button className="corredor">Voltar para o corredor</button>
+          <button className="voltarCorredor">Voltar para o corredor</button>
         </Link>
     
       <img src={Capi} alt="Capi Professor" className="capi" />

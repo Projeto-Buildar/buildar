@@ -1,18 +1,31 @@
+#containerQuiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
+}
+
 #TelaInicial-Quiz h2 {
   font-family: sans-serif;
   text-align: center;
 }
 
-.quizHeader{
-  background: none;
+.quizHeader {
+  width: 100%; /* Garante que o header ocupe a largura total */
 }
-  
+
 #containerQuiz .quizHeader::after {
-  box-shadow:#9B33FD;
+  box-shadow: #9B33FD;
 }
 
 .quiz {
-  margin: 20px;
+  width: 100%;
+  margin: 20px auto; /* Centraliza horizontalmente */
 }
 
 .question-section {
@@ -21,6 +34,10 @@
 
 .question-count {
   font-weight: bold;
+}
+
+.question-text {
+  margin: 10px 0;
 }
 
 .answer-section {
@@ -35,6 +52,9 @@
 }
 
 .answer-options button {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
@@ -42,8 +62,8 @@
   border: none; /* Remove borda padrão */
   color: white; /* Cor do texto */
   border-radius: 5px; /* Bordas arredondadas */
-  height: 10rem;
-
+  height: 100px; /* Altura fixa para os botões */
+  text-align: center;
 }
 
 .answer-options button:hover {
@@ -56,28 +76,35 @@
   text-align: center;
 }
 
+.containerQuiz {
+  display: flex;
+  justify-content: center;
+}
+
 #containerQuiz button {
   display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
   padding: 10px;
   margin-top: 40px;
-  align-items: center;
   font-size: 20px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   height: 9rem;
   margin-right: 40px; /* Adiciona margem entre os botões */
+  color: white;
 }
 
 .containerQuiz {
   display: flex;
   justify-content: center;
 }
-.quiz1{
-background-color: #FFB412;
+
+.quiz1 {
+  background-color: #FFB412;
 }
 
-.quiz2{
+.quiz2 {
   background-color: #9B33FD;
 }
-

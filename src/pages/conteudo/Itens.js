@@ -1,0 +1,37 @@
+import React, { createContext, useState, useEffect } from 'react';
+
+export const ItemContext = createContext();
+
+const getInitialItems = () => {
+  const storedItems = localStorage.getItem('items');
+  return storedItems ? JSON.parse(storedItems) : {
+    1: { id: 1, text: 'almoço', area: "1" },
+    2: { id: 2, text: 'Organização', area: "2" },
+    3: { id: 3, text: 'Enviar E-mail', area: "3" },
+    4: { id: 4, text: 'Ligação', area: "4" },
+    5: { id: 5, text: 'Café da tarde', area: "5" },
+  };
+};
+
+export const ItemProvider = ({ children }) => {
+  const [items, setItems] = useState(getInitialItems);
+
+  useEffect(() => {
+    localStorage.setItem('items', JSON.stringify(items));
+  }, [items]);
+
+  const handleDrop = (itemId, newArea) => {
+    setItems((prevItems) => ({
+      ...prevItems,
+      [itemId]: { ...prevItems[itemId], area: newArea },
+    }));
+  };
+
+  return (
+    <ItemContext.Provider value={{ items, handleDrop }}>
+      {children}
+    </ItemContext.Provider>
+  );
+};
+
+

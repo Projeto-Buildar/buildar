@@ -118,3 +118,32 @@ margin-top: 600px;
     
 }
 
+
+@media screen and (max-width: 944px) {
+    .Container-conexoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Video-Esquerdo{
+        font-display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .containerAmarelo{
+        width: 100%;
+    }
+    .Seja-voluntario{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Seja-voluntario img {
+        width: 55%;
+        margin-top: 30px;
+    }
+}
+
+
+
