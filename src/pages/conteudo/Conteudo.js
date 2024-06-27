@@ -15,11 +15,11 @@ export default function Conteudo() {
     <div>
             {/* <HeaderHome mostrarSelectIdiomas={false} classe='cadastroHeader'/> */}
 
-      <div  className='cabecalho' > 
-      
-      <div className='vivi'>
-      <img src={Vivi} alt="Capi Professor" className="capi" />
-      </div>
+        <div className='cabecalho' >
+
+          <div className='vivi'>
+          <img src={Vivi} alt="Capi Professor" className="capi" />
+        </div>
       
       </div>
        
@@ -38,28 +38,28 @@ export default function Conteudo() {
           
         
       </div>
-        
-    
+
+
       <div className='perfil_usuario'>
-        <img src={Perfil} alt="perfil" className='perfil' /> 
-     </div> 
-
-     <div className='escolha'>
-
-      <div className='botao1'>
-      <Link to="/conteudo2">
-      <button className='escolha1'>Estou ansioso para começar!</button>
-      </Link>
+        <img src={Perfil} alt="perfil" className='perfil' />
       </div>
 
-    <div className='botao2'>
-      <Link to="/conteudo2">
-      <button className='escolha2'>Que começem os jogos</button>
-      </Link>
+      <div className='escolha'>
+
+        <div className='botao1'>
+          <Link to="/conteudo2">
+            <button className='escolha1'>Estou ansioso para começar!</button>
+          </Link>
+        </div>
+
+        <div className='botao2'>
+          <Link to="/conteudo2">
+            <button className='escolha2'>Que começem os jogos</button>
+          </Link>
+        </div>
+      </div>
     </div>
-     </div>
-    </div>
-  
-    
-);
+
+
+  );
 }
