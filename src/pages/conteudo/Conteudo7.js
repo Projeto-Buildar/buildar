@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ItemContext } from './Itens'; // Importe o contexto ItemContext
 import './Conteudo.css';
@@ -8,6 +8,17 @@ import DroppableArea from './DroppableArea';
 
 export default function Conteudo() {
   const { items, handleDrop } = useContext(ItemContext);
+
+  useEffect(() => {
+    const hasReloaded = localStorage.getItem('hasReloaded');
+    
+    if (!hasReloaded) {
+      localStorage.setItem('hasReloaded', 'true');
+      window.location.reload();
+    } else {
+      localStorage.removeItem('hasReloaded');
+    }
+  }, []);
 
   return (
     <div>
