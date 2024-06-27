@@ -77,9 +77,9 @@
 }
 
 .escolha1{
-  /* height: 50px; */
+   height: 50px; 
   border-radius: 15px;
-  /* width: 200px; */
+   width: 200px; 
   padding: 12px;
 }
 
@@ -90,9 +90,9 @@
 }
 
 .escolha2{
-  /* height: 50px; */
+  /* height: 50px; 
   border-radius: 15px;
-  /* width: 200px; */
+  /* width: 200px; 
   padding: 12px 25px;
 
 }
