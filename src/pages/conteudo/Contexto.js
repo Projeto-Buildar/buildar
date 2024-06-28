@@ -1,9 +1,11 @@
+import './Conteudos.css';
+
 export default function Contexto(props) {
     return (
-        <div>
+        <div className='Container'>
             <div className='cabecalho'>
                 <div className='vivi'>
-                    <img src={props.vivi} alt="Capi Professor" className="capi" />
+                    <img src={props.vivi} alt="Capi Professor" className="vivi_img" />
                 </div>
             </div>
             <button className="corredor" onClick={props.retornaGame}>Voltar para o corredor</button>

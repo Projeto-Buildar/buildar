@@ -4,7 +4,7 @@ import './Voluntario.css';
 import { Link } from 'react-router-dom';
 import useTypewriter from './useTypewriter';
 import LoginVoluntario from './cadastroVoluntario';
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 import bottom_back from './images/bottom_back.png';
 
 const Voluntario = () => {

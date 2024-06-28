@@ -23,7 +23,7 @@ header::after {
     z-index: -1;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@ nav {
     color: #FFFFFF;
 }
 
-select {
+/* select {
     background: none;
     border: none;
     width: 10rem;
@@ -60,4 +60,4 @@ select {
         height: 2rem;
         margin-left: 0.5rem;
     }
-}
+} */

@@ -1,5 +1,4 @@
-import React from 'react';
-import Footer from '../landingPage/components/Footer/Footer';
+import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './Termos.css';
 import HeaderTermos from './components/headertermos';
 

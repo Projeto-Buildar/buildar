@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container_conteudo6{
+    background-image: url("/src/pages/conteudo/imagem/Rectangle\ 1382.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-top: -12vh;
+    padding-top: 0;
+}
+
+.vivi{
+    display: flex;
+    justify-content:flex-start;
+
+}
+
+.vivi_img{
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+.message-box{
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 23px 23px 23px 23px;
+    flex-direction: column;
+    border: #000 4px solid;
+    animation: expand2 1s forwards;
+    overflow: hidden; 
+    left: 200px;
+    height: 150px;
+    top: 0px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+@keyframes expand2 {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 650px; 
+    }
+}
+
+.atividade{
+    display: flex;
+}
+
+.alinhamento_drop3{
+    background-image: url("/src/pages/conteudo/imagem/Group\ 280.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+    width: 900px;
+    height: 500px;
+    background-size: contain;
+
+}
+
+.droppable-area-1{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-2{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-3{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-4{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-5{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+.droppable-area-6{
+    background-color: rgb(168, 164, 164);
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+}
+
+.droppable-area-7 {
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+
+.droppable-area-8{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+.droppable-area-9{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 23px;
+}
+
+.droppable-area-10{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 23px;
+}
+
+.droppable-area-11{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 80px;
+}
+.droppable-area-12{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+.alinhamento_drop{
+    display: flex;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+    gap: 40px;
+}
+.buttonreset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 250px;
+}
+.resetaStorage{
+    width: 200px;
+    border-radius: 15px;
+    background-color: #9B33FD;
+    border: 3px solid #000;
+}

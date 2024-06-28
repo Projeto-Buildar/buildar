@@ -1,13 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ItemContext } from './Itens'; // Importe o contexto ItemContext
 import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
-import Tela6 from './imagem/Tela6.png';
+import Tela4 from './imagem/Tela4.jpg';
 import DroppableArea from './DroppableArea';
 
 export default function Conteudo() {
   const { items, handleDrop } = useContext(ItemContext);
+
+  useEffect(() => {
+    const hasReloaded = localStorage.getItem('hasReloaded');
+    
+    if (!hasReloaded) {
+      localStorage.setItem('hasReloaded', 'true');
+      window.location.reload();
+    } else {
+      localStorage.removeItem('hasReloaded');
+    }
+  }, []);
 
   return (
     <div>
@@ -36,7 +47,7 @@ export default function Conteudo() {
         </div>
       </div>
 
-      <img src={Tela6} alt="tela de fundo" className="tela6" />
+      <img src={Tela4} alt="tela de fundo" className="tela1" />
     </div>
   );
 }

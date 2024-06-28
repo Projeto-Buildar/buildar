@@ -1,7 +1,8 @@
-
+/* 
 * {
     padding: 0;
     margin: 0;
+    
   }
 
  .recepcao{
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center
-} */
+} 
 
 .corredor{
   color: #fff;
@@ -55,8 +56,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 10px; /* Adicione padding conforme necessário para espaçamento */
-  background-color: #ffffff; /* Cor de fundo opcional */
+  padding: 10px; /* Adicione padding conforme necessário para espaçamento 
+  background-color: #ffffff; Cor de fundo opcional 
 }
 .perfil{
   height: 200px;
@@ -77,9 +78,9 @@
 }
 
 .escolha1{
-  /* height: 50px; */
+   height: 50px; 
   border-radius: 15px;
-  /* width: 200px; */
+   width: 200px; 
   padding: 12px;
 }
 
@@ -90,9 +91,9 @@
 }
 
 .escolha2{
-  /* height: 50px; */
+  /* height: 50px; 
   border-radius: 15px;
-  /* width: 200px; */
+  /* width: 200px; 
   padding: 12px 25px;
 
 }
@@ -241,14 +242,16 @@
   .tela4,
   .tela5,
   .tela1 {
-    margin: 0;
-      height: 100vh;
+      margin: 0;
+      max-height: 100vh;
       width: 100%;
-      background-size: cover; /* Faz a imagem ocupar toda a tela */
+      background-size: cover; /* Faz a imagem ocupar toda a tela 
       z-index: -1;
       position: absolute;
       top: 0px;
       left: 2px;
+      object-fit: cover;
+      
       
   }
 
@@ -256,7 +259,7 @@
     margin: 0;
       height: 100vh;
       width: 100%;
-      background-size: cover; /* Faz a imagem ocupar toda a tela */
+      background-size: cover; /* Faz a imagem ocupar toda a tela 
       z-index: -1;
       position: absolute;
       bottom: -250px;
@@ -347,4 +350,4 @@
   }
   .droppable-area-11 {
     background-color: #333;
-  }
+  } */

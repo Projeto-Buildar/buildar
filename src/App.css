@@ -1,6 +1,10 @@
-.App {
+.App  {
   padding-top: 12vh;
 }
+
+/* .App .container_conteudo6{
+  padding-top: 0 !important;
+} */
 
 h1 {
   font: 500 3rem 'Passion One', sans-serif;
