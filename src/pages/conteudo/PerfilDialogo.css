@@ -13,7 +13,7 @@
     border: #000 3px solid;
     animation: expand 1s forwards;
     overflow: hidden;
-    animation-delay: 1s; 
+    animation-delay: 1.8s; 
     opacity: 0;
 }
 

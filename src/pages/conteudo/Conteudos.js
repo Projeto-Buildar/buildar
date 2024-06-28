@@ -5,6 +5,7 @@ import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png';
 import { useState, useEffect } from 'react';
 import './Conteudos.css';
+import planilha from "./imagem/Planilha2.png"
 
 const listaConteudos = [
     {
@@ -54,6 +55,8 @@ const listaConteudos = [
                 id: 5,
                 messageClass: 'message-box2',
                 textoVivi: 'Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia. Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho é das 9h às 15h e seu horário de almoço é das 12h às 13h. Sua supervisora marcou uma reunião com a equipe das 14h às 15h.',
+                image: planilha, 
+                classeImage: "imgPlanilha",  
                 recepcao: false,
                 temPerfil: false,
                 temBotoesDireciona: true,
@@ -105,8 +108,8 @@ export default function Conteudos() {
 
     const BtnFunction = (increment) => {
         const newIndex = conteudoIndex + increment;
-        if (newIndex >= 0 && newIndex < objetoConteudo.conteudo.length) {
-            if(newIndex < objetoConteudo.conteudo.length - 1){
+        if (newIndex >= 0 && newIndex <= objetoConteudo.conteudo.length) {
+            if(newIndex <= objetoConteudo.conteudo.length -1){
                 setConteudoIndex(newIndex);
             }else {
                 if(increment === -1){
@@ -131,6 +134,10 @@ export default function Conteudos() {
                 retornaGame={() => navigate(-1)}
 
             />
+
+            {
+                indiceConteudo.image && <img src={indiceConteudo.image} className={`${indiceConteudo.classeImage}`}></img>
+            }
 
             {indiceConteudo.temBotoesDireciona && (
                 <div className='botoesDireciona'>

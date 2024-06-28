@@ -58,7 +58,7 @@
 .text_recepçao{
     opacity: 0; 
     animation: expand4 1s forwards;
-    animation-delay: 1s; 
+    animation-delay: 0.5s; 
 }
 
 @keyframes expand4 {
@@ -86,8 +86,8 @@
     bottom: 10px;
     z-index: 1;
     background-color: #ffffff;
-    animation: expand5 2s forwards;
-    animation-delay: 1s; 
+    animation: expand5 1s forwards;
+    animation-delay: 1.5s; 
 }
 
 @keyframes expand5 {
@@ -111,4 +111,11 @@
 .botoesDireciona {
     position: absolute;
     bottom: 15px;
+}
+.imgPlanilha{
+    position: absolute;
+    bottom: 15px;
+    left: 500px;
+    width: 500px;
+    height: 600px;
 }
