@@ -36,7 +36,7 @@ const listaConteudos = [
                 textoVivi: 'Se prepare para embarcar nessa jornada e descobrir como organizar o seu tempo, cumprir suas tarefas e atividades de forma organizada, e atender a prazos estabelecidos',
                 recepcao: false,
                 temPerfil: true,
-                textoBotaoUm: 'Eu nasci preparado',
+                textoBotaoUm: 'Eu nasci preparado(a)',
                 textoBotaoDois: 'Pode me explicar de novo?',
                 temBotoesDireciona: false,
                 bgImage: 'classebg3'
