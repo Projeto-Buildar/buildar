@@ -4,7 +4,7 @@ import logo from "./images/logo_on.webp";
 import circuloesquerdo from "./images/circuloesquerdo.webp";
 import circulodireito from "./images/circulodireito.webp"; 
 import { Link } from 'react-router-dom';
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header//Header';
 
 
 

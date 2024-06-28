@@ -9,8 +9,9 @@ export default function OitavaTela() {
     <div className='frames' id="oitavaTela">
       <h2>{t('whatPeopleThink')} <span className='destaqRoxo'>Buildar</span>?</h2>
       <section>
-      <Depoiments/>
+        <Depoiments/>
       </section>
+      <div id='landingFooter'></div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import hipercard from './images/Hipercard.webp';
 import elo from './images/Elo.webp';
 import cartaoIcon from './images/cartão_icon.webp';
 import pixIcon from './images/logo-pix.webp';
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header//Header';
 import './pagamento.css';
 
 // Componente Pagamento
