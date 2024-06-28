@@ -13,7 +13,7 @@ export default function Contexto(props) {
                 <div className={`${props.messageBox}`}>
                     <p>
                         {props.recepcao &&
-                            <h2 className='recepcao'> Olá Jovem, seja bem-vindo(a)!</h2>
+                            <h2 className='recepcao'> Olá jovem, seja bem-vindo(a)!</h2>
                         }
                         {props.textoVivi}
                     </p>
