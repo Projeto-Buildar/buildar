@@ -1,18 +1,19 @@
 .escolha {
-    background-color: #58D2FF;
+    background-color: #F5F5F5;
     height: 150px;
     width: 0;
     display: flex;
     align-items: center;
     position: absolute;
     left: 180px;
-    bottom: 16px;
-    border-radius: 0px 0px 60px 0px;
+    bottom: 40px;
+    margin-left: 17px;
+    border-radius: 23px 23px 23px 23px;
     flex-direction: column;
-    border: #000 4px solid;
+    border: #000 3px solid;
     animation: expand 1s forwards;
     overflow: hidden;
-    animation-delay: 5s; 
+    animation-delay: 1s; 
     opacity: 0;
 }
 

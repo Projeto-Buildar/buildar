@@ -7,7 +7,7 @@ import { ItemProvider } from './Itens'; // Importa o ItemProvider do contexto
 export default function Conteudo() {
   return (
     <ItemProvider> {/* Envolve o conteúdo com o ItemProvider */}
-      <div className='container'>
+      <div className='container_conteudo6'>
 
         <div className="message-container2">
 
@@ -22,6 +22,9 @@ export default function Conteudo() {
               você pode dividir as outras atividades em 2 blocos de tempo.
             </p>
           </div>
+          <Link to="/corredor/GestaoDeTempo">
+           <button className="anterior">Voltar</button>
+      </Link>
         </div>
 
         {/* <Link to="/corredor/GestaoDeTempo">
