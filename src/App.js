@@ -53,7 +53,7 @@ export default function App() {
           <Route path="inscricaoVoluntario" element={<Voluntario />} />
           <Route path="faleConosco" element={<FaleConosco />} />
           <Route path="ranqueada" element={<Ranqueada />} />
-          {/* <Route path="loja" element={<Loja />}/> */}
+          <Route path="loja" element={<Loja />}/>
           <Route path="conteudo" element={<Conteudo />} />
           <Route path="conteudo2" element={<Conteudo2 />} />
           <Route path="conteudo3" element={<Conteudo3 />} />
@@ -65,7 +65,7 @@ export default function App() {
           <Route path='pratica' element={<Pratica/>}></Route>
           <Route path='game_descanso' element={<GameDescanso/>}/>
           <Route path='descanso' element={<AreaDescanso/>}></Route>
-          <Route path="loja" element={<LojaCopy />}/>
+          {/* <Route path="loja" element={<LojaCopy />}/> */}
           <Route path="quiz" element={<InicioQuiz />}/>
           <Route path="quiz1" element={<Quiz />}/>
           <Route path="quiz2" element={<Quiz2 />}/>
