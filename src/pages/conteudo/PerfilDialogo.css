@@ -12,7 +12,7 @@
     border: #000 4px solid;
     animation: expand 1s forwards;
     overflow: hidden;
-    animation-delay: 5s; 
+    animation-delay: 1.8s; 
     opacity: 0;
 }
 

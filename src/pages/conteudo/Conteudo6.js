@@ -51,10 +51,25 @@ export default function Conteudo() {
               <DroppableArea id="10" className="droppable-area-10" />
               <DroppableArea id="11" className="droppable-area-11" />
               <DroppableArea id="12" className="droppable-area-12" />
+
+              <button 
+        className='resetaStorage' 
+        style={{ button: '0' }} 
+        onClick={() => {
+            localStorage.clear();
+            window.location.reload(); 
+        }}
+    > 
+        Clique aqui para limpar a planilha
+    </button>
             </div>
           </div>
 
+          <div className='buttonreset'>
+    
+
           <div className='alinhamento_drop'>
+            
 
             <div className='drop1'>
               <DroppableArea id="1" className="droppable-area-1" />
@@ -71,17 +86,7 @@ export default function Conteudo() {
           </div>
         </div>
 
-        <div className='buttonreset'>
-    <button 
-        className='resetaStorage' 
-        style={{ button: '0' }} 
-        onClick={() => {
-            localStorage.clear();
-            window.location.reload(); 
-        }}
-    > 
-        Clique aqui para limpar a planilha
-    </button>
+        
 </div>
 
           
