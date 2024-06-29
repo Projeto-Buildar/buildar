@@ -4,13 +4,17 @@ import Header from './HeaderHome.js';
 import { Outlet, Link } from "react-router-dom";
 import Elevadores from "./Elevadores.js"
 import Footer from '../headersEfooters/footerPreLogin/Footer.js';
+import { useTranslation } from 'react-i18next';
+
 
 export default function Home() {
+    const { t } = useTranslation();
+
     return (
         <div className='home'>
-            <Header/>
+            <Header />
             <section className='titleTopFrame'>
-                <h1>PARA QUAL ANDAR HOJE?</h1>
+                <h1>{t("chooseFlor")}</h1>
             </section>
             {/* <div>
                 <a
@@ -38,15 +42,16 @@ export default function Home() {
                 zIndex: '2',
                 borderRadius: ' 0 1rem 1rem 0',
                 fontFamily: 'Passion One, sans-serif',
-                textAlign: 'center'
-                }}>SALA DE DESCANSO</Link>
-            <main style={{marginBottom: '5vh'}}>
+                textAlign: 'center',
+                color: 'white'
+            }}>{t("restGame")}</Link>
+            <main style={{ marginBottom: '5vh' }}>
                 <Elevadores></Elevadores>
                 {/* <Link to="/corredor">
                 <img src={fundo} width='100%' height='100%'/>
             </Link> */}
             </main>
-            <Footer/>
+            <Footer />
         </div>
 
 

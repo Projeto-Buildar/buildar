@@ -37,19 +37,19 @@ export default function Login() {
                     <h1>{t('welcomeBack')}</h1>
                 </div>
                 <div className='caixa-direita' id='CaixaLogin'>
-                    <h1>Login</h1>
+                    <h1>{t('login')}</h1>
                     <form onSubmit={handleSubmit}>
-                        <h3>Email</h3>
+                        <h3>{t("Email")}</h3>
                         <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder={t('emailPhonePlaceholder')}
+                            placeholder={t("email")}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <h3>Password</h3>
+                        <h3>{t("Password")}</h3>
                         <input
                             type="password"
                             name="password"

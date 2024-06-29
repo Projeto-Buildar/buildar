@@ -147,7 +147,6 @@
 
 #CaixaCadastro p {
     font-size: 0.9rem;
-    width: 125px;
 }
 
 #CaixaCadastro strong {
@@ -209,7 +208,7 @@
 
 
 #Cadastro input {
-    font-size: 18px;
+    font-size: 1rem;
     padding: 0.25rem;
     margin: 0.25rem;
 }

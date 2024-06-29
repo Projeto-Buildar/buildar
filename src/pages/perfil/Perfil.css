@@ -243,7 +243,7 @@
         width: 100%;
         background: #9B33FD;
         padding: 2rem;
-        border-radius: 0 1rem 0 0;
+        border-radius: 0 3rem 0 0;
     }
     & ul {
         display: flex;
@@ -276,6 +276,8 @@
     margin-bottom: 1rem;
     & h1 {
         font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
     }
     & img:not(.closeButton) {
         height: 3rem;

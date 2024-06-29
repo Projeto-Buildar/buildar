@@ -45,8 +45,13 @@
   "Privacy": "Privacy Policy",
   "Terms": "Terms of Use",
   "BuildFuture": "Let's build your future together!",
+  "invalidRegister": "El apodo no puede contener espacios.",
   "Registration": "Registration",
   "NickName": "NickName",
+  "NickNamePerfil": "Vivi",
+  "@NickNamePerfil": "@buildinha_",
+  "Following": "Following",
+  "Followers": "Followers",
   "Email": "Email",
   "Password": "Password",
   "ConfirmPassword": "Confirm Password",
@@ -103,19 +108,53 @@
   "totalXp": "Total xp: 40435",
   "gold": "Gold",
   "ofPodiums": " of podiums",
-  "achievements": "Achievements",
   "sophisticated": "Sophisticated",
   "empathyAndResilience": "Empathy and Resilience.",
   "strategicGenius": "Strategic genius ",
-  "userNilvan": "With fun and highly challenging games, I am absolutely certain that it will capture the attention of young people and equip them very well for both their future and their corporate environment.",
-  "eventSearch": {
-    "header": "EXTERNAL EVENTS - Event Search",
+  "chooseFlor": "WHICH FLOOR TO GO TODAY?",
+  "restGame": "BREAK ROOM",
+
+  "liveStream": "BROADCASTS AND EVENTS",
+  "volunteerHistory": "History of transmissions with volunteers",
+  "historic": "VIEW FULL HISTORY",
+  "becomeSpeaker": "Be a volunteer speaker at Buildar",
+  "workExperiences": "How about sharing your work experiences? Access the form and come Buildar with us.",
+  "becomeVolunteer": "Come be a part",
+
+  "achievements": "Achievements",
+  "viewAll": "View all",
+  "shareProfile": "Share profile",
+  "inviteFriends": "Invite friends",
+  "editProfile": "Edit profile",
+  "showCase": "Showcase",
+  "statistics": "Statistics",
+  "skins": "Skins:",
+  "doorsCompleted": "Doors completed:",
+  "accountDays": "Account days:",
+  "achievementsCompleted": "Achievements:",
+
+  
+  "communication": "Eminent Communicator",
+  "descriptionCommunication": "Enhanced team communication skills, promoting collaboration and mutual understanding.",
+  "managementOfAges": "Management of Ages",
+  "descriptionManagementOfAges": "Completed the Routine in Time Management module in an unbroken sequence of 7 days.",
+  "theHourOfTruth": "The Hour of Truth",
+  "descriptionTheHourOfTruth": "Completed the Challenge Mode: No Time Brother without running out of time during an entire module.",
+  "learningToBuild": "Learning to Build",
+  "descriptionLearningToBuild": "Completed all the doors of a module for the first time.",
+  "successfulLeader": "Successful Leader",
+  "descriptionSuccessfulLeader": "Successfully led a project from start to finish, achieving exceptional results.",
+  "stillLearning": "Still Learning",
+  "descriptionStillLearning": "Achievements being developed.",
+  
+
+
+  "header": "EXTERNAL EVENTS - Event Search",
     "placeholder": "Enter the event name",
     "button": "Search",
     "noResult": "No events found.",
-    "searchPrompt": "Please enter a search term."
-  },
-  "events2": {
+    "searchPrompt": "Please enter a search term.",
+
     "effectiveComm": "Effective Communication in the Workplace",
     "timeMgmt": "Time Management and Productivity",
     "teamWork": "Teamwork: Strategies and Practices",
@@ -135,13 +174,16 @@
     "assertiveComm": "Assertive Communication",
     "teamChallenges": "Teamwork: Challenges and Solutions",
     "productivityFocus": "Productivity and Focus",
-    "leadershipTeamMgmt": "Leadership and Team Management"
-  },
+    "leadershipTeamMgmt": "Leadership and Team Management",
+
+  "userNilvan": "With fun and highly challenging games, I am absolutely certain that it will capture the attention of young people and equip them very well for both their future and their corporate environment.",
   "userDiogo": "I loved the Buildar platform! I simply found it incredible to be able to play and learn while developing skills.",
   "userBraz": "Buildar was essential for the development of my soft skills, thanks to the amazing games available on the platform. As a result, I successfully entered the job market.",
   "userHelen": "When I met Buildar, I started to imagine how it would have helped me in the past with my soft skills, to help me develop them, and even in job interviews.",
   "userRyan": "The Buildar platform is simply fantastic! It helped me a lot in developing my soft skills. I love the games and the capybara.",
   "userLilian": "I've never seen such a creative learning idea. Buildar is proof that everything we learn can be fun, out of the box, and can change our professional and personal life. I highly recommend it!",
-"userLais": "The platform made me change my perception about communication and personal relationships. I had a lot of difficulty communicating, but today I see that I am being renewed every day, learning in a fun way!"
+  "userLais": "The platform made me change my perception about communication and personal relationships. I had a lot of difficulty communicating, but today I see that I am being renewed every day, learning in a fun way!",
+  "userGabi": "Buildar is of extreme importance these days, where so many young people, like me, seek to better develop their soft skills. It has been incredible how the platform has helped me improve my behavioral skills in such a light and fun way.",
+  "userMartinha": "The platform offers clear, interactive and gamified trails, making the learning process intuitive and engaging. I recommend!"
 
 }
