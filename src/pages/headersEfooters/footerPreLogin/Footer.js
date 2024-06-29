@@ -25,7 +25,7 @@ export default function FooterPreLogin() {
             <Link to="/apoie">{t("Support")}</Link>
             <Link to="/faleConosco">{t("Contact")}</Link>
           </ul>
-          <ul style={{visibility: a == 1? 'hidden' : 'visible'}}>
+          <ul style={{display: a == 1? 'none' : 'flex'}}>
             <Link to="/conexoes">{t("Connect")}</Link>
             <Link to="/perfil">Perfil</Link>
             <Link to="/loja">Loja</Link>

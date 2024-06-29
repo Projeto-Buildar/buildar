@@ -4,7 +4,7 @@
   flex-flow: column;
   width: 100%;
   background: #9B33FD;
-  padding: 4vh 0 0vh 0;
+  padding: 4vh 0 0 0;
   margin-top: 8vh;
   color: #FFFFFF;
   & a {
@@ -96,5 +96,22 @@
 @media (max-width: 800px) {
   .upFooter {
     background: url('../images/upFooter.png') left 0 bottom 0/auto 40% repeat-x;
+  }
+}
+
+@media (max-width: 842px) and ( min-width: 460) {
+  .footerTop, .footerBottom {
+    justify-content: center;
+  }
+
+  #footerPreLogin nav:not(.social) {
+    justify-content: space-between;
+    width: 100%;
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row;
+      width: 100%;
+    }
   }
 }
