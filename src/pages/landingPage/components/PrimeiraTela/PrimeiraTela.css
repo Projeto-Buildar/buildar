@@ -14,13 +14,8 @@
 }
 
 #primeiraTela h1 {
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-
+    font-size: 4rem;
 }
-
-
 
 .textBar {
     width: 60%;
@@ -29,8 +24,6 @@
 }
 
 #primeiraTela section {
-    font-size: 2.3rem;
-    
     display: flex;
     align-items: center;
     text-align: center;
@@ -54,7 +47,6 @@
 
 .buttonLogin {
     outline: 2px solid #000000;
-    font-size: 1.25rem;
     font-weight: 700;
 }
 

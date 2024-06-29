@@ -22,9 +22,10 @@ export default function Cadastro() {
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
-            setErrorMessage('O nickname e o e-mail não podem conter espaços.');
+            setErrorMessage(`${t("invalidRegister")}`);
             // if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
             //     setErrorMessage(`${t("NickName")}`
+            //               //     setErrorMessage(`${t("invalidRegister")}`
             //         );
             // } 
             

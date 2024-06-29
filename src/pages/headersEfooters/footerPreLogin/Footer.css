@@ -4,7 +4,7 @@
   flex-flow: column;
   width: 100%;
   background: #9B33FD;
-  padding: 4vh 0 0vh 0;
+  padding: 4vh 0 0 0;
   margin-top: 8vh;
   color: #FFFFFF;
   & a {
@@ -46,6 +46,7 @@
       max-width: 100%;
     }
     & p {
+      padding-left: 1.5rem;
       font-size: 1rem;
       color: #FFFFFF;
     }
@@ -75,26 +76,6 @@
   margin-bottom: 3rem;
 }
 
-.languageButton {
-  background: #FFFFFF;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
-  position: fixed;
-  top: 40vh;
-  right: 0.4vw;
-  z-index: 6;
-
-  & select {
-    background: none;
-    border: none;
-    font-size: 1.75rem;
-    padding: 0 0.5rem;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-  }
-}
-
 /* Hover */
 
 #footerPreLogin a:not(figure a, .social a):hover {
@@ -115,5 +96,22 @@
 @media (max-width: 800px) {
   .upFooter {
     background: url('../images/upFooter.png') left 0 bottom 0/auto 40% repeat-x;
+  }
+}
+
+@media (max-width: 842px) and ( min-width: 460) {
+  .footerTop, .footerBottom {
+    justify-content: center;
+  }
+
+  #footerPreLogin nav:not(.social) {
+    justify-content: space-between;
+    width: 100%;
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row;
+      width: 100%;
+    }
   }
 }

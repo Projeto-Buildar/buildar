@@ -7,18 +7,23 @@ import EventSearch from "../conexoes/EventSearch"
 import HeaderHome from "../home/HeaderHome";
 import Footer from "../headersEfooters/footerPreLogin/Footer";
 import { Outlet, Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 
 
 export default function Conexoes() {
+    const { t } = useTranslation();
+
     return (
 
         <main id='Conexoes'>
 
             <div className="containerAmarelo">
-                <img src={forma} />  <h2>TRANSMISSÕES E EVENTOS</h2>
+                <img src={forma} />  
+                <h2>{t("liveStream")}</h2>
             </div>
             <HeaderHome className='pesquisa'/>
-            <h3 id="historico">Histórico de transmissões com voluntários</h3>
+            <h3 id="historico">{t("volunteerHistory")}</h3>
 
         <div className="Container-conexoes">
             <div className="video-container">
@@ -56,18 +61,17 @@ export default function Conexoes() {
 
             </div>
             <div className="botao">
-                <button> VER HISTORICO COMPLETO </button>
+                <button>{t("historic")}</button>
             </div>
             <img src={Forma2} alt="forma2" className="forma2" />
 
             <div className="Seja-voluntario">
                 <img src={imgFormulario} alt="imgFormulario" className="imgFormulario" />
                 <div className="textoVoluntario">
-                    <h3>Seja voluntário como palestrante da Buildar</h3>
-                    <p>O que acha de compartilhar suas experiências no mercado de trabalho?
-                        Acesse o formulário e venha buildar com a gente.</p>
+                    <h3>{t("becomeSpeaker")}</h3>
+                    <p>{t("workExperiences")}</p>
                         <Link to="/inscricaoVoluntario">
-                            <button>Venha fazer parte</button>
+                            <button>{t("becomeVolunteer")}</button>
                         </Link>
                 </div>
             </div>
