@@ -23,8 +23,8 @@ export default function Conteudo() {
             </p>
           </div>
           <Link to="/corredor/GestaoDeTempo">
-           <button className="anterior">Voltar</button>
-      </Link>
+            <button className="anterior">Voltar</button>
+          </Link>
         </div>
 
         {/* <Link to="/corredor/GestaoDeTempo">
@@ -43,7 +43,7 @@ export default function Conteudo() {
 
         <div className='atividade'>
 
-        <div className='alinhamento_drop3'>
+          <div className='alinhamento_drop3'>
             <div className='drop3'>
               <DroppableArea id="7" className="droppable-area-7" />
               <DroppableArea id="8" className="droppable-area-8" />
@@ -52,44 +52,32 @@ export default function Conteudo() {
               <DroppableArea id="11" className="droppable-area-11" />
               <DroppableArea id="12" className="droppable-area-12" />
 
-              <button 
-        className='resetaStorage' 
-        style={{ button: '0' }} 
-        onClick={() => {
-            localStorage.clear();
-            window.location.reload(); 
-        }}
-    > 
-        Clique aqui para limpar a planilha
-    </button>
+              {/* <button
+                className='resetaStorage'
+                style={{ button: '0' }}
+                onClick={() => {
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+              >
+                Clique aqui para limpar a planilha
+              </button> */}
             </div>
           </div>
 
           <div className='buttonreset'>
-    
-
-          <div className='alinhamento_drop'>
-            
-
-            <div className='drop1'>
-              <DroppableArea id="1" className="droppable-area-1" />
-              <DroppableArea id="2" className="droppable-area-2" />
-              <DroppableArea id="3" className="droppable-area-3" />
+            <div className='alinhamento_drop'>
+              <div className='drop1'>
+                <DroppableArea id="1" className="droppable-area-1" />
+                <DroppableArea id="2" className="droppable-area-2" />
+                <DroppableArea id="3" className="droppable-area-3" />
+                <DroppableArea id="4" className="droppable-area-4" />
+                <DroppableArea id="5" className="droppable-area-5" />
+                <DroppableArea id="6" className="droppable-area-6" />
+              </div>
             </div>
-
-            <div className='drop2'>
-              <DroppableArea id="4" className="droppable-area-4" />
-              <DroppableArea id="5" className="droppable-area-5" />
-              <DroppableArea id="6" className="droppable-area-6" />
-            </div>
-
           </div>
         </div>
-
-        
-</div>
-
-          
       </div>
     </ItemProvider>
   );

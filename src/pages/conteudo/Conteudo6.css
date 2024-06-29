@@ -15,7 +15,6 @@
 .vivi{
     display: flex;
     justify-content:flex-start;
-
 }
 
 .vivi_img{
@@ -53,8 +52,11 @@
 
 .atividade{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 160px;
 }
-
+/* 
 .alinhamento_drop3{
     background-image: url("/src/pages/conteudo/imagem/Group\ 280.png");
     background-repeat: no-repeat;
@@ -64,47 +66,69 @@
     height: 500px;
     background-size: contain;
 
+} */
+
+.digDir {
+    transform: rotate(15deg);
+}
+
+.digEsq {
+    transform: rotate(-15deg);
+}
+
+.textoPost {
+    padding-block: 30%;
+}
+
+.draggable-item{
+    background-color: yellow;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    text-align: center;
+    /* border: #000 2px solid; */
+    border-top: rgb(244, 244, 1) 50px solid;
 }
 
 .droppable-area-1{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-2{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-3{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-4{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-5{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
 .droppable-area-6{
     background-color: rgb(168, 164, 164);
     width: 200px;
-    height: 60px;
+    height: 30px;
     margin: 5px;
     text-align: center;
 }
@@ -113,67 +137,73 @@
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 100px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 100px; */
 }
-
 
 .droppable-area-8{
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 20px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 20px; */
 }
+
 .droppable-area-9{
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 23px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 23px; */
 }
 
 .droppable-area-10{
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 23px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 23px; */
 }
 
 .droppable-area-11{
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 80px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 80px; */
 }
+
 .droppable-area-12{
     border-bottom: 1px solid #000;
     width: 200px;
     height: 30px;
-    margin: 10px;
-    margin-left: 650px;
-    margin-top: 20px;
+    /* margin: 10px; */
+    /* margin-left: 650px;
+    margin-top: 20px; */
 }
+
 .alinhamento_drop{
-    display: flex;
-    width: 600px;
-    margin-top: 100px;
-    margin-left: 200px;
-    gap: 40px;
+    /* width: 100%; */
+    /* display: flex; */
+    /* width: 600px; */
+    /* margin-top: 100px;
+    margin-left: 200px; */
+    /* gap: 40px; */
 }
+
 .buttonreset{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 10px; */
+    /* width: 100%; */
 }
+
 .resetaStorage{
     width: 200px;
     border-radius: 15px;
@@ -182,3 +212,28 @@
     margin-left: 630px;
     margin-top: 20px;
 }
+
+.drop1 {
+    /* width: 100%; */
+    /* position: absolute; */
+    /* bottom: 50px; */
+    /* left: -300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .drop3 {
+    /* width: 100%; */
+    /* position: absolute; */
+    /* bottom: 50px; */
+    /* left: -300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* padding: 80px; */
+  }
