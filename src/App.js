@@ -50,6 +50,8 @@ export default function App() {
     setSelectedLanguage(event.target.value);
   }
 
+  const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
   return (
     <div className="App">
       <ItemProvider>
@@ -89,9 +91,9 @@ export default function App() {
         </BrowserRouter>
       </ItemProvider>
 
-      <div className='languageButton'>
+      <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
         <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
-          <option value="pt">&#x1F1E7;&#x1F1F7;</option>
+          <option value="pt">🇧🇷</option>
           <option value="en">🇺🇸</option>
           <option value="es">🇧🇴</option>
         </select>

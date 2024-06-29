@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&display=swap');
+
 .App  {
   padding-top: 12vh;
 }
@@ -8,6 +10,7 @@
 
 h1 {
   font: 500 3rem 'Passion One', sans-serif;
+  font-style: normal;
 }
 
 h2 {
@@ -40,10 +43,14 @@ h2 {
   & select {
     background: none;
     border: none;
-    font-size: 1.75rem;
-    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     appearance: none;
     -moz-appearance: none;
-    -webkit-appearance: none;
+    -webkit-appearance: none; 
   }
+}
+
+.fontEmoji *{
+    font-family: "Noto Color Emoji", sans-serif; 
 }

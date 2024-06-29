@@ -103,7 +103,7 @@ export default function Depoiments() {
           draggable
           focusOnSelect={false}
           infinite
-          itemClass="liCarrosel"
+          itemClass="liCarroselDepoiment"
           keyBoardControl={false}
           minimumTouchDrag={80}
           pauseOnHover
@@ -140,7 +140,7 @@ export default function Depoiments() {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          sliderClass="ulCarrosel"
+          sliderClass="ulCarroselDepoiment"
           slidesToSlide={1}
           swipeable
           
