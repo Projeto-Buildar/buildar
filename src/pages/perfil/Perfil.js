@@ -117,7 +117,7 @@ export default function Perfil() {
                         <div className="topModal">
                             <div>
                                 <img src={trophy} />
-                                <h1>Conquistas</h1>
+                                <h1>{t("achievements")}</h1>
                             </div>
                             <img src={closeButton} className="closeButton" onClick={closeModal} />
                         </div>
