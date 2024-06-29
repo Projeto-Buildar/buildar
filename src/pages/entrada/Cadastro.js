@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import formaCadastro1 from './images/forma-cadastro1.webp';
 import formaCadastro2 from './images/forma-cadastro2.webp';
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Quiz.css';
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header//Header';
 
 
 const InicioQuiz = () => {

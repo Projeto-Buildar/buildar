@@ -4,7 +4,7 @@
   flex-flow: column;
   width: 100%;
   background: #9B33FD;
-  padding: 2vh 0 10vh 0;
+  padding: 4vh 0 0vh 0;
   margin-top: 8vh;
   color: #FFFFFF;
   & a {
@@ -26,10 +26,10 @@
 
 .upFooter {
   width: 100%;
-  height: 16vh;
+  height: 32vh;
   background: url('../images/upFooter.png') left 0 bottom 0/100% repeat-x;
   position: absolute;
-  margin-top: -17.8vh;
+  margin-top: -36vh;
 }
 
 .footerTop, .footerBottom {
@@ -46,6 +46,7 @@
       max-width: 100%;
     }
     & p {
+      padding-left: 1.5rem;
       font-size: 1rem;
       color: #FFFFFF;
     }
@@ -62,43 +63,10 @@
   max-width: 100%;
   & a img {
     height: 3rem;
-    margin-inline: 0.5rem;
-    border-radius: 100rem;
+    border-radius: 3rem;
+    margin: 0 0 -0.5rem 0;
   }
 }
-
-/* 
-.footerTop, .footerBottom {
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
-  width: 80%;
-  background: #58D2FF;
-  & .logo {
-    width: 24rem;
-    max-width: 100%;
-  }
-}
-
-.linkList {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  & a img {
-    height: 3rem;
-    margin-inline: 0.5rem
-;
-    border-radius: 100rem;
-  }
-}
-
-*/
 
 .breakBar {
   width: 80%;
@@ -108,22 +76,25 @@
   margin-bottom: 3rem;
 }
 
-.languageButton {
-  background: #FFFFFF;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
-  position: fixed;
-  top: 40vh;
-  right: 0.4vw;
-  z-index: 6;
+/* Hover */
 
-  & select {
-    background: none;
-    border: none;
-    font-size: 1.75rem;
-    padding: 0 0.5rem;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+#footerPreLogin a:not(figure a, .social a):hover {
+  color: #FFB412;
+  font-weight: 600;
+}
+
+.social a:hover {
+  background: #FFB412;
+  border-radius: 4rem;
+  & img {
+    outline: #FFB412 solid 0.25rem;
+  }
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  .upFooter {
+    background: url('../images/upFooter.png') left 0 bottom 0/auto 40% repeat-x;
   }
 }

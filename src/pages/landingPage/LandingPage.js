@@ -1,5 +1,5 @@
 import './LandingPage.css';
-import Header from './components/Header/Header';
+import Header from '../headersEfooters/Header/Header';
 import PrimeiraTela from './components/PrimeiraTela/PrimeiraTela';
 import SegundaTela from './components/SegundaTela/SegundaTela';
 import TerceiraTela from './components/TerceiraTela/TerceiraTela';

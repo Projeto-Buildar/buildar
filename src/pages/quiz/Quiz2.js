@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Importa React e o hook useState para gerenciar o estado do componente
 import './Quiz.css'; // Importa o arquivo de estilos CSS
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header//Header';
 
 
 // Array de perguntas e respostas
