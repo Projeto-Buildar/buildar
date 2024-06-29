@@ -44,31 +44,31 @@ export default function Perfil() {
                 <div className="topCard">
                     <div className="userProfileInfo">
                         <div>
-                            <h4>Nome de Usuário</h4>
-                            <p>@nomedeusuario_</p>
+                            <h4>{t("NickNamePerfil")}</h4>
+                            <p>{t("@NickNamePerfil")}</p>
                         </div>
                         <div>
                             <h4>204</h4>
-                            <p>Seguindo</p>
+                            <p>{t("Following")}</p>
                         </div>
                         <div>
                             <h4>153</h4>
-                            <p>Seguidores</p>
+                            <p>{t("Followers")}</p>
                         </div>
                     </div>
                     <div className="achievementBar">
                         <div>
                             <img src={trophy}/>
-                            <h3>Conquistas</h3>
+                            <h3>{t("achievements")}</h3>
                         </div>
                         <Conquistas/>
-                        <p onClick={openModal}>Ver todas</p>
+                        <p onClick={openModal}>{t("viewAll")}</p>
                     </div>
                     <div className="userButtons">
-                        <p>Compartilhar perfil</p>
-                        <p>Convidar amigos</p>
+                        <p>{t("shareProfile")}</p>
+                        <p>{t("inviteFriends")}</p>
                         <div>
-                            Editar perfil
+                        {t("editProfile")}
                             <img src={pen}/>
                         </div>
                         <div>
@@ -79,24 +79,24 @@ export default function Perfil() {
             </section>
             <div className="showcaseTop">
                 <div className="leftBackground"></div>
-                <h2>Vitrine</h2>
+                <h2>{t("showCase")}</h2>
                 <div className="rightBackground"></div>
             </div>
             <section id="showcase">
                 <article className="userStats">
-                    <h2>Estatísticas</h2>
+                    <h2>{t("statistics")}</h2>
                     <div>
                         <ul>
-                            <li>Skins:</li>
-                            <li>Portas concluídas:</li>
-                            <li>Dias de conta:</li>
-                            <li>Conquistas:</li>
+                            <li>{t("skins")}</li>
+                            <li>{t("doorsCompleted")}</li>
+                            <li>{t("accountDays")}</li>
+                            <li>{t("achievementsCompleted")}</li>
                         </ul>
                         <ul>
                             <li>3</li>
                             <li>5</li>
                             <li>10</li>
-                            <li>3</li>
+                            <li>5</li>
                         </ul>
                     </div>
                 </article>

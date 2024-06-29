@@ -272,6 +272,8 @@
     margin-bottom: 1rem;
     & h1 {
         font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
     }
     & img:not(.closeButton) {
         height: 3rem;
