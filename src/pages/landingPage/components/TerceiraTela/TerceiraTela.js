@@ -20,6 +20,9 @@ export default function TerceiraTela() {
         <figure className='skinContainer'>
 
           <Carrosel
+            dotsLiClass="dotsLiClass"
+            dotsButtonClass="dotsButtonClass"
+            carroselClass="carroselAvatar"
             showDots={true}
             arrows={false}
             infinite={true}
