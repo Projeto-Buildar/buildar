@@ -91,7 +91,7 @@ export default function App() {
 
       <div className='languageButton'>
         <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
-          <option value="pt">&#x1F1E7;&#x1F1F7;</option>
+          <option value="pt">🇧🇷</option>
           <option value="en">🇺🇸</option>
           <option value="es">🇧🇴</option>
         </select>
