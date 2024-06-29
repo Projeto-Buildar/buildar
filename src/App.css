@@ -3,10 +3,7 @@
 .App  {
   padding-top: 12vh;
 }
-/* 
-.emojiFlag{
-  font-family: "Noto Color Emoji", sans-serif;
-} */
+
 /* .App .container_conteudo6{
   padding-top: 0 !important;
 } */
@@ -50,10 +47,10 @@ h2 {
     padding: 0 0.5rem;
     appearance: none;
     -moz-appearance: none;
-    -webkit-appearance: none;
-    font-family: "Noto Color Emoji", sans-serif;
+    -webkit-appearance: none; 
   }
-  & option{
-    font-family: "Noto Color Emoji", sans-serif;
-  }
+}
+
+.fontEmoji *{
+    font-family: "Noto Color Emoji", sans-serif; 
 }
