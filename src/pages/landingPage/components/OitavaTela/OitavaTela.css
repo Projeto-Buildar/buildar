@@ -21,11 +21,11 @@
     transform: rotate(180deg);
 }
 
-.ulCarrosel{
+.ulCarroselDepoiment{
    z-index: 1 !important;
 }
 
-.liCarrosel{
+.liCarroselDepoiment{
     margin-inline: 0.5% !important; 
 } 
 
