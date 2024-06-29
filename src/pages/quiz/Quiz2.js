@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Importa React e o hook useState para gerenciar o estado do componente
 import './Quiz.css'; // Importa o arquivo de estilos CSS
-import Header from '../headersEfooters/Header//Header';
+import HeaderHome from "../home/HeaderHome";
 
 
 // Array de perguntas e respostas
@@ -69,7 +69,7 @@ function Quiz() {
 
   return (
     <main id='containerQuiz'>
-    <Header className="quizHeader"/>
+    <HeaderHome className="quizHeader"/>
     <div className="quiz">
       {showScore ? (
         // Se showScore for verdadeiro, mostra a pontuação final

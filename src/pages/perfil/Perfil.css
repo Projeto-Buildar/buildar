@@ -239,7 +239,7 @@
         width: 100%;
         background: #9B33FD;
         padding: 2rem;
-        border-radius: 0 1rem 0 0;
+        border-radius: 0 3rem 0 0;
     }
     & ul {
         display: flex;
