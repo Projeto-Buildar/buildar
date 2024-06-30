@@ -274,6 +274,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    gap: 10px;
     & h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;

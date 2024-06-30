@@ -248,6 +248,7 @@
     max-width: 300px;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .OurCause .cause-item img {
