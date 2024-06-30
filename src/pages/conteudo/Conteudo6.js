@@ -64,7 +64,7 @@ export default function Conteudo() {
           <button className="proximo">Próximo</button>
         </Link> */}
           <Link to="/corredor/GestaoDeTempo">
-            <button className="anterior">Voltar</button>
+            <button className="anteriorGame">Voltar</button>
           </Link>
 
           <div className='bgAtividade'>
