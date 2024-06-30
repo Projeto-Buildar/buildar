@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 /* #headerHome {
     display: flex;
     justify-content: center;
@@ -22,14 +24,11 @@
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     z-index: -1;
 }
+*/
 
 #headerHome nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    height: 100%;
-} */
+    min-width: 950px;
+}
 
 .btnsNav{   
     align-self: flex-end;
@@ -38,11 +37,13 @@
 }
 
 .btnContainer {
-    background-color: #d1cdd4;
-    width: 100px;
+    background-color: #D9D9D9;
+    min-width: 6rem;
+    width: 7vw;
+    max-width: 120px;
     padding-inline: 20%;
-    padding-top: 20%;
-    border-radius: 20px 20px 0 0;
+    padding-top: 1.25rem;
+    border-radius: 1rem 1rem 0 0;
     text-align: center;
     font-size: 1rem;
 }
@@ -63,10 +64,53 @@
     right: 0;
     transform: translateX(15%);
     z-index: -2;
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 2.5rem 2.5rem;
     cursor: default;
 }
 
+.btnsNav:last-child {
+    display: none;
+}
 
+.icon {
+    font: 900 1.5rem 'Material Icons';
+}
+
+/* Media Query */
+
+@media (max-width: 1000px) and (min-width: 700px) {
+    #headerHome nav {
+        min-width: 600px;
+    }
+    
+    .btnsNav {
+        margin-left: -30vw;
+    }
+    
+    .btnContainer {
+        min-width: 1rem;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #headerHome nav {
+        min-width: 0;
+    }
+
+    .btnsNav:last-child {
+        display: inline-block;
+    }
+
+    .btnsNav:not(.btnsNav:last-child) {
+        display: none;
+    }
+
+    .btnContainer {
+        min-width: 3rem;
+        padding-top: 1rem;
+        font: 900 2rem 'Passion One';
+    }
+}
 
 

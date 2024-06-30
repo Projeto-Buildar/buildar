@@ -41,10 +41,12 @@ h2 {
   z-index: 6;
 
   & select {
+    width: 2.5rem;
+    height: 2.5rem;
     background: none;
     border: none;
     font-size: 1.5rem;
-    padding: 0.5rem;
+    text-align: center;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none; 

@@ -13,47 +13,26 @@ export default function Home() {
     return (
         <div className='home'>
             <Header />
-            <section className='titleTopFrame'>
-                <h1>{t("chooseFlor")}</h1>
-            </section>
-            {/* <div>
-                <a
-                    className='descanso'
-                    style={{
-                        padding: '2rem',
-                        background: '#9B33FD',
-                        position: 'fixed',
-                        top: '205px',
-                        cursor: 'pointer'
-                    }}
-                    href="https://gamebuildar-descanso.vercel.app/"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    temporario
-                </a>
-            </div> */}
-            <Link to='/descanso' style={{
-                width: '4rem',
-                background: '#9B33FD',
-                padding: '2rem',
-                position: 'absolute',
-                top: '40vh',
-                zIndex: '2',
-                borderRadius: ' 0 1rem 1rem 0',
-                fontFamily: 'Passion One, sans-serif',
-                textAlign: 'center',
-                color: 'white'
-            }}>{t("restGame")}</Link>
-            <main style={{ marginBottom: '5vh' }}>
-                <Elevadores></Elevadores>
-                {/* <Link to="/corredor">
-                <img src={fundo} width='100%' height='100%'/>
-            </Link> */}
+            <main>
+                <section className='titleTopFrame'>
+                    <h1>{t("chooseFlor")}</h1>
+                </section>
+                <Elevadores />
             </main>
             <Footer />
+
+            {/* <Link to='/descanso' style={{
+                    width: '4.5rem',
+                    background: '#9B33FD',
+                    padding: '1.5rem',
+                    position: 'absolute',
+                    top: '40vh',
+                    left: '0.5rem',
+                    zIndex: '2',
+                    fontFamily: 'Passion One, sans-serif',
+                    textAlign: 'center',
+                    color: 'white'
+                }}>{t("restGame")}</Link> */}
         </div>
-
-
     )
 }
