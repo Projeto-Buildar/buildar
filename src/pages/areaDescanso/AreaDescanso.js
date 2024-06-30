@@ -2,6 +2,7 @@ import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './AreaDescanso.css';
 import gamePic from './images/image_filler_square.png';
+import { Link } from 'react-router-dom';
 
 export default function AreaDescanso() {
     return (
@@ -20,13 +21,15 @@ export default function AreaDescanso() {
                         </div>
                     </article>
                 </a>
-                <article className='onDoing'>
-                    <span></span>
-                    <div>
-                        <h3>Jogo em construção</h3>
-                        <p>Que pena! Esse jogo ainda está em desenvolvimento...</p>
-                    </div>
-                </article>
+                <Link to='/quiz'>
+                    <article id='quizGame'>
+                        <span></span>
+                        <div>
+                            <h3>CapQuiz</h3>
+                            <p>Que tal testar seus conhecimentos além das portas? Nesse jogo, a prática não para.</p>
+                        </div>
+                    </article>
+                </Link>
                 <article className='onDoing'>
                     <span></span>
                     <div>

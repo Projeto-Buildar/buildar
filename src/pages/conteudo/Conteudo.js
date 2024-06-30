@@ -21,7 +21,7 @@ export default function Conteudo() {
 
           <p className='text_recepçao'>
 
-            <h2 className='recepcao'> Olá jovem, seja bem-vindo(a)!</h2>
+            <h2 className='recepcao'> Olá jovem, seja bem-vinda(o)!</h2>
 
             Nessa sala você aprenderá sobre a gestão de tempo, uma habilidade crucial para alcançar
             a eficiência e o sucesso em qualquer área de atuação.
@@ -32,9 +32,7 @@ export default function Conteudo() {
       </div>
 
       <div className='container_perfil'>
-
-
-
+        
         <div className='perfil_usuario'>
           <img src={Perfil} alt="perfil" className='perfil' />
         </div>

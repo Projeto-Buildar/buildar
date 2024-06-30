@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 * {
     padding: 0;
@@ -54,11 +55,15 @@
 }
 
 .bgAtividade {
-    width: 100%;
-    height: 100%;
-    background-color: #d8d8d8;
-    padding-block: 2%;
+    max-width: 1500px;
+    background: linear-gradient(160deg, rgba(255,255,255,1) 23%, rgba(217,217,217,1) 50%, rgba(238,238,238,1) 58%, rgba(224,224,224,1) 67%, rgba(255,255,255,1) 89%);
+    padding-block: 1%;
+    border: 1rem solid #929292;
+    border-image: linear-gradient(90deg, rgba(208,216,218,1) 2%, rgba(239,240,240,1) 17%, rgba(208,216,218,1) 30%, rgba(239,240,240,1) 47%, rgba(208,216,218,1) 62%, rgba(239,240,240,1) 77%, rgba(208,216,218,1) 98%) 1;
+    border-spacing: 2;
+    margin: 2vh auto 0;
     & > p{
+        padding-inline: 0.5rem;
         font: 400 2rem "Permanent Marker";
         text-align: center;
     }
@@ -66,18 +71,55 @@
 
 .horarios {
     font: 400 2rem "Permanent Marker";
-        text-align: center;
+    text-align: center;
 }
 
 .atividade {
     display: flex;
     flex-direction: column-reverse;
-    gap: 100px;
+    gap: 2vh;
     padding-block: 1%;
 }
 
-.anteriorGame {
+#buttonsWhiteboard {
+    width: 98%;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.container_conteudo6 button {
+    background: none;
+    border: 0;
+    z-index: 2;
+}
+
+.container_conteudo6 .anteriorGame {
+    background: url('./imagem/scribble.png') bottom/auto 30% no-repeat;
+    padding-bottom: 0.5rem;
+    font: 400 1rem "Permanent Marker";
+    text-align: center;
+    color: blue;
+}
+
+.container_conteudo6 .eraser {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-flow: column;
+    width: 8.5rem;
+    min-height: 2.5rem;
+    background: #a7a7a7;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: -14vh;
     position: absolute;
+    right: 2%;
+    font: 500 0.9rem 'Poppins';
+    color: #565656;
+    & div {
+        background: #565656;
+        height: 0.5rem;
+        width: 105%;
+    }
 }
 
 /* 
@@ -110,7 +152,7 @@
     height: 100%;
     /* Garante que o elemento ocupe toda a altura do contêiner pai */
     width: 100%;
-    font-size: 1rem;
+    font: 400 1.25rem 'Handlee';
     border-top: #f5cc01 30px solid;
     text-align: center;
 
@@ -118,8 +160,8 @@
 
 .draggable-item {
     background-color: #ffd500;
-    width: 130px;
-    height: 120px;
+    width: 8.5rem;
+    height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +190,6 @@
         box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.1);
         /* Sombra para o efeito de dobra */
     }
-
 }
 
 
@@ -158,11 +199,10 @@
 }
 
 .droppable-area.over {
-    background-color: #e8e8e8;
+    background-color: rgba(255, 215, 0, 0.3);
     animation: 2s pulse-color ease-in-out infinite;
-    
-
 }
+
 @keyframes pulse-color {
 
     0%,
@@ -189,7 +229,7 @@
 
 
 
-.droppable-area-1 {
+.droppable-area-1, .droppable-area-2, .droppable-area-3, .droppable-area-4, .droppable-area-5, .droppable-area-6 {
     /* background-color: rgb(168, 164, 164); */
     width: 200px;
     height: 30px;
@@ -197,100 +237,13 @@
     text-align: center;
 }
 
-.droppable-area-2 {
-    /* background-color: rgb(168, 164, 164); */
-    width: 200px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-}
-
-.droppable-area-3 {
-    /* background-color: rgb(168, 164, 164); */
-    width: 200px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-}
-
-.droppable-area-4 {
-    /* background-color: rgb(168, 164, 164); */
-    width: 200px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-}
-
-.droppable-area-5 {
-    /* background-color: rgb(168, 164, 164); */
-    width: 200px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-}
-
-.droppable-area-6 {
-    /* background-color: rgb(168, 164, 164); */
-    width: 200px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-}
-
-.droppable-area-7 {
+.droppable-area-7, .droppable-area-8, .droppable-area-9, .droppable-area-10, .droppable-area-9, .droppable-area-12{
     /* border-bottom: 1px solid #000; */
     width: 200px;
     height: 30px;
     /* margin: 10px; */
     /* margin-left: 650px;
     margin-top: 100px; */
-}
-
-
-
-.droppable-area-8 {
-    /* border-bottom: 1px solid #000; */
-    width: 200px;
-    height: 30px;
-    /* margin: 10px; */
-    /* margin-left: 650px;
-    margin-top: 20px; */
-}
-
-.droppable-area-9 {
-    /* border-bottom: 1px solid #000; */
-    width: 200px;
-    height: 30px;
-    /* margin: 10px; */
-    /* margin-left: 650px;
-    margin-top: 23px; */
-}
-
-.droppable-area-10 {
-    /* border-bottom: 1px solid #000; */
-    width: 200px;
-    height: 30px;
-    /* margin: 10px; */
-    /* margin-left: 650px;
-    margin-top: 23px; */
-}
-
-.droppable-area-11 {
-    /* border-bottom: 1px solid #000; */
-    width: 200px;
-    height: 30px;
-    /* margin: 10px; */
-    /* margin-left: 650px;
-    margin-top: 80px; */
-}
-
-.droppable-area-12 {
-    /* border-bottom: 1px solid #000; */
-    width: 200px;
-    height: 30px;
-    /* margin: 10px; */
-    /* margin-left: 650px;
-    margin-top: 20px; */
 }
 
 .alinhamento_drop {
@@ -333,7 +286,7 @@
 
 .drop1,
 .drop3 {
-    gap: 80px;
+    gap: 3rem;
 }
 
 .drop1 *.tchau,

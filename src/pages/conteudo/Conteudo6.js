@@ -12,28 +12,20 @@ const listaHorarios = ['9h', '10h', '11h', '12h', '13h', '14h', '15h']
 export default function Conteudo() {
 
 
-//  let tagsInicias = [];
-//   useEffect(() => {
-//     tagsInicias = listaHorarios.map((horario, index) => 
-//       {
-//         console.log(index)
-//         return <DroppableArea id={index +1} className={`droppable-area-${index+1} droppable-area`} />
-//       });
-//   }, []);
-    
+  //  let tagsInicias = [];
+  //   useEffect(() => {
+  //     tagsInicias = listaHorarios.map((horario, index) => 
+  //       {
+  //         console.log(index)
+  //         return <DroppableArea id={index +1} className={`droppable-area-${index+1} droppable-area`} />
+  //       });
+  //   }, []);
+
   return (
     <ItemProvider> {/* Envolve o conteúdo com o ItemProvider */}
       <DndProvider backend={HTML5Backend}>
         <div className='container_conteudo6'>
-          <button
-            style={{ top: 0, right: 0, position: "absolute" }}
-            onClick={() => {
-              localStorage.clear();
-              window.location.reload();
-            }}
-          >
-            Clique aqui para limpar a planilha
-          </button>
+
           <div className="message-container-miniGame">
 
             <div className='vivi'>
@@ -63,16 +55,27 @@ export default function Conteudo() {
         <Link to="/conteudo7">
           <button className="proximo">Próximo</button>
         </Link> */}
-          <Link to="/corredor/GestaoDeTempo">
-            <button className="anteriorGame">Voltar</button>
-          </Link>
 
           <div className='bgAtividade'>
+            <div id='buttonsWhiteboard'>
+              <Link to="/corredor/GestaoDeTempo">
+                <button className="anteriorGame">Voltar pro corredor</button>
+              </Link>
+              <button className='eraser'
+                onClick={() => {
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+              >
+                Limpar planilha
+                <div></div>
+              </button>
+            </div>
             <p>Planejamento das tarefas</p>
             <div className='atividade'>
               {/* <div className='alinhamento_drop3'> */}
               <div className='drop1'>
-              {/* {tagsInicias} */}
+                {/* {tagsInicias} */}
                 <DroppableArea id="1" className="droppable-area-1" />
                 <DroppableArea id="2" className="droppable-area-2" />
                 <DroppableArea id="3" className="droppable-area-3" />
@@ -82,8 +85,8 @@ export default function Conteudo() {
                 <DroppableArea id="7" className="droppable-area-7" />
               </div>
               <div className='drop3'>
-                
-            {listaHorarios.map((horario, index) => (
+
+                {listaHorarios.map((horario, index) => (
                   <div>
                     <p className='horarios' style={{ textAlign: "center" }} key={index}>{horario}</p>
                     <DroppableArea id={index} className={`droppable-area-${index} droppable-area`} />
@@ -104,7 +107,7 @@ export default function Conteudo() {
               {/* 
           <div className='buttonreset'> */}
               {/* <div className='alinhamento_drop'> */}
-              
+
             </div>
 
 
