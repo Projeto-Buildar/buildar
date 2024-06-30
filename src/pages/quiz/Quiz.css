@@ -71,9 +71,21 @@
 }
 
 .score-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+}
+
+#containerQuiz .restart-button {
+  background-color: #58D2FF;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 0px 50px;
 }
 
 .containerQuiz {
@@ -92,13 +104,14 @@
   border: none;
   border-radius: 5px;
   height: 9rem;
-  margin-right: 40px; /* Adiciona margem entre os botões */
+  /*margin-right: 40px;  Adiciona margem entre os botões */
   color: white;
 }
 
 .containerQuiz {
   display: flex;
   justify-content: center;
+  gap: 40px;
 }
 
 .quiz1 {

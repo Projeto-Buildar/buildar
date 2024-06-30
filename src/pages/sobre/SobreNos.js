@@ -23,7 +23,7 @@ const SobreNos = () => {
     <>
       <HeaderHome />
       <section className="SobreNos">
-        <h1>Sobre Nós</h1>
+        <h1>SOBRE NÓS</h1>
         <div className="content">
           <div className="text-section">
             <h2>Mas afinal... De onde surgiu a Buildar?</h2>

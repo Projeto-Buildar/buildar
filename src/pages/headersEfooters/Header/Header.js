@@ -31,7 +31,7 @@ export default function Header() {
           <img src={logo} className='logo'/>
         </Link>
         <Link to="/cadastro">
-          <div id='button' style={{opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s', visibility: isVisible ? 'visible' : 'hidden', pointerEvents: isVisible ? 'auto' : 'none'}}>{t("Play")}</div>
+          <div id='button' style={{opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s', visibility: isVisible ? 'visible' : 'hidden'}}>{t("Play")}</div>
         </Link>
       </nav>
     </header>

@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import "../../i18n"
 
 export default function Elevadores() {
-
     const {t, i18n } = useTranslation();
 
     const corredores = [
@@ -18,27 +17,27 @@ export default function Elevadores() {
         },
         {
             softSkill: t("resiliência"),
-            mapa: "Kitchen"
+            mapa: "../home"
         },
         {
             softSkill: t("negociação"),
-            mapa: "GestaoDeTempo"
+            mapa: "../home"
         },
         {
             softSkill: t("criatividade"),
-            mapa: "GestaoDeTempo"
+            mapa: "../home"
         },
         {
             softSkill: t("adaptabilidade"),
-            mapa: "GestaoDeTempo"
+            mapa: "../home"
         },
         {
             softSkill: t("empatia"),
-            mapa: "GestaoDeTempo"
+            mapa: "../home"
         },
         {
             softSkill: t("em_breve"),
-            mapa: "GestaoDeTempo"
+            mapa: "../home"
         }
     ];
 
@@ -74,7 +73,7 @@ export default function Elevadores() {
                     },
                     mobile: {
                         breakpoint: {
-                            max: 464,
+                            max: 880,
                             min: 0
                         },
                         items: 1,
@@ -83,7 +82,7 @@ export default function Elevadores() {
                     tablet: {
                         breakpoint: {
                             max: 1024,
-                            min: 464
+                            min: 880
                         },
                         items: 2,
                         partialVisibilityGutter: 30
@@ -97,10 +96,9 @@ export default function Elevadores() {
                 sliderClass=""
                 slidesToSlide={1}
                 swipeable
-
             >
                 {corredores.map((obj, index) => {
-                    return <Elevador key={index} link={`/corredor/${obj.mapa}`} softSkill={obj.softSkill} ></Elevador>
+                    return <Elevador key={index} link={`/corredor/${obj.mapa}`} softSkill={obj.softSkill}/>
                 })}
             </Carousel>
         </div>

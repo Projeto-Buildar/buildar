@@ -208,7 +208,7 @@
     width: 100%;
     padding: 1rem;
     gap: 2rem;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     & img {
         width: 12rem;
         height: 12rem;
@@ -274,6 +274,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    gap: 10px;
     & h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;

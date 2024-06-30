@@ -1,4 +1,3 @@
-import elevadorImg from "./images/Elevador.svg"
 import "./elevador.css"
 import { Link } from "react-router-dom";
 

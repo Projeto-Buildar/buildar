@@ -12,7 +12,6 @@ import './Footer.css';
 
 export default function FooterPreLogin() {
   const { t, i18n } = useTranslation();
-
   const a = 1;
 
   return (
@@ -32,7 +31,7 @@ export default function FooterPreLogin() {
           </ul>
         </nav>
         <figure>
-          <Link to={ a == 1 ? "/home" : "/#"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <Link to={ a == 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
           <p>{t("Rights")}</p>
         </figure>
       </section>
