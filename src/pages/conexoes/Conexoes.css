@@ -1,11 +1,11 @@
-#Conexoes{
+#Conexoes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#Conexoes p{
+#Conexoes p {
     font-size: 1rem;
 }
 
@@ -13,7 +13,7 @@
     font-size: 1.25rem;
 }
 
-.containerAmarelo{
+.containerAmarelo {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -22,64 +22,65 @@
     align-items: center;
 }
 
-#historico{
+#historico {
     margin-top: 20px;
     margin-left: 40px;
     border-bottom: 3px solid #000;
 }
 
-.containerAmarelo  h2{
+.containerAmarelo h2 {
     margin-top: 30px;
     margin-left: 80px;
 }
 
-.containerAmarelo img{
+.containerAmarelo img {
     display: flex;
     margin-top: 38px;
 }
 
-.video-container{
-    margin: 10px
+.video-container {
+    margin: 10px;
 }
-.Container-conexoes{
+
+.Container-conexoes {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.Video-Esquerdo{
+.Video-Esquerdo {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-.botao{
+.botao {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.botao button{
+.botao button {
     width: 300px;
     height: 50px;
     border-width: 3px;
     border-radius: 15px;
 }
 
-.forma2{
+.forma2 {
     position: absolute;
-    top: 10;
+    top: 10px;
 }
 
-.Seja-voluntario{
+.Seja-voluntario {
     height: 100vh;
     display: flex;
     align-items: center;
     margin: auto 100px;
 }
 
-.textoVoluntario{
+.textoVoluntario {
     margin: 20px;
     padding: 10px;
     width: 400px;
@@ -90,9 +91,9 @@
     justify-content: center;
 }
 
-.forma2{
-position: absolute;
-margin-top: 600px;
+.forma2 {
+    position: absolute;
+    margin-top: 600px;
 }
 
 .textoVoluntario button {
@@ -115,26 +116,36 @@ margin-top: 600px;
 
 .textoVoluntario button:hover {
     background: #ffae00;
-    
 }
 
+.video-container iframe {
+    width: 600px;
+    height: 300px;
+}
+
+.Video-Esquerdo iframe {
+    width: 300px;
+    height: 150px;
+}
 
 @media screen and (max-width: 944px) {
-    .Container-conexoes{
+    .Container-conexoes {
         display: flex;
         flex-direction: column;
     }
 
-    .Video-Esquerdo{
-        font-display: flex;
+    .Video-Esquerdo {
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
     }
-    .containerAmarelo{
+
+    .containerAmarelo {
         width: 100%;
     }
-    .Seja-voluntario{
+
+    .Seja-voluntario {
         display: flex;
         flex-direction: column;
     }
@@ -145,5 +156,17 @@ margin-top: 600px;
     }
 }
 
+@media screen and (max-width: 658px) {
+    .video-container iframe {
+        width: 300px;
+        height: 150px;
+    }
 
-
+    #Conexoes {
+        width: 100vh;
+    }
+    .Video-Esquerdo{
+        display: flex;
+        flex-direction: column;
+    }
+}
