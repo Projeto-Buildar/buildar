@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { ItemProvider } from './pages/conteudo/Itens';import LandingPage from './pages/landingPage/LandingPage';
+import { ItemProvider } from './pages/conteudo/Itens';
+import LandingPage from './pages/landingPage/LandingPage';
 import Login from './pages/entrada/Login';
 import Home from './pages/home/Home';
 import Cadastro from './pages/entrada/Cadastro';
@@ -54,9 +55,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <ItemProvider>
         <BrowserRouter>
-          <DndProvider backend={HTML5Backend}>
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="login" element={<Login />} />
@@ -70,11 +69,11 @@ export default function App() {
               <Route path="inscricaoVoluntario" element={<Voluntario />} />
               <Route path="faleConosco" element={<FaleConosco />} />
               <Route path="ranqueada" element={<Ranqueada />} />
-              <Route path="conteudo" element={<Conteudo />} />
+              {/* <Route path="conteudo" element={<Conteudo />} />
               <Route path="conteudo2" element={<Conteudo2 />} />
               <Route path="conteudo3" element={<Conteudo3 />} />
               <Route path="conteudo4" element={<Conteudo4 />} />
-              <Route path="conteudo5" element={<Conteudo5 />} />
+              <Route path="conteudo5" element={<Conteudo5 />} /> */}
               <Route path="conteudo6" element={<Conteudo6 />} />
               <Route path="conteudos/:miniGame/conteudo6" element={<Conteudo6 />} />
               <Route path="conteudo7" element={<Conteudo7 />} />
@@ -87,9 +86,7 @@ export default function App() {
               <Route path="quiz2" element={<Quiz2 />} />
               <Route path='conteudos/:indice' element={<Conteudos />} />
             </Routes>
-          </DndProvider>
         </BrowserRouter>
-      </ItemProvider>
 
       <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
         <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>

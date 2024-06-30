@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ItemContext } from './Itens'; // Importe o contexto ItemContext
-import './Conteudo.css';
+// import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.jpg';
 import DroppableArea from './DroppableArea';

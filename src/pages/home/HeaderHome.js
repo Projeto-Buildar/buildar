@@ -26,10 +26,10 @@ export default function HeaderHome() {
       texto: t("Profile"),
       linkado: "/perfil"
     },
-    {
-      texto: t("Conteudo"),
-      linkado: "/conteudo"
-    },
+    // {
+    //   texto: t("Conteudo"),
+    //   linkado: "/conteudo"
+    // },
     {
       texto: t("Quiz"),
       linkado: "/quiz"

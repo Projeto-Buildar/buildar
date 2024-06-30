@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 
 const DraggableItem = ({ id, text, startArea }) => {
   const [classePost, setClassePost] = useState('');
-
+  const [estaDobrado, serEstaDobrado] = useState('');
   useEffect(() => {
     // Adicione a classe apenas uma vez
     if (!classePost) {
       const rotateRandom = Math.floor(Math.random() * 3);
+      serEstaDobrado(Math.floor(Math.random() * 2) === 1 ? 'temDobrado' : '');
       switch (rotateRandom) {
         case 1:
           setClassePost('digDir');
@@ -33,10 +34,10 @@ const DraggableItem = ({ id, text, startArea }) => {
   return (
     <div
       ref={drag}
-      className={`draggable-item ${isDragging ? 'dragging' : ''} ${classePost}`}
+      className={`draggable-item ${isDragging ? 'dragging' : ''} ${classePost} ${estaDobrado}`}
       style={{
-        opacity: isDragging ? 0.5 : 1,
-        cursor: 'grab',
+        opacity: isDragging ? 0 : 1,
+        cursor: isDragging ? 'grabbing' : 'grab',
       }}
     >
       <p className={`textoPost`}>{text}</p>
