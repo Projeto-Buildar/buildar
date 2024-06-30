@@ -64,9 +64,14 @@
     }
 }
 
+.horarios {
+    font: 400 2rem "Permanent Marker";
+        text-align: center;
+}
+
 .atividade {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 100px;
     padding-block: 1%;
 }
