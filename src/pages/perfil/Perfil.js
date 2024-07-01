@@ -40,7 +40,7 @@ export default function Perfil() {
                     <div className="profileImage">
                         <div className="star"></div>
                         <img src={profilePic} className="profilePic" />
-                        <h3 className="jobPlan">Gerente</h3>
+                        <h3 className="jobPlan">{t("Manager")}</h3>
                     </div>
                     <div className="topCard">
                         <div className="userProfileInfo">

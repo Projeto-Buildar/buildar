@@ -8,6 +8,8 @@ import skillsIcon from './images/skills.png';
 import peopleIcon from './images/people.png'; // New icons for the new section
 import schoolIcon from './images/school.png';
 import environmentIcon from './images/environment.png';
+import { useTranslation } from 'react-i18next';
+
 // Importing team images
 import teamMember1 from './images/teamMember1.png';
 import teamMember2 from './images/teamMember2.png';
@@ -19,114 +21,116 @@ import teamMember7 from './images/teamMember7.png';
 import teamMember8 from './images/teamMember8.png';
 
 const SobreNos = () => {
+  const { t } = useTranslation();
   return (
     <>
       <HeaderHome />
       <section className="SobreNos">
-        <h1>SOBRE NÓS</h1>
+        <h1>{t("aboutUs")}</h1>
         <div className="content">
           <div className="text-section">
-            <h2>Mas afinal... De onde surgiu a Buildar?</h2>
-            <p>Fundada por um grupo de adolescentes, estudantes de <strong>desenvolvimento web</strong>, a Buildar toma forma como um projeto de conclusão de curso. Forjada nos pilares de <strong>companheirismo</strong>, e <strong>determinação</strong>, a Buildar segue para moldar o <strong>futuro</strong> de outros jovens como seus fundadores.</p>
-            <a href="#" className="ver-mais">ver mais</a>
+            <h2>{t("originBuildar")}</h2>
+            <p>{t("foundedBy")}</p>
+            <a href="#" className="ver-mais">{t("seeMore")}</a>
           </div>
-          <img src={mascot} alt="Mascote buildar" className="mascot" />
+          <img src={mascot} alt={t("mascotBuildar")} className="mascot" />
         </div>
       </section>
 
       <section className="OurWork">
-        <h2>E o que viemos fazer aqui?</h2>
-        <p className="intro">A Buildar não tá aqui atoa! Temos um grande comprometimento em fazer você conquistar seu futuro.</p>
+        <h2>{t("ourPurpose")}</h2>
+        <p className="intro">{t("buildarCommitment")}</p>
         <div className="work-items">
           <div className="work-item">
-            <img src={targetIcon} alt="Nosso trabalho" />
-            <h3>Nosso trabalho</h3>
-            <p>Orientar o jovem a entrar no mercado de trabalho por meio da prática de soft skills.</p>
+            <img src={targetIcon} alt={t("ourWork")} />
+            <h3>{t("ourWork")}</h3>
+            <p>{t("orientYouth")}</p>
           </div>
           <div className="work-item">
-            <img src={careerIcon} alt="Plano de Carreira" />
-            <h3>Plano de Carreira</h3>
-            <p>Ser a plataforma web nº 1 na prática e desenvolvimento de soft skills entre os jovens.</p>
+            <img src={careerIcon} alt={t("careerPlan")} />
+            <h3>{t("careerPlan")}</h3>
+            <p>{t("platformGoal")}</p>
           </div>
           <div className="work-item">
-            <img src={skillsIcon} alt="Soft skills da Buildar" />
-            <h3>Soft skills da Buildar</h3>
-            <p>Determinação ● Inovação ● Acolhimento</p>
+            <img src={skillsIcon} alt={t("buildarSoftSkills")} />
+            <h3>{t("buildarSoftSkills")}</h3>
+            <p>{t("determination")} ● {t("innovation")} ● {t("welcome")}</p>
           </div>
         </div>
       </section>
 
       <section className="Goals">
         <div className='text-goals'>
-          <h2>A Buildar também tem suas metas!</h2>
-          <p>Planos pro futuro?<br />A Buildar é mestre nisso.<br />Confira apenas algumas das nossas metas<br />mais próximas</p>
+          <h2>{t("buildarGoals")}</h2>
+          <p>{t("futurePlans")}</p>
         </div>
         <div className="goal-items">
-          <div className="goal-item">Adição de aplicativo mobile</div>
-          <div className="goal-item">Atendimento especializado</div>
-          <div className="goal-item">Machine learning particular</div>
-          <div className="goal-item">Eventos perto de você</div>
+          <div className="goal-item">{t("mobileApp")}</div>
+          <div className="goal-item">{t("specializedService")}</div>
+          <div className="goal-item">{t("machineLearning")}</div>
+          <div className="goal-item">{t("eventsNearYou")}</div>
         </div>
       </section>
 
       <section className="OurCause">
-        <h2>Nossa causa é com você</h2>
-        <p className="intro">As pesquisas apontam... É pra lá que vamos! A Buildar existe<br /> para solucionar a dura realidade dos jovens no mercado.</p>
+        <h2>{t("ourCause")}</h2>
+        <p className="intro">{t("researchPoints")}</p>
         <div className="cause-items">
           <div className="cause-item">
-            <img src={peopleIcon} alt="Falta de soft skills" />
-            <p>3 a 4 jovens não conseguem entrar no mercado de trabalho por falta de soft skills.</p>
+            <img src={peopleIcon} alt={t("lackSoftSkills")} />
+            <p>{t("youthMarketEntry")}</p>
           </div>
           <div className="cause-item">
-            <img src={schoolIcon} alt="Educação em soft skills" />
-            <p>Em pesquisas autorais, 89% dos jovens não aprenderam sobre soft skills mais cedo.</p>
+            <img src={schoolIcon} alt={t("educationSoftSkills")} />
+            <p>{t("youthSurvey")}</p>
           </div>
           <div className="cause-item">
-            <img src={environmentIcon} alt="Ambientes acessíveis" />
-            <p>Existem poucos ambientes acessíveis para o jovem praticar soft skills.</p>
+            <img src={environmentIcon} alt={t("accessibleEnvironments")} />
+            <p>{t("fewEnvironments")}</p>
+          </div>
+        </div>
+      </section>"
+
+      <section className="OurTeam">
+        <h2>{t("facesBehindBrand")}</h2>
+        <div className="team-members">
+          <div className="team-member 1">
+            <img src={teamMember1} alt="Christian William" />
+            <p><strong>Christian William</strong><br />{t("fullstackDeveloper")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember2} alt="Daniel Fernandes" />
+            <p><strong>Daniel Fernandes</strong><br />{t("productOwnerFullstack")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember3} alt="Erik Paulino" />
+            <p><strong>Erik Paulino</strong><br />{t("scrumMasterFrontend")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember4} alt="Eduardo Gomes" />
+            <p><strong>Eduardo Gomes</strong><br />{t("backendDeveloper")}</p>
+          </div>
+        </div>
+        <div className='team-members 2'>
+          <div className="team-member">
+            <img src={teamMember5} alt="Isaque Barbosa" />
+            <p><strong>Isaque Barbosa</strong><br />{t("backendDeveloper")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember6} alt="Gretzel Penaloza" />
+            <p><strong>Gretzel Penaloza</strong><br />{t("fullstackDeveloper")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember7} alt="Gustavo Bosak" />
+            <p><strong>Gustavo Bosak</strong><br />{t("financeFrontend")}</p>
+          </div>
+          <div className="team-member">
+            <img src={teamMember8} alt="Letícia Nascimento" />
+            <p><strong>Letícia Nascimento</strong><br />{t("databaseAdministrator")}</p>
           </div>
         </div>
       </section>
 
-      <section className="OurTeam">
-        <h2>Os rostos por trás da marca</h2>
-        <div className="team-members">
-          <div className="team-member 1">
-            <img src={teamMember1} alt="Christian William" />
-            <p><strong>Christian William</strong><br />Desenvolvedor Fullstack</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember2} alt="Daniel Fernandes" />
-            <p><strong>Daniel Fernandes</strong><br />Product Owner & Desenvolvedor Fullstack</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember3} alt="Erik Paulino" />
-            <p><strong>Erik Paulino</strong><br />Scrum Master & Desenvolvedor Front-end</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember4} alt="Eduardo Gomes" />
-            <p><strong>Eduardo Gomes</strong><br />Desenvolvedor Back-end</p>
-          </div>
-          </div>
-          <div className='team-members 2'>
-          <div className="team-member">
-            <img src={teamMember5} alt="Isaque Barbosa" />
-            <p><strong>Isaque Barbosa</strong><br />Desenvolvedor Back-end</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember6} alt="Gretzel Penaloza" />
-            <p><strong>Gretzel Penaloza</strong><br />Desenvolvedor Fullstack</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember7} alt="Gustavo Bosak" />
-            <p><strong>Gustavo Bosak</strong><br />Financeiro & Desenvolvedor Front-end</p>
-          </div>
-          <div className="team-member">
-            <img src={teamMember8} alt="Letícia Nascimento" />
-            <p><strong>Letícia Nascimento</strong><br />Administradora de Banco de Dados</p>
-        </div>
-        </div>
-      </section>
 
       <Footer />
     </>

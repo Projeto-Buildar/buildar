@@ -29,6 +29,7 @@ import Termos from './pages/termos/Termos';
 import AreaDescanso from './pages/areaDescanso/AreaDescanso';
 import GameDescanso from './GameDescanso';
 import LojaCopy from './pages/loja copy/LojaCopy';
+import Loja from './pages/loja/Loja';
 import InicioQuiz from './pages/quiz/InicioQuiz'
 import Quiz from './pages/quiz/Quiz1';
 import Quiz2 from './pages/quiz/Quiz2';
@@ -80,7 +81,8 @@ export default function App() {
               <Route path='pratica' element={<Pratica />}></Route>
               <Route path='game_descanso' element={<GameDescanso />} />
               <Route path='descanso' element={<AreaDescanso />}></Route>
-              <Route path="loja" element={<LojaCopy />} />
+              {/* <Route path="loja" element={<LojaCopy />} /> */}
+              <Route path="loja" element={<Loja />} />
               <Route path="quiz" element={<InicioQuiz />} />
               <Route path="quiz1" element={<Quiz />} />
               <Route path="quiz2" element={<Quiz2 />} />
