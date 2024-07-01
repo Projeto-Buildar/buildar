@@ -163,10 +163,19 @@
     }
 
     #Conexoes {
-        width: 100vh;
+        width: 100%;
     }
-    .Video-Esquerdo{
+
+    .Video-Esquerdo {
         display: flex;
         flex-direction: column;
+    }
+
+    #conexoes {
+        width: 100%;
+    }
+
+    #headerHome {
+        width: 100%;
     }
 }
