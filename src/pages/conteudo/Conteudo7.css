@@ -1,0 +1,53 @@
+.drop_final7{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+}
+.container_conteudo7{
+    width: 100%;
+    height: 100vh;
+    margin-top: -12vh;
+    padding-top: 0;
+}
+
+.horarios7 {
+    font: 400 2rem "Permanent Marker";
+    text-align: center;
+    display: flex;
+}
+
+.drop3_7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vivi7 {
+    left: 10px;
+    top: 10px;
+}
+
+.message-container-miniGame7 * .vivi_img7 {
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+}
+
+.message-box7{
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 23px 23px 23px 23px;
+    flex-direction: column;
+    border: #000 4px solid;
+    animation: expand2 1s forwards;
+    overflow: hidden;
+    left: 175px;
+    height: 150px;
+    top: 0px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 12px;
+}

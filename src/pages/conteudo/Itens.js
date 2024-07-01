@@ -12,12 +12,14 @@ const getInitialItems = () => {
     5: { id: 5, text: 'Café da tarde', area: "5" },
     6: { id: 6, text: 'Conversa com o chefe', area: "6" },
     7: { id: 7, text: 'Reunião com a equipe', area: "7" },
-
+    8: { id: 8, text: 'Almoço', area: "1" },
+    9: { id: 9, text: 'Enviar E-mail', area: "3" },
+    10: { id: 10, text: 'Reunião com a equipe', area: "7" },
   };
 };
 
 export const ItemProvider = ({ children }) => {
-  const [items, setItems] = useState(getInitialItems);
+  const [items, setItems] = useState(getInitialItems()); // Invocando getInitialItems()
 
   useEffect(() => {
     localStorage.setItem('items', JSON.stringify(items));
@@ -36,5 +38,3 @@ export const ItemProvider = ({ children }) => {
     </ItemContext.Provider>
   );
 };
-
-

@@ -65,6 +65,8 @@ export default function App() {
   return (
     <div className="App">
         <BrowserRouter>
+        <DndProvider backend={HTML5Backend}>
+        <ItemProvider>
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="login" element={<Login />} />
@@ -85,7 +87,7 @@ export default function App() {
               <Route path="conteudo5" element={<Conteudo5 />} /> */}
               <Route path="conteudo6" element={<Conteudo6 />} />
               <Route path="conteudos/:miniGame/conteudo6" element={<Conteudo6 />} />
-              <Route path="conteudo7" element={<Conteudo7 />} />
+              <Route path="conteudos/:miniGame/conteudo7" element={<Conteudo7 />} />
               <Route path='pratica' element={<Pratica />}></Route>
               <Route path='game_descanso' element={<GameDescanso />} />
               <Route path='descanso' element={<AreaDescanso />}></Route>
@@ -97,6 +99,8 @@ export default function App() {
               <Route path='conteudos/:indice' element={<Conteudos />} />
               <Route path='termos' element={<Termos></Termos>}/>
             </Routes>
+            </ItemProvider>
+            </DndProvider>
         </BrowserRouter>
 
       <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
