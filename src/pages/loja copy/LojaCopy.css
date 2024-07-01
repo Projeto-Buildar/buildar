@@ -8,23 +8,20 @@
 }
 
 #loja .titleTopFrame {
-    /* background: #FF486D url('./images/titleBg.png') left 0 bottom 0/auto 20% no-repeat; */
     background: #C6EC3E;
     width: 100%;
     padding: 4rem 0 2rem 0;
-
     & h1 {
         margin-left: 10vw;
     }
-}
-
-#loja .titleTopFrame div {
-    width: 16vw;
-    height: 2rem;
-    background: #C6EC3E;
-    position: absolute;
-    margin: 2rem 0 0 10vw;
-    border-radius: 0 0 2rem 0;
+    & div {
+        width: 16vw;
+        height: 2rem;
+        background: #C6EC3E;
+        position: absolute;
+        margin: 2rem 0 0 10vw;
+        border-radius: 0 0 2rem 0;
+    }
 }
 
 #loja section:not(.titleTopFrame) {

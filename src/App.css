@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&display=swap');
+
 .App  {
   padding-top: 12vh;
 }
@@ -8,6 +10,7 @@
 
 h1 {
   font: 500 3rem 'Passion One', sans-serif;
+  font-style: normal;
 }
 
 h2 {
@@ -26,4 +29,30 @@ h2 {
 .destaqBranco {
   font-weight: 600;
   color: #FFFFFF;
+}
+
+.languageButton {
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 40vh;
+  right: 0.4vw;
+  z-index: 6;
+
+  & select {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+  }
+}
+
+.fontEmoji *{
+    font-family: "Noto Color Emoji", sans-serif; 
 }

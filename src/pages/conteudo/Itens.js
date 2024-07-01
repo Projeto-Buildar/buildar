@@ -6,11 +6,13 @@ const getInitialItems = () => {
   const storedItems = localStorage.getItem('items');
   return storedItems ? JSON.parse(storedItems) : {
     1: { id: 1, text: 'Almoço', area: "1" },
-    2: { id: 2, text: 'Organização', area: "2" },
+    2: { id: 2, text: 'Organização do espaço', area: "2" },
     3: { id: 3, text: 'Enviar E-mail', area: "3" },
     4: { id: 4, text: 'Ligação', area: "4" },
     5: { id: 5, text: 'Café da tarde', area: "5" },
     6: { id: 6, text: 'Conversa com o chefe', area: "6" },
+    7: { id: 7, text: 'Reunião com a equipe', area: "7" },
+
   };
 };
 

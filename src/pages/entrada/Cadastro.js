@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import formaCadastro1 from './images/forma-cadastro1.webp';
 import formaCadastro2 from './images/forma-cadastro2.webp';
-import Header from '../landingPage/components/Header/Header';
+import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
 
@@ -167,9 +167,10 @@ export default function Cadastro() {
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
-            setErrorMessage('O nickname e o e-mail não podem conter espaços.');
+            setErrorMessage(`${t("invalidRegister")}`);
             // if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
             //     setErrorMessage(`${t("NickName")}`
+            //               //     setErrorMessage(`${t("invalidRegister")}`
             //         );
             // } 
             

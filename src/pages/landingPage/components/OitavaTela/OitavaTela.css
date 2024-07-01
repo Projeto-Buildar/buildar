@@ -10,7 +10,7 @@
 .arrow {
     width: 64px;
     height: 80px;
-    background: url('../../images/oitavaTela_next.webp') center/contain no-repeat;
+    background: url('../../images/next_a.webp') center/contain no-repeat;
     position: absolute;
     right: 0;
     z-index: 2;
@@ -18,7 +18,7 @@
 
 .arrow.left {
     left: 0;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
 }
 
 .ulCarrosel{
@@ -81,16 +81,25 @@
     background: #FFFFFF url('../../images/oitavaTela_img.webp') top 4% right 8%/auto 8% no-repeat;
 }
 
+#landingFooter {
+    width: 100%;
+    height: 20vh;
+    background: #9B33FD;
+    position: absolute;
+    margin-bottom: -90vh;
+}
+
 /* Hover */
 
 .arrow:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.4s;
+    transform: scale(1.15);
+    background: url('../../images/next_b.webp') center/contain no-repeat;
+    transition: 0.3s;
 }
 
 .arrow.arrow.left:hover{
-    transform: rotate(180deg) scale(1.1);
+    transform: rotateY(180deg) scale(1.1);
 }
 
 .depoiments {

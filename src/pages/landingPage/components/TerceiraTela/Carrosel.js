@@ -5,11 +5,11 @@ import CustomDot from "./CustomDots";
 export default function Carrosel(props){
     return(
         <Carousel
-        customDot={<CustomDot></CustomDot>}
+        customDot={<CustomDot dotsLi={props.dotsLiClass} dotsButton={props.dotsButtonClass}></CustomDot>}
             arrows={props.arrows}
             autoPlaySpeed={3000}
             centerMode={false}
-            className="carrosel"
+            className={props.carroselClass}
             containerClass=""
             dotListClass=""
             draggable={props.draggable}

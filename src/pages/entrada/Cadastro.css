@@ -60,8 +60,6 @@
     justify-content: flex-start;
 }
 
-
-
 .caixa-esquerda-cadastro h1 {
     padding: 200px 110px;
     background-color: #9B33FD;
@@ -147,7 +145,6 @@
 
 #CaixaCadastro p {
     font-size: 0.9rem;
-    width: 125px;
 }
 
 #CaixaCadastro strong {
@@ -209,7 +206,7 @@
 
 
 #Cadastro input {
-    font-size: 18px;
+    font-size: 1rem;
     padding: 0.25rem;
     margin: 0.25rem;
 }

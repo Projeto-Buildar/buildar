@@ -14,8 +14,12 @@ import Carousel from "react-multi-carousel";
 import CustomArrow from '../landingPage/components/OitavaTela/CustomArrow';
 import listras from './images/listras.png';
 
+import { useTranslation } from 'react-i18next';
+import "../../i18n";
+
 
 const Loja = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <HeaderHome />
@@ -25,10 +29,10 @@ const Loja = () => {
         <img src={barra} alt="barra" id='barra-energia' />
       <img src={maisbuildolars} alt="maisbuildolars" />
       </div>
-        <h1 className="loja-title">Personalização</h1>
+        <h1 className="loja-title">{t("customization")}</h1>
 
         <div className="avatar-section">
-          <h2 className="avatar-title">Avatares para você</h2>
+          <h2 className="avatar-title">{t("avatarsForYou")}</h2>
           <div className="avatar-list">
           <Carousel
           customRightArrow={<CustomArrow props={"arrow"}></CustomArrow>}
@@ -108,7 +112,7 @@ const Loja = () => {
         <div className="energia-section">
         
           
-          <h2 className="energia-title">Energia sem parar</h2>
+          <h2 className="energia-title">{t("nonStopEnergy")}</h2>
           <div className="energia-list">
             <div className="energia-group">
               <div className="energia-item">
@@ -201,14 +205,14 @@ const Loja = () => {
         
          
           <div className="desafio-item">
-          <h2 className="missoes-title">Desafios</h2>
+          <h2 className="missoes-title">{t("challenges")}</h2>
             
             <div className="desafio-texto">
-            <h3>Sem Tempo Irmão</h3>
+              <h3>{t("noTimeBro")}</h3>
               <p>
-                Gaste menos energia por cada atividade, a custo de um cronômetro que te acompanha durante as atividades.
-                <br />
-                Você está a postos de agir sobre pressão do tempo?
+                {t("spendLessEnergy")}
+                <br/>
+                {t("readyToActUnderPressure")}
               </p>
             </div>
             <div className="desafio-preco">

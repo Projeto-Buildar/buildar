@@ -123,6 +123,7 @@
     border-radius: 8px;
     text-align: center;
     line-height: 40px;
+    font-size: 1rem;
 }
 
 #submit {
@@ -182,10 +183,10 @@
         display: none;
     }
 
-    .loginHeader {
+    /* .loginHeader {
         padding: 5px 10px;
         font-size: 0.8rem;
-    }
+    } */
 
     #login article {
         width: auto;

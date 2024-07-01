@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
 import "../../../i18n"
 
 import logo from '../images/logo_off.webp';
@@ -11,23 +10,9 @@ import github from '../images/social_github.webp';
 
 import './Footer.css';
 
-export default function FooterPreLogin(props) {
+export default function FooterPreLogin() {
   const { t, i18n } = useTranslation();
-
-  // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
-
-  useEffect(() => {
-    // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda
-    i18n.changeLanguage(selectedLanguage);
-    localStorage.setItem('language', selectedLanguage);
-  }, [selectedLanguage]);
-
-  const handleLanguageChange = (event) => {
-    setSelectedLanguage(event.target.value);
-  }
-
-  const a = 2;
+  const a = 1;
 
   return (
     <footer id='footerPreLogin'>
@@ -39,14 +24,14 @@ export default function FooterPreLogin(props) {
             <Link to="/apoie">{t("Support")}</Link>
             <Link to="/faleConosco">{t("Contact")}</Link>
           </ul>
-          <ul style={{visibility: a == 1? 'hidden' : 'visible'}}>
+          <ul style={{display: a == 1? 'none' : 'flex'}}>
             <Link to="/conexoes">{t("Connect")}</Link>
             <Link to="/perfil">Perfil</Link>
             <Link to="/loja">Loja</Link>
           </ul>
         </nav>
         <figure>
-          <Link to={ a == 1 ? "/home" : "/#"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <Link to={ a == 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
           <p>{t("Rights")}</p>
         </figure>
       </section>
@@ -71,14 +56,6 @@ export default function FooterPreLogin(props) {
           </a>
         </nav>
       </section>
-
-      <div className='languageButton'>
-        <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
-          <option value="pt">&#x1F1E7;&#x1F1F7;</option>
-          <option value="en">🇺🇸</option>
-          <option value="es">🇧🇴</option>
-        </select>
-      </div>
     </footer>
   );
 }
