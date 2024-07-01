@@ -77,13 +77,14 @@ export default class ConfiguracaoMapaGame {
         });
     }
 
-    async startCutscene(events) {
+    async startCutscene(events, nomes) {
         this.isCutscenePlaying = true;
-    
+        console.log(nomes)
         // Inicia um loop de eventos assíncronos e aguarda cada um deles
         for (let i = 0; i < events.length; i++) {
             const eventHandler = new OverworldEvent({
                 event: events[i],
+                nome: nomes,
                 map: this,
                 recebeTextoMensagem: this.recebeTextoMensagem,
                 navegarParaPagina: this.navegarParaPagina
@@ -114,7 +115,7 @@ export default class ConfiguracaoMapaGame {
         });
         
         if (!this.isCutscenePlaying && match && match.talking.length) {
-            this.startCutscene(match.talking[0].events)
+            this.startCutscene(match.talking[0].events, match.nome)
         }      
     }
 

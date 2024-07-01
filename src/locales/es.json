@@ -76,9 +76,7 @@
     "em_breve": "Próximamente",
     "trainSoftSkills": "¿Qué tal entrenar soft skills virtualmente?",
     "simulationDescription": "Con simulaciones de entornos profesionales, ¡puedes crecer! Dale un impulso a tus soft skills de manera",
-    "easy": "fácil",
-    "and": "y",
-    "fun": "divertida",
+    "easy": "fácil y divertida.",
     "accessiblePlatform": "Una plataforma accesible para todos",
     "learningOption": "¿Pagar para aprender? ¡Solo si quieres! Aquí contamos con una opción",
     "free": "100% gratuita",
@@ -208,6 +206,7 @@
         "scrumMasterFrontend": "Scrum Master y Desarrollador Front-end",
         "backendDeveloper": "Desarrollador Back-end",
         "databaseAdministrator": "Administradora de Base de Datos",
+        "financeFrontend": "Financiero y Desarrollador Front-end",
             
 
       "header": "EVENTOS EXTERNOS - Búsqueda de Eventos",

@@ -209,6 +209,7 @@
     padding: 1rem;
     gap: 2rem;
     overflow-x: scroll !important;
+    z-index: 1;
     & img {
         width: 12rem;
         height: 12rem;
@@ -246,7 +247,7 @@
         border-radius: 0 3rem 0 0;
     }
     & ul {
-        display: flex;
+        display: flex !important;
         flex-flow: column;
         height: 60vh;
         gap: 1rem;

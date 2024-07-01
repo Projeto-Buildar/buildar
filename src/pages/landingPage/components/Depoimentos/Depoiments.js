@@ -97,7 +97,7 @@ export default function Depoiments() {
           arrows
           autoPlaySpeed={3000}
           centerMode={false}
-          className=""
+          className="coiso"
           containerClass="container-with-dots"
           dotListClass=""
           draggable
@@ -107,7 +107,7 @@ export default function Depoiments() {
           keyBoardControl={false}
           minimumTouchDrag={80}
           pauseOnHover
-          renderButtonGroupOutside={false}
+          renderButtonGroupOutside={true}
           renderDotsOutside={false}
           responsive={{
             desktop: {

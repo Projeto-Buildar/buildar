@@ -1,10 +1,10 @@
 import './QuintaTela.css';
 
-import { useTranslation } from 'react-i18next';
-import "../../../../i18n"
+import useControleDeTraducao from '../../../../useControleDeTraducao';
 
 export default function QuintaTela() {
-    const {t, i18n } = useTranslation();
+    const { t, tComControleDeLinha } = useControleDeTraducao();
+
     return (
         <div className='frames' id='quintaTela'>
             <div className='backgroundLeft'></div>
@@ -15,7 +15,7 @@ export default function QuintaTela() {
             </section>
             <article>
                 <h2>{t("Practice")}</h2>
-                <p>{t("Events")}</p>
+                <p>{tComControleDeLinha(t("Events"))}</p>
                 <div>{t("More")}</div>
             </article>
         </div>

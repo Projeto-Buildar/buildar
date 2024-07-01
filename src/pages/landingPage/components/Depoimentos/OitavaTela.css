@@ -13,20 +13,26 @@
     background: url('../../images/next_a.webp') center/contain no-repeat;
     position: absolute;
     right: 0;
+    margin-right: 3%;
     z-index: 2;
 }
 
 .arrow.left {
     left: 0;
     transform: rotateY(180deg);
+    margin-left: 3%;
 }
 
-.ulCarrosel{
+.coiso{
+    position: inherit;
+}
+
+.ulCarroselDepoiment{
    z-index: 1 !important;
 }
 
-.liCarrosel{
-    margin-inline: 0.5% !important; 
+.liCarroselDepoiment{
+    margin-inline: 0.1% !important; 
 } 
 
 .depoiments {
@@ -40,7 +46,8 @@
     display: flex;
     align-items: center;
     flex-flow: column;
-    min-width: 288px;
+    width: 100%;
+    min-height: 460px;
     background: #FFFFFF url('../../images/oitavaTela_img2.webp') top 4% right 8%/auto 8% no-repeat;
     padding: 1rem;
     border-radius: 1rem;
@@ -73,6 +80,13 @@
     & p {
         width: 100%;
         margin-top: 1rem;
+    } & div{
+        /* width: 100%; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
     }
     
 }

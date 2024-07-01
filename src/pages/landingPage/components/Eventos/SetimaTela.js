@@ -1,11 +1,10 @@
 import './SetimaTela.css';
 import logo from '../../images/setimaTela_img.webp';
-import { useTranslation } from 'react-i18next';
-import "../../../../i18n";
+import useControleDeTraducao from '../../../../useControleDeTraducao';
 
 export default function SetimaTela() {
   
-  const {t, i18n } = useTranslation();
+  const { t, tComControleDeLinha } = useControleDeTraducao();
 
   return(
     <div className='frames' id="setimaTela">
@@ -14,7 +13,7 @@ export default function SetimaTela() {
       </figure>
       <article>
         <h2>{t('moreThanInclusion')} <span className='destaqRoxo'>{t('integration')}</span></h2>
-        <p>{t('wantMore')} Buildar {t('hasSystem')} <span className='destaqAzul'>{t('events')}</span> {t('and')} <span className='destaqAzul'>{t('workshops')}</span> {t('forExchange')}.</p>
+        <p>{t('wantMore')} Buildar {t('hasSystem')} <span className='destaqAzul'>{t('events')}</span> {t('and')} <span className='destaqAzul'>{t('workshops')}</span> {tComControleDeLinha(t('forExchange'))}.</p>
       </article>
     </div>
   );
