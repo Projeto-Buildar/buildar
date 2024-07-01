@@ -1,8 +1,6 @@
 import '../Perfil.css';
 import Skin from './Skin';
-import skinPic from '../images/skin.png';
-import skinPic1 from '../images/skin2.png';
-import skinPic2 from '../images/skin3.png';
+
 import Avatar1 from '../../landingPage/images/Rogerio_avatar.png';
 import Avatar2 from '../../landingPage/images/Malu_avatar.png';
 import Avatar3 from '../../landingPage/images/Tobias_avatar.png';

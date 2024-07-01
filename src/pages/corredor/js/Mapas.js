@@ -7,7 +7,9 @@ import demoRoomLower from "../images/mapas/mapaExtenso_lower.png";
 import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 
 import npc1 from "../images/personagens/pessoa/npc1.png";
-import playerV2 from "../images/personagens/pessoa/img.png";
+import playerV2 from "../images/personagens/pessoa/personagem_Rogerio.png";
+import playerV3 from "../images/personagens/pessoa/personagem_Rogerio.png";
+import playerV4 from "../images/personagens/pessoa/personagem_Malu.png";
 
 import Andrei from "../images/personagens/pessoa/Andrei.png";
 import Aurora from "../images/personagens/pessoa/Aurora.png";
@@ -15,7 +17,6 @@ import Debora from "../images/personagens/pessoa/Debora.png";
 import Drii from "../images/personagens/pessoa/Drii.png";
 import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
-import Malu from "../images/personagens/pessoa/personagem_Malu.png"
 
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
