@@ -36,7 +36,7 @@ export default function HeaderHome() {
     },
     {
       texto: '≡',
-      linkado: "/home",
+      linkado:'/home',
       icon: '≡'
     }
   ]

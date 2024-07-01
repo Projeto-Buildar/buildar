@@ -13,7 +13,7 @@ export default function BtnsNav(props) {
 
     useEffect(() => {
         const checkScreenSize = () => {
-            const newSize = window.innerWidth > 700 && window.innerWidth < 1000;
+            const newSize = window.innerWidth > 700 && window.innerWidth <= 1000;
             setIsMediumScreen(newSize);
             localStorage.setItem('isMediumScreen', JSON.stringify(newSize));
         };
