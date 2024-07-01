@@ -19,7 +19,7 @@ export default function Conexoes() {
                 <img src={forma} alt="forma" />
                 <h2>{t("liveStream")}</h2>
             </div>
-            <HeaderHome className='pesquisa'/>
+            <HeaderHome/>
             <h3 id="historico">{t("volunteerHistory")}</h3>
 
             <div className="Container-conexoes">
