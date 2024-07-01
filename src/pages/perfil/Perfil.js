@@ -35,7 +35,7 @@ export default function Perfil() {
         <div>
             <HeaderHome />
             <main id="perfil">
-                <div className="titleHead"></div>
+                <section className="titleHead"></section>
                 <section id="userCard">
                     <div className="profileImage">
                         <div className="star"></div>
@@ -79,8 +79,8 @@ export default function Perfil() {
                     </div>
                 </section>
                 <div className="showcaseTop">
-                    <div className="leftBackground"></div>
                     <h2>{t("showCase")}</h2>
+                    <div className="leftBackground"></div>
                     <div className="rightBackground"></div>
                 </div>
                 <section id="showcase">
@@ -124,7 +124,7 @@ export default function Perfil() {
                         <ConquistasDetails />
                     </section>
                 </Modal>
-                
+
             </main>
             <Footer />
         </div>

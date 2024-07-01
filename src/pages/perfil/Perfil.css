@@ -21,21 +21,21 @@
     justify-content: space-between;
     width: 80vw;
     margin-top: 8vh;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .star {
     align-self: flex-start;
     background: url('./images/star.png') center/contain no-repeat;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 10%;
+    height: 10%;
     position: absolute;
-    margin: -2rem 0 0 -1.5rem;
+    margin: -2% 0 0 -4%;
 }
 
 .jobPlan {
     background: #FF486D;
-    width: 60%;
+    width: 90%;
     padding: 1.5rem 3rem;
     border-radius: 1rem;
     text-align: center;
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     flex-flow: column;
-    width: 30%;
+    width: 15vw;
 }
 
 .profilePic, .topCard {
@@ -57,13 +57,12 @@
 }
 
 .profilePic {
-    width: 15vw;
+    width: 100%;
     padding-bottom: 0;
 }
 
 .topCard {
-    width: 100%;
-    min-width: 60vw;
+    width: 56vw;
     padding-inline: 2rem;
 }
 
@@ -130,7 +129,7 @@
 }
 
 .userButtons {
-    gap: 1rem;
+    gap: 1vw;
     p, div {
         display: flex;
         align-items: center;
@@ -164,6 +163,7 @@
         border-radius: 1rem;
         margin-bottom: -1rem;
         position: absolute;
+        z-index: 1;
     }
 }
 
