@@ -220,6 +220,12 @@
     }
 }
 
+.selecionado > img {
+    outline: #701DCD 10px solid;
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
 .achievModal-overlay {
     display: flex;
     justify-content: center;
@@ -269,6 +275,10 @@
         }
     }
 }
+
+/* .aaaaa{
+    background-color: #701DCD;
+} */
 
 .topModal, .topModal div {
     display: flex;

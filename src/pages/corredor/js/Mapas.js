@@ -8,8 +8,8 @@ import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 
 import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/personagem_Rogerio.png";
-import playerV3 from "../images/personagens/pessoa/personagem_Rogerio.png";
-import playerV4 from "../images/personagens/pessoa/personagem_Malu.png";
+import playerV3 from "../images/personagens/pessoa/personagem_Malu.png";
+import playerV4 from "../images/personagens/pessoa/personagem_Tobias.png";
 
 import Andrei from "../images/personagens/pessoa/Andrei.png";
 import Aurora from "../images/personagens/pessoa/Aurora.png";
@@ -19,6 +19,16 @@ import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
 
 import useControleDeTraducao from '../../../useControleDeTraducao';
+
+// Mapeia os avatares ao ID
+const avatarMap = {
+    'avatar1': playerV2,
+    'avatar2': playerV3,
+    'avatar3': playerV4
+};
+
+const selectedSkinId = localStorage.getItem('selectedSkin');
+const selectedAvatar = avatarMap[selectedSkinId] || playerV2; 
 
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
@@ -137,7 +147,7 @@ const Mapas = {
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
                 x: utils.withGrid(8), // Posição X inicial do herói em grade
                 y: utils.withGrid(6), // Posição Y inicial do herói em grade
-                src: playerV2, // Caminho para a imagem do herói
+                src: selectedAvatar, // Caminho para a imagem do herói
                 numeroDeFrames: 8, // Número de frames da animação do herói
                 width: 24, // Largura do sprite do herói
                 colunaY: { // Mapeamento das colunas de sprites por direção
