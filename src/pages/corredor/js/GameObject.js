@@ -28,6 +28,8 @@ class GameObject {
 
         this.talking = config.talking || [];
         this.nome = config.nome;
+        this.playOnce = config.playOnce || false; // Adiciona uma flag para animação única
+        this.hasPlayed = false; // Flag para saber se a animação já foi reproduzida
     }
 
     // Método para montar o objeto no mapa
@@ -46,6 +48,13 @@ class GameObject {
     update() {
         // Este método pode ser usado para atualizar o estado do objeto
         // Exemplo: atualização da posição, verificação de colisões, etc.
+        if (this.playOnce && !this.hasPlayed) {
+            this.sprite.setAnimation('walk-down'); // Define a animação para abrir o elevador
+            this.sprite.updateAnimationProgress(); // Atualiza o progresso da animação
+            if (this.sprite.currentAnimationFrame === this.sprite.animations[this.sprite.currentAnimation].length - 1) {
+                this.hasPlayed = true; // Marca que a animação foi reproduzida
+            }
+        }
     }
 
     async doBehaviorEvent(map, recebeTextoMensagem) {

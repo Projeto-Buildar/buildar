@@ -18,6 +18,8 @@ import Drii from "../images/personagens/pessoa/Drii.png";
 import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
 
+import Elevador from '../images/mapas/elevador.png'
+
 import useControleDeTraducao from '../../../useControleDeTraducao';
 
 // Mapeia os avatares ao ID
@@ -189,11 +191,22 @@ const Mapas = {
                 },
                 distanciaX: 4, // Distância em pixels entre os sprites na animação
                 animationFrameLimit: 6 // Limite de frames da animação
-            })
+            }),
+            elevador: new GameObject({
+                x: utils.withGrid(8),
+                y: utils.withGrid(5),
+                src: Elevador,
+                numeroDeFrames: 8, // Número de frames da animação do herói
+                width: 32, // Largura do sprite do herói
+                height: 32,
+                animationFrameLimit: 8,
+                playOnce: true, // Define que a animação deve tocar uma única vez
+            }),
         },
 
         // você consegue definir coordenadas no mapa e eventos ao qual o player consegue interagir
         interacoes: {
+            
             porta1: new GameObject({
                 x: utils.withGrid(18),
                 y: utils.withGrid(5),
