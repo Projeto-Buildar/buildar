@@ -56,6 +56,11 @@
     }
 }
 
+#quizGame span{
+    background: url('./images/Negocio legal.gif') center /93% no-repeat;
+    background-color: #ffff;
+} 
+
 .onDoing {
     background: #F0EDF2;
     & span {

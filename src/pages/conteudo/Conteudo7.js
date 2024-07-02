@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import { ItemContext } from './Itens';
 import Vivi from './imagem/vivi.png';
 import Tela4 from './imagem/Tela4.jpg';
-import DroppableArea from './DroppableArea';
 import './Conteudo7.css';
+import email from './imagem/Email.png';
+import reniao from './imagem/Reunião-removebg-preview.png';
+import reniao2 from './imagem/equipe-removebg-preview.png';
+import organizaçao from './imagem/Organizaçao.png';
+import almoço from './imagem/Almoço.png'
+import DroppableArea from './DroppableArea';
 
 
 
@@ -54,6 +59,8 @@ export default function Conteudo() {
 
       <div className='drop3_7'>
 
+        <div className='area_drop'>
+
         <div className='drop_final7'><DroppableArea id="8" className="droppable-area-8" />
           <p className='horarios' style={{ textAlign: "center" }}>9h</p>
         </div>
@@ -77,9 +84,47 @@ export default function Conteudo() {
           <p className='horarios7' style={{ textAlign: "center" }}>15h</p>
         </div>
 
+        </div>
+
         <div className='rightAnswer'>
           <h3>Você foi bem! Aqui um jeito otimizado para usar de insipiração</h3>
-          <div></div>
+          <div className='buildar_test'>
+
+          <div className='itens_buildar'>
+          <img src={organizaçao} alt="perfil" className='img_buildar' style={{width: "150px", height: "120px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>9h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={email} alt="perfil" className='img_buildar' style={{width: "150px", height: "120px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>10h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={email} alt="perfil" className='img_buildar' style={{width: "150px", height: "120px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>11h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={almoço} alt="perfil" className='img_buildar' style={{width: "150px", height: "120px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={almoço} alt="perfil" className='img_buildar' style={{width: "150px", height: "120px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>13h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={reniao} alt="perfil" className='reuniao' style={{width: "160px", height: "150px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>14h</p>
+          </div>
+
+          <div className='itens_buildar'>
+          <img src={reniao} alt="perfil" className='reuniao' style={{width: "160px", height: "150px"}} /> 
+          <p className='horarios7' style={{ textAlign: "center" }}>15h</p>
+          </div>
+          </div>
         </div>
       </div>
     </div>

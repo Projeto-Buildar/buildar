@@ -21,21 +21,21 @@ function Quiz() {
       questionText: t('procrastinationGoodStrategy'),
       answerOptions: [
         { answerText: `${t("true")}`, isCorrect: false, color: '#9B33FD' },
-        { answerText: t('false'), isCorrect: true, color: '#FFB412' },
+        { answerText: t('false'), isCorrect: true, color: '#FF486D' },
       ],
     },
     {
       questionText: t('planDayNightBefore'),
       answerOptions: [
-        { answerText: t('true'), isCorrect: true, color: '#FF486D' },
-        { answerText: t('false'), isCorrect: false, color: '#C6EC3E' },
+        { answerText: t('true'), isCorrect: true, color: '#9B33FD' },
+        { answerText: t('false'), isCorrect: false, color: '#FF486D' },
       ],
     },
     // ...
     {
       questionText: t('multitaskingIncreasesEfficiency'),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#FFB412' },
+        { answerText: t('false'), isCorrect: true, color: '#FF486D' },
         { answerText: t('true'), isCorrect: false, color: '#9B33FD' },
       ],
     },
@@ -43,7 +43,7 @@ function Quiz() {
       questionText: t('settingRealisticDeadlines'),
       answerOptions: [
         { answerText: t('true'), isCorrect: true, color: '#FF486D' },
-        { answerText: t('false'), isCorrect: false, color: '#C6EC3E' },
+        { answerText: t('false'), isCorrect: false, color: '#FFB412' },
       ],
     },
     {
@@ -56,7 +56,7 @@ function Quiz() {
     {
       questionText: t('workingMoreHours'),
       answerOptions: [
-        { answerText: t('true'), isCorrect: false, color: '#C6EC3E' },
+        { answerText: t('true'), isCorrect: false, color: '#FFB412' },
         { answerText: t('false'), isCorrect: true, color: '#FF486D' },
       ],
     },
@@ -70,7 +70,7 @@ function Quiz() {
     {
       questionText: t('empathyImportantInLeadership'),
       answerOptions: [
-        { answerText: t('false'), isCorrect: false, color: '#C6EC3E' },
+        { answerText: t('false'), isCorrect: false, color: '#FFB412' },
         { answerText: t('true'), isCorrect: true, color: '#FF486D' },
       ],
     },
@@ -84,7 +84,7 @@ function Quiz() {
     {
       questionText: t('dailyReadingBeneficial'),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#C6EC3E' },
+        { answerText: t('false'), isCorrect: true, color: '#FFB412' },
         { answerText: t('true'), isCorrect: false, color: '#FF486D' },
       ],
     },

@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Conteudo6.css';
 import Vivi from './imagem/vivi.png';
 import DroppableArea from './DroppableArea';
-import { ItemProvider } from './Itens'; // Importa o ItemProvider do contexto
+import { ItemProvider } from './Itens'; 
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useEffect } from 'react';
@@ -24,7 +24,7 @@ export default function Conteudo() {
   //   }, []);
 
   return (
-    <ItemProvider> {/* Envolve o conteúdo com o ItemProvider */}
+    <ItemProvider> {}
       <DndProvider backend={HTML5Backend}>
         <div className='container_conteudo6'>
 

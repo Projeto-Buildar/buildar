@@ -7,7 +7,7 @@ const questions = [
     questionText: 'Qual é a definição de gestão de tempo?',
     answerOptions: [
       { answerText: 'A capacidade de realizar várias tarefas ao mesmo tempo.', isCorrect: false, color: '#9B33FD' },
-      { answerText: 'A prática de delegar todas as suas tarefas a outras pessoas.', isCorrect: false, color: '#C6EC3E' },
+      { answerText: 'A prática de delegar todas as suas tarefas a outras pessoas.', isCorrect: false, color: '#58D2FF' },
       { answerText: 'A habilidade de planejar e controlar como as horas do seu dia são gastas.', isCorrect: true, color: '#FFB412' },
       { answerText: 'A capacidade de trabalhar sem pausas', isCorrect: false, color: '#FF486D' },
     ],
@@ -16,7 +16,7 @@ const questions = [
     questionText: 'Qual destas ferramentas é mais comumente usada para gestão de tempo?',
     answerOptions: [
       { answerText: 'Calculadora', isCorrect: false, color: '#9B33FD' },
-      { answerText: 'Agenda/Calendário', isCorrect: true, color: '#C6EC3E' },
+      { answerText: 'Agenda/Calendário', isCorrect: true, color: '#58D2FF' },
       { answerText: 'Redes Sociais', isCorrect: false, color: '#FFB412' },
       { answerText: 'Editor de texto', isCorrect: false, color: '#FF486D' },
     ],
@@ -25,7 +25,7 @@ const questions = [
     questionText: 'Qual das seguintes estratégias pode ajudar na priorização de tarefas?',
     answerOptions: [
       { answerText: 'Usar a Matriz de Eisenhower.', isCorrect: true, color: '#9B33FD' },
-      { answerText: 'Fazer todas as tarefas mais fáceis primeiro.', isCorrect: false, color: '#C6EC3E' },
+      { answerText: 'Fazer todas as tarefas mais fáceis primeiro.', isCorrect: false, color: '#58D2FF' },
       { answerText: 'Evitar fazer uma lista de tarefas.', isCorrect: false, color: '#FFB412' },
       { answerText: 'Trabalhar apenas nas tarefas que gosta.', isCorrect: false, color: '#FF486D' },
     ],
@@ -34,7 +34,7 @@ const questions = [
     questionText: 'O que significa a técnica Pomodoro?',
     answerOptions: [
       { answerText: 'Trabalhar por 2 horas e depois fazer uma pausa de 30 minutos.', isCorrect: false, color: '#9B33FD' },
-      { answerText: 'Trabalhar apenas pela manhã e descansar à tarde.', isCorrect: false, color: '#C6EC3E' },
+      { answerText: 'Trabalhar apenas pela manhã e descansar à tarde.', isCorrect: false, color: '#58D2FF' },
       { answerText: 'Trabalhar por 25 minutos e depois fazer uma pausa de 5 minutos.', isCorrect: true, color: '#FFB412' },
       { answerText: 'O que significa a técnica Pomodoro?', isCorrect: false, color: '#FF486D' },
     ],
@@ -43,7 +43,7 @@ const questions = [
     questionText: 'Qual é o principal benefício de delegar tarefas?',
     answerOptions: [
       { answerText: 'Aumentar o controle sobre todas as atividades', isCorrect: false, color: '#9B33FD' },
-      { answerText: 'Diminuir a carga de trabalho e aumentar a eficiência.', isCorrect: true, color: '#C6EC3E' },
+      { answerText: 'Diminuir a carga de trabalho e aumentar a eficiência.', isCorrect: true, color: '#58D2FF' },
       { answerText: 'Ter mais tempo para procrastinar.', isCorrect: false, color: '#FFB412' },
       { answerText: 'Evitar o trabalho em equipe.', isCorrect: false, color: '#FF486D' },
     ],
