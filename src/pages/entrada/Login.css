@@ -212,11 +212,11 @@
     #login header {
         width: auto;
     }
-
+/* 
     #login header .logo {
         width: 25%;
         height: auto;
-    }
+    } */
     .caixa-direita{
         max-width: 300px;
         min-width: 20tmj0px;
@@ -298,7 +298,7 @@
         width: 100%;
         /* Ajustar a largura do botão submit para ocupar toda a tela */
     }
-
+/* 
     #login header {
         width: 100%;
     }
@@ -306,5 +306,5 @@
     #login header .logo {
         width: 35%;
 
-    }
+    } */
 }

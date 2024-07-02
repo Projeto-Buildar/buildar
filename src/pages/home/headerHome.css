@@ -15,10 +15,6 @@
     min-width: 950px;
 }
 
-#headerHome .logo {
-    height: 4rem;
-}
-
 .btnsNav{   
     align-self: flex-end;
     position: relative;
