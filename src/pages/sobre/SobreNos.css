@@ -1,3 +1,126 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+#headerHome {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 12vh;
+    background: #F0EDF2;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#headerHome .logo {
+    height: 4rem;
+}
+
+#headerHome nav {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ajuste para garantir 100% da largura */
+    max-width: 100vw; /* Ajuste para garantir 100% da largura */
+}
+
+.btnsNav {
+    align-self: flex-end;
+    position: relative;
+    display: inline-block;
+}
+
+.btnContainer {
+    background-color: #D9D9D9;
+    min-width: 6rem;
+    width: 7vw;
+    max-width: 120px;
+    padding-inline: 20%;
+    padding-top: 1.25rem;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btnContainer.active {
+    background-color: var(--color-primaria);
+    color: #FFFFFF;
+    padding-bottom: 7%;
+    transform: translateY(5px);
+}
+
+.after-element {
+    position: absolute;
+    background-color: #9B33FD;
+    width: calc(100% + 600px);
+    height: 30px;
+    top: 100%;
+    right: 0;
+    transform: translateX(15%);
+    z-index: -2;
+    border-radius: 0 0 2.5rem 2.5rem;
+    cursor: default;
+}
+
+.btnsNav:last-child {
+    display: none;
+}
+
+.icon {
+    font: 900 1.5rem 'Material Icons';
+}
+
+/* Media Query para larguras menores */
+
+@media (max-width: 320px) {
+    #headerHome nav {
+        width: 100%; /* Garanta que o menu ocupe toda a largura */
+    }
+
+    .btnsNav {
+        margin-left: 0; /* Remova qualquer margem */
+    }
+
+    .btnContainer {
+        width: auto; /* Ajuste a largura automaticamente */
+        padding: 1rem;
+        font-size: 0.8rem; /* Reduza o tamanho da fonte para caber melhor */
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+    #headerHome nav {
+        min-width: 600px;
+    }
+    
+    .btnsNav {
+        margin-left: -30vw;
+    }
+    
+    .btnContainer {
+        min-width: 1rem;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #headerHome nav {
+        min-width: 0;
+    }
+
+    .btnsNav:last-child {
+        display: inline-block;
+    }
+
+    .btnsNav:not(.btnsNav:last-child) {
+        display: none;
+    }
+
+    .btnContainer {
+        min-width: 3rem;
+        padding-top: 1rem;
+        font: 900 2rem 'Passion One';
+    }
+}
+
 .SobreNos {
     background-color: #58D2FF;
     padding: 40px 20px;
@@ -157,7 +280,10 @@
     margin-top: 20px;
     border-radius: 10px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 .Goals h2 {
@@ -198,8 +324,17 @@
     padding-right: 10%;
 }
 
+.text-goals h2 {
+    font-size: 1.7rem;
+}
+
+.text-goals p {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 800px) {
     .goal-items {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -294,7 +429,6 @@
 
 .team-member {
     width: 247.2px;
-    /* height: 266.53px; */
     background-color: #FFF;
     padding: 20px;
     border-radius: 10px;
@@ -303,7 +437,6 @@
     margin: 10px;
     text-align: center;
     flex-direction: column;
-    
 }
 
 .team-member img {
@@ -313,9 +446,6 @@
     border: 20px solid #9B33FD; 
     border-radius: 16px;
 }
-
-
-
 
 .team-member p strong {
     display: block;
@@ -332,4 +462,3 @@
         width: calc(100% - 20px);
     }
 }
-
