@@ -8,8 +8,8 @@ import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 
 import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/personagem_Rogerio.png";
-import playerV3 from "../images/personagens/pessoa/personagem_Rogerio.png";
-import playerV4 from "../images/personagens/pessoa/personagem_Malu.png";
+import playerV3 from "../images/personagens/pessoa/personagem_Malu.png";
+import playerV4 from "../images/personagens/pessoa/personagem_Tobias.png";
 
 import Andrei from "../images/personagens/pessoa/Andrei.png";
 import Aurora from "../images/personagens/pessoa/Aurora.png";
@@ -18,7 +18,19 @@ import Drii from "../images/personagens/pessoa/Drii.png";
 import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
 
+import Elevador from '../images/mapas/elevador.png'
+
 import useControleDeTraducao from '../../../useControleDeTraducao';
+
+// Mapeia os avatares ao ID
+const avatarMap = {
+    'avatar1': playerV2,
+    'avatar2': playerV3,
+    'avatar3': playerV4
+};
+
+const selectedSkinId = localStorage.getItem('selectedSkin');
+const selectedAvatar = avatarMap[selectedSkinId] || playerV2; 
 
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
@@ -38,10 +50,10 @@ const Mapas = {
                 nome: 'Debora',
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
-                    { type: "stand", direction: "left", time: 800 },
                     { type: "stand", direction: "up", time: 800 },
-                    { type: "stand", direction: "right", time: 1200 },
-                    { type: "stand", direction: "up", time: 300 },
+                    { type: "stand", direction: "right", time: 10000 },
+                    // { type: "stand", direction: "up", time: 300 },
+                    // { type: "stand", direction: "left", time: 800 },
                 ],
                 talking: [
                     {
@@ -67,7 +79,7 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "Drii" },
+                            { type: "textMessage", text: "DriiDialogo1", faceHero: "Drii" },
                         ]
                     }
                 ]
@@ -101,26 +113,57 @@ const Mapas = {
                 x: utils.withGrid(4),
                 y: utils.withGrid(6),
                 src: Andrei,
+                nome: 'Andrei',
                 behaviorLoop: [
                     { type: "stand", direction: "down", time: 800},
                   ],
+                  talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "AndreiDialogo1", faceHero: "Andrei" },
+                        ]
+                    }
+                ]
             }),
             Aurora: new Person({
                 x: utils.withGrid(22),
                 y: utils.withGrid(9),
                 src: Aurora,
+                nome: 'Aurora',
                 behaviorLoop: [
-                    { type: "stand", direction: "left", time: 800},
-                    { type: "stand", direction: "down", time: 800},
+                    { type: "stand", direction: "left", time: 10800},
+                    { type: "stand", direction: "up", time: 800},
                 ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "AuroraDialogo1" },
+                            { type: "textMessage", text: "AuroraDialogo2" },
+                        ]
+                    }
+                ]
             }),
             Jailson: new Person({
                 x: utils.withGrid(33),
                 y: utils.withGrid(10),
                 src: Jaja,
+                nome: 'Jailson',
                 behaviorLoop: [
                     { type: "stand", direction: "left", time: 800},
                 ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "JailsonDialogo1", faceHero: "Jailson" },
+                            { type: "textMessage", text: "JailsonDialogo2", faceHero: "Jailson" },
+                            { type: "textMessage", text: "JailsonDialogo3", faceHero: "Jailson" },
+
+                        ]
+                    }
+                ]
             }),
             // Drii: new Person({
             //     x: utils.withGrid(31),
@@ -137,7 +180,7 @@ const Mapas = {
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
                 x: utils.withGrid(8), // Posição X inicial do herói em grade
                 y: utils.withGrid(6), // Posição Y inicial do herói em grade
-                src: playerV2, // Caminho para a imagem do herói
+                src: selectedAvatar, // Caminho para a imagem do herói
                 numeroDeFrames: 8, // Número de frames da animação do herói
                 width: 24, // Largura do sprite do herói
                 colunaY: { // Mapeamento das colunas de sprites por direção
@@ -148,11 +191,22 @@ const Mapas = {
                 },
                 distanciaX: 4, // Distância em pixels entre os sprites na animação
                 animationFrameLimit: 6 // Limite de frames da animação
-            })
+            }),
+            elevador: new GameObject({
+                x: utils.withGrid(8),
+                y: utils.withGrid(5),
+                src: Elevador,
+                numeroDeFrames: 8, // Número de frames da animação do herói
+                width: 32, // Largura do sprite do herói
+                height: 32,
+                animationFrameLimit: 8,
+                playOnce: true, // Define que a animação deve tocar uma única vez
+            }),
         },
 
         // você consegue definir coordenadas no mapa e eventos ao qual o player consegue interagir
         interacoes: {
+            
             porta1: new GameObject({
                 x: utils.withGrid(18),
                 y: utils.withGrid(5),
@@ -196,11 +250,12 @@ const Mapas = {
             fliperama: new GameObject({
                 x: utils.withGrid(2),
                 y: utils.withGrid(6),
+                nome: 'Game?',
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Está rodando o Famoso jogo Vivi Run"},
-                            { type: "redirecionarPagina", text: "/game_descanso"},
+                            { type: "textMessage", text: "JogoRun"},
+                            { type: "redirecionarPagina", text: "/descanso"},
 
                         ]
                     }
@@ -209,6 +264,7 @@ const Mapas = {
             bebedouro: new GameObject({
                 x: utils.withGrid(33),
                 y: utils.withGrid(8),
+                nome: "Me",
                 talking: [
                     {
                         events: [
@@ -221,10 +277,11 @@ const Mapas = {
             maquinaDeVendasEsquerda: new GameObject({
                 x: utils.withGrid(20),
                 y: utils.withGrid(6),
+                nome: "Me",
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
+                            { type: "textMessage", text: "Food"},
                         ]
                     }
                 ]
@@ -232,10 +289,11 @@ const Mapas = {
             maquinaDeVendasDireita: new GameObject({
                 x: utils.withGrid(21),
                 y: utils.withGrid(6),
+                nome: "Me",
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
+                            { type: "textMessage", text: "Food"},
                         ]
                     }
                 ]

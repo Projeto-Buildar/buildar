@@ -106,7 +106,11 @@ export default class Sprite {
 
         // Reinicia a animação se o frame atual for indefinido
         if (this.frame === undefined) {
-            this.currentAnimationFrame = 0;
+            if (this.gameObject.playOnce) {
+                this.currentAnimationFrame -= 1; // Para no último frame
+            } else {
+                this.currentAnimationFrame = 0; // Reinicia a animação
+            }
         }
     }
 

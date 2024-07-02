@@ -31,25 +31,40 @@
 
 .TextMessage_p{
   /* margin: 0; */
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   /* padding: 0; */
   -webkit-appearance: none;
   /* border: 0; */
   font-family: inherit;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* left: 10; */
-  bottom: 30%;
+  bottom: 22%;
+  position: absolute;
+  margin-top: 100px;
+}
+
+.TextMessage_button {
+  margin-left: 80%; /* Margem à esquerda de 80% do contêiner pai */
+  font-size: 10px; /* Tamanho da fonte, ajuste conforme necessário */
+  background-color: aliceblue; /* Cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 10px; /* Preenchimento interno do botão (topo/baixo, esquerda/direita) */
+  cursor: pointer; /* Mostra um cursor de ponteiro ao passar o mouse */
+  border-radius: 5px; /* Adiciona cantos arredondados */
+  color: #333; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado padrão em links */
+  display: inline-block; /* Faz o botão comportar-se como um bloco em linha */
+  transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
   position: absolute;
 }
 
-.TextMessage_button{
-  margin-left: 80%;
-  font-size: 0.5rem;
-  
+.TextMessage_button:hover {
+  background-color: aliceblue; /* Cor de fundo ao passar o mouse */
 }
 
 .nomeDialogo {
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 50px;
+  width: 500px;
 }

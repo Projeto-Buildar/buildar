@@ -113,6 +113,33 @@
     "chooseFlor": "¿A QUÉ PISO IR HOY?",
     "restGame": "SALA DE DESCANSO",
 
+
+      "termsOfUse": "Términos de Uso",
+      "lastUpdate": "Última actualización: 06/2024",
+      "acceptanceOfTerms": "Aceptación de los Términos",
+      "acceptanceOfTermsDescription": "Al acceder y utilizar nuestra plataforma, usted acepta cumplir y estar vinculado a estos Términos de Uso y todas las leyes y regulaciones aplicables. Si no está de acuerdo con alguno de estos términos, no utilice la plataforma.",
+      "descriptionOfServices": "Descripción de los Servicios",
+      "descriptionOfServicesDescription": "Nuestra plataforma ofrece herramientas y recursos para ayudar a los jóvenes a desarrollar sus habilidades blandas a través de la gamificación. Los usuarios pueden participar en actividades, juegos y desafíos diseñados para mejorar habilidades como la comunicación, el trabajo en equipo, el liderazgo, la resolución de problemas, entre otros.",
+      "registrationAndUserAccount": "Registro y Cuenta de Usuario",
+      "registrationAndUserAccountDescription": "Para acceder a ciertas características de la plataforma, es posible que necesite crear una cuenta. Al crear una cuenta, usted acepta proporcionar información verdadera, precisa, actual y completa sobre usted mismo según lo solicitado por el formulario de registro.",
+      "useOfPlatform": "Uso de la Plataforma",
+      "useOfPlatformDescription": "Usted acepta utilizar la plataforma sólo para los fines permitidos por (a) estos Términos de Uso y (b) cualquier ley, regulación o prácticas generalmente aceptadas en las jurisdicciones relevantes. Usted acepta no acceder (o intentar acceder) a ninguno de los Servicios por ningún medio que no sea a través de la interfaz proporcionada por la plataforma, a menos que se le haya permitido específicamente hacerlo en un acuerdo separado.",
+      "userContent": "Contenido del Usuario",
+      "userContentDescription": "Al enviar contenido a la plataforma, usted otorga a nuestra plataforma una licencia mundial, no exclusiva, libre de regalías, sublicenciable y transferible para usar, reproducir, distribuir, preparar trabajos derivados, mostrar y realizar ese contenido en conexión con la prestación de los servicios.",
+      "privacy": "Privacidad",
+      "privacyDescription": "Su privacidad es importante para nosotros. Por favor, lea nuestra Política de Privacidad para entender cómo recopilamos, utilizamos y protegemos su información personal.",
+      "modificationsToTerms": "Modificaciones a los Términos",
+      "modificationsToTermsDescription": "Nos reservamos el derecho de modificar estos Términos de Uso en cualquier momento. Los cambios serán efectivos a partir de la publicación en la plataforma. Es su responsabilidad revisar periódicamente los Términos de Uso para estar al tanto de cualquier modificación.",
+      "limitationOfLiability": "Limitación de Responsabilidad",
+      "limitationOfLiabilityDescription": "En la medida máxima permitida por la ley aplicable, en ningún caso nuestra plataforma será responsable por cualquier daño indirecto, incidental, especial, consecuente o punitivo, o cualquier pérdida de ganancias o ingresos, ya sea incurrida directa o indirectamente, o cualquier pérdida de datos, uso, buena voluntad, u otras pérdidas intangibles.",
+      "termination": "Terminación",
+      "terminationDescription": "Podemos terminar o suspender su acceso a nuestra plataforma inmediatamente, sin previo aviso o responsabilidad, por cualquier motivo, incluyendo, sin limitación, si usted viola los Términos de Uso.",
+      "generalProvisions": "Disposiciones Generales",
+      "generalProvisionsDescription": "Estos Términos de Uso constituyen el acuerdo completo entre usted y nuestra plataforma y rigen el uso de los Servicios, reemplazando cualquier acuerdo anterior entre usted y nuestra plataforma. Si alguna disposición de estos Términos de Uso se considera inválida, las demás disposiciones permanecerán en pleno vigor y efecto.",
+      "contact": "Contacto",
+      "contactDescription": "Si tiene alguna pregunta sobre estos Términos de Uso, por favor, póngase en contacto con nosotros a través del correo electrónico: suporte@buildarsoftskills.com.",
+      "platformUsageAgreement": "Al utilizar nuestra plataforma, usted acepta estos Términos de Uso. Si no está de acuerdo con alguno de los términos mencionados, por favor, no utilice nuestra plataforma.",    
+
     "liveStream": "TRANSMISIONES Y EVENTOS",
     "volunteerHistory": "Historial de transmisiones con voluntarios",
     "historic": "VER HISTORIAL COMPLETO",
@@ -270,7 +297,33 @@
     "userLilian": "Nunca he visto una idea de aprendizaje tan creativa. Buildar es la prueba de que todo lo que aprendemos puede ser divertido, fuera de lo común, y puede cambiar nuestra vida profesional y personal. ¡Lo recomiendo mucho!",
     "userLais": "La plataforma me hizo cambiar mi percepción sobre la comunicación y las relaciones personales. Tenía muchas dificultades para comunicarme, pero hoy veo que me estoy renovando todos los días, aprendiendo de una manera divertida!",
     "userGabi": "Buildar es de extrema importancia en estos días, donde tantos jóvenes, como yo, buscan desarrollar mejor sus habilidades blandas. Ha sido increíble cómo la plataforma me ha ayudado a mejorar mis habilidades de comportamiento de una manera tan ligera y divertida.",
-    "userMartinha": "La plataforma ofrece senderos claros, interactivos y gamificados, haciendo que el proceso de aprendizaje sea intuitivo y atractivo. ¡Lo recomiendo!"
+    "userMartinha": "La plataforma ofrece senderos claros, interactivos y gamificados, haciendo que el proceso de aprendizaje sea intuitivo y atractivo. ¡Lo recomiendo!",
+
+    "GabsDialogo1": "¡Estoy mejorando mi gestión del tiempo tan rápido como un Katchauuuu! (/＾▽＾)/",
+    "DeboraDialogo1": "Me encanta trabajar aquí.",
+    "DeboraDialogo2": "Hago muchas actividades todos los días.",
+    "DeboraDialogo3": "Pero a veces siento que no tengo suficiente tiempo para nada.",
+    "DeboraDialogo4": "O tal vez simplemente no estoy gestionando bien mi tiempo... (๑•́ ₃ •̀๑)",
+    "AndreiDialogo1": "Estoy gestionando bien mi tiempo, pero creo que se puede mejorar (´・v・`)",
+    "DriiDialogo1": "Disfruta la Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+    "AuroraDialogo1": "Ay pupila, creo que estoy en el mismo barco...",
+    "AuroraDialogo2": "Pero oye, cuidado con los improperios. (◕‿↼)",
+    "JailsonDialogo1": "Hola, ¿eres el nuevo pasante, verdad?",
+    "JailsonDialogo2": "¿Has oído hablar del Diálogo por casualidad?",
+    "JailsonDialogo3": "¿No? Hmm, un día de estos te lo presento. (◔‿◔)",
+
+    "Me": "Yo",
+    "Food": "Me quedo hipnotizado viendo caer los tentempiés.",
+    "Refreshing": "Refrescante",
+
+    "GestaoDeTempo1": "¡Hola, bienvenido a Buildar Corporation!",
+    "GestaoDeTempo2": "Aquí pondrás en práctica tus habilidades comportamentales.",
+    "GestaoDeTempo3": "A tu derecha, hay puertas para que entrenes tus habilidades.",
+    "GestaoDeTempo4": "Y a tu izquierda, puedes relajarte con un juego sencillo. Siéntete libre de explorar.",
+    "JogoRun": "El famoso juego Vivi Run está en marcha",
+    "Next": "Siguiente"
+
+
 
   }
   
