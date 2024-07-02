@@ -224,7 +224,7 @@ const Mapas = {
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo quando eu compro"},
+                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
                         ]
                     }
                 ]
@@ -235,7 +235,7 @@ const Mapas = {
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo quando eu compro"},
+                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
                         ]
                     }
                 ]
@@ -334,72 +334,7 @@ const Mapas = {
             [utils.asGridCoord(33, 13)]: true,
         }
     },
-    Kitchen: {
-        lowerSrc: npc1,
-        // Objetos do jogo presentes no mapa DemoRoom
-        gameObjects: {
-            // Personagem não jogador (NPC) (comentado)    
-            npcA: new Person({
-                x: utils.withGrid(21),
-                y: utils.withGrid(13),
-                src: npc1,
-                nome: 'Carlos',
-                behaviorLoop: [
-                    //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
-                    { type: "stand", direction: "left", time: 800 },
-                    { type: "stand", direction: "up", time: 800 },
-                    { type: "stand", direction: "right", time: 1200 },
-                    { type: "stand", direction: "up", time: 300 },
-                ],
-                talking: [
-                    {
-                        events: [
-                            //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "eiiiii man, some daqui", faceHero: "npcA" },
-                        ]
-                    }
-                ]
-            }),
-            npcB: new Person({
-                x: utils.withGrid(10),
-                y: utils.withGrid(13),
-                src: npc1,
-                nome: 'adriana',
-                src: npc1,
-                behaviorLoop: [
-                  { type: "walk", direction: "up"},
-                  { type: "walk", direction: "right"},
-                  { type: "walk", direction: "left"},
-                  { type: "walk", direction: "down"},
-                ],
-                talking: [
-                    {
-                        events: [
-                            //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "npcB" },
-                        ]
-                    }
-                ]
-            }),
-            // Personagem jogador (herói)
-            player: new Person({
-                isPlayerControlled: true, // Indica que o jogador controla este personagem
-                x: utils.withGrid(11), // Posição X inicial do herói em grade
-                y: utils.withGrid(9), // Posição Y inicial do herói em grade
-                src: playerV2, // Caminho para a imagem do herói
-                numeroDeFrames: 8, // Número de frames da animação do herói
-                width: 24, // Largura do sprite do herói
-                colunaY: { // Mapeamento das colunas de sprites por direção
-                    "down": 0,
-                    "up": 1,
-                    "left": 2,
-                    "right": 3
-                },
-                distanciaX: 4, // Distância em pixels entre os sprites na animação
-                animationFrameLimit: 6 // Limite de frames da animação
-            })
-        },
-    }
+   
     
 };
 
