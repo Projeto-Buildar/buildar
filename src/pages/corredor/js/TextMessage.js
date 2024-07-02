@@ -26,10 +26,10 @@ function TextMessage({ text, onComplete, nome }) {
     return (
         <div className="TextMessage">
             <div>
-                <p className='nomeDialogo'>{nome}</p>
+                <p className='nomeDialogo'>{t(nome)}</p>
                 <p className="TextMessage_p">{t(text)}</p>
             </div>
-            <button className="TextMessage_button" onClick={() => { setShow(false); onComplete(); }}>Próximo</button>
+            <button className="TextMessage_button" onClick={() => { setShow(false); onComplete(); }}>{t("Next")}</button>
         </div>
     );
 }

@@ -48,10 +48,10 @@ const Mapas = {
                 nome: 'Debora',
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
-                    { type: "stand", direction: "left", time: 800 },
                     { type: "stand", direction: "up", time: 800 },
-                    { type: "stand", direction: "right", time: 1200 },
-                    { type: "stand", direction: "up", time: 300 },
+                    { type: "stand", direction: "right", time: 10000 },
+                    // { type: "stand", direction: "up", time: 300 },
+                    // { type: "stand", direction: "left", time: 800 },
                 ],
                 talking: [
                     {
@@ -77,7 +77,7 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Aproveite a buildar", faceHero: "Drii" },
+                            { type: "textMessage", text: "DriiDialogo1", faceHero: "Drii" },
                         ]
                     }
                 ]
@@ -111,26 +111,57 @@ const Mapas = {
                 x: utils.withGrid(4),
                 y: utils.withGrid(6),
                 src: Andrei,
+                nome: 'Andrei',
                 behaviorLoop: [
                     { type: "stand", direction: "down", time: 800},
                   ],
+                  talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "AndreiDialogo1", faceHero: "Andrei" },
+                        ]
+                    }
+                ]
             }),
             Aurora: new Person({
                 x: utils.withGrid(22),
                 y: utils.withGrid(9),
                 src: Aurora,
+                nome: 'Aurora',
                 behaviorLoop: [
-                    { type: "stand", direction: "left", time: 800},
-                    { type: "stand", direction: "down", time: 800},
+                    { type: "stand", direction: "left", time: 10800},
+                    { type: "stand", direction: "up", time: 800},
                 ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "AuroraDialogo1" },
+                            { type: "textMessage", text: "AuroraDialogo2" },
+                        ]
+                    }
+                ]
             }),
             Jailson: new Person({
                 x: utils.withGrid(33),
                 y: utils.withGrid(10),
                 src: Jaja,
+                nome: 'Jailson',
                 behaviorLoop: [
                     { type: "stand", direction: "left", time: 800},
                 ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            { type: "textMessage", text: "JailsonDialogo1", faceHero: "Jailson" },
+                            { type: "textMessage", text: "JailsonDialogo2", faceHero: "Jailson" },
+                            { type: "textMessage", text: "JailsonDialogo3", faceHero: "Jailson" },
+
+                        ]
+                    }
+                ]
             }),
             // Drii: new Person({
             //     x: utils.withGrid(31),
@@ -206,11 +237,12 @@ const Mapas = {
             fliperama: new GameObject({
                 x: utils.withGrid(2),
                 y: utils.withGrid(6),
+                nome: 'Game?',
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Está rodando o Famoso jogo Vivi Run"},
-                            { type: "redirecionarPagina", text: "/game_descanso"},
+                            { type: "textMessage", text: "JogoRun"},
+                            { type: "redirecionarPagina", text: "/descanso"},
 
                         ]
                     }
@@ -219,6 +251,7 @@ const Mapas = {
             bebedouro: new GameObject({
                 x: utils.withGrid(33),
                 y: utils.withGrid(8),
+                nome: "Me",
                 talking: [
                     {
                         events: [
@@ -231,10 +264,11 @@ const Mapas = {
             maquinaDeVendasEsquerda: new GameObject({
                 x: utils.withGrid(20),
                 y: utils.withGrid(6),
+                nome: "Me",
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
+                            { type: "textMessage", text: "Food"},
                         ]
                     }
                 ]
@@ -242,10 +276,11 @@ const Mapas = {
             maquinaDeVendasDireita: new GameObject({
                 x: utils.withGrid(21),
                 y: utils.withGrid(6),
+                nome: "Me",
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Eu fico hipnotizado vendo os lanchinhos caindo."},
+                            { type: "textMessage", text: "Food"},
                         ]
                     }
                 ]
