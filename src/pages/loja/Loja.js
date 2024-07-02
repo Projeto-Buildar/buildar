@@ -11,13 +11,15 @@ import fundoroxo from './images/fundoroxo.png';
 import barra from './images/barra.png';
 import maisbuildolars from './images/maisbuildolars.png';
 import Carousel from "react-multi-carousel";
-import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
+import CustomArrow from '../landingPage/components/OitavaTela/CustomArrow';
 import listras from './images/listras.png';
-import useControleDeTraducao from '../../useControleDeTraducao';
+
+import { useTranslation } from 'react-i18next';
+import "../../i18n";
 
 
 const Loja = () => {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  const { t } = useTranslation();
   return (
     <div>
       <HeaderHome />
@@ -210,7 +212,7 @@ const Loja = () => {
               <p>
                 {t("spendLessEnergy")}
                 <br/>
-                {tComControleDeLinha(t("readyToActUnderPressure"))}
+                {t("readyToActUnderPressure")}
               </p>
             </div>
             <div className="desafio-preco">

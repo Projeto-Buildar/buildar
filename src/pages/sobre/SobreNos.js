@@ -2,13 +2,13 @@ import './SobreNos.css';
 import HeaderHome from "../home/HeaderHome";
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import mascot from './images/mascot.png';
-import targetIcon from './images/target.webp';
-import careerIcon from './images/career.webp';
-import skillsIcon from './images/skills.webp';
+import targetIcon from './images/target.png';
+import careerIcon from './images/career.png';
+import skillsIcon from './images/skills.png';
 import peopleIcon from './images/people.png'; // New icons for the new section
 import schoolIcon from './images/school.png';
 import environmentIcon from './images/environment.png';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 // Importing team images
 import teamMember1 from './images/teamMember1.png';
@@ -20,10 +20,8 @@ import teamMember6 from './images/teamMember6.png';
 import teamMember7 from './images/teamMember7.png';
 import teamMember8 from './images/teamMember8.png';
 
-import useControleDeTraducao from '../../useControleDeTraducao';
-
 const SobreNos = () => {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  const { t } = useTranslation();
   return (
     <>
       <HeaderHome />
@@ -80,7 +78,7 @@ const SobreNos = () => {
         <div className="cause-items">
           <div className="cause-item">
             <img src={peopleIcon} alt={t("lackSoftSkills")} />
-            <p>{tComControleDeLinha(t("youthMarketEntry"))}</p>
+            <p>{t("youthMarketEntry")}</p>
           </div>
           <div className="cause-item">
             <img src={schoolIcon} alt={t("educationSoftSkills")} />
@@ -106,17 +104,17 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember3} alt="Erik Paulino" />
-            <p><strong>Erik Paulino</strong><br />{tComControleDeLinha(t("scrumMasterFrontend"))}</p>
+            <p><strong>Erik Paulino</strong><br />{t("scrumMasterFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember4} alt="Eduardo Gomes" />
-            <p><strong>Eduardo Gomes</strong><br />{tComControleDeLinha(t("backendDeveloper"))}</p>
+            <p><strong>Eduardo Gomes</strong><br />{t("backendDeveloper")}</p>
           </div>
         </div>
         <div className='team-members 2'>
           <div className="team-member">
             <img src={teamMember5} alt="Isaque Barbosa" />
-            <p><strong>Isaque Barbosa</strong><br />{tComControleDeLinha(t("backendDeveloper"))}</p>
+            <p><strong>Isaque Barbosa</strong><br />{t("backendDeveloper")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember6} alt="Gretzel Penaloza" />
@@ -124,7 +122,7 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember7} alt="Gustavo Bosak" />
-            <p><strong>Gustavo Bosak</strong><br />{tComControleDeLinha(t("financeFrontend"))}</p>
+            <p><strong>Gustavo Bosak</strong><br />{t("financeFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember8} alt="Letícia Nascimento" />

@@ -17,11 +17,11 @@ import Perfil from './pages/perfil/Perfil';
 import Voluntario from './pages/inscricaoVoluntario/Voluntario';
 import FaleConosco from './pages/faleConosco/FaleConosco';
 import Ranqueada from './pages/ranqueada/Ranqueada';
-// import Conteudo from './pages/conteudo/Conteudo';
-// import Conteudo2 from './pages/conteudo/Conteudo2';
-// import Conteudo3 from './pages/conteudo/Conteudo3';
-// import Conteudo4 from './pages/conteudo/Conteudo4';
-// import Conteudo5 from './pages/conteudo/Conteudo5';
+import Conteudo from './pages/conteudo/Conteudo';
+import Conteudo2 from './pages/conteudo/Conteudo2';
+import Conteudo3 from './pages/conteudo/Conteudo3';
+import Conteudo4 from './pages/conteudo/Conteudo4';
+import Conteudo5 from './pages/conteudo/Conteudo5';
 import Conteudo6 from './pages/conteudo/Conteudo6';
 import Conteudo7 from './pages/conteudo/Conteudo7';
 import Pratica from './pages/conteudo/Pratica';
@@ -38,7 +38,7 @@ import './i18n';
 
 
 export default function App() {
-  const {i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
 
@@ -53,14 +53,6 @@ export default function App() {
   }
 
   const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-
-  const evitarLinhasViúvas = (texto) => {
-    const palavras = texto.split(' ');
-    if (palavras.length > 1) {
-      palavras[palavras.length - 2] += '\u00A0' + palavras.pop();
-    }
-    return palavras.join(' ');
-  };
 
   return (
     <div className="App">
@@ -97,7 +89,6 @@ export default function App() {
               <Route path="quiz1" element={<Quiz />} />
               <Route path="quiz2" element={<Quiz2 />} />
               <Route path='conteudos/:indice' element={<Conteudos />} />
-              <Route path='termos' element={<Termos></Termos>}/>
             </Routes>
             </ItemProvider>
             </DndProvider>

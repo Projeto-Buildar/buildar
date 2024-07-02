@@ -9,27 +9,18 @@ import calendar from '../../images/calendar.webp';
 
 import { Link } from 'react-router-dom';
 
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import { useTranslation } from 'react-i18next';
+import "../../../../i18n"
 
 export default function SextaTela() {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
-
-  const evitarLinhasViúvas = (texto) => {
-    const palavras = texto.split(' ');
-    if (palavras.length > 1) {
-      palavras[palavras.length - 2] += '\u00A0' + palavras.pop();
-    }
-    return palavras.join(' ');
-  };
-  console.log(t("Paths3"))
-  console.log(evitarLinhasViúvas(t("Paths3")))
+  const {t, i18n } = useTranslation();
   return(
     <div id="sextaTela" className='frames'>
       <div className='backgroundLeft'></div>
       <div className='backgroundMid'></div>
       <article>
         <h2>{t("CAP")}</h2>
-        <p>{t("Paths1")}<span className='destaqPreto'>{evitarLinhasViúvas(t("Paths2"))}</span>{evitarLinhasViúvas(t("Paths3"))}</p>
+        <p>{t("Paths1")}<span className='destaqBranco'>{t("Paths2")}</span>{t("Paths3")}</p>
       </article>
       <section  id="Planos">
         <div className='offers'>

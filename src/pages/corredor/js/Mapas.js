@@ -17,8 +17,6 @@ import Gabs from "../images/personagens/pessoa/gabs.png";
 import Jaja from "../images/personagens/pessoa/Jaja.png";
 import Malu from "../images/personagens/pessoa/personagem_Malu.png"
 
-import useControleDeTraducao from '../../../useControleDeTraducao';
-
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
     // Mapa DemoRoom
@@ -46,10 +44,10 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "DeboraDialogo1", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo2", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo3", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo4", faceHero: "Debora" },
+                            { type: "textMessage", text: "Eu amo trabalhar aqui", faceHero: "Debora" },
+                            { type: "textMessage", text: "Faço muitas atividades todos os dias", faceHero: "Debora" },
+                            { type: "textMessage", text: "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas", faceHero: "Debora" },
+                            { type: "textMessage", text: "Ou será que eu só não estou gerindo bem o meu tempo...", faceHero: "Debora" },
                         ]
                     }
                 ]
@@ -86,7 +84,7 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "GabsDialogo1", faceHero: "Gabs" },
+                            { type: "textMessage", text: "Eu estou desenvolvendo minha gestão de tempo tão rápido como um Katchauuuu!", faceHero: "Gabs" },
                         ]
                     }
                 ]
@@ -399,7 +397,6 @@ const Mapas = {
             })
         },
     }
-    
 };
 
 export default Mapas; // Exporta o objeto Maps como padrão

@@ -10,7 +10,7 @@
   "Access": "Uma plataforma acessível a todo mundo",
   "Free": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção 100% gratuita para quem estiver a fim.",
   "Practice": "Aqui não é só praticar",
-  "Events": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A Buildar é muito mais!",
+  "Events": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A buildar é muito mais!",
   "More": "Veja mais",
   "CAP": "Que tal se tornar um CAPoiardor?",
   "Paths1": "Caso queira uma experiência",
@@ -76,7 +76,9 @@
   "em_breve": "Em breve",
   "trainSoftSkills": "Que tal treinar soft skills virtualmente?",
   "simulationDescription": "Com simulações de ambientes profissionais, você consegue crescer! Dê um up em suas soft skills de maneira",
-  "easy": "fácil e divertida.",
+  "easy": "fácil",
+  "and": "e",
+  "fun": "divertida",
   "accessiblePlatform": "Uma plataforma acessível a todo mundo",
   "learningOption": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção",
   "free": "100% gratuita",
@@ -208,7 +210,6 @@
       "scrumMasterFrontend": "Scrum Master & Desenvolvedor Front-end",
       "backendDeveloper": "Desenvolvedor Back-end",
       "databaseAdministrator": "Administradora de Banco de Dados",
-      "financeFrontend": "Financeiro & Desenvolvedor Front-end",
         
 
     "header": "EVENTOS EXTERNOS - Pesquisa de Eventos",
@@ -245,11 +246,6 @@
   "userLilian": "Eu nunca vi uma ideia tão criativa de aprendizado. A Buildar é a prova de que tudo que aprendemos pode ser divertido, fora da caixinha e pode mudar nossa vida profissional, e pessoal. Recomendo demais!",
   "userLais": "A plataforma fez eu mudar a minha percepção sobre a comunicação e relações pessoais. Tinha muita dificuldade para me comunicar, mais hoje vejo que estou saindo renovada todos os dias, aprendendo de um jeito divertido!",
   "userGabi": "A Buildar é de extrema importância nos dias atuais, onde tantos jovens, assim como eu, buscam desenvolver melhor suas soft skills. Tem sido incrível a forma como a plataforma tem me ajudado a melhorar minhas habilidades comportamentais de forma tão leve e divertida.",
-  "userMartinha": "A plataforma oferece trilhas claras, interativas e gamificadas, tornando o processo de aprendizado intuitivo e envolvente. Recomendo!",
-  "GabsDialogo1": "Eu estou desenvolvendo minha gestão de tempo tão rápido como um Katchauuuu!",
-  "DeboraDialogo1": "Eu amo trabalhar aqui",
-  "DeboraDialogo2": "Faço muitas atividades todos os dias",
-  "DeboraDialogo3": "Mas sinto que as vezes não tenho tempo o suficiente para fazer as coisas",
-  "DeboraDialogo4": "Ou será que eu só não estou gerindo bem o meu tempo..."
+  "userMartinha": "A plataforma oferece trilhas claras, interativas e gamificadas, tornando o processo de aprendizado intuitivo e envolvente. Recomendo!"
 
 }

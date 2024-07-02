@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import EventSearch from '../conexoes/EventSearch';
 import forma from '../conexoes/images/forma branca.webp';
 import Forma2 from './images/amarelo lilas azul.webp';
 import imgFormulario from '../conexoes/images/imagem formulario.webp';
-import useControleDeTraducao from '../../useControleDeTraducao';
 
 import '../conexoes/Conexoes.css'; // Certifique-se de que este arquivo CSS está no caminho correto
 
 export default function Conexoes() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    const { t } = useTranslation();
 
     return (
         <main id='Conexoes'>
@@ -62,7 +62,7 @@ export default function Conexoes() {
             <div className="Seja-voluntario">
                 <img src={imgFormulario} alt="imgFormulario" className="imgFormulario" />
                 <div className="textoVoluntario">
-                    <h3>{tComControleDeLinha(t("becomeSpeaker"))}</h3>
+                    <h3>{t("becomeSpeaker")}</h3>
                     <p>{t("workExperiences")}</p>
                     <Link to="/inscricaoVoluntario">
                         <button>{t("becomeVolunteer")}</button>
