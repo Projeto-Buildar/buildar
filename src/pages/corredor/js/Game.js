@@ -3,6 +3,7 @@ import DirectionInput from './DirectionInput';
 import Mapas from './Mapas';
 import KeyPressListener from './KeyPressListener';
 import useControleDeTraducao from '../../../useControleDeTraducao';
+import utils from './Utils';
 
 
 export default class Game {
@@ -90,8 +91,23 @@ export default class Game {
         });
     }
 
-    startInitialCutscene() {
+    comecaJogo(){
         return this.map.startCutscene([
+            { who: "player", type: "walk", direction: "down" },
+        ], "", true);
+    }
+
+    startInitialCutscene() {
+this.map.removeWall(utils.withGrid(8), utils.withGrid(5))
+
+        return this.map.startCutscene([
+            { who: "player", type: "stand", direction: "down", time: 100 },
+            { who: "player", type: "walk", direction: "down" },
+            { who: "player", type: "walk", direction: "down" },
+            { who: "player", type: "stand", direction: "left", time: 800 },
+            { who: "player", type: "stand", direction: "right", time: 800 },
+            { who: "Drii", type: "stand", direction: "left", time: 800 },
+            { type: "textMessage", text: "Ei, Fofolete!" },
             { who: "player", type: "walk", direction: "down" },
             { who: "player", type: "stand", direction: "right" },
             { who: "Drii", type: "walk", direction: "down" },
@@ -105,10 +121,12 @@ export default class Game {
             { who: "Drii", type: "walk", direction: "right" },
             { who: "Drii", type: "walk", direction: "up" },
             { who: "Drii", type: "stand", direction: "down" },
-        ], "Adriana");
+        ], "Adriana", true);
+
     }
 
-
+paredes(){
+}
     // posicaoInicialDoPlayer(playerPosition) {
     //     const player = this.map.gameObjects.player;
     //     player.direction = "down";

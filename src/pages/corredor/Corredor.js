@@ -81,6 +81,8 @@ export default function Corredor() {
 
         }
 
+        referenciaDoGame.current.comecaJogo();
+
 
         // setPlayerLastPosition(playerPosition);
 

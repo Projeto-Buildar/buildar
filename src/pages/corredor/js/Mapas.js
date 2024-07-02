@@ -178,8 +178,8 @@ const Mapas = {
             // Personagem jogador (herói)
             player: new Person({
                 isPlayerControlled: true, // Indica que o jogador controla este personagem
-                x: utils.withGrid(8), // Posição X inicial do herói em grade
-                y: utils.withGrid(6), // Posição Y inicial do herói em grade
+                x: utils.withGrid(8),
+                y: utils.withGrid(5), // Posição Y inicial do herói em grade
                 src: selectedAvatar, // Caminho para a imagem do herói
                 numeroDeFrames: 8, // Número de frames da animação do herói
                 width: 24, // Largura do sprite do herói
@@ -190,7 +190,8 @@ const Mapas = {
                     "right": 3
                 },
                 distanciaX: 4, // Distância em pixels entre os sprites na animação
-                animationFrameLimit: 6 // Limite de frames da animação
+                animationFrameLimit: 6, // Limite de frames da animação
+                
             }),
             elevador: new GameObject({
                 x: utils.withGrid(8),

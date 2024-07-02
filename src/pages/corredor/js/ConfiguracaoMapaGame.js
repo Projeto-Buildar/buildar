@@ -77,7 +77,7 @@ export default class ConfiguracaoMapaGame {
         });
     }
 
-    async startCutscene(events, nomes) {
+    async startCutscene(events, nomes, podeParede) {
         this.isCutscenePlaying = true;
         console.log(nomes)
         // Inicia um loop de eventos assíncronos e aguarda cada um deles
@@ -97,7 +97,9 @@ export default class ConfiguracaoMapaGame {
         // console.log (this.isCutscenePlaying);
     
         Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this, this.recebeTextoMensagem))
-
+        if(podeParede){
+            this.addWall(utils.withGrid(8), utils.withGrid(5))
+        }
     }
 
     // Verifica se há uma cutscene de ação na posição à frente do herói
