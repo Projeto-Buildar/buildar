@@ -13,9 +13,6 @@ export default function Conteudo() {
   return (
     <div>
       
-        
-        
-      
       <img src={Vivi} alt="Capi Professor" className="capi" />
       <div className="message-container">
         <div className="message-box">

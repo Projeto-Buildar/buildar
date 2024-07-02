@@ -4,7 +4,7 @@
   }
   
 .Container{
-    background-image: url("/src/pages/conteudo/imagem/Página\ da\ prática\ gestão\ do\ tempo.png");
+    /* background-image: url("/src/pages/conteudo/imagem/Página\ da\ prática\ gestão\ do\ tempo.png"); */
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -31,7 +31,7 @@
 }
 
 .message-box2{
-    background-color: #F5F5F5;
+    background-color: #58D2FF;
     display: flex;
     align-items: center;
     position: absolute;
@@ -115,7 +115,35 @@
 .imgPlanilha{
     position: absolute;
     bottom: 15px;
-    left: 500px;
-    width: 500px;
-    height: 600px;
+    left: 50%;
+    width: 23%;
+}
+
+.classebg1{
+    background-image: url('./imagem/bgPlanilha.png');
+    background-size: auto;
+    background-position: center;
+
+}
+
+.classebg2{
+    background-image: url('./imagem/bgGestaoDeTempo.png');
+    background-size: 60%;
+    background-position: center;
+
+}
+
+.classebg3{
+    background-image: url('./imagem/bgEscritorio.png');
+    background-size: 50%;
+    background-position: center;
+
+}
+
+.classebg4{
+    background-image: url('./imagem/bgLugar.png');
+    background-size: contain;
+    background-color: #E9D7C9;
+    background-position: center;
+
 }

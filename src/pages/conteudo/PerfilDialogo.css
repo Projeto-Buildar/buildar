@@ -1,5 +1,5 @@
 .escolha {
-    background-color: #F5F5F5;
+    background-color: #58D2FF;
     height: 150px;
     width: 0;
     display: flex;
@@ -8,9 +8,9 @@
     left: 180px;
     bottom: 40px;
     margin-left: 17px;
-    border-radius: 23px 23px 23px 23px;
+    border-radius: 0px 0px 60px 0px;
     flex-direction: column;
-    border: #000 3px solid;
+    border: #000 4px solid;
     animation: expand 1s forwards;
     overflow: hidden;
     animation-delay: 1.8s; 
