@@ -252,8 +252,10 @@
         padding: 2rem;
         border-radius: 0 3rem 0 0;
     }
+    
     & ul {
         display: flex !important;
+        /* flex-direction: row !important; */
         flex-flow: column;
         height: 60vh;
         gap: 1rem;
@@ -273,12 +275,11 @@
             padding: 1.5rem;
             border-radius: 1rem;
         }
+        & div {
+            width: 85%
+        }
     }
 }
-
-/* .aaaaa{
-    background-color: #701DCD;
-} */
 
 .topModal, .topModal div {
     display: flex;
