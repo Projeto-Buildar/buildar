@@ -11,16 +11,15 @@ import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
 import closeButton from './images/closeButton.png';
 
-
-
 import { useState } from "react";
-import { useTranslation } from 'react-i18next';
-import "../../i18n";
+
+import useControleDeTraducao from "../../useControleDeTraducao";
+
 import Modal from "react-modal";
 Modal.setAppElement('#root');
 
 export default function Perfil() {
-    const { t, i18n } = useTranslation();
+    const { t, tComControleDeLinha } = useControleDeTraducao();
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {

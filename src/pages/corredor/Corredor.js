@@ -23,6 +23,7 @@ export default function Corredor() {
     // Armazena um array de mensagens que serão ditas por npcs ou interatividades com o cenário
     const [mensagens, setMensagens] = useState([]);
 
+    const [nomeDialogo, setNomeDialogo] = useState("");
 
     const [hasInitialCutscenePlayed, setHasInitialCutscenePlayed] = useState(
         localStorage.getItem('hasInitialCutscenePlayed') === 'true'
@@ -36,8 +37,9 @@ export default function Corredor() {
     OBS: ele segue o caminho: Inicializar -> Game -> ConfiguracaoMapaGame -> OverworldEvent
     é utilizado na função textMessage no OverworldEvent quando o Init de evento é incializado, e retorna uma função resolve/callback,
     que só acontece quando cada textMessage é finalizado */
-    function recebeTextoMensagem(text, callBack) {
+    function recebeTextoMensagem(text, callBack, nome) {
         setMensagens((prevMessages) => [...prevMessages, { text: text, callBack: callBack }]);
+        setNomeDialogo(nome);
     }
 
     function handleComplete(index) {
@@ -130,7 +132,7 @@ export default function Corredor() {
                 <canvas className="game-canvas" width="496" height="192"></canvas>
 
                 {mensagens.map((message, index) => (
-                    <TextMessage key={index} text={message.text} onComplete={() => handleComplete(index)} />
+                    <TextMessage key={index} text={message.text} nome={nomeDialogo} onComplete={() => handleComplete(index)} />
                 ))}
 
             </div>

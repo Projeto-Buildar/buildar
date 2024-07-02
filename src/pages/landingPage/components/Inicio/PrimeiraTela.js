@@ -1,18 +1,16 @@
 import './PrimeiraTela.css';
 import image from '../../images/primeiraTela_img.webp';
 import { Outlet, Link } from "react-router-dom";
-
-import { useTranslation } from 'react-i18next';
-import "../../../../i18n"
+import useControleDeTraducao from '../../../../useControleDeTraducao';
 
 export default function PrimeiraTela() {
-  const { t, i18n } = useTranslation();
+  const { t, tComControleDeLinha } = useControleDeTraducao();
   
   return (
     <div className='frames' id="primeiraTela">
       <div className='backgroundLeft'></div>
       <article>
-        <h1>{t("Guide")}</h1>
+        <h1>{tComControleDeLinha(t("Guide"))}</h1>
         <div className='textBar'></div>
         <section>
           <Link to="/cadastro">

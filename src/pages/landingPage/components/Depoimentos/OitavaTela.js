@@ -1,10 +1,9 @@
 import Depoiments from './Depoiments';
 import './OitavaTela.css';
-import { useTranslation } from 'react-i18next';
-import "../../../../i18n"
+import useControleDeTraducao from '../../../../useControleDeTraducao';
 
 export default function OitavaTela() {
-  const {t, i18n } = useTranslation();
+  const { t, tComControleDeLinha } = useControleDeTraducao();
   return(
     <div className='frames' id="oitavaTela">
       <h2>{t('whatPeopleThink')} <span className='destaqRoxo'>Buildar</span>?</h2>

@@ -2,13 +2,12 @@ import Elevador from "./Elevador"
 
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import CustomArrow from '../landingPage/components/OitavaTela/CustomArrow';
+import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
 
-import { useTranslation } from 'react-i18next';
-import "../../i18n"
+import useControleDeTraducao from "../../useControleDeTraducao";
 
 export default function Elevadores() {
-    const {t, i18n } = useTranslation();
+    const { t, tComControleDeLinha } = useControleDeTraducao();
 
     const corredores = [
         {

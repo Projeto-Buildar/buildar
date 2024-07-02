@@ -3,11 +3,10 @@ import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './AreaDescanso.css';
 import gamePic from './images/image_filler_square.png';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-
+import useControleDeTraducao from '../../useControleDeTraducao';
 
 export default function AreaDescanso() {
-    const { t } = useTranslation();
+    const { t, tComControleDeLinha } = useControleDeTraducao();
 
     return (
         <main id="areaDescanso">
@@ -21,7 +20,7 @@ export default function AreaDescanso() {
                         <span></span>
                         <div>
                             <h3>{t("runViviRun")}</h3>
-                            <p>{t("runViviDescription")}</p>
+                            <p>{tComControleDeLinha(t("runViviDescription"))}</p>
                         </div>
                     </article>
                 </a>
@@ -30,7 +29,7 @@ export default function AreaDescanso() {
                         <span></span>
                         <div>
                             <h3>{t("capQuiz")}</h3>
-                            <p>{t("capQuizDescription")}</p>
+                            <p>{tComControleDeLinha(t("capQuizDescription"))}</p>
                         </div>
                     </article>
                 </Link>
@@ -38,7 +37,7 @@ export default function AreaDescanso() {
                     <span></span>
                     <div>
                         <h3>{t("gameUnderConstruction")}</h3>
-                        <p>{t("gameUnderConstructionDescription")}</p>
+                        <p>{tComControleDeLinha(t("gameUnderConstructionDescription"))}</p>
                     </div>
                 </article>
             </section>
