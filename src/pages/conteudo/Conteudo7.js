@@ -56,26 +56,26 @@ export default function Conteudo() {
       <div className='drop3_7'>
 
         <div className='drop_final7'><DroppableArea id="8" className="droppable-area-8" />
-          <p className='horarios' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios' style={{ textAlign: "center" }}>9h</p>
         </div>
 
         <div className='drop_final7'><DroppableArea id="9" className="droppable-area-8" />
-          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios7' style={{ textAlign: "center" }}>10h</p>
         </div>
         <div className='drop_final7'><DroppableArea id="10" className="droppable-area-8" />
-          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios7' style={{ textAlign: "center" }}>11h</p>
         </div>
         <div className='drop_final7'><DroppableArea id="11" className="droppable-area-8" />
           <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
         </div>
         <div className='drop_final7'><DroppableArea id="12" className="droppable-area-8" />
-          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios7' style={{ textAlign: "center" }}>13h</p>
         </div>
         <div className='drop_final7'><DroppableArea id="13" className="droppable-area-8" />
-          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios7' style={{ textAlign: "center" }}>14h</p>
         </div>
         <div className='drop_final7'><DroppableArea id="14" className="droppable-area-8" />
-          <p className='horarios7' style={{ textAlign: "center" }}>12h</p>
+          <p className='horarios7' style={{ textAlign: "center" }}>15h</p>
         </div>
       </div>
     </div>

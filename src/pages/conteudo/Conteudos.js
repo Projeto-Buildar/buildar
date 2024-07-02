@@ -5,7 +5,7 @@ import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png';
 import { useState, useEffect } from 'react';
 import './Conteudos.css';
-import planilha from "./imagem/Planilha2.png"
+import planilha from "./imagem/Planilha.png"
 
 const listaConteudos = [
     {
@@ -34,7 +34,7 @@ const listaConteudos = [
             {
                 id: 3,
                 messageClass: 'message-box2',
-                textoVivi: 'Se prepare para embarcar nessa jornada e descobrir como organizar o seu tempo, cumprir suas tarefas e atividades de forma organizada, e atender a prazos estabelecidos',
+                textoVivi: 'Agora que você sabe a importância dessa habilidade, bora praticar! Se prepare para embarcar nessa jornada e descobrir como organizar o seu tempo, cumprir suas tarefas e atividades de forma organizada, e atender a prazos estabelecidos.Está preparado(a)',
                 recepcao: false,
                 temPerfil: true,
                 textoBotaoUm: 'Eu nasci preparado(a)',
@@ -45,22 +45,13 @@ const listaConteudos = [
             {
                 id: 4,
                 messageClass: 'message-box2',
-                textoVivi: 'Agora que você sabe a importancia dessa habilidade, bora praticar!Se prepare para embarcar nessa jornada e descobrir como organizar o seu tempo, cumprir suas tarefas e atividades de forma organizada, e atender a prazos estabelecidos. Está preparado?',
-                recepcao: false,
-                temPerfil: false,
-                temBotoesDireciona: true,
-                bgImage: 'classebg4'
-            },
-            {
-                id: 5,
-                messageClass: 'message-box2',
                 textoVivi: 'Agora, imagine que você é um estagiário(a) na área de RH em uma grande empresa de tecnologia. Antes de começar seu trabalho, você precisa organizar as tarefas do seu dia. Seu horário de trabalho é das 9h às 15h e seu horário de almoço é das 12h às 13h. Sua supervisora marcou uma reunião com a equipe das 14h às 15h.',
                 image: planilha, 
                 classeImage: "imgPlanilha",  
                 recepcao: false,
                 temPerfil: false,
                 temBotoesDireciona: true,
-                bgImage: 'classebg5'
+                bgImage: 'classebg4'
             },
         ]
     },
