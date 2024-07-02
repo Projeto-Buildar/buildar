@@ -28,25 +28,24 @@ export default function Conteudo() {
 
   return (
     <div className='container_conteudo7'>
-      
-      
+
+
       <div className="message-container-miniGame7">
 
-            <div className='vivi7'>
-              <img src={Vivi} alt="Capi Professor" className="vivi_img7" />
-            </div>
+        <div className='vivi7'>
+          <img src={Vivi} alt="Capi Professor" className="vivi_img7" />
+        </div>
 
-            <div className="message-box7">
-              <p>
-                Como você organizará seu tempo para cumprir todas as tarefas?<br />
-              
-              </p>
-            </div>
+        <div className="message-box7">
+          <p>
+            Aqui estão seus resultados... Uau, parabéns por realizar essa atividade!
+          </p>
+        </div>
 
-          </div>
+      </div>
 
       <Link to="/corredor/GestaoDeTempo">
-        <button className="voltarCorredor">Voltar para o corredor</button>
+        <button className="anterior">Voltar para o corredor</button>
       </Link>
 
       <Link to="/conteudo6">
@@ -76,6 +75,11 @@ export default function Conteudo() {
         </div>
         <div className='drop_final7'><DroppableArea id="14" className="droppable-area-8" />
           <p className='horarios7' style={{ textAlign: "center" }}>15h</p>
+        </div>
+
+        <div className='rightAnswer'>
+          <h3>Você foi bem! Aqui um jeito otimizado para usar de insipiração</h3>
+          <div></div>
         </div>
       </div>
     </div>

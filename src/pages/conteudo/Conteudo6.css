@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 
 * {
     padding: 0;
@@ -97,6 +96,15 @@
 .container_conteudo6 .anteriorGame {
     background: url('./imagem/scribble.png') bottom/auto 30% no-repeat;
     padding-bottom: 0.5rem;
+    font: 400 1rem "Permanent Marker";
+    text-align: center;
+    color: blue;
+}
+
+.container_conteudo6 .Testar {
+    background: url('./imagem/scribble.png') bottom/auto 30% no-repeat;
+    padding-bottom: 0.5rem;
+    margin-left: 4rem;
     font: 400 1rem "Permanent Marker";
     text-align: center;
     color: blue;
