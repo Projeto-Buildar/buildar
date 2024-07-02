@@ -1,10 +1,11 @@
-.drop_final7{
+.drop_final7 {
     display: flex;
     flex-direction: column;
     margin: 5px;
     align-items: center;
 }
-.container_conteudo7{
+
+.container_conteudo7 {
     width: 100%;
     height: 100vh;
     margin-top: -12vh;
@@ -22,7 +23,14 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 1) 23%, rgba(217, 217, 217, 1) 50%, rgba(238, 238, 238, 1) 58%, rgba(224, 224, 224, 1) 67%, rgba(255, 255, 255, 1) 89%);
+    padding-block: 1%;
+    border: 1rem solid #929292;
+    border-image: linear-gradient(90deg, rgba(208, 216, 218, 1) 2%, rgba(239, 240, 240, 1) 17%, rgba(208, 216, 218, 1) 30%, rgba(239, 240, 240, 1) 47%, rgba(208, 216, 218, 1) 62%, rgba(239, 240, 240, 1) 77%, rgba(208, 216, 218, 1) 98%) 1;
+    border-spacing: 2;
+    gap: 2rem;
 }
+
 .vivi7 {
     left: 10px;
     top: 10px;
@@ -34,7 +42,7 @@
     z-index: 1;
 }
 
-.message-box7{
+.message-box7 {
     background-color: #F5F5F5;
     display: flex;
     align-items: center;
@@ -50,4 +58,28 @@
     padding: 10px;
     margin-left: 20px;
     margin-top: 12px;
+}
+
+.container_conteudo7 .anterior {
+    min-width: 8rem;
+    width: fit-content;
+    padding-inline: 1rem;
+    margin-top: 1rem;
+}
+
+.rightAnswer {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+    & h1 {
+        font: 400 2rem 'Permanent Marker';
+    }
+    & div {
+        width: 100%;
+        height: 20vh;
+        background: #9B33FD;
+    }
 }

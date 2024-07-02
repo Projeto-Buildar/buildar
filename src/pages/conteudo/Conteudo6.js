@@ -11,7 +11,7 @@ const listaHorarios = ['9h', '10h', '11h', '12h', '13h', '14h', '15h']
 
 export default function Conteudo() {
 
-  const navigate = useNavigate ();
+  const navigate = useNavigate();
 
 
   //  let tagsInicias = [];
@@ -72,6 +72,9 @@ export default function Conteudo() {
                 Limpar planilha
                 <div></div>
               </button>
+              <Link to="/conteudos/GestaoDeTempo1/Conteudo7">
+                <button className="Testar">Testar</button>
+              </Link>
             </div>
             <p>Planejamento das tarefas</p>
             <div className='atividade'>
@@ -88,10 +91,6 @@ export default function Conteudo() {
               </div>
               <div className='drop3'>
 
-              <Link to="/conteudos/GestaoDeTempo1/Conteudo7">
-           <button className="Testar">Testar</button>
-      </Link>
-
                 {/* {listaHorarios.map((horario, index) => (
                   <div>
                     <p className='horarios' style={{ textAlign: "center" }} key={index}>{horario}</p>
@@ -102,26 +101,26 @@ export default function Conteudo() {
                 ))} */}
 
                 <div className='drop_final'><DroppableArea id="8" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>9h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>9h</p>
                 </div>
-                
+
                 <div className='drop_final'><DroppableArea id="9" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>10h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>10h</p>
                 </div>
                 <div className='drop_final'><DroppableArea id="10" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>11h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>11h</p>
                 </div>
                 <div className='drop_final'><DroppableArea id="11" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>12h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>12h</p>
                 </div>
                 <div className='drop_final'><DroppableArea id="12" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>13h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>13h</p>
                 </div>
                 <div className='drop_final'><DroppableArea id="13" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>14h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>14h</p>
                 </div>
                 <div className='drop_final'><DroppableArea id="14" className="droppable-area-8" />
-                <p className='horarios' style={{ textAlign: "center" }}>15h</p>
+                  <p className='horarios' style={{ textAlign: "center" }}>15h</p>
                 </div>
               </div>
 
@@ -137,7 +136,7 @@ export default function Conteudo() {
             {/* </div> */}
           </div>
 
-          
+
 
         </div>
       </DndProvider>
