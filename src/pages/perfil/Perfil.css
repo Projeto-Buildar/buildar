@@ -209,6 +209,7 @@
     padding: 1rem;
     gap: 2rem;
     overflow-x: scroll !important;
+    z-index: 1;
     & img {
         width: 12rem;
         height: 12rem;

@@ -2,6 +2,8 @@ import ConfiguracaoMapaGame from './ConfiguracaoMapaGame';
 import DirectionInput from './DirectionInput';
 import Mapas from './Mapas';
 import KeyPressListener from './KeyPressListener';
+import useControleDeTraducao from '../../../useControleDeTraducao';
+
 
 export default class Game {
     constructor(config) {
@@ -32,7 +34,7 @@ export default class Game {
             mapas: (Mapas[config.mapas || 'GestaoDeTempo'])
         }
     }
-
+    
 
     startGameLoop() {
         if (this.isRunning) return;

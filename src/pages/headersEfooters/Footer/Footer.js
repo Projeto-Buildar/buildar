@@ -13,7 +13,7 @@
 // // import './Footer.css';
 
 // export default function Footer() {
-//   const {t, i18n } = useTranslation();
+//   const { t, tComControleDeLinha } = useControleDeTraducao();
 
 //   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
 //   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');

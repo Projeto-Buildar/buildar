@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import KeyPressListener from './KeyPressListener';
 import './textMessage.css'
+import useControleDeTraducao from '../../../useControleDeTraducao';
 
-function TextMessage({ text, onComplete }) {
+function TextMessage({ text, onComplete, nome }) {
     const [show, setShow] = useState(true);
     const keyPressListenerRef = useRef(null);
-
+    const { t, tComControleDeLinha } = useControleDeTraducao();
     useEffect(() => {
         const keyPressListener = new KeyPressListener("Enter", () => {
             setShow(false);
@@ -24,7 +25,10 @@ function TextMessage({ text, onComplete }) {
 
     return (
         <div className="TextMessage">
-            <p className="TextMessage_p">{text}</p>
+            <div>
+                <p className='nomeDialogo'>{nome}</p>
+                <p className="TextMessage_p">{t(text)}</p>
+            </div>
             <button className="TextMessage_button" onClick={() => { setShow(false); onComplete(); }}>Próximo</button>
         </div>
     );
