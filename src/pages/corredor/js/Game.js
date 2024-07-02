@@ -97,15 +97,15 @@ export default class Game {
             { who: "Drii", type: "walk", direction: "down" },
             { who: "Drii", type: "walk", direction: "left" },
             { who: "Drii", type: "walk", direction: "left" },
-            { type: "textMessage", text: "Olá, seja bem-vindo a Buildar corporation!" },
-            { type: "textMessage", text: "Aqui você irá colocar em prática suas habilidades comportamentais" },
-            { type: "textMessage", text: "Na sua direita teram portas para você treinar as suas habilidades" },
-            { type: "textMessage", text: "E na sua esquerda você pode se descontrair com um simples joguinho. Fique a vontade para explorar" },
+            { type: "textMessage", text: "GestaoDeTempo1" },
+            { type: "textMessage", text: "GestaoDeTempo2" },
+            { type: "textMessage", text: "GestaoDeTempo3" },
+            { type: "textMessage", text: "GestaoDeTempo4" },
             { who: "Drii", type: "walk", direction: "right" },
             { who: "Drii", type: "walk", direction: "right" },
             { who: "Drii", type: "walk", direction: "up" },
             { who: "Drii", type: "stand", direction: "down" },
-        ]);
+        ], "Adriana");
     }
 
 
