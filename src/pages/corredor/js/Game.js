@@ -108,7 +108,7 @@ this.map.removeWall(utils.withGrid(8), utils.withGrid(5))
             { who: "player", type: "stand", direction: "right", time: 800 },
             { who: "Drii", type: "stand", direction: "left", time: 800 },
             { type: "textMessage", text: "Ei, Fofolete!" },
-            { who: "player", type: "walk", direction: "down" },
+            // { who: "player", type: "walk", direction: "down" },
             { who: "player", type: "stand", direction: "right" },
             { who: "Drii", type: "walk", direction: "down" },
             { who: "Drii", type: "walk", direction: "left" },
