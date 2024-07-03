@@ -34,6 +34,7 @@ import InicioQuiz from './pages/quiz/InicioQuiz'
 import Quiz from './pages/quiz/Quiz1';
 import Quiz2 from './pages/quiz/Quiz2';
 import Conteudos from './pages/conteudo/Conteudos';
+import SobreNosTentativa from './pages/sobreTentativa/SobreNos';
 import './i18n';
 
 
@@ -54,14 +55,6 @@ export default function App() {
 
   const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
-  const evitarLinhasViúvas = (texto) => {
-    const palavras = texto.split(' ');
-    if (palavras.length > 1) {
-      palavras[palavras.length - 2] += '\u00A0' + palavras.pop();
-    }
-    return palavras.join(' ');
-  };
-
   return (
     <div className="App">
         <BrowserRouter>
@@ -73,7 +66,7 @@ export default function App() {
               <Route path="cadastro" element={<Cadastro />} />
               <Route path="home" element={<Home />} />
               <Route path="corredor/:mapaNome" element={<Corredor />} />
-              <Route path="sobre" element={<SobreNos />} />
+              <Route path="sobre" element={<SobreNosTentativa/>} />
               <Route path="pagamento" element={<Pagamento />} />
               <Route path="conexoes" element={<Conexoes />} />
               <Route path="perfil" element={<Perfil />} />
@@ -98,6 +91,7 @@ export default function App() {
               <Route path="quiz2" element={<Quiz2 />} />
               <Route path='conteudos/:indice' element={<Conteudos />} />
               <Route path='termos' element={<Termos></Termos>}/>
+              {/* <Route path='sobre_nos_1' element={<SobreNosTentativa/>} /> */}
             </Routes>
             </ItemProvider>
             </DndProvider>

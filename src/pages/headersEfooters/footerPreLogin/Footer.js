@@ -39,6 +39,7 @@ export default function FooterPreLogin() {
       <section className="footerBottom">
         <nav className="linkList">
           <Link to="/termos" className="footer-linkList">{t("Privacy")}</Link>
+          {/* <Link to="/sobre_nos_1" className="footer-linkList">{t("Privacy")}</Link> */}
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </nav>
         <nav className="social">

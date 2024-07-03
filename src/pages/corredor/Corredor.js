@@ -81,7 +81,10 @@ export default function Corredor() {
 
         }
 
-        referenciaDoGame.current.comecaJogo();
+        if(hasInitialCutscenePlayed){
+            referenciaDoGame.current.comecaJogo();
+        }
+        
 
 
         // setPlayerLastPosition(playerPosition);
