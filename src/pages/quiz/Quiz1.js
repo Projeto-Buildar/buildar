@@ -1,6 +1,31 @@
-import React, { useState } from 'react'; // Importa React e o hook useState para gerenciar o estado do componente
-import './Quiz.css'; // Importa o arquivo de estilos CSS
+import React, { useState, useEffect } from 'react';
+import './Quiz.css';
 import HeaderHome from "../home/HeaderHome";
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
+import "../../i18n";
+
+// Função para embaralhar o array
+function shuffleArray(array) {
+  let curId = array.length;
+  // Não há necessidade de embaralhar o último elemento
+  while (0 !== curId) {
+    // Escolha um elemento restante
+    let randId = Math.floor(Math.random() * curId);
+    curId -= 1;
+    
+    // E troque-o com o elemento atual
+    let tmp = array[curId];
+    array[curId] = array[randId];
+    array[randId] = tmp;
+  }
+  return array;
+}
+
+function Quiz() {
+  const { t } = useTranslation();
+
+  
 
 const questions = [
   {
@@ -50,10 +75,17 @@ const questions = [
   },
 ];
 
-function Quiz() {
+  // Embaralha as perguntas antes de iniciar o jogo
+  const shuffledQuestions = shuffleArray([...questions]);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
+
+  useEffect(() => {
+    // Embaralha as perguntas novamente quando o jogo é reiniciado
+    shuffleArray(shuffledQuestions);
+  }, [showScore]);
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
@@ -68,40 +100,57 @@ function Quiz() {
     }
   };
 
+  const restartQuiz = () => {
+    // Redefine o estado
+    setCurrentQuestion(0);
+    setScore(0);
+    setShowScore(false);
+  };
+
   return (
     <main id='containerQuiz'>
-    <HeaderHome className="quizHeader"/>
-
+      <HeaderHome className="quizHeader"/>
       <div className="quiz">
-        {showScore ? (
-          <div className="score-section">
-            Parabéns! Você pontuou {score} de {questions.length}
-          </div>
+      {showScore ? (
+        <div className="score-section">
+        {score >= 4 ? (
+          <p>{t('excellentScore1')} {score} {t('excellentScore2')}</p>
+        ) : score >= 1 ? (
+          <p>{t('almostScore1')} {score} {t('almostScore2')}</p>
         ) : (
-          <>
-            <div className="question-section">
-              <div className="question-count">
-                <span>Pergunta {currentQuestion + 1}</span>/{questions.length}
-              </div>
-              <div className="question-text">{questions[currentQuestion].questionText}</div>
-            </div>
-            <div className="answer-section">
-              <div className="answer-options">
-                {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-                    style={{ backgroundColor: answerOption.color }} // Aplica a cor do array de opções
-                  >
-                    {answerOption.answerText}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </>
+          <p>{t('lowScore')}</p>
         )}
+        <button onClick={restartQuiz} className="restart-button">{t('restart')}</button>
+        <Link to="/quiz">
+              <button className="back-button">{t('backToHome')}</button>
+            </Link>
       </div>
-    </main>
+      
+      ) : (
+        <>
+          <div className="question-section">
+            <div className="question-count">
+              <span>{t('question')} {currentQuestion + 1}</span>/5
+            </div>
+            <div className="question-text">{shuffledQuestions[currentQuestion]?.questionText}</div>
+          </div>
+          <div className="answer-section">
+            <div className="answer-options">
+              {shuffledQuestions[currentQuestion]?.answerOptions.map((answerOption, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                  style={{ backgroundColor: answerOption.color }}
+                >
+                  {answerOption.answerText}
+                </button>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  </main>
   );
 }
 
