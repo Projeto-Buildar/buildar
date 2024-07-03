@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
 import "../../i18n";
 
 // Função para embaralhar o array
+// Função para embaralhar o array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
