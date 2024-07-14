@@ -63,7 +63,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ```
 ---
 
-## Membros da Comunidade que já Contribuíram
+## 🏆 Membros da Equipe 
 
 <div align="center">
   <a href="https://github.com/Projeto-Buildar/buildar/graphs/contributors">
