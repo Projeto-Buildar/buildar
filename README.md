@@ -63,6 +63,20 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ```
 ---
 
+## Membros da Comunidade que já Contribuíram
+
+<div align="center">
+  <a href="https://github.com/Projeto-Buildar/buildar/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Projeto-Buildar/buildar" alt="Contribuidores do Projeto Buildar"/>
+  </a>
+
+  <!-- Made with contrib.rocks -->
+
+
+</div>
+
+
+
 ## 🔧 Suporte 
 
 Precisa de uma mãozinha? Estamos aqui para ajudar! Entre em contato através do nosso e-mail de suporte: projetobuildar@gmail.com.
