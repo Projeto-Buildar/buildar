@@ -2,6 +2,10 @@
   "name": "buildar",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "nth-check": ">=2.0.1",
+    "postcss": ">=8.4.31"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +19,7 @@
     "react-modal": "^3.16.1",
     "react-multi-carousel": "^2.8.5",
     "react-scripts": "5.0.1",
+    "svgo": "^3.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
