@@ -25,7 +25,7 @@ export default class Game {
         this.lastTime = 0;
         this.isRunning = false;
         this.rafId = null;
-
+        this.podeVerificarCutscene = false;
         // this.playerPosition = config.playerPosition;
 
         // Recebe as informações enviadas pelo Corredor -> Inicializador, que serão utilizadas especificamente pela classe ConfiguracaoMapaGame
@@ -36,39 +36,51 @@ export default class Game {
         }
     }
     
+    terminaCut(){
+        this.map.isCutscenePlaying = false;
+    }
 
+    checkImagesLoaded() {
+        return this.isLowerImageLoaded && this.isUpperImageLoaded;
+    }
+    
+    // Dentro do seu loop de jogo, use esse método para garantir que o jogo só comece quando as imagens estiverem carregadas.
     startGameLoop() {
         if (this.isRunning) return;
         this.isRunning = true;
-        const cameraPerson = this.map.gameObjects.player;
+        
         const step = (currentTime) => {
+            
             if (this.lastTime === 0) this.lastTime = currentTime;
+            
             const deltaTime = (currentTime - this.lastTime) / 1000;
             this.lastTime = currentTime;
             
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            const cameraPerson = this.map.gameObjects.player;
+            this.map.defineOffset(cameraPerson)
 
+            this.map.drawLowerImage(this.ctx);
             
-            
-            
-            this.map.drawLowerImage(this.ctx, cameraPerson);
-            this.map.drawUpperImage(this.ctx, cameraPerson);
-            // this.map.drawUpperImage(this.ctx, cameraPerson);
-            // this.map.drawUpperImage(this.ctx, cameraPerson);
+            Object.values(this.map.gameObjects).sort((a, b) => {
+                return a.y - b.y;
+            }).forEach(object => {
+                object.sprite.defineOffsets(cameraPerson)              
+            });
 
             Object.values(this.map.gameObjects).sort((a, b) => {
                 return a.y - b.y;
             }).forEach(object => {
+                object.sprite.draw(this.ctx, cameraPerson);
                 object.update({
                     arrow: this.directionInput.direction,
                     deltaTime,
                     map: this.map,
 
                 });
-                object.sprite.draw(this.ctx, cameraPerson);
+                
             });
-
-            this.map.drawUpperImage(this.ctx, cameraPerson);
+            this.map.drawUpperImage(this.ctx);
 
             this.rafId = requestAnimationFrame(step);
         }

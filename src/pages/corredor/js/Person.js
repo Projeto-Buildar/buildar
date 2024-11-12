@@ -33,8 +33,16 @@ export default class Person extends GameObject {
     }
   }
 
+  permiteAndar(podeAndar) {
+    console.log()
+    if(podeAndar){
+      this.movingProgressRemaining = 0
+
+    }
+  }
   // Inicia um comportamento específico para o personagem (como andar)
   startBehavior(state, behavior) {
+    if (this.movingProgressRemaining > 0) return; // Impede que um novo comportamento inicie enquanto há movimento pendente
     this.direction = behavior.direction; // Define a direção de movimento
     const xround = Math.round(this.x);
     const yround = Math.round(this.y);
@@ -53,6 +61,7 @@ export default class Person extends GameObject {
       this.total = 0;
       this.updateSprite();
     }
+
     if (behavior.type === "stand") {
       this.isStanding = true;
       setTimeout(() => {

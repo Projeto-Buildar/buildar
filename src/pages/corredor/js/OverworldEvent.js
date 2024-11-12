@@ -2,12 +2,13 @@ import utils from "./Utils";
 // import TextMessage from './TextMessage'
 
 class OverworldEvent {
-    constructor({ map, event, nome, recebeTextoMensagem, navegarParaPagina }) {
+    constructor({ map, event, nome, recebeTextoMensagem, navegarParaPagina , teste}) {
         this.map = map;
         this.event = event;
         this.recebeTextoMensagem = recebeTextoMensagem;
         this.navegarParaPagina = navegarParaPagina;
         this.nome = nome;
+        this.teste = teste
     }
   
     stand(resolve) {
@@ -23,10 +24,11 @@ class OverworldEvent {
   
       const completeHandler = e => {
         if (e.detail.whoId === this.event.who) {
-          document.removeEventListener("PersonStandComplete", completeHandler);
-          resolve();
+            document.removeEventListener("PersonStandComplete", completeHandler);
+            who.movingProgressRemaining = 0; // Reseta ao concluir
+            resolve();
         }
-      };
+    };
       document.addEventListener("PersonStandComplete", completeHandler);
     }
   
@@ -54,9 +56,12 @@ class OverworldEvent {
         if (this.event.faceHero) {
             const obj = this.map.gameObjects[this.event.faceHero];
             obj.direction = utils.oppositeDirection(this.map.gameObjects["player"].direction);
+            this.map.gameObjects["player"].permiteAndar(false)
         }
 
-        this.recebeTextoMensagem(this.event.text, resolve, this.nome);
+        this.recebeTextoMensagem(this.event.text, () => {
+          resolve();
+      }, this.nome, this.teste);
     }
 
     redirecionarPagina(resolve) {

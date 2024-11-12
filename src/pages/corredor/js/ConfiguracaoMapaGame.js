@@ -1,6 +1,7 @@
 import utils from "./Utils";
 import OverworldEvent from "./OverworldEvent";
 
+
 export default class ConfiguracaoMapaGame {
     constructor(config) {
         // Inicializa os gameObjects e walls a partir do config fornecido
@@ -36,30 +37,25 @@ export default class ConfiguracaoMapaGame {
         this.isCutscenePlaying = false;
         this.recebeTextoMensagem = config.recebeTextoMensagem;
         this.navegarParaPagina = config.navegarParaPagina;
+        this.offsetX = 0
+        this.offsetY = 0
     }
 
 
-    // Método para desenhar a imagem inferior do mapa
-    drawLowerImage(ctx, cameraPerson) {
-        if (this.isLowerImageLoaded) {
-            ctx.drawImage(
-                this.lowerImage,
-                utils.withGrid(10) - cameraPerson.x,
-                utils.withGrid(6) - cameraPerson.y
-            );
-        }
-    }
+// Método para desenhar a imagem inferior do mapa
+drawLowerImage(ctx, cameraPerson) {
+    ctx.drawImage(this.lowerImage, this.offsetX, this.offsetY);
+}
 
-    // Método para desenhar a imagem superior do mapa
-    drawUpperImage(ctx, cameraPerson) {
-        if (this.isUpperImageLoaded) {
-            ctx.drawImage(
-                this.upperImage,
-                utils.withGrid(10.0009) - cameraPerson.x,
-                utils.withGrid(6) - cameraPerson.y
-            );
-        }
-    }
+// Método para desenhar a imagem superior do mapa
+drawUpperImage(ctx, cameraPerson) {
+    ctx.drawImage(this.upperImage, parseInt(this.offsetX), parseInt(this.offsetY));
+}
+
+defineOffset(cameraPerson){
+    this.offsetX = utils.withGrid(10) - parseInt(cameraPerson.x);
+    this.offsetY = utils.withGrid(6) - parseInt(cameraPerson.y);
+}
 
     // Verifica se a posição específica no mapa está ocupada por uma parede
     isSpaceTaken(currentX, currentY, direction) {
@@ -77,6 +73,8 @@ export default class ConfiguracaoMapaGame {
         });
     }
 
+    
+
     async startCutscene(events, nomes, podeParede) {
         this.isCutscenePlaying = true;
         console.log(nomes)
@@ -87,19 +85,19 @@ export default class ConfiguracaoMapaGame {
                 nome: nomes,
                 map: this,
                 recebeTextoMensagem: this.recebeTextoMensagem,
-                navegarParaPagina: this.navegarParaPagina
+                navegarParaPagina: this.navegarParaPagina,
+                teste: this.gameObjects
             });
     
-            await eventHandler.init();
+            await eventHandler.init();      
         }
-    
-        this.isCutscenePlaying = false;
-        // console.log (this.isCutscenePlaying);
-    
+
         Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this, this.recebeTextoMensagem))
+        
         if(podeParede){
             this.addWall(utils.withGrid(8), utils.withGrid(5))
         }
+        this.isCutscenePlaying = false
     }
 
     // Verifica se há uma cutscene de ação na posição à frente do herói

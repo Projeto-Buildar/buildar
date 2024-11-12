@@ -69,8 +69,16 @@ export default class Sprite {
         this.distanciaY = config.distanciaY || 18; // Distância vertical do sprite
         this.width = config.width || 32; // Largura do frame do sprite
         this.height = config.height || 32; // Altura do frame do sprite
+
+        this.offsetX = 0
+        this.offsetY = 0
     }
 
+    defineOffsets(cameraPerson){
+        // Calcula as coordenadas de desenho levando em conta a posição do personagem na câmera
+        this.offsetX = parseInt(this.gameObject.x) + utils.withGrid(10) - parseInt(cameraPerson.x);
+        this.offsetY = parseInt(this.gameObject.y) + utils.withGrid(6) - parseInt(cameraPerson.y);
+    }
     // Retorna o frame atual da animação
     get frame() {
         return this.animations[this.currentAnimation][this.currentAnimationFrame];
@@ -116,13 +124,11 @@ export default class Sprite {
 
     // Desenha o sprite na tela
     draw(ctx, cameraPerson) {
-        // Calcula as coordenadas de desenho levando em conta a posição do personagem na câmera
-        const x = this.gameObject.x + utils.withGrid(10, 5) - cameraPerson.x;
-        const y = this.gameObject.y + utils.withGrid(6) - cameraPerson.y;
+        
 
         // Desenha a sombra, se carregada
         if (this.isShadowLoaded) {
-            ctx.drawImage(this.shadow, x - 8, y - 18); // Desenha a sombra ajustando a posição
+            ctx.drawImage(this.shadow, this.offsetX - 8, this.offsetY - 18); // Desenha a sombra ajustando a posição
         }
 
         // Obtém as coordenadas do frame atual da animação
@@ -133,7 +139,7 @@ export default class Sprite {
             ctx.drawImage(this.image,
                 frameX * this.width, frameY * this.height, // Coordenadas do frame no sprite
                 this.width, this.height, // Dimensões do frame
-                x - this.distanciaX, y - this.distanciaY, // Posição do desenho na tela
+                this.offsetX - parseInt(this.distanciaX), this.offsetY - this.distanciaY, // Posição do desenho na tela
                 this.width, this.height // Tamanho do desenho na tela
             );
         }
