@@ -1,14 +1,21 @@
-import i18n, { reloadResources } from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from "./locales/en.json";
 import ptTranslation from "./locales/pt.json";
 import esTranslation from "./locales/es.json";
 
 i18n
-    .use( initReactI18next )
+    // detect user language
+    // learn more: https://github.com/i18next/i18next-browser-languageDetector
+    .use(LanguageDetector)
+    .use(initReactI18next)
     .init({
-        lng: 'pt', //Definir linguagem inicial
-        fallBacklng: 'pt', // Definir um idioma de fallback
+        detection: {
+            order: ['navigator', 'cookie'], // Define a prioridade de detecção
+        },
+        // lng: 'en', //Definir linguagem inicial
+        fallbackLng: 'pt', // Definir um idioma de fallback
         resources: {
             en: {
                 translation: enTranslation,
@@ -19,9 +26,10 @@ i18n
             es: {
                 translation: esTranslation,
             },
-            interpolation: {
-                escapeValue: false, //Evitar a necessidade de espacart essa sequencia em traduções
-            }
+
+        },
+        interpolation: {
+            escapeValue: false, //Evitar a necessidade de espacart essa sequencia em traduções
         }
     })
 

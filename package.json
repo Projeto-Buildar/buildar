@@ -7,15 +7,17 @@
     "postcss": ">=8.4.31"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.19.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
     "react": "^18.3.1",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^14.1.2",
+    "react-i18next": "^15.1.1",
     "react-modal": "^3.16.1",
     "react-multi-carousel": "^2.8.5",
     "react-scripts": "5.0.1",
@@ -48,7 +50,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "prettier": "3.3.1",
+    "prettier": "^3.3.3",
     "react-router-dom": "^6.23.1"
   }
 }
