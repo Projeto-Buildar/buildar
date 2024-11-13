@@ -25,7 +25,6 @@ class OverworldEvent {
       const completeHandler = e => {
         if (e.detail.whoId === this.event.who) {
             document.removeEventListener("PersonStandComplete", completeHandler);
-            who.movingProgressRemaining = 0; // Reseta ao concluir
             resolve();
         }
     };
@@ -56,7 +55,6 @@ class OverworldEvent {
         if (this.event.faceHero) {
             const obj = this.map.gameObjects[this.event.faceHero];
             obj.direction = utils.oppositeDirection(this.map.gameObjects["player"].direction);
-            this.map.gameObjects["player"].permiteAndar(false)
         }
 
         this.recebeTextoMensagem(this.event.text, () => {

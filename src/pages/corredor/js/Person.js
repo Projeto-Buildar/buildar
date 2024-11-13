@@ -33,13 +33,6 @@ export default class Person extends GameObject {
     }
   }
 
-  permiteAndar(podeAndar) {
-    console.log()
-    if(podeAndar){
-      this.movingProgressRemaining = 0
-
-    }
-  }
   // Inicia um comportamento específico para o personagem (como andar)
   startBehavior(state, behavior) {
     if (this.movingProgressRemaining > 0) return; // Impede que um novo comportamento inicie enquanto há movimento pendente

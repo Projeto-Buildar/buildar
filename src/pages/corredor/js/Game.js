@@ -61,7 +61,6 @@ export default class Game {
             this.map.defineOffset(cameraPerson)
 
             this.map.drawLowerImage(this.ctx);
-            
             Object.values(this.map.gameObjects).sort((a, b) => {
                 return a.y - b.y;
             }).forEach(object => {
