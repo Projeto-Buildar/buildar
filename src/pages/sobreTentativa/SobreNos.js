@@ -1,4 +1,13 @@
+// Imports do CSS
 import './SobreNosTentativa.css';
+
+// Imports de Bibliotecas
+import { useNavigate } from 'react-router-dom';
+
+// Imports de Hooks
+import { useEffect } from 'react';
+
+// Imports de Components
 import HeaderHome from "../home/HeaderHome";
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import mascot from './images/mascot.png';
@@ -8,7 +17,6 @@ import skillsIcon from './images/skills.webp';
 import peopleIcon from './images/people.png'; // New icons for the new section
 import schoolIcon from './images/school.png';
 import environmentIcon from './images/environment.png';
-// import { useTranslation } from 'react-i18next';
 
 // Importing team images
 import teamMember1 from './images/teamMember1.png';
@@ -19,12 +27,11 @@ import teamMember5 from './images/teamMember5.png';
 import teamMember6 from './images/teamMember6.png';
 import teamMember7 from './images/teamMember7.png';
 import teamMember8 from './images/teamMember8.png';
+import ods from './images/ods.png'
 
 import useControleDeTraducao from '../../useControleDeTraducao';
 
-import ods from './images/ods.png'
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+// import { useTranslation } from 'react-i18next';
 
 const SobreNos = () => {
   const { t, tComControleDeLinha } = useControleDeTraducao();
@@ -117,8 +124,8 @@ const SobreNos = () => {
             <p>{t("fewEnvironments")}</p>
           </div>
         </div>
-      </section>"
-<img className='odsClasse' src={ods}></img>
+      </section>
+      <img className='odsClasse' src={ods}></img>
       <section className="OurTeam">
         <h2>{t("facesBehindBrand")}</h2>
         <div className="team-members">

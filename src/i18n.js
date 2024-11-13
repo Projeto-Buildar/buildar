@@ -14,7 +14,7 @@ i18n
         detection: {
             order: ['navigator', 'cookie'], // Define a prioridade de detecção
         },
-        // lng: 'en', //Definir linguagem inicial
+        lng: 'pt', //Definir linguagem inicial
         fallbackLng: 'pt', // Definir um idioma de fallback
         resources: {
             en: {

@@ -21,8 +21,7 @@ export default function SextaTela() {
     }
     return palavras.join(' ');
   };
-  console.log(t("Paths3"))
-  console.log(evitarLinhasViúvas(t("Paths3")))
+
   return(
     <div id="sextaTela" className='frames'>
       <div className='backgroundLeft'></div>
