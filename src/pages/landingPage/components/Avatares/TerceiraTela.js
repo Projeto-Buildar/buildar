@@ -29,7 +29,7 @@ export default function TerceiraTela() {
             autoPlay={true}
             pauseOnHover={true}
             draggable={false} 
-            conteudo={test.map(obj => { return <div className='carroselAvatarL'><img src={obj}></img></div> })}>
+            conteudo={test.map((obj, index) => { return <div key={index} className='carroselAvatarL'><img src={obj}></img></div> })}>
           </Carrosel>
         </figure>
         {/* <div className='scrollContainer'>

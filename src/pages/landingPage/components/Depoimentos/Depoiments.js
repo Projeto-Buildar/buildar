@@ -145,8 +145,8 @@ export default function Depoiments() {
           swipeable
           
         >
-          {userInfo.map((depoiments) => {
-            return <Depoiment image={depoiments.image} name={depoiments.name} age={depoiments.age} text={depoiments.text} color={depoiments.color} />
+          {userInfo.map((depoiments, index) => {
+            return <Depoiment key={index} image={depoiments.image} name={depoiments.name} age={depoiments.age} text={depoiments.text} color={depoiments.color} />
           })}
         </Carousel>);
 }
