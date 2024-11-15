@@ -3,7 +3,7 @@
         width: 80%;
     }
     & figure img {
-        height: 30rem;
+        height: 25rem;
     }
 }
 
@@ -23,3 +23,15 @@
     background: url('../../images/quartaTela_bg2.webp') top 0 right 2.5%/auto 30% no-repeat;
     right: 0;
 }
+
+.figuraVivi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ViviApresenta{
+    max-width: 80%;
+    object-fit: contain;
+}
+
