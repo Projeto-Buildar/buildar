@@ -12,8 +12,11 @@ import OitavaTela from './components/Depoimentos/OitavaTela';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import footerImage from './images/quartaTela_bg.webp';
 
+import { TranslationProvider } from '../../shared/TranslationContext';
+
 export default function LandingPage (){
     return (
+<TranslationProvider prefixo="landingPage">
         <main id='landingPage'>
             <Header/>
             <PrimeiraTela/>
@@ -26,5 +29,6 @@ export default function LandingPage (){
             <OitavaTela/>
             <Footer/>
         </main>
+</TranslationProvider>
     )
 }
