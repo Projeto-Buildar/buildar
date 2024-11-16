@@ -1,21 +1,57 @@
 {
   "landingPage": {
-    "Section1": {
-      "Titulo": "TENHA UM GUIA PARA MOLDAR SUAS SOFT SKILLS",
-      "Cadastrar": "DÊ O PLAY!",
-      "Login": "Já tenho uma conta"
+    "section1": {
+      "titulo": "TENHA UM GUIA PARA MOLDAR SUAS SOFT SKILLS",
+      "cadastrar": "DÊ O PLAY!",
+      "login": "Já tenho uma conta"
     },
-
-    "Section2": {
-      "Subtitulo": "Que tal treinar soft skills <span>Virtualmente</span>?",
-      "Descricao": "Com simulações de ambientes profissionais, você consegue crescer! Dê um up em suas soft skills de maneira <span> fácil e divertida.</span>"
+    "section2": {
+      "subtitulo": "Que tal treinar soft skills <span>Virtualmente</span>?",
+      "descricao": "Com simulações de ambientes profissionais, você consegue crescer! Dê um up em suas soft skills de maneira <span> fácil e divertida.</span>"
     },
-
-    "Section3": {
-      "Subtitulo": "Seja <span>você</span> do seu melhor jeito",
-      "Descricao": "Que tal um avatar que encaixe com sua personalidade? A Buildar oferece opções para as <span>características únicas</span> de cada usuário."
+    "section3": {
+      "subtitulo": "Seja <span>você</span> do seu melhor jeito",
+      "descricao": "Que tal um avatar que encaixe com sua personalidade? A Buildar oferece opções para as <span>características únicas</span> de cada usuário."
     },
-
+    "section4": {
+      "subtitulo": "Uma plataforma acessível a <span>todo mundo!</span>",
+      "descricao": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção <span>100% gratuita</span> para quem estiver a fim"
+    },
+    "section5": {
+      "subtitulo": "Aqui não é só praticar",
+      "descricao": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A Buildar é muito mais!",
+      "mais": "Veja mais"
+    },
+    "section6": {
+      "subtitulo": "Que tal se tornar um CAPoiardor?",
+      "descricao": "Caso queira uma experiência <span>ainda mais imersiva</span> aqui estão alguns caminhos.",
+      "plano1": {
+        "nome": "Estagiário",
+        "beneficio1": "Eventos exclusivos",
+        "beneficio2": "Nada de anúncios",
+        "beneficio3": "Uma skin só sua"
+      },
+      "plano2": {
+        "nome": "Gerente",
+        "beneficio1": "Um cenário especial",
+        "beneficio2": "Energia adicional"
+      },
+      "plano3": {
+        "beneficio": "1º mês gratuito"
+      },
+      "tipoPlano": {
+        "mensal": "Plano mensal",
+        "anual": "Plano anual"
+      },
+      "beneficiosIguais": "Todos os anteriores",
+      "valor": "Apenas {{preco}}",
+      "botoes": "Conferir"
+    },
+    "section7": {
+      "subtitulo": "Aqui não é só praticar",
+      "descricao": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A Buildar é muito mais!",
+      "mais": "Veja mais"
+    },
     "testes": {
       "commentarioSobreChavesAbaixo": "isso são exemplo de criar uma chave e enviar valores para elas e diferenciar elas de forma singular ou plural",
       "Account_one": "Já tenho uma conta {{nome}}",
@@ -26,28 +62,6 @@
   "Eng": "Inglês",
   "Access": "Uma plataforma acessível a todo mundo",
   "Free": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção 100% gratuita para quem estiver a fim.",
-  "Practice": "Aqui não é só praticar",
-  "Events": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A Buildar é muito mais!",
-  "More": "Veja mais",
-  "CAP": "Que tal se tornar um CAPoiardor?",
-  "Paths1": "Caso queira uma experiência",
-  "Paths2": " ainda mais imersiva ",
-  "Paths3": "aqui estão alguns caminhos.",
-  "Intern": "Estagiário",
-  "Plan": "Plano mensal",
-  "Excl": "Eventos exclusivos",
-  "Ads": "Nada de anúncios",
-  "Skin": "Uma skin só sua",
-  "Price1": "Apenas R$12,90",
-  "Price2": "Apenas R$16,90",
-  "Price3": "Apenas R$14,90",
-  "Check": "Conferir",
-  "Manager": "Gerente",
-  "Prev": "Todos os anteriores",
-  "Scene": "Um cenário especial",
-  "Energy": "Energia adicional",
-  "Year": "Plano anual",
-  "FreeMonth": "1º mês gratuito",
   "Integration": "Mais que inclusão, Integração",
   "Promotion": "Quer mais? A Buildar conta com um sistema de promoção de eventos e workshops para aquela troca maneira de experiências.",
   "Opinion": "E o que a galera está achando da Buildar?",
@@ -91,10 +105,6 @@
   "adaptabilidade": "Adaptabilidade",
   "empatia": "Empatia",
   "em_breve": "Em breve",
-  "accessiblePlatform": "Uma plataforma acessível a todo mundo",
-  "learningOption": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção",
-  "free": "100% gratuita",
-  "ifInterested": "para quem estiver a fim",
   "moreThanInclusion": "Mais que inclusão,",
   "integration": "Integração",
   "wantMore": "Quer mais? A",
