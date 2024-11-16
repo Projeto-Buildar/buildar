@@ -38,15 +38,15 @@ export default function SextaTela() {
           </div>
           <div>
             <span>
-              <img src={event}/>
+              <img alt='' src={event}/>
               <p>{t("Excl")}</p>
             </span>
             <span>
-              <img src={addBlock}/>
+              <img alt='' src={addBlock}/>
               <p>{t("Ads")}</p>
             </span>
             <span>
-              <img src={skinAvatar}/>
+              <img alt='' src={skinAvatar}/>
               <p>{t("Skin")}</p>
             </span>
           </div>
@@ -64,15 +64,15 @@ export default function SextaTela() {
           </div>
           <div>
             <span>
-              <img src={previous}/>
+              <img alt='' src={previous}/>
               <p>{t("Prev")}</p>
             </span>
             <span>
-              <img src={skinScenary}/>
+              <img alt='' src={skinScenary}/>
               <p>{t("Scene")}</p>
             </span>
             <span>
-              <img src={energy}/>
+              <img alt='' src={energy}/>
               <p>{t("Energy")}</p>
             </span>
           </div>
@@ -91,11 +91,11 @@ export default function SextaTela() {
           </div>
           <div>
             <span>
-              <img src={previous}/>
+              <img alt='' src={previous}/>
               <p>{t("Prev")}</p>
             </span>
             <span>
-              <img src={calendar}/>
+              <img alt='' src={calendar}/>
               <p>{t("FreeMonth")}</p>
             </span>
           </div>

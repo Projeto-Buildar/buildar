@@ -9,7 +9,7 @@ export default function SetimaTela() {
   return(
     <div className='frames' id="setimaTela">
       <figure>
-        <img src={logo}/>
+        <img alt='Logo da Buildar' src={logo}/>
       </figure>
       <article>
         <h2>{t('moreThanInclusion')} <span className='destaqRoxo'>{t('integration')}</span></h2>

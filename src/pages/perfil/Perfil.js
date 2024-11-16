@@ -42,7 +42,7 @@ export default function Perfil() {
                 <section id="userCard">
                     <div className="profileImage">
                         <div className="star"></div>
-                        <img src={profilePic} className="profilePic" />
+                        <img alt="" src={profilePic} className="profilePic" />
                         <h3 className="jobPlan">{t("Manager")}</h3>
                     </div>
                     <div className="topCard">
@@ -62,7 +62,7 @@ export default function Perfil() {
                         </div>
                         <div className="achievementBar">
                             <div>
-                                <img src={trophy} />
+                                <img alt="" src={trophy} />
                                 <h3>{t("achievements")}</h3>
                             </div>
                             <Conquistas />
@@ -73,10 +73,10 @@ export default function Perfil() {
                             <p>{t("inviteFriends")}</p>
                             <div>
                                 {t("editProfile")}
-                                <img src={pen} />
+                                <img alt="" src={pen} />
                             </div>
                             <div>
-                                <img src={settingsGear} />
+                                <img alt="" src={settingsGear} />
                             </div>
                         </div>
                     </div>
@@ -119,10 +119,10 @@ export default function Perfil() {
                     <section>
                         <div className="topModal">
                             <div>
-                                <img src={trophy} />
+                                <img alt="" src={trophy} />
                                 <h1>{t("achievements")}</h1>
                             </div>
-                            <img src={closeButton} className="closeButton" onClick={closeModal} />
+                            <img alt="" src={closeButton} className="closeButton" onClick={closeModal} />
                         </div>
                         <ConquistasDetails />
                     </section>

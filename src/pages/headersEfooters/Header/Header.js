@@ -28,7 +28,7 @@ export default function Header() {
     <header id='headerLadingPage'>
       <nav>
         <Link to='/'>
-          <img src={logo} className='logo'/>
+          <img alt='Logo da Buildar' src={logo} className='logo'/>
         </Link>
         <Link to="/cadastro">
           <div id='button' style={{opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s', visibility: isVisible ? 'visible' : 'hidden'}}>{t("Play")}</div>

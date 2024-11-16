@@ -127,7 +127,7 @@ export default function Conteudos() {
             />
 
             {
-                indiceConteudo.image && <img src={indiceConteudo.image} className={`${indiceConteudo.classeImage}`}></img>
+                indiceConteudo.image && <img alt='' src={indiceConteudo.image} className={`${indiceConteudo.classeImage}`}></img>
             }
 
             {indiceConteudo.temBotoesDireciona && (

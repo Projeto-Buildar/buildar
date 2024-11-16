@@ -45,7 +45,7 @@ export default function HeaderHome() {
     <header id='headerHome'>
       <nav>
         <Link to="/home">
-          <img src={logo} className='logo' />
+          <img alt='Logo da Buildar' src={logo} className='logo' />
         </Link>
         {textoBtn.map((object, index) => (
           <BtnsNav key={index} texto={object.texto} link={object.linkado} icon={object.icon}></BtnsNav>
