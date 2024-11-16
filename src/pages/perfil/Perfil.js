@@ -11,6 +11,8 @@ import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
 import closeButton from './images/closeButton.png';
 
+import {getNomeUsuario} from "../../shared/useNomeUsuario";
+
 // import playerV2 from "../corredor/images/personagens/pessoa/personagem_Rogerio.png";
 // import playerV3 from "../corredor/images/personagens/pessoa/personagem_Malu.png";
 // import playerV4 from "../corredor/images/personagens/pessoa/personagem_Tobias.png";
@@ -49,7 +51,7 @@ export default function Perfil() {
                     <div className="topCard">
                         <div className="userProfileInfo">
                             <div>
-                                <h4>{t("NickNamePerfil")}</h4>
+                                <h4>{getNomeUsuario()}</h4>
                                 <p>{t("@NickNamePerfil")}</p>
                             </div>
                             <div>

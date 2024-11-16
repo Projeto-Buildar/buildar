@@ -6,6 +6,7 @@ import formaCadastro2 from './images/forma-cadastro2.webp';
 import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
+import {setNomeUsuario} from '../../shared/useNomeUsuario';
 
 export default function Cadastro() {
 //     const { t } = useTranslation(); // Hook para usar a função de tradução
@@ -166,6 +167,7 @@ export default function Cadastro() {
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
+        
         if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
             setErrorMessage(`${t("invalidRegister")}`);
             // if ((name === 'nickname' || name === 'email') && value.includes(' ')) {
@@ -181,8 +183,9 @@ export default function Cadastro() {
                 ...prevState,
                 [name]: type === 'checkbox' ? checked : value
             }));
+            
             setErrorMessage('');
-        
+            
         }
     };
 
@@ -198,6 +201,7 @@ export default function Cadastro() {
             setErrorMessage('As senhas não correspondem.');
         } else {
             setErrorMessage('');
+            setNomeUsuario({apelido: true, valor: nickname})
             navigate('/home');
         }
     };
