@@ -12,7 +12,8 @@ import { Link } from 'react-router-dom';
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function SextaTela() {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  // eslint-disable-next-line no-unused-vars
+  const { t, tFormatado } = useControleDeTraducao();
 
   const evitarLinhasViúvas = (texto) => {
     const palavras = texto.split(' ');

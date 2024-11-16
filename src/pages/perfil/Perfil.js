@@ -23,7 +23,8 @@ import Modal from "react-modal";
 Modal.setAppElement('#root');
 
 export default function Perfil() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    // eslint-disable-next-line no-unused-vars
+    const { t, tFormatado } = useControleDeTraducao();
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {

@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './cadastroVoluntario.css';
 
 const LoginVoluntario = () => {
+    // eslint-disable-next-line no-unused-vars
     const [email, setEmail] = useState('');
+    // eslint-disable-next-line no-unused-vars
     const [password, setPassword] = useState('');
     const [nome, setNome] = useState('');
     const [assunto, setAssunto] = useState('');
