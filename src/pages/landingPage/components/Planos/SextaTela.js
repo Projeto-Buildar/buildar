@@ -9,7 +9,7 @@ import calendar from '../../images/calendar.webp';
 
 import { Link } from 'react-router-dom';
 
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function SextaTela() {
   const { t, tComControleDeLinha } = useControleDeTraducao();

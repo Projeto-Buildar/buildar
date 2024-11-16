@@ -1,9 +1,9 @@
 import './QuintaTela.css';
 
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function QuintaTela() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    const { t, tFormatado } = useControleDeTraducao();
 
     return (
         <div className='frames' id='quintaTela'>
@@ -15,7 +15,7 @@ export default function QuintaTela() {
             </section>
             <article>
                 <h2>{t("Practice")}</h2>
-                <p>{tComControleDeLinha(t("Events"))}</p>
+                <p>{tFormatado(t("Events"))}</p>
                 <div>{t("More")}</div>
             </article>
         </div>

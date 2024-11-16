@@ -1,6 +1,6 @@
 import Depoiments from './Depoiments';
 import './OitavaTela.css';
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function OitavaTela() {
   const { t, tComControleDeLinha } = useControleDeTraducao();

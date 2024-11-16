@@ -1,5 +1,5 @@
 import './OitavaTela.css';
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function Depoiment(props) {
     const { t, tComControleDeLinha } = useControleDeTraducao();

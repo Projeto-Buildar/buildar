@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
 
-import useControleDeTraducao from "../../useControleDeTraducao";
+import useControleDeTraducao from "../../shared/useControleDeTraducao";
 
 export default function Elevadores() {
     const { t} = useControleDeTraducao();

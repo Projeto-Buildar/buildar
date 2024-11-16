@@ -17,7 +17,7 @@ import closeButton from './images/closeButton.png';
 
 import { useState } from "react";
 
-import useControleDeTraducao from "../../useControleDeTraducao";
+import useControleDeTraducao from "../../shared/useControleDeTraducao";
 
 import Modal from "react-modal";
 Modal.setAppElement('#root');

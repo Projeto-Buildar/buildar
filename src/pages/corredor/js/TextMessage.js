@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import KeyPressListener from './KeyPressListener';
 import './textMessage.css'
-import useControleDeTraducao from '../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 
 function TextMessage({ text, onComplete, nome }) {
     const [show, setShow] = useState(true);
