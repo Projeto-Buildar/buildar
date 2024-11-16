@@ -1,12 +1,12 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ItemContext } from './Itens';
+// import { ItemContext } from './Itens';
 import Vivi from './imagem/vivi.png';
-import Tela4 from './imagem/Tela4.jpg';
+// import Tela4 from './imagem/Tela4.jpg';
 import './Conteudo7.css';
 import email from './imagem/Email.png';
 import reniao from './imagem/Reunião-removebg-preview.png';
-import reniao2 from './imagem/equipe-removebg-preview.png';
+// import reniao2 from './imagem/equipe-removebg-preview.png';
 import organizaçao from './imagem/Organizaçao.png';
 import almoço from './imagem/Almoço.png'
 import DroppableArea from './DroppableArea';
@@ -14,7 +14,7 @@ import DroppableArea from './DroppableArea';
 
 
 export default function Conteudo() {
-  const { items, handleDrop } = useContext(ItemContext);
+  // const { items, handleDrop } = useContext(ItemContext);
 
   useEffect(() => {
     const hasReloaded = localStorage.getItem('hasReloaded');
@@ -27,9 +27,9 @@ export default function Conteudo() {
     }
   }, []);
 
-  const handleDragOver = (event) => {
-    event.preventDefault();
-  };
+  // const handleDragOver = (event) => {
+  //   event.preventDefault();
+  // };
 
   return (
     <div className='container_conteudo7'>

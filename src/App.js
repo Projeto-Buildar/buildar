@@ -62,8 +62,8 @@ import Quiz2 from './pages/quiz/Quiz2';
 
 import Ranqueada from './pages/ranqueada/Ranqueada';
 
-import SobreNos from './pages/sobre/SobreNos';
-import LojaCopy from './pages/loja copy/LojaCopy';
+// import SobreNos from './pages/sobre/SobreNos';
+// import LojaCopy from './pages/loja copy/LojaCopy';
 
 // import Conteudo from './pages/conteudo/Conteudo';
 // import Conteudo2 from './pages/conteudo/Conteudo2';

@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 // import './Conteudo.css';
 import Vivi from './imagem/vivi.png';
 import Tela1 from './imagem/Tela1.jpg';
-import Perfil from './imagem/perfil.png';
+// import Perfil from './imagem/perfil.png';
 import Prancheta from'./imagem/Prancheta.png';
 
 export default function Conteudo() {

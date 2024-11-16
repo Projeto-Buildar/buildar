@@ -7,7 +7,7 @@ import "../../../i18n"
 import logo from '../images/logo_on.webp';
 
 export default function Header() {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   function checkScroll() {

@@ -1,9 +1,9 @@
 import React from "react";
 import "./FaleConosco.css";
-import logo from "./images/logo_on.webp";
+// import logo from "./images/logo_on.webp";
 import circuloesquerdo from "./images/circuloesquerdo.webp";
 import circulodireito from "./images/circulodireito.webp"; 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Header from '../headersEfooters/Header//Header';
 import { useTranslation } from 'react-i18next';
 

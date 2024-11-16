@@ -1,7 +1,9 @@
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './AreaDescanso.css';
-import gamePic from './images/image_filler_square.png';
+
+// import gamePic from './images/image_filler_square.png';
+
 import { Link } from 'react-router-dom';
 import useControleDeTraducao from '../../useControleDeTraducao';
 

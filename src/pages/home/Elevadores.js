@@ -7,7 +7,7 @@ import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
 import useControleDeTraducao from "../../useControleDeTraducao";
 
 export default function Elevadores() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    const { t} = useControleDeTraducao();
 
     const corredores = [
         {

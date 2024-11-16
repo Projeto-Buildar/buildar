@@ -6,7 +6,7 @@ import GameObject from './GameObject';
 import demoRoomLower from "../images/mapas/mapaExtenso_lower.png";
 import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 
-import npc1 from "../images/personagens/pessoa/npc1.png";
+// import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/personagem_Rogerio.png";
 import playerV3 from "../images/personagens/pessoa/personagem_Malu.png";
 import playerV4 from "../images/personagens/pessoa/personagem_Tobias.png";
@@ -20,7 +20,7 @@ import Jaja from "../images/personagens/pessoa/Jaja.png";
 
 import Elevador from '../images/mapas/elevador.png'
 
-import useControleDeTraducao from '../../../useControleDeTraducao';
+// import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 
 // Mapeia os avatares ao ID
 const avatarMap = {

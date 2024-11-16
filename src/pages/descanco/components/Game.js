@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-import Dino, { updateDino, set } from "./Dino";
+import Dino, { updateDino} from "./Dino";
 import Ground, { updateGround } from "./Ground";
 import Cactus, { updateCacti } from "./Cactus";
 
-const WORLD_WIDTH = 100;
-const WORLD_HEIGHT = 30;
+// const WORLD_WIDTH = 100;
+// const WORLD_HEIGHT = 30;
 
 const Game = () => {
   const worldRef = useRef(null);
-  const [speedScale, setSpeedScale] = useState(1);
-  const [score, setScore] = useState(0);
+  const [speedScale] = useState(1);
+  const [score] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [showStartScreen, setShowStartScreen] = useState(true);
 

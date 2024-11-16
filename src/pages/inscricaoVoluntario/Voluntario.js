@@ -1,10 +1,10 @@
 import React from 'react';
 import HeaderHome from '../home/HeaderHome';
 import './Voluntario.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import useTypewriter from './useTypewriter';
 import LoginVoluntario from './cadastroVoluntario';
-import Footer from '../headersEfooters/footerPreLogin/Footer';
+// import Footer from '../headersEfooters/footerPreLogin/Footer';
 import bottom_back from './images/bottom_back.png';
 
 const Voluntario = () => {
@@ -30,11 +30,11 @@ const Voluntario = () => {
     );
 }
 
-const FormGroup = ({ label, component = 'input', ...props }) => (
-    <div className="form-group">
-        <label htmlFor={props.id}>{label}</label>
-        {React.createElement(component, props)}
-    </div>
-);
+// const FormGroup = ({ label, component = 'input', ...props }) => (
+//     <div className="form-group">
+//         <label htmlFor={props.id}>{label}</label>
+//         {React.createElement(component, props)}
+//     </div>
+// );
 
 export default Voluntario;

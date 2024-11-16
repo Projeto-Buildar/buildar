@@ -9,13 +9,13 @@ const LoginVoluntario = () => {
     const [linkedin, setLinkedin] = useState('');
     const [data, setData] = useState('');
 
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
+    // const handleEmailChange = (e) => {
+    //     setEmail(e.target.value);
+    // };
 
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
+    // const handlePasswordChange = (e) => {
+    //     setPassword(e.target.value);
+    // };
 
     const handleNomeChange = (e) => {
         setNome(e.target.value);

@@ -2,7 +2,7 @@ import ConfiguracaoMapaGame from './ConfiguracaoMapaGame';
 import DirectionInput from './DirectionInput';
 import Mapas from './Mapas';
 import KeyPressListener from './KeyPressListener';
-import useControleDeTraducao from '../../../useControleDeTraducao';
+// import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 import utils from './Utils';
 
 

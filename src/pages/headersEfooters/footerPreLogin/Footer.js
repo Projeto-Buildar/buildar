@@ -11,7 +11,7 @@ import github from '../images/social_github.webp';
 import './Footer.css';
 
 export default function FooterPreLogin() {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   const a = 1;
 
   return (

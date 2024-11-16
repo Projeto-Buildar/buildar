@@ -19,7 +19,7 @@ export default function Corredor() {
 
     // recebe as informações da tag canvas atravez da função Inicializar do game, dando acesso a elementos e poder criar e manipular novos elementos
     const referenciaDoGame = useRef(null);
-    const mensagens2 = useRef({})
+    // const mensagens2 = useRef({})
     // Armazena um array de mensagens que serão ditas por npcs ou interatividades com o cenário
     const [mensagens, setMensagens] = useState([]);
 
@@ -55,6 +55,9 @@ export default function Corredor() {
     /* useEffect de forma geral, é uma forma de você controlar quantas vezes você quer que uma determinada função ou algo relacionado aconteça
     isso é determinado pelos "[]" no final dele, se estiver vazio, tudo que está dentro de useEffect vai acontecer 1 unica vez quando a pagina é renderizada, agora se ele tiver alguma váriavel dentro dele, ele vai acontecer sempre que verificar alguma alteração desssa variável 
     */
+
+    // Lembre-se: caso necessário, você pode desabilitar a regra "react-hooks/exhaustive-deps" aqui
+    // Exemplo de desativação: // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
 
     //     // Recuperar o nome do mapa
@@ -125,7 +128,7 @@ export default function Corredor() {
         };
 
         // nos [] abaixo, você pode colocar variáveis que podem ter alterações dos seus estados e valores, para fazer useEffect acontecer novamente caso ocorra
-    }, [mapaNome]);
+    }, [mapaNome, hasInitialCutscenePlayed, navegarParaPagina]);
 
     return (
         <div className="telaGame">

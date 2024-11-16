@@ -6,7 +6,7 @@ import useControleDeTraducao from '../../../useControleDeTraducao';
 function TextMessage({ text, onComplete, nome }) {
     const [show, setShow] = useState(true);
     const keyPressListenerRef = useRef(null);
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    const { t} = useControleDeTraducao();
     useEffect(() => {
         const keyPressListener = new KeyPressListener("Enter", () => {
             setShow(false);
