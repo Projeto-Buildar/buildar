@@ -1,0 +1,100 @@
+#terceiraTela {
+    background: url('../../images/terceiraTela_bg.webp') right 0 bottom 0/auto 55% no-repeat;
+}
+
+#terceiraTela section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #FF486D;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.carroselAvatarL{
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    pointer-events: none;
+    width: 90%;
+    margin: 0 auto;
+    & img {
+        width: 100%;
+    }
+}
+
+.ulCarrosel {
+    padding-bottom: 10px !important;
+}
+
+.carroselAvatar{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.skinContainer {
+    /* display: flex;
+    align-items: center; */
+    height: 26rem;
+    width: 20rem;
+}
+
+.scrollContainer {
+    /* display: flex; */
+    display: table-cell;
+    vertical-align: middle;
+
+    /* justify-content: center;
+    align-items: center; */
+    padding-block: 1rem;
+    gap: 1rem;
+    & .scroller:nth-child(2) {
+        width: 3rem;
+        background: #FFFFFF;
+    }
+}
+
+.scroller {
+    width: 2rem;
+    height: 0.75rem;
+    background: #9533FD;
+    border-radius: 0.5rem;
+}
+
+.dotsLiClass {
+    position: relative;
+    z-index: 1;
+    padding-inline: 2%;
+    margin-top: 100px;
+    /* transform: translateY(1%); */
+}
+
+.dotsButtonClass {
+    cursor: pointer;
+    width: 100%;
+    height: 10px;
+    border: none;
+    border-radius: 15px; 
+}
+
+.carroselAvatar  {
+    & .dotsLiClass.liActive{
+        width: 40px;
+    }
+    & .dotsLiClass.liDisabled{
+        width: 20px;
+    }
+}
+
+.carroselAvatar  {
+    & .dotsButtonClass.buttonActive{
+        background-color: #FFFFFF;
+    }
+    & .dotsButtonClass.buttonDisabled{
+        background-color: #9533FD;
+    }
+}
