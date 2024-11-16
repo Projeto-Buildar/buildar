@@ -1,0 +1,26 @@
+#segundaTela {
+    background: url('../../images/segundaTela_bg.webp') left 0 top 5%/auto 28% no-repeat;
+    gap: 6rem;
+}
+
+#segundaTela section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    height: 28rem;
+    background: url('../../images/segundaTela_img.webp') center/contain no-repeat;
+}
+
+.monitor {
+    width: 18rem;
+    height: 18rem;
+    background: url('../../images/segundaTela_monitor.webp') center/contain no-repeat;
+    margin-right: 8rem;
+    & img {
+        margin: 16% 0 0 4%;
+        width: 92%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
