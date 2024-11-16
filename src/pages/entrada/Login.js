@@ -9,6 +9,7 @@ import forma1 from './images/forma1.webp';
 import Header from '../headersEfooters/Header//Header';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
+import { setNomeUsuario } from '../../shared/useNomeUsuario';
 
 export default function Login() {
     const { t } = useTranslation();
@@ -24,6 +25,7 @@ export default function Login() {
             setErrorMessage('Please fill in all fields.');
         } else {
             setErrorMessage('');
+            setNomeUsuario({apelido: false, valor: email})
             navigate('/home');
         }
     };
