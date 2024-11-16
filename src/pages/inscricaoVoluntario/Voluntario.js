@@ -14,8 +14,11 @@ const Voluntario = () => {
         <main id="voluntario">
             <HeaderHome />
             <div className='ContainerVoluntarioMain'>
-                <div id="titulo">
-                    <h1 id="animated-title"></h1>
+                <div id="titulo">          
+                <h1 id="animated-title" aria-label="Título animado da página" aria-live="polite">
+                    {/* Você pode adicionar um texto alternativo para leitores de tela enquanto o conteúdo está sendo alterado */}
+                    Título sendo carregado...
+                </h1>
                     <hr className="decorative-line" />
                     <p>
                         Quer impactar a vida dos jovens com suas habilidades? Seja voluntário e ajude a construir o futuro! Compartilhe seus conhecimentos, inspire com suas experiências e contribua para um amanhã melhor. Junte-se a nós nesta jornada transformadora!

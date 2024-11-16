@@ -6,7 +6,7 @@ class KeyPressListener {
 
         // Função de callback para o evento keydown
         this.keydownFunction = function (event) {
-            if (event.code == keyCode) { // Verifica se o código da tecla pressionada corresponde ao keyCode fornecido
+            if (event.code === keyCode) { // Verifica se o código da tecla pressionada corresponde ao keyCode fornecido
                 if (keySafe) { // Verifica se a tecla está segura para ser pressionada
                     keySafe = false; // Marca a tecla como não segura para evitar múltiplas execuções do callback
                     callback(); // Chama a função de callback passada como parâmetro

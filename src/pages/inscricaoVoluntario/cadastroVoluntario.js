@@ -90,7 +90,7 @@ const LoginVoluntario = () => {
                                 onChange={handleDataChange}
                                 required
                             />
-                            <a href="#" className="forgot-pass">Esqueci minha senha</a>
+                            <a href="#!" className="forgot-pass" onClick={(e) => e.preventDefault()} aria-disabled="true">Esqueci minha senha</a>
                             <p className="politicaVoluntarios">Ao se cadastrar, você concorda com nossos Termos, Política de Privacidade e Política de Cookies.</p>
                             <button type="submit" className="login-button">Entrar</button>
                         </form>

@@ -24,14 +24,14 @@ export default function FooterPreLogin() {
             <Link to="/apoie">{t("Support")}</Link>
             <Link to="/faleConosco">{t("Contact")}</Link>
           </ul>
-          <ul style={{display: a == 1? 'none' : 'flex'}}>
+          <ul style={{display: a === 1? 'none' : 'flex'}}>
             <Link to="/conexoes">{t("Connect")}</Link>
             <Link to="/perfil">Perfil</Link>
             <Link to="/loja">Loja</Link>
           </ul>
         </nav>
         <figure>
-          <Link to={ a == 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <Link to={ a === 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
           <p>{t("Rights")}</p>
         </figure>
       </section>
@@ -43,16 +43,16 @@ export default function FooterPreLogin() {
           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
         </nav>
         <nav className="social">
-          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
+          <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noreferrer">
             <img src={instagram} alt="Instagram" />
           </a>
-          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noopener">
+          <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noreferrer">
             <img src={tiktok} alt="TikTok" />
           </a>
-          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noreferrer">
             <img src={linkedin} alt="LinkedIn" />
           </a>
-          <a href="https://github.com/projeto-buildar" target="_blank" rel="noopener">
+          <a href="https://github.com/projeto-buildar" target="_blank" rel="noreferrer">
             <img src={github} alt="GitHub" />
           </a>
         </nav>

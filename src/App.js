@@ -74,7 +74,7 @@ import Ranqueada from './pages/ranqueada/Ranqueada';
 //----------------------------------------------------|
 
 export default function App() {
-  const {i18n } = useTranslation();
+  const { i18n } = useTranslation();
   
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
@@ -83,7 +83,7 @@ export default function App() {
     // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda
     i18n.changeLanguage(selectedLanguage);
     localStorage.setItem('language', selectedLanguage);
-  }, [selectedLanguage]);
+  }, [selectedLanguage, i18n]);
 
   const handleLanguageChange = (event) => {
     setSelectedLanguage(event.target.value);
@@ -137,7 +137,7 @@ export default function App() {
 
       <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
 
-        <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
+        <select name="language" id="language" aria-label="Idioma"  onChange={handleLanguageChange} value={selectedLanguage}>
 
           <option value="pt">🇧🇷</option>
           <option value="en">🇺🇸</option>

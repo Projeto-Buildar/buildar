@@ -53,7 +53,7 @@ const SobreNos = () => {
           <div className="text-section1">
             <h2>{t("originBuildar")}</h2>
             <p>{t("foundedBy")}</p>
-            <a href="#" className="ver-mais1">{t("seeMore")}</a>
+            <a href="#!" className="ver-mais1" onClick={(e) => e.preventDefault()} aria-disabled="true">{t("seeMore")}</a>
           </div>
           <img src={mascot} alt={t("mascotBuildar")} className="mascot1" />
         </div>
@@ -125,7 +125,7 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
-      <img className='odsClasse' src={ods}></img>
+      <img alt='' className='odsClasse' src={ods}></img>
       <section className="OurTeam">
         <h2>{t("facesBehindBrand")}</h2>
         <div className="team-members">

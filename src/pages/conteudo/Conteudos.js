@@ -95,7 +95,7 @@ export default function Conteudos() {
         if (objetoConteudo) {
             setConteudoIndex(0);
         }
-    }, [indice]);
+    }, [indice, objetoConteudo]);
 
     const BtnFunction = (increment) => {
         const newIndex = conteudoIndex + increment;

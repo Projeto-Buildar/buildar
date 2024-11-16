@@ -33,7 +33,7 @@ const SobreNos = () => {
           <div className="text-section">
             <h2>{t("originBuildar")}</h2>
             <p>{t("foundedBy")}</p>
-            <a href="#" className="ver-mais">{t("seeMore")}</a>
+            <a href="#!" className="ver-mais" onClick={(e) => e.preventDefault()} aria-disabled="true">{t("seeMore")}</a>
           </div>
           <img src={mascot} alt={t("mascotBuildar")} className="mascot" />
         </div>

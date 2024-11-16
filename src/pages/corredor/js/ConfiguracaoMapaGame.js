@@ -111,7 +111,7 @@ defineOffset(cameraPerson){
             if(`${interacao.x},${interacao.y}` === `${nextCoords.x},${nextCoords.y}`){
                 return interacao;
             }
-            return;
+            return null;
         });
         
         if (!this.isCutscenePlaying && match && match.talking.length) {
