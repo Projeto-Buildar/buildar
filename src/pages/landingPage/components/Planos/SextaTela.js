@@ -10,100 +10,109 @@ import calendar from '../../images/calendar.webp';
 import { Link } from 'react-router-dom';
 
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+import TPrecos from '../../../../shared/TPrecos';
 
+const precosPlanos = 
+{
+  plano1: 12.90,
+  plano2: 16.90,
+  plano3: 14.90
+}
 export default function SextaTela() {
   // eslint-disable-next-line no-unused-vars
-  const { t, tFormatado } = useControleDeTraducao();
+  const { t, tFormatado, chaveComPrefixo } = useControleDeTraducao("section6");
 
-  const evitarLinhasViúvas = (texto) => {
-    const palavras = texto.split(' ');
-    if (palavras.length > 1) {
-      palavras[palavras.length - 2] += '\u00A0' + palavras.pop();
-    }
-    return palavras.join(' ');
-  };
+  // Atenção ⚠: possibilidade de restruturar codigo usando props e array.map
+  // Isso em questão de a estrutura dos planos é praticamente a mesma
 
   return(
     <div id="sextaTela" className='frames'>
       <div className='backgroundLeft'></div>
       <div className='backgroundMid'></div>
       <article>
-        <h2>{t("CAP")}</h2>
-        <p>{t("Paths1")}<span className='destaqPreto'>{evitarLinhasViúvas(t("Paths2"))}</span>{evitarLinhasViúvas(t("Paths3"))}</p>
+        <h2>{tFormatado(chaveComPrefixo("subtitulo"))}</h2>
+        <p>
+        <TComTag
+            i18nKey={chaveComPrefixo("descricao")}
+            components={{ span: <span className='destaqPreto' /> }}
+            usarControleDeLinha={true}
+          />
+        </p>
       </article>
       <section  id="Planos">
-        <div className='offers'>
+        <div className='offers'> 
           <div className='titleCard'>
-            <h3>{t("Intern")}</h3>
-            <h4>{t("Plan")}</h4>
+            <h3>{t(chaveComPrefixo("plano1.nome"))}</h3>
+            <h4>{t(chaveComPrefixo("tipoPlano.mensal"))}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={event}/>
-              <p>{t("Excl")}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio1"))}</p>
             </span>
             <span>
               <img alt='' src={addBlock}/>
-              <p>{t("Ads")}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio2"))}</p>
             </span>
             <span>
               <img alt='' src={skinAvatar}/>
-              <p>{t("Skin")}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio3"))}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t("Price1")}</p>
+          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano1) })}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">{t("Check")}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
           </div>
           {/* <div className='offerButton'>Conferir</div> */}
         </div>
         <div className='offers'>
           <div className='titleCard'>
-            <h3>{t("Manager")}</h3>
-            <h4>{t("Plan")}</h4>
+            <h3>{t(chaveComPrefixo("plano2.nome"))}</h3>
+            <h4>{t(chaveComPrefixo("tipoPlano.mensal"))}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={previous}/>
-              <p>{t("Prev")}</p>
+              <p>{t(chaveComPrefixo("beneficiosIguais"))}</p>
             </span>
             <span>
               <img alt='' src={skinScenary}/>
-              <p>{t("Scene")}</p>
+              <p>{t(chaveComPrefixo("plano2.beneficio1"))}</p>
             </span>
             <span>
               <img alt='' src={energy}/>
-              <p>{t("Energy")}</p>
+              <p>{t(chaveComPrefixo("plano2.beneficio2"))}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t("Price2")}</p>
+          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano2) })}</p>
           {/* LINKARRR */}
           <div className='offerButton'>
-            <Link to="/pagamento">{t("Check")}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
           </div>
 
         </div>
         <div className='offers'>
           <div className='titleCard'>
             <h3>CEO</h3>
-            <h4>{t("Year")}</h4>
+            <h4>{t(chaveComPrefixo("tipoPlano.anual"))}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={previous}/>
-              <p>{t("Prev")}</p>
+              <p>{t(chaveComPrefixo("beneficiosIguais"))}</p>
             </span>
             <span>
               <img alt='' src={calendar}/>
-              <p>{t("FreeMonth")}</p>
+              <p>{t(chaveComPrefixo("plano3.beneficio"))}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t("Price3")}</p>
+          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano3) })}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">{t("Check")}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
           </div>
         </div>
       </section>
