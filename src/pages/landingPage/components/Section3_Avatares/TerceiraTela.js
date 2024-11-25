@@ -14,7 +14,7 @@ import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/Transla
 const avatares = [Avatar1, Avatar2, Avatar3]
 
 export default function TerceiraTela() {
-  const { chaveComPrefixo } = useControleDeTraducao("Section3");
+  const { chaveComPrefixo } = useControleDeTraducao("section3");
   
   return (
     <div className='frames' id="terceiraTela">
@@ -50,16 +50,14 @@ export default function TerceiraTela() {
       <article>
         <h2>
           <TComTag
-            i18nKey={chaveComPrefixo("Subtitulo")}
+            i18nKey={chaveComPrefixo("subtitulo")}
             components={{ span: <span className='destaqueRoxo' /> }}
-            usarControleDeLinha={true}
           />
         </h2>
         <p>
           <TComTag
-            i18nKey={chaveComPrefixo("Descricao")}
+            i18nKey={chaveComPrefixo("descricao")}
             components={{ span: <span className='destaqAzul' /> }}
-            usarControleDeLinha={true}
           />
         </p>
       </article>

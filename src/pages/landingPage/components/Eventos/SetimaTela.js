@@ -1,19 +1,30 @@
 import './SetimaTela.css';
 import logo from '../../images/setimaTela_img.webp';
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
 
 export default function SetimaTela() {
-  
-  const { t, tFormatado } = useControleDeTraducao();
 
-  return(
+  const { chaveComPrefixo } = useControleDeTraducao("section7");
+
+  return (
     <div className='frames' id="setimaTela">
       <figure>
-        <img alt='Logo da Buildar' src={logo}/>
+        <img alt='Logo da Buildar' src={logo} />
       </figure>
       <article>
-        <h2>{t('moreThanInclusion')} <span className='destaqRoxo'>{t('integration')}</span></h2>
-        <p>{t('wantMore')} Buildar {t('hasSystem')} <span className='destaqAzul'>{t('events')}</span> {t('and')} <span className='destaqAzul'>{t('workshops')}</span> {tFormatado(t('forExchange'))}.</p>
+        <h2>
+          <TComTag
+            i18nKey={chaveComPrefixo("subtitulo")}
+            components={{ span: <span className='destaqueRoxo' /> }}
+          />
+        </h2>
+        <p>
+          <TComTag
+            i18nKey={chaveComPrefixo("descricao")}
+            components={{ span: <span className='destaqAzul' /> }}
+          />
+        </p>
       </article>
     </div>
   );

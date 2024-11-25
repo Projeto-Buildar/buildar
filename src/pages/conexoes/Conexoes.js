@@ -62,7 +62,7 @@ export default function Conexoes() {
             <div className="Seja-voluntario">
                 <img src={imgFormulario} alt="imgFormulario" className="imgFormulario" />
                 <div className="textoVoluntario">
-                    <h3>{tFormatado(t("becomeSpeaker"))}</h3>
+                    <h3>{tFormatado("becomeSpeaker")}</h3>
                     <p>{t("workExperiences")}</p>
                     <Link to="/inscricaoVoluntario">
                         <button>{t("becomeVolunteer")}</button>

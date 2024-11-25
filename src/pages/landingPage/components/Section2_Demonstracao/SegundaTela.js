@@ -4,7 +4,7 @@ import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';  // Assumindo que TransComPrefixo está exportado
 
 export default function SegundaTela() {
-  const { chaveComPrefixo } = useControleDeTraducao("Section2");
+  const { chaveComPrefixo } = useControleDeTraducao("section2");
   // // Função que aplica o prefixo automaticamente
   // const chaveComPrefixo = usePrefixo("Section2")
   
@@ -13,16 +13,14 @@ export default function SegundaTela() {
       <article>
         <h2>
           <TComTag
-              i18nKey={chaveComPrefixo("Subtitulo")}
+              i18nKey={chaveComPrefixo("subtitulo")}
               components={{ span: <span className='destaqueRoxo' /> }}
-              usarControleDeLinha={true}
             />
         </h2>
         <p>
           <TComTag
-              i18nKey={chaveComPrefixo("Descricao")}
+              i18nKey={chaveComPrefixo("descricao")}
               components={{ span: <span className='destaqAzul' /> }}
-              usarControleDeLinha={true}
           />
         </p>
       </article>

@@ -24,7 +24,13 @@ import useControleDeTraducao from "../../shared/useControleDeTraducao";
 import Modal from "react-modal";
 Modal.setAppElement('#root');
 
+const tipoPlano = (tipo) => {
+    return `planos.plano${tipo}.nome`
+}
+const planoEscolhido = tipoPlano(2);
+
 export default function Perfil() {
+    
     // eslint-disable-next-line no-unused-vars
     const { t, tFormatado } = useControleDeTraducao();
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -37,6 +43,7 @@ export default function Perfil() {
         setIsOpen(false);
     }
 
+    // const nomeUsuario = getNomeUsuario();
     return (
         <div>
             <HeaderHome />
@@ -46,7 +53,7 @@ export default function Perfil() {
                     <div className="profileImage">
                         <div className="star"></div>
                         <img alt="" src={profilePic} className="profilePic" />
-                        <h3 className="jobPlan">{t("Manager")}</h3>
+                        <h3 className="jobPlan">{t(planoEscolhido)}</h3>
                     </div>
                     <div className="topCard">
                         <div className="userProfileInfo">

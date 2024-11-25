@@ -14,21 +14,23 @@ import Footer from '../headersEfooters/footerPreLogin/Footer';
 
 import { TranslationProvider } from '../../shared/TranslationContext';
 
-export default function LandingPage (){
+export default function LandingPage() {
     return (
-        <TranslationProvider prefixo="landingPage">
-            <main id='landingPage'>
-                <Header/>
-                <PrimeiraTela/>
-                <SegundaTela/>
-                <TerceiraTela/>
-                <QuartaTela/>
-                <QuintaTela/>
-                <SextaTela/>
-                <SetimaTela/>
-                <OitavaTela/>
-                <Footer/>
-            </main>
-        </TranslationProvider>
+
+        <main id='landingPage'>
+            <TranslationProvider prefixo="landingPage">
+                <Header />
+                <PrimeiraTela />
+                <SegundaTela />
+                <TerceiraTela />
+                <QuartaTela />
+                <QuintaTela />
+                <SextaTela />
+                <SetimaTela />
+                <OitavaTela />
+            </TranslationProvider>
+            <Footer />
+        </main>
+
     )
 }

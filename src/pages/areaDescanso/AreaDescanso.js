@@ -23,7 +23,7 @@ export default function AreaDescanso() {
                             <span></span>
                             <div>
                                 <h3>{t("runViviRun")}</h3>
-                                <p>{tFormatado(t("runViviDescription"))}</p>
+                                <p>{tFormatado("runViviDescription")}</p>
                             </div>
                         </article>
                     </a>
@@ -32,7 +32,7 @@ export default function AreaDescanso() {
                             <span></span>
                             <div>
                                 <h3>{t("capQuiz")}</h3>
-                                <p>{tFormatado(t("capQuizDescription"))}</p>
+                                <p>{tFormatado("capQuizDescription")}</p>
                             </div>
                         </article>
                     </Link>
@@ -40,7 +40,7 @@ export default function AreaDescanso() {
                         <span></span>
                         <div>
                             <h3>{t("gameUnderConstruction")}</h3>
-                            <p>{tFormatado(t("gameUnderConstructionDescription"))}</p>
+                            <p>{tFormatado("gameUnderConstructionDescription")}</p>
                         </div>
                     </article>
                 </section>

@@ -113,7 +113,7 @@ const SobreNos = () => {
         <div className="cause-items">
           <div className="cause-item">
             <img src={peopleIcon} alt={t("lackSoftSkills")} />
-            <p>{tFormatado(t("youthMarketEntry"))}</p>
+            <p>{tFormatado("youthMarketEntry")}</p>
           </div>
           <div className="cause-item">
             <img src={schoolIcon} alt={t("educationSoftSkills")} />
@@ -139,17 +139,17 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember3} alt="Erik Paulino" />
-            <p><strong>Erik Paulino</strong><br />{tFormatado(t("scrumMasterFrontend"))}</p>
+            <p><strong>Erik Paulino</strong><br />{tFormatado("scrumMasterFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember4} alt="Eduardo Gomes" />
-            <p><strong>Eduardo Gomes</strong><br />{tFormatado(t("backendDeveloper"))}</p>
+            <p><strong>Eduardo Gomes</strong><br />{tFormatado("backendDeveloper")}</p>
           </div>
         </div>
         <div className='team-members 2'>
           <div className="team-member">
             <img src={teamMember5} alt="Isaque Barbosa" />
-            <p><strong>Isaque Barbosa</strong><br />{tFormatado(t("backendDeveloper"))}</p>
+            <p><strong>Isaque Barbosa</strong><br />{tFormatado("backendDeveloper")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember6} alt="Gretzel Penaloza" />
@@ -157,7 +157,7 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember7} alt="Gustavo Bosak" />
-            <p><strong>Gustavo Bosak</strong><br />{tFormatado(t("financeFrontend"))}</p>
+            <p><strong>Gustavo Bosak</strong><br />{tFormatado("financeFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember8} alt="Letícia Nascimento" />

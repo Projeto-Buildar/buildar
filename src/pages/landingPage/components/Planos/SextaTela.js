@@ -21,7 +21,7 @@ const precosPlanos =
 }
 export default function SextaTela() {
   // eslint-disable-next-line no-unused-vars
-  const { t, tFormatado, chaveComPrefixo } = useControleDeTraducao("section6");
+  const { t, tFormatado, chaveComPrefixo } = useControleDeTraducao("planos");
 
   // Atenção ⚠: possibilidade de restruturar codigo usando props e array.map
   // Isso em questão de a estrutura dos planos é praticamente a mesma
@@ -31,88 +31,87 @@ export default function SextaTela() {
       <div className='backgroundLeft'></div>
       <div className='backgroundMid'></div>
       <article>
-        <h2>{tFormatado(chaveComPrefixo("subtitulo"))}</h2>
+        <h2>{tFormatado("section6.subtitulo")}</h2>
         <p>
         <TComTag
-            i18nKey={chaveComPrefixo("descricao")}
+            i18nKey={"section6.descricao"}
             components={{ span: <span className='destaqPreto' /> }}
-            usarControleDeLinha={true}
           />
         </p>
       </article>
       <section  id="Planos">
         <div className='offers'> 
           <div className='titleCard'>
-            <h3>{t(chaveComPrefixo("plano1.nome"))}</h3>
-            <h4>{t(chaveComPrefixo("tipoPlano.mensal"))}</h4>
+            <h3>{t(chaveComPrefixo("plano1.nome"),"")}</h3>
+            <h4>{t(chaveComPrefixo("tipoPlano.mensal"),"")}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={event}/>
-              <p>{t(chaveComPrefixo("plano1.beneficio1"))}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio1"),"")}</p>
             </span>
             <span>
               <img alt='' src={addBlock}/>
-              <p>{t(chaveComPrefixo("plano1.beneficio2"))}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio2"),"")}</p>
             </span>
             <span>
               <img alt='' src={skinAvatar}/>
-              <p>{t(chaveComPrefixo("plano1.beneficio3"))}</p>
+              <p>{t(chaveComPrefixo("plano1.beneficio3"),"")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano1) })}</p>
+          <p>{t(chaveComPrefixo("valor"),"", { preco: TPrecos(precosPlanos.plano1) })}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"),"")}</Link>
           </div>
           {/* <div className='offerButton'>Conferir</div> */}
         </div>
         <div className='offers'>
           <div className='titleCard'>
-            <h3>{t(chaveComPrefixo("plano2.nome"))}</h3>
-            <h4>{t(chaveComPrefixo("tipoPlano.mensal"))}</h4>
+            <h3>{t(chaveComPrefixo("plano2.nome"),"")}</h3>
+            <h4>{t(chaveComPrefixo("tipoPlano.mensal"),"")}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={previous}/>
-              <p>{t(chaveComPrefixo("beneficiosIguais"))}</p>
+              <p>{t(chaveComPrefixo("beneficiosIguais"),"")}</p>
             </span>
             <span>
               <img alt='' src={skinScenary}/>
-              <p>{t(chaveComPrefixo("plano2.beneficio1"))}</p>
+              <p>{t(chaveComPrefixo("plano2.beneficio1"),"")}</p>
             </span>
             <span>
               <img alt='' src={energy}/>
-              <p>{t(chaveComPrefixo("plano2.beneficio2"))}</p>
+              <p>{t(chaveComPrefixo("plano2.beneficio2"),"")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano2) })}</p>
+          <p>{t(chaveComPrefixo("valor"),"", { preco: TPrecos(precosPlanos.plano2) })}</p>
           {/* LINKARRR */}
           <div className='offerButton'>
-            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"),"")}</Link>
           </div>
 
         </div>
         <div className='offers'>
           <div className='titleCard'>
             <h3>CEO</h3>
-            <h4>{t(chaveComPrefixo("tipoPlano.anual"))}</h4>
+            <h4>{t(chaveComPrefixo("tipoPlano.anual"),"")}</h4>
           </div>
           <div>
             <span>
               <img alt='' src={previous}/>
-              <p>{t(chaveComPrefixo("beneficiosIguais"))}</p>
+              <p>{t(chaveComPrefixo("beneficiosIguais"),"")}</p>
             </span>
             <span>
               <img alt='' src={calendar}/>
-              <p>{t(chaveComPrefixo("plano3.beneficio"))}</p>
+              <p>{t(chaveComPrefixo("plano3.beneficio"),"")}</p>
             </span>
           </div>
           <div className='breakBar'></div>
-          <p>{t(chaveComPrefixo("valor"), { preco: TPrecos(precosPlanos.plano3) })}</p>
+          <p>{t(chaveComPrefixo("valor"),"", { preco: TPrecos(precosPlanos.plano3) })}</p>
           <div className='offerButton'>
-            <Link to="/pagamento">{t(chaveComPrefixo("botoes"))}</Link>
+            <Link to="/pagamento">{t(chaveComPrefixo("botoes"),"")}</Link>
           </div>
         </div>
       </section>

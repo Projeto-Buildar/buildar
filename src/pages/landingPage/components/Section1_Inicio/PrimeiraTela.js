@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function PrimeiraTela() {
-  const { t, tFormatado, chaveComPrefixo} = useControleDeTraducao("Section1");
+  const { t, tFormatado, chaveComPrefixo} = useControleDeTraducao("section1");
 
   // Obtenha a tradução original, manipule o texto e passe para o Trans
   // const textoManipulado = tFormatado(t('fraseComSpan', { g: 'gostoso' }));
@@ -19,7 +19,7 @@ export default function PrimeiraTela() {
 
       <article>
 
-        <h1>{tFormatado(chaveComPrefixo("Titulo"))}</h1>
+        <h1>{tFormatado(chaveComPrefixo("titulo"))}</h1>
 
         <div className='textBar'></div>
 
@@ -27,12 +27,12 @@ export default function PrimeiraTela() {
         <section>
 
           <Link to="/cadastro">
-            <div className='buttonCadastro'><span>{t(chaveComPrefixo("Cadastrar"))}</span></div>
+            <div className='buttonCadastro'><span>{t("cadastrar")}</span></div>
           </Link>
           
           <Link to='/login'>
           
-            <div className='buttonLogin'>{t(chaveComPrefixo("Login"))} </div>
+            <div className='buttonLogin'>{t(chaveComPrefixo("login"))} </div>
 
             {/* <TransComPrefixo
               i18nKey="Section2.fraseComSpan"
