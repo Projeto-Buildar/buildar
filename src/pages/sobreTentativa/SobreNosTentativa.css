@@ -352,6 +352,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 10%;
     /* margin: 20px; */
     /* padding-inline: 10%; */
     /* padding-block: 2%; */
