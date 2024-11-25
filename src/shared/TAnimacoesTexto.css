@@ -1,0 +1,108 @@
+/* TAnimacoesTexto.css */
+
+/* Efeito Rainbow Wave (arco-íris nas letras) com animação */
+.rainbow-wave {
+  display: inline-block;
+  animation: rainbow-wave-animation 1s infinite;
+}
+
+@keyframes rainbow-wave-animation {
+  0% { color: #FF0000; }
+  14% { color: #FF7F00; }
+  28% { color: #FFFF00; }
+  42% { color: #00FF00; }
+  57% { color: #0000FF; }
+  71% { color: #4B0082; }
+  85% { color: #9400D3; }
+  100% { color: #FF0000; }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de onda nas letras com cores fixas do arco-íris */
+.rainbow-wave-letter {
+  display: inline-block;
+  animation: wave 1s ease-in-out infinite;
+}
+
+/* Define as cores fixas para cada letra, aplicando a lógica cíclica para cores */
+.rainbow-wave-letter:nth-child(7n+1) {
+  color: #FF0000;
+}
+
+.rainbow-wave-letter:nth-child(7n+2) {
+  color: #FF7F00;
+}
+
+.rainbow-wave-letter:nth-child(7n+3) {
+  color: #FFFF00;
+}
+
+.rainbow-wave-letter:nth-child(7n+4) {
+  color: #00FF00;
+}
+
+.rainbow-wave-letter:nth-child(7n+5) {
+  color: #0000FF;
+}
+
+.rainbow-wave-letter:nth-child(7n+6) {
+  color: #4B0082;
+}
+
+.rainbow-wave-letter:nth-child(7n+7) {
+  color: #9400D3;
+}
+
+/* Animação Fade In */
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 2s forwards;
+}
+
+@keyframes fade-in-animation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animação Zoom In */
+.zoom-in {
+  transform: scale(0);
+  animation: zoom-in-animation 1s forwards;
+}
+
+@keyframes zoom-in-animation {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Animação Bounce */
+.bounce {
+  animation: bounce-animation 1s infinite;
+}
+
+@keyframes bounce-animation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Classe padrão para animação */
+.default-animation {
+  font-weight: bold;
+}
