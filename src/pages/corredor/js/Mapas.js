@@ -20,6 +20,9 @@ import Jaja from "../images/personagens/pessoa/Jaja.png";
 
 import Elevador from '../images/mapas/elevador.png'
 
+import { getNomeUsuario } from '../../../shared/useNomeUsuario';
+import { tParaDialogos } from './tParaDialogos';
+
 // import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 
 // Mapeia os avatares ao ID
@@ -30,7 +33,18 @@ const avatarMap = {
 };
 
 const selectedSkinId = localStorage.getItem('selectedSkin');
-const selectedAvatar = avatarMap[selectedSkinId] || playerV2; 
+const selectedAvatar = avatarMap[selectedSkinId] || playerV2;
+
+// const tParaDialogos = (tiposChaves = {}, chave = {}, valor, tag) => {
+//     let chaveDeDialogo = tiposChaves.npcs ? "npcs." : 'interacoes.';
+//     const ultimaChave = tiposChaves.nome ? ".tNome" : `.texto${chave.n}`;
+
+//     return {
+//         chave: ("corredor." + chaveDeDialogo + chave.t + ultimaChave), 
+//         valor: valor,
+//         tag: tag
+//     }
+// }
 
 // Define um objeto Maps que contém diferentes mapas do jogo
 const Mapas = {
@@ -41,13 +55,45 @@ const Mapas = {
 
         // Objetos do jogo presentes no mapa DemoRoom
         gameObjects: {
+            Drii: new Person({
+                x: utils.withGrid(11),
+                y: utils.withGrid(6),
+                src: Drii,
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    {t: "" },
+                    "Adriana"
+                ),
+                behaviorLoop: [
+                    { type: "stand", direction: "down", time: 800 },
+                ],
+                talking: [
+                    {
+                        events: [
+                            //Evento de quando você for falar com o npc
+                            {
+                                type: "textMessage",
+                                text: tParaDialogos(
+                                    { npcs: true, nome: false, },
+                                    { t: "npc1", n: 1 }
+                                ),
+                                faceHero: "Drii"
+                            },
+                        ]
+                    }
+                ]
+            }),
             // Personagem não jogador (NPC) (comentado)    
             Debora: new Person({
                 x: utils.withGrid(21),
                 y: utils.withGrid(9),
                 src: Debora,
                 // Talvez passar o nome para os eventos e ter uma tag especificando o nome do npc ou player na fala
-                nome: 'Debora',
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    {t: ""  },
+                    "Debora"
+                ),
                 behaviorLoop: [
                     //fazer a movimentação do npc (stand = giro ou parado) (walk = andando )
                     { type: "stand", direction: "up", time: 800 },
@@ -59,27 +105,24 @@ const Mapas = {
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "DeboraDialogo1", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo2", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo3", faceHero: "Debora" },
-                            { type: "textMessage", text: "DeboraDialogo4", faceHero: "Debora" },
-                        ]
-                    }
-                ]
-            }),
-            Drii: new Person({
-                x: utils.withGrid(11),
-                y: utils.withGrid(6),
-                src: Drii,
-                nome: 'Adriana',
-                behaviorLoop: [
-                    { type: "stand", direction: "down", time: 800 },
-                ],
-                talking: [
-                    {
-                        events: [
-                            //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "DriiDialogo1", faceHero: "Drii" },
+                            { type: "textMessage", 
+                                text: tParaDialogos(
+                                    {npcs: true, nome: false, },
+                                    { t:"npc2", n: 1}
+                                ), 
+                                faceHero: "Debora" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc2", n: 2}
+                            ), faceHero: "Debora" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc2", n: 3}
+                            ), faceHero: "Debora" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc2", n: 4}
+                            ), faceHero: "Debora" },
                         ]
                     }
                 ]
@@ -88,18 +131,25 @@ const Mapas = {
                 x: utils.withGrid(27),
                 y: utils.withGrid(6),
                 src: Gabs,
-                nome: 'Gabriel',
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    {t: ""  },
+                    "Gabriel"
+                ),
                 behaviorLoop: [
-                  { type: "stand", direction: "left", time: 2000},
-                  { type: "stand", direction: "down", time: 800},
-                  { type: "stand", direction: "right", time: 2000},
-                  { type: "stand", direction: "down", time: 800},
+                    { type: "stand", direction: "left", time: 2000 },
+                    { type: "stand", direction: "down", time: 800 },
+                    { type: "stand", direction: "right", time: 2000 },
+                    { type: "stand", direction: "down", time: 800 },
                 ],
                 talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "GabsDialogo1", faceHero: "Gabs" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc3", n: 1}, "" , {tipoAnim: "wave"} 
+                            ), faceHero: "Gabs" },
                         ]
                     }
                 ]
@@ -113,15 +163,22 @@ const Mapas = {
                 x: utils.withGrid(4),
                 y: utils.withGrid(6),
                 src: Andrei,
-                nome: 'Andrei',
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    {t: ""  },
+                    'Andrei'
+                ),
                 behaviorLoop: [
-                    { type: "stand", direction: "down", time: 800},
-                  ],
-                  talking: [
+                    { type: "stand", direction: "down", time: 800 },
+                ],
+                talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "AndreiDialogo1", faceHero: "Andrei" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc4", n: 1}
+                            ), faceHero: "Andrei" },
                         ]
                     }
                 ]
@@ -130,17 +187,27 @@ const Mapas = {
                 x: utils.withGrid(22),
                 y: utils.withGrid(9),
                 src: Aurora,
-                nome: 'Aurora',
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    {t: ""  },
+                    'Aurora'
+                ),
                 behaviorLoop: [
-                    { type: "stand", direction: "left", time: 10800},
-                    { type: "stand", direction: "up", time: 800},
+                    { type: "stand", direction: "left", time: 10800 },
+                    { type: "stand", direction: "up", time: 800 },
                 ],
                 talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "AuroraDialogo1" },
-                            { type: "textMessage", text: "AuroraDialogo2" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc5", n: 1}
+                            )},
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc5", n: 2}
+                            ) },
                         ]
                     }
                 ]
@@ -149,17 +216,30 @@ const Mapas = {
                 x: utils.withGrid(33),
                 y: utils.withGrid(10),
                 src: Jaja,
-                nome: 'Jailson',
+                nome: tParaDialogos(
+                    { npcs: true, nome: true, },
+                    { t: ""  },
+                    'Jailson'
+                ),
                 behaviorLoop: [
-                    { type: "stand", direction: "left", time: 800},
+                    { type: "stand", direction: "left", time: 800 },
                 ],
                 talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "JailsonDialogo1", faceHero: "Jailson" },
-                            { type: "textMessage", text: "JailsonDialogo2", faceHero: "Jailson" },
-                            { type: "textMessage", text: "JailsonDialogo3", faceHero: "Jailson" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc6", n: 1}
+                            ), faceHero: "Jailson" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc6", n: 2}
+                            ), faceHero: "Jailson" },
+                            { type: "textMessage", text: tParaDialogos(
+                                {npcs: true, nome: false, },
+                                { t:"npc6", n: 3}
+                            ), faceHero: "Jailson" },
 
                         ]
                     }
@@ -191,7 +271,7 @@ const Mapas = {
                 },
                 distanciaX: 4, // Distância em pixels entre os sprites na animação
                 animationFrameLimit: 6, // Limite de frames da animação
-                
+
             }),
             elevador: new GameObject({
                 x: utils.withGrid(8),
@@ -207,15 +287,24 @@ const Mapas = {
 
         // você consegue definir coordenadas no mapa e eventos ao qual o player consegue interagir
         interacoes: {
-            
+            // Atenção ⚠: alguns nomeres como portas e outros objetos interativos tem que ter tradução no textMessage
             porta1: new GameObject({
                 x: utils.withGrid(18),
                 y: utils.withGrid(5),
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: "porta1" }
+                ),
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Aqui é a primeira etapa da Gestão de tempo"},
-                            { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo1"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "porta1", n: 1 }
+                                ),
+                            },
+                            { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo1" },
                         ]
                     }
                 ]
@@ -223,12 +312,26 @@ const Mapas = {
             porta2: new GameObject({
                 x: utils.withGrid(24),
                 y: utils.withGrid(5),
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: "porta2" }
+                ),
                 talking: [
                     {
                         events: [
                             // { type: "redirecionarPagina", text: "/conteudos/GestaoDeTempo2"},
-                            { type: "textMessage", text: "Está porta está trancada"},
-                            { type: "textMessage", text: "É melhor eu explorar mais o lugar por enquanto"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "porta2", n: 1 }
+                                )
+                            },
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "porta2", n: 2 }
+                                )
+                            },
                             { who: "player", type: "walk", direction: "down" },
                         ]
                     }
@@ -237,13 +340,27 @@ const Mapas = {
             porta3: new GameObject({
                 x: utils.withGrid(30),
                 y: utils.withGrid(5),
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: "porta3" }
+                ),
                 talking: [
                     {
                         events: [
                             //Evento de quando você for falar com o npc
-                            { type: "textMessage", text: "Está porta leva para um lugar bem legal!"},
-                            { type: "textMessage", text: "Mas você ainda não tem acesso :("},
-                            
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "porta3", n: 1 }
+                                )
+                            },
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "porta3", n: 2 }
+                                )
+                            },
+
                         ]
                     }
                 ]
@@ -251,12 +368,21 @@ const Mapas = {
             fliperama: new GameObject({
                 x: utils.withGrid(2),
                 y: utils.withGrid(6),
-                nome: 'Game?',
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: "fliperama" },
+                    "Game?"
+                ),
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "JogoRun"},
-                            { type: "redirecionarPagina", text: "/descanso"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "fliperama", n: 1 }
+                                )
+                            },
+                            { type: "redirecionarPagina", text: "/descanso" },
 
                         ]
                     }
@@ -265,12 +391,26 @@ const Mapas = {
             bebedouro: new GameObject({
                 x: utils.withGrid(33),
                 y: utils.withGrid(8),
-                nome: "Me",
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    {t: ""  },
+                    getNomeUsuario()
+                ),
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Glub Glub"},
-                            { type: "textMessage", text: "Refrescante"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "bebedouro", n: 1 }
+                                )
+                            },
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "bebedouro", n: 2 }
+                                )
+                            },
                         ]
                     }
                 ]
@@ -278,11 +418,20 @@ const Mapas = {
             maquinaDeVendasEsquerda: new GameObject({
                 x: utils.withGrid(20),
                 y: utils.withGrid(6),
-                nome: "Me",
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: ""  },
+                    getNomeUsuario()
+                ),
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Food"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "maquina", n: 1 }
+                                )
+                            },
                         ]
                     }
                 ]
@@ -290,16 +439,25 @@ const Mapas = {
             maquinaDeVendasDireita: new GameObject({
                 x: utils.withGrid(21),
                 y: utils.withGrid(6),
-                nome: "Me",
+                nome: tParaDialogos(
+                    { npcs: false, nome: true, },
+                    { t: "" },
+                    getNomeUsuario()
+                ),
                 talking: [
                     {
                         events: [
-                            { type: "textMessage", text: "Food"},
+                            {
+                                type: "textMessage", text: tParaDialogos(
+                                    { npcs: false, nome: false, },
+                                    { t: "maquina", n: 1 }
+                                )
+                            },
                         ]
                     }
                 ]
             }),
-                    
+
         },
         // Paredes presentes no mapa DemoRoom
         walls: {
@@ -393,8 +551,8 @@ const Mapas = {
             [utils.asGridCoord(33, 13)]: true,
         }
     },
-   
-    
+
+
 };
 
 export default Mapas; // Exporta o objeto Maps como padrão

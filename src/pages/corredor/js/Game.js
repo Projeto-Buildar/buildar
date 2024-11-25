@@ -4,6 +4,7 @@ import Mapas from './Mapas';
 import KeyPressListener from './KeyPressListener';
 // import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 import utils from './Utils';
+import { tParaDialogos } from './tParaDialogos';
 
 
 export default class Game {
@@ -35,27 +36,27 @@ export default class Game {
             mapas: (Mapas[config.mapas || 'GestaoDeTempo'])
         }
     }
-    
-    terminaCut(){
+
+    terminaCut() {
         this.map.isCutscenePlaying = false;
     }
 
     checkImagesLoaded() {
         return this.isLowerImageLoaded && this.isUpperImageLoaded;
     }
-    
+
     // Dentro do seu loop de jogo, use esse método para garantir que o jogo só comece quando as imagens estiverem carregadas.
     startGameLoop() {
         if (this.isRunning) return;
         this.isRunning = true;
-        
+
         const step = (currentTime) => {
-            
+
             if (this.lastTime === 0) this.lastTime = currentTime;
-            
+
             const deltaTime = (currentTime - this.lastTime) / 1000;
             this.lastTime = currentTime;
-            
+
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             const cameraPerson = this.map.gameObjects.player;
             this.map.defineOffset(cameraPerson)
@@ -64,7 +65,7 @@ export default class Game {
             Object.values(this.map.gameObjects).sort((a, b) => {
                 return a.y - b.y;
             }).forEach(object => {
-                object.sprite.defineOffsets(cameraPerson)              
+                object.sprite.defineOffsets(cameraPerson)
             });
 
             Object.values(this.map.gameObjects).sort((a, b) => {
@@ -77,7 +78,7 @@ export default class Game {
                     map: this.map,
 
                 });
-                
+
             });
             this.map.drawUpperImage(this.ctx);
 
@@ -102,15 +103,15 @@ export default class Game {
         });
     }
 
-    comecaJogo(){
+    comecaJogo() {
         return this.map.startCutscene([
             { who: "player", type: "walk", direction: "down" },
         ], "", true);
     }
 
     startInitialCutscene() {
-this.map.removeWall(utils.withGrid(8), utils.withGrid(5))
-
+        this.map.removeWall(utils.withGrid(8), utils.withGrid(5))
+        const nomeCena = "cenaInicial"
         return this.map.startCutscene([
             { who: "player", type: "stand", direction: "down", time: 100 },
             { who: "player", type: "walk", direction: "down" },
@@ -118,26 +119,60 @@ this.map.removeWall(utils.withGrid(8), utils.withGrid(5))
             { who: "player", type: "stand", direction: "left", time: 800 },
             { who: "player", type: "stand", direction: "right", time: 800 },
             { who: "Drii", type: "stand", direction: "left", time: 800 },
-            { type: "textMessage", text: "Ei, Fofolete!" },
+            {
+                type: "textMessage",
+                text: tParaDialogos(
+                    { cutscene: true, nome: false, },
+                    { t: nomeCena, n: 1 }
+                )
+            },
             // { who: "player", type: "walk", direction: "down" },
             { who: "player", type: "stand", direction: "right" },
             { who: "Drii", type: "walk", direction: "down" },
             { who: "Drii", type: "walk", direction: "left" },
             { who: "Drii", type: "walk", direction: "left" },
-            { type: "textMessage", text: "GestaoDeTempo1" },
-            { type: "textMessage", text: "GestaoDeTempo2" },
-            { type: "textMessage", text: "GestaoDeTempo3" },
-            { type: "textMessage", text: "GestaoDeTempo4" },
+            {
+                type: "textMessage",
+                text: tParaDialogos(
+                    { cutscene: true, nome: false, },
+                    { t: nomeCena, n: 2 }
+                )
+            },
+            {
+                type: "textMessage",
+                text: tParaDialogos(
+                    { cutscene: true, nome: false, },
+                    { t: nomeCena, n: 3 }
+                )
+            },
+            {
+                type: "textMessage",
+                text: tParaDialogos(
+                    { cutscene: true, nome: false, },
+                    { t: nomeCena, n: 4 }
+                )
+            },
+            {
+                type: "textMessage",
+                text: tParaDialogos(
+                    { cutscene: true, nome: false, },
+                    { t: nomeCena, n: 5 }
+                )
+            },
             { who: "Drii", type: "walk", direction: "right" },
             { who: "Drii", type: "walk", direction: "right" },
             { who: "Drii", type: "walk", direction: "up" },
             { who: "Drii", type: "stand", direction: "down" },
-        ], "Adriana", true);
+        ], tParaDialogos(
+            { cutscene: true, nome: true, },
+            { t: "" },
+            "Adriana"
+        ), true);
 
     }
 
-paredes(){
-}
+    paredes() {
+    }
     // posicaoInicialDoPlayer(playerPosition) {
     //     const player = this.map.gameObjects.player;
     //     player.direction = "down";
@@ -157,7 +192,7 @@ paredes(){
         this.startGameLoop();
     }
 
-    coiso(){
+    coiso() {
         alert("dudu maravilhoso");
     }
 
