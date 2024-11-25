@@ -77,7 +77,6 @@ defineOffset(cameraPerson){
 
     async startCutscene(events, nomes, podeParede) {
         this.isCutscenePlaying = true;
-        console.log(nomes)
         // Inicia um loop de eventos assíncronos e aguarda cada um deles
         for (let i = 0; i < events.length; i++) {
             const eventHandler = new OverworldEvent({
