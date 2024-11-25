@@ -1,14 +1,21 @@
 import Depoiments from './Depoiments';
 import './OitavaTela.css';
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
 
 export default function OitavaTela() {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
-  return(
+  // eslint-disable-next-line no-unused-vars
+  const { chaveComPrefixo } = useControleDeTraducao("section8");
+  return (
     <div className='frames' id="oitavaTela">
-      <h2>{t('whatPeopleThink')} <span className='destaqRoxo'>Buildar</span>?</h2>
+      <h2>
+        <TComTag
+          i18nKey={chaveComPrefixo("subtitulo")}
+          components={{ span: <span className='destaqueRoxo' /> }}
+        />
+      </h2>
       <section>
-        <Depoiments/>
+        <Depoiments />
       </section>
       <div id='landingFooter'></div>
     </div>

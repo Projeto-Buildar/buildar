@@ -1,14 +1,16 @@
 import './OitavaTela.css';
-import useControleDeTraducao from '../../../../useControleDeTraducao';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 export default function Depoiment(props) {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    // Codigo para o ESLint não detectar um alerta do tFormatado não ser usado
+    // eslint-disable-next-line no-unused-vars
+    const { t, chaveComPrefixo } = useControleDeTraducao('section8');
 
     return (
         <div className=" depoiment" >
-            <img src={props.image} />
+            <img alt='' src={props.image} />
             <h3 style={{ background: props.color }}>{props.name}</h3>
-            <h3 style={{ background: props.color }}>{props.age} {t('age')}</h3>
+            <h3 style={{ background: props.color }}>{props.age} {t(chaveComPrefixo("idade"))}</h3>
             <div>
                 <p>{props.text}</p>
             </div>

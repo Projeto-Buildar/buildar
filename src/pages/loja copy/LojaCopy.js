@@ -31,7 +31,7 @@ export default function LojaCopy() {
                         <div className='carousel'>
                             <div>
                                 <figure>
-                                    <img></img>
+                                    <img alt=''></img>
                                 </figure>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ export default function LojaCopy() {
                         </div>
                     </div>
                     <figure>
-                        <img src={lojaImage}/>
+                        <img alt='' src={lojaImage}/>
                     </figure>
                 </section>
             </main>
@@ -59,17 +59,17 @@ export default function LojaCopy() {
                     <span></span>
                 </div>
                 <figure>
-                    <img src={energyImage}/>
+                    <img alt='' src={energyImage}/>
                 </figure>
             </div>
 
             <div id='moneyBar'>
-                <img src={plusImage}/>
+                <img alt='' src={plusImage}/>
                 <div>
                     <p>20</p>
                 </div>
                 <figure>
-                    <img src={moneyImage}/>
+                    <img alt='' src={moneyImage}/>
                 </figure>
             </div>
         </div>

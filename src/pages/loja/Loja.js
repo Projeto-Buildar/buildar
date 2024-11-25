@@ -13,11 +13,11 @@ import maisbuildolars from './images/maisbuildolars.png';
 import Carousel from "react-multi-carousel";
 import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
 import listras from './images/listras.png';
-import useControleDeTraducao from '../../useControleDeTraducao';
+import useControleDeTraducao from '../../shared/useControleDeTraducao';
 
 
 const Loja = () => {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  const { t, tFormatado } = useControleDeTraducao();
   return (
     <div>
       <HeaderHome />
@@ -210,7 +210,7 @@ const Loja = () => {
               <p>
                 {t("spendLessEnergy")}
                 <br />
-                {tComControleDeLinha(t("readyToActUnderPressure"))}
+                {tFormatado(t("readyToActUnderPressure"))}
               </p>
             </div>
             <div className="desafio-preco">

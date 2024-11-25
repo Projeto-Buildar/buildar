@@ -10,7 +10,6 @@ class GameObject {
         this.x = config.x || 0; // Posição horizontal inicial ou 0 se não especificado
         this.y = config.y || 0; // Posição vertical inicial ou 0 se não especificado
         this.direction = config.direction || "down"; // Direção inicial ou "down" se não especificado
-
         // Cria um novo objeto Sprite com base nas configurações fornecidas
         this.sprite = new Sprite({
             gameObject: this, // Referência ao próprio objeto GameObject

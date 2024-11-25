@@ -77,7 +77,6 @@ defineOffset(cameraPerson){
 
     async startCutscene(events, nomes, podeParede) {
         this.isCutscenePlaying = true;
-        console.log(nomes)
         // Inicia um loop de eventos assíncronos e aguarda cada um deles
         for (let i = 0; i < events.length; i++) {
             const eventHandler = new OverworldEvent({
@@ -111,7 +110,7 @@ defineOffset(cameraPerson){
             if(`${interacao.x},${interacao.y}` === `${nextCoords.x},${nextCoords.y}`){
                 return interacao;
             }
-            return;
+            return null;
         });
         
         if (!this.isCutscenePlaying && match && match.talking.length) {

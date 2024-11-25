@@ -15,8 +15,8 @@ h2 {
   font-size: 2rem;
 }
 
-.destaqRoxo {
-  color: #9B33FD;
+span.destaqueRoxo {
+  color: var(--color-primaria)
 }
 
 .destaqAzul {

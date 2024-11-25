@@ -1,7 +1,9 @@
 import * as React from "react";
 
 const CustomDot = ({ ...props }) => {
+  // eslint-disable-next-line no-unused-vars
   const { onClick, active, index, carouselState } = props;
+  // eslint-disable-next-line no-unused-vars
   const { currentSlide } = carouselState;
   return (
     // ele precisa está em position relative e com um zIndex maior que 0 para funcionar,se não os botões não funcionam

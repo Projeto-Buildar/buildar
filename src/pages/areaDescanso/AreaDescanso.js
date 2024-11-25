@@ -1,12 +1,14 @@
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import './AreaDescanso.css';
-import gamePic from './images/image_filler_square.png';
+
+// import gamePic from './images/image_filler_square.png';
+
 import { Link } from 'react-router-dom';
-import useControleDeTraducao from '../../useControleDeTraducao';
+import useControleDeTraducao from '../../shared/useControleDeTraducao';
 
 export default function AreaDescanso() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    const { t, tFormatado } = useControleDeTraducao();
 
     return (
         <div>
@@ -21,7 +23,7 @@ export default function AreaDescanso() {
                             <span></span>
                             <div>
                                 <h3>{t("runViviRun")}</h3>
-                                <p>{tComControleDeLinha(t("runViviDescription"))}</p>
+                                <p>{tFormatado("runViviDescription")}</p>
                             </div>
                         </article>
                     </a>
@@ -30,7 +32,7 @@ export default function AreaDescanso() {
                             <span></span>
                             <div>
                                 <h3>{t("capQuiz")}</h3>
-                                <p>{tComControleDeLinha(t("capQuizDescription"))}</p>
+                                <p>{tFormatado("capQuizDescription")}</p>
                             </div>
                         </article>
                     </Link>
@@ -38,7 +40,7 @@ export default function AreaDescanso() {
                         <span></span>
                         <div>
                             <h3>{t("gameUnderConstruction")}</h3>
-                            <p>{tComControleDeLinha(t("gameUnderConstructionDescription"))}</p>
+                            <p>{tFormatado("gameUnderConstructionDescription")}</p>
                         </div>
                     </article>
                 </section>

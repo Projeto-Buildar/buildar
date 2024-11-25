@@ -85,7 +85,7 @@ const questions = [
   useEffect(() => {
     // Embaralha as perguntas novamente quando o jogo é reiniciado
     shuffleArray(shuffledQuestions);
-  }, [showScore]);
+  }, [showScore, shuffledQuestions]);
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {

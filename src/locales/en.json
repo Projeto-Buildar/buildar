@@ -1,4 +1,150 @@
 {
+  "footer": {
+    "sobre": "About",
+    "apoio": "Support Buildar",
+    "contato": "Contact Us",
+    "direitos": "Buildar © 2024 | All rights reserved",
+    "privacidade": "Privacy Policy",
+    "termos": "Terms of Use"
+  },
+  "landingPage": {
+    "cadastrar": "HIT PLAY!",
+    "section1": {
+      "titulo": "HAVE A GUIDE TO SHAPE YOUR SOFT SKILLS",
+      "login": "I already have an account"
+    },
+    "section2": {
+      "subtitulo": "How about training soft skills <span>Virtually</span>?",
+      "descricao": "With professional environment simulations, you can grow! Boost your soft skills in an <span>easy and fun way.</span>"
+    },
+    "section3": {
+      "subtitulo": "Be <span>yourself</span> at your best",
+      "descricao": "How about an avatar that matches your personality? Buildar offers options for each user's <span>unique characteristics.</span>"
+    },
+    "section4": {
+      "subtitulo": "A platform accessible to <span>everyone!</span>",
+      "descricao": "Paying to learn? Only if you want! Here we have a <span>100% free</span> option for those who are interested."
+    },
+    "section5": {
+      "subtitulo": "Here, it's not just about practicing",
+      "descricao": "Inspiring events, immersive gamification, meaningful achievements... Buildar is much more!",
+      "mais": "See more"
+    },
+    "section6": {
+      "subtitulo": "How about becoming a CAPoiardor?",
+      "descricao": "If you want an <span>even more immersive</span> experience, here are some paths."
+    },
+    "section7": {
+      "subtitulo": "More than inclusion, <span>Integration</span>",
+      "descricao": "Want more? Buildar features a system for promoting <span>events</span> and <span>workshops</span> for a great exchange of experiences."
+    },
+    "section8": {
+      "subtitulo": "And what are people saying about <span>Buildar</span>?",
+      "idade": "years",
+      "depoimentos": {
+        "userNilvan": "With fun and challenging games, I am certain it will grab the attention of young people and prepare them well for their future and corporate environment.",
+        "userDiogo": "I loved Buildar's platform! I found it amazing to be able to play and at the same time learn and develop skills.",
+        "userBraz": "Buildar was fundamental for the development of my soft skills through the incredible games offered by the platform. Thanks to this, I successfully entered the job market.",
+        "userHelen": "When I discovered Buildar, I started imagining how it would have helped me in the past with my soft skills, for developing them and even for job interviews.",
+        "userRyan": "Buildar's platform is simply fantastic! It helped me a lot in developing my soft skills. I love the games and the capybara.",
+        "userLilian": "I have never seen such a creative learning idea. Buildar is proof that everything we learn can be fun, out-of-the-box, and can change our professional and personal lives. I highly recommend it!",
+        "userLais": "The platform changed my perception of communication and personal relationships. I used to have a lot of difficulty communicating, but now I see myself improving every day, learning in a fun way!",
+        "userGabi": "Buildar is extremely important nowadays, where so many young people, like me, seek to better develop their soft skills. It's been amazing how the platform has helped me improve my behavioral skills in such a light and fun way.",
+        "userMartinha": "The platform offers clear, interactive, and gamified paths, making the learning process intuitive and engaging. I recommend it!"
+      }
+    }
+  },
+  "planos": {
+    "plano1": {
+      "nome": "Intern",
+      "beneficio1": "Exclusive events",
+      "beneficio2": "No ads",
+      "beneficio3": "A skin of your own"
+    },
+    "plano2": {
+      "nome": "Manager",
+      "beneficio1": "A special scenario",
+      "beneficio2": "Additional energy"
+    },
+    "plano3": {
+      "beneficio": "1st month free"
+    },
+    "tipoPlano": {
+      "mensal": "Monthly plan",
+      "anual": "Annual plan"
+    },
+    "beneficiosIguais": "All the previous ones",
+    "valor": "Only {{preco}}",
+    "botoes": "Check it out"
+  },
+  "corredor": {
+    "proximo": "Next",
+    "nomeValor": "{{valor}}",
+    "GestaoDeTempo": {
+      "cutscenes": {
+        "cenaInicial": {
+          "texto1": "Hey, Fofolete!",
+          "texto2": "Hello, welcome to Buildar Corporation!",
+          "texto3": "Here you will put your behavioral skills into practice.",
+          "texto4": "On your right, there are doors to train your skills.",
+          "texto5": "And on your left, you can relax with a simple game. Feel free to explore."
+        }
+      },
+      "npcs": {
+        "npc1": {
+          "texto1": "Enjoy Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+        },
+        "npc2": {
+          "texto1": "I love working here.",
+          "texto2": "I do a lot of activities every day.",
+          "texto3": "But sometimes I feel like I don't have enough time for anything.",
+          "texto4": "Or maybe I just don't manage my time well... (๑•́ ₃ •̀๑)"
+        },
+        "npc3": {
+          "texto1": "I am developing my time management skills as fast as a <anim>Katchauuuu!</anim> (/＾▽＾)/"
+        },
+        "npc4": {
+          "texto1": "I’m managing my time well, but I think I can improve (´・v・`)"
+        },
+        "npc5": {
+          "texto1": "Oh, pupil, I think I'm in the same boat...",
+          "texto2": "But ohhh, watch out for the improprieties. (◕‿↼)"
+        },
+        "npc6": {
+          "texto1": "Hi, you're the new intern, right?",
+          "texto2": "By the way, have you ever heard about the Dialogue?",
+          "texto3": "No? Hmm, I'll introduce it to you one of these days. (◔‿◔)"
+        }
+      },
+      "interacoes": {
+        "porta1": {
+          "tNome": "First door: Practical area with Post-it",
+          "texto1": "This is the first stage of Time Management"
+        },
+        "porta2": {
+          "tNome": "Locked door",
+          "texto1": "This door is locked",
+          "texto2": "I better explore the place a little more for now."
+        },
+        "porta3": {
+          "tNome": "Stuck door",
+          "texto1": "This door leads to a very cool place!",
+          "texto2": "But you don't have access yet :("
+        },
+        "fliperama": {
+          "tNome": "Game?",
+          "texto1": "The famous Vivi Run game is running"
+        },
+        "bebedouro": {
+          "texto1": "Glub Glub",
+          "texto2": "Refreshing"
+        },
+        "maquina": {
+          "texto1": "I get mesmerized watching the snacks fall."
+        }
+      }
+    }
+  },
   "Eng": "English",
   "Guide": "HAVE A GUIDE TO SHAPE YOUR SOFT SKILLS",
   "Play": "PRESS PLAY!",
@@ -112,86 +258,75 @@
   "strategicGenius": "Strategic genius ",
   "chooseFlor": "WHICH FLOOR TO GO TODAY?",
   "restGame": "BREAK ROOM",
-
-    "termsOfUse": "Terms of Use",
-    "lastUpdate": "Last update: 06/2024",
-    "acceptanceOfTerms": "Acceptance of Terms",
-    "acceptanceOfTermsDescription": "By accessing and using our platform, you agree to comply with and be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, do not use the platform.",
-    "descriptionOfServices": "Description of Services",
-    "descriptionOfServicesDescription": "Our platform offers tools and resources to help young people develop their soft skills through gamification. Users can participate in activities, games, and challenges designed to improve skills such as communication, teamwork, leadership, problem-solving, among others.",
-    "registrationAndUserAccount": "Registration and User Account",
-    "registrationAndUserAccountDescription": "To access certain features of the platform, you may need to create an account. By creating an account, you agree to provide true, accurate, current, and complete information about yourself as requested by the registration form.",
-    "useOfPlatform": "Use of Platform",
-    "useOfPlatformDescription": "You agree to use the platform only for purposes permitted by (a) these Terms of Use and (b) any laws, regulations, or generally accepted practices in the relevant jurisdictions. You agree not to access (or attempt to access) any of the Services by any means other than through the interface provided by the platform, unless you have been specifically allowed to do so in a separate agreement.",
-    "userContent": "User Content",
-    "userContentDescription": "By submitting content to the platform, you grant our platform a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works, display, and perform that content in connection with the provision of the services.",
-    "privacy": "Privacy",
-    "privacyDescription": "Your privacy is important to us. Please read our Privacy Policy to understand how we collect, use, and protect your personal information.",
-    "modificationsToTerms": "Modifications to Terms",
-    "modificationsToTermsDescription": "We reserve the right to modify these Terms of Use at any time. Changes will be effective from the posting on the platform. It is your responsibility to periodically review the Terms of Use to be aware of any modifications.",
-    "limitationOfLiability": "Limitation of Liability",
-    "limitationOfLiabilityDescription": "To the maximum extent permitted by applicable law, in no event will our platform be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.",
-    "termination": "Termination",
-    "terminationDescription": "We may terminate or suspend your access to our platform immediately, without prior notice or liability, for any reason, including, without limitation, if you breach the Terms of Use.",
-    "generalProvisions": "General Provisions",
-    "generalProvisionsDescription": "These Terms of Use constitute the entire agreement between you and our platform and govern the use of the Services, superseding any prior agreements between you and our platform. If any provision of these Terms of Use is held to be invalid, the remaining provisions will remain in full force and effect.",
-    "contact": "Contact",
-    "contactDescription": "If you have any questions about these Terms of Use, please contact us at: suporte@buildarsoftskills.com.",
-    "platformUsageAgreement": "By using our platform, you agree to these Terms of Use. If you do not agree with any of the terms mentioned, please do not use our platform.",
-
-  
+  "termsOfUse": "Terms of Use",
+  "lastUpdate": "Last update: 06/2024",
+  "acceptanceOfTerms": "Acceptance of Terms",
+  "acceptanceOfTermsDescription": "By accessing and using our platform, you agree to comply with and be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, do not use the platform.",
+  "descriptionOfServices": "Description of Services",
+  "descriptionOfServicesDescription": "Our platform offers tools and resources to help young people develop their soft skills through gamification. Users can participate in activities, games, and challenges designed to improve skills such as communication, teamwork, leadership, problem-solving, among others.",
+  "registrationAndUserAccount": "Registration and User Account",
+  "registrationAndUserAccountDescription": "To access certain features of the platform, you may need to create an account. By creating an account, you agree to provide true, accurate, current, and complete information about yourself as requested by the registration form.",
+  "useOfPlatform": "Use of Platform",
+  "useOfPlatformDescription": "You agree to use the platform only for purposes permitted by (a) these Terms of Use and (b) any laws, regulations, or generally accepted practices in the relevant jurisdictions. You agree not to access (or attempt to access) any of the Services by any means other than through the interface provided by the platform, unless you have been specifically allowed to do so in a separate agreement.",
+  "userContent": "User Content",
+  "userContentDescription": "By submitting content to the platform, you grant our platform a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works, display, and perform that content in connection with the provision of the services.",
+  "privacy": "Privacy",
+  "privacyDescription": "Your privacy is important to us. Please read our Privacy Policy to understand how we collect, use, and protect your personal information.",
+  "modificationsToTerms": "Modifications to Terms",
+  "modificationsToTermsDescription": "We reserve the right to modify these Terms of Use at any time. Changes will be effective from the posting on the platform. It is your responsibility to periodically review the Terms of Use to be aware of any modifications.",
+  "limitationOfLiability": "Limitation of Liability",
+  "limitationOfLiabilityDescription": "To the maximum extent permitted by applicable law, in no event will our platform be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.",
+  "termination": "Termination",
+  "terminationDescription": "We may terminate or suspend your access to our platform immediately, without prior notice or liability, for any reason, including, without limitation, if you breach the Terms of Use.",
+  "generalProvisions": "General Provisions",
+  "generalProvisionsDescription": "These Terms of Use constitute the entire agreement between you and our platform and govern the use of the Services, superseding any prior agreements between you and our platform. If any provision of these Terms of Use is held to be invalid, the remaining provisions will remain in full force and effect.",
+  "contact": "Contact",
+  "contactDescription": "If you have any questions about these Terms of Use, please contact us at: suporte@buildarsoftskills.com.",
+  "platformUsageAgreement": "By using our platform, you agree to these Terms of Use. If you do not agree with any of the terms mentioned, please do not use our platform.",
   "liveStream": "BROADCASTS AND EVENTS",
   "volunteerHistory": "History of transmissions with volunteers",
   "historic": "VIEW FULL HISTORY",
   "becomeSpeaker": "Be a volunteer speaker at Buildar",
   "workExperiences": "How about sharing your work experiences? Access the form and come Buildar with us.",
   "becomeVolunteer": "Come be a part",
-
-    "contactUs": "Contact Us",
-    "whatIsYourDoubt": "What is your doubt?",
-    "fullName": "Full name",
-    "phone": "Phone",
-    "subject": "Subject",
-    "message": "Message",
-    "enter": "Enter",
-
-    
-      "customization": "Customization",
-      "avatarsForYou": "Avatars for you",
-      "nonStopEnergy": "Non-stop energy",
-      "challenges": "Challenges",
-      "noTimeBro": "No Time Bro",
-      "spendLessEnergy": "Spend less energy for each activity, at the cost of a stopwatch that accompanies you during activities.",
-      "readyToActUnderPressure": "Are you ready to act under time pressure?",
-
-        "chooseYourQuiz": "Choose your Quiz!",
-        "multipleChoice": "Multiple Choice",
-        "trueOrFalse": "True or False",
-
-        "question": "Question",
-        "procrastinationGoodStrategy": "Procrastination is a good strategy for time management.",
-        "planDayNightBefore": "Planning the day the night before can improve productivity.",
-        "multitaskingIncreasesEfficiency": "Multitasking increases the efficiency and quality of work.",
-        "settingRealisticDeadlines": "Setting realistic deadlines helps to avoid unnecessary stress.",
-        "breaksDuringDayEssential": "Having breaks during the day is essential to maintain productivity.",
-        "workingMoreHours": "Working more hours directly results in more productivity.",
-        "creativityOnlyForArtisticJobs": "Creativity is only necessary for artistic jobs.",
-        "empathyImportantInLeadership": "Empathy is an important skill in leadership.",
-        "nonVerbalCommunication": "Non-verbal communication does not affect the effectiveness of communication.",
-        "dailyReadingBeneficial": "Daily reading is beneficial only to improve writing skills.",
-        "emotionalIntelligenceImpact": "Emotional intelligence has an impact on the effectiveness of leadership.",
-        "true": "True",
-        "false": "False",
-        "excellentScore1": "Excellent! You got",
-        "excellentScore2": "out of 5 questions right. Congratulations!",
-        "almostScore1": "Ah, it was close! You got",
-        "almostScore2": "out of 5. Shall we try again?",
-        "lowScore": "Almost! We just need to practice more together. We won't give up, okay?",
-        "restart": "Restart",    
-        "backToHome": "Back to Home",  
-        
-
-  
+  "contactUs": "Contact Us",
+  "whatIsYourDoubt": "What is your doubt?",
+  "fullName": "Full name",
+  "phone": "Phone",
+  "subject": "Subject",
+  "message": "Message",
+  "enter": "Enter",
+  "customization": "Customization",
+  "avatarsForYou": "Avatars for you",
+  "nonStopEnergy": "Non-stop energy",
+  "challenges": "Challenges",
+  "noTimeBro": "No Time Bro",
+  "spendLessEnergy": "Spend less energy for each activity, at the cost of a stopwatch that accompanies you during activities.",
+  "readyToActUnderPressure": "Are you ready to act under time pressure?",
+  "chooseYourQuiz": "Choose your Quiz!",
+  "multipleChoice": "Multiple Choice",
+  "trueOrFalse": "True or False",
+  "question": "Question",
+  "procrastinationGoodStrategy": "Procrastination is a good strategy for time management.",
+  "planDayNightBefore": "Planning the day the night before can improve productivity.",
+  "multitaskingIncreasesEfficiency": "Multitasking increases the efficiency and quality of work.",
+  "settingRealisticDeadlines": "Setting realistic deadlines helps to avoid unnecessary stress.",
+  "breaksDuringDayEssential": "Having breaks during the day is essential to maintain productivity.",
+  "workingMoreHours": "Working more hours directly results in more productivity.",
+  "creativityOnlyForArtisticJobs": "Creativity is only necessary for artistic jobs.",
+  "empathyImportantInLeadership": "Empathy is an important skill in leadership.",
+  "nonVerbalCommunication": "Non-verbal communication does not affect the effectiveness of communication.",
+  "dailyReadingBeneficial": "Daily reading is beneficial only to improve writing skills.",
+  "emotionalIntelligenceImpact": "Emotional intelligence has an impact on the effectiveness of leadership.",
+  "true": "True",
+  "false": "False",
+  "excellentScore1": "Excellent! You got",
+  "excellentScore2": "out of 5 questions right. Congratulations!",
+  "almostScore1": "Ah, it was close! You got",
+  "almostScore2": "out of 5. Shall we try again?",
+  "lowScore": "Almost! We just need to practice more together. We won't give up, okay?",
+  "restart": "Restart",
+  "backToHome": "Back to Home",
   "achievements": "Achievements",
   "viewAll": "View all",
   "shareProfile": "Share profile",
@@ -293,29 +428,25 @@
   "userLais": "The platform made me change my perception about communication and personal relationships. I had a lot of difficulty communicating, but today I see that I am being renewed every day, learning in a fun way!",
   "userGabi": "Buildar is of extreme importance these days, where so many young people, like me, seek to better develop their soft skills. It has been incredible how the platform has helped me improve my behavioral skills in such a light and fun way.",
   "userMartinha": "The platform offers clear, interactive and gamified trails, making the learning process intuitive and engaging. I recommend!",
-"GabsDialogo1": "I'm improving my time management as fast as a Katchauuuu! (/＾▽＾)/",
-"DeboraDialogo1": "I love working here.",
-"DeboraDialogo2": "I do a lot of activities every day.",
-"DeboraDialogo3": "But sometimes I feel like I don't have enough time for anything.",
-"DeboraDialogo4": "Or maybe I'm just not managing my time well... (๑•́ ₃ •̀๑)",
-"AndreiDialogo1": "I'm managing my time well, but I think there's room for improvement (´・v・`)",
-"DriiDialogo1": "Enjoy the Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
-"AuroraDialogo1": "Oh dear, I think I'm in the same boat...",
-"AuroraDialogo2": "But hey, watch your language. (◕‿↼)",
-"JailsonDialogo1": "Hi, you're the new intern, right?",
-"JailsonDialogo2": "Have you heard about the Diálogo by any chance?",
-"JailsonDialogo3": "No? Well, one of these days I'll introduce you to it. (◔‿◔)",
-
-"Me": "Me",
-"Food": "I'm mesmerized watching the snacks falling.",
-"Refreshing": "Refreshing",
-
-"GestaoDeTempo1": "Hello, welcome to Buildar Corporation!",
-"GestaoDeTempo2": "Here you will put your behavioral skills into practice.",
-"GestaoDeTempo3": "To your right, there are doors for you to train your skills.",
-"GestaoDeTempo4": "And to your left, you can relax with a simple game. Feel free to explore.",
-"JogoRun": "The famous game Vivi Run is running",
-"Next": "Next"
-
-
+  "GabsDialogo1": "I'm improving my time management as fast as a Katchauuuu! (/＾▽＾)/",
+  "DeboraDialogo1": "I love working here.",
+  "DeboraDialogo2": "I do a lot of activities every day.",
+  "DeboraDialogo3": "But sometimes I feel like I don't have enough time for anything.",
+  "DeboraDialogo4": "Or maybe I'm just not managing my time well... (๑•́ ₃ •̀๑)",
+  "AndreiDialogo1": "I'm managing my time well, but I think there's room for improvement (´・v・`)",
+  "DriiDialogo1": "Enjoy the Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+  "AuroraDialogo1": "Oh dear, I think I'm in the same boat...",
+  "AuroraDialogo2": "But hey, watch your language. (◕‿↼)",
+  "JailsonDialogo1": "Hi, you're the new intern, right?",
+  "JailsonDialogo2": "Have you heard about the Diálogo by any chance?",
+  "JailsonDialogo3": "No? Well, one of these days I'll introduce you to it. (◔‿◔)",
+  "Me": "Me",
+  "Food": "I'm mesmerized watching the snacks falling.",
+  "Refreshing": "Refreshing",
+  "GestaoDeTempo1": "Hello, welcome to Buildar Corporation!",
+  "GestaoDeTempo2": "Here you will put your behavioral skills into practice.",
+  "GestaoDeTempo3": "To your right, there are doors for you to train your skills.",
+  "GestaoDeTempo4": "And to your left, you can relax with a simple game. Feel free to explore.",
+  "JogoRun": "The famous game Vivi Run is running",
+  "Next": "Next"
 }

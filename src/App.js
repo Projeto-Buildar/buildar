@@ -62,8 +62,8 @@ import Quiz2 from './pages/quiz/Quiz2';
 
 import Ranqueada from './pages/ranqueada/Ranqueada';
 
-import SobreNos from './pages/sobre/SobreNos';
-import LojaCopy from './pages/loja copy/LojaCopy';
+// import SobreNos from './pages/sobre/SobreNos';
+// import LojaCopy from './pages/loja copy/LojaCopy';
 
 // import Conteudo from './pages/conteudo/Conteudo';
 // import Conteudo2 from './pages/conteudo/Conteudo2';
@@ -74,7 +74,7 @@ import LojaCopy from './pages/loja copy/LojaCopy';
 //----------------------------------------------------|
 
 export default function App() {
-  const {i18n } = useTranslation();
+  const { i18n } = useTranslation();
   
   // Inicializa o idioma selecionado com o valor armazenado no localStorage ou o padrão
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
@@ -83,7 +83,7 @@ export default function App() {
     // Atualiza o idioma no i18n e no localStorage quando o selectedLanguage muda
     i18n.changeLanguage(selectedLanguage);
     localStorage.setItem('language', selectedLanguage);
-  }, [selectedLanguage]);
+  }, [selectedLanguage, i18n]);
 
   const handleLanguageChange = (event) => {
     setSelectedLanguage(event.target.value);
@@ -137,7 +137,7 @@ export default function App() {
 
       <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
 
-        <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
+        <select name="language" id="language" aria-label="Idioma"  onChange={handleLanguageChange} value={selectedLanguage}>
 
           <option value="pt">🇧🇷</option>
           <option value="en">🇺🇸</option>

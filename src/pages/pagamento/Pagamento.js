@@ -1,6 +1,6 @@
 // Importações
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import logo from './images/logo_on.webp';
 import visa from './images/Visa.webp';
 import mastercard from './images/Mastercard.webp';

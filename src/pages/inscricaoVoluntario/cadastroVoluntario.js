@@ -2,20 +2,22 @@ import React, { useState } from 'react';
 import './cadastroVoluntario.css';
 
 const LoginVoluntario = () => {
+    // eslint-disable-next-line no-unused-vars
     const [email, setEmail] = useState('');
+    // eslint-disable-next-line no-unused-vars
     const [password, setPassword] = useState('');
     const [nome, setNome] = useState('');
     const [assunto, setAssunto] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [data, setData] = useState('');
 
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
+    // const handleEmailChange = (e) => {
+    //     setEmail(e.target.value);
+    // };
 
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
+    // const handlePasswordChange = (e) => {
+    //     setPassword(e.target.value);
+    // };
 
     const handleNomeChange = (e) => {
         setNome(e.target.value);
@@ -90,7 +92,7 @@ const LoginVoluntario = () => {
                                 onChange={handleDataChange}
                                 required
                             />
-                            <a href="#" className="forgot-pass">Esqueci minha senha</a>
+                            <a href="#!" className="forgot-pass" onClick={(e) => e.preventDefault()} aria-disabled="true">Esqueci minha senha</a>
                             <p className="politicaVoluntarios">Ao se cadastrar, você concorda com nossos Termos, Política de Privacidade e Política de Cookies.</p>
                             <button type="submit" className="login-button">Entrar</button>
                         </form>

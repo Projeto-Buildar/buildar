@@ -27,6 +27,10 @@
     }
 }
 
+.ulCarrosel {
+    padding-bottom: 10px !important;
+}
+
 .carroselAvatar{
     width: 100%;
     /* height: 100%; */
@@ -35,7 +39,7 @@
 .skinContainer {
     /* display: flex;
     align-items: center; */
-    height: 25rem;
+    height: 26rem;
     width: 20rem;
 }
 
@@ -65,7 +69,8 @@
     position: relative;
     z-index: 1;
     padding-inline: 2%;
-    transform: translateY(25%);
+    margin-top: 100px;
+    /* transform: translateY(1%); */
 }
 
 .dotsButtonClass {

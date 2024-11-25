@@ -1,17 +1,18 @@
-import './SetimaTela.css';
-import logo from '../../images/setimaTela_img.webp';
+import './QuartaTela.css';
+// import image from '../../images/quartaTela_img.webp';
+import image from '../../images/Vivi_VectorAzul.webp'
+
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
 
-export default function SetimaTela() {
+export default function QuartaTela() {
 
-  const { chaveComPrefixo } = useControleDeTraducao("section7");
-
+  const { chaveComPrefixo } = useControleDeTraducao("section4");
   return (
-    <div className='frames' id="setimaTela">
-      <figure>
-        <img alt='Logo da Buildar' src={logo} />
-      </figure>
+    <div className='frames' id="quartaTela">
+
+      <div className='backgroundLeft'></div>
+
       <article>
         <h2>
           <TComTag
@@ -26,6 +27,14 @@ export default function SetimaTela() {
           />
         </p>
       </article>
+
+      <figure className='figuraVivi'>
+        <img alt='mascote da Buildar "Vivi", fazendo uma pose de apresentação' src={image} className='ViviApresenta' />
+      </figure>
+
+
+      <div className='backgroundRight'></div>
+
     </div>
   );
 }

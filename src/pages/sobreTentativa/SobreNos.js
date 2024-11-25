@@ -29,12 +29,12 @@ import teamMember7 from './images/teamMember7.png';
 import teamMember8 from './images/teamMember8.png';
 import ods from './images/ods.png'
 
-import useControleDeTraducao from '../../useControleDeTraducao';
+import useControleDeTraducao from '../../shared/useControleDeTraducao';
 
 // import { useTranslation } from 'react-i18next';
 
 const SobreNos = () => {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  const { t, tFormatado } = useControleDeTraducao();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const SobreNos = () => {
           <div className="text-section1">
             <h2>{t("originBuildar")}</h2>
             <p>{t("foundedBy")}</p>
-            <a href="#" className="ver-mais1">{t("seeMore")}</a>
+            <a href="#!" className="ver-mais1" onClick={(e) => e.preventDefault()} aria-disabled="true">{t("seeMore")}</a>
           </div>
           <img src={mascot} alt={t("mascotBuildar")} className="mascot1" />
         </div>
@@ -113,7 +113,7 @@ const SobreNos = () => {
         <div className="cause-items">
           <div className="cause-item">
             <img src={peopleIcon} alt={t("lackSoftSkills")} />
-            <p>{tComControleDeLinha(t("youthMarketEntry"))}</p>
+            <p>{tFormatado("youthMarketEntry")}</p>
           </div>
           <div className="cause-item">
             <img src={schoolIcon} alt={t("educationSoftSkills")} />
@@ -125,7 +125,7 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
-      <img className='odsClasse' src={ods}></img>
+      <img alt='' className='odsClasse' src={ods}></img>
       <section className="OurTeam">
         <h2>{t("facesBehindBrand")}</h2>
         <div className="team-members">
@@ -139,17 +139,17 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember3} alt="Erik Paulino" />
-            <p><strong>Erik Paulino</strong><br />{tComControleDeLinha(t("scrumMasterFrontend"))}</p>
+            <p><strong>Erik Paulino</strong><br />{tFormatado("scrumMasterFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember4} alt="Eduardo Gomes" />
-            <p><strong>Eduardo Gomes</strong><br />{tComControleDeLinha(t("backendDeveloper"))}</p>
+            <p><strong>Eduardo Gomes</strong><br />{tFormatado("backendDeveloper")}</p>
           </div>
         </div>
         <div className='team-members 2'>
           <div className="team-member">
             <img src={teamMember5} alt="Isaque Barbosa" />
-            <p><strong>Isaque Barbosa</strong><br />{tComControleDeLinha(t("backendDeveloper"))}</p>
+            <p><strong>Isaque Barbosa</strong><br />{tFormatado("backendDeveloper")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember6} alt="Gretzel Penaloza" />
@@ -157,7 +157,7 @@ const SobreNos = () => {
           </div>
           <div className="team-member">
             <img src={teamMember7} alt="Gustavo Bosak" />
-            <p><strong>Gustavo Bosak</strong><br />{tComControleDeLinha(t("financeFrontend"))}</p>
+            <p><strong>Gustavo Bosak</strong><br />{tFormatado("financeFrontend")}</p>
           </div>
           <div className="team-member">
             <img src={teamMember8} alt="Letícia Nascimento" />

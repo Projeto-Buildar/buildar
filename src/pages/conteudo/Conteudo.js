@@ -1,13 +1,13 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import './Conteudo1.css';
 import Vivi from './imagem/vivi.png';
 import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {
-  const history = useNavigate();
-  function irParaRotaAnterior() {
-    history(-1);
-  }
+  // const history = useNavigate();
+  // function irParaRotaAnterior() {
+  //   history(-1);
+  // }
   return (
     <div className='Container'>
 

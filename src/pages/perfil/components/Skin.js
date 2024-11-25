@@ -1,5 +1,5 @@
 export default function Skin(props) {
     return (
-        <img src={props.url}/>
+        <img alt="" src={props.url}/>
     )
 }

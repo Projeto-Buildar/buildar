@@ -19,13 +19,20 @@ import {getNomeUsuario} from "../../shared/useNomeUsuario";
 
 import { useState } from "react";
 
-import useControleDeTraducao from "../../useControleDeTraducao";
+import useControleDeTraducao from "../../shared/useControleDeTraducao";
 
 import Modal from "react-modal";
 Modal.setAppElement('#root');
 
+const tipoPlano = (tipo) => {
+    return `planos.plano${tipo}.nome`
+}
+const planoEscolhido = tipoPlano(2);
+
 export default function Perfil() {
-    const { t, tComControleDeLinha } = useControleDeTraducao();
+    
+    // eslint-disable-next-line no-unused-vars
+    const { t, tFormatado } = useControleDeTraducao();
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {
@@ -36,6 +43,7 @@ export default function Perfil() {
         setIsOpen(false);
     }
 
+    // const nomeUsuario = getNomeUsuario();
     return (
         <div>
             <HeaderHome />
@@ -44,8 +52,8 @@ export default function Perfil() {
                 <section id="userCard">
                     <div className="profileImage">
                         <div className="star"></div>
-                        <img src={profilePic} className="profilePic" />
-                        <h3 className="jobPlan">{t("Manager")}</h3>
+                        <img alt="" src={profilePic} className="profilePic" />
+                        <h3 className="jobPlan">{t(planoEscolhido)}</h3>
                     </div>
                     <div className="topCard">
                         <div className="userProfileInfo">
@@ -64,7 +72,7 @@ export default function Perfil() {
                         </div>
                         <div className="achievementBar">
                             <div>
-                                <img src={trophy} />
+                                <img alt="" src={trophy} />
                                 <h3>{t("achievements")}</h3>
                             </div>
                             <Conquistas />
@@ -75,10 +83,10 @@ export default function Perfil() {
                             <p>{t("inviteFriends")}</p>
                             <div>
                                 {t("editProfile")}
-                                <img src={pen} />
+                                <img alt="" src={pen} />
                             </div>
                             <div>
-                                <img src={settingsGear} />
+                                <img alt="" src={settingsGear} />
                             </div>
                         </div>
                     </div>
@@ -121,10 +129,10 @@ export default function Perfil() {
                     <section>
                         <div className="topModal">
                             <div>
-                                <img src={trophy} />
+                                <img alt="" src={trophy} />
                                 <h1>{t("achievements")}</h1>
                             </div>
-                            <img src={closeButton} className="closeButton" onClick={closeModal} />
+                            <img alt="" src={closeButton} className="closeButton" onClick={closeModal} />
                         </div>
                         <ConquistasDetails />
                     </section>

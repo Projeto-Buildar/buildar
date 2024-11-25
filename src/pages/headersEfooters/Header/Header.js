@@ -1,13 +1,12 @@
 import './Header.css';
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import "../../../i18n"
+import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 
 import logo from '../images/logo_on.webp';
 
 export default function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useControleDeTraducao();
   const [isVisible, setIsVisible] = useState(false);
 
   function checkScroll() {
@@ -28,10 +27,10 @@ export default function Header() {
     <header id='headerLadingPage'>
       <nav>
         <Link to='/'>
-          <img src={logo} className='logo'/>
+          <img alt='Logo da Buildar' src={logo} className='logo'/>
         </Link>
         <Link to="/cadastro">
-          <div id='button' style={{opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s', visibility: isVisible ? 'visible' : 'hidden'}}>{t("Play")}</div>
+          <div id='button' style={{opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s', visibility: isVisible ? 'visible' : 'hidden'}}>{t("cadastrar")}</div>
         </Link>
       </nav>
     </header>

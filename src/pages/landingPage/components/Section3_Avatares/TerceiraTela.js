@@ -2,17 +2,20 @@ import './TerceiraTela.css';
 
 import "react-multi-carousel/lib/styles.css";
 // import Carousel from "react-multi-carousel";
-import Carrosel from "./Carrosel"
+import Carrosel from "../../../../shared/Carrosel"
 
 import Avatar1 from '../../images/Rogerio_avatar.png';
 import Avatar2 from '../../images/Malu_avatar.png';
 import Avatar3 from '../../images/Tobias_avatar.png';
-import useControleDeTraducao from '../../../../useControleDeTraducao';
 
-const test = [Avatar1, Avatar2, Avatar3]
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+
+const avatares = [Avatar1, Avatar2, Avatar3]
 
 export default function TerceiraTela() {
-  const { t, tComControleDeLinha } = useControleDeTraducao();
+  const { chaveComPrefixo } = useControleDeTraducao("section3");
+  
   return (
     <div className='frames' id="terceiraTela">
       <section>
@@ -28,8 +31,13 @@ export default function TerceiraTela() {
             qntItensDesk={1}
             autoPlay={true}
             pauseOnHover={true}
-            draggable={false} 
-            conteudo={test.map((obj, index) => { return <div key={index} className='carroselAvatarL'><img src={obj}></img></div> })}>
+            draggable={false}
+            conteudo={
+              avatares.map((obj, index) => {
+                return <div key={index} className='carroselAvatarL'>
+                  <img src={obj} alt={`Avatar ${index + 1}`} />
+                </div>
+              })}>
           </Carrosel>
         </figure>
         {/* <div className='scrollContainer'>
@@ -40,8 +48,18 @@ export default function TerceiraTela() {
         </div> */}
       </section>
       <article>
-        <h2>{t("Best")}</h2>
-        <p>{t("Avatar1")}<span className='destaqAzul'>{t("Avatar2")}</span>{tComControleDeLinha(t("Avatar3"))}</p>
+        <h2>
+          <TComTag
+            i18nKey={chaveComPrefixo("subtitulo")}
+            components={{ span: <span className='destaqueRoxo' /> }}
+          />
+        </h2>
+        <p>
+          <TComTag
+            i18nKey={chaveComPrefixo("descricao")}
+            components={{ span: <span className='destaqAzul' /> }}
+          />
+        </p>
       </article>
     </div>
   );
