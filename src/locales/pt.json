@@ -1,8 +1,16 @@
 {
+  "footer": {
+    "sobre": "Sobre",
+    "apoio": "Apoie a Buildar",
+    "contato": "Fale Conosco",
+    "direitos": "Buildar © 2024 | Todos os direitos reservados",
+    "privacidade": "Política de Privacidade",
+    "termos": "Termos de Uso"
+  },
   "landingPage": {
+    "cadastrar": "DÊ O PLAY!",
     "section1": {
       "titulo": "TENHA UM GUIA PARA MOLDAR SUAS SOFT SKILLS",
-      "cadastrar": "DÊ O PLAY!",
       "login": "Já tenho uma conta"
     },
     "section2": {
@@ -24,57 +32,130 @@
     },
     "section6": {
       "subtitulo": "Que tal se tornar um CAPoiardor?",
-      "descricao": "Caso queira uma experiência <span>ainda mais imersiva</span> aqui estão alguns caminhos.",
-      "plano1": {
-        "nome": "Estagiário",
-        "beneficio1": "Eventos exclusivos",
-        "beneficio2": "Nada de anúncios",
-        "beneficio3": "Uma skin só sua"
-      },
-      "plano2": {
-        "nome": "Gerente",
-        "beneficio1": "Um cenário especial",
-        "beneficio2": "Energia adicional"
-      },
-      "plano3": {
-        "beneficio": "1º mês gratuito"
-      },
-      "tipoPlano": {
-        "mensal": "Plano mensal",
-        "anual": "Plano anual"
-      },
-      "beneficiosIguais": "Todos os anteriores",
-      "valor": "Apenas {{preco}}",
-      "botoes": "Conferir"
+      "descricao": "Caso queira uma experiência <span>ainda mais imersiva</span> aqui estão alguns caminhos."
     },
     "section7": {
-      "subtitulo": "Aqui não é só praticar",
-      "descricao": "Eventos inspiradores, gamificação imersiva, conquistas marcantes... A Buildar é muito mais!",
-      "mais": "Veja mais"
+      "subtitulo": "Mais que inclusão, <span>Integração</span>",
+      "descricao": "Quer mais? A Buildar conta com um sistema de promoção de <span>eventos</span> e <span>workshops</span> para aquela troca maneira de experiências."
     },
-    "testes": {
-      "commentarioSobreChavesAbaixo": "isso são exemplo de criar uma chave e enviar valores para elas e diferenciar elas de forma singular ou plural",
-      "Account_one": "Já tenho uma conta {{nome}}",
-      "Account_other": "Já tenho {{count}} contas {{nome}}",
-      "fraseComSpan": "Eu sou <span>muito bonito</span> e {{g}} com Soft Skills"
+    "section8": {
+      "subtitulo": "E o que a galera está achando da <span>Buildar</span>?",
+      "idade": "anos",
+      "depoimentos": {
+        "userNilvan": "Com jogos divertidos e bastante desafiadores, tenho total certeza de que vai atrair muito a atenção dos jovens e capacitá-los muito bem tanto para o seu futuro quanto para o seu ambiente corporativo.",
+        "userDiogo": "Adorei a plataforma da Buildar! Simplesmente achei incrível a possibilidade de poder jogar e ao mesmo tempo aprender e desenvolver habilidades.",
+        "userBraz": "A Buildar foi fundamental para o desenvolvimento das minhas soft skills, através dos jogos incríveis disponibilizados pela plataforma. Graças a isso, consegui ingressar no mercado de trabalho com sucesso.",
+        "userHelen": "Quando eu conheci a Buildar, comecei a imaginar como teria me ajudado no passado com as minhas soft skills, para me ajudar a desenvolve-las, e até mesmo em entrevistas de empregos.",
+        "userRyan": "A plataforma da buildar é simplesmente fantástica! Me ajudou bastante no desenvolvimento das minhas soft skills. Adoro os jogos e a capivara.",
+        "userLilian": "Eu nunca vi uma ideia tão criativa de aprendizado. A Buildar é a prova de que tudo que aprendemos pode ser divertido, fora da caixinha e pode mudar nossa vida profissional, e pessoal. Recomendo demais!",
+        "userLais": "A plataforma fez eu mudar a minha percepção sobre a comunicação e relações pessoais. Tinha muita dificuldade para me comunicar, mais hoje vejo que estou saindo renovada todos os dias, aprendendo de um jeito divertido!",
+        "userGabi": "A Buildar é de extrema importância nos dias atuais, onde tantos jovens, assim como eu, buscam desenvolver melhor suas soft skills. Tem sido incrível a forma como a plataforma tem me ajudado a melhorar minhas habilidades comportamentais de forma tão leve e divertida.",
+        "userMartinha": "A plataforma oferece trilhas claras, interativas e gamificadas, tornando o processo de aprendizado intuitivo e envolvente. Recomendo!"
+      }
     }
   },
+  "planos": {
+    "plano1": {
+      "nome": "Estagiário",
+      "beneficio1": "Eventos exclusivos",
+      "beneficio2": "Nada de anúncios",
+      "beneficio3": "Uma skin só sua"
+    },
+    "plano2": {
+      "nome": "Gerente",
+      "beneficio1": "Um cenário especial",
+      "beneficio2": "Energia adicional"
+    },
+    "plano3": {
+      "beneficio": "1º mês gratuito"
+    },
+    "tipoPlano": {
+      "mensal": "Plano mensal",
+      "anual": "Plano anual"
+    },
+    "beneficiosIguais": "Todos os anteriores",
+    "valor": "Apenas {{preco}}",
+    "botoes": "Conferir"
+  },
+  "corredor": {
+    "proximo": "Próximo",
+    "nomeValor": "{{valor}}",
+    "GestaoDeTempo": {
+      "cutscenes": {
+        "cenaInicial": {
+          "texto1": "Ei, Fofolete!",
+          "texto2": "Olá, seja bem-vindo a Buildar corporation!",
+          "texto3": "Aqui você irá colocar em prática suas habilidades comportamentais",
+          "texto4": "Na sua direita teram portas para você treinar as suas habilidades",
+          "texto5": "E na sua esquerda você pode se descontrair com um simples joguinho. Fique a vontade para explorar"
+        }
+      },
+      "npcs": {
+        "npc1": {
+          "texto1": "Aproveite a Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+        },
+        "npc2": {
+          "texto1": "Eu amo trabalhar aqui.",
+          "texto2": "Faço muitas atividades todos os dias.",
+          "texto3": "Mas sinto que às vezes não tenho tempo suficiente para nada.",
+          "texto4": "Ou será que eu só não estou gerindo bem o meu tempo... (๑•́ ₃ •̀๑)"
+        },
+        "npc3": {
+          "texto1": "Eu estou desenvolvendo minha gestão de tempo tão rápido quanto um <anim>Katchauuuu!</anim> (/＾▽＾)/"
+        },
+        "npc4": {
+          "texto1": "Eu estou gerindo bem meu tempo, mas acho que dá para melhorar (´・v・`)"
+        },
+        "npc5": {
+          "texto1": "Ai, pupila, acho que eu estou no mesmo barco...",
+          "texto2": "Mas ooo, cuidado com os impropérios. (◕‿↼)"
+        },
+        "npc6": {
+          "texto1": "Oi, você é o novo estagiário, né?",
+          "texto2": "Por acaso, já ouviu falar sobre o Diálogo?",
+          "texto3": "Não? Hmm, um dia desses eu apresento ele para você. (◔‿◔)"
+        }
+      },
+      "interacoes": {
+        "porta1": {
+          "tNome": "Primeira porta: Área prática com Post-it",
+          "texto1": "Aqui é a primeira etapa da Gestão de tempo"
+        },
+        "porta2": {
+          "tNome": "Porta lacrada",
+          "texto1": "Está porta está trancada",
+          "texto2": "É melhor eu explorar mais o lugar por enquanto"
+        },
+        "porta3": {
+          "tNome": "Porta emperrada",
+          "texto1": "Está porta leva para um lugar bem legal!",
+          "texto2": "Mas você ainda não tem acesso :("
+        },
+        "fliperama": {
+          "tNome": "Game?",
+          "texto1": "Está rodando o Famoso jogo Vivi Run"
+        },
+        "bebedouro": {
+          "texto1": "Glub Glub",
+          "texto2": "Refrescante"
+        },
+        "maquina": {
+          "texto1": "Eu fico hipnotizado vendo os lanchinhos caindo."
+        }
+      }
+    }
+  },
+  "testes": {
+    "commentarioSobreChavesAbaixo": "isso são exemplo de criar uma chave e enviar valores para elas e diferenciar elas de forma singular ou plural",
+    "Account_one": "Já tenho uma conta {{nome}}",
+    "Account_other": "Já tenho {{count}} contas {{nome}}",
+    "fraseComSpan": "Eu sou <span>muito bonito</span> e {{g}} com Soft Skills"
+  },
   "Eng": "Inglês",
-  "Access": "Uma plataforma acessível a todo mundo",
-  "Free": "Pagar para aprender? Só se quiser! Aqui contamos com uma opção 100% gratuita para quem estiver a fim.",
-  "Integration": "Mais que inclusão, Integração",
-  "Promotion": "Quer mais? A Buildar conta com um sistema de promoção de eventos e workshops para aquela troca maneira de experiências.",
-  "Opinion": "E o que a galera está achando da Buildar?",
-  "About": "Sobre",
-  "Connect": "Conexões",
-  "Support": "Apoie a Buildar",
   "FAQ": "Dúvidas Frequentes",
-  "Contact": "Fale Conosco",
   "Suporte": "Suporte",
   "Logo": "Logo",
-  "Rights": "Buildar © 2024 | Todos os direitos reservados",
-  "Privacy": "Política de Privacidade",
-  "Terms": "Termos de Uso",
+  "Connect": "Conexões",
   "BuildFuture": "Vamos construir juntos o seu futuro!",
   "invalidRegister": "O nickname não pode conter espaço.",
   "Registration": "Cadastro",
@@ -116,7 +197,6 @@
   "nameExperience": "Minha experiência na Buildar foi transformadora. Várias vezes, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.",
   "nameNomentaExperience": "Minha experiência na Buildar foi transformadora. Várias vezes, enquanto estava no trabalho, lembrei de uma atividade que treinei na plataforma.",
   "whatPeopleThink": "E o que a galera está achando da",
-  "age": "anos",
   "welcomeBack": "Bem-vindo de volta, CAParceiro",
   "login": "Login",
   "email": "E-mail",
@@ -134,7 +214,6 @@
   "sophisticated": "Sofisticado",
   "empathyAndResilience": "Empatia e Resiliência.",
   "strategicGenius": "Gênio estratégico",
-  "userNilvan": "Com jogos divertidos e bastante desafiadores, tenho total certeza de que vai atrair muito a atenção dos jovens e capacitá-los muito bem tanto para o seu futuro quanto para o seu ambiente corporativo.",
   "chooseFlor": "PARA QUAL ANDAR HOJE?",
   "restGame": "SALA DE DESCANSO",
   "termsOfUse": "Termos de uso",
@@ -297,34 +376,5 @@
   "assertiveComm": "Comunicação Assertiva",
   "teamChallenges": "Trabalho em Equipe: Desafios e Soluções",
   "productivityFocus": "Produtividade e Foco",
-  "leadershipTeamMgmt": "Liderança e Gestão de Equipes",
-  "userDiogo": "Adorei a plataforma da Buildar! Simplesmente achei incrível a possibilidade de poder jogar e ao mesmo tempo aprender e desenvolver habilidades.",
-  "userBraz": "A Buildar foi fundamental para o desenvolvimento das minhas soft skills, através dos jogos incríveis disponibilizados pela plataforma. Graças a isso, consegui ingressar no mercado de trabalho com sucesso.",
-  "userHelen": "Quando eu conheci a Buildar, comecei a imaginar como teria me ajudado no passado com as minhas soft skills, para me ajudar a desenvolve-las, e até mesmo em entrevistas de empregos.",
-  "userRyan": "A plataforma da buildar é simplesmente fantástica! Me ajudou bastante no desenvolvimento das minhas soft skills. Adoro os jogos e a capivara.",
-  "userLilian": "Eu nunca vi uma ideia tão criativa de aprendizado. A Buildar é a prova de que tudo que aprendemos pode ser divertido, fora da caixinha e pode mudar nossa vida profissional, e pessoal. Recomendo demais!",
-  "userLais": "A plataforma fez eu mudar a minha percepção sobre a comunicação e relações pessoais. Tinha muita dificuldade para me comunicar, mais hoje vejo que estou saindo renovada todos os dias, aprendendo de um jeito divertido!",
-  "userGabi": "A Buildar é de extrema importância nos dias atuais, onde tantos jovens, assim como eu, buscam desenvolver melhor suas soft skills. Tem sido incrível a forma como a plataforma tem me ajudado a melhorar minhas habilidades comportamentais de forma tão leve e divertida.",
-  "userMartinha": "A plataforma oferece trilhas claras, interativas e gamificadas, tornando o processo de aprendizado intuitivo e envolvente. Recomendo!",
-  "GabsDialogo1": "Eu estou desenvolvendo minha gestão de tempo tão rápido quanto um Katchauuuu! (/＾▽＾)/",
-  "DeboraDialogo1": "Eu amo trabalhar aqui.",
-  "DeboraDialogo2": "Faço muitas atividades todos os dias.",
-  "DeboraDialogo3": "Mas sinto que às vezes não tenho tempo suficiente para nada.",
-  "DeboraDialogo4": "Ou será que eu só não estou gerindo bem o meu tempo... (๑•́ ₃ •̀๑)",
-  "AndreiDialogo1": "Eu estou gerindo bem meu tempo, mas acho que dá para melhorar (´・v・`)",
-  "DriiDialogo1": "Aproveite a Buildar (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
-  "AuroraDialogo1": "Ai, pupila, acho que eu estou no mesmo barco...",
-  "AuroraDialogo2": "Mas ooo, cuidado com os impropérios. (◕‿↼)",
-  "JailsonDialogo1": "Oi, você é o novo estagiário, né?",
-  "JailsonDialogo2": "Por acaso, já ouviu falar sobre o Diálogo?",
-  "JailsonDialogo3": "Não? Hmm, um dia desses eu apresento ele para você. (◔‿◔)",
-  "Me": "Eu",
-  "Food": "Eu fico hipnotizado vendo os lanchinhos caindo.",
-  "Refreshing": "Refrescante",
-  "GestaoDeTempo1": "Olá, seja bem-vindo a Buildar corporation!",
-  "GestaoDeTempo2": "Aqui você irá colocar em prática suas habilidades comportamentais",
-  "GestaoDeTempo3": "Na sua direita teram portas para você treinar as suas habilidades",
-  "GestaoDeTempo4": "E na sua esquerda você pode se descontrair com um simples joguinho. Fique a vontade para explorar",
-  "JogoRun": "Está rodando o Famoso jogo Vivi Run",
-  "Next": "Próximo"
+  "leadershipTeamMgmt": "Liderança e Gestão de Equipes"
 }
