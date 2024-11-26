@@ -148,7 +148,7 @@ const Mapas = {
                             //Evento de quando você for falar com o npc
                             { type: "textMessage", text: tParaDialogos(
                                 {npcs: true, nome: false, },
-                                { t:"npc3", n: 1}, "" , {tipoAnim: "wave"} 
+                                { t:"npc3", n: 1}, "" , {tipoAnim: "wave-letter"} 
                             ), faceHero: "Gabs" },
                         ]
                     }
