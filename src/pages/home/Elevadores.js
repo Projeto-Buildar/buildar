@@ -2,7 +2,7 @@ import Elevador from "./Elevador"
 
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
+import CustomArrow from '../landingPage/components/Section8_Depoimentos/CustomArrow';
 
 import useControleDeTraducao from "../../shared/useControleDeTraducao";
 

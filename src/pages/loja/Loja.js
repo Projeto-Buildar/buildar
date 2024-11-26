@@ -11,7 +11,7 @@ import fundoroxo from './images/fundoroxo.png';
 import barra from './images/barra.png';
 import maisbuildolars from './images/maisbuildolars.png';
 import Carousel from "react-multi-carousel";
-import CustomArrow from '../landingPage/components/Depoimentos/CustomArrow';
+import CustomArrow from '../landingPage/components/Section8_Depoimentos/CustomArrow';
 import listras from './images/listras.png';
 import useControleDeTraducao from '../../shared/useControleDeTraducao';
 

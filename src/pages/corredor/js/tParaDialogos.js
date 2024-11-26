@@ -11,7 +11,7 @@ export const tParaDialogos = (tiposChaves = {}, chave = {}, valor, tag) => {
     let chaveFinal;
 
     if(tiposChaves.nome && chave.t === ""){
-        chaveFinal = `corredor.` + "nomeValor";
+        chaveFinal = "corredor.nomeValor";
     } else {
         chaveFinal = `corredor.` + chaveDeDialogo + chave.t + ultimaChave;
     }
