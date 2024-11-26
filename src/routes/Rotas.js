@@ -139,14 +139,14 @@ export default function Rotas() {
         {
             path: "quiz2",
             element: < Quiz2 />
-        }
+        },
     ]
 
     return (
         <BrowserRouter>
             <Routes>
-                {propriedadesRotas.map((propriedades) => {
-                    return <Route key={propriedades.path} {...propriedades} />
+                {propriedadesRotas.map((propriedade) => {
+                    return <Route key={propriedade.path} {...propriedade} />
                 })}
             </Routes>
         </BrowserRouter>
