@@ -11,7 +11,7 @@ function TextMessage({ text, onComplete, nome }) {
     const keyPressListenerRef = useRef(null);
     const { t } = useControleDeTraducao();
     useEffect(() => {
-        const keyPressListener = new KeyPressListener("Enter", () => {
+        const keyPressListener = new KeyPressListener(["Enter", "Space", "KeyE"], () => {
             setShow(false);
             onComplete();
         });
@@ -41,7 +41,7 @@ function TextMessage({ text, onComplete, nome }) {
         } else {
             chaveFinal = value;
         }
-        console.log(value.tag)
+        
         return {
             i18nKey: chaveFinal,
             values: { valor: value.valor },

@@ -97,7 +97,7 @@ export default class Game {
     }
 
     bindActionInput() {
-        new KeyPressListener("Enter", () => {
+        new KeyPressListener(["Enter", "Space", "KeyE"], () => {
             this.map.checkForActionCutscene(this.navegarParaPagina);
             // this.navegarParaPagina('/'); // Use navegarParaPagina para redirecionar ao pressionar Enter
         });
