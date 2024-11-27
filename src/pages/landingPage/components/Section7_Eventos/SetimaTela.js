@@ -22,7 +22,7 @@ export default function SetimaTela() {
         <p>
           <TComTag
             i18nKey={chaveComPrefixo("descricao")}
-            components={{ span: <span className='destaqAzul' /> }}
+            components={{ span: <span className='destaqVermelho' /> }}
           />
         </p>
       </article>

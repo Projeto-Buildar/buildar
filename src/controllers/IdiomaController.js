@@ -34,7 +34,13 @@ export default function IdiomaController() {
     return (
         <div className={`languageButton ${isFirefox ? '' : 'fontEmoji'}`}>
 
-            <select name="language" id="language" aria-label="Idioma" onChange={handleLanguageChange} value={selectedLanguage}>
+            <select
+                name="language"
+                id="language"
+                aria-label="Idioma"
+                onChange={handleLanguageChange}
+                value={selectedLanguage}
+            >
 
                 <option value="pt">🇧🇷</option>
                 <option value="en-US">🇺🇸</option>
