@@ -1,56 +1,43 @@
-import './PrimeiraTela.css';
-import image from '../../images/primeiraTela_img.webp';
 import { Outlet, Link } from "react-router-dom";
+
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
-export default function PrimeiraTela() {
-  const { t, tFormatado, chaveComPrefixo} = useControleDeTraducao("section1");
+import image from '../../images/primeiraTela_img.webp';
 
-  // Obtenha a tradução original, manipule o texto e passe para o Trans
-  // const textoManipulado = tFormatado(t('fraseComSpan', { g: 'gostoso' }));
+import './PrimeiraTela.css';
+
+export default function PrimeiraTela() {
+  const { t, tFormatado, chaveComPrefixo } = useControleDeTraducao("section1");
 
   return (
-    // Atenção ⚠: para fazer alterações, primeiro ver o impacto que geraria no CSS do component
+    <section className='frames' id="primeiraTela">
 
-    // Possivel alteração ⚠: alterar "div" principal das paginas por "section"
-    <div className='frames' id="primeiraTela">
+      
 
-      <div className='backgroundLeft'></div>
+      <article className="section1">
 
-      <article>
+        <div className="blocoDeTexto">
+          <h1>{tFormatado(chaveComPrefixo("titulo"))}</h1>
 
-        <h1>{tFormatado(chaveComPrefixo("titulo"))}</h1>
+          <nav>
 
-        <div className='textBar'></div>
+            <Link to="/cadastro">
+              <div className='buttonCadastro'><span>{t("cadastrar")}</span></div>
+            </Link>
 
-        {/* Possivel alteração ⚠: alterar esta "section" por "nav" */}
-        <section>
+            <Link to='/login'>
+              <div className='buttonLogin'>{t(chaveComPrefixo("login"))} </div>
+            </Link>
+          </nav>
+        </div>
 
-          <Link to="/cadastro">
-            <div className='buttonCadastro'><span>{t("cadastrar")}</span></div>
-          </Link>
-          
-          <Link to='/login'>
-          
-            <div className='buttonLogin'>{t(chaveComPrefixo("login"))} </div>
-
-            {/* <TransComPrefixo
-              i18nKey="Section2.fraseComSpan"
-              components={{ span: <span className='hohoho' /> }}
-              values={{g: "alguma coisa"}}
-              usarControleDeLinha={true}  // Controlando quando aplicar o controle de linha
-            /> */}
-          </Link>
-        </section>
+        <figure>
+          <img alt='' src={image} />
+        </figure>
 
       </article>
-
-      <figure>
-        <img alt='' src={image} />
-      </figure>
-
       <Outlet />
-
-    </div>
+      <div className='backgroundLeft'/>
+    </section>
   );
 }
