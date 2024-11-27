@@ -20,11 +20,11 @@ const TPrecos = (valor) => {
     case 'pt':
       valorFinal = formatarPreco(valor, true);
       return `R$${valorFinal}`;
-    case 'en':
+    case 'en-US':
       const mediaDoDolar = 0.17;
       valorFinal = formatarPreco(valor * mediaDoDolar, false);
       return `$${valorFinal}`;
-    case 'es':
+    case 'es-ES':
       const mediaDoBob = 1.18;
       valorFinal = formatarPreco(valor * mediaDoBob, true);
       return `Bs${valorFinal}`;
