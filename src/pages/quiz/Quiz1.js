@@ -3,7 +3,7 @@ import './Quiz.css';
 import HeaderHome from "../home/HeaderHome";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
-import "../../config/i18n.js";
+import "../../config/i18n";
 
 // Função para embaralhar o array
 function shuffleArray(array) {

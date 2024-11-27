@@ -3,7 +3,7 @@ import logo from './images/logo_on.webp';
 import BtnsNav from './BtnsNav';
 import { Outlet, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import "../../config/i18n.js";
+import "../../config/i18n";
 
 export default function HeaderHome() {
   const { t } = useTranslation();

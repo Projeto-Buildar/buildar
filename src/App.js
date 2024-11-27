@@ -9,7 +9,7 @@ import { ItemProvider } from './pages/conteudo/Itens';
 
 // Imports de componentes funcionais
 import Rotas from './routes/Rotas.js';
-import IdiomaController from './controllers/IdiomaController.js';
+import IdiomaController from './controllers/IdiomaController.js'
 
 // Imports de CSS
 import './App.css';
