@@ -1,9 +1,9 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-import enTranslation from "./locales/en.json";
-import ptTranslation from "./locales/pt.json";
-import esTranslation from "./locales/es.json";
+import enTranslation from "../locales/en.json";
+import ptTranslation from "../locales/pt.json";
+import esTranslation from "../locales/es.json";
 
 i18n
     // detect user language
@@ -14,7 +14,7 @@ i18n
         detection: {
             order: ['navigator', 'cookie'], // Define a prioridade de detecção
         },
-        lng: 'pt', //Definir linguagem inicial
+        // lng: 'pt', //Definir linguagem inicial
         fallbackLng: 'pt', // Definir um idioma de fallback
         resources: {
             en: {

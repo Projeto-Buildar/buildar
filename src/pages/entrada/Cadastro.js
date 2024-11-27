@@ -5,7 +5,7 @@ import formaCadastro1 from './images/forma-cadastro1.webp';
 import formaCadastro2 from './images/forma-cadastro2.webp';
 import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
-import "../../i18n";
+import "../../config/i18n.js";
 import {setNomeUsuario} from '../../shared/useNomeUsuario';
 
 export default function Cadastro() {

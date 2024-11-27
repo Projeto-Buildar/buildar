@@ -8,7 +8,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link
 import forma1 from './images/forma1.webp';
 import Header from '../headersEfooters/Header//Header';
 import { useTranslation } from 'react-i18next';
-import "../../i18n";
+import "../../config/i18n.js";
 import { setNomeUsuario } from '../../shared/useNomeUsuario';
 
 export default function Login() {
