@@ -130,3 +130,13 @@
     outline: 2px solid #000000;
     transition: 0.3s;
 }
+
+@media (max-width: 450px) { 
+    .offers {
+        width: 23%;
+    }
+
+    #Planos *{
+        font-size: .8rem;
+    }
+}

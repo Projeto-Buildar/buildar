@@ -1,8 +1,30 @@
 #setimaTela {
+    padding-inline: 10vw;
     z-index: -2;
     & img {
         height: 30rem;
     }
 }
 
-
+@media (max-width: 450px) { 
+    #setimaTela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        & article {
+            width: 70% !important;
+        }
+        
+        & h2 {
+            font-size: 1.5rem;
+        }
+        & p {
+            font-size: 1rem;
+        }
+        & img {
+            height: 10rem;
+        }
+    }
+}
