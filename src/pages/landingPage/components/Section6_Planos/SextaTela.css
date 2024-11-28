@@ -4,7 +4,7 @@
     gap: 2rem;
 }
 
-#sextaTela article {
+#sextaTela .blocoDeTexto {
     width: fit-content;
     text-align: center;
 }
@@ -23,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: column;
-    width: 18rem;
+    width: 18rem !important;
     height: 25rem;
     background: #FFFFFF;
     border-radius: 1rem;
@@ -42,10 +42,10 @@
         width: 70%;
         font-weight: 500;
     }
-    & div:not(.titleCard, .offerButton) {
+    & ul, div:not(.titleCard, .offerButton) {
         line-height: 2rem;
     }
-    & span {
+    & li {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -54,7 +54,7 @@
             height: 1.25rem;
         }
     }
-    & p:not(span p) {
+    & p:not(li p) {
         font-size: 1.25rem;
     }
     & .offerButton {
@@ -68,7 +68,7 @@
     }
 }
 
-#sextaTela section div:nth-child(2) {
+#sextaTela section article:nth-child(2) {
     & h3, .offerButton {
         background: #FF486D;
     }
@@ -77,7 +77,7 @@
     }
 }
 
-#sextaTela section div:nth-child(3) {
+#sextaTela section article:nth-child(3) {
     & h3, .offerButton {
         background: #C6EC3E;
     }
