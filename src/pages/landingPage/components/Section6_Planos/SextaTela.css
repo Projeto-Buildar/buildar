@@ -2,6 +2,7 @@
     flex-flow: column;
     background: none;
     gap: 2rem;
+    padding-inline: 5vw;
 }
 
 #sextaTela .blocoDeTexto {
@@ -131,12 +132,203 @@
     transition: 0.3s;
 }
 
-@media (max-width: 450px) { 
-    .offers {
-        width: 23%;
+@media (max-width: 1150px) { 
+    #sextaTela section {
+        gap: 1.8rem;
     }
 
-    #Planos *{
-        font-size: .8rem;
+    .offers {
+        width: 15rem !important;
+        height: 23rem;
+        & h3 {
+            padding-block: .8rem;
+        }
+        & h4 {
+            width: 65%;
+            font-size: 1rem;
+        }
+        & ul, div:not(.titleCard, .offerButton) {
+            line-height: 1.8rem;
+        }
+        & li {
+            & p {
+                font-size: 1rem !important;
+            }
+            & img {
+                height: 1.1rem;
+            }
+        }
+        & p:not(li p) {
+            font-size: 1.20rem !important;
+        }
+        & .offerButton {
+            width: 75%;
+            padding-block: 0.3rem;
+            font-size: 1.55rem;
+        }
+    }
+
+}
+
+@media (max-width: 860px) { 
+    #sextaTela section {
+        gap: 1.5rem;
+    }
+
+    .offers {
+        width: 13rem !important;
+        height: 21rem;
+        & h3 {
+            font-size: 1.45rem;
+            padding-block: .5rem;
+        }
+        & h4 {
+            font-size: .9rem;
+        }
+        & ul, div:not(.titleCard, .offerButton) {
+            line-height: 1.5rem;
+        }
+        & li {
+            & p {
+                font-size: .85rem !important;
+            }
+            & img {
+                height: 1rem;
+            }
+        }
+        & p:not(li p) {
+            font-size: 1.1rem !important;
+        }
+        & .offerButton {
+            font-size: 1.35rem;
+        }
+    }
+
+}
+
+@media (max-width: 720px) { 
+    #sextaTela section {
+        gap: .8rem;
+    }
+
+    .offers {
+        width: 12rem !important;
+        height: 18rem;
+        & h3 {
+            font-size: 1.2rem;
+            padding-block: .3rem;
+        }
+        & h4 {
+            font-size: .8rem;
+        }
+        & li {
+            & p {
+                font-size: .8rem !important;
+            }
+            & img {
+                height: .8rem;
+            }
+        }
+        & p:not(li p) {
+            font-size: 1rem !important;
+        }
+        & .offerButton {
+            font-size: 1.2rem;
+        }
+    }
+
+    #sextaTela .backgroundRight {
+        background: url('../../images/sextaTela_bg3.webp') top 0 right 0/40% no-repeat;
+        transform: translateY(5%);
+    }
+
+    #sextaTela .backgroundLeft {
+        background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/40% no-repeat;
+        transform: translateY(-5%);
+    }
+}
+
+@media (max-width: 650px) { 
+    #sextaTela {
+        gap: .8rem;
+        padding-inline: 3vw;
+        height: 95vh;
+        padding-block: 15vh;
+    }
+
+    #sextaTela .blocoDeTexto {
+        & h2{
+            font-size: 1.5rem;
+        }
+        & p {
+            font-size: 1rem;
+        }
+    }
+
+    #sextaTela section {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .offers {
+        width: 48% !important;
+        height: 15rem;
+        & ul {
+            line-height: 1.4rem;
+        }
+        & p:not(li p) {
+            font-size: 1rem !important;
+            margin-top: 1%;
+        }
+        & .offerButton {
+            font-size: 1.1rem;
+            margin-top: .5rem;
+        }
+    }
+
+    #sextaTela section article:nth-child(3) {
+        margin-bottom: 10%;
+    }
+
+    #sextaTela .backgroundMid {
+        height: 110vh;
+    }
+
+    #sextaTela .backgroundRight {
+        transform: translateY(-7%);
+    }
+
+    #sextaTela .backgroundLeft {
+        transform: translateY(2%);
+    }
+    
+    
+}
+
+@media (max-width: 450px) { 
+    #sextaTela section {
+        gap: .6rem;
+    }
+
+    .offers {
+        & h4 {
+            font-size: .7rem;
+        }
+        & p:not(li p) {
+            font-size: .9rem !important;
+        }
+    }
+
+    #sextaTela section article:nth-child(3) {
+        width: 55% !important;
+    }
+
+    #sextaTela .backgroundRight {
+        background: url('../../images/sextaTela_bg3.webp') top 0 right 0/45% no-repeat;
+    }
+    
+    #sextaTela .backgroundLeft {
+        background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/45% no-repeat;
     }
 }
