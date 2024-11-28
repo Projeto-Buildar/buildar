@@ -12,26 +12,29 @@ export default function SetimaTela() {
 
   return (
     <section className='frames' id="setimaTela">
+      <article className='section7'>
 
-      <figure>
-        <img alt='Logo da Buildar' src={logo} />
-      </figure>
+        <figure>
+          <img alt='Logo da Buildar' src={logo} />
+        </figure>
 
-      <article>
+        <div className='blocoDeTexto'>
+          
+          <h2>
+            <TComTag
+              i18nKey={chaveComPrefixo("subtitulo")}
+              components={{ span: <span className='destaqueRoxo' /> }}
+            />
+          </h2>
 
-        <h2>
-          <TComTag
-            i18nKey={chaveComPrefixo("subtitulo")}
-            components={{ span: <span className='destaqueRoxo' /> }}
-          />
-        </h2>
-        
-        <p>
-          <TComTag
-            i18nKey={chaveComPrefixo("descricao")}
-            components={{ span: <span className='destaqVermelho' /> }}
-          />
-        </p>
+          <p>
+            <TComTag
+              i18nKey={chaveComPrefixo("descricao")}
+              components={{ span: <span className='destaqVermelho' /> }}
+            />
+          </p>
+
+        </div>
 
       </article>
     </section>

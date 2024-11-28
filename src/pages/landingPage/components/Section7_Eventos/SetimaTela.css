@@ -4,27 +4,61 @@
     & img {
         height: 30rem;
     }
+    & article {
+        width: 100% !important;
+    }
+}
+
+#setimaTela figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#setimaTela .section7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+#setimaTela .blocoDeTexto{
+    width: 28rem;
+}
+
+@media (max-width: 1050px) { 
+    #setimaTela .section7{
+        gap: 0;
+    }
+    #setimaTela .blocoDeTexto{
+        width: 35rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px) { 
+    #setimaTela figure {
+        width: 60%;
+    }
+    #setimaTela figure img{
+        width: 100%;
+        height: 100%;
+    }
+    #setimaTela .blocoDeTexto{
+        width: 35rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 450px) { 
     #setimaTela {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        & article {
-            width: 70% !important;
-        }
-        
         & h2 {
             font-size: 1.5rem;
         }
         & p {
             font-size: 1rem;
-        }
-        & img {
-            height: 10rem;
         }
     }
 }
