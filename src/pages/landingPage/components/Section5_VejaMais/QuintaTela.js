@@ -1,14 +1,14 @@
-import './QuintaTela.css';
-
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+
+import './QuintaTela.css';
 
 export default function QuintaTela() {
     const { t, tFormatado, chaveComPrefixo } = useControleDeTraducao("section5");
 
     return (
-        <div className='frames' id='quintaTela'>
+        <section className='frames' id='quintaTela'>
             <div className='backgroundLeft'></div>
-            <section>
+            <section className='imagemContainer'>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -18,6 +18,6 @@ export default function QuintaTela() {
                 <p>{tFormatado(chaveComPrefixo("descricao"))}</p>
                 <div>{tFormatado(chaveComPrefixo("mais"))}</div>
             </article>
-        </div>
+        </section>
     )
 }
