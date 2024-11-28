@@ -1,9 +1,26 @@
 #segundaTela {
     background: url('../../images/segundaTela_bg.webp') left 0 top 5%/auto 28% no-repeat;
     gap: 6rem;
+    padding-inline: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#segundaTela section {
+#segundaTela .section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+#segundaTela .blocoDeTexto {
+    width: 35rem;
+}
+
+#segundaTela figure {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,5 +39,73 @@
         width: 92%;
         height: 50%;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 1259px) { 
+    #segundaTela{
+        padding-block: 5%;
+        background: url('../../images/segundaTela_bg.webp') left 0 top 5%/auto 20% no-repeat;
+    }
+    #segundaTela .blocoDeTexto {
+        width: 35rem;
+        transform: translateY(-20%);      
+    }
+    #segundaTela figure {
+        background-size: 60% auto;
+        /* margin-left: 7%; */
+    } 
+    
+    .monitor {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    #segundaTela {
+        & h2, p{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 650px) { 
+    #segundaTela {
+        background: url('../../images/segundaTela_bg.webp') left 0 top 5%/auto 18% no-repeat;
+    }
+
+    #segundaTela figure {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    .monitor {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+@media (max-width: 500px) { 
+
+    #segundaTela figure {
+        min-width: 18rem;
+        min-height: 18rem;
+        background-size: 65% auto;
+        transform: translateX(8%);
+    }
+}
+
+@media (max-width: 450px) { 
+    #segundaTela {
+        & h2{
+            font-size: 1.5rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+    }
+
+    .monitor {
+        width: 10rem;
+        height: 10rem;
     }
 }
