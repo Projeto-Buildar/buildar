@@ -46,17 +46,25 @@
     z-index: -1;
 }
 
-#quartaTela .backgroundLeft {
-    background: url('../../images/quartaTela_bg.webp') bottom 0 left 2.5%/auto 30% no-repeat;
-    left: 0;
-}
-
 #quartaTela .backgroundRight {
     background: url('../../images/quartaTela_bg2.webp') top 0 right 2.5%/auto 30% no-repeat;
     right: 0;
 }
 
+#quartaTela .backgroundLeft {
+    background: url('../../images/quartaTela_bg.webp') bottom 0 left 2.5%/auto 30% no-repeat;  
+    left: 0;
+}
+
+
+
 @media (max-width: 1285px) { 
+    #quartaTela .backgroundRight, #quartaTela .backgroundLeft {
+        transform: translateY(-5.8%);
+    }
+    #quartaTela .backgroundLeft {
+        transform: translateY(5.8%);
+    }
     #quartaTela .section4{
         justify-content: center;
     }

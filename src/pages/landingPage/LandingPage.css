@@ -11,3 +11,9 @@
     height: 88vh;
     gap: 4rem;
 }
+
+@media (max-width: 1280px) { 
+    .frames {
+        padding-block: 5vh;
+    }     
+}
