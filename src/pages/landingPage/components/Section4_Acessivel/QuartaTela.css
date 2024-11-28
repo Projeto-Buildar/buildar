@@ -1,10 +1,42 @@
 #quartaTela {
-    & article p {
+    padding-inline: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h2, p {
         width: 80%;
     }
     & figure img {
         height: 25rem;
     }
+}
+
+#quartaTela .section4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+#quartaTela .blocoDeTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+}
+
+.figuraVivi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ViviApresenta{
+    max-width: 80%;
+    object-fit: contain;
 }
 
 #quartaTela .backgroundLeft, #quartaTela .backgroundRight {
@@ -24,14 +56,53 @@
     right: 0;
 }
 
-.figuraVivi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1285px) { 
+    #quartaTela .section4{
+        justify-content: center;
+    }
+    #quartaTela {
+        & h2, p {
+            text-align: center;
+        }
+    }
+
 }
 
-.ViviApresenta{
-    max-width: 80%;
-    object-fit: contain;
+@media (max-width: 990px) {     
+    #quartaTela .backgroundLeft {
+        background: url('../../images/quartaTela_bg.webp') bottom 0 left 2.5%/auto 20% no-repeat;
+    }
+    
+    #quartaTela .backgroundRight {
+        background: url('../../images/quartaTela_bg2.webp') top 0 right 2.5%/auto 20% no-repeat;
+    }
 }
 
+@media (max-width: 830px) {     
+    .ViviApresenta{
+        max-width: 60%;
+    }
+    #quartaTela .section4 {
+        transform: translateY(-5%);
+    }
+    #quartaTela .blocoDeTexto {
+        transform: translateY(-30%);
+    }
+}
+
+@media (max-width: 450px) { 
+    #quartaTela {
+        & h2 {
+            font-size: 1.5rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+    }
+    #quartaTela .blocoDeTexto {
+        transform: translateY(-35%);
+    }
+    .ViviApresenta{
+        min-width: 12.5rem;
+    }
+}
