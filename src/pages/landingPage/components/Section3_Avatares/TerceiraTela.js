@@ -1,24 +1,25 @@
-import './TerceiraTela.css';
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
-import "react-multi-carousel/lib/styles.css";
 // import Carousel from "react-multi-carousel";
 import Carrosel from "../../../../shared/Carrosel"
+
+import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
 
 import Avatar1 from '../../images/Rogerio_avatar.png';
 import Avatar2 from '../../images/Malu_avatar.png';
 import Avatar3 from '../../images/Tobias_avatar.png';
 
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
-import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+import "react-multi-carousel/lib/styles.css";
+import './TerceiraTela.css';
 
 const avatares = [Avatar1, Avatar2, Avatar3]
 
 export default function TerceiraTela() {
   const { chaveComPrefixo } = useControleDeTraducao("section3");
-  
+
   return (
-    <div className='frames' id="terceiraTela">
-      <section>
+    <section className='frames' id="terceiraTela">
+      <article className='section3'>
         <figure className='skinContainer'>
 
           <Carrosel
@@ -40,27 +41,23 @@ export default function TerceiraTela() {
               })}>
           </Carrosel>
         </figure>
-        {/* <div className='scrollContainer'>
-          <div className='scroller'></div>
-          <div className='scroller'></div>
-          <div className='scroller'></div>
-          <div className='scroller'></div>
-        </div> */}
-      </section>
-      <article>
-        <h2>
-          <TComTag
-            i18nKey={chaveComPrefixo("subtitulo")}
-            components={{ span: <span className='destaqueRoxo' /> }}
-          />
-        </h2>
-        <p>
-          <TComTag
-            i18nKey={chaveComPrefixo("descricao")}
-            components={{ span: <span className='destaqVermelho' /> }}
-          />
-        </p>
+
+        <div className='blocoDeTexto'>
+          <h2>
+            <TComTag
+              i18nKey={chaveComPrefixo("subtitulo")}
+              components={{ span: <span className='destaqueRoxo' /> }}
+            />
+          </h2>
+          <p>
+            <TComTag
+              i18nKey={chaveComPrefixo("descricao")}
+              components={{ span: <span className='destaqVermelho' /> }}
+            />
+          </p>
+        </div>
+
       </article>
-    </div>
+    </section>
   );
 }
