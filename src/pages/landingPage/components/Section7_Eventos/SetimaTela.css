@@ -62,34 +62,3 @@
         }
     }
 }
-
-@media (orientation: landscape) {
-
-    /* Estilos aplicados quando a tela está em paisagem */
-    #setimaTela .section7 {
-        flex-wrap: nowrap; /* Força os elementos a ficarem lado a lado */
-        justify-content: center; /* Distribui os elementos horizontalmente */
-        gap: 3.5rem;
-        padding-right: 4%;
-    }
-
-    #setimaTela .blocoDeTexto {
-        width: 50%;
-    }
-
-    #setimaTela figure {
-        width: 30%;
-    }
-
-    #setimaTela {
-        
-        & h2 {
-            font-size: 1.4rem;
-            text-align: start;
-        }
-        & p {
-            font-size: .8rem;
-            text-align: start;
-        }
-    }
-}
