@@ -1,7 +1,7 @@
-#primeiraTela {
+/* #primeiraTela {
     background: url('../../images/primeiraTela_bg.webp') no-repeat;
     background-size: contain;
-    background-position: right top;  
+    background-position: right top;
     padding-inline: 10vw;
     /* justify-content: center; */
     /* justify-content: space-between; */
@@ -13,13 +13,13 @@
         width: 100%;
         gap: 7rem;
     } */
-
+/* 
     & img {
         height: 30rem;
     }
 }
 
-#primeiraTela .section1{
+#primeiraTela .section1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +28,7 @@
     width: 100%;
 }
 
-#primeiraTela .blocoDeTexto{
+#primeiraTela .blocoDeTexto {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -82,21 +82,23 @@
 
 /* Hover */
 
-#primeiraTela nav div:hover {
+/* #primeiraTela nav div:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.4s;
-}
+} */
 
-/* Adicione um media query para centralizar os itens quando eles envolverem */ 
-@media (max-width: 1230px) { 
-    /* Ajuste este valor conforme necessário */ 
-    #primeiraTela .section1 { 
-        justify-content: center; 
-        gap: .5rem;
-        /* Centraliza os itens quando der o wrap */ 
-    } 
-    #primeiraTela .blocoDeTexto{
+/* Adicione um media query para centralizar os itens quando eles envolverem */
+/* @media (max-width: 1230px) { */
+
+    /* Ajuste este valor conforme necessário */
+    /* #primeiraTela .section1 {
+        justify-content: center;
+        gap: .5rem; */
+        /* Centraliza os itens quando der o wrap */
+    /* }
+
+    #primeiraTela .blocoDeTexto {
         justify-content: center;
         align-items: center;
         background-image: linear-gradient(to right, transparent 50%, white 50%);
@@ -106,19 +108,20 @@
     #primeiraTela h1 {
         text-align: center;
     }
-    
+
     #primeiraTela h1::after {
         margin: 0 auto;
         width: 100%;
     }
-    #primeiraTela img{
+
+    #primeiraTela img {
         padding-left: 20%;
     }
 }
 
-@media (max-width: 960px) { 
+@media (max-width: 960px) {
     #primeiraTela {
-        & h1{
+        & h1 {
             font-size: 3.8rem;
         }
 
@@ -126,20 +129,23 @@
             height: 25rem;
         }
     }
+
     #primeiraTela .backgroundLeft {
         background: url('../../images/primeiraTela_bg2.webp') bottom 4% left 2%/auto 15% no-repeat;
     }
 }
 
-@media (max-width: 760px) { 
-    #primeiraTela .section1 { 
+@media (max-width: 760px) {
+    #primeiraTela .section1 {
         transform: translateY(-5%);
-    } 
+    }
+
     #primeiraTela {
-        & h1{
+        & h1 {
             font-size: 3.5rem;
         }
-        nav {  
+
+        nav {
             & div {
                 width: 12rem;
                 height: 3rem;
@@ -150,32 +156,34 @@
     .buttonCadastro {
         font-size: 1.5rem;
     }
-    
+
     .buttonLogin {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 560px) { 
-    #primeiraTela img{
-        height: 20rem;      
-    }   
+@media (max-width: 560px) {
+    #primeiraTela img {
+        height: 20rem;
+    }
 }
 
-@media (max-width: 460px) { 
-    #primeiraTela .section1 { 
+@media (max-width: 460px) {
+    #primeiraTela .section1 {
         transform: translateY(-9%);
-    } 
-    #primeiraTela .blocoDeTexto{
+    }
+
+    #primeiraTela .blocoDeTexto {
         width: 100%;
         gap: 1.3rem;
     }
 
     #primeiraTela {
-        & h1{
+        & h1 {
             font-size: 2.5rem;
         }
-        nav {  
+
+        nav {
             & div {
                 width: 8rem;
                 height: 2.8rem;
@@ -186,12 +194,233 @@
     .buttonCadastro {
         font-size: 1rem;
     }
-    
+
     .buttonLogin {
         font-size: .6rem;
     }
 
-    #primeiraTela img{
-        height: 16rem;      
+    #primeiraTela img {
+        height: 16rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    /* Estilos aplicados quando a tela está em paisagem */
+    /* #primeiraTela .section1 {
+        flex-wrap: nowrap; */
+        /* Força os elementos a ficarem lado a lado */
+        /* justify-content: space-between; */
+        /* Distribui os elementos horizontalmente */
+    /* }
+
+    #primeiraTela {
+        & h1 {
+            font-size: 1.6rem;
+            text-align: start;
+        }
+
+        & nav {
+            & div {
+                width: 6rem;
+                height: 2.5rem;
+            }
+        }
+    }
+
+    .buttonCadastro {
+        font-size: .7rem;
+    }
+
+    .buttonLogin {
+        font-size: .4rem;
+    }
+
+    #primeiraTela figure {
+        width: 30%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #primeiraTela .blocoDeTexto {
+        width: 40%;
+    }
+
+    #primeiraTela h1::after {
+        margin: 0;
+        margin-top: 2%;
+        width: 60%;
+    }
+} */
+
+#primeiraTela {
+    background: url('../../images/primeiraTela_bg.webp') no-repeat;
+    background-size: cover; /* Melhor cobertura visual */
+    background-position: right top;
+    padding-inline: 10%;
+}
+
+#primeiraTela .section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    gap: clamp(1rem, 2vw, 3rem); /* Espaçamento dinâmico */
+}
+
+#primeiraTela .blocoDeTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: clamp(20rem, 40%, 40rem); /* Responsivo para diferentes larguras */
+}
+
+#primeiraTela h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem); /* Escala para telas maiores e menores */
+    text-align: center;
+    line-height: 1.2;
+}
+
+#primeiraTela h1::after {
+    content: '';
+    display: block;
+    margin: 2% auto;
+    width: clamp(40%, 60%, 60%);
+    height: 2px;
+    background: linear-gradient(90deg, #000 90%, #fff 92%, #000 94%);
+}
+
+#primeiraTela nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#primeiraTela nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(8rem, 16vw, 16rem);
+    height: clamp(2.5rem, 4vw, 4rem);
+    border-radius: 1rem;
+    transition: transform 0.4s;
+}
+
+#primeiraTela nav div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.buttonCadastro {
+    background: #58D2FF;
+    outline: 2px solid #000;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 600;
+}
+
+.buttonLogin {
+    outline: 2px solid #000;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 700;
+}
+
+#primeiraTela img {
+    max-width: 100%;
+    height: auto; /* Mantém proporção */
+}
+
+#primeiraTela .backgroundLeft {
+    background: url('../../images/primeiraTela_bg2.webp') bottom 4% left 2%/auto 20% no-repeat;
+}
+
+@media (max-width: 1230px) {
+    #primeiraTela .section1 {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #primeiraTela .blocoDeTexto {
+        align-items: center;
+        background-image: linear-gradient(to right, transparent 50%, white 50%);
+        border-radius: 0 30px 30px 0;
+    }
+
+    #primeiraTela h1::after {
+        width: 80%;
+    }
+}
+
+@media (max-width: 960px) {
+    #primeiraTela h1 {
+        font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+    }
+
+    #primeiraTela .backgroundLeft {
+        background-size: 15%;
+    }
+}
+
+@media (max-width: 760px) {
+    #primeiraTela .section1 {
+        transform: translateY(-5%);
+    }
+
+    .buttonCadastro {
+        font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    }
+
+    .buttonLogin {
+        font-size: clamp(0.6rem, 1vw, 1rem);
+    }
+}
+
+@media (max-width: 460px) {
+    #primeiraTela .section1 {
+        transform: translateY(-9%);
+    }
+
+    #primeiraTela .blocoDeTexto {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    #primeiraTela h1 {
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    #primeiraTela nav div {
+        width: clamp(6rem, 10vw, 8rem);
+        height: clamp(2rem, 3vw, 2.8rem);
+    }
+}
+
+@media (orientation: landscape) {
+    #primeiraTela .section1 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #primeiraTela h1 {
+        font-size: clamp(2rem, 3vw, 3.5rem);
+        text-align: start;
+    }
+
+    #primeiraTela nav div {
+        width: clamp(6rem, 8vw, 8rem);
+        height: clamp(2rem, 3vw, 2.5rem);
+    }
+
+    .buttonCadastro {
+        font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    }
+
+    .buttonLogin {
+        font-size: clamp(0.6rem, 1vw, 1rem);
     }
 }
