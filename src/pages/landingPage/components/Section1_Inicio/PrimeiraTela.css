@@ -94,7 +94,6 @@
     #primeiraTela .section1 { 
         justify-content: center; 
         gap: .5rem;
-        margin-top: 5%;
         /* Centraliza os itens quando der o wrap */ 
     } 
     #primeiraTela .blocoDeTexto{
@@ -127,9 +126,15 @@
             height: 25rem;
         }
     }
+    #primeiraTela .backgroundLeft {
+        background: url('../../images/primeiraTela_bg2.webp') bottom 4% left 2%/auto 15% no-repeat;
+    }
 }
 
 @media (max-width: 760px) { 
+    #primeiraTela .section1 { 
+        transform: translateY(-5%);
+    } 
     #primeiraTela {
         & h1{
             font-size: 3.5rem;
@@ -152,20 +157,15 @@
 }
 
 @media (max-width: 560px) { 
-    #primeiraTela .section1 { 
-        margin-top: 2%;
-    } 
-
     #primeiraTela img{
         height: 20rem;      
     }   
-
-    #primeiraTela .backgroundLeft {
-        background: url('../../images/primeiraTela_bg2.webp') bottom 4% left 2%/auto 15% no-repeat;
-    }
 }
 
 @media (max-width: 460px) { 
+    #primeiraTela .section1 { 
+        transform: translateY(-9%);
+    } 
     #primeiraTela .blocoDeTexto{
         width: 100%;
         gap: 1.3rem;
