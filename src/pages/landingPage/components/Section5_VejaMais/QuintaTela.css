@@ -14,8 +14,8 @@
     border-radius: 2rem;
     gap: 2rem;
     & div {
-        width: 20rem;
-        height: 30rem;
+        width: clamp(13rem,20vw, 20rem);
+        height: clamp(21rem,30vw, 30rem);
         background: #b3b3b3;
         border-radius: 2rem;
         opacity: 0.6;
@@ -42,7 +42,65 @@
     margin-block: 4rem;
     border-radius: 1rem 1rem 0 0;
     text-align: center;
-    width: 36rem;
+    width: clamp(15rem, 36vw, 36rem);
+}
+
+#quintaTela {
+    & h2 {
+        font-size: clamp(1.4rem, 3.9vw, 1.9rem);
+    }
+
+    & p {
+        font-size: .9rem;
+    }
+    & article div{
+        font-size: 1.1rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) and (max-height: 500px) {
+
+    #quintaTela {
+        & h2 {
+            font-size: 1.4rem;
+        }
+    
+        & p {
+            font-size: .9rem;
+        }
+        & article div{
+            font-size: 1.1rem;
+        }
+    }
+
+    #quintaTela article {
+        width: 50% !important;
+        padding-block: 1%;
+        padding-inline: 3%;
+        margin: 0;
+    }
+
+    #quintaTela .imagemContainer {
+        gap: 1.5rem;
+        & div {
+            width: clamp(12rem,20vw, 20rem);
+            height: clamp(16rem,30vw, 30rem);
+        }
+    }
+}
+
+@media (orientation: portrait) and (max-width: 903px) {
+    #quintaTela .imagemContainer {
+        & div {
+            width: clamp(5rem,20vw, 20rem);
+            height: clamp(14rem,30vw, 30rem);
+        }
+    }
+
+    #quintaTela article {
+        width: 60% !important;
+        transform: translateY(-5.5%);
+    }
 }
 
 @media (max-width: 1285px) { 
@@ -51,20 +109,9 @@
     }
 }
 
-@media (max-width: 1090px) { 
-    #quintaTela .imagemContainer {
-        & div {
-            width: 15rem;
-            height: 25rem;
-        }
-    }
-}
-
 @media (max-width: 850px) { 
     #quintaTela .imagemContainer {
         & div {
-            width: 12rem;
-            height: 22rem;
             border-radius: 1.5rem;
         }
     }
@@ -73,16 +120,11 @@
 @media (max-width: 690px) { 
     #quintaTela .imagemContainer {
         & div {
-            width: 9rem;
-            height: 19rem;
             border-radius: 1rem;
         }
     }
+
     #quintaTela article {
-        width: 30rem;
-    }
-    #quintaTela article {
-        width: 25rem !important;
         padding-block: 3%;
         padding-inline: 5%;
     }
@@ -95,13 +137,10 @@
     #quintaTela .imagemContainer {
         gap: .8rem;
         & div {
-            width: 8rem;
-            height: 17rem;
             border-radius: .5rem;
         }
     }
     #quintaTela article {
-        width: 17rem !important;
         padding-block: 10%;
         padding-inline: 5%;
     }
@@ -110,26 +149,12 @@
         transform: translateY(-15%);
         width: 9rem;
     }
-
-    #quintaTela {
-        & h2 {
-            font-size: 1.5rem;
-        }
-        & p {
-            font-size: 1rem;
-        }
-        & article div{
-            font-size: 1.1rem;
-        }
-    }
 }
 
 @media (max-width: 470px) {
     #quintaTela .imagemContainer {
         gap: .8rem;
         & div {
-            width: 5rem;
-            height: 14rem;
             border-radius: .4rem;
         }
     }
@@ -138,7 +163,6 @@
     }
 
     #quintaTela article {
-        width: 15rem !important;
         padding-block: 5%;
         padding-inline: 3%;
         transform: translateY(15%);
