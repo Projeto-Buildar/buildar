@@ -1,11 +1,16 @@
 #oitavaTela {
     flex-flow: column;
     background: url('../../images/oitavaTela_bg.webp') bottom 0 left 0/auto 30% repeat-x;
+    padding-inline: 10vw;
 }
 
 #oitavaTela section {
-    width: 87%;
+    width: 100%;
 } 
+
+#oitavaTela h2 {
+    text-align: center;
+}
 
 .arrow {
     width: 64px;
@@ -13,14 +18,13 @@
     background: url('../../images/next_a.webp') center/contain no-repeat;
     position: absolute;
     right: 0;
-    margin-right: 3%;
+    padding-right: 10vw;
     z-index: 2;
 }
 
 .arrow.left {
     left: 0;
     transform: rotateY(180deg);
-    margin-left: 3%;
 }
 
 .coiso{
@@ -166,4 +170,61 @@
 
 .depoiment p {
     color: #666;
+}
+
+@media (max-width: 1250px) { 
+    .depoiment p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1024px) { 
+    #oitavaTela section {
+        width: 50%;
+    } 
+
+    .arrow {
+        padding-right: 40vw;
+    }
+}
+
+@media (max-width: 820px) { 
+    #oitavaTela section {
+        width: 70%;
+    } 
+
+    .arrow {
+        padding-right: 20vw;
+    }
+}
+
+@media (max-width: 530px) { 
+    #oitavaTela section {
+        width: 80%;
+    } 
+
+    .arrow {
+        padding-right: 10vw;
+    }
+}
+
+@media (max-width: 450px) { 
+    #oitavaTela {
+        & h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .depoiment p{
+        font-size: .9rem;
+    }
+
+    .depoiment {
+        min-height: 28rem;
+        width: 100%;
+    }
+
+    .arrow {
+        padding-right: 5vw;
+    }
 }

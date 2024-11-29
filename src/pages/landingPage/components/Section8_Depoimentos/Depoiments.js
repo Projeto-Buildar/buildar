@@ -1,5 +1,6 @@
-import './OitavaTela.css';
-import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+
+import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
 
 import Depoiment from './Depoiment';
 import CustomArrow from './CustomArrow';
@@ -14,9 +15,8 @@ import userLais from '../../images/Lais.webp';
 import userGabi from '../../images/Gabi.webp';
 import userMartinha from '../../images/Martinha.webp';
 
-import Carousel from "react-multi-carousel";
-
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import "react-multi-carousel/lib/styles.css";
+import './OitavaTela.css';
 
 export default function Depoiments() {
 
@@ -146,7 +146,16 @@ export default function Depoiments() {
 
     >
       {userInfo.map((depoiments, index) => {
-        return <Depoiment key={index} image={depoiments.image} name={depoiments.name} age={depoiments.age} text={depoiments.text} color={depoiments.color} />
+        return (
+          <Depoiment
+            key={index}
+            image={depoiments.image}
+            name={depoiments.name}
+            age={depoiments.age}
+            text={depoiments.text}
+            color={depoiments.color}
+          />
+        )
       })}
     </Carousel>);
 }

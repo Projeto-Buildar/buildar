@@ -1,5 +1,6 @@
-import './OitavaTela.css';
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+
+import './OitavaTela.css';
 
 export default function Depoiment(props) {
     // Codigo para o ESLint não detectar um alerta do tFormatado não ser usado
@@ -8,6 +9,7 @@ export default function Depoiment(props) {
 
     return (
         <div className=" depoiment" >
+            
             <img alt='' src={props.image} />
             <h3 style={{ background: props.color }}>{props.name}</h3>
             <h3 style={{ background: props.color }}>{props.age} {t(chaveComPrefixo("idade"))}</h3>

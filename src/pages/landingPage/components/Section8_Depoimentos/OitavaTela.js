@@ -1,13 +1,16 @@
-import Depoiments from './Depoiments';
-import './OitavaTela.css';
 import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+
 import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+
+import Depoiments from './Depoiments';
+
+import './OitavaTela.css';
 
 export default function OitavaTela() {
   // eslint-disable-next-line no-unused-vars
   const { chaveComPrefixo } = useControleDeTraducao("section8");
   return (
-    <div className='frames' id="oitavaTela">
+    <section className='frames' id="oitavaTela">
       <h2>
         <TComTag
           i18nKey={chaveComPrefixo("subtitulo")}
@@ -18,6 +21,6 @@ export default function OitavaTela() {
         <Depoiments />
       </section>
       <div id='landingFooter'></div>
-    </div>
+    </section>
   );
 }

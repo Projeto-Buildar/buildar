@@ -54,3 +54,10 @@ span.destaqueRoxo {
 .fontEmoji *{
     font-family: "Noto Color Emoji", sans-serif; 
 }
+
+@media (max-width: 960px) {
+  .languageButton {
+    top: 30vh;
+    right: 2vw;
+  }
+}
