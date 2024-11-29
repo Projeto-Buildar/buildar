@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
     height: 88vh;
-    gap: 4rem;
+    padding-inline: 10vw;
+    /* gap: 4rem; */
 }
 
 @media (max-width: 1280px) { 

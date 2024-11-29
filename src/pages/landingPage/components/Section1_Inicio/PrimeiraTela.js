@@ -12,7 +12,6 @@ export default function PrimeiraTela() {
   return (
     <section className='frames' id="primeiraTela">
 
-      
 
       <article className="section1">
 
