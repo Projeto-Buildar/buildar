@@ -28,7 +28,10 @@ export default function SegundaTela() {
 
         <figure>
           <div className='monitor'>
+            <div className='tela'>
             <img src={gif} alt='Monitor' />
+            </div>
+            
           </div>
         </figure>
       </article>
