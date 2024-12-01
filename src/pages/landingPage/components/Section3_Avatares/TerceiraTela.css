@@ -12,8 +12,8 @@
 }
 
 .skinContainer {
-    height: clamp(15rem, 26vw, 26rem);
-    width: clamp(8rem, 20vw, 20rem);
+    height: clamp(10rem, 26vw, 26rem);
+    width: clamp(7rem, 20vw, 20rem);
     display: flex;
     flex-flow: column;
     align-items: center;

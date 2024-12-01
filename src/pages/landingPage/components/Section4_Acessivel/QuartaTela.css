@@ -29,6 +29,7 @@
 
     & p {
         font-size: clamp(1rem, 1.2vw, 1.2rem);
+        background-color: #ffffff;
     }
 }
 
