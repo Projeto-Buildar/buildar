@@ -135,8 +135,14 @@
 @media (orientation: landscape) and (max-width: 1024px) and (max-height: 500px) {
     #sextaTela {
         height: 88vh;
-        padding-block: 5%;
-        gap: 1rem;
+        padding-block: 15% !important;
+        padding-inline: 1vw;
+        gap: .6rem;
+    }
+
+    #sextaTela section {
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
     }
     
     #sextaTela .blocoDeTexto {
@@ -149,26 +155,45 @@
     }
 
     .offers {
-        width: clamp(48%, 18vw, 18rem) !important;
-        height: clamp(15rem, 25vw, 25rem) !important;
+        width: 60% !important;
+        height: 15rem !important;
+        & h3 {
+            font-size: 1.2rem !important;
+        }
+        & h4 {
+            font-size: .8rem !important;
+        }
     }
 
     #sextaTela section {
-        margin-bottom: 7%;
+        margin-bottom: 2%;
     }
 
     #sextaTela .backgroundMid {
-        height: 110vh;
+        height: 130vh !important;
     }
 
     #sextaTela .backgroundRight {
-        background: url('../../images/sextaTela_bg3.webp') top 0 right 0/25% no-repeat;
-        transform: translateY(-9%);
+        background: url('../../images/sextaTela_bg3.webp') top 0 right 0/30% no-repeat !important;
+        transform: translateY(-20%) !important;
     }
     
     #sextaTela .backgroundLeft {
-        background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/25% no-repeat;
-        transform: translateY(2%);    
+        background: url('../../images/sextaTela_bg2.webp') bottom 0 left 0/30% no-repeat  !important;
+        transform: translateY(10%) !important;    
+    }
+}
+
+@media (orientation: portrait) {
+    #sextaTela section {
+        gap: 1rem;
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+
+    .offers {
+        width: 48%  !important;
+        height: 15rem  !important;
     }
 }
 
@@ -252,7 +277,7 @@
     }
 
     .offers {
-        width: 12rem !important;
+        width: 10rem !important;
         height: 18rem;
         & h3 {
             font-size: 1.2rem;
@@ -312,7 +337,7 @@
     }
 
     .offers {
-        width: 48% !important;
+        width: 48%;
         height: 15rem;
         & ul {
             line-height: 1.4rem;
